@@ -46,3 +46,6 @@ replay_pid*
 *.njsproj
 *.sln
 *.sw?
+
+# Vite
+.vite
