@@ -5,6 +5,21 @@ const Display = ({ name }) => (
     <h1>{name}</h1>
 )
 
+const StatisticLine = ( {text, value} ) => {
+    if (text === 'positive') {
+        return (
+            <div>
+              <p>{text} {value} %</p>
+            </div>
+        )
+    }
+    return (
+            <div>
+                <p>{text} {value}</p>
+            </div>
+    )
+}
+
 const Statistics = ( {total_reviews} ) => {
     if (total_reviews[3] === 0) {
         return (
@@ -15,24 +30,12 @@ const Statistics = ( {total_reviews} ) => {
     }
     return (
         <div>
-            <p>
-                good {total_reviews[0]}
-            </p>
-            <p>
-                neutral {total_reviews[1]}
-            </p>
-            <p>
-                bad {total_reviews[2]}
-            </p>
-            <p>
-                all {total_reviews[3]}
-            </p>
-            <p>
-                average {(total_reviews[0] - total_reviews[2]) / total_reviews[3]}
-            </p>
-            <p>
-                positive {total_reviews[0] / total_reviews[3]} %
-            </p>
+            <StatisticLine text='good' value = {total_reviews[0]}/>
+            <StatisticLine text='neutral' value = {total_reviews[1]}/>
+            <StatisticLine text='bad' value = {total_reviews[2]}/>
+            <StatisticLine text='all' value = {total_reviews[3]}/>
+            <StatisticLine text='average' value = {(total_reviews[0] - total_reviews[2]) / total_reviews[3]}/>
+            <StatisticLine text='positive' value = {total_reviews[0] / total_reviews[3]}/>
         </div>
     )
 }
