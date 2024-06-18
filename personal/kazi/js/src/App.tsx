@@ -5,7 +5,7 @@ const Display = ({ name }) => (
     <h1>{name}</h1>
 )
 
-const DisplayIndividual = ( {total_reviews} ) => {
+const Statistics = ( {total_reviews} ) => {
     return (
         <div>
             <p>
@@ -20,22 +20,12 @@ const DisplayIndividual = ( {total_reviews} ) => {
             <p>
                 all {total_reviews[3]}
             </p>
-        </div>
-    )
-}
-
-const Average = ( {total_reviews} ) => {
-    return (
-        <div>
-            <p>average {(total_reviews[0] - total_reviews[2]) / total_reviews[3]}</p>
-        </div>
-    )
-}
-
-const Positive = ( {total_reviews} ) => {
-    return (
-        <div>
-            <p> positive {total_reviews[0] / total_reviews[3]} %</p>
+            <p>
+                average {(total_reviews[0] - total_reviews[2]) / total_reviews[3]}
+            </p>
+            <p>
+                positive {total_reviews[0] / total_reviews[3]} %
+            </p>
         </div>
     )
 }
@@ -75,9 +65,7 @@ const App = () => {
             <Button handleClick={handleNeutralCLick} text='neutral'/>
             <Button handleClick={handleBadCLick} text='bad'/>
             <Display name='statistics'/>
-            <DisplayIndividual total_reviews = {total_reviews}/>
-            <Average total_reviews = {total_reviews}/>
-            <Positive total_reviews = {total_reviews}/>
+            <Statistics total_reviews = {total_reviews}/>
         </div>
     )
 }
