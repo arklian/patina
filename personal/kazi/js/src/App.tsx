@@ -6,6 +6,13 @@ const Display = ({ name }) => (
 )
 
 const Statistics = ( {total_reviews} ) => {
+    if (total_reviews[3] === 0) {
+        return (
+            <div>
+                <p>No feedback given</p>
+            </div>
+        )
+    }
     return (
         <div>
             <p>
