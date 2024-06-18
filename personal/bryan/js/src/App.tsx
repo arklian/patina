@@ -33,13 +33,6 @@ const Stats = (props) => {
 
 const Average = (props) => {
     console.log(props)
-    if (props.all === 0) {
-        return (
-            <div>
-                the app is used by pressing the buttons
-            </div>
-        )
-    }
     return (
         <div>
             {(props.good - props.bad) / props.all}
@@ -48,13 +41,6 @@ const Average = (props) => {
 }
 const Positive = (props) => {
     console.log(props)
-    if (props.all === 0) {
-        return (
-            <div>
-                the app is used by pressing the buttons
-            </div>
-        )
-    }
     return (
         <div>
             {100 * props.good / props.all}%
@@ -65,6 +51,13 @@ const Positive = (props) => {
 const Statistics = (props) => {
     console.log(props)
     const {good, neutral, bad, all} = props
+    if (props.all === 0) {
+        return (
+            <div>
+                No feedback given
+            </div>
+        )
+    }
     return (
         <div>
             <Stats text='good' value={good}/>
