@@ -13,6 +13,12 @@ function Button ({text, onClick}: {text: string, onClick: MouseEventHandler}){
     )
 }
 
+function StatisticLine ({text, value}: {text: string, value: number}){
+    return(
+        <p>{text}: {value}</p>
+    )
+}
+
 function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: number}){
     const total:number = good + neutral + bad;
     const average:number = (good - bad) / total;
@@ -24,12 +30,11 @@ function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: 
     }
     return(
         <div>
-            <p>Good: {good}</p>
-            <p>Neutral: {neutral}</p>
-            <p>Bad: {bad}</p>
-            <p>Total: {total}</p>
-            <p>Average: {average}</p>
-            <p>Positive: {positivePercentage}%</p>
+            <StatisticLine text="Good" value={good}></StatisticLine>
+            <StatisticLine text="Neutral" value={neutral}></StatisticLine>
+            <StatisticLine text="Total" value={total}></StatisticLine>
+            <StatisticLine text="Average" value={average}></StatisticLine>
+            <StatisticLine text="Positive (%)" value={positivePercentage}></StatisticLine>
         </div>
     )
 }
