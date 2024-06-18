@@ -1,36 +1,62 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-const Display = ({counter}) => <div>{counter}</div>
-
-const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>
-
-const App = (props) => {
-    const [counter, setCounter] = useState(0)
-    console.log('rendering with counter value', counter)
-
-    const increaseByOne = () => {
-        console.log('increasing, value before', counter)
-        setCounter(counter + 1)
-    }
-
-    const decreaseByOne = () => {
-        console.log('decreasing, value before', counter)
-        setCounter(counter - 1)
-    }
-
-    const setToZero = () => {
-        console.log('resetting to zero, value before', counter)
-        setCounter(0)
-    }
-
-    //console.log('rendering...', counter)
+const Header = (props) => {
+    console.log(props)
 
     return (
         <div>
-            <Display counter={counter}/>
-            <Button onClick={increaseByOne} text='plus'/>
-            <Button onClick={setToZero} text='zero'/>
-            <Button onClick={decreaseByOne} text='minus'/>
+            <h1>
+                {props.text}
+            </h1>
+        </div>
+    )
+}
+
+const Button = (props) => {
+    console.log(props)
+    const { handleClick, text } = props
+    return (
+        <button onClick={handleClick}>
+            {text}
+        </button>
+    )
+}
+
+const Stats = (props) => {
+    console.log(props)
+    return (
+        <div>
+            {props.text} {props.value}
+        </div>
+    )
+}
+
+const App = () => {
+    // save clicks of each button to its own state
+    const [good, setGood] = useState(0)
+    const [neutral, setNeutral] = useState(0)
+    const [bad, setBad] = useState(0)
+
+    const handleGoodClick = () => {
+        setGood(good + 1)
+    }
+    const handleNeutralClick = () => {
+        setNeutral(neutral + 1)
+    }
+    const handleBadClick = () => {
+        setBad(bad + 1)
+    }
+
+    return (
+        <div>
+            <Header text='give feedback'/>
+            <Button handleClick={handleGoodClick} text='good' />
+            <Button handleClick={handleNeutralClick} text='neutral' />
+            <Button handleClick={handleBadClick} text='bad' />
+            <Header text='statistics'/>
+            <Stats text='good' value={good}/>
+            <Stats text='neutral' value={neutral}/>
+            <Stats text='bad' value={bad}/>
         </div>
     )
 }
