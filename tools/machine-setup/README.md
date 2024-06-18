@@ -164,9 +164,12 @@ Used to snap windows to half the screen or other places. MacOS 15 has this built
     - Code Style
       - Hard Wrap at 120
       - Visual Guides at 100, 120
-- #TODO(Henry): Update as issues occur, languages are added, and more tools are installed.
-- #TODO(Henry): Add plugins and extensions
-
+  - Languages & Frameworks
+    - Style Sheets
+      - Dialects -> Project CSS Dialect -> PostCSS
+  - Inspections
+    - CSS -> Invalid Elements -> Invalid Function -> Weak Warning
+      - IntelliJ doesn't support the postcss-mixins plugin in the IntelliJ PostCSS plugin.
 
 ___
 
