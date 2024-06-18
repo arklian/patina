@@ -1,66 +1,61 @@
-import './App.css'
+import {useState, MouseEventHandler} from 'react';
+import './App.css';
 
-function Header(props: { course: string}) {
+function SectionTitle ({text}:{text:string}) {
     return(
-        <div>
-            <h1>{props.course}</h1>
-        </div>
+        <h1>{text}</h1>
     )
 }
 
-function Part(props: {part: string, exercise: number}) {
+function Button ({text, onClick}: {text: string, onClick: MouseEventHandler}){
     return(
-        <div>
-            <p>{props.part} {props.exercise}</p>
-        </div>
+        <button onClick={onClick}>{text}</button>
     )
 }
 
-function Content(props: {parts: {name: string, exercises: number}[]}){
+function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: number}){
     return(
         <div>
-            <Part part={props.parts[0].name} exercise={props.parts[0].exercises}></Part>
-            <Part part={props.parts[1].name} exercise={props.parts[1].exercises}></Part>
-            <Part part={props.parts[2].name} exercise={props.parts[1].exercises}></Part>
-        </div>
-    )
-}
-
-function Total(props: {parts: {name: string, exercises: number}[]}){
-    const total = props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises;
-    return(
-        <div>
-            <p>Number of exercises {total}</p>
+            <p>Good: {good}</p>
+            <p>Neutral: {neutral}</p>
+            <p>Bad: {bad}</p>
         </div>
     )
 }
 
 function App() {
-  const course : {name: string, parts: {name: string, exercises: number}[]} = {
-      name: 'Half Stack application development',
-      parts: [
-          {
-              name: 'Fundamentals of React',
-              exercises: 10
-          },
-          {
-              name: 'Using props to pass data',
-              exercises: 7
-          },
-          {
-              name: 'State of a component',
-              exercises: 14
-          }
-      ]
-  }
+    const [good, setGood] = useState(0);
+    const [neutral, setNeutral] = useState(0);
+    const [bad, setBad] = useState(0);
 
-  return (
+    const handleClickGood = () => {
+        const newGood: number = good + 1;
+        console.log("current good: " + good);
+        return (() => setGood(newGood))
+    };
+
+    const handleClickNeutral = () => {
+        const newNeutral:number = neutral + 1;
+        console.log("current neutral: " + neutral);
+        return (() => setNeutral(newNeutral))
+    }
+
+    const handleClickBad = () => {
+        const newBad:number = bad + 1;
+        console.log("current bad: " + bad);
+        return (() => setBad(newBad))
+    }
+
+    return (
       <div>
-          <Header course={course.name}></Header>
-          <Content parts={course.parts}></Content>
-          <Total parts={course.parts}></Total>
+        <SectionTitle text="Give Feedback"></SectionTitle>
+        <Button text="good" onClick={handleClickGood()}></Button>
+        <Button text="neutral" onClick={handleClickNeutral()}></Button>
+        <Button text="bad" onClick={handleClickBad()}></Button>
+        <SectionTitle text="Statistics"></SectionTitle>
+        <Statistics good={good} neutral={neutral} bad={bad}></Statistics>
       </div>
-  )
+    )
 }
 
 export default App
