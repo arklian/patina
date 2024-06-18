@@ -15,7 +15,10 @@ function Button ({text, onClick}: {text: string, onClick: MouseEventHandler}){
 
 function StatisticLine ({text, value}: {text: string, value: number}){
     return(
-        <p>{text}: {value}</p>
+        <tr>
+            <td>{text}</td>
+            <td>{value}</td>
+        </tr>
     )
 }
 
@@ -29,13 +32,15 @@ function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: 
         )
     }
     return(
-        <div>
-            <StatisticLine text="Good" value={good}></StatisticLine>
-            <StatisticLine text="Neutral" value={neutral}></StatisticLine>
-            <StatisticLine text="Total" value={total}></StatisticLine>
-            <StatisticLine text="Average" value={average}></StatisticLine>
-            <StatisticLine text="Positive (%)" value={positivePercentage}></StatisticLine>
-        </div>
+        <table>
+            <tbody>
+                <StatisticLine text="Good" value={good}></StatisticLine>
+                <StatisticLine text="Neutral" value={neutral}></StatisticLine>
+                <StatisticLine text="Total" value={total}></StatisticLine>
+                <StatisticLine text="Average" value={average}></StatisticLine>
+                <StatisticLine text="Positive (%)" value={positivePercentage}></StatisticLine>
+            </tbody>
+        </table>
     )
 }
 
