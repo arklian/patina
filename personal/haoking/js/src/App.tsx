@@ -1,25 +1,25 @@
-const Hello = ( {name, age} ) => {
-    const bornYear = () => new Date().getFullYear()-age
-    return (
-        <div>
-            <p>
-                Hello {name}, you are {age} years old
-            </p>
-            <p>U are born in {bornYear()}</p>
-        </div>
-    )
-}
+import { useState } from 'react'
+
+const Display = ({counter}) => <div>{counter}</div>
+
+
+const Button = ({onClick, text}) => <button onClick={onClick}>{text}</button>
 
 const App = () => {
-    const name = 'Peter'
-    const age = 10
+
+    const [ counter, setCounter ] = useState(0)
+
+    const incrementCtr = () => setCounter(counter+1)
+    const resetCtr = () => setCounter(0)
+    const decrementCtr = () => setCounter(counter-1)
 
     return (
-        <div>
-            <h1>Greetings</h1>
-            <Hello name="Maya" age={26 + 10} />
-            <Hello name={name} age={age} />
-        </div>
+        <>
+            <Display counter = {counter}/>
+            <Button text = "inc" onClick = {incrementCtr} />
+            <Button onClick = {resetCtr} text = "reset"/>
+            <Button onClick={decrementCtr} text = "dec"/>
+        </>
     )
 }
 
