@@ -16,6 +16,15 @@ dist
 dist-ssr
 *.local
 
+# Vite
+.vite
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
 # BlueJ files
 *.ctxt
 
@@ -47,5 +56,3 @@ replay_pid*
 *.sln
 *.sw?
 
-# Vite
-.vite
