@@ -17,6 +17,11 @@ function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: 
     const total:number = good + neutral + bad;
     const average:number = (good - bad) / total;
     const positivePercentage:number = good / total * 100;
+    if (total === 0){
+        return(
+            <p>No feedback given</p>
+        )
+    }
     return(
         <div>
             <p>Good: {good}</p>
