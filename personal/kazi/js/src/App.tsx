@@ -1,51 +1,49 @@
 import { useState } from 'react'
 import './App.css'
 
-const Display = (props) => {
-    return (
-        <div>{props.counter}</div>
-    )
-}
+const Display = ({ name }) => (
+    <h1>{name}</h1>
+)
 
-const Button = (props) => {
-    return (
-        <div>
-            <button onClick={props.onClick}>
-                {props.text}
-            </button>
-        </div>
-    )
-}
+const Button = ({ handleClick, text }) => (
+    <button onClick={handleClick}>
+        {text}
+    </button>
+)
 
 const App = () => {
-    const [counter, setCounter] = useState(0)
+    const [good, setGood] = useState(0)
+    const [neutral, setNeutral] = useState(0)
+    const [bad, setBad] = useState(0)
 
-    console.log('rendering with counter value', counter)
-
-    const increaseByOne = () => {
-
-        console.log('increasing, value before', counter)
-        setCounter(counter + 1)
+    const handleGoodCLick = () => {
+        setGood(good + 1)
     }
 
-    const decreaseByOne = () => {
-
-        console.log('decreasing, value before', counter)
-        setCounter(counter - 1)
+    const handleNeutralCLick = () => {
+        setNeutral(neutral + 1)
     }
 
-    const setToZero = () => {
-
-        console.log('resetting to zero, value before', counter)
-        setCounter(0)
+    const handleBadCLick = () => {
+        setBad(bad + 1)
     }
 
     return (
         <div>
-            <Display counter={counter} />
-            <Button onClick={increaseByOne} text="plus" />
-            <Button onClick={setToZero} text="zero" />
-            <Button onClick={decreaseByOne} text="minus" />
+            <Display name='give feedback'/>
+            <Button handleClick={handleGoodCLick} text='good'/>
+            <Button handleClick={handleNeutralCLick} text='neutral'/>
+            <Button handleClick={handleBadCLick} text='bad'/>
+            <Display name='statistics'/>
+            <p>
+                good {good}
+            </p>
+            <p>
+                neutral {neutral}
+            </p>
+            <p>
+                bad {bad}
+            </p>
         </div>
     )
 }
