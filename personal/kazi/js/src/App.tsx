@@ -1,68 +1,53 @@
+import { useState } from 'react'
 import './App.css'
 
-const Parts = (props) => {
+const Display = (props) => {
     return (
-    <div>
-        {props.parts.map(part => (
-            <p>{part.name} {part.exercises}</p>
-        ))}
-    </div>
+        <div>{props.counter}</div>
     )
 }
 
-const Header = (props) => {
+const Button = (props) => {
     return (
         <div>
-            <h1>{props.course}</h1>
-        </div>
-    )
-}
-
-const Content = (props) => {
-    return (
-        <div>
-            <Parts parts={props.parts}/>
-        </div>
-    )
-}
-
-const Total = (props) => {
-    let sum = 0;
-    props.parts.forEach(value => {
-        sum = sum + value.exercises
-    })
-
-    return (
-        <div>
-            <p>Number of exercises {sum}</p>
+            <button onClick={props.onClick}>
+                {props.text}
+            </button>
         </div>
     )
 }
 
 const App = () => {
-    const course = 'Half Stack application development'
-    const parts = [
-        {
-            name: 'Fundamentals of React',
-            exercises: 10
-        },
-        {
-            name: 'Using props to pass data',
-            exercises: 7
-        },
-        {
-            name: 'State of a component',
-            exercises: 14
-        }
-    ]
+    const [counter, setCounter] = useState(0)
 
-        return (
-            <div>
-                <Header course={course} />
-                <Content parts={parts}/>
-                <Total parts={parts}/>
-            </div>
-        )
+    console.log('rendering with counter value', counter)
+
+    const increaseByOne = () => {
+
+        console.log('increasing, value before', counter)
+        setCounter(counter + 1)
+    }
+
+    const decreaseByOne = () => {
+
+        console.log('decreasing, value before', counter)
+        setCounter(counter - 1)
+    }
+
+    const setToZero = () => {
+
+        console.log('resetting to zero, value before', counter)
+        setCounter(0)
+    }
+
+    return (
+        <div>
+            <Display counter={counter} />
+            <Button onClick={increaseByOne} text="plus" />
+            <Button onClick={setToZero} text="zero" />
+            <Button onClick={decreaseByOne} text="minus" />
+        </div>
+    )
 }
 
 export default App
