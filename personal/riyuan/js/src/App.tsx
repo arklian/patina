@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <Header course={course}/>
+            <Header  course={course}/>
             <Content parts={parts}/>
             <Total part1={parts[0].exercises} part2={parts[1].exercises} part3={parts[2].exercises}/>
         </div>
