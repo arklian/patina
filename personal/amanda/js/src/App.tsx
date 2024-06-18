@@ -8,10 +8,20 @@ function Header(props: { course: string}) {
     )
 }
 
-function Content(props: {part: string, exercise: number}){
+function Part(props: {part: string, exercise: number}) {
     return(
         <div>
             <p>{props.part} {props.exercise}</p>
+        </div>
+    )
+}
+
+function Content(props: {parts: string[], exercises: number[]}){
+    return(
+        <div>
+            <Part part={props.parts[0]} exercise={props.exercises[0]}></Part>
+            <Part part={props.parts[1]} exercise={props.exercises[1]}></Part>
+            <Part part={props.parts[2]} exercise={props.exercises[2]}></Part>
         </div>
     )
 }
@@ -32,13 +42,13 @@ function App() {
   const exercises2 = 7;
   const part3 = 'State of a component';
   const exercises3 = 14;
+  const parts: string[] = [part1, part2, part3];
+  const exercises: number[] = [exercises1, exercises2, exercises3];
 
   return (
       <div>
           <Header course={course}></Header>
-          <Content part={part1} exercise={exercises1}></Content>
-          <Content part={part2} exercise={exercises2}></Content>
-          <Content part={part3} exercise={exercises3}></Content>
+          <Content parts={parts} exercises={exercises}></Content>
           <Total total={exercises1 + exercises2 + exercises3}></Total>
       </div>
   )
