@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -9,14 +7,6 @@ function App() {
   const [count3, setCount3] = useState(2)
   return (
       <>
-          <div>
-              <a href="https://vitejs.dev" target="_blank">
-                  <img src={viteLogo} className="logo" alt="Vite logo"/>
-              </a>
-              <a href="https://react.dev" target="_blank">
-                  <img src={reactLogo} className="logo react" alt="React logo"/>
-              </a>
-          </div>
           <h1>Mathematical Form</h1>
           <div className="thing">
               <button onClick={() => setCount2((count2: number) => count + count2)}>
