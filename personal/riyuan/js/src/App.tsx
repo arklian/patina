@@ -11,9 +11,11 @@ const Button = ({ text, onClick }: { text: string; onClick: () => void }) => {
 const ButtonsContainer = ({ buttons }: { buttons: { text: string; handleClick: () => void }[] }) => {
     return (
         <div>
-            {buttons.map((button, index) => (
-                <Button key={index} text={button.text} onClick={button.handleClick} />
-            ))}
+            <p>
+                {buttons.map((button, index) => (
+                    <Button key={index} text={button.text} onClick={button.handleClick} />
+                ))}
+            </p>
         </div>
     );
 };
@@ -23,11 +25,20 @@ const Statistics = ({ title }: { title: string }) => {
 };
 
 const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number } }) => {
+    const style = { margin: 0 }; // Remove margins for close spacing
+    const totalFeedback = prop.good + prop.neutral + prop.bad;
+
+    const average = totalFeedback > 0 ? ((prop.good - prop.bad) / totalFeedback).toFixed(2) : 0;
+
+    const positivePercentage = totalFeedback > 0 ? ((prop.good / totalFeedback) * 100).toFixed(2) : 0;
+
     return (
         <div>
-            <p>Good: {prop.good}</p>
-            <p>Neutral: {prop.neutral}</p>
-            <p>Bad: {prop.bad}</p>
+            <p style={style}>Good: {prop.good}</p>
+            <p style={style}>Neutral: {prop.neutral}</p>
+            <p style={style}>Bad: {prop.bad}</p>
+            <p style={style}>Average Score: {average}</p>
+            <p style={style}>Positive Feedback: {positivePercentage}%</p>
         </div>
     );
 };
