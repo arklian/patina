@@ -14,11 +14,17 @@ function Button ({text, onClick}: {text: string, onClick: MouseEventHandler}){
 }
 
 function Statistics ({good, neutral, bad}: {good: number, neutral: number, bad: number}){
+    const total:number = good + neutral + bad;
+    const average:number = (good - bad) / total;
+    const positivePercentage:number = good / total * 100;
     return(
         <div>
             <p>Good: {good}</p>
             <p>Neutral: {neutral}</p>
             <p>Bad: {bad}</p>
+            <p>Total: {total}</p>
+            <p>Average: {average}</p>
+            <p>Positive: {positivePercentage}%</p>
         </div>
     )
 }
