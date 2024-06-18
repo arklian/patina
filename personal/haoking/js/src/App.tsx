@@ -5,6 +5,10 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+    const now = new Date()
+
+    console.log("hello from console")
+    console.log(now)
 
   return (
     <>
@@ -26,6 +30,9 @@ function App() {
             <div>
                 <button onClick={() => alert("saoifj")}> click </button>
             </div>
+          <div>
+              <p>hello wolrd it is now {now.toString()}</p>
+          </div>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
