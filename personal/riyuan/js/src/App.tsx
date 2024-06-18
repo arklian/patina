@@ -1,54 +1,58 @@
-const Header = ({ prop }: { prop: any }) => {
-    return <h1>{prop}</h1>;
+import React, { useState } from 'react';
+
+const Header = ({ title }: { title: string }) => {
+    return <div><h1>{title}</h1></div>;
 };
 
-const Content = ({ parts }: { parts: any[] }) => {
+const Button = ({ text, onClick }: { text: string; onClick: () => void }) => {
+    return <button onClick={onClick}>{text}</button>;
+};
+
+const ButtonsContainer = ({ buttons }: { buttons: { text: string; handleClick: () => void }[] }) => {
     return (
         <div>
-            {parts.map((part, index) => (
-                <p key={index}>
-                    {part.name} {part.exercises}
-                </p>
+            {buttons.map((button, index) => (
+                <Button key={index} text={button.text} onClick={button.handleClick} />
             ))}
         </div>
     );
 };
 
-const Total = ({ parts }: { parts: any[] }) => {
-    const total = parts.reduce((acc, part) => acc + part.exercises, 0);
+const Statistics = ({ title }: { title: string }) => {
+    return <div><h1>{title}</h1></div>;
+};
+
+const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number } }) => {
     return (
         <div>
-            <p>Number of exercises {total}</p>
+            <p>Good: {prop.good}</p>
+            <p>Neutral: {prop.neutral}</p>
+            <p>Bad: {prop.bad}</p>
         </div>
     );
 };
 
 const App = () => {
-    const course = {
-        name: 'Half Stack application development',
-        parts: [
-            {
-                name: 'Fundamentals of React',
-                exercises: 10
-            },
-            {
-                name: 'Using props to pass data',
-                exercises: 7
-            },
-            {
-                name: 'State of a component',
-                exercises: 14
-            }
-        ]
-    };
+    const [good, setGood] = useState(0);
+    const [neutral, setNeutral] = useState(0);
+    const [bad, setBad] = useState(0);
+
+    const title = "Give Feedback";
+    const statisticsTitle = "Statistics";
+    const buttons = [
+        { text: "Good", handleClick: () => setGood(good + 1) },
+        { text: "Neutral", handleClick: () => setNeutral(neutral + 1) },
+        { text: "Bad", handleClick: () => setBad(bad + 1) }
+    ];
 
     return (
         <div>
-            <Header prop={course.name} />
-            <Content parts={course.parts} />
-            <Total parts={course.parts} />
+            <Header title={title} />
+            <ButtonsContainer buttons={buttons} />
+            <Statistics title={statisticsTitle} />
+            <Rating prop={{ good, neutral, bad }} />
         </div>
     );
-}
+};
 
 export default App;
