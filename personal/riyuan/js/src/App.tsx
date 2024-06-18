@@ -55,7 +55,7 @@ const App = () => {
         { text: "Neutral", handleClick: () => setNeutral(neutral + 1) },
         { text: "Bad", handleClick: () => setBad(bad + 1) }
     ];
-
+ 
     return (
         <div>
             <Header title={title} />
