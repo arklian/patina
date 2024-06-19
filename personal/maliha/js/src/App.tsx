@@ -6,26 +6,21 @@ const Button = (props) => {
         </button>
     )
 }
-const Display = (props) => {
+const StatisticLine = ({text, value, symbol}) => {
     return (
-        <div> {props.type} {props.counter} {props.symbol}</div>
+        <div>{text}: {value}{symbol}</div>
     )
 }
 const Statistics = ({good, neutral, bad}) => {
     if (good != 0 || neutral != 0 || bad != 0){
         return (
             <div>
-                good: {good}
-                <br></br>
-                neutral: {neutral}
-                <br></br>
-                bad: {bad}
-                <br></br>
-                all: {good+bad+neutral}
-                <br></br>
-                average: {(good-bad)/(good+bad+neutral)}
-                <br></br>
-                positive: {(good/(good+bad+neutral))*100}%
+                <StatisticLine text="good" value={good} symbol=""/>
+                <StatisticLine text="neutral" value={neutral} symbol=""/>
+                <StatisticLine text="bad" value={bad} symbol=""/>
+                <StatisticLine text="all" value={bad+good+neutral} symbol="" />
+                <StatisticLine text="average" value={(good-bad)/(good+bad+neutral)} symbol=""/>
+                <StatisticLine text="positive" value={(good/(good+bad+neutral))*100} symbol="%"/>
             </div>
         )
     }
