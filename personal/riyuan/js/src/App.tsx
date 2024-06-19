@@ -28,9 +28,17 @@ const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number }
     const style = { margin: 0 }; // Remove margins for close spacing
     const totalFeedback = prop.good + prop.neutral + prop.bad;
 
-    const average = totalFeedback > 0 ? ((prop.good - prop.bad) / totalFeedback).toFixed(2) : 0;
+    // Early return to not display any content if there is no feedback
+    if (totalFeedback === 0) {
+        return(
+            <div>
+                <p style={style}>No feedback given</p>
+            </div>
+        );
+    }
 
-    const positivePercentage = totalFeedback > 0 ? ((prop.good / totalFeedback) * 100).toFixed(2) : 0;
+    const average = ((prop.good - prop.bad) / totalFeedback).toFixed(2);
+    const positivePercentage = ((prop.good / totalFeedback) * 100).toFixed(2);
 
     return (
         <div>
@@ -55,7 +63,7 @@ const App = () => {
         { text: "Neutral", handleClick: () => setNeutral(neutral + 1) },
         { text: "Bad", handleClick: () => setBad(bad + 1) }
     ];
- 
+
     return (
         <div>
             <Header title={title} />
