@@ -1,32 +1,45 @@
-// import { useState } from 'react'
-//
-// const App = () => {
-//     // save clicks of each button to its own state
-//     const [good, setGood] = useState(0)
-//     const [neutral, setNeutral] = useState(0)
-//     const [bad, setBad] = useState(0)
-//
-//     return (
-//         <div>
-//             <h1>give feedback</h1>
-//             <h1>statistics</h1>
-//         </div>
-//     )
-// }
-//
-// export default App
 import { useState } from 'react'
-
-const App = () => {
-    const [ counter, setCounter ] = useState(0)
-
-    setTimeout(
-        () => setCounter(counter + 1),
-        1000
+const Button = (props) => {
+    return (
+        <button onClick={props.onClick}>
+            {props.text}
+        </button>
     )
+}
+const Display = (props) => {
+    return (
+        <div> {props.type} {props.counter}</div>
+    )
+}
+const App = () => {
+    // save clicks of each button to its own state
+    const [good, setGood] = useState(0)
+    const [neutral, setNeutral] = useState(0)
+    const [bad, setBad] = useState(0)
+    const increaseGood = () => setGood(good + 1)
+    const increaseNeutral = () => setNeutral(neutral + 1)
+    const increaseBad = () => setBad(bad + 1)
 
     return (
-        <div>{counter}</div>
+        <div>
+            <h1>give feedback</h1>
+            <Button
+                onClick={increaseGood}
+                text="good"
+            />
+            <Button
+                onClick={increaseNeutral}
+                text="neutral"
+            />
+            <Button
+                onClick={increaseBad}
+                text="bad"
+            />
+            <h1>statistics</h1>
+            <Display type = "good" counter={good}/>
+            <Display type = "neutral" counter={neutral}/>
+            <Display type = "bad" counter={bad}/>
+        </div>
     )
 }
 
