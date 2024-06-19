@@ -19,17 +19,29 @@ function App() {
         'The only way to go fast, is to go well.'
     ];
     const [selected, setSelected] = useState(0);
-    const handleClick = () => {
+    const [points, setPoints] = useState<Array<number>>(Array(anecdotes.length).fill(0));
+
+    const handleNext = () => {
         let randNum:number = selected;
         while (selected === randNum) {
             randNum = Math.round(Math.random() * (anecdotes.length - 1));
         }
         return(() => setSelected(randNum))
     }
+
+    const handleVote = () => {
+        const copy = [...points];
+        copy[selected] += 1;
+        return(() => setPoints(copy))
+    }
+
+
     return (
       <div>
-        <p>{anecdotes[selected]}</p>
-        <Button text="next anecdote" onClick={handleClick()}></Button>
+        <h4>{anecdotes[selected]}</h4>
+        <p>has {points[selected]} votes</p>
+        <Button text="vote" onClick={handleVote()}></Button>
+        <Button text="next anecdote" onClick={handleNext()}></Button>
       </div>
     )
 }
