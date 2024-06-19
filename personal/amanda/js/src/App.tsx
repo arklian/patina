@@ -20,6 +20,7 @@ function App() {
     ];
     const [selected, setSelected] = useState(0);
     const [points, setPoints] = useState<Array<number>>(Array(anecdotes.length).fill(0));
+    const [mostVoted, setMostVoted] = useState(0);
 
     const handleNext = () => {
         let randNum:number = selected;
@@ -32,17 +33,35 @@ function App() {
     const handleVote = () => {
         const copy = [...points];
         copy[selected] += 1;
+        calcMostVoted();
         return(() => setPoints(copy))
+    }
+
+    const calcMostVoted = () => {
+        let index = mostVoted;
+        let votes = points[mostVoted];
+        for (let i = 0; i < points.length; i++){
+            if (i !== mostVoted && points[i] > votes) {
+                index = i;
+                votes = points[i];
+            }
+        }
+        if (index !== mostVoted)
+            setMostVoted(index)
     }
 
 
     return (
-      <div>
-        <h4>{anecdotes[selected]}</h4>
-        <p>has {points[selected]} votes</p>
-        <Button text="vote" onClick={handleVote()}></Button>
-        <Button text="next anecdote" onClick={handleNext()}></Button>
-      </div>
+        <div>
+            <h1>Anecdote of the Day</h1>
+            <p>"{anecdotes[selected]}"</p>
+            <p>has {points[selected]} votes</p>
+            <Button text="vote" onClick={handleVote()}></Button>
+            <Button text="next anecdote" onClick={handleNext()}></Button>
+            <h1>Anecdote with the Most Votes</h1>
+            <p>"{anecdotes[mostVoted]}"</p>
+            <p>has {points[mostVoted]} votes</p>
+        </div>
     )
 }
 
