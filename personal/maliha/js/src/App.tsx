@@ -10,6 +10,8 @@ const Display = (props) => {
     return (
         <>
             {props.text}
+            <br></br>
+            has {props.votes} votes
         </>
     )
 }
@@ -36,6 +38,7 @@ const App = () => {
 
     return (
         <div>
+            <h1>Anecdote of the Day</h1>
             {anecdotes[selected]}
             <br></br>
             <Button
@@ -47,8 +50,10 @@ const App = () => {
                 text="next anecdote"
             />
             <br></br>
+            <h1>Anecdote With Most Votes</h1>
             <Display
-                text = {votes[selected]}
+                text = {anecdotes[votes.indexOf(Math.max(...votes))]}
+                votes = {votes[votes.indexOf(Math.max(...votes))]}
             />
         </div>
     )
