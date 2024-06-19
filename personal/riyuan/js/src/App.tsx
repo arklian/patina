@@ -24,6 +24,14 @@ const Statistics = ({ title }: { title: string }) => {
     return <div><h1>{title}</h1></div>;
 };
 
+const StatisticLine = ({ text, value }) => {
+    return (
+        <div>
+            {text}: {value}
+        </div>
+    );
+};
+
 const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number } }) => {
     const style = { margin: 0 }; // Remove margins for close spacing
     const totalFeedback = prop.good + prop.neutral + prop.bad;
@@ -42,11 +50,12 @@ const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number }
 
     return (
         <div>
-            <p style={style}>Good: {prop.good}</p>
-            <p style={style}>Neutral: {prop.neutral}</p>
-            <p style={style}>Bad: {prop.bad}</p>
-            <p style={style}>Average Score: {average}</p>
-            <p style={style}>Positive Feedback: {positivePercentage}%</p>
+            <StatisticLine text="good" value ={prop.good} />
+            <StatisticLine text="neutral" value ={prop.neutral} />
+            <StatisticLine text="bad" value ={prop.bad} />
+            <StatisticLine text="all" value ={totalFeedback} />
+            <StatisticLine text="Average Score" value ={average} />
+            <StatisticLine text="Positive Feedback" value ={positivePercentage} />
         </div>
     );
 };
