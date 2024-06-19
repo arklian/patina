@@ -6,6 +6,13 @@ const Button = (props) => {
         </button>
     )
 }
+const Display = (props) => {
+    return (
+        <>
+            {props.text}
+        </>
+    )
+}
 const App = () => {
     const anecdotes = [
         'If it hurts, do it more often.',
@@ -19,14 +26,29 @@ const App = () => {
     ]
 
     const [selected, setSelected] = useState(0)
+    const [votes, setVotes] = useState(new Array(anecdotes.length).fill(0));
+    const handleVote = () => {
+        const newVotes = [...votes]; // Make a copy of the votes array
+        newVotes[selected] += 1; // Update the selected anecdote's vote count
+        setVotes(newVotes); // Update state with the new votes array
+    }
     const selectorSet = () => setSelected(Math.floor(Math.random() * (anecdotes.length - 0) + 0))
+
     return (
         <div>
             {anecdotes[selected]}
             <br></br>
             <Button
+                onClick={handleVote}
+                text="vote"
+            />
+            <Button
                 onClick={selectorSet}
                 text="next anecdote"
+            />
+            <br></br>
+            <Display
+                text = {votes[selected]}
             />
         </div>
     )
