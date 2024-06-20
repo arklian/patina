@@ -1,81 +1,51 @@
 import { useState } from 'react'
 
-const Display = ({text}) => <div><h1>{text}</h1></div>
-
-const StatisticLine = ({text, count, suffix}) => {
-    return (
-        <tr>
-            <td>{text}</td>
-            <td>{count}</td>
-            <td>{suffix}</td>
-        </tr>
-    )
-}
-
 const Button = ({handleClick, text}) => <button onClick={handleClick}>{text}</button>
 
-const Statistics = ({texts, counts}) => {
-    if (counts[3] === 0) return (
-        <>
-        <Display text={texts[0]}/>
-        <p>no feedback given</p>
-        </>
-    )
-    return (
-        <>
-        <Display text={texts[0]}/>
-            <table>
-                <tbody>
-                <StatisticLine text={texts[1]} count={counts[0]}/>
-                <StatisticLine text={texts[2]} count={counts[1]}/>
-                <StatisticLine text={texts[3]} count={counts[2]}/>
-                <StatisticLine text={texts[4]} count={counts[3]}/>
-                <StatisticLine text={texts[5]} count={ (counts[3] === 0) ? 0 : counts[4]}/>
-                <StatisticLine text={texts[6]} count={ (counts[3] === 0) ? 0 : counts[5]} suffix="%"/>
-                </tbody>
-            </table>
-        </>
-    )
-}
+const Header = ({text}) => <h1>{text}</h1>
 
 const App = () => {
-    const [good, setGood] = useState(0)
-    const [neutral, setNeutral] = useState(0)
-    const [bad, setBad] = useState(0)
-    const [all, setAll] = useState(0)
-    const [score, setScore] = useState(0)
+    const anecdotes = [
+        'If it hurts, do it more often.',
+        'Adding manpower to a late software project makes it later!',
+        'The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.',
+        'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
+        'Premature optimization is the root of all evil.',
+        'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
+        'Programming without an extremely heavy use of console.log is same as if a doctor would refuse to use x-rays or blood tests when diagnosing patients.',
+        'The only way to go fast, is to go well.'
+    ]
 
-    const incGood = () => {
-        setGood(good+1)
-        // setAll(good+1+neutral+bad) // this or after?
-        setAll(all+1)
-        setScore(score+1)
-    }
-    const incNeutral = () => {
-        setNeutral(neutral+1)
-        // setAll(good+neutral+1+bad)
-        setAll(all+1)
-    }
-    const incBad = () => {
-        setBad(bad+1)
-        // setAll(good+neutral+bad+1)
-        setAll(all+1)
-        setScore(score-1)
+    const [selected, setSelected] = useState(0)
+    const [votes, setVotes] = useState(Array(8).fill(0))
+
+    const generate = () => {
+        const random = Math.floor(Math.random() * anecdotes.length)
+        setSelected(random)
     }
 
-    let texts:string[] = ["statistics", "good", "neutral", "bad", "all", "average", "positive"]
-    let counts:number[] = [good, neutral, bad, all, score/all, good/all*100]
+    const vote = () => {
+        const newVotes = [...votes]
+        newVotes[selected] = votes[selected]+1
+        setVotes(newVotes)
+    }
+
+    const highestVote = votes.findIndex((element) => element === Math.max(...votes))
 
     return (
+        <>
+        <Header text="Anecdote of the day"/>
+        <Button handleClick={generate} text="generate"/>
+        <Button handleClick={vote} text="vote"/>
         <div>
-            <Display text="give feedback"/>
-            <Button handleClick={incGood} text = "good" />
-            <Button handleClick={incNeutral} text = "neutral"/>
-            <Button handleClick={incBad} text = "bad"/>
-
-            <Statistics texts={texts} counts={counts}/>
-
+            {anecdotes[selected]}
+            <div>votes: {votes[selected]}</div>
+        <Header text="Most votes"/>
+            <div>
+                {anecdotes[highestVote]}
+            </div>
         </div>
+        </>
     )
 }
 
