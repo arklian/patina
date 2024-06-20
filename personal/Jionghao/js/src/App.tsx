@@ -1,79 +1,25 @@
 import { useState } from 'react'
-import './App.css'
-
-const Header = (props) => {
-    return(
-        <h1>{props.course}</h1>
-    )
-}
-const Part = (props) => {
-    return(
-        <p>
-            {props.part} {props.exercises}
-        </p>
-    )
-}
-
-const Content = (props) => {
-    return(
-        <div>
-            <Part part = {props.parts[0].name} exercises = {props.parts[0].exercises} />
-            <Part part = {props.parts[1].name} exercises = {props.parts[1].exercises} />
-            <Part part = {props.parts[2].name} exercises = {props.parts[2].exercises} />
-        </div>
-    )
-}
 
 
-
-
-const Total = (props) => {
-    return(
-        <p>
-            Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}
-        </p>
-    )
-}
 
 const App = () => {
-    const [ counter, setCounter ] = useState(0)
-    // setTimeout(
-    //     () => setCounter(counter + 1),
-    //     1000
-    // )
-    const course = {
-        name: 'Half Stack application development',
-        parts: [
-            {
-                name: 'Fundamentals of React',
-                exercises: 10
-            },
-            {
-                name: 'Using props to pass data',
-                exercises: 7
-            },
-            {
-                name: 'State of a component',
-                exercises: 14
-            }
-        ]
-    }
+    // save clicks of each button to its own state
+    const [good, setGood] = useState(0)
+    const [neutral, setNeutral] = useState(0)
+    const [bad, setBad] = useState(0)
 
     return (
         <div>
-            <Header course={course.name}/>
-            <Content parts={course.parts}/>
-            <Total parts={course.parts}/>
-            <p>{counter}</p>
-            <button onClick={() => setCounter(counter + 1)}>
-                plus
-            </button>
-            <button onClick={() => setCounter(0)}>
-                zero
-            </button>
+            <h1>Give Feedback</h1>
+            <button onClick={() => {setGood(good+1)}}>good</button>
+            <button onClick={() => {setNeutral(neutral+1)}}>neutral</button>
+            <button onClick={() => {setBad(bad+1)}}>bad</button>
+            <h1>Statistics</h1>
+            <p>good: {good}</p>
+            <p>neutral: {neutral}</p>
+            <p>bad: {bad}</p>
         </div>
     )
 }
-
 
 export default App
