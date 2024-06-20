@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import {useState} from 'react'
 
 
-const Button = ({handleClick, text}) => {
+const Button = ({handleClick, text} : {handleClick: any, text: string})  =>
+{
     return (
         <button onClick={handleClick}> {text} </button>
     )
 }
 
-const Header = (props) => {
+const Header = (props: {text: string}) => {
     return (
         <div>
             <h1>
