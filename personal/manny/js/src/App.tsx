@@ -1,73 +1,31 @@
-const Header = (props) => {
-    return(
-        <div>
-            <h1>{props.courseName}</h1>
-        </div>
-    )
-}
-
-
-const Part = (props) =>{
-    return(
-        <div>
-            <p>{props.part.name} {props.part.exercises}</p>
-        </div>
-    )
-}
-
-const Content= (props) =>{
-    return(
-        <div>
-            {props.parts.map(part => (
-                <Part key={part.name} part={part}/>
-            ))}
-        </div>
-    )
-};
-
-
-
-
-const Total = (props) => {
-
-    let totalNum = 0;
-
-    props.parts.forEach(part => {
-        totalNum += part.exercises;
-    });
-
-    return (
-        <div>
-            <p>Number of exercises {totalNum}</p>
-        </div>
-    )
-}
-
+import { useState } from 'react'
 
 const App = () => {
-    const course = {
-        name: 'Half Stack application development',
-        parts: [
-            {
-                name: 'Fundamentals of React',
-                exercises: 10
-            },
-            {
-                name: 'Using props to pass data',
-                exercises: 7
-            },
-            {
-                name: 'State of a component',
-                exercises: 14
-            }
-        ]
-    }
+    // save clicks of each button to its own state
+    const [good, setGood] = useState(0)
+    const [neutral, setNeutral] = useState(0)
+    const [bad, setBad] = useState(0)
 
     return (
         <div>
-            <Header courseName={course.name} />
-            <Content parts={course.parts} />
-            <Total parts={course.parts}/>
+            <h1>give feedback</h1>
+            <button onClick={() => setGood(good + 1)}>
+                good
+            </button>
+
+            <button onClick={() => setNeutral(neutral + 1)}>
+                neutral
+            </button>
+
+            <button onClick={() => setBad(bad + 1)}>
+                bad
+            </button>
+
+            <h1>statistics</h1>
+
+            <p>good {good}</p>
+            <p>neutral {neutral}</p>
+            <p>bad {bad}</p>
         </div>
     )
 }
