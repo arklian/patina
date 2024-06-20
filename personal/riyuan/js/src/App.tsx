@@ -26,9 +26,12 @@ const Statistics = ({ title }: { title: string }) => {
 
 const StatisticLine = ({ text, value }) => {
     return (
-        <div>
-            {text}: {value}
-        </div>
+
+            <tr>
+                <td>{text}</td>
+                <td>{value}</td>
+            </tr>
+
     );
 };
 
@@ -49,14 +52,33 @@ const Rating = ({ prop }: { prop: { good: number; neutral: number; bad: number }
     const positivePercentage = ((prop.good / totalFeedback) * 100).toFixed(2);
 
     return (
-        <div>
-            <StatisticLine text="good" value ={prop.good} />
-            <StatisticLine text="neutral" value ={prop.neutral} />
-            <StatisticLine text="bad" value ={prop.bad} />
-            <StatisticLine text="all" value ={totalFeedback} />
-            <StatisticLine text="Average Score" value ={average} />
-            <StatisticLine text="Positive Feedback" value ={positivePercentage} />
-        </div>
+
+            <table>
+                <thead>
+                <StatisticLine text="good" value={prop.good}/>
+
+
+                <StatisticLine text="neutral" value={prop.neutral}/>
+
+
+                <StatisticLine text="neutral" value={prop.neutral}/>
+
+                <StatisticLine text="bad" value={prop.bad}/>
+
+
+                <StatisticLine text="all" value={totalFeedback}/>
+
+                <StatisticLine text="Average" value={average}/>
+
+                <StatisticLine text="Positive" value ={positivePercentage} />
+
+                </thead>
+
+            </table>
+
+
+
+
     );
 };
 
