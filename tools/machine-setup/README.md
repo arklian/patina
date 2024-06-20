@@ -24,6 +24,8 @@ Download the following from their websites:
 - Intellij Ultimate - Full Feature IDE
 - Sublime Merge - Git GUI
 - Github Desktop - Github GUI
+- Linear - Jira-like Project Management 
+- Notion - Shared note taking app
 - Obsidian (or other Notes app) - Markdown Note Taking App
 - Messenger
 
