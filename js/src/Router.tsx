@@ -4,7 +4,6 @@ import { HenryPage } from './personal/_henry/Henry.page.tsx'
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
 import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
-import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 
 const router = createBrowserRouter([
   {
@@ -22,15 +21,11 @@ const router = createBrowserRouter([
   {
     path: '/bryan',
     element: <BryanPage />,
-  }
+  },
   {
     path: '/amanda',
     element: <AmandaPage />,
   }
-  {
-    path: '/bryan',
-    element: <BryanPage />,
-  },
 ])
 
 export function Router() {
