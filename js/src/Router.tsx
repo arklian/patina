@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   {
     path: '/amanda',
     element: <AmandaPage />,
-  }
+  },
 ])
 
 export function Router() {
