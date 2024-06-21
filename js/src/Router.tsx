@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HomePage } from './pages/Home.page'
 import { HenryPage } from './personal/_henry/Henry.page.tsx'
+import { Henry2Page } from './personal/henry2/Henry2.page.tsx'
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
 import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 import { KaziPage } from './personal/kazi/Kazi.page.tsx'
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
   {
     path: '/manny',
     element: <MannyPage/>,
-  }
+  },
+  {
+    path: '/henry2',
+    element: <Henry2Page />,
+  },
 ])
 
 export function Router() {
