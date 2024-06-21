@@ -16,7 +16,7 @@ export function MalihaPage() {
           component="span"
           gradient={{ from: 'green', to: 'blue' }}
         >
-          Henry's Page
+          Maliha's Page
         </Text>
       </Title>
       <Text
