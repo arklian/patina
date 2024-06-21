@@ -9,6 +9,7 @@ import { MalihaPage } from './personal/_maliha/Maliha.page.tsx'
 import { JhPage } from './personal/_jionghao/Jionghao.page.tsx'
 import { HaokingPage } from './personal/Haoking/Haoking.page.tsx'
 import { KellyPage } from './personal/kelly/Kelly.page.tsx'
+import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: '/kelly',
     element: <KellyPage />,
+  },
+  {
+    path: '/riyuan',
+    element: <RiyuanPage />,
   },
 ])
 
