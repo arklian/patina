@@ -1,5 +1,7 @@
 import { Title, Text, Anchor } from '@mantine/core'
 import classes from './Welcome.module.css'
+import { RootRoutes } from '../../Routes'
+import { NavLink } from 'react-router-dom'
 
 export function Welcome() {
   return (
@@ -37,6 +39,14 @@ export function Welcome() {
         </Anchor>
         . To get started edit pages/Home.page.tsx file.
       </Text>
+      <ul>
+        <Text>Personal pages</Text>
+        {RootRoutes.map((routeObj) =>
+          <li>
+            <NavLink to={routeObj.path ?? '/'} >{routeObj.path ?? '/'}</NavLink>
+          </li>
+        )}
+      </ul>
     </>
   )
 }
