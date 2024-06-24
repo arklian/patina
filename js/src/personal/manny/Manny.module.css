@@ -4,6 +4,10 @@
   font-weight: 900;
   letter-spacing: rem(-2px);
 
+  .background{
+    background-color: #0a204a;
+  }
+
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);
   }
