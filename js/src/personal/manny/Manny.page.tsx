@@ -9,14 +9,14 @@ export function MannyPage() {
         ta="center"
         mt={100}
       >
-        Welcome to{' '}
+        {'Welcome to'}{' '}
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: 'green', to: 'blue' }}
         >
-          Manny's Page
+          {"Manny's Page"}
         </Text>
       </Title>
       <Text
@@ -27,7 +27,7 @@ export function MannyPage() {
         mx="auto"
         mt="xl"
       >
-        Hey! I'm Manny.
+        {"Hey! I'm Manny."}
       </Text>
     </>
   )
