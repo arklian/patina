@@ -14,9 +14,9 @@ export function MalihaPage() {
           inherit
           variant="gradient"
           component="span"
-          gradient={{ from: 'green', to: 'blue' }}
+          gradient={{ from: 'red', to: 'blue' }}
         >
-          Maliha's Page
+            Maliha&apos;s Page
         </Text>
       </Title>
       <Text
@@ -27,7 +27,7 @@ export function MalihaPage() {
         mx="auto"
         mt="xl"
       >
-        Hey! I'm Maliha.
+        Hey! I&apos;m Maliha.
       </Text>
     </>
   )
