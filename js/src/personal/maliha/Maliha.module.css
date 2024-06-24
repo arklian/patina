@@ -8,3 +8,9 @@
     font-size: rem(50px);
   }
 }
+
+.body {
+  background-color: #B07251;
+  padding: 40px;
+  font-family: Sans-Serif;
+}
