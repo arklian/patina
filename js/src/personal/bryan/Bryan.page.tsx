@@ -1,34 +1,20 @@
-import { Title, Text } from '@mantine/core'
-import styles from './Bryan.module.css'
+import { Text } from '@mantine/core'
+import { TimeDisplay } from './TimeDisplay.tsx'
 
 export function BryanPage() {
-    return (
-        <>
-            <Title
-                className={styles.title}
-                ta="center"
-                mt={100}
-            >
-                Welcome to{' '}
-                <Text
-                    inherit
-                    variant="gradient"
-                    component="span"
-                    gradient={{ from: 'green', to: 'blue' }}
-                >
-                    Bryan's Page
-                </Text>
-            </Title>
-            <Text
-                c="dimmed"
-                ta="center"
-                size="lg"
-                maw={580}
-                mx="auto"
-                mt="xl"
-            >
-                Hey! I'm Bryan.
-            </Text>
-        </>
-    )
+  return (
+    <>
+      <TimeDisplay />
+      <Text
+        c="blue"
+        ta="center"
+        size="xl"
+        maw={580}
+        mx="auto"
+        mt="md"
+      >
+        {'Hey! I\'m Bryan.'}
+      </Text>
+    </>
+  )
 }
