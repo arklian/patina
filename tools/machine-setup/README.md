@@ -170,7 +170,8 @@ Used to snap windows to half the screen or other places. MacOS 15 has this built
   - Inspections
     - CSS -> Invalid Elements -> Invalid Function -> Weak Warning
       - IntelliJ doesn't support the postcss-mixins plugin in the IntelliJ PostCSS plugin.
-
+  - Search "Prettier" -> Automatic + Run on save
+  - Search "ESLint" -> Automatics + No run on save
 ___
 
 # Optional
