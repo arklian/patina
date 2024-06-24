@@ -141,6 +141,7 @@ iTerm2
 - git config --global user.name "Henry Chen"
 - git config --global user.email "hjc77@cornell.edu"
 - git config --global pull.rebase true
+- git config --global push.autoSetupRemote true
 - git config --global core.editor "code --wait"
 
 ## Rectangle
