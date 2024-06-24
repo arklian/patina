@@ -1,7 +1,7 @@
 import { Title, Text } from '@mantine/core'
 import styles from './Jionghao.module.css'
 
-export function JhPage() {
+export function JionghaoPage() {
   return (
     <>
       <Title

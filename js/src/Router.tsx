@@ -6,7 +6,7 @@ import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 import { KaziPage } from './personal/kazi/Kazi.page.tsx'
 import { MannyPage } from './personal/Manny/Manny.page.tsx'
 import { MalihaPage } from './personal/_maliha/Maliha.page.tsx'
-import { JhPage } from './personal/jionghao/Jionghao.page.tsx'
+import { JionghaoPage } from './personal/jionghao/Jionghao.page.tsx'
 import { HaokingPage } from './personal/Haoking/Haoking.page.tsx'
 import { KellyPage } from './personal/kelly/Kelly.page.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/jionghao',
-    element: <JhPage />,
+    element: <JionghaoPage />,
   },
   {
     path: '/haoking',
