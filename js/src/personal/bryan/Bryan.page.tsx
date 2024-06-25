@@ -1,9 +1,11 @@
 import { Text } from '@mantine/core'
 import { TimeDisplay } from './TimeDisplay.tsx'
+import { Settings } from './Settings.tsx'
 
 export function BryanPage() {
   return (
     <>
+      <Settings />
       <TimeDisplay />
       <Text
         c="blue"
@@ -13,7 +15,7 @@ export function BryanPage() {
         mx="auto"
         mt="md"
       >
-        {'Hey! I\'m Bryan.'}
+        {"Hey! I'm Bryan."}
       </Text>
     </>
   )
