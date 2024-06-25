@@ -4,11 +4,52 @@
   font-weight: 900;
   letter-spacing: rem(-2px);
 
-  .background{
-    background-color: #0a204a;
-  }
-
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);
   }
+}
+
+.background{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('./asset/blue_back.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #777cf7;
+  position: fixed;
+  bottom: 0;
+}
+
+.logocontainer{
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.logo{
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+  filter: brightness(0) invert(100);
+}
+
+.footertext{
+  color: white;
 }
