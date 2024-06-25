@@ -10,7 +10,7 @@
     bottom: 0;
 }
 
-.logocontainer{
+.logoContainer{
     display: flex;
     height: auto;
     align-items: center;
@@ -25,6 +25,6 @@
     filter: brightness(0) invert(100);
 }
 
-.footertext{
+.footerText{
     color: white;
 }
