@@ -1,15 +1,26 @@
 .title {
   font-family: "Noto Serif Display", serif;
-  font-size: rem(200px);
+  font-size: 15vw;
+  line-height: 175px;
   font-style: normal;
   letter-spacing: 20px;
   justify-content: center;
   text-align: center;
+
 }
 
-.title_container{
-  display:flex;
+.window_container{
+  padding-top: 3vw;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
+.window {
+  display: flex;
+  border: 1px solid black;
+  width: 90vw;
+  height: 35vw;
+  align-items: center;
+  justify-content: center;
+}
