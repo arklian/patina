@@ -8,3 +8,15 @@
     font-size: rem(50px);
   }
 }
+
+.pageContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
