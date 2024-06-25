@@ -20,6 +20,9 @@ importers:
       gsap:
         specifier: ^3.12.5
         version: 3.12.5
+      '@tabler/icons-react':
+        specifier: ^3.6.0
+        version: 3.6.0(react@18.3.1)
       postcss-import:
         specifier: ^16.1.0
         version: 16.1.0(postcss@8.4.38)
