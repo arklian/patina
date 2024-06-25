@@ -1,7 +1,31 @@
-import { Title, Text } from '@mantine/core'
+import { Button, Title, Text, useMantineColorScheme } from '@mantine/core'
+import React, { useState } from 'react'
+import { FaSun, FaMoon } from 'react-icons/fa'
 import styles from './Kazi.module.css'
 
 export function KaziPage() {
+  const [sun, setSun] = useState(true)
+  const [animate, setAnimate] = useState('')
+  const { setColorScheme } = useMantineColorScheme()
+
+  const changeIcon = () => {
+    if (animate === '') {
+      setAnimate(sun ? 'exitSun' : 'exitMoon')
+      setTimeout(() => {
+        setSun(!sun)
+        setAnimate(sun ? 'enterMoon' : 'enterSun')
+        setTimeout(() => {
+          setAnimate('')
+        }, 750)
+      }, 750)
+    }
+    if (!sun) {
+      setColorScheme('light')
+    } else {
+      setColorScheme('dark')
+    }
+  }
+
   return (
     <>
       <Title
@@ -29,6 +53,34 @@ export function KaziPage() {
       >
         Hey! I'm Kazi.
       </Text>
+
+      <Button
+        className={styles.sunToMoonButton}
+        onClick={changeIcon}
+      >
+        {sun ?
+          <FaSun
+            className={
+              animate === 'exitSun' ? styles.animationExit
+              : animate === 'enterSun' ?
+                styles.animationEnter
+              : ''
+            }
+            color="#FDB813"
+            size={30}
+          />
+        : <FaMoon
+            className={
+              animate === 'exitMoon' ? styles.animationExit
+              : animate === 'enterMoon' ?
+                styles.animationEnter
+              : ''
+            }
+            color="#8a7f8d"
+            size={30}
+          />
+        }
+      </Button>
     </>
   )
 }
