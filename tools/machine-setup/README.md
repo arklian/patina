@@ -122,6 +122,7 @@ iTerm2
   - brew install node
   - brew install pnpm
   - brew install coreutils
+  - brew install gh
   - brew install --cask git-credential-manager
 
 ## VSCode
@@ -176,6 +177,8 @@ Used to snap windows to half the screen or other places. MacOS 15 has this built
       - IntelliJ doesn't support the postcss-mixins plugin in the IntelliJ PostCSS plugin.
   - Search "Prettier" -> Automatic + Run on save
   - Search "ESLint" -> Automatics + No run on save
+  - Search "StyleLint" -> Automatic + Run on save
+
 ___
 
 # Optional
