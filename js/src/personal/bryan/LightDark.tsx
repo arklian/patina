@@ -1,3 +1,4 @@
+/** Component to toggle the light or dark mode of the page. */
 import { Button, useMantineColorScheme } from '@mantine/core'
 
 export function LightDark() {

@@ -18,7 +18,7 @@ export function TimeDisplay() {
     'Dec',
   ]
   const [date, setDate] = useState(new Date())
-  // useEffect is used here to allow setsDate to rerun every second
+  // Refresh the time every second to keep it at the current time.
   useEffect(() => {
     setInterval(() => setDate(new Date()), 1000)
   })
