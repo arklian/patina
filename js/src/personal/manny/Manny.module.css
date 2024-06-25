@@ -12,7 +12,7 @@
 .background{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-image: url('./asset/blue_back.jpg');
   background-size: cover;
@@ -21,4 +21,19 @@
   height: 100vh;
   margin: 0;
   padding-top: 20px;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.personalImage{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
 }
