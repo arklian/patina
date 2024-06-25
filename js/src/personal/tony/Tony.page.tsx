@@ -1,8 +1,7 @@
 import { Title, Text, Grid, Image, ActionIcon } from '@mantine/core'
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import styles from './Tony.module.css'
-
-//TonyPage Component
+/** Page component for the main page of Tony's Website */
 export function TonyPage() {
   return (
     <>
