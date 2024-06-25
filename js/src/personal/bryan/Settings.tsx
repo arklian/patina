@@ -1,3 +1,4 @@
+/** Component to create a settings menu to encompass setting-like page modifiables */
 import { Flex, Button, Menu } from '@mantine/core'
 import { LightDark } from './LightDark.tsx'
 
