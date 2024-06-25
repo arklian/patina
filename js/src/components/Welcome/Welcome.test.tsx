@@ -1,5 +1,4 @@
-import { render, screen } from '../../../test-utils/test-utils.ts'
-// TODO(Henry): Fix aliasing for postcss.
+import { render, screen } from '@test-utils/test-utils.ts'
 import { Welcome } from './Welcome'
 
 describe('Welcome component', () => {
