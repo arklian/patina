@@ -10,7 +10,22 @@
 }
 
 .body {
-  background-color: #B07251;
-  padding: 40px;
   font-family: Sans-Serif;
+}
+.border {
+  border-left: 1px solid #662100;
+  height: 100%;
+  position: fixed;
+  left: 10%;
+  margin-left: -3px;
+  top: 0;
+}
+.menu {
+
+}
+.menuWrapper {
+  padding: 20px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
 }
