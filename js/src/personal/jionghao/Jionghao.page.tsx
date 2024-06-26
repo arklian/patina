@@ -1,13 +1,15 @@
 import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Jionghao.module.css'
-import { FooterSocial } from './FooterSocial.tsx'
 import { DarkModeToggle } from './DarkModeToggle.tsx'
 import { theme } from './theme.ts'
+import { FooterSocial } from './components/FooterSocial.tsx'
+import { Header } from './components/Header.tsx'
 
 export function JionghaoPage() {
   return (
     <MantineProvider theme={theme}>
       <div className={styles.pageContainer}>
+        <Header />
         <Title
           className={styles.title}
           ta="center"
