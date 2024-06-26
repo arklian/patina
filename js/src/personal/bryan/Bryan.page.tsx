@@ -3,6 +3,7 @@ import { TimeDisplay } from './TimeDisplay.tsx'
 import { Settings } from './Settings.tsx'
 import classes from './Bryan.module.css'
 import { theme } from './theme.ts'
+import { Status } from './Status.tsx'
 
 export function BryanPage() {
   return (
@@ -25,13 +26,14 @@ export function BryanPage() {
       <Text
         c="blue"
         ta="center"
-        size="xl"
+        size="md"
         maw={580}
         mx="auto"
         mt="md"
       >
         {"Hey! I'm Bryan."}
       </Text>
+      <Status />
     </MantineProvider>
   )
 }
