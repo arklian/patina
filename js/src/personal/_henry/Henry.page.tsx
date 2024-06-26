@@ -9,14 +9,14 @@ export function HenryPage() {
         ta="center"
         mt={100}
       >
-        Welcome to{' '}
+        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: 'green', to: 'blue' }}
         >
-          Henry's Page
+          {"Henry's Page"}
         </Text>
       </Title>
       <Text
@@ -27,7 +27,7 @@ export function HenryPage() {
         mx="auto"
         mt="xl"
       >
-        Hey! I'm Henry.
+        {"Hey! I'm Henry."}
       </Text>
     </>
   )

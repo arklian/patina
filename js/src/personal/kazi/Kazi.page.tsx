@@ -1,5 +1,4 @@
 import { Title, Text } from '@mantine/core'
-import React from 'react'
 import styles from './Kazi.module.css'
 import { DarkModeToggle } from './components/DarkModeToggle/DarkModeToggle'
 
@@ -11,14 +10,14 @@ export function KaziPage() {
         ta="center"
         mt={100}
       >
-        Welcome to{' '}
+        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: 'green', to: 'blue' }}
         >
-          Kazi's Page
+          {"Kazi's Page"}
         </Text>
       </Title>
       <Text
@@ -29,7 +28,7 @@ export function KaziPage() {
         mx="auto"
         mt="xl"
       >
-        Hey! I'm Kazi.
+        {"Hey! I'm Kazi."}
       </Text>
 
       <DarkModeToggle />

@@ -3,10 +3,12 @@
     height: 100vh;
 
 }
+
 .mainPage {
     display: flex;
     margin-top: 50px;
 }
+
 .title {
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     font-size: rem(100px);
@@ -17,6 +19,7 @@
         font-size: rem(50px);
     }
 }
+
 .navbar {
     width: 20vw;
     margin-right: 200px;

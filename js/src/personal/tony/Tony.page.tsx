@@ -16,7 +16,7 @@ export function TonyPage() {
             component="span"
             gradient={{ from: 'blue', to: 'green' }}
           >
-            Tony Wang
+            {'Tony Wang'}
           </Text>
         </Title>
         <Text
@@ -27,7 +27,7 @@ export function TonyPage() {
           mx="auto"
           mt="xl"
         >
-          Hey! I'm Tony.
+          {"Hey! I'm Tony."}
         </Text>
       </div>
     </>

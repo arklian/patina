@@ -18,26 +18,28 @@
 }
 
 .animationEnter {
-    animation: enterFromRight 0.75s forwards;
+    animation: enter-from-right 0.75s forwards;
 }
 
 .animationExit {
-    animation: exitToLeft 0.75s forwards;
+    animation: exit-to-left 0.75s forwards;
 }
 
-@keyframes enterFromRight {
+@keyframes enter-from-right {
     from {
         transform: translateX(80px);
     }
+
     to {
         transform: translateX(0);
     }
 }
 
-@keyframes exitToLeft {
+@keyframes exit-to-left {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-80px);
     }

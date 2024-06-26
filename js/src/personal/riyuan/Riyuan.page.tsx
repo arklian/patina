@@ -9,14 +9,14 @@ export function RiyuanPage() {
         ta="center"
         mt={100}
       >
-        Welcome to{' '}
+        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: 'green', to: 'blue' }}
         >
-          Riyuan's Page
+          {"Riyuan's Page"}
         </Text>
       </Title>
       <Text
@@ -27,7 +27,7 @@ export function RiyuanPage() {
         mx="auto"
         mt="xl"
       >
-        Hey! I'm Riyuan.
+        {"Hey! I'm Riyuan."}
       </Text>
     </>
   )

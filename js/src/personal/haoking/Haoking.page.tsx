@@ -1,20 +1,8 @@
-import {
-  MantineProvider,
-  createTheme,
-  Title,
-  Text,
-  Button,
-  Box,
-  Flex,
-  Image,
-  em,
-  rem,
-} from '@mantine/core'
+import { Title, Text, Button, Box, Flex, Image, rem } from '@mantine/core'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
-import { useState } from 'react'
 import styles from './Haoking.module.css'
 
-const darkTheme = createTheme({
+const darkTheme = {
   colors: {
     white: [
       '#f2f2f2',
@@ -54,7 +42,7 @@ const darkTheme = createTheme({
     ],
   },
   fontFamily: 'Helvetica, sans-serif',
-})
+}
 
 export function HaokingPage() {
   return (

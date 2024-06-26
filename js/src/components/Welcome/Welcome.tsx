@@ -1,7 +1,7 @@
 import { Title, Text, Anchor } from '@mantine/core'
+import { NavLink } from 'react-router-dom'
 import classes from './Welcome.module.css'
 import { RootRoutes } from '../../Routes'
-import { NavLink } from 'react-router-dom'
 
 export function Welcome() {
   return (
@@ -11,14 +11,14 @@ export function Welcome() {
         ta="center"
         mt={100}
       >
-        Welcome to{' '}
+        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
           gradient={{ from: 'pink', to: 'yellow' }}
         >
-          Mantine
+          {'Mantine'}
         </Text>
       </Title>
       <Text
@@ -29,23 +29,25 @@ export function Welcome() {
         mx="auto"
         mt="xl"
       >
-        This starter Vite project includes a minimal setup, if you want to learn
-        more on Mantine + Vite integration follow{' '}
+        {
+          'This starter Vite project includes a minimal setup, if you want to learn'
+        }
+        {'more on Mantine + Vite integration follow '}
         <Anchor
           href="https://mantine.dev/guides/vite/"
           size="lg"
         >
-          this guide
+          {'this guide'}
         </Anchor>
-        . To get started edit pages/Home.page.tsx file.
+        {'. To get started edit pages/Home.page.tsx file.'}
       </Text>
       <ul>
-        <Text>Personal pages</Text>
-        {RootRoutes.map((routeObj) =>
+        <Text>{'Personal pages'}</Text>
+        {RootRoutes.map((routeObj) => (
           <li>
-            <NavLink to={routeObj.path ?? '/'} >{routeObj.path ?? '/'}</NavLink>
+            <NavLink to={routeObj.path ?? '/'}>{routeObj.path ?? '/'}</NavLink>
           </li>
-        )}
+        ))}
       </ul>
     </>
   )

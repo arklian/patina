@@ -1,3 +1,4 @@
+import { RouteObject } from 'react-router-dom'
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
 import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 import { HaokingPage } from './personal/haoking/Haoking.page.tsx'
@@ -9,7 +10,6 @@ import { KellyPage } from './personal/kelly/Kelly.page.tsx'
 import { MalihaPage } from './personal/maliha/Maliha.page.tsx'
 import { MannyPage } from './personal/Manny/Manny.page.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
-import { RouteObject } from 'react-router-dom'
 import { TonyPage } from './personal/tony/Tony.page.tsx'
 
 export const RootRoutes: RouteObject[] = [
@@ -61,4 +61,4 @@ export const RootRoutes: RouteObject[] = [
     path: '/riyuan',
     element: <RiyuanPage />,
   },
-];
+]
