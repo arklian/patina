@@ -2,6 +2,7 @@ import { useMemo, useState, useEffect } from 'react'
 import { Title } from '@mantine/core'
 import styles from './Bryan.module.css'
 
+/** Component to display current time and day */
 export function TimeDisplay() {
   const months = [
     'Jan.',
@@ -17,10 +18,19 @@ export function TimeDisplay() {
     'Nov.',
     'Dec',
   ]
+  const weekday = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ]
   const [date, setDate] = useState(new Date())
   // Refresh the time every second to keep it at the current time.
   useEffect(() => {
-    setInterval(() => setDate(new Date()), 1000)
+    setInterval(() => setDate(new Date()), 250)
   })
 
   const Hours = useMemo(() => {
@@ -42,7 +52,6 @@ export function TimeDisplay() {
     }
     return String(hour)
   }, [date])
-  //rewrite away from function
   const Minutes = useMemo(() => {
     const minute = date.getMinutes()
     if (minute < 10) {
@@ -50,10 +59,13 @@ export function TimeDisplay() {
     }
     return String(minute)
   }, [date])
-
   const AM = useMemo(() => {
     if (date.getHours() < 12) return 'AM'
     return 'PM'
+  }, [date])
+  const Colon = useMemo(() => {
+    if (date.getSeconds() % 2 === 0) return ' '
+    return ':'
   }, [date])
 
   return (
@@ -62,9 +74,11 @@ export function TimeDisplay() {
       ta="center"
       mt={50}
     >
-      {`${Hours}:${Minutes}${AM} EST`}
+      {`${Hours}${Colon}${Minutes}${AM} EST`}
       <br />
-      {months[date.getMonth()]} {date.getDate()}
+      {'Today is '}
+      <br />
+      {`${weekday[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`}
     </Title>
   )
 }
