@@ -1,4 +1,3 @@
-import { RouteObject } from 'react-router-dom'
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
 import { BryanPage } from './personal/bryan/Bryan.page.tsx'
 import { HaokingPage } from './personal/haoking/Haoking.page.tsx'
@@ -12,53 +11,65 @@ import { MannyPage } from './personal/Manny/Manny.page.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
 import { TonyPage } from './personal/tony/Tony.page.tsx'
 
-export const RootRoutes: RouteObject[] = [
+export const RootRoutes = [
   {
     path: '/',
+    description: 'Home',
     element: <HomePage />,
   },
   {
     path: '/henry',
+    description: "Henry's Page",
     element: <HenryPage />,
   },
   {
-    path: '/tony',
-    element: <TonyPage />,
-  },
-  {
     path: '/amanda',
+    description: "Amanda's Page",
     element: <AmandaPage />,
   },
   {
     path: '/bryan',
+    description: "Bryan's Page",
     element: <BryanPage />,
   },
   {
-    path: '/kazi',
-    element: <KaziPage />,
-  },
-  {
-    path: '/manny',
-    element: <MannyPage />,
-  },
-  {
-    path: '/maliha',
-    element: <MalihaPage />,
-  },
-  {
-    path: '/jionghao',
-    element: <JionghaoPage />,
-  },
-  {
     path: '/haoking',
+    description: "Haoking's Page",
     element: <HaokingPage />,
   },
   {
+    path: '/jionghao',
+    description: "Jionghao's Page",
+    element: <JionghaoPage />,
+  },
+  {
+    path: '/kazi',
+    description: "Kazi's Page",
+    element: <KaziPage />,
+  },
+  {
     path: '/kelly',
+    description: "Kelly's Page",
     element: <KellyPage />,
   },
   {
+    path: '/maliha',
+    description: "Maliha's Page",
+    element: <MalihaPage />,
+  },
+  {
+    path: '/manny',
+    description: "Manny's Page",
+    element: <MannyPage />,
+  },
+  {
     path: '/riyuan',
+    description: "Riyuan's Page",
     element: <RiyuanPage />,
+  },
+  {
+    path: '/tony',
+    description: "Tony's Page",
+    element: <TonyPage />,
   },
 ]

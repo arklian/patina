@@ -1,9 +1,21 @@
-import { Title, Text, Anchor } from '@mantine/core'
-import { NavLink } from 'react-router-dom'
+import {
+  Title,
+  Text,
+  NavLink,
+  Stack,
+  Center,
+  Container,
+  useMantineTheme,
+} from '@mantine/core'
+import { IconHome2 } from '@tabler/icons-react'
 import classes from './Welcome.module.css'
-import { RootRoutes } from '../../Routes'
+import { RootRoutes } from '@/Routes'
+import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle.tsx'
 
+/** Temporary landing page for the root route */
 export function Welcome() {
+  const theme = useMantineTheme()
+
   return (
     <>
       <Title
@@ -11,14 +23,17 @@ export function Welcome() {
         ta="center"
         mt={100}
       >
-        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
-          gradient={{ from: 'pink', to: 'yellow' }}
+          // gradient={{ from: 'teal.4', to: 'teal.9' }}
+          gradient={{
+            from: theme.colors.patina[4],
+            to: theme.colors.patina[9],
+          }}
         >
-          {'Mantine'}
+          {'Welcome to Patina'}
         </Text>
       </Title>
       <Text
@@ -27,28 +42,41 @@ export function Welcome() {
         size="lg"
         maw={580}
         mx="auto"
-        mt="xl"
       >
-        {
-          'This starter Vite project includes a minimal setup, if you want to learn'
-        }
-        {'more on Mantine + Vite integration follow '}
-        <Anchor
-          href="https://mantine.dev/guides/vite/"
-          size="lg"
-        >
-          {'this guide'}
-        </Anchor>
-        {'. To get started edit pages/Home.page.tsx file.'}
+        {'This is a temporary landing page for the Patina project.'}
       </Text>
-      <ul>
-        <Text>{'Personal pages'}</Text>
-        {RootRoutes.map((routeObj) => (
-          <li>
-            <NavLink to={routeObj.path ?? '/'}>{routeObj.path ?? '/'}</NavLink>
-          </li>
-        ))}
-      </ul>
+      <Container mb={40}>
+        <ColorSchemeToggle />
+      </Container>
+      <Center>
+        <Stack
+          align={'flex-start'}
+          gap={0}
+        >
+          <Title order={2}>
+            <Text
+              inherit
+              component="span"
+              c={theme.colors.patina[7]}
+            >
+              {'Personal Portfolio Websites'}
+            </Text>
+          </Title>
+          {RootRoutes.map((routeObj) => (
+            <NavLink
+              key={routeObj.path}
+              href={routeObj.path ?? '/'}
+              label={routeObj.description ?? '/'}
+              leftSection={
+                <IconHome2
+                  size="1rem"
+                  stroke={1.5}
+                />
+              }
+            />
+          ))}
+        </Stack>
+      </Center>
     </>
   )
 }
