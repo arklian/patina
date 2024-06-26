@@ -149,6 +149,7 @@ iTerm2
 - git config --global core.editor "code --wait"
 - git config --global alias.pushf 'push --force-with-lease --force-if-includes'
 - git config --global alias.pullo 'pull origin main'
+- git config --global alias.rebaseo 'rebase -i origin/main'
 
 ## Rectangle
 Used to snap windows to half the screen or other places. MacOS 15 has this built in.
