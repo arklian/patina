@@ -1,14 +1,29 @@
 .mainContainer{
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
-  justify-content: space-evenly;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+
 }
 
 .header {
-  width: 100%;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
   background-color: light-dark(var(--mantine-color-white),var(--mantine-color-dark-7));
 }
 
 .modeButton{
+
   border-width: 0.1px;
+}
+
+.button{
+  font-weight: normal;
+  font-size: medium;
 }

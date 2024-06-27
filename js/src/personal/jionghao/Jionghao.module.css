@@ -10,7 +10,10 @@
 }
 
 .pageContainer{
+  width: 100%;
+  max-width: none;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+
 }
