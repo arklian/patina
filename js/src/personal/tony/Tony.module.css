@@ -1,15 +1,37 @@
 .title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(100px);
-  font-weight: 900;
-  letter-spacing: rem(-2px);
+  font-size: rem(60px);
+  font-weight: 400;
+  color: white;
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);
   }
 }
 
-.background{
-  background-color: #0a204a;
+.text {
+  color: white;
+  font-size: rem(30px);
+  font-weight: 200;
 }
 
+.about {
+  color: white;
+  font-size: rem(25px);
+  font-weight: 200;
+}
+
+.pfp {
+  border-radius: 10px;
+}
+
+.grid{
+  background-color: #0a204a;
+  padding: 50px;
+  height: 100vh;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
