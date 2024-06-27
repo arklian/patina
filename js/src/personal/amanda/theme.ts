@@ -41,6 +41,7 @@ export const themeOverride = createTheme({
   },
 
   primaryColor: 'blue',
+  fontFamily: 'Optima',
   other: {
     lightBgColor: '#E0FBFC',
     darkBgColor: '#3E4C5E',
