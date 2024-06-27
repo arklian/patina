@@ -1,27 +1,46 @@
-import { Flex, Button, Menu } from '@mantine/core'
+import {
+  Flex,
+  Button,
+  HoverCard,
+  Center,
+  Box,
+  Group,
+  Text,
+} from '@mantine/core'
 import { LightDark } from './LightDark.tsx'
 
 /** Component to create a settings menu to encompass setting-like page modifiables */
 export function Settings() {
   return (
     <Flex justify="flex-end">
-      <Menu
-        trigger="click-hover"
-        openDelay={100}
+      <HoverCard
+        width={300}
+        position="bottom"
+        radius="md"
+        shadow="md"
         closeDelay={500}
+        withinPortal
       >
-        <Menu.Target>
-          <Button> {'Settings'} </Button>
-        </Menu.Target>
-        <Menu.Dropdown>
-          <Menu.Label>{'Change light/dark mode'}</Menu.Label>
-          <Menu.Divider />
-          <Menu.Item color="gray">
+        <HoverCard.Target>
+          <Center inline>
+            <Box
+              component="span"
+              mr={5}
+            >
+              <Button color="gray"> {'Settings'} </Button>
+            </Box>
+          </Center>
+        </HoverCard.Target>
+        <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+          <Group
+            justify="space-between"
+            px="md"
+          >
+            <Text>{'Change light/dark mode'}</Text>
             <LightDark />
-          </Menu.Item>
-          <Menu.Divider />
-        </Menu.Dropdown>
-      </Menu>
+          </Group>
+        </HoverCard.Dropdown>
+      </HoverCard>
     </Flex>
   )
 }

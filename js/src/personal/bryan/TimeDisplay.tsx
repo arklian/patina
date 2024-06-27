@@ -1,32 +1,32 @@
 import { useMemo, useState, useEffect } from 'react'
-import { Title } from '@mantine/core'
+import { Title, Space } from '@mantine/core'
 import styles from './Bryan.module.css'
 
+const months = [
+  'Jan.',
+  'Feb.',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'Aug.',
+  'Sept',
+  'Oct.',
+  'Nov.',
+  'Dec',
+]
+const weekday = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+]
 /** Component to display current time and day */
 export function TimeDisplay() {
-  const months = [
-    'Jan.',
-    'Feb.',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'Aug.',
-    'Sept',
-    'Oct.',
-    'Nov.',
-    'Dec',
-  ]
-  const weekday = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ]
   const [date, setDate] = useState(new Date())
   // Refresh the time every second to keep it at the current time.
   useEffect(() => {
@@ -63,10 +63,7 @@ export function TimeDisplay() {
     if (date.getHours() < 12) return 'AM'
     return 'PM'
   }, [date])
-  const Colon = useMemo(() => {
-    if (date.getSeconds() % 2 === 0) return ' '
-    return ':'
-  }, [date])
+  const colon = date.getSeconds() % 2 === 0 ? ' ' : ':'
 
   return (
     <Title
@@ -74,10 +71,15 @@ export function TimeDisplay() {
       ta="center"
       mt={50}
     >
-      {`${Hours}${Colon}${Minutes}${AM} EST`}
-      <br />
-      {'Today is '}
-      <br />
+      {`${Hours}${colon}${Minutes}${AM} EST`}
+      <Space h="xs" />
+      <Title
+        className={styles.title2}
+        component="span"
+      >
+        {'Today is '}
+      </Title>
+      <Space h="xs" />
       {`${weekday[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`}
     </Title>
   )
