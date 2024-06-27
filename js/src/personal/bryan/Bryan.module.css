@@ -1,13 +1,21 @@
 .title {
-    font-family: 'Inconsolata', monospace;
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-size: rem(5em);
-    font-weight: bold;
+    font-size: rem(80px);
     letter-spacing: rem(-2px);
 
     @media (max-width: $mantine-breakpoint-md) {
         font-size: rem(50px);
     }
+}
+
+.title2 {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(64px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
 }
 
 .header {

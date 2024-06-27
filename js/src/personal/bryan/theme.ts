@@ -8,6 +8,11 @@ import { createTheme, DEFAULT_THEME, mergeMantineTheme } from '@mantine/core'
  * {@link https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/core/src/core/MantineProvider/default-colors.ts Default Colors}
  */
 export const themeOverride = createTheme({
+  headings: {
+    fontFamily: 'Inconsolata, monospace, serif',
+    fontWeight: 'bold',
+  },
+  fontFamily: 'Inconsolata, monospace, serif',
   colors: {
     dark: [
       '#C9C9C9',

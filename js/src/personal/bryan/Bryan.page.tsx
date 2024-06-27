@@ -1,27 +1,13 @@
-import { Text, Container, Group, MantineProvider } from '@mantine/core'
+import { Text, MantineProvider } from '@mantine/core'
 import { TimeDisplay } from './TimeDisplay.tsx'
-import { Settings } from './Settings.tsx'
-import classes from './Bryan.module.css'
 import { theme } from './theme.ts'
 import { Status } from './Status.tsx'
+import { NavBar } from './NavBar.tsx'
 
 export function BryanPage() {
   return (
     <MantineProvider theme={theme}>
-      <header className={classes.header}>
-        <Container
-          size="md"
-          className={classes.inner}
-        >
-          <Settings />
-          <Group
-            gap={5}
-            visibleFrom="xs"
-          >
-            {'bloop'}
-          </Group>
-        </Container>
-      </header>
+      <NavBar />
       <TimeDisplay />
       <Text
         c="blue"

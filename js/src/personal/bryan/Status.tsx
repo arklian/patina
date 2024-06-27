@@ -18,7 +18,7 @@ export function Status() {
   }, [date])
   return (
     <Title
-      className={styles.title}
+      className={styles.title2}
       ta="center"
       mt={50}
     >
