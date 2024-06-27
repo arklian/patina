@@ -1,6 +1,7 @@
-import { Group, Button, Flex } from '@mantine/core'
+import { Group, Flex } from '@mantine/core'
 import styles from './Header.module.css'
 import { DarkModeToggle } from './DarkModeToggle.tsx'
+import { HoverButton } from './HoverButton.tsx'
 
 export function Header() {
   return (
@@ -13,46 +14,22 @@ export function Header() {
       </Flex>
       <Flex justify="space-between">
         <Group>
-          <Button
-            className={styles.button}
-            variant="subtle"
-            component="a"
-            href="#about"
-            color={'cyan'}
-            size={'md'}
-          >
-            {'About'}
-          </Button>
-          <Button
-            className={styles.button}
-            variant="subtle"
-            component="a"
-            href="#experience"
-            color={'cyan'}
-            size={'md'}
-          >
-            {'Experience'}
-          </Button>
-          <Button
-            className={styles.button}
-            variant="subtle"
-            component="a"
-            href="#work"
-            color={'cyan'}
-            size={'md'}
-          >
-            {'Work'}
-          </Button>
-          <Button
-            className={styles.button}
-            variant="subtle"
-            component="a"
-            href="#contact"
-            color={'cyan'}
-            size={'md'}
-          >
-            {'Contact'}
-          </Button>
+          <HoverButton
+            buttonName="About"
+            buttonLink="#about"
+          />
+          <HoverButton
+            buttonName="Experience"
+            buttonLink="#experience"
+          />
+          <HoverButton
+            buttonName="Work"
+            buttonLink="#work"
+          />
+          <HoverButton
+            buttonName="Contact"
+            buttonLink="#contact"
+          />
           <DarkModeToggle />
         </Group>
       </Flex>
