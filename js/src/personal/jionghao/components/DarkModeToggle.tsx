@@ -3,7 +3,7 @@ import {
   MantineColorScheme,
   useMantineColorScheme,
 } from '@mantine/core'
-import { IconSunHigh } from '@tabler/icons-react'
+import { IconMoon, IconSunHigh } from '@tabler/icons-react'
 import { useToggle } from '@mantine/hooks'
 import styles from '@/personal/jionghao/Jionghao.module.css'
 
@@ -15,14 +15,21 @@ export function DarkModeToggle() {
     toggle()
     setColorScheme(modeValue as MantineColorScheme)
   }
+  const isDark = modeValue !== 'dark'
 
   return (
-    <div className={styles.buttonWrapper}>
+    <div>
       <Button
-        size={'sm'}
+        className={styles.modeButton}
+        size={'compact-md'}
+        color={'gray'}
+        variant={'outline'}
         onClick={changeMode}
+        radius={'xl'}
       >
-        <IconSunHigh size={25} />{' '}
+        {isDark ?
+          <IconSunHigh size={24} />
+        : <IconMoon size={24} />}
       </Button>
     </div>
   )

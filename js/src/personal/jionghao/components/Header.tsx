@@ -1,23 +1,8 @@
-import {
-  Container,
-  Group,
-  Button,
-  Flex,
-  useMantineColorScheme,
-  MantineColorScheme,
-} from '@mantine/core'
-import { IconSunHigh, IconMoon } from '@tabler/icons-react'
-import { useToggle } from '@mantine/hooks'
+import { Container, Group, Button, Flex } from '@mantine/core'
 import styles from './Header.module.css'
+import { DarkModeToggle } from './DarkModeToggle.tsx'
 
 export function Header() {
-  const { setColorScheme } = useMantineColorScheme()
-  const [modeValue, toggle] = useToggle(['light', 'dark'])
-  const changeMode = () => {
-    toggle()
-    setColorScheme(modeValue as MantineColorScheme)
-  }
-  const isDark = modeValue !== 'dark'
   return (
     <div className={styles.header}>
       <Container className={styles.mainContainer}>
@@ -57,25 +42,14 @@ export function Header() {
               {'Work'}
             </Button>
             <Button
-              variant="transparent"
+              variant="subtle"
               component="a"
               href="#contact"
               color={'cyan'}
             >
               {'Contact'}
             </Button>
-            <Button
-              className={styles.modeButton}
-              size={'compact-md'}
-              color={'gray'}
-              variant={'outline'}
-              onClick={changeMode}
-              radius={'xl'}
-            >
-              {isDark ?
-                <IconSunHigh size={24} />
-              : <IconMoon size={24} />}
-            </Button>
+            <DarkModeToggle />
           </Group>
         </Flex>
       </Container>
