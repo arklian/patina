@@ -1,0 +1,10 @@
+[push]
+	autoSetupRemote = true
+[rebase]
+	autoStash = true
+[branch]
+	autoSetupRebase = always
+[alias]
+	pushf = push --force-with-lease --force-if-includes
+	pullo = pull origin main
+	rebaseo = rebase -i origin/main

@@ -158,13 +158,9 @@ iTerm2
 - git credential-manager github login
 - git config --global user.name "Henry Chen"
 - git config --global user.email "hjc77@cornell.edu"
-- git config --global pull.rebase true
-- git config --global rebase.autoStash true
-- git config --global push.autoSetupRemote true
 - git config --global core.editor "code --wait"
-- git config --global alias.pushf 'push --force-with-lease --force-if-includes'
-- git config --global alias.pullo 'pull origin main'
-- git config --global alias.rebaseo 'rebase -i origin/main'
+- git config --local include.path "../tools/git/.gitconfig"
+
 
 ## Rectangle
 Used to snap windows to half the screen or other places. MacOS 15 has this built in.
