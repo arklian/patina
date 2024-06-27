@@ -33,7 +33,7 @@ export function Settings() {
         </HoverCard.Target>
         <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
           <Group
-            justify="space-between"
+            justify="center"
             px="md"
           >
             <Text>{'Change light/dark mode'}</Text>
