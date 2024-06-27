@@ -19,7 +19,7 @@ export function MannyPage() {
           inherit
           variant="gradient"
           component="span"
-          gradient={{ from: 'green', to: 'blue' }}
+          gradient={{ from: 'white', to: 'blue' }}
         >
           {"Manny's Page"}
         </Text>
