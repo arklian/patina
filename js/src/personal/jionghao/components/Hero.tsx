@@ -1,26 +1,47 @@
-import { Title, Text, Button, Container, Flex } from '@mantine/core'
+import { Title, Text, Button, Flex } from '@mantine/core'
 import styles from './Hero.module.css'
 
 export function Hero() {
   return (
-    <Container className={styles.hero}>
+    <div className={styles.hero}>
       <Flex
         direction="column"
         align="flex-start"
-        justify="center"
+        gap={'sm'}
       >
-        <Title>{"Hello, I'm Jionghao"}</Title>
-        <Text size="lg">
-          {"I'm a software engineer who specializes in building exceptional"}
-          {'digital experiences.'}
+        <Text
+          size="xl"
+          c={'cyan'}
+        >
+          {'Hi, my name is'}
+        </Text>
+        <Title
+          size="4rem"
+          className={styles.title}
+        >
+          {'Jionghao Wu,'}
+          <br />
+          {'a dynamic software engineer.'}
+        </Title>
+        <Text
+          size="lg"
+          className={styles.description}
+        >
+          {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  '}
+          <br />
+          {'do eiusmod tempor incididunt ut labore et dolore magna '}
+          <br />
+          {'dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'}
         </Text>
         <Button
           component="a"
           href="#work"
+          variant={'outline'}
+          size={'lg'}
         >
-          {'Check out my work'}
+          {'Check out my resume'}
         </Button>
       </Flex>
-    </Container>
+    </div>
   )
 }
