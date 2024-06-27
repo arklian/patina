@@ -20,5 +20,4 @@ export function HaokingPage() {
         </Flex>
       </Box>
     </MantineProvider>
-  )
-}
+  )}
