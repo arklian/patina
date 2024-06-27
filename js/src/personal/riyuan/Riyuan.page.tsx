@@ -1,9 +1,10 @@
-import { Title, Text } from '@mantine/core'
+import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Riyuan.module.css'
+import { theme } from './theme.ts'
 
 export function RiyuanPage() {
   return (
-    <>
+    <MantineProvider theme={theme}>
       <Title
         className={styles.title}
         ta="center"
@@ -29,6 +30,6 @@ export function RiyuanPage() {
       >
         {"Hey! I'm Riyuan."}
       </Text>
-    </>
+    </MantineProvider>
   )
 }

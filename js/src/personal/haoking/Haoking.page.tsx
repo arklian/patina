@@ -1,6 +1,16 @@
-import { Title, Text, Button, Box, Flex, Image, rem } from '@mantine/core'
+import {
+  Title,
+  Text,
+  Button,
+  Box,
+  Flex,
+  Image,
+  rem,
+  MantineProvider,
+} from '@mantine/core'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 import styles from './Haoking.module.css'
+import { theme } from './theme.ts'
 
 const darkTheme = {
   colors: {
@@ -46,7 +56,7 @@ const darkTheme = {
 
 export function HaokingPage() {
   return (
-    <>
+    <MantineProvider theme={theme}>
       <Box
         bg={darkTheme.colors.black[4]}
         h={rem('100vh')}
@@ -146,6 +156,6 @@ export function HaokingPage() {
           </Box>
         </Flex>
       </Box>
-    </>
+    </MantineProvider>
   )
 }

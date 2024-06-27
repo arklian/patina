@@ -1,10 +1,11 @@
-import { Title, Text } from '@mantine/core'
+import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Kazi.module.css'
 import { DarkModeToggle } from './components/DarkModeToggle/DarkModeToggle'
+import { theme } from './theme.ts'
 
 export function KaziPage() {
   return (
-    <>
+    <MantineProvider theme={theme}>
       <Title
         className={styles.title}
         ta="center"
@@ -32,6 +33,6 @@ export function KaziPage() {
       </Text>
 
       <DarkModeToggle />
-    </>
+    </MantineProvider>
   )
 }

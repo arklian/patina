@@ -1,9 +1,14 @@
-import { Title, Text } from '@mantine/core'
+import { Title, Text, MantineProvider } from '@mantine/core'
+import { cssVariableResolver, theme } from './theme'
+
 import styles from './Henry.module.css'
 
 export function HenryPage() {
   return (
-    <>
+    <MantineProvider
+      theme={theme}
+      cssVariablesResolver={cssVariableResolver}
+    >
       <Title
         className={styles.title}
         ta="center"
@@ -29,6 +34,6 @@ export function HenryPage() {
       >
         {"Hey! I'm Henry."}
       </Text>
-    </>
+    </MantineProvider>
   )
 }

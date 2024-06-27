@@ -1,9 +1,10 @@
-import { Title, Text } from '@mantine/core'
+import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Tony.module.css'
+import { theme } from './theme.ts'
 
 export function TonyPage() {
   return (
-    <>
+    <MantineProvider theme={theme}>
       <div className={styles.background}>
         <Title
           className={styles.title}
@@ -30,6 +31,6 @@ export function TonyPage() {
           {"Hey! I'm Tony."}
         </Text>
       </div>
-    </>
+    </MantineProvider>
   )
 }

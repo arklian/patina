@@ -1,11 +1,12 @@
-import { Text, Container, Group } from '@mantine/core'
+import { Text, Container, Group, MantineProvider } from '@mantine/core'
 import { TimeDisplay } from './TimeDisplay.tsx'
 import { Settings } from './Settings.tsx'
 import classes from './Bryan.module.css'
+import { theme } from './theme.ts'
 
 export function BryanPage() {
   return (
-    <>
+    <MantineProvider theme={theme}>
       <header className={classes.header}>
         <Container
           size="md"
@@ -31,6 +32,6 @@ export function BryanPage() {
       >
         {"Hey! I'm Bryan."}
       </Text>
-    </>
+    </MantineProvider>
   )
 }

@@ -9,33 +9,21 @@ import { createTheme, DEFAULT_THEME, mergeMantineTheme } from '@mantine/core'
  */
 export const themeOverride = createTheme({
   colors: {
-    dark: [
-      '#C9C9C9',
-      '#b8b8b8',
-      '#828282',
-      '#696969',
-      '#424242',
-      '#3b3b3b',
-      '#2e2e2e',
-      '#242424', // Default Dark Mode Background
-      '#1f1f1f',
-      '#141414',
-    ],
-    blue: [
-      '#e7f5ff',
-      '#d0ebff',
-      '#a5d8ff',
-      '#74c0fc',
-      '#4dabf7',
-      '#339af0',
-      '#228be6',
-      '#1c7ed6',
-      '#1971c2',
-      '#1864ab',
+    patina: [
+      '#effbf4',
+      '#def5e6',
+      '#b7eaca',
+      '#8cdfad',
+      '#6ad693',
+      '#55d184',
+      '#4acf7b',
+      '#3cb668',
+      '#31a25c',
+      '#218c4c',
     ],
   },
 
-  primaryColor: 'blue',
+  primaryColor: 'patina',
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)

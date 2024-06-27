@@ -1,17 +1,17 @@
-import { Button, Center, Title } from '@mantine/core'
+import { Button, Center, MantineProvider, Title } from '@mantine/core'
 import { useViewportSize } from '@mantine/hooks'
 import { useState } from 'react'
 import styles from './Amanda.module.css'
 import { AmandaMainPage } from './Amanda.main.page.tsx'
+import { theme } from './theme.ts'
 
 export function AmandaPage() {
   const { height, width } = useViewportSize()
   const [landingPage, setLandingPage] = useState(1)
 
-  // render loading page
-  if (landingPage === 1) {
-    return (
-      <>
+  return (
+    <MantineProvider theme={theme}>
+      {landingPage === 1 && ( // render loading page
         <div className={styles.landingPage}>
           <Center
             w={width}
@@ -36,10 +36,8 @@ export function AmandaPage() {
             </Button>
           </Center>
         </div>
-      </>
-    )
-  }
-
-  // render main page
-  return <AmandaMainPage />
+      )}
+      {landingPage === 0 && <AmandaMainPage />}
+    </MantineProvider>
+  )
 }

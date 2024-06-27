@@ -1,24 +1,12 @@
-import {
-  Title,
-  Text,
-  Button,
-  useMantineColorScheme,
-  MantineColorScheme,
-} from '@mantine/core'
-import { useToggle } from '@mantine/hooks'
-import { IconSunHigh } from '@tabler/icons-react'
+import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Jionghao.module.css'
 import { FooterSocial } from './FooterSocial.tsx'
+import { DarkModeToggle } from './DarkModeToggle.tsx'
+import { theme } from './theme.ts'
 
 export function JionghaoPage() {
-  const { setColorScheme } = useMantineColorScheme()
-  const [modeValue, toggle] = useToggle(['light', 'dark'])
-  const changeMode = () => {
-    toggle()
-    setColorScheme(modeValue as MantineColorScheme)
-  }
   return (
-    <div>
+    <MantineProvider theme={theme}>
       <div className={styles.pageContainer}>
         <Title
           className={styles.title}
@@ -45,17 +33,9 @@ export function JionghaoPage() {
         >
           {"Hey! I'm Jionghao."}
         </Text>
-        <div className={styles.buttonWrapper}>
-          <Button
-            size={'sm'}
-            onClick={changeMode}
-          >
-            <IconSunHigh size={25} />{' '}
-          </Button>
-        </div>
       </div>
-
+      <DarkModeToggle />
       <FooterSocial />
-    </div>
+    </MantineProvider>
   )
 }
