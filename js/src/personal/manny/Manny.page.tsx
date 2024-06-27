@@ -2,7 +2,7 @@
 import {Title, Text, MantineProvider} from '@mantine/core'
 import styles from './Manny.module.css'
 import { theme } from './theme.ts'
-import {FooterCentered} from "@/personal/manny/components/FooterCentered.tsx";
+import {FooterSocial} from "@/personal/manny/components/FooterSocial.tsx";
 
 
 export function MannyPage() {
@@ -23,8 +23,7 @@ export function MannyPage() {
           {"Manny's Page"}
         </Text>
       </Title>
-      <FooterCentered />
-
+      <FooterSocial />
 
     </MantineProvider>
   )
