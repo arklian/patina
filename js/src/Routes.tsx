@@ -1,5 +1,9 @@
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
 import { BryanPage } from './personal/bryan/Bryan.page.tsx'
+import { MainPage as BryanMainPage } from './personal/bryan/Main.page.tsx'
+import { ProjectsPage as BryanProjectsPage } from './personal/bryan/Projects.page.tsx'
+import { FunPage as BryanFunPage } from './personal/bryan/Fun.page.tsx'
+import { AboutMePage as BryanAboutMePage } from './personal/bryan/AboutMe.page.tsx'
 import { HaokingPage } from './personal/haoking/Haoking.page.tsx'
 import { HenryPage } from './personal/_henry/Henry.page.tsx'
 import { HomePage } from './pages/Home.page'
@@ -31,6 +35,28 @@ export const RootRoutes = [
     path: '/bryan',
     description: "Bryan's Page",
     element: <BryanPage />,
+    children: [
+      {
+        index: true,
+        description: "Bryan's Main Page",
+        element: <BryanMainPage />,
+      },
+      {
+        path: '/bryan/projects',
+        description: "Bryan's Projects Page",
+        element: <BryanProjectsPage />,
+      },
+      {
+        path: '/bryan/fun',
+        description: "Bryan's Fun Page",
+        element: <BryanFunPage />,
+      },
+      {
+        path: '/bryan/aboutme',
+        description: "Bryan's About Me Page",
+        element: <BryanAboutMePage />,
+      },
+    ],
   },
   {
     path: '/haoking',
