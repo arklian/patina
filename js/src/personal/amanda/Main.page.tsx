@@ -1,21 +1,9 @@
 import { Container, Divider, Pill, Title, Text } from '@mantine/core'
 import styles from './Amanda.module.css'
+import { Contact } from './Contact.tsx'
 import { Navbar } from './Navbar.tsx'
+import { Section } from './Section.tsx'
 import data from './Data.json'
-
-interface Project {
-  id: number
-  title: string
-  description: string
-  skills: String[]
-}
-
-interface Section {
-  id: number
-  title: string
-  description: string
-  subsections: Project[]
-}
 
 export function MainPage() {
   const info = data.info as Section[]
@@ -28,12 +16,16 @@ export function MainPage() {
         <Container className={styles.intro}>
           <Title>{'Amanda Ruan'}</Title>
           <Text>{'Software Engineer'}</Text>
+          <Contact />
         </Container>
         <Navbar />
       </Container>
       <Container className={styles.content}>
         {info.map((section) => (
-          <Container key={section.id}>
+          <Container
+            key={section.id}
+            id={section.title}
+          >
             <Title>{section.title}</Title>
             <Text>{section.description}</Text>
             {section.subsections.map((proj) => (

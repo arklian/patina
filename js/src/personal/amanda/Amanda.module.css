@@ -1,28 +1,28 @@
 .landingPage {
-    height: 100vh;
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  height: 100vh;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .mainPage {
-    height: 100vh;
-    display: flex;
-    padding: rem(50px);
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  height: 100vh;
+  display: flex;
+  padding: rem(50px);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .title {
-    font-size: rem(100px);
-    font-weight: 900;
-    letter-spacing: rem(-2px);
+  font-size: rem(100px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
 
-    @media (max-width: $mantine-breakpoint-md) {
-        font-size: rem(50px);
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
 }
 
 .leftSide {
-    width: 20vw;
-    margin-right: rem(150px);
+  width: 20vw;
+  margin-right: rem(150px);
 }
 
 .intro {
@@ -30,10 +30,10 @@
 }
 
 .project {
-    margin-top: rem(10px);
+  margin-top: rem(10px);
 }
 
 .skill {
-    background-color: light-dark(#9DB4C0, #5C6B73);
-    margin-right: rem(5px);
+  background-color: light-dark(#9DB4C0, #5C6B73);
+  margin-right: rem(5px);
 }

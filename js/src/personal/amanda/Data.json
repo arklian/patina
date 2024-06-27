@@ -3,12 +3,14 @@
     {
       "id": 1,
       "title": "about",
+      "link": "#about",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
       "subsections": []
     },
     {
       "id": 2,
       "title": "projects",
+      "link": "#projects",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
       "subsections": [
         {
@@ -34,12 +36,7 @@
     {
       "id": 3,
       "title": "misc",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
-      "subsections": []
-    },
-    {
-      "id": 4,
-      "title": "contact",
+      "link": "#misc",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
       "subsections": []
     }
