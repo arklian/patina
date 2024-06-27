@@ -1,35 +1,15 @@
-import { Title, Text, MantineProvider } from '@mantine/core'
-import styles from './Riyuan.module.css'
+import { MantineProvider } from '@mantine/core'
 import { theme } from './theme.ts'
+import { Nav } from '@/personal/riyuan/components/navigation/Navigation.tsx'
+import { Home } from '@/personal/riyuan/components/home/home.tsx'
+import { About } from '@/personal/riyuan/components/about/about.tsx'
 
 export function RiyuanPage() {
   return (
     <MantineProvider theme={theme}>
-      <Title
-        className={styles.title}
-        ta="center"
-        mt={100}
-      >
-        {'Welcome to '}
-        <Text
-          inherit
-          variant="gradient"
-          component="span"
-          gradient={{ from: 'green', to: 'blue' }}
-        >
-          {"Riyuan's Page"}
-        </Text>
-      </Title>
-      <Text
-        c="dimmed"
-        ta="center"
-        size="lg"
-        maw={580}
-        mx="auto"
-        mt="xl"
-      >
-        {"Hey! I'm Riyuan."}
-      </Text>
+      <Nav />
+      <Home />
+      <About />
     </MantineProvider>
   )
 }

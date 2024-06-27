@@ -1,0 +1,186 @@
+.dark {
+  --body-color: #202224;
+  --shell-color: #171717;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --bg-black-900: #151515;
+  --bg-black-100: #222;
+  --bg-black-50: #393939;
+  --text-black-900: #fff;
+  --text-black-700: #e9e9e9;
+}
+
+/************************************   */
+/* Overall style */
+/************************************   */
+.nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-color);
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+.shell {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background: var(--shell-color);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.shell.close {
+  width: 88px;
+}
+
+/************************************   */
+/* item list */
+/************************************   */
+
+.navList {
+  margin-top: 40px;
+}
+
+.navItem {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-align: -webkit-match-parent;
+  text-decoration: none;
+}
+
+.navLink{
+  border-radius: 6px;
+}
+
+.navLink a:hover {
+  background-color: var(--primary-color);
+}
+
+a:hover .icon,
+a:hover .text{
+  color: var(--shell-color);
+}
+
+/************************************   */
+/* Menu Style */
+/************************************   */
+.Menu {
+  height: calc(100% - 95px);
+  display: list-item;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  margin-top: 40px;
+}
+
+.MenuBar{
+  height: calc(100% - 95px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+/************************************   */
+/* Icon and Text */
+/************************************   */
+.icon {
+  color: var(--text-color);
+  min-width: 60px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 300 23px sans-serif;
+}
+
+.text {
+  color: var(--text-black-700);
+  font-family: Poppins, sans-serif;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.logoText{
+  padding: 20px;
+  display: grid;
+}
+
+
+.close {
+  width: 88px;
+}
+
+/************************************   */
+/* Image Style */
+/************************************   */
+.ImageText{
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 45px;
+  border-radius: 6px;
+}
+
+/************************************   */
+/* Toggle style */
+/************************************   */
+.toggle{
+  position: inherit;
+  top: 50%;
+  right: -25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  color: var(--shell-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/************************************   */
+/* Search Box */
+/************************************   */
+.searchBox {
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--primary-color-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.searchBox input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
