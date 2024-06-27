@@ -7,7 +7,7 @@ export function Hero() {
       <Flex
         direction="column"
         align="flex-start"
-        gap={'sm'}
+        gap={'xl'}
       >
         <Text
           size="xl"
