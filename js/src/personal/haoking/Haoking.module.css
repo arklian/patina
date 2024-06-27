@@ -7,3 +7,10 @@
     font-size: rem(50px);
   }
 }
+
+.spotify {
+ border-radius:12px;
+  width: 100%;
+  height: 152px;
+    border:none;
+}
