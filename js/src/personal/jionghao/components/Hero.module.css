@@ -2,9 +2,8 @@
   display: flex;
   justify-content: flex-start;
   padding-left: 15vw;
-  padding-top: 12vh;
-  min-height: 50vh;
-
+  padding-top: 15vh;
+  margin-bottom: 30vh;
 }
 
 .title{
