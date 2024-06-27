@@ -1,16 +1,16 @@
 .landingPage {
-    width: 100vw;
     height: 100vh;
-
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .mainPage {
+    height: 100vh;
     display: flex;
-    margin-top: 50px;
+    padding: rem(50px);
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     font-size: rem(100px);
     font-weight: 900;
     letter-spacing: rem(-2px);
@@ -20,7 +20,20 @@
     }
 }
 
-.navbar {
+.leftSide {
     width: 20vw;
-    margin-right: 200px;
+    margin-right: rem(150px);
+}
+
+.intro {
+  margin-bottom: rem(50px);
+}
+
+.project {
+    margin-top: rem(10px);
+}
+
+.skill {
+    background-color: light-dark(#9DB4C0, #5C6B73);
+    margin-right: rem(5px);
 }
