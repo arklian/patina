@@ -9,33 +9,46 @@ import { createTheme, DEFAULT_THEME, mergeMantineTheme } from '@mantine/core'
  */
 export const themeOverride = createTheme({
   colors: {
-    dark: [
-      '#C9C9C9',
-      '#b8b8b8',
-      '#828282',
-      '#696969',
-      '#424242',
-      '#3b3b3b',
-      '#2e2e2e',
-      '#242424', // Default Dark Mode Background
+    white: [
+      '#f2f2f2',
+      '#e0e0e0',
+      '#c9c9c9',
+      '#f5fefd',
+      '#fcfbfc',
+      '#fdf6e4',
+      '#fafafa',
+      '#fbfcfa',
+      '#fffefc',
+      '#faf9f6',
+    ],
+    black: [
+      '#6b6b6b',
+      '#545454',
+      '#363636',
+      '#262626',
+      '#212121',
+      '#202020',
+      '#101010',
+      '#303030',
       '#1f1f1f',
-      '#141414',
+      '#1a1a1a',
     ],
     blue: [
-      '#e7f5ff',
-      '#d0ebff',
-      '#a5d8ff',
-      '#74c0fc',
-      '#4dabf7',
-      '#339af0',
-      '#228be6',
-      '#1c7ed6',
-      '#1971c2',
-      '#1864ab',
+      '#7472db',
+      '#4536f7',
+      '#483fa1',
+      '#202378',
+      '#0e2159',
+      '#6484e3',
+      '#786dfc',
+      '#0b2f9c',
+      '#051440',
+      '#1b2540',
     ],
   },
 
   primaryColor: 'blue',
+  fontFamily: 'Helvetica, sans-serif',
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)
