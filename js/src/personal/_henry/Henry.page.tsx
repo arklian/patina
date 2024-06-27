@@ -1,4 +1,5 @@
 import { Title, Text, MantineProvider } from '@mantine/core'
+import { HeaderMenu } from './HeaderMenu'
 import { cssVariableResolver, theme } from './theme'
 
 import styles from './Henry.module.css'
@@ -9,19 +10,19 @@ export function HenryPage() {
       theme={theme}
       cssVariablesResolver={cssVariableResolver}
     >
+      <HeaderMenu />
       <Title
         className={styles.title}
         ta="center"
         mt={100}
       >
-        {'Welcome to '}
         <Text
           inherit
           variant="gradient"
           component="span"
-          gradient={{ from: 'green', to: 'blue' }}
+          gradient={{ from: 'indigo', to: 'blue' }}
         >
-          {"Henry's Page"}
+          {"Welcome to Henry's Page"}
         </Text>
       </Title>
       <Text
