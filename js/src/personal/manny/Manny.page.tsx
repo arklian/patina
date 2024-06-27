@@ -3,6 +3,7 @@ import {Title, Text, MantineProvider} from '@mantine/core'
 import styles from './Manny.module.css'
 import { theme } from './theme.ts'
 import {FooterSocial} from "@/personal/manny/components/FooterSocial.tsx";
+import {ClickableImage} from "@/personal/manny/components/ClickableImage.tsx";
 
 
 export function MannyPage() {
@@ -23,6 +24,7 @@ export function MannyPage() {
           {"Manny's Page"}
         </Text>
       </Title>
+      <ClickableImage />
       <FooterSocial />
 
     </MantineProvider>
