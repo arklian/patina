@@ -118,8 +118,23 @@ iTerm2
   - System Settings -> Security -> Privacy -> Full Disk Access -> + -> Applications/iTerm2
 - Install oh-my-zsh https://ohmyz.sh/
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-  - aliases can be added to the bottom of ~/.zshrc
-  - #TODO(Henry): Add additional configuration for oh-my-zsh
+  - Add custom configuration to the bottom of the ~/.zshrc file:
+    ```
+    # Set the prompt to display the full path.
+    PROMPT=' %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
+    
+    # Git aliases
+    alias gpo="git pull origin main"
+    alias gpullo="git pull origin main"
+    alias gpf="git push --force-with-lease --force-with-includes"
+    alias gpushf="git push --force-with-lease --force-with-includes"  
+    
+    # pnpm aliases
+    alias praf="pnpm run prettier:write"
+    alias prd="pnpm run dev"
+    alias prt="pnpm run test"
+    ```
+
 - Brew 
   - brew install node
   - brew install pnpm
