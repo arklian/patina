@@ -25,19 +25,19 @@ export function NavBar() {
         className={classes.inner}
       >
         <Category
-          link="https://mantine.dev/"
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           text="Home"
         />
         <Category
-          link="https://mantine.dev/"
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           text="Projects"
         />
         <Category
-          link="https://mantine.dev/"
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           text="Fun"
         />
         <Category
-          link="https://mantine.dev/"
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           text="About Me"
         />
         <Settings />

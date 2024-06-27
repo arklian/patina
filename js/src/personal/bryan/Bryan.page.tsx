@@ -3,6 +3,7 @@ import { TimeDisplay } from './TimeDisplay.tsx'
 import { theme } from './theme.ts'
 import { Status } from './Status.tsx'
 import { NavBar } from './NavBar.tsx'
+import { Socials } from './Socials.tsx'
 
 export function BryanPage() {
   return (
@@ -20,6 +21,7 @@ export function BryanPage() {
         {"Hey! I'm Bryan."}
       </Text>
       <Status />
+      <Socials />
     </MantineProvider>
   )
 }
