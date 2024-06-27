@@ -1,6 +1,7 @@
 import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Manny.module.css'
 import { theme } from './theme.ts'
+import { FooterCentered } from '@/personal/manny/components/FooterCentered.tsx'
 
 export function MannyPage() {
   return (
@@ -20,16 +21,7 @@ export function MannyPage() {
           {"Manny's Page"}
         </Text>
       </Title>
-      <Text
-        c="dimmed"
-        ta="center"
-        size="lg"
-        maw={580}
-        mx="auto"
-        mt="xl"
-      >
-        {"Hey! I'm Manny."}
-      </Text>
+      <FooterCentered />
     </MantineProvider>
   )
 }
