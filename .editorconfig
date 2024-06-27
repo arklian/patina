@@ -1,0 +1,24 @@
+# https://editorconfig.org
+
+# EditorConfig helps maintain consistent coding styles for multiple developers working on the same
+# project across various editors and IDEs
+# IntelliJ should see that this file exists, and automatically apply the settings here.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{js,cjs,json,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+[*.{css,module.css}]
+indent_style = space
+indent_size = 2
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false
