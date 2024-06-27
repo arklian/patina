@@ -1,16 +1,63 @@
 .title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(100px);
-  font-weight: 900;
-  letter-spacing: rem(-2px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
-  }
+  color: #b87171;
+  position: relative;
+  font-size: 150px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  top: 100px;
+  left: 300px;
 }
 
 .body {
-  background-color: #B07251;
-  padding: 40px;
   font-family: Sans-Serif;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(210, 195, 203) 50%, rgba(205, 126, 164, 0.48) 100%);
+}
+
+.border {
+  border-left: 1px solid rgba(202, 0, 97, 0.25);
+  height: 100%;
+  position: fixed;
+  left: 10%;
+  margin-left: 0px;
+  top: 0;
+}
+.menuWrapper {
+  position: relative;
+  padding: 20px;
+  top: 650px;
+  left: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+.menuItems{
+  padding: 100px 0px 20px 120px;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.modal {
+  :global(.mantine-Modal-title){
+    padding: 50px 0px 20px 120px;
+    font-size: 50px;
+    font-weight: 150;
+    color: #b87171;
+    letter-spacing: 2px;
+  }
+  :global(.mantine-Modal-inner) {
+    padding: 0;
+    background-color: transparent;
+    opacity: 100%;
+    color: #b86868;
+  }
+  :global(.mantine-Modal-content) {
+    max-height: 100%;
+    height: 100vh;
+    margin-right: 750px;
+    background-color: #d2c3cb;
+  }
+  :global(.mantine-Modal-header) {
+    background-color: #d2c3cb;
+  }
 }

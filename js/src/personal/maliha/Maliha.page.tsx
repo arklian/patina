@@ -1,37 +1,20 @@
-import { Title, Text, MantineProvider } from '@mantine/core'
-import styles from './Maliha.module.css'
-import { Menu } from './Menu.tsx'
+import { Text, MantineProvider } from '@mantine/core'
+import { Menu } from './ModalMenu.tsx'
 import { theme } from './theme.ts'
+import styles from './Maliha.module.css'
 
 export function MalihaPage() {
   return (
     <MantineProvider theme={theme}>
       <div className={styles.body}>
         <Menu />
-        <Title
-          className={styles.title}
-          ta="center"
-          mt={100}
-        >
-          {'Welcome to'}
-          <Text
-            inherit
-            variant="gradient"
-            component="span"
-            gradient={{ from: 'red', to: 'blue' }}
-          >
-            {"Maliha's Page"}
-          </Text>
-        </Title>
+        <div className={styles.border} />
         <Text
-          c="dimmed"
-          ta="center"
-          size="lg"
-          maw={580}
-          mx="auto"
-          mt="xl"
+          inherit
+          component="span"
+          className={styles.title}
         >
-          {"Hey, I'm Maliha"}
+          {'Maliha Tasnim'}
         </Text>
       </div>
     </MantineProvider>
