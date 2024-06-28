@@ -1,6 +1,6 @@
 .title {
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-size: rem(80px);
+    font-size: rem(64px);
     letter-spacing: rem(-2px);
 
     @media (max-width: $mantine-breakpoint-md) {
@@ -10,7 +10,7 @@
 
 .title2 {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(64px);
+  font-size: rem(48px);
   letter-spacing: rem(-2px);
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -20,7 +20,7 @@
 
 .header {
     height: rem(56px);
-    margin-bottom: rem(120px);
+    margin-bottom: rem(60px);
     background-color: var(--mantine-color-body);
     border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
@@ -33,11 +33,13 @@
 }
 
 .container {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .footer {
+  margin-left: 3rem;
   margin-top: auto;
 }

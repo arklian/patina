@@ -1,11 +1,11 @@
 import { Text } from '@mantine/core'
-import { TimeDisplay } from './TimeDisplay.tsx'
+import { DateDisplay } from './DateDisplay.tsx'
 import { Status } from './Status.tsx'
 
 export function MainPage() {
   return (
     <>
-      <TimeDisplay />
+      <DateDisplay />
       <Text
         c="blue"
         ta="center"
