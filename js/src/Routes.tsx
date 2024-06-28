@@ -11,7 +11,7 @@ import { JionghaoPage } from './personal/jionghao/Jionghao.page.tsx'
 import { KaziPage } from './personal/kazi/Kazi.page.tsx'
 import { KellyPage } from './personal/kelly/Kelly.page.tsx'
 import { MalihaPage } from './personal/maliha/Maliha.page.tsx'
-import { MannyPage } from './personal/Manny/Manny.page.tsx'
+import { MannyPage } from './personal/manny/Manny.page.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
 import { TonyPage } from './personal/tony/Tony.page.tsx'
 
