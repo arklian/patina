@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { Button, Image, List, Input, Stack, Text } from '@mantine/core'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faMagnifyingGlass,
   faHouse,
-  faCircle,
+  faPerson,
+  faTimeline,
+  faFolder,
+  faIdCard,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import pfpImage from '@/personal/riyuan/assets/images/pfp.jpg'
@@ -21,7 +24,7 @@ interface CustomHeaderProps {
 }
 
 const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
-  <header>
+  <header className={styles.header}>
     <div className={styles.ImageText}>
       <span className={styles.image}>
         <Image
@@ -40,7 +43,7 @@ const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
       className={styles.toggle}
       onClick={toggleShell}
     >
-      <FontAwesomeIcon icon={faCircle} />
+      <FontAwesomeIcon icon={faBars} />
     </Button>
   </header>
 )
@@ -55,8 +58,8 @@ const NavItem = ({
   isOpen: boolean
 }) => (
   <div className={styles.navLink}>
-    <Link
-      to={`#${title}`}
+    <a
+      href={`#${title}`}
       className={styles.navItem}
     >
       <FontAwesomeIcon
@@ -64,7 +67,7 @@ const NavItem = ({
         className={styles.icon}
       />
       {isOpen && <span className={`${styles.text}`}>{title}</span>}
-    </Link>
+    </a>
   </div>
 )
 const NavList = ({
@@ -121,7 +124,13 @@ export function Nav() {
     name: 'Riyuan',
     image: pfpImage,
   }
-  const navItems = [{ title: 'Home', icon: faHouse }]
+  const navItems = [
+    { title: 'Home', icon: faHouse },
+    { title: 'About', icon: faPerson },
+    { title: 'Timeline', icon: faTimeline },
+    { title: 'Project', icon: faFolder },
+    { title: 'Contact', icon: faIdCard },
+  ]
   const [isClosed, setIsClosed] = useState(true)
   const toggleShell = () => {
     setIsClosed(!isClosed)
