@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core'
+import { Text, Space } from '@mantine/core'
 
 export function AboutMePage() {
   return (
@@ -12,6 +12,8 @@ export function AboutMePage() {
         mt="md"
       >
         {"Hey! I'm Bryan."}
+        <Space h="xs" />
+        {'This it the about me section :))'}
       </Text>
     </>
   )
