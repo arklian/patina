@@ -8,3 +8,20 @@
     font-size: rem(50px);
   }
 }
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections section {
+  min-height: 100vh;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  scroll-snap-align: center;
+}

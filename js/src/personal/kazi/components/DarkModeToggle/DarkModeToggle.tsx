@@ -36,7 +36,7 @@ export function DarkModeToggle() {
             : ''
           }
           color="#FDB813"
-          size={30}
+          size={20}
         />
       : <FaMoon
           className={
@@ -46,7 +46,7 @@ export function DarkModeToggle() {
             : ''
           }
           color="#8a7f8d"
-          size={30}
+          size={20}
         />
       }
     </Button>
