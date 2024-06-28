@@ -11,13 +11,14 @@ export function NavBar() {
     >
       <Anchor
         href={props.link}
-        target="_blank"
+        target="_self"
         underline="never"
       >
         {props.text}
       </Anchor>
     </Group>
   )
+  const url_base = window.location.href.split('bryan')[0]
   return (
     <header className={classes.header}>
       <Container
@@ -25,19 +26,19 @@ export function NavBar() {
         className={classes.inner}
       >
         <Category
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link={url_base.concat('bryan')}
           text="Home"
         />
         <Category
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link={url_base.concat('bryan/projects')}
           text="Projects"
         />
         <Category
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link={url_base.concat('bryan/fun')}
           text="Fun"
         />
         <Category
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link={url_base.concat('bryan/aboutme')}
           text="About Me"
         />
         <Settings />

@@ -1,5 +1,4 @@
 import { Text } from '@mantine/core'
-import { Socials } from './Socials.tsx'
 
 export function AboutMePage() {
   return (
@@ -14,7 +13,6 @@ export function AboutMePage() {
       >
         {"Hey! I'm Bryan."}
       </Text>
-      <Socials />
     </>
   )
 }
