@@ -17,10 +17,11 @@ export function Socials() {
   )
   return (
     <div className={classes.footer}>
-      <Container>
+      <Container fluid>
         <Group
           gap={0}
           justify="flex-start"
+          align="start"
           wrap="nowrap"
         >
           <Icon

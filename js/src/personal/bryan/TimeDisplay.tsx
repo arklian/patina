@@ -2,33 +2,10 @@ import { useMemo, useState, useEffect } from 'react'
 import { Title, Space } from '@mantine/core'
 import styles from './Bryan.module.css'
 
-const months = [
-  'Jan.',
-  'Feb.',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'Aug.',
-  'Sept',
-  'Oct.',
-  'Nov.',
-  'Dec',
-]
-const weekday = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-]
-/** Component to display current time and day */
+/** Component to display current time */
 export function TimeDisplay() {
   const [date, setDate] = useState(new Date())
-  // Refresh the time every second to keep it at the current time.
+  // Refresh the time every quarter second to keep it at the current time.
   useEffect(() => {
     setInterval(() => setDate(new Date()), 250)
   })
@@ -68,19 +45,10 @@ export function TimeDisplay() {
   return (
     <Title
       className={styles.title}
-      ta="center"
-      mt={50}
+      ml="5rem"
     >
       {`${Hours}${colon}${Minutes}${AM} EST`}
       <Space h="xs" />
-      <Title
-        className={styles.title2}
-        component="span"
-      >
-        {'Today is '}
-      </Title>
-      <Space h="xs" />
-      {`${weekday[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`}
     </Title>
   )
 }
