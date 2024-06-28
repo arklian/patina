@@ -1,7 +1,6 @@
 import { Text } from '@mantine/core'
 import { TimeDisplay } from './TimeDisplay.tsx'
 import { Status } from './Status.tsx'
-import { Socials } from './Socials.tsx'
 
 export function MainPage() {
   return (
@@ -18,7 +17,6 @@ export function MainPage() {
         {"Hey! I'm Bryan."}
       </Text>
       <Status />
-      <Socials />
     </>
   )
 }

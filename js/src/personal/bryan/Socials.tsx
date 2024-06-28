@@ -1,5 +1,6 @@
 import { Container, Group, ActionIcon } from '@mantine/core'
 import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si'
+import classes from './Bryan.module.css'
 
 /** Component to store social media footer items */
 export function Socials() {
@@ -15,7 +16,7 @@ export function Socials() {
     </ActionIcon>
   )
   return (
-    <div>
+    <div className={classes.footer}>
       <Container>
         <Group
           gap={0}
