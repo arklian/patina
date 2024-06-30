@@ -1,5 +1,5 @@
 import { Title, Group } from '@mantine/core'
-import classes from '../Bryan.module.css'
+import classes from './AboutMe.module.css'
 import { AboutMePictures } from './AboutMePictures.tsx'
 import { AboutMeText } from './AboutMeText.tsx'
 

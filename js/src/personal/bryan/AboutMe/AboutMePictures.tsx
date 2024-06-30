@@ -1,4 +1,4 @@
-import classes from '../Bryan.module.css'
+import classes from './AboutMe.module.css'
 
 export function AboutMePictures() {
   return (
