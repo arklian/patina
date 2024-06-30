@@ -1,6 +1,8 @@
 import { Title, Text, MantineProvider } from '@mantine/core'
 import styles from './Manny.module.css'
 import { theme } from './theme.ts'
+import { FooterSocial } from '@/personal/manny/components/FooterSocial.tsx'
+import { ClickableImage } from '@/personal/manny/components/ClickableImage.tsx'
 
 export function MannyPage() {
   return (
@@ -15,21 +17,13 @@ export function MannyPage() {
           inherit
           variant="gradient"
           component="span"
-          gradient={{ from: 'green', to: 'blue' }}
+          gradient={{ from: 'white', to: 'blue' }}
         >
           {"Manny's Page"}
         </Text>
       </Title>
-      <Text
-        c="dimmed"
-        ta="center"
-        size="lg"
-        maw={580}
-        mx="auto"
-        mt="xl"
-      >
-        {"Hey! I'm Manny."}
-      </Text>
+      <ClickableImage />
+      <FooterSocial />
     </MantineProvider>
   )
 }
