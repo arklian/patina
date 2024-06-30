@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './ClickableImage.module.css'
 import PersonalImage from '../assets/PicOfManny.jpg'
 
@@ -23,7 +24,12 @@ export function ClickableImage() {
             className={styles.menuItem}
             style={{ transform: 'rotate(-10deg) translateX(-30%)' }}
           >
-            {'Resume'}
+            <Link
+              to={'/manny/resume'}
+              className={styles.menuItem}
+            >
+              {'Resume'}
+            </Link>
           </div>
           <div
             className={styles.menuItem}
