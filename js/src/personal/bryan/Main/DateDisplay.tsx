@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Title } from '@mantine/core'
-import styles from './Bryan.module.css'
+import styles from '../Bryan.module.css'
 
 const months = [
   'Jan.',
@@ -36,7 +36,8 @@ export function DateDisplay() {
   return (
     <>
       <Title
-        className={styles.title2}
+        className={styles.title}
+        id={styles.title2}
         component="span"
         ta="center"
       >
