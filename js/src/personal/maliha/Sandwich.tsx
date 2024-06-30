@@ -1,3 +1,4 @@
+/* Burger Menu Toggle*/
 import { Burger } from '@mantine/core'
 import styles from './Maliha.module.css'
 
@@ -18,7 +19,8 @@ export function Sandwich({ onToggleMenu, opened }: SandwichProps) {
         onClick={handleClick}
         aria-label="Toggle navigation"
         size={50}
-        color="#b87171"
+        color="#a62020 "
+        className={styles.burgerIcon}
       />
     </div>
   )
