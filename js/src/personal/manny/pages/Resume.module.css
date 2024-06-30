@@ -1,0 +1,126 @@
+.downloadButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.contactRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2rem; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.contactInfo {
+  font-size: 1rem; /* Adjust as needed */
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  ); /* Adjust color as needed */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.sectionText {
+  font-size: 1rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.jobTitle {
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.jobDate {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: 0.875rem;
+}
+
+.jobDescription {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+
+.educationSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.educationDetails {
+  flex: 1;
+}
+
+.educationDates {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.educationTitle {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.educationInstitution {
+  font-size: 1rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.educationDegree {
+  font-size: 0.875rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-2));
+}
+
+.educationDate {
+  font-size: 0.875rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-2));
+}
+
+.educationGPA {
+  font-size: 0.875rem;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-dark-2));
+}
+
+.skills {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.languages {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
