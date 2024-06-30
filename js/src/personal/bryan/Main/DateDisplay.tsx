@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Title } from '@mantine/core'
-import styles from '../Bryan.module.css'
+import styles from '@/personal/bryan/Bryan.module.css'
 
 const months = [
   'Jan.',

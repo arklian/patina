@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react'
 import { Title, Space } from '@mantine/core'
-import styles from '../Bryan.module.css'
+import styles from '@/personal/bryan/Bryan.module.css'
 
 /** Component to display current time */
 export function TimeDisplay() {
