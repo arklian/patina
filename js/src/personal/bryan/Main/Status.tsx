@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Text, Title } from '@mantine/core'
-import styles from './Bryan.module.css'
+import styles from '../Bryan.module.css'
 
 /** Component to create a settings menu to encompass setting-like page modifiables */
 export function Status() {

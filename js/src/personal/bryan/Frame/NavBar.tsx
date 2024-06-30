@@ -1,6 +1,6 @@
 import { Container, Group, Anchor } from '@mantine/core'
-import { Settings } from './Settings.tsx'
-import classes from './Bryan.module.css'
+import { Settings } from '../Settings/Settings.tsx'
+import classes from '../Bryan.module.css'
 
 /** component to create a navbar in the header */
 export function NavBar() {

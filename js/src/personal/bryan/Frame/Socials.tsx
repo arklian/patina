@@ -1,6 +1,6 @@
 import { Container, Group, ActionIcon } from '@mantine/core'
 import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si'
-import classes from './Bryan.module.css'
+import classes from '../Bryan.module.css'
 
 /** Component to store social media footer items */
 export function Socials() {
