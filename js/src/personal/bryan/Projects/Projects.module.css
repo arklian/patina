@@ -18,37 +18,16 @@
   }
 }
 
-.position_school {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(48px);
-  letter-spacing: rem(-2px);
-
+.position_project1_title {
   position: absolute;
   top: 20rem;
   left: 5rem;
-}
 
-.position_interest_title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: rem(48px);
   letter-spacing: rem(-2px);
 
-  position: absolute;
-  top: 20rem;
-  left: 45rem;
-}
-
-.position_interest_text {
-  position: absolute;
-  top: 25rem;
-  left: 45rem;
-}
-
-.playlist{
-  position: absolute;
-  border: none;
-  top: 20rem;
-  width: 300px;
-  height: 450px;
-  right: 5rem;
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
 }

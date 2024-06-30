@@ -1,0 +1,89 @@
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(64px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
+
+.position_websites_title {
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(48px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
+
+.position_websites_text {
+  position: absolute;
+  top: 25rem;
+  left: 5rem;
+}
+
+.position_boardgames_title {
+  position: absolute;
+  top: 20rem;
+  left: 35rem;
+
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(48px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
+
+.position_boardgames_text {
+  position: absolute;
+  top: 25rem;
+  left: 35rem;
+}
+
+.position_nyt_title {
+  position: absolute;
+  top: 20rem;
+  left: 65rem;
+
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(48px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}
+
+.position_nyt_text {
+  position: absolute;
+  top: 25rem;
+  left: 65rem;
+}
+
+.position_gamertag_text {
+  position: absolute;
+  top: 10rem;
+  left: 50rem;
+}
+
+.position_gamertag {
+  position: absolute;
+  top: 12rem;
+  left: 50rem;
+
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(48px);
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+}

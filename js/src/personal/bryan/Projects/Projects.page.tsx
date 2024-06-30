@@ -1,18 +1,76 @@
-import { Text } from '@mantine/core'
+import { Text, Title, Grid, Anchor } from '@mantine/core'
+import classes from './Projects.module.css'
 
 export function ProjectsPage() {
   return (
     <>
-      <Text
-        c="blue"
-        ta="center"
-        size="md"
-        maw={580}
-        mx="auto"
-        mt="md"
+      <Title
+        className={classes.title}
+        component="span"
+        ml="5rem"
       >
-        {"Hey! I'm Bryan."}
-      </Text>
+        {'Projects'}
+      </Title>
+      <Grid
+        ml="5rem"
+        component="span"
+        justify="center"
+        grow
+      >
+        <Grid.Col span={12}>
+          <Text>{'Currently done projects'}</Text>
+        </Grid.Col>
+        <Grid.Col span={2}>
+          <Title
+            component="span"
+            className={classes.title2}
+          >
+            {'This site'}
+          </Title>
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <Text>{'Boop'}</Text>
+          <Anchor href="https://github.com/arklian/patina/tree/main/js/src/personal/bryan">
+            {'Github'}
+          </Anchor>
+        </Grid.Col>
+        <Grid.Col span={2}>
+          <Title
+            component="span"
+            className={classes.title2}
+          >
+            {'COS 429'}
+          </Title>
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <Text>{'Boop'}</Text>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Text>{'Future projects'}</Text>
+        </Grid.Col>
+        <Grid.Col span={2}>
+          <Title
+            component="span"
+            className={classes.title2}
+          >
+            {'COS 333'}
+          </Title>
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <Text>{'Boop'}</Text>
+        </Grid.Col>
+        <Grid.Col span={2}>
+          <Title
+            component="span"
+            className={classes.title2}
+          >
+            {'COS 397'}
+          </Title>
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <Text>{'Boop'}</Text>
+        </Grid.Col>
+      </Grid>
     </>
   )
 }
