@@ -6,8 +6,7 @@ export function AboutMeText() {
     <>
       <Title
         component="span"
-        className={classes.title2}
-        id={classes.position_school}
+        className={classes.position_school}
       >
         {'cs @ Princeton'}
         <Space h="s" />
@@ -15,14 +14,13 @@ export function AboutMeText() {
       </Title>
       <Title
         component="span"
-        className={classes.title2}
-        id={classes.position_interest_title}
+        className={classes.position_interest_title}
       >
         {'Interests'}
       </Title>
       <Text
         component="span"
-        id={classes.position_interest_text}
+        className={classes.position_interest_text}
       >
         {'Hi'}
         <Space />
