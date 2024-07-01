@@ -10,11 +10,11 @@
 
 .title2 {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(48px);
+  font-size: rem(40px);
   letter-spacing: rem(-2px);
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: rem(30px);
   }
 }
 
@@ -42,13 +42,4 @@
   position: absolute;
   top: 25rem;
   left: 45rem;
-}
-
-.playlist{
-  position: absolute;
-  border: none;
-  top: 20rem;
-  width: 300px;
-  height: 450px;
-  right: 5rem;
 }

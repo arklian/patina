@@ -10,24 +10,10 @@
 
 .title2 {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(48px);
+  font-size: rem(40px);
   letter-spacing: rem(-2px);
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
-  }
-}
-
-.position_project1_title {
-  position: absolute;
-  top: 20rem;
-  left: 5rem;
-
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(48px);
-  letter-spacing: rem(-2px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: rem(30px);
   }
 }
