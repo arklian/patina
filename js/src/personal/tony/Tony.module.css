@@ -1,37 +1,125 @@
 .title {
-  font-size: rem(60px);
-  font-weight: 400;
-  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #DADDD8;
+  -webkit-font-smoothing: antialiased;
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: 50px;
   }
 }
 
 .text {
-  color: white;
-  font-size: rem(30px);
-  font-weight: 200;
+  color: #DADDD8;
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: -15px;
 }
 
 .about {
-  color: white;
-  font-size: rem(25px);
+  color: #EEF0F2;
+  line-height: 1.625;
+  font-size: 18px;
   font-weight: 200;
+  margin-bottom: 1rem;
+  margin-left: 14px;
 }
 
 .pfp {
   border-radius: 10px;
+  height: 400px;
+  width: 400px;
 }
 
-.grid{
-  background-color: #0a204a;
-  padding: 50px;
-  height: 100vh;
+.grid {
+  position: relative;
+  background-color: #1C1C1C;
+  padding: 150px;
+  height: max-content;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.flex1{
+  display: flex;
+  text-align: center;
 }
 
 .socialIcons {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  margin-left: 5px;
+}
+
+
+.titleLine1 {
+  width: 20px;
+  height: 1px;
+  margin-top: 16px;
+  margin-right: 4px ;
+  background-color: #ECEBE4;
+}
+
+.menu{
+  margin-left: -14px;
+  margin-top: 20px;
+}
+
+.menu1 {
+  color: #ECEBE4;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.menu2 {
+  color: #ECEBE4;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.menu3 {
+  color: #ECEBE4;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+
+.flashlight {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.subTitle{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.projectPic {
+  border-radius: 10px;
+  margin-right: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.text1{
+  margin-bottom: 15px;
 }
