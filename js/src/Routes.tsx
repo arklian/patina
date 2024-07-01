@@ -14,6 +14,7 @@ import { MalihaPage } from './personal/maliha/Maliha.page.tsx'
 import { MannyPage } from './personal/manny/Manny.page.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
 import { TonyPage } from './personal/tony/Tony.page.tsx'
+import { LucasPage } from './personal/lucas/Lucas.tsx'
 
 export const RootRoutes = [
   {
@@ -97,5 +98,10 @@ export const RootRoutes = [
     path: '/tony',
     description: "Tony's Page",
     element: <TonyPage />,
+  },
+  {
+    path: '/lucas',
+    description: "Lucas's Page",
+    element: <LucasPage />,
   },
 ]
