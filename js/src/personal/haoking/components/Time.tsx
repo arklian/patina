@@ -1,7 +1,8 @@
 import { Box, Text } from '@mantine/core'
 import { useState, useEffect } from 'react'
-import { theme } from './theme.ts'
+import { theme } from '../theme.ts'
 
+/* Component for displaying the current time */
 export function Time() {
   const [date, setDate] = useState(new Date())
 

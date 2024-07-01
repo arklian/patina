@@ -1,3 +1,35 @@
+.animate_fade_out {
+  animation-name: fade-out;
+  animation-duration: 1.25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.animate_fade_in {
+  opacity: 0%;
+  animation-name: fade-in;
+  animation-duration: 1.25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.animate_fade_in_navbar {
+  animation-name: fade-in;
+  animation-duration: 1.25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.animate_fade_in_delay {
+  opacity: 0%;
+  animation-name: fade-in;
+  animation-duration: 1.25s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
 .title {
   font-size: rem(100px);
   font-weight: 900;
@@ -9,8 +41,39 @@
 }
 
 .spotify {
- border-radius:12px;
+  border-radius: 12px;
   width: 100%;
   height: 152px;
-    border:none;
+  border: none;
 }
+
+.navlink {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.navlink_current {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.hkbody a.navlink:hover {
+  color: beige;
+}
+
+
+@keyframes fade-out {
+  from {opacity: 100%}
+  to {opacity: 0}
+}
+
+@keyframes fade-in{
+  from {opacity: 0}
+  to {opacity: 100%}
+}
+
+
