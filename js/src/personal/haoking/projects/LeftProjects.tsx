@@ -1,5 +1,4 @@
 import { Text, Title, Box } from '@mantine/core'
-import { theme } from '../theme.ts'
 import styles from '../Haoking.module.css'
 
 /* Component for left side of Projects page */
@@ -16,8 +15,8 @@ export function LeftProjects() {
           variant="gradient"
           component="span"
           gradient={{
-            from: theme.colors.black[0],
-            to: theme.colors.black[1],
+            from: 'gray',
+            to: 'black',
           }}
         >
           {'Projects'}

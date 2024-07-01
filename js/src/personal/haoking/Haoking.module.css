@@ -49,22 +49,23 @@
 
 .navlink {
   text-decoration: none;
-  color: #d1d1d1;
+  color: var(--mantine-link);
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
+
+  //font-family: Helvetica, sans-serif;
 }
 
 .navlink_current {
   text-decoration: none;
-  color: #fff;
+  color: var(--mantine-link-current);
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
+
+  //font-family: Helvetica, sans-serif;
 }
 
 .hkbody a.navlink:hover {
-  color: beige;
+   color: var(--mantine-link-hover);
 }
-
 
 @keyframes fade-out {
   from {opacity: 100%}

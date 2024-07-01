@@ -1,7 +1,6 @@
 import { Title, Text, Box, Flex, Image, ActionIcon } from '@mantine/core'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 import styles from '../Haoking.module.css'
-import { theme } from '../theme.ts'
 import { Time } from '../components/Time.tsx'
 
 /* Component containing image, time, contact info on left side of about me page */
@@ -18,26 +17,22 @@ export function LeftAboutMe() {
           variant="gradient"
           component="span"
           gradient={{
-            from: theme.colors.black[0],
-            to: theme.colors.black[1],
+            from: 'gray',
+            to: 'black',
           }}
         >
           {'Haoking Luo'}
         </Text>
       </Title>
       <Flex gap={15}>
-        <Title
-          fz={40}
-          c={theme.colors.white[0]}
-        >
-          {'swe guy'}
-        </Title>
+        <Title fz={40}>{'swe guy'}</Title>
         <ActionIcon
           component="a"
           href="https://github.com/luoh00"
           target="_blank"
           mt={15}
-          color="transparent"
+          variant="transparent"
+          color="gray"
         >
           <IconBrandGithub size={24} />
         </ActionIcon>
@@ -46,7 +41,8 @@ export function LeftAboutMe() {
           href="https://linkedin.com/in/haoking-l-0a5ab61b3"
           target="_blank"
           mt={15}
-          color="transparent"
+          variant="transparent"
+          color="gray"
         >
           <IconBrandLinkedin size={24} />
         </ActionIcon>

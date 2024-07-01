@@ -1,8 +1,7 @@
-import { Box, rem, Flex } from '@mantine/core'
+import { Box, Flex } from '@mantine/core'
 import { LeftProjects } from './LeftProjects.tsx'
 import { RightProjects } from './RightProjects.tsx'
 import { Navbar } from '../components/Navbar.tsx'
-import { theme } from '../theme.ts'
 import { Pages } from '../pages.ts'
 
 export function ProjectsPage({
@@ -13,11 +12,7 @@ export function ProjectsPage({
   setCurrent: any
 }) {
   return (
-    <Box
-      bg={theme.colors.black[4]}
-      h={rem('100vh')}
-      w={rem('100vw')}
-    >
+    <Box>
       <Navbar
         current={current}
         setCurrent={setCurrent}

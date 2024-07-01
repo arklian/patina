@@ -1,4 +1,4 @@
-import { Group } from '@mantine/core'
+import { Group, Button, useMantineColorScheme } from '@mantine/core'
 import { NavLink } from './NavLink.tsx'
 import styles from '../Haoking.module.css'
 import { Pages } from '../pages.ts'
@@ -16,6 +16,7 @@ export function Navbar({
     { link: '#projects', label: Pages.Project },
     { link: '#misc', label: Pages.Misc },
   ]
+  const { setColorScheme } = useMantineColorScheme()
 
   return (
     <nav>
@@ -48,6 +49,8 @@ export function Navbar({
               label={page.label}
             />
           ))}
+          <Button onClick={() => setColorScheme('light')}>{'set light'}</Button>
+          <Button onClick={() => setColorScheme('dark')}>{'set dark'}</Button>
         </Group>
       </Group>
     </nav>

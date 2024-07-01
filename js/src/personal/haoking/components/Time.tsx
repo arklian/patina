@@ -1,6 +1,5 @@
 import { Box, Text } from '@mantine/core'
 import { useState, useEffect } from 'react'
-import { theme } from '../theme.ts'
 
 /* Component for displaying the current time */
 export function Time() {
@@ -21,7 +20,6 @@ export function Time() {
       <Text
         fw={700}
         fz={50}
-        c={theme.colors.white[6]}
       >
         {date.toLocaleTimeString()}
       </Text>

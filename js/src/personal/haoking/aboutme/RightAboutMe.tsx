@@ -1,6 +1,5 @@
 import { Title, Text, Box, AspectRatio, Divider } from '@mantine/core'
 import styles from '../Haoking.module.css'
-import { theme } from '../theme.ts'
 
 /* Component for basic info and spotify embed on right side of about me page */
 export function RightAboutMe() {
@@ -22,16 +21,10 @@ export function RightAboutMe() {
         mt={120}
         pt={20}
         maw={350}
-        color={theme.colors.white[6]}
       />
-      <Title c={theme.colors.white[2]}>{'Info'}</Title>
+      <Title>{'Info'}</Title>
       {text.map((info) => (
-        <Text
-          c={theme.colors.white[2]}
-          pt={16}
-        >
-          {info}
-        </Text>
+        <Text pt={16}>{info}</Text>
       ))}
       <AspectRatio
         maw={400}
