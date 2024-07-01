@@ -14,7 +14,7 @@
 
 .titleLine {
   margin-left: 30px;
-  flex-grow: 1;
+  width: 300px;
   height: 0.5px;
   background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }

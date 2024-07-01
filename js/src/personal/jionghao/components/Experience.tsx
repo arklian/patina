@@ -1,4 +1,5 @@
 import { Title, Text, Tabs, List } from '@mantine/core'
+import { IconPoint } from '@tabler/icons-react'
 import styles from './Experience.module.css'
 
 export function Experience() {
@@ -7,15 +8,19 @@ export function Experience() {
       className={styles.experience}
       id="experience"
     >
-      <Title mb={'xl'}>{'My Experience'}</Title>
+      <div className={styles.titleContain}>
+        <Title>{'My Experience'}</Title>
+        <div className={styles.titleLine}></div>
+      </div>
       <Tabs
         color="cyan"
         orientation="vertical"
-        defaultValue="gallery"
+        defaultValue="Patina"
         placement="right"
+        radius={'xs'}
       >
         <Tabs.Panel
-          pl={'2vh'}
+          pl={'2vw'}
           value="Patina"
           className={styles.tabPanel}
         >
@@ -23,31 +28,54 @@ export function Experience() {
             fw={700}
             size={'xl'}
           >
-            {'Gallery tab content'}
+            {'Software Engineering Intern @ Patina Network'}
           </Text>
-          <Text size={'xs'}>{'Gallery tab content'}</Text>
+          <Text size={'xs'}>{'June 2024 - Present'}</Text>
           <List
             mt={'2vh'}
             withPadding
-            spacing={'md'}
+            spacing={'xs'}
+            icon={
+              <IconPoint
+                size={15}
+                stroke={'1'}
+                color={'cyan'}
+              ></IconPoint>
+            }
           >
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {
+                  'Developed and maintained a personal website using modern web technologies.'
+                }
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {
+                  'Assisted in debugging and troubleshooting website issues to improve user experience.'
+                }
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {
+                  'Utilized version control systems (Git) for efficient project management and collaboration.'
+                }
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {
+                  "Collaborated with the Patina Network team to enhance and optimize the company's website."
+                }
+              </Text>
             </List.Item>
           </List>
         </Tabs.Panel>
 
         <Tabs.Panel
-          pl={'2vh'}
+          pl={'2vw'}
           value="Munch"
           className={styles.tabPanel}
         >
@@ -55,38 +83,105 @@ export function Experience() {
             fw={700}
             size={'xl'}
           >
-            {'Gallery tab content'}
+            {'Software Engineering Intern @ Munch Insights'}
           </Text>
-          <Text size={'xs'}>{'Gallery tab content'}</Text>
+          <Text size={'xs'}>{'Nov. 2023 – May 2024'}</Text>
           <List
             mt={'2vh'}
             withPadding
-            spacing={'md'}
+            spacing={'xs'}
+            icon={
+              <IconPoint
+                size={15}
+                stroke={'1'}
+                color={'cyan'}
+              ></IconPoint>
+            }
           >
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {'Designed and developed a proof-of-concept (PoC) for a restaurant ordering menu accessible via QR code scan,\n' +
+                  'integrating Stripe for secure payment processing.'}
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {'Built a RESTful API using Golang and the Echo framework to handle web requests for menu orders, account\n' +
+                  'validation, and secure checkouts.'}
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {'Utilized AWS to deploy and manage cloud services and implemented SQL databases to manage and query customer\n' +
+                  'data, ensuring high availability, scalability, and efficient data management.'}
+              </Text>
             </List.Item>
             <List.Item>
-              <Text>{'Clone or download repository from GitHub'}</Text>
+              <Text>
+                {
+                  'Collaborated with cross-functional teams to ensure a user-friendly and efficient ordering experience.'
+                }
+              </Text>
             </List.Item>
           </List>
         </Tabs.Panel>
 
         <Tabs.Panel
-          pl={'2vh'}
-          value="settings"
+          pl={'2vw'}
+          value="placeholder"
           className={styles.tabPanel}
         >
-          {'Settings tab content'}
+          <Text
+            fw={700}
+            size={'xl'}
+          >
+            {'Placeholder @ Placeholder'}
+          </Text>
+          <Text size={'xs'}>{'Nov. 2023 – May 2024'}</Text>
+          <List
+            mt={'2vh'}
+            withPadding
+            spacing={'xs'}
+            icon={
+              <IconPoint
+                size={15}
+                stroke={'1'}
+                color={'cyan'}
+              ></IconPoint>
+            }
+          >
+            <List.Item>
+              <Text>
+                {
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros sapien.'
+                }
+              </Text>
+            </List.Item>
+            <List.Item>
+              <Text>
+                {
+                  'Sed vulputate gravida vestibulum. Ut turpis lectus, mattis in nisi maximus, tempus fermentum dolor. '
+                }
+              </Text>
+            </List.Item>
+            <List.Item>
+              <Text>
+                {
+                  'Nulla facilisi. Nam a leo ex. Quisque suscipit lectus ut eros consectetur sagittis. In hac habitasse platea dictumst. '
+                }
+              </Text>
+            </List.Item>
+            <List.Item>
+              <Text>
+                {
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros sapien.'
+                }
+              </Text>
+            </List.Item>
+          </List>
         </Tabs.Panel>
 
-        <Tabs.List>
+        <Tabs.List className={styles.tabsList}>
           <Tabs.Tab
             value="Patina"
             className={styles.verticalTab}
@@ -100,7 +195,7 @@ export function Experience() {
             <Text size={'md'}>{'Munch Insights'}</Text>
           </Tabs.Tab>
           <Tabs.Tab
-            value="settings"
+            value="placeholder"
             className={styles.verticalTab}
           >
             <Text size={'md'}>{'PlaceHolder'}</Text>
