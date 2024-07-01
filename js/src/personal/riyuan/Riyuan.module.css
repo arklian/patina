@@ -1,14 +1,29 @@
 .title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-size: rem(100px);
-    font-weight: 900;
-    letter-spacing: rem(-2px);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(100px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
+  margin-top: 0;
 
-    @media (max-width: $mantine-breakpoint-md) {
-        font-size: rem(50px);
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
 }
+
 
 .appshell{
   margin-left: 88px;
+  margin-right: 88px;
 }
+
+.container{
+  margin: 0;
+  padding-left: 20px;;
+  position: relative;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
