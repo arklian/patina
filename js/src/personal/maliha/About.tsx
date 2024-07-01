@@ -1,26 +1,31 @@
 import { Text, Anchor, List } from '@mantine/core'
 import styles from './Maliha.module.css'
-
+/* About page component*/
 export function About() {
   return (
     <>
       <Anchor
         href="https://youtu.be/VgoE837TskI?si=o8p281ughP0aUxmM"
         target="_blank"
+        underline="never"
+        style={{
+          position: 'absolute',
+          left: '1440px',
+          top: '50px',
+          zIndex: '100',
+        }}
       >
         <Text
           inherit
           component="span"
-          className={styles.title}
-          id={styles.about_title}
+          className={`${styles.title} ${styles.about_title}`}
           variant="gradient"
           gradient={{
-            from: '#dc1d1d',
-            to: 'rgb(151,92,164)',
+            from: '#de3737',
+            to: '#975CA4FF',
             deg: 50,
           }}
-          pos="absolute"
-          pl={1440}
+          style={{ display: 'inline', lineHeight: '1' }}
         >
           {'about me'}
         </Text>
@@ -28,12 +33,11 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
@@ -44,12 +48,11 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
@@ -61,12 +64,11 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
@@ -78,29 +80,27 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
         pl={2900}
         top={620}
       >
-        {'i bike in central park'}
+        {'i like biking'}
       </Text>
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
@@ -110,7 +110,7 @@ export function About() {
         {'currently watching: '}
         <List
           icon=" "
-          id={styles.about_info}
+          className={styles.about_info}
         >
           <List.Item>{'bridgerton'}</List.Item>
           <List.Item>{'the boys'} </List.Item>
@@ -120,12 +120,11 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={styles.title}
-        id={styles.about_info}
+        className={`${styles.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
-          to: 'rgb(151,92,164)',
+          to: '#975CA4FF',
           deg: 50,
         }}
         pos="absolute"
@@ -135,9 +134,9 @@ export function About() {
         {'currently playing:'}
         <List
           icon=" "
-          id={styles.about_info}
+          className={styles.about_info}
         >
-          <List.Item>{'minecraft'}</List.Item>
+          <List.Item font-weight={550}>{'minecraft'}</List.Item>
           <List.Item>{'genshin impact'} </List.Item>
           <List.Item>{'kindergarten'}</List.Item>
         </List>

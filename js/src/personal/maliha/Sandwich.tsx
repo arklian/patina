@@ -1,7 +1,6 @@
-/* Burger Menu Toggle*/
 import { Burger } from '@mantine/core'
 import styles from './Maliha.module.css'
-
+/* Burger Menu Toggle*/
 interface SandwichProps {
   onToggleMenu: () => void
   opened: boolean

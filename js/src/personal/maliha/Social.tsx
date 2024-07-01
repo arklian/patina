@@ -1,11 +1,10 @@
-/* Social Media Icons */
 import { Anchor, Stack } from '@mantine/core'
 import { CgMail } from 'react-icons/cg'
 import { CiLinkedin } from 'react-icons/ci'
 import { FaInstagram, FaGithubSquare } from 'react-icons/fa'
 import { useHover } from '@mantine/hooks'
 import styles from './Maliha.module.css'
-
+/* Social Media Icons */
 const iconMap = [
   {
     icon: FaInstagram,
