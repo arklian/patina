@@ -6,11 +6,29 @@
 }
 
 .verticalTab{
-  padding-right: 4vw;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-right: 3vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .tabPanel{
   width: 40vw;
+  min-height: 200px;
+}
+
+.tabsList{
+  height:100%;
+}
+
+.titleLine {
+  margin-left: 30px;
+  height: 0.5px;
+  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  width: 300px;
+}
+
+.titleContain{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
 }
