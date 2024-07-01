@@ -16,7 +16,7 @@ const links = [
 ]
 
 export function FooterCentered() {
-  const social = links.map((link) => (
+  const socials = links.map((link) => (
     <Anchor
       c="dimmed"
       key={link.label}
@@ -31,7 +31,7 @@ export function FooterCentered() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <Group className={classes.links}>{social}</Group>
+        <Group className={classes.links}>{socials}</Group>
 
         <Group
           gap="xs"
