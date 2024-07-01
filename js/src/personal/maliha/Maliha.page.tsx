@@ -12,6 +12,7 @@ import { Social } from './Social.tsx'
 import { Fonts } from './Fonts.tsx'
 import { Images } from './Images.tsx'
 import { About } from './About.tsx'
+import { Resume } from './Resume.tsx'
 import styles from './Maliha.module.css'
 
 export function MalihaPage() {
@@ -30,31 +31,31 @@ export function MalihaPage() {
           type="always"
           w={10000}
           h={900}
+          scrollbarSize={1}
         >
           <Images />
-          <UnstyledButton
-            pos="fixed"
-            h={100}
-            w={100}
-            top={50}
-            className={styles.icons}
-            onClick={() => scrollIntoView()}
-          >
-            <Image
-              h={130}
-              w={130}
+          <div className={styles.left}>
+            <UnstyledButton
               pos="fixed"
-              id={styles.home_icon}
-              pl={20}
-              src="https://i.pinimg.com/originals/d6/81/b4/d681b4fac2b113532ae1f6e5986afeef.png"
-            />
-          </UnstyledButton>
-          <div
-            className={styles.left}
-            ref={targetRef}
-          >
-            <Social />
-            <Menu />
+              h={100}
+              w={100}
+              top={50}
+              className={styles.icons}
+              onClick={() => scrollIntoView()}
+            >
+              <Image
+                h={130}
+                w={130}
+                pos="fixed"
+                id={styles.home_icon}
+                pl={20}
+                src="https://i.pinimg.com/originals/d6/81/b4/d681b4fac2b113532ae1f6e5986afeef.png"
+              />
+            </UnstyledButton>
+            <div ref={targetRef}>
+              <Social />
+              <Menu />
+            </div>
           </div>
           <div className={styles.border} />
           <Text
@@ -103,6 +104,7 @@ export function MalihaPage() {
             className={styles.border}
             id={styles.resume_border}
           />
+          <Resume />
         </ScrollArea>
       </div>
     </MantineProvider>

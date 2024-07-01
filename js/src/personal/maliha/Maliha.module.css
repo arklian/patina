@@ -15,6 +15,7 @@
 }
 
 #about_title {
+  position: relative;
   font-size: 200px;
   left: 210px;
   top: 10px;
@@ -22,12 +23,43 @@
 
 #about_info {
   letter-spacing: 2px;
-  font-weight: 550;
   font-size: 30px;
   left: 100px;
   top: 350px;
+  font-weight: 550;
 }
 
+#about_info .mantine-List-itemLabel{
+  letter-spacing: 2px;
+  font-size: 30px;
+  left: 100px;
+  top: 350px;
+  font-weight: 550;
+}
+
+#resume_title{
+  position: absolute;
+  font-size: 200px;
+  left: 400px;
+  z-index: 1;
+}
+#resume_info{
+  font-size: 50px;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 3950px;
+  top:80px;
+}
+#resume_info_list{
+  font-size: 30px;
+}
+#resume_info_list2{
+  font-size: 25px;
+}
+#resume_experience{
+  font-size: 40px;
+  letter-spacing: 2px;
+}
 .body {
   overflow-y: hidden;
   overflow-x: scroll;
@@ -56,6 +88,7 @@
   position: absolute;
   left: 3450px;
 }
+
 .menuWrapper {
   width: 100%;
   position: fixed;
@@ -80,11 +113,13 @@
     font-weight: 200;
     letter-spacing: 3px;
     font-family: "Yeseva One", Sans-Serif;
+    z-index: 200;
   }
   :global(.mantine-Modal-inner) {
     padding: 0;
     opacity: 100%;
     color: #be5555;
+    z-index: 200;
     font-family: "Yeseva One", Sans-Serif;
   }
   :global(.mantine-Modal-content) {
@@ -95,6 +130,7 @@
     margin-right: 750px;
     background-color: #dca9bc;
     border: 1mm inset rgb(235, 124, 124);
+    z-index: 200;
     font-family: "Yeseva One", Sans-Serif;
   }
   :global(.mantine-Modal-header) {
@@ -104,17 +140,17 @@
   }
 }
 .left{
-  z-index: 200;
-  background: transparent;
+  z-index: 900;
   width: 144px;
   height: 100vh;
 }
 .icons{
-  z-index: 20;
+  z-index: 900;
   top: 300px;
   left: 40px;
 }
 #home_icon{
+  z-index: 900;
   top: 30px;
   left: 0px;
 }
@@ -122,10 +158,16 @@
   position: absolute;
   border: none;
   z-index: 1;
-  top: 280px;
+  top: 300px;
   width: 300px;
-  height: 450px;
+  height: 350px;
   left: 1700px;
 }
 
+#download_resume{
+  :global(.mantine-Text-root){
+    position: absolute;
+    display: block;
+  }
+}
 

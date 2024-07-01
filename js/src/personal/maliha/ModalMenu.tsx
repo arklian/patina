@@ -5,10 +5,10 @@ import styles from './Maliha.module.css'
 
 const labels = [
   { label: 'About' },
-  { label: 'Projects' },
-  { label: 'Gallery' },
-  { label: 'Notes' },
   { label: 'Resume' },
+  { label: 'Projects' },
+  { label: 'Notes' },
+  { label: 'Gallery' },
 ]
 
 export function Menu() {

@@ -7,6 +7,13 @@ export function About() {
       <Anchor
         href="https://youtu.be/VgoE837TskI?si=o8p281ughP0aUxmM"
         target="_blank"
+        underline="never"
+        style={{
+          position: 'absolute',
+          left: '1440px',
+          top: '50px',
+          zIndex: '100',
+        }}
       >
         <Text
           inherit
@@ -15,12 +22,11 @@ export function About() {
           id={styles.about_title}
           variant="gradient"
           gradient={{
-            from: '#dc1d1d',
+            from: '#de3737',
             to: 'rgb(151,92,164)',
             deg: 50,
           }}
-          pos="absolute"
-          pl={1440}
+          style={{ display: 'inline', lineHeight: '1' }}
         >
           {'about me'}
         </Text>
@@ -90,7 +96,7 @@ export function About() {
         pl={2900}
         top={620}
       >
-        {'i bike in central park'}
+        {'i like biking'}
       </Text>
       <Text
         inherit
@@ -137,7 +143,7 @@ export function About() {
           icon=" "
           id={styles.about_info}
         >
-          <List.Item>{'minecraft'}</List.Item>
+          <List.Item font-weight={550}>{'minecraft'}</List.Item>
           <List.Item>{'genshin impact'} </List.Item>
           <List.Item>{'kindergarten'}</List.Item>
         </List>
