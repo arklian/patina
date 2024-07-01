@@ -1,7 +1,8 @@
 import { Title, Text, Box, AspectRatio, Divider } from '@mantine/core'
-import styles from './Haoking.module.css'
-import { theme } from './theme.ts'
+import styles from '../Haoking.module.css'
+import { theme } from '../theme.ts'
 
+/* Component for basic info and spotify embed on right side of about me page */
 export function RightAboutMe() {
   const text: string[] = [
     'b.s. in cs @ rpi | class of 2027',
@@ -12,13 +13,15 @@ export function RightAboutMe() {
   return (
     <Box
       ml={90}
+      mr={350}
       mt={45}
       maw={400}
+      className={styles.animate_fade_in_delay}
     >
       <Divider
-        pos="relative"
-        top={120}
-        pt={140}
+        mt={120}
+        pt={20}
+        maw={350}
         color={theme.colors.white[6]}
       />
       <Title c={theme.colors.white[2]}>{'Info'}</Title>
