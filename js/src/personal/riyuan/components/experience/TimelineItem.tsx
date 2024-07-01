@@ -10,12 +10,12 @@ interface TimelineItemProps {
 }
 
 export function TimelineItem({
-  bullet,
-  title,
-  description,
-  time,
-  lineVariant,
-}: TimelineItemProps) {
+                               bullet,
+                               title,
+                               description,
+                               time,
+                               lineVariant,
+                             }: TimelineItemProps) {
   return (
     <Timeline.Item
       bullet={bullet}
