@@ -9,6 +9,7 @@ import { KellyPage } from './personal/kelly/Kelly.page.tsx'
 import { MalihaPage } from './personal/maliha/Maliha.page.tsx'
 import { MannyPage } from './personal/manny/Manny.page.tsx'
 import { ResumePage as MannyResume } from '@/personal/manny/pages/Resume.tsx'
+import { About as MannyAboutMePage } from '@/personal/manny/pages/About.tsx'
 import { RiyuanPage } from './personal/riyuan/Riyuan.page.tsx'
 import { TonyPage } from './personal/tony/Tony.page.tsx'
 
@@ -63,6 +64,11 @@ export const RootRoutes = [
     path: '/manny/resume',
     description: "Manny's Resume Page",
     element: <MannyResume />,
+  },
+  {
+    path: '/manny/aboutme',
+    description: "Manny's About Me Page",
+    element: <MannyAboutMePage />,
   },
   {
     path: '/riyuan',
