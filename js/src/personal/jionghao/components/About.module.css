@@ -4,7 +4,7 @@
   width: 70%;
   justify-content: space-around;
   align-content: flex-start;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
 
 }
 
@@ -15,7 +15,7 @@
 .titleLine {
   margin-left: 30px;
   flex-grow: 1;
-  height: 1px;
+  height: 0.5px;
   background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 

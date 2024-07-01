@@ -1,0 +1,16 @@
+.experience{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+
+}
+
+.verticalTab{
+  padding-right: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.tabPanel{
+  width: 40vw;
+}
