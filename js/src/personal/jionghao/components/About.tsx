@@ -23,6 +23,16 @@ export function About() {
               'lobortis consequat urna posuere id. Curabitur orci turpis, tincidunt sed leo et, ' +
               'commodo dignissim sapien. Phasellus auctor maximus dolor.'}
           </Text>
+          <Text>
+            {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+              'Quisque malesuada sem ut tellus fermentum, ut pulvinar turpis pulvinar. ' +
+              'Nulla lorem ligula, varius porta ex eu, euismod vulputate elit. ' +
+              'Nam condimentum massa semper enim accumsan interdum. ' +
+              'Duis at lectus sed sem sodales laoreet. Morbi hendrerit ipsum varius nisl ' +
+              'dignissim malesuada. Sed vel magna mauris. Integer aliquam velit metus, ' +
+              'lobortis consequat urna posuere id. Curabitur orci turpis, tincidunt sed leo et, ' +
+              'commodo dignissim sapien. Phasellus auctor maximus dolor.'}
+          </Text>
         </div>
       </div>
       <div>
