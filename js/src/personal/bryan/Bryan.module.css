@@ -21,11 +21,11 @@
 .header {
     height: rem(6vh);
     background-color: var(--mantine-color-body);
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    border-bottom: rem(0.2vh) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
 
 .inner {
-    height: rem(56px);
+    height: rem(6vh);
     display: flex;
     justify-content: space-between;
     align-items: center;
