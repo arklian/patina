@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from 'react'
-import { Title, Space } from '@mantine/core'
+import { Title } from '@mantine/core'
 import styles from '@/personal/bryan/Bryan.module.css'
 
 /** Component to display current time */
@@ -43,12 +43,15 @@ export function TimeDisplay() {
   const colon = date.getSeconds() % 2 === 0 ? ' ' : ':'
 
   return (
-    <Title
-      className={styles.title}
-      ml="5rem"
-    >
-      {`${Hours}${colon}${Minutes}${AM} EST`}
-      <Space h="xs" />
-    </Title>
+    <>
+      <Title
+        className={styles.title2}
+        mr="2rem"
+        mt="0.5rem"
+        ta="right"
+      >
+        {`${Hours}${colon}${Minutes}${AM} EST`}
+      </Title>
+    </>
   )
 }
