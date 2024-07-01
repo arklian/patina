@@ -1,5 +1,3 @@
-import React from 'react'
-import { Title, Text } from '@mantine/core'
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import styles from './Navbar.module.css'
 
@@ -7,17 +5,29 @@ export function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.wrapper}>
-        <a href="#hero">
-          <span>{'Kazi Mansha'}</span>
+        <a
+          href="#hero"
+          className={styles.a_links}
+        >
+          <span className={styles.navbar_links}>{'Kazi Mansha'}</span>
         </a>
-        <a href="#projects">
-          <span>{'Projects'}</span>
+        <a
+          href="#projects"
+          className={styles.a_links}
+        >
+          <span className={styles.navbar_links}>{'Projects'}</span>
         </a>
-        <a href="#about">
-          <span>{'About'}</span>
+        <a
+          href="#about"
+          className={styles.a_links}
+        >
+          <span className={styles.navbar_links}>{'About'}</span>
         </a>
-        <a href="#contact">
-          <span>{'Contact'}</span>
+        <a
+          href="#contact"
+          className={styles.a_links}
+        >
+          <span className={styles.navbar_links}>{'Contact'}</span>
         </a>
         <div className={styles.links}>
           <a

@@ -11,16 +11,16 @@
   height: 100%;
 }
 
-span {
+.navbar_links {
   font-weight: bold;
+}
+
+.a_links {
+  text-decoration: none;
 }
 
 .links {
   display: flex;
   gap: 20px;
-}
-
-a {
-  text-decoration: none ;
 }
 

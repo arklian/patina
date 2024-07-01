@@ -9,7 +9,7 @@
   }
 }
 
-html {
+.scroll_container {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -19,7 +19,7 @@ html {
   flex-direction: column;
 }
 
-.sections section {
+.section {
   min-height: 100vh;
   padding: 20px;
   border-bottom: 1px solid #ddd;

@@ -1,4 +1,4 @@
-import { Title, Text, MantineProvider } from '@mantine/core'
+import { MantineProvider } from '@mantine/core'
 import styles from './Kazi.module.css'
 import { DarkModeToggle } from './components/DarkModeToggle/DarkModeToggle'
 import { theme } from './theme.ts'
@@ -7,14 +7,34 @@ import { Navbar } from './components/Navbar/Navbar'
 export function KaziPage() {
   return (
     <MantineProvider theme={theme}>
-      <div className={styles.sections}>
+      <div className={`${styles.sections} ${styles.scroll_container}`}>
         <section>
           <Navbar />
         </section>
-        <section id="hero">{'Hero'}</section>
-        <section id="projects">{'Projects'}</section>
-        <section id="about">{'About'}</section>
-        <section id="contact">{'Contact'}</section>
+        <section
+          id="hero"
+          className={styles.section}
+        >
+          {'Hero'}
+        </section>
+        <section
+          id="projects"
+          className={styles.section}
+        >
+          {'Projects'}
+        </section>
+        <section
+          id="about"
+          className={styles.section}
+        >
+          {'About'}
+        </section>
+        <section
+          id="contact"
+          className={styles.section}
+        >
+          {'Contact'}
+        </section>
       </div>
       <DarkModeToggle />
     </MantineProvider>
