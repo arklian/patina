@@ -4,7 +4,7 @@ import styles from './Riyuan.module.css'
 import { Nav } from '@/personal/riyuan/components/navigation/Navigation.tsx'
 import { Home } from '@/personal/riyuan/components/home/Home.tsx'
 import { About } from '@/personal/riyuan/components/about/About.tsx'
-import { Timeline } from '@/personal/riyuan/components/timeline/Timeline.tsx'
+import { Experience } from '@/personal/riyuan/components/experience/Experience.tsx'
 import { Project } from '@/personal/riyuan/components/project/Project.tsx'
 import { Contact } from '@/personal/riyuan/components/contact/Contact.tsx'
 import { FooterCentered } from '@/personal/riyuan/components/footer/Footer.tsx'
@@ -16,7 +16,7 @@ export function RiyuanPage() {
       <AppShell className={styles.appshell}>
         <Home />
         <About />
-        <Timeline />
+        <Experience />
         <Project />
         <Contact />
         <FooterCentered />

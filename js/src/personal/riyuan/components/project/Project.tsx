@@ -3,7 +3,10 @@ import styles from '@/personal/riyuan/Riyuan.module.css'
 
 export function Project() {
   return (
-    <div id={'Project'}>
+    <div
+      id={'Project'}
+      className={styles.container}
+    >
       <Title
         className={styles.title}
         ta="center"
