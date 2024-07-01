@@ -4,8 +4,8 @@
   width: 70%;
   justify-content: space-around;
   align-content: flex-start;
-  margin-bottom: 30vh;
-
+  margin-bottom: 20vh;
+  padding-top: 10vh;
 }
 
 .aboutDesc{

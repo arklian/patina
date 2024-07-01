@@ -6,6 +6,7 @@ import { Header } from './components/Header.tsx'
 import { Hero } from './components/Hero.tsx'
 import { About } from './components/About.tsx'
 import { Experience } from './components/Experience.tsx'
+import { Work } from './components/Work.tsx'
 
 export function JionghaoPage() {
   return (
@@ -15,6 +16,7 @@ export function JionghaoPage() {
         <Hero />
         <About />
         <Experience />
+        <Work />
       </div>
       <FooterSocial />
     </MantineProvider>

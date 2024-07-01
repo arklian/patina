@@ -13,7 +13,6 @@
 .header {
   display: flex;
   justify-content: center;
-
   padding: 20px;
   background-color: light-dark(var(--mantine-color-white),var(--mantine-color-dark-7));
 }

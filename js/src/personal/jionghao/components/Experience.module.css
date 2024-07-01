@@ -2,18 +2,20 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-
+  margin-bottom: 20vh;
+  padding-top: 12vh;
+  width: 900px;
 }
 
 .verticalTab{
-  padding-right: 3vw;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
+  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .tabPanel{
   width: 40vw;
-  min-height: 200px;
+  min-height: 400px;
 }
 
 .tabsList{
@@ -30,5 +32,5 @@
 .titleContain{
   display: flex;
   align-items: center;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
