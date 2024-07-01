@@ -3,10 +3,13 @@ import styles from '@/personal/riyuan/Riyuan.module.css'
 
 export function Home() {
   return (
-    <div id={'Home'}>
+    <div
+      id={'Home'}
+      className={styles.container}
+    >
       <Title
         className={styles.title}
-        ta="center"
+        ta="left"
         mt={100}
       >
         {'Home Page'}

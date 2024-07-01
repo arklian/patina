@@ -127,7 +127,7 @@ export function Nav() {
   const navItems = [
     { title: 'Home', icon: faHouse },
     { title: 'About', icon: faPerson },
-    { title: 'Timeline', icon: faTimeline },
+    { title: 'Experience', icon: faTimeline },
     { title: 'Project', icon: faFolder },
     { title: 'Contact', icon: faIdCard },
   ]

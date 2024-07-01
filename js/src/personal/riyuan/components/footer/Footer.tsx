@@ -4,25 +4,24 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
 } from '@tabler/icons-react'
-// @ts-ignore
 import classes from './FooterCentered.module.css'
 
 const links = [
-  { link: '#', label: 'Contact' },
-  { link: '#', label: 'Privacy' },
-  { link: '#', label: 'Blog' },
-  { link: '#', label: 'Store' },
-  { link: '#', label: 'Careers' },
+  { link: 'https://blog.riyuanliu.com/', label: 'Blog' },
+  { link: 'https://github.com/Riyuanliu', label: 'GitHub' },
+  {
+    link: 'https://www.linkedin.com/in/ryan-liu-9896981b1/',
+    label: 'LinkedIn',
+  },
 ]
 
 export function FooterCentered() {
-  const items = links.map((link) => (
+  const social = links.map((link) => (
     <Anchor
       c="dimmed"
       key={link.label}
       href={link.link}
       lh={1}
-      onClick={(event) => event.preventDefault()}
       size="sm"
     >
       {link.label}
@@ -32,7 +31,7 @@ export function FooterCentered() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <Group className={classes.links}>{items}</Group>
+        <Group className={classes.links}>{social}</Group>
 
         <Group
           gap="xs"

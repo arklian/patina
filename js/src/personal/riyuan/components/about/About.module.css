@@ -1,0 +1,19 @@
+.about{
+  padding: 88px;
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  background: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+
+.info{
+  min-width: 40vw;
+  padding: 20px;
+}
