@@ -20,7 +20,7 @@ export function Experience() {
         radius={'xs'}
       >
         <Tabs.Panel
-          pl={'2vw'}
+          pl={'25px'}
           value="Patina"
           className={styles.tabPanel}
         >
@@ -30,10 +30,14 @@ export function Experience() {
           >
             {'Software Engineering Intern @ Patina Network'}
           </Text>
-          <Text size={'xs'}>{'June 2024 - Present'}</Text>
+          <Text
+            mt={'3px'}
+            size={'xs'}
+          >
+            {'June 2024 - Present'}
+          </Text>
           <List
-            mt={'2vh'}
-            withPadding
+            mt={'20'}
             spacing={'xs'}
             icon={
               <IconPoint
@@ -75,7 +79,7 @@ export function Experience() {
         </Tabs.Panel>
 
         <Tabs.Panel
-          pl={'2vw'}
+          pl={'25px'}
           value="Munch"
           className={styles.tabPanel}
         >
@@ -85,10 +89,14 @@ export function Experience() {
           >
             {'Software Engineering Intern @ Munch Insights'}
           </Text>
-          <Text size={'xs'}>{'Nov. 2023 – May 2024'}</Text>
+          <Text
+            mt={'3px'}
+            size={'xs'}
+          >
+            {'Nov. 2023 – May 2024'}
+          </Text>
           <List
-            mt={'2vh'}
-            withPadding
+            mt={'20'}
             spacing={'xs'}
             icon={
               <IconPoint
@@ -100,19 +108,19 @@ export function Experience() {
           >
             <List.Item>
               <Text>
-                {'Designed and developed a proof-of-concept (PoC) for a restaurant ordering menu accessible via QR code scan,\n' +
+                {'Designed and developed a proof-of-concept (PoC) for a restaurant ordering menu accessible via QR code scan, ' +
                   'integrating Stripe for secure payment processing.'}
               </Text>
             </List.Item>
             <List.Item>
               <Text>
-                {'Built a RESTful API using Golang and the Echo framework to handle web requests for menu orders, account\n' +
+                {'Built a RESTful API using Golang and the Echo framework to handle web requests for menu orders, account ' +
                   'validation, and secure checkouts.'}
               </Text>
             </List.Item>
             <List.Item>
               <Text>
-                {'Utilized AWS to deploy and manage cloud services and implemented SQL databases to manage and query customer\n' +
+                {'Utilized AWS to deploy and manage cloud services and implemented SQL databases to manage and query customer ' +
                   'data, ensuring high availability, scalability, and efficient data management.'}
               </Text>
             </List.Item>
@@ -137,10 +145,14 @@ export function Experience() {
           >
             {'Placeholder @ Placeholder'}
           </Text>
-          <Text size={'xs'}>{'Nov. 2023 – May 2024'}</Text>
+          <Text
+            mt={'3px'}
+            size={'xs'}
+          >
+            {'Nov. 2023 – May 2024'}
+          </Text>
           <List
-            mt={'2vh'}
-            withPadding
+            mt={'20'}
             spacing={'xs'}
             icon={
               <IconPoint
