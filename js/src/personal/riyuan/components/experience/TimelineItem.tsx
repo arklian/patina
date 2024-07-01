@@ -25,8 +25,9 @@ export function TimelineItem({
       <Text
         c="dimmed"
         size="sm"
-        dangerouslySetInnerHTML={{ __html: description }}
-      />
+      >
+        {description}
+      </Text>
       <Text
         size="xs"
         mt={4}
