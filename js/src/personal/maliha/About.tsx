@@ -1,4 +1,5 @@
 import { Text, Anchor, List } from '@mantine/core'
+import { Spotify } from './Spotify'
 import styles from './About.module.css'
 import main_class from './Maliha.module.css'
 /* About page component*/
@@ -32,6 +33,7 @@ export function About() {
           {'about me'}
         </Text>
       </Anchor>
+      <Spotify />
       <Text
         inherit
         component="span"

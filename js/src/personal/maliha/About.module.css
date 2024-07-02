@@ -35,3 +35,13 @@
   position: absolute;
   left: 1440px;
 }
+
+.playlist{
+  position: absolute;
+  border: none;
+  z-index: 1;
+  top: 300px;
+  width: 300px;
+  height: 350px;
+  left: 1700px;
+}

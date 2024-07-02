@@ -34,16 +34,6 @@
   z-index: 10;
 }
 
-.playlist{
-  position: absolute;
-  border: none;
-  z-index: 1;
-  top: 300px;
-  width: 300px;
-  height: 350px;
-  left: 1700px;
-}
-
 .home_icon{
   z-index: 900;
   top: 30px;
