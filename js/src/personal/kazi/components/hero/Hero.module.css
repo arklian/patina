@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 900;
+  margin-bottom: 33px;
+}
+
+.description {
+  margin-bottom: 52px;
+}
+
+.heroImg {
+  width: 50%;
+  z-index: 1;
+  animation-name: img_float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes img_float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
