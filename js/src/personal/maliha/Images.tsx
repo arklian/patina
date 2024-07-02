@@ -1,5 +1,6 @@
 import { Image, AspectRatio } from '@mantine/core'
 import styles from './Maliha.module.css'
+
 /* All images */
 export function Images() {
   return (

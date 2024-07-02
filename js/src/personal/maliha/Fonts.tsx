@@ -1,7 +1,6 @@
 /* Fonts */
 export function Fonts() {
   return (
-    // preconnect links are for loading times
     <>
       <link
         rel="preconnect"

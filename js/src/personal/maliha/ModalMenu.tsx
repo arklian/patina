@@ -1,7 +1,8 @@
 import { useDisclosure } from '@mantine/hooks'
 import { Modal, UnstyledButton, Stack } from '@mantine/core'
 import { Sandwich } from './Sandwich.tsx'
-import styles from './Maliha.module.css'
+import styles from './Modal.module.css'
+
 /* Menu Component */
 const labels = [
   { label: 'About' },

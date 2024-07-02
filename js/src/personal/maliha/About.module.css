@@ -1,0 +1,37 @@
+.title {
+  position: absolute;
+  font-size: 450px;
+  font-family: "Yeseva One", serif;
+  letter-spacing: 6px;
+  top: 200px;
+  left: 350px;
+  font-weight: 999;
+}
+
+.about_title {
+  position: relative;
+  font-size: 200px;
+  left: 210px;
+  top: 10px;
+}
+
+.about_info {
+  letter-spacing: 2px;
+  font-size: 30px;
+  left: 100px;
+  top: 350px;
+  font-weight: 550;
+}
+
+.about_info .mantine-List-itemLabel{
+  letter-spacing: 2px;
+  font-size: 30px;
+  left: 100px;
+  top: 350px;
+  font-weight: 550;
+}
+
+.about_border {
+  position: absolute;
+  left: 1440px;
+}

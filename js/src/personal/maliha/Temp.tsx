@@ -95,7 +95,6 @@ export function MalihaPage() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           />
-          <div className={`${styles.border} ${styles.resume_border}`} />
           <Resume />
         </ScrollArea>
       </div>
