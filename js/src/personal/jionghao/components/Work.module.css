@@ -28,3 +28,18 @@
   justify-content: flex-start;
   margin-bottom: 3vh;
 }
+
+.project{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  background-color: light-dark( #d3d3d3, #2E2E2E);
+  width: 100%;
+}
+
+.projectContent{
+  max-width: 550px;
+  margin: 20px;
+
+}
