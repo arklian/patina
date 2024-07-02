@@ -1,4 +1,12 @@
-import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import {
+  FaUserAlt,
+  FaBriefcase,
+  FaInfoCircle,
+  FaPhone,
+  FaInstagram,
+  FaLinkedinIn,
+  FaGithub,
+} from 'react-icons/fa'
 import styles from './Navbar.module.css'
 
 export function Navbar() {
@@ -7,27 +15,43 @@ export function Navbar() {
       <div className={styles.wrapper}>
         <a
           href="#hero"
-          className={styles.a_links}
+          className={styles.iconLink}
         >
-          <span className={styles.navbar_links}>{'Kazi Mansha'}</span>
-        </a>
-        <a
-          href="#projects"
-          className={styles.a_links}
-        >
-          <span className={styles.navbar_links}>{'Projects'}</span>
+          <FaUserAlt
+            size={30}
+            className={styles.icon}
+          />
+          <span className={styles.iconText}>{'Profile'}</span>
         </a>
         <a
           href="#about"
-          className={styles.a_links}
+          className={styles.iconLink}
         >
-          <span className={styles.navbar_links}>{'About'}</span>
+          <FaInfoCircle
+            size={30}
+            className={styles.icon}
+          />
+          <span className={styles.iconText}>{'About'}</span>
+        </a>
+        <a
+          href="#projects"
+          className={styles.iconLink}
+        >
+          <FaBriefcase
+            size={30}
+            className={styles.icon}
+          />
+          <span className={styles.iconText}>{'Projects'}</span>
         </a>
         <a
           href="#contact"
-          className={styles.a_links}
+          className={styles.iconLink}
         >
-          <span className={styles.navbar_links}>{'Contact'}</span>
+          <FaPhone
+            size={30}
+            className={styles.icon}
+          />
+          <span className={styles.iconText}>{'Contact'}</span>
         </a>
         <div className={styles.links}>
           <a
@@ -35,21 +59,30 @@ export function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram size={30} />
+            <FaInstagram
+              size={30}
+              color={'black'}
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/kazimansha/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedinIn size={30} />
+            <FaLinkedinIn
+              size={30}
+              color={'black'}
+            />
           </a>
           <a
             href="https://github.com/KaziMansha"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub size={30} />
+            <FaGithub
+              size={30}
+              color={'black'}
+            />
           </a>
         </div>
       </div>
