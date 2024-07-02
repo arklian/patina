@@ -1,5 +1,5 @@
 import { Container, Group, Anchor } from '@mantine/core'
-import { Settings } from '@/personal/bryan/Settings/Settings.tsx'
+import { Settings } from '@/personal/bryan/settings/Settings.tsx'
 import classes from '@/personal/bryan/Bryan.module.css'
 
 /** component to create a navbar in the header */

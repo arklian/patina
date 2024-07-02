@@ -1,7 +1,7 @@
 import { Flex, Text, Title, Grid, Anchor, Center, Image } from '@mantine/core'
 import classes from './Projects.module.css'
 import image from '@/personal/bryan/images/Personal_Site.png'
-import document from '@/personal/bryan/Files/COS_429_Report.pdf'
+import document from '@/personal/bryan/files/COS_429_Report.pdf'
 
 export function ProjectsPage() {
   const Project = (props: {
