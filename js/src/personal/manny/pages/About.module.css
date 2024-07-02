@@ -1,1 +1,77 @@
+.container {
+  padding: 0 20px;
+  background-color: var(--mantine-color-dark-6);
+  color: var(--mantine-color-white);
+}
 
+.banner {
+  width: 100vw;
+  background-color: var(--mantine-color-dark-6);
+  text-align: center;
+  padding: 40px 0;
+  margin-left: calc(50% - 50vw);
+  border: 2px solid var(--mantine-color-white);
+  box-sizing: border-box;
+}
+
+.bannerTitle {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--mantine-color-white);
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.5px;
+}
+
+.contactButton {
+  color: #ffefd5;
+  border-color: #ffefd5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 1px;
+}
+
+.content {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.image {
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.quoteSection {
+  padding: 40px 20px;
+  border-left: 3px solid #fff; /* Left border to emphasize the quote */
+  margin-top: 20px;
+  position: relative; /* Position relative to allow absolute positioning of cite */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockquote {
+  font-style: italic;
+  color: #ffefd5;
+  margin: 0;
+}
+
+.cite {
+  color: #ffefd5;
+  align-self: flex-end; /* Align the citation to the bottom right */
+  margin-top: 10px;
+}
