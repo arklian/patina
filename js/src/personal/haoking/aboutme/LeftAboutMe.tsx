@@ -1,11 +1,20 @@
-import { Title, Text, Box, Flex, Image, ActionIcon } from '@mantine/core'
+import {
+  Title,
+  Text,
+  Box,
+  Flex,
+  Image,
+  ActionIcon,
+  useComputedColorScheme,
+} from '@mantine/core'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
-import styles from '../Haoking.module.css'
 import { theme } from '../theme.ts'
+import styles from '../Haoking.module.css'
 import { Time } from '../components/Time.tsx'
 
 /* Component containing image, time, contact info on left side of about me page */
 export function LeftAboutMe() {
+  const colorScheme = useComputedColorScheme()
   return (
     <Box
       ml={90}
@@ -16,37 +25,36 @@ export function LeftAboutMe() {
         <Text
           inherit
           variant="gradient"
-          component="span"
-          gradient={{
-            from: theme.colors.black[0],
-            to: theme.colors.black[1],
-          }}
+          gradient={
+            colorScheme === 'light' ?
+              { from: theme.colors.accent[2], to: theme.colors.accent[1] }
+            : { from: theme.colors.black[0], to: theme.colors.black[1] }
+          }
         >
           {'Haoking Luo'}
         </Text>
       </Title>
       <Flex gap={15}>
-        <Title
-          fz={40}
-          c={theme.colors.white[0]}
-        >
-          {'swe guy'}
-        </Title>
+        <Title fz={40}>{'swe guy'}</Title>
         <ActionIcon
+          className={styles.action}
           component="a"
           href="https://github.com/luoh00"
           target="_blank"
           mt={15}
-          color="transparent"
+          variant="transparent"
+          color={colorScheme === 'light' ? theme.colors.accent[9] : 'gray'}
         >
           <IconBrandGithub size={24} />
         </ActionIcon>
         <ActionIcon
+          className={styles.action}
           component="a"
           href="https://linkedin.com/in/haoking-l-0a5ab61b3"
           target="_blank"
           mt={15}
-          color="transparent"
+          variant="transparent"
+          color={colorScheme === 'light' ? theme.colors.accent[9] : 'gray'}
         >
           <IconBrandLinkedin size={24} />
         </ActionIcon>

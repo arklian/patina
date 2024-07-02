@@ -1,7 +1,14 @@
-import { Group } from '@mantine/core'
+import {
+  Group,
+  ActionIcon,
+  useMantineColorScheme,
+  useComputedColorScheme,
+} from '@mantine/core'
+import { IconSunFilled, IconMoonFilled } from '@tabler/icons-react'
 import { NavLink } from './NavLink.tsx'
 import styles from '../Haoking.module.css'
 import { Pages } from '../pages.ts'
+import { theme } from '../theme.ts'
 
 /* Component for a navbar to lead to different pages*/
 export function Navbar({
@@ -16,6 +23,8 @@ export function Navbar({
     { link: '#projects', label: Pages.Project },
     { link: '#misc', label: Pages.Misc },
   ]
+  const { setColorScheme } = useMantineColorScheme()
+  const colorScheme = useComputedColorScheme()
 
   return (
     <nav>
@@ -48,6 +57,22 @@ export function Navbar({
               label={page.label}
             />
           ))}
+          <ActionIcon
+            onClick={
+              colorScheme === 'light' ?
+                () => setColorScheme('dark')
+              : () => setColorScheme('light')
+            }
+            variant="transparent"
+            color={
+              colorScheme === 'light' ?
+                theme.colors.accent[2]
+              : theme.colors.white[2]
+            }
+          >
+            {colorScheme === 'light' && <IconMoonFilled size={24} />}
+            {colorScheme === 'dark' && <IconSunFilled size={24} />}
+          </ActionIcon>
         </Group>
       </Group>
     </nav>
