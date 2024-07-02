@@ -1,8 +1,9 @@
 import { MantineProvider } from '@mantine/core'
 import styles from './Kazi.module.css'
-import { DarkModeToggle } from './components/DarkModeToggle/DarkModeToggle'
+import { DarkModeToggle } from './components/darkmodetoggle/DarkModeToggle'
 import { theme } from './theme.ts'
-import { Navbar } from './components/Navbar/Navbar'
+import { Navbar } from './components/navbar/Navbar'
+import { Hero } from './components/hero/Hero'
 
 export function KaziPage() {
   return (
@@ -15,7 +16,7 @@ export function KaziPage() {
           id="hero"
           className={styles.section}
         >
-          {'Hero'}
+          <Hero />
         </section>
         <section
           id="projects"
