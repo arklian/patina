@@ -19,15 +19,19 @@ export const TabPanel = ({ value, title, items }: TabPanelProps) => (
     >
       {title}
     </Text>
-    <Text size={'xs'}>{title}</Text>
+    <Text size={'md'}>
+      {
+        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+      }
+    </Text>
     <List
       mt={'2vh'}
       withPadding
-      spacing={'md'}
+      spacing={'sm'}
     >
       {items.map((item, index) => (
         <List.Item key={index}>
-          <Text>{item}</Text>
+          <Text size={'sm'}>{item}</Text>
         </List.Item>
       ))}
     </List>
