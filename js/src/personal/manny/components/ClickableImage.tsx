@@ -30,6 +30,8 @@ export function ClickableImage() {
             >
               {'Resume'}
             </Link>
+            {'Resume'}
+
           </div>
           <div
             className={styles.menuItem}

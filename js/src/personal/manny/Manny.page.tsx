@@ -25,7 +25,9 @@ export function MannyPage() {
       </Title>
       <ClickableImage />
       <FooterSocial />
+
       <Outlet />
+
     </MantineProvider>
   )
 }
