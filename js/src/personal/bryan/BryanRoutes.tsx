@@ -1,8 +1,8 @@
 import { BryanPage } from '@/personal/bryan/Bryan.page.tsx'
-import { MainPage as BryanMainPage } from '@/personal/bryan/Main/Main.page.tsx'
-import { ProjectsPage as BryanProjectsPage } from '@/personal/bryan/Projects/Projects.page.tsx'
-import { FunPage as BryanFunPage } from '@/personal/bryan/Fun/Fun.page.tsx'
-import { AboutMePage as BryanAboutMePage } from '@/personal/bryan/AboutMe/AboutMe.page.tsx'
+import { MainPage as BryanMainPage } from '@/personal/bryan/main/Main.page.tsx'
+import { ProjectsPage as BryanProjectsPage } from '@/personal/bryan/projects/Projects.page.tsx'
+import { FunPage as BryanFunPage } from '@/personal/bryan/fun/Fun.page.tsx'
+import { AboutMePage as BryanAboutMePage } from '@/personal/bryan/aboutme/AboutMe.page.tsx'
 
 export const BryanRoutes = {
   path: '/bryan',

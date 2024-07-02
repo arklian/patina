@@ -1,5 +1,5 @@
 import { AmandaPage } from './personal/amanda/Amanda.page.tsx'
-import { BryanRoutes } from './personal/bryan/Bryan_Routes.tsx'
+import { BryanRoutes } from './personal/bryan/BryanRoutes.tsx'
 import { HaokingPage } from './personal/haoking/Haoking.page.tsx'
 import { HenryPage } from './personal/_henry/Henry.page.tsx'
 import { HomePage } from './pages/Home.page'
