@@ -2,6 +2,8 @@ import { Text, Title, Container } from '@mantine/core'
 import styles from '@/personal/riyuan/Riyuan.module.css'
 import hstyles from '@/personal/riyuan/components/home/Home.module.css'
 
+// Function to render the Home section of the MainPage ->
+/** Provides a welcoming introduction to visitors */
 export function Home() {
   return (
     <div
@@ -14,7 +16,7 @@ export function Home() {
           ta="left"
           mt={100}
         >
-          {'Home Page'}
+          {'Hello!'}
         </Title>
         <Text
           c="dimmed"

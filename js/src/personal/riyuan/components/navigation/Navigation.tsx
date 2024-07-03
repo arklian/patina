@@ -5,7 +5,6 @@ import {
   faMagnifyingGlass,
   faHouse,
   faPerson,
-  faTimeline,
   faFolder,
   faIdCard,
   faBars,
@@ -23,6 +22,8 @@ interface CustomHeaderProps {
   isClosed: boolean
 }
 
+/** Renders a header on top of the navigation bar
+ *   Provides a visual branding element and toggle functionality for the navigation menu */
 const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
   <header className={styles.header}>
     <div className={styles.ImageText}>
@@ -48,18 +49,22 @@ const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
   </header>
 )
 
+/** Renders an individual navigation item
+ *   Allows users to navigate to different sections of the site */
 const NavItem = ({
   title,
   icon,
+  link,
   isOpen,
 }: {
   title: string
   icon: IconDefinition
+  link: string
   isOpen: boolean
 }) => (
   <div className={styles.navLink}>
     <a
-      href={`#${title}`}
+      href={link}
       className={styles.navItem}
     >
       <FontAwesomeIcon
@@ -70,11 +75,14 @@ const NavItem = ({
     </a>
   </div>
 )
+
+/** Renders a list of navigation items
+ *   Groups navigation items together for the navigation bar */
 const NavList = ({
   items,
   isOpen,
 }: {
-  items: { title: string; icon: IconDefinition }[]
+  items: { title: string; icon: IconDefinition; link: string }[]
   isOpen: boolean
 }) => (
   <Stack className={styles.navList}>
@@ -83,6 +91,7 @@ const NavList = ({
         key={index}
         title={item.title}
         icon={item.icon}
+        link={item.link}
         isOpen={isOpen}
       />
     ))}
@@ -101,11 +110,13 @@ const SearchBox: React.FC = () => (
   </List>
 )
 
+/** Renders the menu bar inside the navigation bar
+ *   Provides a structured layout for the search box and navigation list */
 const MenuBar = ({
   items,
   isOpen,
 }: {
-  items: { title: string; icon: IconDefinition }[]
+  items: { title: string; icon: IconDefinition; link: string }[]
   isOpen: boolean
 }) => (
   <div className={styles.MenuBar}>
@@ -119,17 +130,18 @@ const MenuBar = ({
   </div>
 )
 
+// This component renders the NavBar ->
+/** Provides a structured layout for the navigation menu */
 export function Nav() {
   const headerData = {
     name: 'Riyuan',
     image: pfpImage,
   }
   const navItems = [
-    { title: 'Home', icon: faHouse },
-    { title: 'About', icon: faPerson },
-    { title: 'Experience', icon: faTimeline },
-    { title: 'Project', icon: faFolder },
-    { title: 'Contact', icon: faIdCard },
+    { title: 'Home', icon: faHouse, link: '/riyuan' },
+    { title: 'About', icon: faPerson, link: '/riyuan#About' },
+    { title: 'Project', icon: faFolder, link: '/riyuan/projects' },
+    { title: 'Contact', icon: faIdCard, link: '/riyuan/contact' },
   ]
   const [isClosed, setIsClosed] = useState(true)
   const toggleShell = () => {

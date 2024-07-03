@@ -41,7 +41,7 @@ export function TabGroup() {
     <Tabs
       color="cyan"
       orientation="vertical"
-      defaultValue="Patina"
+      defaultValue="Place Holder1"
       placement="left"
       pt="md"
     >

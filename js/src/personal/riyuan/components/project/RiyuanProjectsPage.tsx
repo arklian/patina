@@ -1,19 +1,19 @@
-import { Text, Title, Container } from '@mantine/core'
+import { Container, Title, Text } from '@mantine/core'
 import styles from '@/personal/riyuan/Riyuan.module.css'
 
-export function Contact() {
+// This component renders the projects page ->
+/** Renders a page that highlights different projects completed by me
+ *   Allows visitors to get a sense of the work I've completed */
+export function RiyuanProjectsPage() {
   return (
-    <div
-      id={'Contact'}
-      className={styles.container}
-    >
+    <div className={styles.container}>
       <Container>
         <Title
           className={styles.title}
           ta="left"
           mt={100}
         >
-          {'Contact Page'}
+          {'Project Page'}
         </Title>
         <Text
           c="dimmed"
