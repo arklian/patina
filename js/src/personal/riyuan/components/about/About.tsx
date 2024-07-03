@@ -6,6 +6,7 @@ import {
   Image,
   ListItem,
   Flex,
+  Container,
 } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import styles from '@/personal/riyuan/Riyuan.module.css'
@@ -23,9 +24,8 @@ function InfoSection({ title, description, listItems }: InfoSectionProps) {
     <div className={aboutStyles.info}>
       <Title className={aboutStyles.title}>{title}</Title>
       <Text
-        c="dimmed"
         ta="left"
-        size="lg"
+        size="md"
         mx="auto"
         mt="xl"
       >
@@ -36,8 +36,17 @@ function InfoSection({ title, description, listItems }: InfoSectionProps) {
         spacing="sm"
         size="sm"
       >
-        {listItems.map((item, index) => (
-          <ListItem key={index}>{item}</ListItem>
+        {listItems.map((bulletPoint, index) => (
+          <ListItem key={index}>
+            <Text
+              ta="left"
+              size="md"
+              mx="auto"
+              pl={5}
+            >
+              {bulletPoint}
+            </Text>
+          </ListItem>
         ))}
       </List>
     </div>
@@ -62,33 +71,35 @@ export function About() {
       id={'About'}
       className={styles.container}
     >
-      <Title
-        className={styles.title}
-        ta="left"
-        mt={100}
-      >
-        {'About Me'}
-      </Title>
-      <SimpleGrid
-        cols={largeScreen ? 2 : 1}
-        spacing="xs"
-      >
-        <InfoSection
-          title="Software developer"
-          description={description}
-          listItems={listItems}
-        />
-        <Flex
-          direction={'row'}
-          justify={'center'}
-          align={'center'}
+      <Container className={aboutStyles.inner}>
+        <Title
+          className={styles.title}
+          ta="left"
+          mt={100}
         >
-          <Image
-            src={'https://placehold.co/400x600'}
-            w={400}
+          {'About Me'}
+        </Title>
+        <SimpleGrid
+          cols={largeScreen ? 2 : 1}
+          spacing="xl"
+        >
+          <InfoSection
+            title="Software developer"
+            description={description}
+            listItems={listItems}
           />
-        </Flex>
-      </SimpleGrid>
+          <Flex
+            direction={'row'}
+            justify={'center'}
+            align={'center'}
+          >
+            <Image
+              src={'https://placehold.co/400x600'}
+              w={400}
+            />
+          </Flex>
+        </SimpleGrid>
+      </Container>
     </div>
   )
 }

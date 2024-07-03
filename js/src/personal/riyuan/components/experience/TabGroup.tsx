@@ -43,6 +43,7 @@ export function TabGroup() {
       orientation="vertical"
       defaultValue="Patina"
       placement="left"
+      pt="md"
     >
       <Tabs.List>
         {tabData.map((tab) => (

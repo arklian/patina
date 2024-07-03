@@ -1,52 +1,41 @@
-import { Title, SimpleGrid } from '@mantine/core'
-import { useMediaQuery } from '@mantine/hooks'
+import { Title, Text, Container } from '@mantine/core'
 import { TabGroup } from '@/personal/riyuan/components/experience/TabGroup.tsx'
-import { TimelineComponent } from './TimelineComponent'
 import styles from '@/personal/riyuan/Riyuan.module.css'
-import estyles from './Experience.module.css'
-import { workTimelineData, educationTimelineData } from './data'
+import experienceStyles from './Experience.module.css'
 
 export function Experience() {
-  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <div
       id={'Experience'}
       className={styles.container}
     >
-      <Title
-        className={styles.title}
-        ta="left"
-        mt={100}
-      >
-        {'Experience'}
-      </Title>
-      <SimpleGrid
-        cols={largeScreen ? 2 : 1}
-        spacing="sm"
-      >
-        <div>
-          <TabGroup />
-        </div>
-        <SimpleGrid
-          cols={largeScreen ? 2 : 1}
-          spacing="xl"
+      <Container className={experienceStyles.inner}>
+        <Title
+          className={styles.title}
+          ta="left"
+          mt={100}
         >
+          {'Experience'}
+        </Title>
+        <div className={experienceStyles.info}>
+          <Text>
+            {
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+          </Text>
           <div>
-            <Title order={2}>{'Work'}</Title>
-            <TimelineComponent
-              data={workTimelineData}
-              className={estyles.workTimeline}
-            />
+            <Title
+              order={2}
+              pt={20}
+            >
+              {'Experience'}
+            </Title>
           </div>
           <div>
-            <Title order={2}>{'Eduction'}</Title>
-            <TimelineComponent
-              data={educationTimelineData}
-              className={estyles.EducationTimeline}
-            />
+            <TabGroup />
           </div>
-        </SimpleGrid>
-      </SimpleGrid>
+        </div>
+      </Container>
     </div>
   )
 }
