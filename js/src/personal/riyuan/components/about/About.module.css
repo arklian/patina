@@ -9,11 +9,13 @@
 .title{
   flex: 0 0 100%;
   max-width: 100%;
-  margin-bottom: 60px;
 }
 
 
 .info{
-  min-width: 40vw;
   padding: 20px;
+}
+
+.inner{
+  padding: 0;
 }
