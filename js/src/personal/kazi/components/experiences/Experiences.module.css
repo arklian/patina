@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  border-radius: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  width: 35%;
+}
+
+.unorderedList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.unorderedListItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+}
+.Item {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
