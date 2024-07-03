@@ -88,14 +88,6 @@ export function MalihaPage() {
             {'mali'}
           </Text>
           <About />
-          <iframe
-            className={styles.playlist}
-            title="playlist"
-            src="https://open.spotify.com/embed/playlist/4mdLDndEW9wNur74omMsN4?utm_source=generator"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          />
-          <div className={`${styles.border} ${styles.resume_border}`} />
           <Resume />
         </ScrollArea>
       </div>
