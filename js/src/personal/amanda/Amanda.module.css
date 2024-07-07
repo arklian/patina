@@ -6,7 +6,6 @@
 .mainPage {
   height: 100vh;
   display: flex;
-  padding: rem(50px);
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
@@ -22,18 +21,25 @@
 
 .leftSide {
   width: 20vw;
-  margin-right: rem(150px);
-}
-
-.intro {
-  margin-bottom: rem(50px);
 }
 
 .project {
-  margin-top: rem(10px);
+  display: flex;
+}
+
+.projectLink {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .skill {
-  background-color: light-dark(#9DB4C0, #5C6B73);
-  margin-right: rem(5px);
+  background-color: light-dark(#9db4c0, #5c6b73);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.lightDark {
+  float: right;
+}
+
+.navbar {
+  font-size: rem(30px);
 }

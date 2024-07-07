@@ -1,6 +1,8 @@
-interface Project {
+export interface Project {
   id: number
   title: string
+  link: string
+  image: string
   description: string
   skills: String[]
 }

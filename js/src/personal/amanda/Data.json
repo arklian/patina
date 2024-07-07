@@ -4,31 +4,36 @@
       "id": 1,
       "title": "about",
       "link": "#about",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
+      "description": "Hi there! I'm a college student at Rensselaer Polytechnic Institute studying computer science to be a software engineer. Throughout my coding journey, I've learned programming languages ranging from Java to C++ to Typescript and participated in various open source projects. When I'm not writing code or sleeping, I would most likely be listening to music or dancing.",
       "subsections": []
     },
     {
       "id": 2,
       "title": "projects",
       "link": "#projects",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
+      "description": "Below are some selected projects:",
       "subsections": [
         {
           "id": 1,
-          "title": "project 1",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
+          "title": "VZCode",
+          "link": "https://github.com/vizhub-core/vzcode",
+          "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-9.png",
+          "description": "VZCode is a multiplayer code editing tool that supports real-time collaboration. Our goal was to improve the user experience with additional capabilities so that the platform could function as an alternative to VSCode. I focused on boosting remote user presence by implementing unique colors and tracking for user cursors, and selection, as well as displaying usernames.",
           "skills": [
-            "Typescript",
-            "React"
+            "NodeJS",
+            "React",
+            "Vite"
           ]
         },
         {
           "id": 2,
-          "title": "project 2",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
+          "title": "YACS – Yet Another Course Scheduler",
+          "link": "https://github.com/YACS-RCOS/yacs.n",
+          "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-9.png",
+          "description": "YACS is an open-source web application that allows students to view course options, track dates of final exams, and calculate their GPA. Working with a group of ten, I implemented the option of displaying times in various formats and debugged user-submitted issues.",
           "skills": [
-            "Typescript",
-            "React"
+            "Python",
+            "Vue"
           ]
         }
       ]
@@ -37,7 +42,7 @@
       "id": 3,
       "title": "misc",
       "link": "#misc",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...",
+      "description": "Random stuff blah blah",
       "subsections": []
     }
   ]
