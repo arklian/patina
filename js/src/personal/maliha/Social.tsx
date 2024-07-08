@@ -1,56 +1,87 @@
+/* Social Media Icons */
 import { Anchor, Stack } from '@mantine/core'
 import { CgMail } from 'react-icons/cg'
 import { CiLinkedin } from 'react-icons/ci'
-import { FaInstagram, FaGithub } from 'react-icons/fa'
+import { FaInstagram, FaGithubSquare } from 'react-icons/fa'
 import { useHover } from '@mantine/hooks'
 import styles from './Maliha.module.css'
 
+/* Social Media Icons */
 const iconMap = [
   {
     icon: FaInstagram,
-    size: '4.5em',
+    size: '3.5em',
     href: 'https://www.instagram.com/birb.erry/',
+    outlineColor: '#000000',
+    outlineWidth: '.5em',
   },
   {
-    icon: FaGithub,
-    size: '4.75em',
+    icon: FaGithubSquare,
+    size: '3.5em',
     href: 'https://github.com/MalihaT111',
-  },
-  {
-    icon: CiLinkedin,
-    size: '5em',
-    href: 'https://www.linkedin.com/in/maliha-tasnim-81864b178/',
+    outlineColor: '#000000',
+    outlineWidth: '.4em',
   },
   {
     icon: CgMail,
-    size: '5em',
+    size: '4em',
     href: 'mailto:ayesiddika@gmail.com',
+    outlineColor: '#000000',
+    outlineWidth: '0.01em',
+  },
+  {
+    icon: CiLinkedin,
+    size: '4em',
+    href: 'https://www.linkedin.com/in/maliha-tasnim-81864b178/',
+    outlineColor: '#000000',
+    outlineWidth: '0.01em',
   },
 ]
 
 export function Social() {
   return (
-    <Stack
-      h={100}
-      align="left"
-      justify="center"
-      gap={75}
-      pos="absolute"
-      className={styles.icons}
-    >
-      {iconMap.map(({ icon: Icon, size, href }) => (
-        <SocialIcon
-          Icon={Icon}
-          size={size}
-          href={href}
-        />
-      ))}
-    </Stack>
+    <div>
+      <Stack
+        h={200}
+        align="left"
+        justify="center"
+        gap={55}
+        pos="fixed"
+        className={styles.icons}
+        pr={100}
+      >
+        {iconMap.map(
+          ({ icon: Icon, size, href, outlineColor, outlineWidth }, index) => (
+            <SocialIcon
+              key={index}
+              Icon={Icon}
+              size={size}
+              href={href}
+              outlineColor={outlineColor}
+              outlineWidth={outlineWidth}
+            />
+          ),
+        )}
+      </Stack>
+    </div>
   )
 }
-function SocialIcon({ Icon, size, href }: { Icon: any; size: any; href: any }) {
+
+function SocialIcon({
+  Icon,
+  size,
+  href,
+  outlineColor,
+  outlineWidth,
+}: {
+  Icon: any
+  size: any
+  href: any
+  outlineColor: any
+  outlineWidth: any
+}) {
   const { hovered, ref } = useHover()
-  const iconColor = hovered ? '#a63b6a' : '#cb5c5c'
+  const iconColor = hovered ? '#c02366' : '#d93939'
   return (
     <Anchor
       href={href}
@@ -60,6 +91,12 @@ function SocialIcon({ Icon, size, href }: { Icon: any; size: any; href: any }) {
         <Icon
           size={size}
           color={iconColor}
+          pos="absolute"
+          style={{
+            stroke: outlineColor,
+            strokeWidth: outlineWidth,
+            fill: iconColor,
+          }}
         />
       </div>
     </Anchor>
