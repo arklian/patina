@@ -29,6 +29,7 @@ export function TimeDisplay() {
     }
     return String(hour)
   }, [date])
+
   const Minutes = useMemo(() => {
     const minute = date.getMinutes()
     if (minute < 10) {
@@ -36,6 +37,7 @@ export function TimeDisplay() {
     }
     return String(minute)
   }, [date])
+
   const AM = useMemo(() => {
     if (date.getHours() < 12) return 'AM'
     return 'PM'
