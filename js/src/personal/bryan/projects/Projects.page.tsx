@@ -8,6 +8,7 @@ export function ProjectsPage() {
     title: string
     link: string
     text: string
+    image: string
     read?: boolean
     file?: string
   }) => {
@@ -28,6 +29,7 @@ export function ProjectsPage() {
           >
             {'Github'}
           </Anchor>
+          {'   '}
           <Anchor
             href={props.file}
             target="_blank"
@@ -56,7 +58,7 @@ export function ProjectsPage() {
             <Image
               w={250}
               h={150}
-              src={image}
+              src={props.image}
             />
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 7, lg: 7 }}>
@@ -90,11 +92,13 @@ export function ProjectsPage() {
         <Project
           title="This site"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
+          image={image}
           text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
         />
         <Project
           title="COS 429"
           link="https://github.com/bz5989/429_Final"
+          image={image}
           read
           file={document}
           text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
@@ -105,11 +109,13 @@ export function ProjectsPage() {
         <Project
           title="COS 333"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
+          image={image}
           text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
         />
         <Project
           title="COS 397"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
+          image={image}
           text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
         />
       </Grid>

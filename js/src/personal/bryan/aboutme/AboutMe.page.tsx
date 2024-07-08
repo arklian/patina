@@ -1,8 +1,8 @@
 import { Title, Group, Image, Space, Stack, Text, Anchor } from '@mantine/core'
 import classes from './AboutMe.module.css'
 import skiing from '@/personal/bryan/images/bryan_skiing.png'
-import mathey_logo from '@/personal/bryan/images/mathey_logo.jpeg'
-import tower_logo from '@/personal/bryan/images/tower_logo.jpeg'
+import mathey from '@/personal/bryan/images/mathey.png'
+import tower from '@/personal/bryan/images/tower.png'
 
 export function AboutMePage() {
   return (
@@ -36,7 +36,10 @@ export function AboutMePage() {
           <Text component="span">
             {'I’m a head Copy editor for the Daily Princetonian'}
           </Text>
-          <Anchor href="https://www.dailyprincetonian.com/">
+          <Anchor
+            href="https://www.dailyprincetonian.com/"
+            target="_blank"
+          >
             {'The Daily Princetonian'}
           </Anchor>
           <Text component="span">
@@ -54,7 +57,7 @@ export function AboutMePage() {
             <Image
               h={100}
               w={100}
-              src={mathey_logo}
+              src={mathey}
             />
             <Space />
             <Space />
@@ -62,7 +65,7 @@ export function AboutMePage() {
             <Image
               h={120}
               w={120}
-              src={tower_logo}
+              src={tower}
             />
           </Group>
         </Stack>
