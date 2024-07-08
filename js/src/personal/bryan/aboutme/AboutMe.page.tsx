@@ -1,4 +1,13 @@
-import { Title, Group, Image, Space, Stack, Text, Anchor } from '@mantine/core'
+import {
+  Title,
+  Group,
+  Image,
+  Space,
+  Stack,
+  Text,
+  Anchor,
+  Flex,
+} from '@mantine/core'
 import classes from './AboutMe.module.css'
 import skiing from '@/personal/bryan/images/bryan_skiing.png'
 import mathey from '@/personal/bryan/images/mathey.png'
@@ -11,13 +20,16 @@ export function AboutMePage() {
         className={classes.title}
         component="span"
         ml="5rem"
+        mb="2rem"
       >
         {'About Me'}
       </Title>
-      <Group
+      <Flex
         justify="flex-start"
         component="span"
         ml="5rem"
+        gap="2rem"
+        direction={{ base: 'column', md: 'row', sm: 'row' }}
       >
         <Stack>
           <Image
@@ -29,27 +41,6 @@ export function AboutMePage() {
             <Space h="s" />
             {'Class of 2026'}
           </Title>
-        </Stack>
-        <Stack>
-          <Text component="span">{'Hi, I’m Bryan! I’m XYZ. '}</Text>
-          <Space />
-          <Text component="span">
-            {'I’m a head Copy editor for the Daily Princetonian'}
-          </Text>
-          <Anchor
-            href="https://www.dailyprincetonian.com/"
-            target="_blank"
-          >
-            {'The Daily Princetonian'}
-          </Anchor>
-          <Text component="span">
-            {
-              'I also lab TA for the Intro COS lab (specifically for COS 217/226)'
-            }
-          </Text>
-          <Text component="span">
-            {'Proud member of Mathey College and Tower Club'}
-          </Text>
           <Group
             justify="center"
             mr="1.5rem"
@@ -59,15 +50,33 @@ export function AboutMePage() {
               w={100}
               src={mathey}
             />
-            <Space />
-            <Space />
-            <Space />
             <Image
               h={120}
               w={120}
               src={tower}
             />
           </Group>
+        </Stack>
+        <Stack>
+          <Text component="span">{'Hi, I’m Bryan! I’m XYZ. '}</Text>
+          <Space />
+          <Text component="span">
+            {'I’m a head Copy editor for '}{' '}
+            <Anchor
+              href="https://www.dailyprincetonian.com/"
+              target="_blank"
+            >
+              {'The Daily Princetonian'}
+            </Anchor>
+          </Text>
+          <Text component="span">
+            {
+              'I also lab TA for the Intro COS lab (specifically for COS 217/226)'
+            }
+          </Text>
+          <Text component="span">
+            {'Proud member of Mathey College and Tower Club'}
+          </Text>
         </Stack>
         <Stack>
           <Title
@@ -90,7 +99,7 @@ export function AboutMePage() {
             {'Puzzles!'}
           </Anchor>
         </Stack>
-      </Group>
+      </Flex>
     </>
   )
 }
