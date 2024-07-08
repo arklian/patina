@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -11,16 +11,37 @@
   height: 100%;
 }
 
-.navbar_links {
-  font-weight: bold;
+.iconLink {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
 
-.a_links {
-  text-decoration: none;
+.icon {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.iconText {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-weight: bold;
+  color: black;
+}
+
+.iconLink:hover .icon {
+  opacity: 0;
+}
+
+.iconLink:hover .iconText {
+  opacity: 1;
 }
 
 .links {
   display: flex;
   gap: 20px;
 }
-
