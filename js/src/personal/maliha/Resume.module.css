@@ -1,0 +1,32 @@
+.resume_title{
+  position: absolute;
+  font-size: 200px;
+  left: 400px;
+  z-index: 1;
+}
+
+.resume_info{
+  font-size: 50px;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 3950px;
+  top:80px;
+}
+
+.resume_info_list{
+  font-size: 30px;
+}
+
+.resume_info_list2{
+  font-size: 25px;
+}
+
+.resume_experience{
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.resume_border{
+  position: absolute;
+  left: 3450px;
+}

@@ -3,7 +3,7 @@ import { CgMail } from 'react-icons/cg'
 import { CiLinkedin } from 'react-icons/ci'
 import { FaInstagram, FaGithubSquare } from 'react-icons/fa'
 import { useHover } from '@mantine/hooks'
-import styles from './Maliha.module.css'
+import styles from './Left.module.css'
 
 /* Social Media Icons */
 const iconMap = [

@@ -1,10 +1,12 @@
 import { Text, Anchor, List } from '@mantine/core'
-import styles from './Maliha.module.css'
+import styles from './About.module.css'
+import main_class from './Maliha.module.css'
 
-/* About page component */
+/* About page component*/
 export function About() {
   return (
     <>
+      <div className={`${main_class.border} ${styles.about_border}`} />
       <Anchor
         href="https://youtu.be/VgoE837TskI?si=o8p281ughP0aUxmM"
         target="_blank"
@@ -19,7 +21,7 @@ export function About() {
         <Text
           inherit
           component="span"
-          className={`${styles.title} ${styles.about_title}`}
+          className={`${main_class.title} ${styles.about_title}`}
           variant="gradient"
           gradient={{
             from: '#dc1d1d',
@@ -34,7 +36,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
@@ -49,7 +51,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
@@ -65,7 +67,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
@@ -81,7 +83,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
@@ -97,7 +99,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',
@@ -122,7 +124,7 @@ export function About() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.about_info}`}
+        className={`${main_class.title} ${styles.about_info}`}
         variant="gradient"
         gradient={{
           from: '#dc1d1d',

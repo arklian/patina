@@ -1,0 +1,11 @@
+.left{
+  z-index: 900;
+  width: 144px;
+  height: 100vh;
+}
+
+.icons{
+  z-index: 900;
+  top: 300px;
+  left: 40px;
+}

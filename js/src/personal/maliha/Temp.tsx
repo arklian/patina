@@ -12,7 +12,7 @@ import { Social } from './Social.tsx'
 import { Fonts } from './Fonts.tsx'
 import { Images } from './Images.tsx'
 import { About } from './About.tsx'
-import { Spotify } from './Spotify'
+import { Resume } from './Resume.tsx'
 import styles from './Maliha.module.css'
 
 export function MalihaPage() {
@@ -57,7 +57,6 @@ export function MalihaPage() {
               <Menu />
             </div>
           </div>
-          <Images />
           <div className={styles.border} />
           <Text
             inherit
@@ -67,8 +66,8 @@ export function MalihaPage() {
             variant="gradient"
             gradient={{
               from: '#c75252',
-              to: '#a067aeff',
-              deg: 90,
+              to: 'rgb(160,103,174)',
+              deg: 50,
             }}
             pos="absolute"
           >
@@ -81,7 +80,7 @@ export function MalihaPage() {
             pos="absolute"
             gradient={{
               from: '#c75252',
-              to: '#a067aeff',
+              to: 'rgb(160,103,174)',
               deg: 90,
             }}
             className={styles.title}
@@ -89,8 +88,14 @@ export function MalihaPage() {
             {'mali'}
           </Text>
           <About />
-          <Spotify />
-          <div className={`${styles.border} ${styles.resume_border}`} />
+          <iframe
+            className={styles.playlist}
+            title="playlist"
+            src="https://open.spotify.com/embed/playlist/4mdLDndEW9wNur74omMsN4?utm_source=generator"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          />
+          <Resume />
         </ScrollArea>
       </div>
     </MantineProvider>

@@ -1,0 +1,56 @@
+.menuWrapper {
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  top: 650px;
+  left: 20px;
+  bottom: 20px;
+  z-index: 300;
+}
+
+.menuItems{
+  z-index: 200;
+  width: 100%;
+  padding: 24px 0 20px 80px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: "Yeseva One", serif;
+}
+
+.modal {
+  width: 100%;
+
+  :global(.mantine-Modal-title){
+    font-size: 100px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-family: "Yeseva One", serif;
+    z-index: 200;
+  }
+
+  :global(.mantine-Modal-inner) {
+    padding: 0;
+    opacity: 100%;
+    color: #be5555;
+    z-index: 200;
+    font-family: "Yeseva One", serif;
+  }
+
+  :global(.mantine-Modal-content) {
+    padding: 50px 0 0 60px;
+    max-height: 100%;
+    height: 100vh;
+    position: relative;
+    margin-right: 750px;
+    background-color: #dca9bc;
+    border: 1mm inset #EB7C7CFF;
+    z-index: 200;
+    font-family: "Yeseva One", serif;
+  }
+
+  :global(.mantine-Modal-header) {
+    background-color: #dca9bc;
+    font-weight: 900;
+    font-family: "Yeseva One", serif;
+  }
+}
