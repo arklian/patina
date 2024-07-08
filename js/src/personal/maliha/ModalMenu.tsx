@@ -2,14 +2,14 @@ import { useDisclosure } from '@mantine/hooks'
 import { Modal, UnstyledButton, Stack } from '@mantine/core'
 import { Sandwich } from './Sandwich.tsx'
 import styles from './Maliha.module.css'
-/* Menu Component */
 
+/* Menu Component */
 const labels = [
   { label: 'About' },
-  { label: 'Projects' },
-  { label: 'Gallery' },
-  { label: 'Notes' },
   { label: 'Resume' },
+  { label: 'Projects' },
+  { label: 'Notes' },
+  { label: 'Gallery' },
 ]
 
 export function Menu() {

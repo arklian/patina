@@ -1,4 +1,3 @@
-/* Social Media Icons */
 import { Anchor, Stack } from '@mantine/core'
 import { CgMail } from 'react-icons/cg'
 import { CiLinkedin } from 'react-icons/ci'

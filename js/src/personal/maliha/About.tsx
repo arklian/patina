@@ -8,6 +8,13 @@ export function About() {
       <Anchor
         href="https://youtu.be/VgoE837TskI?si=o8p281ughP0aUxmM"
         target="_blank"
+        underline="never"
+        style={{
+          position: 'absolute',
+          left: '1440px',
+          top: '50px',
+          zIndex: '100',
+        }}
       >
         <Text
           inherit
@@ -19,8 +26,7 @@ export function About() {
             to: '#975ca4',
             deg: 50,
           }}
-          pos="absolute"
-          pl={1440}
+          style={{ display: 'inline', lineHeight: '1' }}
         >
           {'about me'}
         </Text>
@@ -87,8 +93,6 @@ export function About() {
         top={620}
       >
         {'i like biking'}
-
-        {'i bike in central park'}
       </Text>
       <Text
         inherit
@@ -133,9 +137,8 @@ export function About() {
         <List
           icon=" "
           className={styles.about_info}
-          id={styles.about_info}
         >
-          <List.Item>{'minecraft'}</List.Item>
+          <List.Item font-weight={550}>{'minecraft'}</List.Item>
           <List.Item>{'genshin impact'} </List.Item>
           <List.Item>{'kindergarten'}</List.Item>
         </List>
