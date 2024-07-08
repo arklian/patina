@@ -50,6 +50,8 @@ Used to store steps required to set up Gerrit.
 - Access -> Set `Rights Inherit From` to `Private-Projects`
 - Access -> Add `Patina Network` group to all `refs/for/refs/*` default permissions.
 - Access -> Add `Patina Network` group to all `refs/heads/*` default permissions.
+  - Remove pushMerge perm
+  - Add `Label Code Review` and `Label Verified` perms
 
 ## Henry's Personal Config
 - Theme -> Light
