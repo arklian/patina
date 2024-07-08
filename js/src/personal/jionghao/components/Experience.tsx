@@ -44,7 +44,7 @@ export function Experience() {
                 size={15}
                 stroke={'1'}
                 color={'cyan'}
-              ></IconPoint>
+              />
             }
           >
             <List.Item>
@@ -103,7 +103,7 @@ export function Experience() {
                 size={15}
                 stroke={'1'}
                 color={'cyan'}
-              ></IconPoint>
+              />
             }
           >
             <List.Item>
@@ -159,7 +159,7 @@ export function Experience() {
                 size={15}
                 stroke={'1'}
                 color={'cyan'}
-              ></IconPoint>
+              />
             }
           >
             <List.Item>
