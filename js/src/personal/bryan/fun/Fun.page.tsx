@@ -1,4 +1,4 @@
-import { Flex, Grid, Title, Text, Space, Anchor } from '@mantine/core'
+import { Flex, Grid, Title, Text, Space, Anchor, Stack } from '@mantine/core'
 import classes from './Fun.module.css'
 
 export function FunPage() {
@@ -44,20 +44,45 @@ export function FunPage() {
           span={{ base: 12, md: 6, lg: 3 }}
           order={{ base: 1, lg: 2 }}
         >
-          <Title
-            component="span"
-            className={classes.title2}
-          >
-            {'Fun Websites'}
-          </Title>
-          <Space />
-          <Anchor href="https://scratch.mit.edu/projects/10128407">
-            {'Minecraft Nostalgia'}
-          </Anchor>
-          <Space />
-          <Anchor href="https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple">
-            {'Fireboy and Watergirl'}
-          </Anchor>
+          <Stack justify="space-between">
+            <Text>
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Fun Websites'}
+              </Title>
+              <Space />
+              <Anchor href="https://scratch.mit.edu/projects/10128407">
+                {'Minecraft Scratch'}
+              </Anchor>
+              <Space />
+              <Anchor href="https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple">
+                {'Fireboy and Watergirl'}
+              </Anchor>
+              <Space h="xl" />
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Games I like'}
+              </Title>
+              <Text>{'Minecraft'}</Text>
+              <Space />
+              <Text>{'Brawl Stars'}</Text>
+            </Text>
+            <Space />
+            <Text>
+              <Text component="span">{'Usually, I use this gamertag:'}</Text>
+              <Space />
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Abstraction7'}
+              </Title>
+            </Text>
+          </Stack>
         </Grid.Col>
         <Grid.Col
           span={{ base: 12, md: 6, lg: 3 }}
@@ -99,19 +124,6 @@ export function FunPage() {
             width="350"
             style={{ color: 'red', border: '2px solid gray' }}
           />
-        </Grid.Col>
-        <Grid.Col
-          span={12}
-          order={{ base: 5, lg: 5 }}
-        >
-          <Text component="span">{'Usually, I use this gamertag:'}</Text>
-          <Space />
-          <Title
-            component="span"
-            className={classes.title2}
-          >
-            {'Abstraction7'}
-          </Title>
         </Grid.Col>
       </Grid>
     </Flex>
