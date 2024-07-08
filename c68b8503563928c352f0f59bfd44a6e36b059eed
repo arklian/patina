@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7861513e_92189300",
+        "filename": "js/src/personal/jionghao/components/Projects.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-08T19:30:49Z",
+      "side": 1,
+      "message": "nit: remove if not needed or comment when you will get back to using this",
+      "revId": "c68b8503563928c352f0f59bfd44a6e36b059eed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf39b9d8_4b965371",
+        "filename": "js/src/personal/jionghao/components/Work.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-08T19:30:49Z",
+      "side": 1,
+      "message": "nit: white space",
+      "revId": "c68b8503563928c352f0f59bfd44a6e36b059eed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
