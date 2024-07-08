@@ -35,11 +35,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: light-dark(#d3d3d3, #2e2e2e);
+  border-color: var(--mantine-color-gray-filled);
   width: 100%;
+  margin-bottom: 20px;
+  transition: transform 250ms ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px 0.1px rgba(0, 0, 255, 0.2);
+}
+
+.projectTitle:hover {
+  color: var(--mantine-color-blue-4);
+}
+
+.clickable {
+  text-decoration: none;
+  color: inherit;
 }
 
 .projectContent {
   max-width: 550px;
-  margin: 20px;
+  margin: 35px;
+}
+
+.projectImage {
+  display: flex;
+  align-items: center;
 }

@@ -13,6 +13,8 @@ export function Work() {
         <div className={styles.titleLine}></div>
       </div>
       <Projects />
+      <Projects />
+      <Projects />
     </div>
   )
 }
