@@ -62,7 +62,7 @@ commitsBehind=$(git rev-list --count "$currentBranch"..origin/main)
 [ $v = 1 ] && echo "Commits ahead of origin main: $commitsAhead"
 [ $v = 1 ] && echo "Commits behind of origin main: $commitsBehind"
 
-if [ $commitsAheadIndex -le 0 ]; then
+if [ $commitsAheadIndex -lt 0 ]; then
   echo "No commits to push"
   exit 1
 fi
@@ -94,7 +94,7 @@ if [ $pushToGerrit = 1 ]; then
   fi
 
   # Exit if we failed to push to Gerrit
-  if [[ $gerritPushMsg =~ "error" ]] || [[ $gerritPushMsg =~ "fatal" ]]; then
+  if [[ ! $gerritPushMsg =~ "remote: SUCCESS" ]]; then
     echo "Errors pushing to Gerrit"
     exit 1
   fi
@@ -105,27 +105,30 @@ fi
 ####################################################################################################
 
 # Exit if Github should not be updated
-if [ $updateGithub = 0 ]; then
+if [ $updateGithub = 1 ]; then
   [ $v = 1 ] && echo ""
   [ $v = 1 ] && echo "----- Updating Github PRs"
 
-  pullRequestViewMsg=$(gh pr view "$currentBranch")
-  pullRequestChangeId=$(gh pr view "$currentBranch" | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1')
+  pullRequestViewMsg=$(gh pr view "$currentBranch" 2>&1)
+  pullRequestChangeId=$(gh pr view "$currentBranch" 2>&1 | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1')
   [ $v = 1 ] && echo "gh pr view = $pullRequestViewMsg"
   [ $v = 1 ] && echo "First Change-Id = $first_changeId"
   [ $v = 1 ] && echo "PR Change-Id = $pullRequestChangeId"
 
   if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
-    # Upload a new PR to Github if branch does not have one.
+    [ $v = 1 ] && echo ""
+    [ $v = 1 ] && echo "# Upload a new PR to Github if branch does not have one"
     git push origin "$currentBranch"
     gh pr create --fill-first
     [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/$pullRequestChangeId"
   elif [[ "$first_changeId" != "$pullRequestChangeId" ]]; then
-    # Check if the Pull Request still is for the oldest Change-Id.
+    [ $v = 1 ] && echo ""
+    [ $v = 1 ] && echo "# Check if the Pull Request still is for the oldest Change-Id."
     gh pr close "$currentBranch" -c "Change-Id $pullRequestChangeId was closed at $remoteGerritURL/q/$pullRequestChangeId"
     gh pr create --fill-first
   else
-    # Force push new updates to existing Github PR
+    [ $v = 1 ] && echo ""
+    [ $v = 1 ] && echo "# Force push new updates to existing Github PR"
     git push --force-with-lease --force-if-includes origin "$currentBranch"
     [ $commentOnPR = 1 ] && gh pr comment --body "New changes were pushed at $remoteGerritURL/q/$pullRequestChangeId"
   fi
