@@ -40,8 +40,8 @@ Used to store steps required to set up Gerrit.
 ## Setting up GerritHub repo
 - Clone Github Repo into GerritHub.
 - General -> Submit type -> `Rebase if necessary`
-- General -> Match authored date with committer date upon submit -> True
 - General -> Require Change-Id in commit message -> True
+- General -> Match authored date with committer date upon submit -> True
 - General -> Maximum Git object size limit -> 10m
 - General -> Reject Duplicate Pathnames -> True
 - General -> Reject Submodules -> true
@@ -49,6 +49,8 @@ Used to store steps required to set up Gerrit.
 - General -> Reject Windows Line Endings -> true
 - Access -> Set `Rights Inherit From` to `Private-Projects`
 - Access -> Add `Patina Network` group to all `refs/for/refs/*` default permissions.
+  - Add `Revert`
+  - Add `Toggle Work In Progress State`
 - Access -> Add `Patina Network` group to all `refs/heads/*` default permissions.
   - Remove pushMerge perm
   - Add `Label Code Review` and `Label Verified` perms

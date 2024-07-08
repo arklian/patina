@@ -6,10 +6,10 @@ steps until they gain an understanding and mastery of the tools.
 
 It is assumed that the steps in `gerrit/setup.md`'s local setup are complete.
 
-1. Starting from the `main` branch, update it to the most up to date by running `git pullo`
+1. Starting from the `main` branch, update it to the most up to date by running `git pullg`
 2. Create a new branch using `git switch -c branch/name`
 3. Commit as often as desired locally with temporary commit messages
-4. Regularly pull from origin/main throughout the process using `git pullo`
+4. Regularly pull from origin/main throughout the process using `git pullg`
    - If merge conflicts occur, a workflow to resolve it is included below
 5. Finish up feature
 6. Reorganize commits using various techniques:
@@ -43,7 +43,7 @@ TODO(Henry): Automate deletion of GitHub pull requests once shipped.
 
 
 ### Merge Conflicts 
-When running `git pullo`, it's possible that there are merge conflicts if a commit has been
+When running `git pullg`, it's possible that there are merge conflicts if a commit has been
 submitted to main that touched the same lines in the same files as your changes. Gerrit should
 prevent CRs from being shipped if merge conflicts exist.
 
@@ -51,7 +51,7 @@ Generally, merge conflicts should be resolved locally, and then pushed back up i
 This can be done by:
 1. Go to the branch with the changes 
    - Alternatively, checkout the branch from Gerrit using Download -> Checkout and Create Branch
-2. Run `git pullo` to rebase the commits in the branch onto origin/main
+2. Run `git pullg` to rebase the commits in the branch onto origin/main
 3. Look at which files have merge conflicts in Sublime Merge
 4. Open those files in IntelliJ or search the codebase (cmd+shift+f) for `>>>>>>`
 5. Resolve merge conflicts locally and save

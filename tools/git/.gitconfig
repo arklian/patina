@@ -7,4 +7,5 @@
 [alias]
 	pushf = push --force-with-lease --force-if-includes
 	pullo = pull origin main
+	pullg = pull gerrit main
 	rebaseo = rebase -i origin/main

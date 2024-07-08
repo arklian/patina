@@ -123,6 +123,9 @@ iTerm2
     # Set the prompt to display the full path.
     PROMPT=' %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
     
+    # Add custom git commands
+    export PATH=$HOME/patina/tools/git/commands:$PATH
+    
     # Git aliases
     alias gpo="git pull origin main"
     alias gpullo="git pull origin main"
