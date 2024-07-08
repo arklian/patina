@@ -38,6 +38,8 @@ export function Settings() {
           >
             <Text>{'Change light/dark mode'}</Text>
             <LightDark />
+            <Text>{'Change font size'}</Text>
+            <Text>{'Change background'}</Text>
           </Group>
         </HoverCard.Dropdown>
       </HoverCard>

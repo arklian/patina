@@ -1,7 +1,33 @@
-import { Flex, Grid, Title, Text, Space, Anchor } from '@mantine/core'
-import classes from './Fun.module.css'
+import { Flex, Grid, Title, Text, Space, Anchor, Stack } from '@mantine/core'
+import classes from '@/personal/bryan/Bryan.module.css'
 
 export function FunPage() {
+  const Spotify = (
+    <iframe
+      title="playlist"
+      src="https://open.spotify.com/embed/playlist/3ffIenWiy0XmHvnamjA3qT?utm_source=generator&theme=0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      style={{
+        border: 'none',
+        top: '20rem',
+        left: '5rem',
+        width: '80%',
+        height: '80%',
+      }}
+    >
+      {'Hello :)'}
+    </iframe>
+  )
+  const Wordle = (
+    <iframe
+      src="https://www.nytimes.com/games/wordle"
+      title="Wordle"
+      height="450"
+      width="350"
+      style={{ color: 'red', border: '2px solid gray' }}
+    />
+  )
   return (
     <Flex
       mr="2rem"
@@ -30,34 +56,51 @@ export function FunPage() {
             {'Spotify'}
           </Title>
           <Space />
-          <iframe
-            className={classes.playlist}
-            title="playlist"
-            src="https://open.spotify.com/embed/playlist/3ffIenWiy0XmHvnamjA3qT?utm_source=generator&theme=0"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
-            loading="lazy"
-          >
-            {'Hello :)'}
-          </iframe>
+          {Spotify}
         </Grid.Col>
         <Grid.Col
           span={{ base: 12, md: 6, lg: 3 }}
           order={{ base: 1, lg: 2 }}
         >
-          <Title
-            component="span"
-            className={classes.title2}
-          >
-            {'Fun Websites'}
-          </Title>
-          <Space />
-          <Anchor href="https://scratch.mit.edu/projects/10128407">
-            {'Minecraft Nostalgia'}
-          </Anchor>
-          <Space />
-          <Anchor href="https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple">
-            {'Fireboy and Watergirl'}
-          </Anchor>
+          <Stack justify="space-between">
+            <Text>
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Fun Websites'}
+              </Title>
+              <Space />
+              <Anchor href="https://scratch.mit.edu/projects/10128407">
+                {'Minecraft Scratch'}
+              </Anchor>
+              <Space />
+              <Anchor href="https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple">
+                {'Fireboy and Watergirl'}
+              </Anchor>
+              <Space h="xl" />
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Games I like'}
+              </Title>
+              <Text>{'Minecraft'}</Text>
+              <Space />
+              <Text>{'Brawl Stars'}</Text>
+            </Text>
+            <Space />
+            <Text>
+              <Text component="span">{'Usually, I use this gamertag:'}</Text>
+              <Space />
+              <Title
+                component="span"
+                className={classes.title2}
+              >
+                {'Abstraction7'}
+              </Title>
+            </Text>
+          </Stack>
         </Grid.Col>
         <Grid.Col
           span={{ base: 12, md: 6, lg: 3 }}
@@ -92,26 +135,7 @@ export function FunPage() {
             {'Wordle'}
           </Title>
           <Space />
-          <iframe
-            src="https://www.nytimes.com/games/wordle"
-            title="Wordle"
-            height="450"
-            width="350"
-            style={{ color: 'red', border: '2px solid gray' }}
-          />
-        </Grid.Col>
-        <Grid.Col
-          span={12}
-          order={{ base: 5, lg: 5 }}
-        >
-          <Text component="span">{'Usually, I use this gamertag:'}</Text>
-          <Space />
-          <Title
-            component="span"
-            className={classes.title2}
-          >
-            {'Abstraction7'}
-          </Title>
+          {Wordle}
         </Grid.Col>
       </Grid>
     </Flex>
