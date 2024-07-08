@@ -1,4 +1,4 @@
-import styles from './Maliha.module.css'
+import styles from './About.module.css'
 
 /* Component for Spotify */
 export function Spotify() {
