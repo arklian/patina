@@ -2,6 +2,28 @@ import { Flex, Grid, Title, Text, Space, Anchor, Stack } from '@mantine/core'
 import classes from './Fun.module.css'
 
 export function FunPage() {
+  const Spotify = (
+    <iframe
+      className={classes.playlist}
+      title="playlist"
+      src="https://open.spotify.com/embed/playlist/3ffIenWiy0XmHvnamjA3qT?utm_source=generator&theme=0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    >
+      {'Hello :)'}
+    </iframe>
+  )
+  const Wordle = (
+    <iframe
+      className={classes.wordle}
+      src="https://www.nytimes.com/games/wordle"
+      title="Wordle"
+      height="450"
+      width="350"
+      scrolling="no"
+      style={{ color: 'red', border: '2px solid gray' }}
+    />
+  )
   return (
     <Flex
       mr="2rem"
@@ -30,15 +52,7 @@ export function FunPage() {
             {'Spotify'}
           </Title>
           <Space />
-          <iframe
-            className={classes.playlist}
-            title="playlist"
-            src="https://open.spotify.com/embed/playlist/3ffIenWiy0XmHvnamjA3qT?utm_source=generator&theme=0"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
-            loading="lazy"
-          >
-            {'Hello :)'}
-          </iframe>
+          {Spotify}
         </Grid.Col>
         <Grid.Col
           span={{ base: 12, md: 6, lg: 3 }}
@@ -117,13 +131,7 @@ export function FunPage() {
             {'Wordle'}
           </Title>
           <Space />
-          <iframe
-            src="https://www.nytimes.com/games/wordle"
-            title="Wordle"
-            height="450"
-            width="350"
-            style={{ color: 'red', border: '2px solid gray' }}
-          />
+          {Wordle}
         </Grid.Col>
       </Grid>
     </Flex>

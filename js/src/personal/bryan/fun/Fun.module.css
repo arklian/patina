@@ -19,9 +19,19 @@
 }
 
 .playlist{
+  border-radius: 0;
   border: none;
+  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   top: 20rem;
   width: 20rem;
   height: 25rem;
   left: 5rem;
+}
+
+.wordle{
+  overflow-y: hidden;
+
+  :global(.Welcome-module_contentWelcome__TL17B) {
+    overflow-y: hidden
+  }
 }

@@ -55,11 +55,7 @@ export function ProjectsPage() {
                 {props.title}
               </Title>
             </Center>
-            <Image
-              w={250}
-              h={150}
-              src={props.image}
-            />
+            <Image src={props.image} />
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 7, lg: 7 }}>
             {Starter}
