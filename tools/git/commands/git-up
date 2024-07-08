@@ -1,0 +1,137 @@
+#!/bin/zsh
+# Since this is meant to be run in an interactive shell, zsh should be fine.
+
+####################################################################################################
+# Parsing Flags and Args
+####################################################################################################
+v=1 # verbose
+pushToGerrit=1
+updateGithub=1
+commentOnPR=1
+
+print_usage() {
+# `cat << EOF` This means that cat should stop reading when EOF is detected
+cat << EOF
+Usage: git up [-hrv]
+Upload git changes to Gerrit and Github.
+
+-h, -help                  Display help
+-n, -no-github,            Skip creating a Pull Request in Github.
+-v, -verbose,              Run script in verbose mode. Will print out each step of execution.
+
+EOF
+}
+
+# https://stackoverflow.com/questions/7069682/how-to-get-arguments-with-flags-in-bash
+while getopts 'hnv' flag; do
+  case "${flag}" in
+    h) print_usage
+       exit 0 ;;
+    v) v=1 ;;
+    n) updateGithub=0 ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+####################################################################################################
+# Constants
+####################################################################################################
+
+remoteGerritURL="https://gerrithub.io"
+
+####################################################################################################
+# Main Script Start
+####################################################################################################
+currentBranch=$(git symbolic-ref --short -q HEAD)
+echo "Uploading changes... ($currentBranch)"
+
+[ $v = 1 ] && echo ""
+[ $v = 1 ] && echo "Fetching origin main from Github"
+fetchMsg=$(git fetch origin main 2>&1)
+if [[ $fetchMsg =~ "error" ]] || [[ $fetchMsg =~ "fatal" ]]; then
+  echo "${fetchMsg}"
+  exit 1
+fi
+
+
+commitsAhead=$(git rev-list --count origin/main.."$currentBranch")
+commitsAheadIndex=$((commitsAhead - 1))
+commitsBehind=$(git rev-list --count "$currentBranch"..origin/main)
+[ $v = 1 ] && echo ""
+[ $v = 1 ] && echo "Commits ahead of origin main: $commitsAhead"
+[ $v = 1 ] && echo "Commits behind of origin main: $commitsBehind"
+
+if [ $commitsAheadIndex -le 0 ]; then
+  echo "No commits to push"
+  exit 1
+fi
+
+first_changeId=$(git cat-file commit HEAD~"$commitsAheadIndex" | grep "Change-Id:" | sed -n -e 's/^.*Change-Id: //p')
+changes=($(git log HEAD~"$commitsAhead"..HEAD | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1'))
+[ $v = 1 ] && echo ""
+[ $v = 1 ] && echo "First Change-Id = $first_changeId"
+[ $v = 1 ] && echo "All Change-Ids (Newest changes on top):"
+[ $v = 1 ] && for x in $changes; do echo "-- $x";done
+
+####################################################################################################
+# Update Gerrit
+####################################################################################################
+if [ $pushToGerrit = 1 ]; then
+  [ $v = 1 ] && echo ""
+  [ $v = 1 ] && echo "----- Pushing to Gerrit"
+
+  # Upload a CR to Gerrit
+  # https://unix.stackexchange.com/questions/724026/save-output-of-command-to-variable-and-print-without-using-tee
+  exec 3>&1  # Open FD 3 as a duplicate of stdout (fd 1)
+  gerritPushMsg=$(git push gerrit HEAD:refs/for/main 2>&1 3>&- | tee /dev/fd/3)
+  exec 3>&-  # Close FD 3
+
+  # Check if Gerrit rejects the push as there are no new changes since the last push
+  if [[ $gerritPushMsg == *"(no new changes)"* ]]; then
+    echo "No new changes to push to Gerrit"
+    exit 1
+  fi
+
+  # Exit if we failed to push to Gerrit
+  if [[ $gerritPushMsg =~ "error" ]] || [[ $gerritPushMsg =~ "fatal" ]]; then
+    echo "Errors pushing to Gerrit"
+    exit 1
+  fi
+
+fi
+####################################################################################################
+# Update Github
+####################################################################################################
+
+# Exit if Github should not be updated
+if [ $updateGithub = 0 ]; then
+  [ $v = 1 ] && echo ""
+  [ $v = 1 ] && echo "----- Updating Github PRs"
+
+  pullRequestViewMsg=$(gh pr view "$currentBranch")
+  pullRequestChangeId=$(gh pr view "$currentBranch" | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1')
+  [ $v = 1 ] && echo "gh pr view = $pullRequestViewMsg"
+  [ $v = 1 ] && echo "First Change-Id = $first_changeId"
+  [ $v = 1 ] && echo "PR Change-Id = $pullRequestChangeId"
+
+  if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
+    # Upload a new PR to Github if branch does not have one.
+    git push origin "$currentBranch"
+    gh pr create --fill-first
+    [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/$pullRequestChangeId"
+  elif [[ "$first_changeId" != "$pullRequestChangeId" ]]; then
+    # Check if the Pull Request still is for the oldest Change-Id.
+    gh pr close "$currentBranch" -c "Change-Id $pullRequestChangeId was closed at $remoteGerritURL/q/$pullRequestChangeId"
+    gh pr create --fill-first
+  else
+    # Force push new updates to existing Github PR
+    git push --force-with-lease --force-if-includes origin "$currentBranch"
+    [ $commentOnPR = 1 ] && gh pr comment --body "New changes were pushed at $remoteGerritURL/q/$pullRequestChangeId"
+  fi
+fi
+
+
+
+
+
