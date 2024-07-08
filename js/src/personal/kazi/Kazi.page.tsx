@@ -4,6 +4,7 @@ import { DarkModeToggle } from './components/darkmodetoggle/DarkModeToggle'
 import { theme } from './theme.ts'
 import { Navbar } from './components/navbar/Navbar'
 import { Hero } from './components/hero/Hero'
+import { Experiences } from './components/experiences/Experiences'
 
 export function KaziPage() {
   return (
@@ -19,16 +20,16 @@ export function KaziPage() {
           <Hero />
         </section>
         <section
+          id="about"
+          className={styles.section}
+        >
+          <Experiences />
+        </section>
+        <section
           id="projects"
           className={styles.section}
         >
           {'Projects'}
-        </section>
-        <section
-          id="about"
-          className={styles.section}
-        >
-          {'About'}
         </section>
         <section
           id="contact"
