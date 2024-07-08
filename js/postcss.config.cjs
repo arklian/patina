@@ -6,16 +6,6 @@ const aliasMapping = {
 
 module.exports = {
   plugins: {
-    // TODO(Henry): Fix aliasing for postcss.
-    'postcss-import': {
-      root: path.resolve(__dirname, 'js'),
-      path: ["test-utils"],
-      skipDuplicates: true,
-      resolve: (id, basedir, importOptions) => {
-        const [aliasName, filename] = id.split('/');
-        return aliasMapping[aliasName](filename);
-      }
-    },
     'postcss-preset-mantine': {},
     'postcss-simple-vars': {
       variables: {

@@ -1,15 +1,15 @@
-# Mantine Vite template
+# Frontend JavaScript
 
-## Features
-
-This template comes with the following features:
-
+## Tools
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+- [ESLint](https://eslint.org/) setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+- [Prettier](https://prettier.io/) Autoformatting for Typescript and CSS.
+- [React Router](https://reactrouter.com/en/main) to separate pages
 
-## npm scripts
+## pnpm scripts
+See `package.json` for definitions.
 
 ## Build and dev scripts
 

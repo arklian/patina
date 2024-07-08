@@ -1,5 +1,7 @@
 import { render, screen } from '@test-utils/test-utils.ts'
+import { MantineProvider } from '@mantine/core'
 import { Welcome } from './Welcome'
+import { theme } from '@/pages/theme.ts'
 
 /**
  *  This test serves as an example for writing front end unit tests.
@@ -20,7 +22,11 @@ import { Welcome } from './Welcome'
 
 describe('Welcome component', () => {
   it('has correct Vite guide link', () => {
-    render(<Welcome />)
+    render(
+      <MantineProvider theme={theme}>
+        <Welcome />
+      </MantineProvider>,
+    )
     expect(screen.getByText('Home')).toBeInTheDocument()
   })
 })
