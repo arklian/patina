@@ -5,6 +5,7 @@ import { theme } from './theme.ts'
 import { Navbar } from './components/navbar/Navbar'
 import { Hero } from './components/hero/Hero'
 import { Experiences } from './components/experiences/Experiences'
+import { Projects } from './components/projects/Projects'
 
 export function KaziPage() {
   return (
@@ -29,7 +30,7 @@ export function KaziPage() {
           id="projects"
           className={styles.section}
         >
-          {'Projects'}
+          <Projects />
         </section>
         <section
           id="contact"
