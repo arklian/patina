@@ -1,9 +1,9 @@
-import { Box, rem, Flex } from '@mantine/core'
-import { LeftProjects } from './LeftProjects.tsx'
-import { RightProjects } from './RightProjects.tsx'
-import { Navbar } from '../components/Navbar.tsx'
-import { theme } from '../theme.ts'
-import { Pages } from '../pages.ts'
+import { Box, Flex } from '@mantine/core'
+import { useState } from 'react'
+import { LeftProjects } from '@/personal/haoking/projects/LeftProjects.tsx'
+import { RightProjects } from '@/personal/haoking/projects/RightProjects.tsx'
+import { Navbar } from '@/personal/haoking/components/Navbar.tsx'
+import { Pages } from '@/personal/haoking/pages.ts'
 
 export function ProjectsPage({
   current,
@@ -12,12 +12,10 @@ export function ProjectsPage({
   current: Pages
   setCurrent: any
 }) {
+  const [displayedImageSrc, setImage] = useState('')
+
   return (
-    <Box
-      bg={theme.colors.black[4]}
-      h={rem('100vh')}
-      w={rem('100vw')}
-    >
+    <Box>
       <Navbar
         current={current}
         setCurrent={setCurrent}
@@ -26,8 +24,8 @@ export function ProjectsPage({
         justify="space-between"
         direction="row"
       >
-        <LeftProjects />
-        <RightProjects />
+        <LeftProjects displayedImageSrc={displayedImageSrc} />
+        <RightProjects setImage={setImage} />
       </Flex>
     </Box>
   )

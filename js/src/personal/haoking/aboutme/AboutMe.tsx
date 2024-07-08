@@ -1,9 +1,8 @@
-import { Box, Flex, rem } from '@mantine/core'
-import { LeftAboutMe } from './LeftAboutMe.tsx'
-import { RightAboutMe } from './RightAboutMe.tsx'
-import { Navbar } from '../components/Navbar.tsx'
-import { theme } from '../theme.ts'
-import { Pages } from '../pages.ts'
+import { Box, Flex } from '@mantine/core'
+import { LeftAboutMe } from '@/personal/haoking/aboutme/LeftAboutMe.tsx'
+import { RightAboutMe } from '@/personal/haoking/aboutme/RightAboutMe.tsx'
+import { Navbar } from '@/personal/haoking/components/Navbar.tsx'
+import { Pages } from '@/personal/haoking/pages.ts'
 
 export function AboutMe({
   current,
@@ -13,11 +12,7 @@ export function AboutMe({
   setCurrent: any
 }) {
   return (
-    <Box
-      bg={theme.colors.black[4]}
-      h={rem('100vh')}
-      w={rem('100vw')}
-    >
+    <Box>
       <Navbar
         current={current}
         setCurrent={setCurrent}

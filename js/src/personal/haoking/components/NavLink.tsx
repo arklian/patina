@@ -1,5 +1,5 @@
-import styles from '../Haoking.module.css'
-import { Pages } from '../pages.ts'
+import styles from '@/personal/haoking/Haoking.module.css'
+import { Pages } from '@/personal/haoking/pages.ts'
 
 /* Component for each individual link in Navbar */
 export function NavLink({
