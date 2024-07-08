@@ -13,12 +13,6 @@ export function Resume() {
         target="_blank"
         download="Maliha_Tasnim_Resume.pdf"
         underline="never"
-        style={{
-          position: 'absolute',
-          left: 3240,
-          top: 300,
-          zIndex: '100',
-        }}
         className={styles.download_resume}
       >
         <Text
@@ -26,7 +20,6 @@ export function Resume() {
           component="span"
           className={`${main_class.title} ${styles.resume_title} ${styles.resume_gradient}`}
           pos="absolute"
-          style={{ display: 'inline', lineHeight: '1' }}
         >
           {'resume'}
         </Text>
@@ -43,7 +36,6 @@ export function Resume() {
         pt={20}
         top={120}
         left={3900}
-        style={{ border: 'dashed #be5555', borderRadius: 50 }}
       >
         {'education'}
         <List
@@ -83,7 +75,6 @@ export function Resume() {
         pt={20}
         top={75}
         left={4500}
-        style={{ border: 'dashed #be5555', borderRadius: 40 }}
       >
         {'swe intern @'}
         <br />
@@ -102,7 +93,6 @@ export function Resume() {
         pt={40}
         top={275}
         left={4400}
-        style={{ border: 'dashed #be5555', borderRadius: 40 }}
       >
         {'swe intern @'}
         <br />
@@ -123,7 +113,6 @@ export function Resume() {
         pt={20}
         top={560}
         left={4500}
-        style={{ border: 'dashed #be5555', borderRadius: 40 }}
       >
         {'uta @'}
         <br />

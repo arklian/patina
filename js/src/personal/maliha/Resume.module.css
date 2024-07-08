@@ -11,6 +11,8 @@
   position: absolute;
   left: 3950px;
   top:80px;
+  border: dashed #be5555;
+  border-radius: 50px;
 }
 
 .resume_info_list{
@@ -24,6 +26,8 @@
 .resume_experience{
   font-size: 40px;
   letter-spacing: 2px;
+  border: dashed #be5555;
+  border-radius: 40px;
 }
 
 .resume_border{
@@ -35,4 +39,11 @@
   background: linear-gradient(190deg, #e02525, #a067ae);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.download_resume{
+  position: absolute;
+  left: 3240px;
+  top: 300px;
+  z-index: 100;
 }
