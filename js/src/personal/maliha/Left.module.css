@@ -1,6 +1,11 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(144px);
+}
+
 .left{
   z-index: 900;
-  width: 144px;
   height: 100vh;
 }
 
@@ -9,3 +14,4 @@
   top: 300px;
   left: 40px;
 }
+

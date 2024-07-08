@@ -39,13 +39,12 @@ const iconMap = [
 
 export function Social() {
   return (
-    <div>
+    <div className={styles.container}>
       <Stack
         h={200}
         align="left"
         justify="center"
         gap={55}
-        pos="fixed"
         className={styles.icons}
         pr={100}
       >
