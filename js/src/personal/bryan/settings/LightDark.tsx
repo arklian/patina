@@ -7,6 +7,7 @@ export function LightDark() {
   return (
     <div>
       <Button onClick={() => setColorScheme('light')}>{'Light'}</Button>
+      {' | '}
       <Button onClick={() => setColorScheme('dark')}>{'Dark'}</Button>
     </div>
   )
