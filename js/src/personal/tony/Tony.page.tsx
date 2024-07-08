@@ -60,7 +60,7 @@ export function TonyPage() {
               <Text className={styles.textSWE}>{'Software Engineer'}</Text>
               <div className={styles.socialIcons}>
                 <ActionIcon
-                  color={'#DADDD8'}
+                  color={'#C9CCC8'}
                   component="a"
                   href="https://github.com/wangtony4005"
                   target="_blank"
@@ -69,7 +69,7 @@ export function TonyPage() {
                   <FaGithub size={24} />
                 </ActionIcon>
                 <ActionIcon
-                  color={'#DADDD8'}
+                  color={'#C9CCC8'}
                   component="a"
                   href="mailto:wangtony4005@gmail.com"
                   size="lg"
@@ -78,7 +78,7 @@ export function TonyPage() {
                 </ActionIcon>
                 <ActionIcon
                   component="a"
-                  color={'#DADDD8'}
+                  color={'#C9CCC8'}
                   href="https://linkedin.com/in/wangtony4005"
                   target="_blank"
                   size="lg"
@@ -113,7 +113,7 @@ export function TonyPage() {
                 "Welcome to my site. I'm currently a senior at CUNY Hunter College studying Computer Science. I aspire towards a career where I can create meaningful digital experiences. When I'm not coding it up, I enjoy playing video games like League of Legends, Valorant and Teamfight Tactics. I also enjoy outdoor activities such as hiking and jogging."
               }
             </Text>
-            <Container>
+            <div className={styles.experienceDiv}>
               <a
                 href="https://maryash.github.io/135/index.html"
                 rel="noopener noreferrer"
@@ -131,8 +131,9 @@ export function TonyPage() {
                   }
                 </Text>
               </a>
-            </Container>
-            <Container>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.experienceDiv}>
               <a
                 href="https://thedifferenceapp.com/"
                 rel="noopener noreferrer"
@@ -150,8 +151,9 @@ export function TonyPage() {
                   }
                 </Text>
               </a>
-            </Container>
-            <Container>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.experienceDiv}>
               <Text className={styles.experienceTitle}>
                 {'Software Developer Intern @ Patina Network | Placeholder ↗'}
               </Text>
@@ -160,8 +162,9 @@ export function TonyPage() {
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.'
                 }
               </Text>
-            </Container>
-            <Container className={styles.flexProject}>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.flexProject}>
               <a
                 href="https://devpost.com/software/a-ping"
                 rel="noopener noreferrer"
@@ -176,17 +179,17 @@ export function TonyPage() {
                   />
                   <div className={styles.projectText}>
                     <Text className={styles.experienceTitle}>
-                      {'A-List Manga Updates App'}
+                      {'A-List Manga Updates App ↗'}
                     </Text>
                     <Text className={styles.experienceText}>
                       {
-                        'Flutter app that allows you to create a list of your favorite webtoon/manga series, and track most recently updated chapters. Save 5+ minutes a day from manually checking and refreshing.'
+                        'Created a Flutter app that allows you to create a list of your favorite webtoon/manga series, and track most recently updated chapters. Save 5+ minutes a day from manually checking and refreshing.'
                       }
                     </Text>
                   </div>
                 </div>
               </a>
-            </Container>
+            </div>
           </Grid.Col>
         </Grid>
       </div>
