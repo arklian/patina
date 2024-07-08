@@ -3,7 +3,7 @@ import { Spotify } from './Spotify'
 import styles from './About.module.css'
 import main_class from './Maliha.module.css'
 
-/* About page component*/
+/** About page component*/
 export function About() {
   return (
     <>
@@ -12,12 +12,7 @@ export function About() {
         href="https://youtu.be/VgoE837TskI?si=o8p281ughP0aUxmM"
         target="_blank"
         underline="never"
-        style={{
-          position: 'absolute',
-          left: '1440px',
-          top: '50px',
-          zIndex: '100',
-        }}
+        className={styles.about_anchor}
       >
         <Text
           inherit
@@ -115,8 +110,7 @@ export function About() {
         {'currently watching: '}
         <List
           icon=" "
-          className={styles.about_info}
-          id={styles.about_info}
+          className={`${main_class.title} ${styles.about_info}`}
         >
           <List.Item>{'bridgerton'}</List.Item>
           <List.Item>{'the boys'} </List.Item>

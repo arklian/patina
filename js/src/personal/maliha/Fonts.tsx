@@ -1,4 +1,4 @@
-/* Fonts */
+/** Fonts */
 export function Fonts() {
   return (
     <>

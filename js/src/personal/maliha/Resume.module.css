@@ -30,3 +30,9 @@
   position: absolute;
   left: 3450px;
 }
+
+.resume_gradient{
+  background: linear-gradient(190deg, #e02525, #a067ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

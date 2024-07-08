@@ -2,7 +2,8 @@ import { Text, Anchor, List } from '@mantine/core'
 import pdf from './Maliha_Tasnim_Resume.pdf'
 import styles from './Resume.module.css'
 import main_class from './Maliha.module.css'
-/* Resume Component */
+
+/** Resume Component */
 export function Resume() {
   return (
     <>
@@ -23,13 +24,7 @@ export function Resume() {
         <Text
           inherit
           component="span"
-          className={`${main_class.title} ${styles.resume_title}`}
-          variant="gradient"
-          gradient={{
-            from: '#e02525',
-            to: 'rgb(191,134,230)',
-            deg: 190,
-          }}
+          className={`${main_class.title} ${styles.resume_title} ${styles.resume_gradient}`}
           pos="absolute"
           style={{ display: 'inline', lineHeight: '1' }}
         >
@@ -39,13 +34,8 @@ export function Resume() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.resume_info}`}
         variant="gradient"
-        gradient={{
-          from: '#e02525',
-          to: 'rgb(191,134,230)',
-          deg: 190,
-        }}
+        className={`${styles.title} ${styles.resume_info} ${styles.resume_gradient}`}
         pos="absolute"
         pl={40}
         pr={40}
@@ -84,13 +74,8 @@ export function Resume() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.resume_experience}`}
         variant="gradient"
-        gradient={{
-          from: '#e02525',
-          to: 'rgb(191,134,230)',
-          deg: 190,
-        }}
+        className={`${styles.title} ${styles.resume_experience} ${styles.resume_gradient}`}
         pos="absolute"
         pl={40}
         pr={40}
@@ -108,13 +93,8 @@ export function Resume() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.resume_experience}`}
         variant="gradient"
-        gradient={{
-          from: '#e02525',
-          to: 'rgb(191,134,230)',
-          deg: 190,
-        }}
+        className={`${styles.title} ${styles.resume_experience} ${styles.resume_gradient}`}
         pos="absolute"
         pl={40}
         pr={40}
@@ -134,13 +114,8 @@ export function Resume() {
       <Text
         inherit
         component="span"
-        className={`${styles.title} ${styles.resume_experience}`}
         variant="gradient"
-        gradient={{
-          from: '#e02525',
-          to: 'rgb(191,134,230)',
-          deg: 190,
-        }}
+        className={`${styles.title} ${styles.resume_experience} ${styles.resume_gradient}`}
         pos="absolute"
         pl={40}
         pr={40}

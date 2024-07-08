@@ -67,7 +67,7 @@ export function MalihaPage() {
             variant="gradient"
             gradient={{
               from: '#c75252',
-              to: '#a067aeff',
+              to: '#a067ae',
               deg: 90,
             }}
             pos="absolute"
@@ -81,7 +81,7 @@ export function MalihaPage() {
             pos="absolute"
             gradient={{
               from: '#c75252',
-              to: '#a067aeff',
+              to: '#a067ae',
               deg: 90,
             }}
             className={styles.title}
