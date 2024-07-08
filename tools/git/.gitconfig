@@ -6,6 +6,6 @@
 	autoSetupRebase = always
 [alias]
 	pushf = push --force-with-lease --force-if-includes
-	pullo = pull origin main
+	pullo = pull gerrit main
 	pullg = pull gerrit main
 	rebaseo = rebase -i origin/main
