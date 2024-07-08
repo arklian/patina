@@ -1,0 +1,12 @@
+/**
+  StyleBot CSS replacement for GerritHub
+
+  StyleBot Chrome Extension:
+  https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US
+  Url: gerrithub.io
+ */
+
+:root {
+  --header-background-color: linear-gradient(90deg, #03664d 0%, #4dffb0 100%);
+  --header-title-content: "Patina Gerrit"
+}
