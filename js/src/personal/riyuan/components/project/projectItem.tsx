@@ -4,7 +4,6 @@ import { Project } from '@/personal/riyuan/components/project/projectData'
 import laptop from '@/personal/riyuan/assets/images/laptop.png'
 import projectStyle from '@/personal/riyuan/components/project/project.module.css'
 import hstyles from '@/personal/riyuan/components/home/Home.module.css'
-
 /**
  * This component provides a route in my page
  * Exports routes to different pages in my website
@@ -61,7 +60,7 @@ function ProjectTextSection({
 }) {
   return (
     <Group
-      pt={'sm'}
+      pt={'lg'}
       display={'grid'}
       justify={'flex-start'}
       align={'flex-start'}
@@ -82,7 +81,6 @@ function ProjectTextSection({
           pt={'md'}
         >
           <Button
-            className={hstyles.control}
             ta={'center'}
             size="lg"
             variant="default"
