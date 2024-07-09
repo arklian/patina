@@ -6,9 +6,13 @@ import {
   Image,
   ActionIcon,
   Container,
+  Badge,
+  Group,
   MantineProvider,
 } from '@mantine/core'
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
+import A_list from './Assets/A_list.png'
+import Tony_pfp from './Assets/tony.jpg'
 import styles from './Tony.module.css'
 import { theme } from './theme'
 
@@ -44,7 +48,10 @@ export function TonyPage() {
           }}
         />
         <Grid gutter="md">
-          <Grid.Col span={6}>
+          <Grid.Col
+            span={6}
+            className={styles.gridLeft}
+          >
             <Title
               className={styles.name}
               ta="left"
@@ -103,7 +110,7 @@ export function TonyPage() {
             </Container>
             <Image
               className={styles.pfp}
-              src="https://placehold.co/500x500?text=Placeholder"
+              src={Tony_pfp}
               alt="Profile"
             />
           </Grid.Col>
@@ -121,15 +128,30 @@ export function TonyPage() {
                 className={styles.link}
               >
                 <Text className={styles.experienceTitle}>
-                  {
-                    'CSCI-135 Teaching Assistant @ Hunter College | Jan 2023 - Present ↗'
-                  }
+                  {'CSCI-135 Teaching Assistant @ Hunter College ↗'}
+                </Text>
+                <Text className={styles.experienceDates}>
+                  {'Jan 2023 - Present'}
                 </Text>
                 <Text className={styles.experienceText}>
                   {
                     'Provided tutoring for 400+ students in topics related to OOP in C++ and Python. Created and graded projects/assignments in C++. Conducted weekly code reviews.'
                   }
                 </Text>
+                <Group className={styles.skillGroup}>
+                  <Badge
+                    color={'#0dba93'}
+                    autoContrast
+                  >
+                    {'C++'}
+                  </Badge>
+                  <Badge
+                    color={'#0dba93'}
+                    autoContrast
+                  >
+                    {'Python'}
+                  </Badge>
+                </Group>
               </a>
             </div>
             <div className={styles.divider}></div>
@@ -141,27 +163,75 @@ export function TonyPage() {
                 className={styles.link}
               >
                 <Text className={styles.experienceTitle}>
-                  {
-                    'Software Developer Intern @ The Difference App | Jul 2023 - Aug 2023 ↗'
-                  }
+                  {'Software Developer Intern @ The Difference App ↗'}
+                </Text>
+                <Text className={styles.experienceDates}>
+                  {'Jul 2023 - Aug 2023'}
                 </Text>
                 <Text className={styles.experienceText}>
                   {
                     'Implemented push notifications options using Flutter for a weight management calorie tracking app to allow both Android and iOS users to receive periodic reminder notifications to log their caloric intake and exercise'
                   }
                 </Text>
+                <Group className={styles.skillGroup}>
+                  <Badge
+                    color={'#0dba93'}
+                    autoContrast
+                  >
+                    {'Flutter'}
+                  </Badge>
+                  <Badge
+                    color={'#0dba93'}
+                    autoContrast
+                  >
+                    {'Android Studio'}
+                  </Badge>
+                </Group>
               </a>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.experienceDiv}>
               <Text className={styles.experienceTitle}>
-                {'Software Developer Intern @ Patina Network | Placeholder ↗'}
+                {'Software Developer Intern @ Patina Network ↗'}
               </Text>
+              <Text className={styles.experienceDates}>{'Placeholder'}</Text>
               <Text className={styles.experienceText}>
                 {
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.'
                 }
               </Text>
+              <Group className={styles.skillGroup}>
+                <Badge
+                  color={'#0dba93'}
+                  autoContrast
+                >
+                  {'HTML'}
+                </Badge>
+                <Badge
+                  color={'#0dba93'}
+                  autoContrast
+                >
+                  {'CSS'}
+                </Badge>
+                <Badge
+                  color={'#0dba93'}
+                  autoContrast
+                >
+                  {'Typescript'}
+                </Badge>
+                <Badge
+                  color={'#0dba93'}
+                  autoContrast
+                >
+                  {'React'}
+                </Badge>
+                <Badge
+                  color={'#0dba93'}
+                  autoContrast
+                >
+                  {'Mantine'}
+                </Badge>
+              </Group>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.flexProject}>
@@ -174,13 +244,14 @@ export function TonyPage() {
                 <div className={styles.projectItem}>
                   <Image
                     className={styles.projectPic}
-                    src="https://placehold.co/500x500?text=Placeholder"
+                    src={A_list}
                     alt="A-List"
                   />
                   <div className={styles.projectText}>
                     <Text className={styles.experienceTitle}>
-                      {'A-List Manga Updates App ↗'}
+                      {'A-List Manga Updates App'}
                     </Text>
+                    <Text className={styles.projectDates}>{'↗'}</Text>
                     <Text className={styles.experienceText}>
                       {
                         'Created a Flutter app that allows you to create a list of your favorite webtoon/manga series, and track most recently updated chapters. Save 5+ minutes a day from manually checking and refreshing.'
