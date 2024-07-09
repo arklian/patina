@@ -16,7 +16,7 @@ export function Images() {
         <Image src="https://i.pinimg.com/originals/d1/cd/67/d1cd674f52a517795ebe4731d960a47c.jpg" />
       </AspectRatio>
       <AspectRatio
-        ratio={1 / 1}
+        ratio={1}
         maw={400}
         mx="auto"
         pos="absolute"
@@ -37,7 +37,7 @@ export function Images() {
         <Image src="https://i.pinimg.com/originals/c5/af/52/c5af52b3b08a9c24e3493cb8ee997da0.jpg" />
       </AspectRatio>
       <AspectRatio
-        ratio={2 / 2}
+        ratio={1}
         maw={400}
         w={300}
         h={300}
@@ -88,7 +88,7 @@ export function Images() {
         <Image src="https://i.pinimg.com/originals/7e/bb/8b/7ebb8bf4d4c85d689a86718e0b076134.png" />
       </AspectRatio>
       <AspectRatio
-        ratio={1 / 1}
+        ratio={1}
         maw={400}
         w={300}
         h={300}

@@ -4,21 +4,29 @@ import { Sandwich } from './Sandwich.tsx'
 import styles from './Modal.module.css'
 
 /** Menu Component */
-const labels = [
-  { label: 'About' },
-  { label: 'Resume' },
-  { label: 'Projects' },
-  { label: 'Notes' },
-  { label: 'Gallery' },
-]
+const labels = [{ label: 'about' }, { label: 'resume' }]
 
-export function Menu() {
+type MenuProps = {
+  aboutFunc: () => void
+  resumeFunc: () => void
+}
+
+export function Menu({ aboutFunc, resumeFunc }: MenuProps) {
   const [opened, { open, close }] = useDisclosure(false)
 
   const items = labels.map((label) => (
     <UnstyledButton
       key={label.label}
       className={styles.menuItems}
+      onClick={() => {
+        close()
+        if (label.label === 'about') {
+          aboutFunc()
+        }
+        if (label.label === 'resume') {
+          resumeFunc()
+        }
+      }}
     >
       {label.label}
     </UnstyledButton>
@@ -48,7 +56,6 @@ export function Menu() {
       >
         <Stack>{items}</Stack>
       </Modal>
-
       <Sandwich
         onToggleMenu={handleToggleMenu}
         opened={opened}
