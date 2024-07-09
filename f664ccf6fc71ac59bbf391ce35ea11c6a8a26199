@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6467ae8b_8052dd0f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:06:13Z",
+      "side": 1,
+      "message": "Some minor renaming things",
+      "revId": "f664ccf6fc71ac59bbf391ce35ea11c6a8a26199",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04757fa9_1cdae33f",
+        "filename": "js/src/components/Welcome/PatinaWelcome.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:06:13Z",
+      "side": 1,
+      "message": "This component should likely just be in the js/src/patina folder and not the components folder.",
+      "revId": "f664ccf6fc71ac59bbf391ce35ea11c6a8a26199",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "154554ea_313c9541",
+        "filename": "js/src/patina/Welcome.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:06:13Z",
+      "side": 1,
+      "message": "Should likely name this PatinaPage",
+      "range": {
+        "startLine": 5,
+        "startChar": 16,
+        "endLine": 5,
+        "endChar": 27
+      },
+      "revId": "f664ccf6fc71ac59bbf391ce35ea11c6a8a26199",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9eb6794_f1e10fae",
+        "filename": "js/src/personal/PersonalRoutes.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:06:13Z",
+      "side": 1,
+      "message": "probably should rename this to match the file name",
+      "revId": "f664ccf6fc71ac59bbf391ce35ea11c6a8a26199",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
