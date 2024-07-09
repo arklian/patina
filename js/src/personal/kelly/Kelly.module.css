@@ -122,6 +122,8 @@
 .about{
   display: flex;
   justify-content: center;
+  scroll-timeline: --squareTimeline y;
+  position: relative;
 }
 
 .about_header{
@@ -135,13 +137,26 @@
 .about_item {
   height: auto;
   width: 35vw;
-  color: #f8e6bc;
   font-family: "Libre Caslon Text", serif;
   border-radius: 5px;
   font-size: 20px;
-  max-width: 950px;
+  color: transparent;
+  //background-image: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  animation-name: colorAnimate;
+  //animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
 }
 
+@keyframes colorAnimate {
+  from {
+    color: red;
+  }
+
+  to {
+    color: blue;
+  }
+}
 
 .pfp_img{
   height: 350px;
