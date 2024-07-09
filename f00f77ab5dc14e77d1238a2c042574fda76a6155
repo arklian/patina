@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67a018d3_5b0f896b",
+        "filename": "js/src/personal/tony/Tony.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T21:02:59Z",
+      "side": 1,
+      "message": "paths should be lower case. Assets should be assets.",
+      "revId": "f00f77ab5dc14e77d1238a2c042574fda76a6155",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
