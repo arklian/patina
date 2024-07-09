@@ -1,3 +1,15 @@
-.inner{
-  padding: 0;
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+  padding-top: rem(150);
+  padding-bottom: rem(150);
+}
+
+.title{
+  font-weight: 800;
+  font-size: rem(40);
+}
+
+.highlight{
+  color: #4dffb0;
 }
