@@ -15,68 +15,68 @@ import { TonyPage } from './personal/tony/Tony.page.tsx'
 
 export const RootRoutes = [
   {
-    path: '/',
+    index: true,
     description: 'Home',
     element: <HomePage />,
   },
   {
-    path: '/henry',
+    path: 'henry',
     description: "Henry's Page",
     element: <HenryPage />,
   },
   {
-    path: '/amanda',
+    path: 'amanda',
     description: "Amanda's Page",
     element: <AmandaPage />,
   },
   BryanRoutes,
   {
-    path: '/haoking',
+    path: 'haoking',
     description: "Haoking's Page",
     element: <HaokingPage />,
   },
   {
-    path: '/jionghao',
+    path: 'jionghao',
     description: "Jionghao's Page",
     element: <JionghaoPage />,
   },
   {
-    path: '/kazi',
+    path: 'kazi',
     description: "Kazi's Page",
     element: <KaziPage />,
   },
   {
-    path: '/kelly',
+    path: 'kelly',
     description: "Kelly's Page",
     element: <KellyPage />,
   },
   {
-    path: '/maliha',
+    path: 'maliha',
     description: "Maliha's Page",
     element: <MalihaPage />,
   },
   {
-    path: '/manny',
+    path: 'manny',
     description: "Manny's Page",
     element: <MannyPage />,
   },
   {
-    path: '/manny/resume',
+    path: 'manny/resume',
     description: "Manny's Resume Page",
     element: <MannyResume />,
   },
   {
-    path: '/manny/aboutme',
+    path: 'manny/aboutme',
     description: "Manny's About Me Page",
     element: <MannyAboutMePage />,
   },
   {
-    path: '/riyuan',
+    path: 'riyuan',
     description: "Riyuan's Page",
     element: <RiyuanPage />,
   },
   {
-    path: '/tony',
+    path: 'tony',
     description: "Tony's Page",
     element: <TonyPage />,
   },

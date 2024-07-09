@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { RootRoutes } from './Routes.tsx'
+import { Patina_Routes } from './Patina_Routes.tsx'
 
-const router = createBrowserRouter(RootRoutes)
+const patina_router = createBrowserRouter(Patina_Routes)
 
 export function Router() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={patina_router} />
 }
