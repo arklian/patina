@@ -1,5 +1,5 @@
 .body_wrap{
-  background-color: #1b2847;
+  background-color: #131b30;
 }
 
 .body_load {
@@ -28,18 +28,18 @@
 }
 
 .nav {
-  display: flex;
   position: fixed;
+  right:0;
+  width: auto;
+  text-align: right;
   z-index: 1000;
-  background-color: #121b30;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  padding: 35px;
+  background-color: rgba(19,27,48, 0.5);
 }
 
 .nav_item{
   font-family: "Noto Serif Display", serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #f8e6bc;
 }
 
@@ -48,22 +48,24 @@
 }
 
 .nav_item:hover{
-  color: #71bef4;
+  color: #69afe6;
   transition: 0.5s;
+  margin-right: 10px;
 }
 
 /*------HERO SECTION--------*/
 
 .body_container{
   display: flex;
+  padding-top: 8vw;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 60vw;
   top:0;
-  background-image: url("https://i.pinimg.com/564x/62/63/84/6263843d8dfab1bc65132c3a166d4e2f.jpg");
+  background-image: url("https://cdn.discordapp.com/attachments/1187083528832299112/1259916777337389156/Untitled105_20240708125917.png?ex=668d6c6f&is=668c1aef&hm=05d049bcb5319e4aab6f3857c3c1c3f3b0db299e64c380049d80157a0d05cdc6&");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right   bottom ;
+  background-size: 85vw auto;
+  background-color: #131b30;
 }
 
 .title {
@@ -71,14 +73,14 @@
   color: #f8e6bc;
   font-family: "Noto Serif Display", serif;
   font-size: 10vw;
-  line-height: 100px;
+  line-height: 95px;
   font-style: normal;
   letter-spacing: 20px;
   text-align: center;
 }
 
 .kelly {
-  animation: 1.8s slide-right forwards;
+  animation: 1.5s slide-right forwards;
   display: inline-block;
   animation-delay: 1s;
 }
@@ -110,7 +112,7 @@
 .designation {
   text-align: center;
   font-family: "Libre Caslon Text", serif;
-  font-size: 20px;
+  font-size: 28px;
   color: #f8e6bc;
 
 }
@@ -118,20 +120,8 @@
 /*-----ABOUT SECTION-----*/
 
 .about{
-  height: auto;
-  padding-bottom: 50px;
-}
-
-.aboutpadding{
-  padding-top: 3vw;
-}
-
-.about_container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  padding-left: 3vw;
+  display: flex;
+  justify-content: center;
 }
 
 .about_header{
@@ -140,17 +130,18 @@
   font-size: 5vw;
   padding-left: 5vw;
   color: #f8e6bc;
-  margin-top: 125px;
 }
 
-.about_item{
+.about_item {
   height: auto;
   width: 35vw;
   color: #f8e6bc;
   font-family: "Libre Caslon Text", serif;
   border-radius: 5px;
   font-size: 20px;
+  max-width: 950px;
 }
+
 
 .pfp_img{
   height: 350px;
@@ -163,6 +154,7 @@
   font-size: 18px;
   color: #f8e6bc;
 }
+
 
 /*-----PROJECTS SECTION--------*/
 
@@ -191,6 +183,8 @@
   font-size: 20px;
   padding-right: 15vw;
 }
+
+/*-----CONTACT SECTION-------*/
 
 .contact{
   display: flex;

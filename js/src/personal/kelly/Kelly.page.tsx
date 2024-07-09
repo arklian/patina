@@ -19,9 +19,16 @@ export function KellyPage() {
           rel="stylesheet"
         />
         <div className={styles.nav}>
-          <div className={styles.body_load}></div>
+          <div className={styles.body_load}>
+            <img
+              alt={'loading'}
+              src={
+                'https://t3.ftcdn.net/jpg/05/14/75/82/360_F_514758236_i8rnB85PVdEaK19yGaK0TpaYEYMyxOL5.jpg'
+              }
+            />
+          </div>
           <a href={'#home'}>
-            <p className={styles.nav_item}>{'✦ HOME'}</p>
+            <p className={styles.nav_item}>{'Home'}</p>
           </a>
           <a href={'#about'}>
             <p className={styles.nav_item}>{'About'}</p>
@@ -33,13 +40,18 @@ export function KellyPage() {
             <p className={styles.nav_item}>{'Contact'}</p>
           </a>
         </div>
-        <div className={styles.body_container}>
+        <div
+          id={'home'}
+          className={styles.body_container}
+        >
           <Title className={styles.title}>
             <span className={styles.kelly}>{'KELLY'}</span>
             <span> </span>
             <span className={styles.lin}>{'LIN'}</span>
           </Title>
-          <p className={styles.designation}>{'COMPUTER SCIENCE AND MEDIA'}</p>
+          <p className={styles.designation}>
+            {'Software Engineer and Designer'}
+          </p>
           <div className={styles.window_container}>
             <Box className={styles.window}></Box>
           </div>
@@ -50,38 +62,20 @@ export function KellyPage() {
         ></div>
         <p className={styles.about_header}>{'✦ ABOUT ME '}</p>
         <div className={styles.about}>
-          <div className={styles.about_container}>
-            <div>
-              <pre className={styles.about_item}>
-                {'EDUCATION\n\nComputer Science and Media Studies\nHunter College CUNY\n2021-2025' +
-                  '\n\nEXPERIENCE\n\nInCreative Company \n' +
-                  'Website Editor and Designer\n' +
-                  '2021-2024\n' +
-                  '\n' +
-                  'ClimateCon! 2024\n' +
-                  'Social Media Management\n' +
-                  'Summer 2024\n' +
-                  '\n' +
-                  'Patina Network\n' +
-                  'SWE Intern\n' +
-                  '2024 - Ongoing\n' +
-                  '\n'}
-              </pre>
-            </div>
-            <div>
-              <img
-                className={styles.pfp_img}
-                alt={'pfp'}
-                src={
-                  'https://i.pinimg.com/736x/f9/54/75/f95475d1abf3b665380c117762819d19.jpg'
-                }
-              />
-              <pre className={styles.pfp_about}>
-                {'I am a first generation Chinese American with a passion\nfor design and development' +
-                  ' in tech. I love all things art, \nscience, and music related.\n\n' +
-                  'My family is also raising two chickens named Mold and Pou.'}
-              </pre>
-            </div>
+          <div className={styles.about_item}></div>
+          <div>
+            <img
+              className={styles.pfp_img}
+              alt={'pfp'}
+              src={
+                'https://i.pinimg.com/736x/68/31/12/68311248ba2f6e0ba94ff6da62eac9f6.jpg'
+              }
+            />
+            <pre className={styles.pfp_about}>
+              {'I am a first generation Chinese American with a passion\nfor design and development' +
+                ' in tech. I love all things art, \nscience, and music related.\n\n' +
+                'My family is also raising two chickens named Mold and Pou.'}
+            </pre>
           </div>
         </div>
         <p className={styles.about_header}>{'✦ PROJECTS '}</p>
@@ -95,7 +89,7 @@ export function KellyPage() {
           className={styles.contact}
         >
           <pre className={styles.contact}>
-            {'New York City, NY, USA\nlinkelly150@gmail.com'}
+            {'Kxclly\nNew York City, NY, USA\nlinkelly150@gmail.com\n'}
           </pre>
           <div className={styles.icon_container}>
             <a href={'https://www.instagram.com/kerrydoesthings/'}>
