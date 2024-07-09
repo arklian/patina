@@ -65,7 +65,7 @@ export function Welcome() {
           {RootRoutes.map((routeObj) => (
             <NavLink
               key={routeObj.path}
-              href={routeObj.path ?? '/'}
+              href={'private/'.concat(routeObj.path ?? '/')}
               label={routeObj.description ?? '/'}
               leftSection={
                 <IconHome2
