@@ -5,7 +5,7 @@ import { FunPage as BryanFunPage } from '@/personal/bryan/fun/Fun.page.tsx'
 import { AboutMePage as BryanAboutMePage } from '@/personal/bryan/aboutme/AboutMe.page.tsx'
 
 export const BryanRoutes = {
-  path: '/bryan',
+  path: 'bryan',
   description: "Bryan's Page",
   element: <BryanPage />,
   children: [
@@ -15,17 +15,17 @@ export const BryanRoutes = {
       element: <BryanMainPage />,
     },
     {
-      path: '/bryan/projects',
+      path: 'projects',
       description: "Bryan's Projects Page",
       element: <BryanProjectsPage />,
     },
     {
-      path: '/bryan/fun',
+      path: 'fun',
       description: "Bryan's Fun Page",
       element: <BryanFunPage />,
     },
     {
-      path: '/bryan/aboutme',
+      path: 'aboutme',
       description: "Bryan's About Me Page",
       element: <BryanAboutMePage />,
     },
