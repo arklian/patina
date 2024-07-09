@@ -13,7 +13,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import pfpImage from '@/personal/riyuan/assets/images/pfp.jpg'
 import styles from '@/personal/riyuan/components/navigation/Navigation.module.css'
 
-interface CustomHeaderProps {
+type CustomHeaderProps = {
   data: {
     image: string
     name: string
