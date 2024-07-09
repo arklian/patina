@@ -52,7 +52,12 @@ export function ClickableImage() {
             className={styles.menuItem}
             style={{ transform: 'rotate(20deg) translateX(-65%)' }}
           >
-            {'Contact'}
+            <Link
+              to={'/manny/contact'}
+              className={styles.menuItem}
+            >
+              {'Contact'}
+            </Link>
           </div>
         </div>
       </div>
