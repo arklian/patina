@@ -9,7 +9,7 @@ import {
 } from '@mantine/core'
 import { IconHome2 } from '@tabler/icons-react'
 import classes from './Welcome.module.css'
-import { RootRoutes } from '@/personal/PersonalRoutes.tsx'
+import { PersonalRoutes } from '@/personal/PersonalRoutes.tsx'
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle.tsx'
 
 /** Temporary landing page for the root route */
@@ -62,7 +62,7 @@ export function Welcome() {
               {'Personal Portfolio Websites'}
             </Text>
           </Title>
-          {RootRoutes.map((routeObj) => (
+          {PersonalRoutes.map((routeObj) => (
             <NavLink
               key={routeObj.path}
               href={routeObj.path ?? '/'}
