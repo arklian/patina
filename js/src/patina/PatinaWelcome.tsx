@@ -8,12 +8,11 @@ import {
   useMantineTheme,
 } from '@mantine/core'
 import { IconHome2 } from '@tabler/icons-react'
-import classes from './Welcome.module.css'
-import { RootRoutes } from '@/personal/PersonalRoutes.tsx'
+import classes from './PatinaWelcome.module.css'
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle.tsx'
 
 /** Temporary landing page for the root route */
-export function Welcome() {
+export function PatinaWelcome() {
   const theme = useMantineTheme()
 
   return (
@@ -62,19 +61,16 @@ export function Welcome() {
               {'Personal Portfolio Websites'}
             </Text>
           </Title>
-          {RootRoutes.map((routeObj) => (
-            <NavLink
-              key={routeObj.path}
-              href={routeObj.path ?? '/'}
-              label={routeObj.description ?? '/'}
-              leftSection={
-                <IconHome2
-                  size="1rem"
-                  stroke={1.5}
-                />
-              }
-            />
-          ))}
+          <NavLink
+            href={'personal/'}
+            label={'Personal Websites Homepage'}
+            leftSection={
+              <IconHome2
+                size="1rem"
+                stroke={1.5}
+              />
+            }
+          />
         </Stack>
       </Center>
     </>
