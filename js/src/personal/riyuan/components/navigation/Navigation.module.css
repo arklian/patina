@@ -73,11 +73,6 @@
   background-color: var(--primary-color);
 }
 
-a:hover .icon,
-a:hover .text{
-  color: var(--shell-color);
-}
-
 /************************************   */
 /* Menu Style */
 /************************************   */

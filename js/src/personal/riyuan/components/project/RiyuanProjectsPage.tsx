@@ -1,11 +1,7 @@
-import { Container, Title, Text } from '@mantine/core'
+import { Container, Title } from '@mantine/core'
+import { projects } from '@/personal/riyuan/components/project/projectData'
+import { ProjectItem } from '@/personal/riyuan/components/project/projectItem.tsx'
 import styles from '@/personal/riyuan/Riyuan.module.css'
-
-/**
- * This component renders the projects page ->
- * Renders a page that highlights different projects completed by me
- * Allows visitors to get a sense of the work I've completed
- */
 
 export function RiyuanProjectsPage() {
   return (
@@ -18,18 +14,15 @@ export function RiyuanProjectsPage() {
         >
           {'Project Page'}
         </Title>
-        <Text
-          c="dimmed"
-          ta="left"
-          size="lg"
-          maw={580}
-          mx="auto"
-          mt="xl"
-        >
-          {
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          }
-        </Text>
+        <div>
+          {projects.map((project, index) => (
+            <ProjectItem
+              key={index}
+              project={project}
+              index={index}
+            />
+          ))}
+        </div>
       </Container>
     </div>
   )
