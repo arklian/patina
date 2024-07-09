@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a064900a_938612de",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "PascalCase for this and the file name.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea56f1d5_5bcc50bc",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it make sense for this to be the Routes.tsx, and then the other file to be PersonalRoutes.tsx?\n\nWe may also want to move the PersonalRoutes to js/src/personal",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7954efa_04d3db96",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "Can we make a new blank page that has like one button that points to the current home page?\n\nPatina\u0027s site should likely go under js/src/patina.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e6a8bc7_2d55626b",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "I think personal would make sense to match the folder name.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "620f5694_071b7a12",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "This likely isn\u0027t used, since it\u0027s part of the HomePage code, but it\u0027d be nice to have a proper description here.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3955042b_2710f4c1",
+        "filename": "js/src/Router.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T18:35:34Z",
+      "side": 1,
+      "message": "Gotta stop defaulting to snake case lol. Use camelCase for this.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
