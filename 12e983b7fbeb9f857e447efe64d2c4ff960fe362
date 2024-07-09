@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15b8a0e1_dbbee8b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T21:05:57Z",
+      "side": 1,
+      "message": "approving since you fix the biggest things i have issues abotu in the follow up CL",
+      "revId": "12e983b7fbeb9f857e447efe64d2c4ff960fe362",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a2be122_4a0f1a4f",
+        "filename": "js/src/personal/haoking/aboutme/RightAboutMe.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T21:05:57Z",
+      "side": 1,
+      "message": "nit: put this in its own section rather than a subtitle item for the spotify. Also put the spotify embed in its own component",
+      "revId": "12e983b7fbeb9f857e447efe64d2c4ff960fe362",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
