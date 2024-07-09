@@ -6,6 +6,7 @@ import { Navbar } from './components/navbar/Navbar'
 import { Hero } from './components/hero/Hero'
 import { Experiences } from './components/experiences/Experiences'
 import { Projects } from './components/projects/Projects'
+import { Contact } from './components/contact/Contact'
 
 export function KaziPage() {
   return (
@@ -32,12 +33,9 @@ export function KaziPage() {
         >
           <Projects />
         </section>
-        <section
-          id="contact"
-          className={styles.section}
-        >
-          {'Contact'}
-        </section>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
       <DarkModeToggle />
     </MantineProvider>
