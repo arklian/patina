@@ -1,25 +1,58 @@
+.nav {
+  display: flex;
+  position: sticky;
+  background-color: #18191b;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.nav_item{
+  font-family: "Noto Serif Display", serif;
+  font-size: 18px;
+  color: #f6e6c1;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.nav_item:hover{
+  color: #dfac3d;
+  transition: 0.5s;
+}
+
 .body_container{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50vw;
-  background-color: #fdf7ee;
-  background-image: url("https://i.pinimg.com/564x/8a/28/bd/8a28bd8947deb747aba8b2557fb41982.jpg");
+  background-color: #18191b;
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
+  margin:0;
+  top:0;
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1b1918;
+  color: #f6e6c1;
   font-family: "Noto Serif Display", serif;
   font-size: 10vw;
-  line-height: 150px;
+  line-height: 100px;
   font-style: normal;
   letter-spacing: 20px;
   text-align: center;
+}
+
+.designation {
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 20px;
+  color: #f6e6c1;
 
 }
 
@@ -29,13 +62,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(250, 236, 216); /* White with slight opacity */
+  background-color: #f6e6c1; /* White with slight opacity */
   z-index: 9999; /* Ensures it sits on top */
   display: flex;
   justify-content: center;
   align-items: center;
   animation: slideDownOut 1.5s forwards;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 
 @keyframes slideDownOut {
@@ -48,22 +81,33 @@
   }
 }
 
-.nav {
-  display: flex;
-  position: sticky;
-  background-color: #fdf7ee;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
-.nav_item{
-  font-family: "Noto Serif Display", serif;
-  font-size: 18px;
-}
-
 .about{
-  height: 100vw;
+  height: auto;
+  margin: 0;
+  top: 0;
+  padding-bottom: 50px;
 }
+
+.about_header{
+  display: inline;
+  font-family: "Noto Serif Display", serif;
+  font-size: 5vw;
+  padding-left: 7vw;
+  color: #f6e6c1;
+}
+
+.about_text{
+  padding-left: 7vw;
+  padding-right: 10vw;
+  color: #f6e6c1;
+}
+
+.projects{
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.body_wrap{
+  background-color: #18191b;
+}
+
