@@ -24,6 +24,7 @@ export function RightAboutMe() {
   return (
     <Box
       ml={90}
+      // mr={rem('20vw')} // not needed if justify in about-me is 'flex-start' instead of 'space-between'
       mr={350}
       mt={30}
       maw={400}
