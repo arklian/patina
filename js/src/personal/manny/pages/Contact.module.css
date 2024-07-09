@@ -1,7 +1,30 @@
 .contactWrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
   padding: 20px;
+  background-color: #1a1b1e; /* Dark background */
+  color: #fff; /* Light text */
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.contactCard {
+  background-color: #2a2b2e; /* Lighter dark background for contrast */
+  color: #fff; /* Light text */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  width: 100%;
+  max-width: 500px; /* Limit the maximum width */
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
 }
