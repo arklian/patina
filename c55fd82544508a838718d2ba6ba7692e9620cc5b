@@ -35,6 +35,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "53075c6f_ec3b92db",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ea56f1d5_5bcc50bc",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b04d7bc8_60dc67fe",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a064900a_938612de",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b7954efa_04d3db96",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-09T18:35:34Z",
       "side": 1,
       "message": "Can we make a new blank page that has like one button that points to the current home page?\n\nPatina\u0027s site should likely go under js/src/patina.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41b96a95_d8c4ca13",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7954efa_04d3db96",
       "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -69,6 +123,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2d0fe19_9d6017d8",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4e6a8bc7_2d55626b",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "620f5694_071b7a12",
@@ -86,6 +158,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "76681a0f_f5f66cd4",
+        "filename": "js/src/Patina_Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "620f5694_071b7a12",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3955042b_2710f4c1",
@@ -99,6 +189,24 @@
       "writtenOn": "2024-07-09T18:35:34Z",
       "side": 1,
       "message": "Gotta stop defaulting to snake case lol. Use camelCase for this.",
+      "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d33aebb_0d1e3d18",
+        "filename": "js/src/Router.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-09T19:02:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3955042b_2710f4c1",
       "revId": "c55fd82544508a838718d2ba6ba7692e9620cc5b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
