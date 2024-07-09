@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe4ec42d_4f467670",
+        "filename": "js/src/personal/kelly/Kelly.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "if not needed, we can probably remove this property.",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "656e83ba_0c634cf2",
+        "filename": "js/src/personal/kelly/Kelly.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "psa: fine for small projects, but for larger projects we would want to create a system of z-index ranges/values across the site so we do not end up in a z-index arms race of adding more and more 9s",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "197d8bdc_25542bec",
+        "filename": "js/src/personal/kelly/Kelly.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "nit: eventually, we should store this url as a const and name it something descriptive.",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01cdc98b_8fcd161a",
+        "filename": "js/src/personal/kelly/Kelly.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "nit: since there\u0027s no content between the tags, use self closing tag.\n\nEG instead of `\u003cimage\u003e\u003c/image\u003e` do `\u003cimage /\u003e`",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d76effbf_8daa407c",
+        "filename": "js/src/personal/kelly/Kelly.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "nit: `body_container` reads to me like the main div that the page\u0027s content should be in, but I see the about and projects section outside of this.",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97eee1dc_c30e0cf3",
+        "filename": "js/src/personal/kelly/Kelly.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-09T14:26:39Z",
+      "side": 1,
+      "message": "nit: the sections are pretty simple for now so it\u0027s not required, but would still be nice to have them be separate components just for readability and structure.",
+      "revId": "4904d7bde5c642e45f317a7647353c377a11e0b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
