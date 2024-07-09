@@ -104,6 +104,24 @@
       "parentUuid": "95ca0ed5_77469f9b",
       "revId": "3604c64955bbb316947f68a5d0de961bae2dc643",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1da96162_c15ef1f4",
+        "filename": "js/src/personal/PersonalRoutes.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:46:53Z",
+      "side": 1,
+      "message": "JSDoc has a particular format which would be good to start using.\nhttps://palantir.github.io/tslint/rules/jsdoc-format/",
+      "parentUuid": "b14ba4ca_a77268fe",
+      "revId": "3604c64955bbb316947f68a5d0de961bae2dc643",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

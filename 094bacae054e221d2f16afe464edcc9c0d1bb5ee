@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d70a4d08_78f8c523",
+        "filename": "js/src/Routes.tsx",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:46:53Z",
+      "side": 1,
+      "message": "nit: when possible it\u0027s better to be concise if the information is the same.\n\n\"This is the\" doesn\u0027t really serve a purpose here.",
+      "revId": "094bacae054e221d2f16afe464edcc9c0d1bb5ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b45049c5_edf71104",
+        "filename": "js/src/Routes.tsx",
+        "patchSetId": 7
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-09T19:46:53Z",
+      "side": 1,
+      "message": "Does this comment still apply?",
+      "revId": "094bacae054e221d2f16afe464edcc9c0d1bb5ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
