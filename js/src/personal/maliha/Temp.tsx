@@ -5,9 +5,9 @@ import {
   Image,
   UnstyledButton,
 } from '@mantine/core'
-import { useScrollIntoView } from '@mantine/hooks'
 import { theme } from './theme.ts'
 import { Menu } from './ModalMenu.tsx'
+import { useScrollIntoView } from '@mantine/hooks'
 import { Social } from './Social.tsx'
 import { Fonts } from './Fonts.tsx'
 import { Images } from './Images.tsx'
@@ -17,15 +17,21 @@ import styles from './Maliha.module.css'
 
 /** Temporary file for flex box adjustments */
 export function MalihaPage() {
-  const { scrollIntoView, targetRef, scrollableRef } = useScrollIntoView<
-    HTMLDivElement,
-    HTMLDivElement
-  >({ axis: 'x' })
+  const {
+    scrollIntoView: scrollToHome,
+    targetRef: homeRef,
+    scrollableRef: scroll1,
+  } = useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
+  const { scrollIntoView: scrollToAbout, targetRef: aboutRef } =
+    useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
+  const { scrollIntoView: scrollToResume, targetRef: resumeRef } =
+    useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
+
   return (
     <MantineProvider theme={theme}>
       <div
         className={styles.body}
-        ref={scrollableRef}
+        ref={scroll1}
       >
         <Fonts />
         <ScrollArea
@@ -42,7 +48,7 @@ export function MalihaPage() {
               w={100}
               top={50}
               className={styles.icons}
-              onClick={() => scrollIntoView()}
+              onClick={() => scrollToHome()}
             >
               <Image
                 h={130}
@@ -53,9 +59,12 @@ export function MalihaPage() {
                 src="https://i.pinimg.com/originals/d6/81/b4/d681b4fac2b113532ae1f6e5986afeef.png"
               />
             </UnstyledButton>
-            <div ref={targetRef}>
-              <Social />
-              <Menu />
+            <div ref={homeRef}>
+              {/*<Social />*/}
+              <Menu
+                aboutFunc={() => scrollToAbout()}
+                resumeFunc={() => scrollToResume()}
+              />
             </div>
           </div>
           <div className={styles.border} />
@@ -67,7 +76,7 @@ export function MalihaPage() {
             variant="gradient"
             gradient={{
               from: '#c75252',
-              to: 'rgb(160,103,174)',
+              to: '#a067ae',
               deg: 50,
             }}
             pos="absolute"
@@ -81,14 +90,19 @@ export function MalihaPage() {
             pos="absolute"
             gradient={{
               from: '#c75252',
-              to: 'rgb(160,103,174)',
+              to: '#a067ae',
               deg: 90,
             }}
             className={styles.title}
           >
             {'mali'}
           </Text>
-          <About />
+          <div ref={aboutRef}>
+            <About />
+          </div>
+          <div ref={resumeRef}>
+            <Resume />
+          </div>
           <Resume />
         </ScrollArea>
       </div>
