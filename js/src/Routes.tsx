@@ -28,6 +28,8 @@ export const Routes = [
     path: '/personal',
     description: 'Personal Websites',
     children: PersonalRoutes,
+  },
+  {
     path: '/henry',
     description: "Henry's Page",
     element: <HenryPage />,
