@@ -1,0 +1,78 @@
+.wrapper {
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.projects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 345px;
+}
+
+.image {
+  margin-bottom: 26px;
+}
+
+.projectTitle {
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  margin-top: 6px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: #5C6B73;
+  padding: 2px 22px;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 1px 22px;
+}
