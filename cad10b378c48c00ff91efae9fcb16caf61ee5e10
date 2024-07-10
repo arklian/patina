@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4193ea28_a99462c7",
+        "filename": "js/src/personal/maliha/About.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:57:35Z",
+      "side": 1,
+      "message": "nit: there should be a space after the t and before the *",
+      "revId": "cad10b378c48c00ff91efae9fcb16caf61ee5e10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
