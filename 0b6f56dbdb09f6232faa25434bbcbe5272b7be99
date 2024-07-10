@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8297ed6_701e852a",
+        "filename": "js/src/personal/jionghao/components/Work.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T20:58:33Z",
+      "side": 1,
+      "message": "nit: Move away from using vh. You might be doing this in a future CR.",
+      "revId": "0b6f56dbdb09f6232faa25434bbcbe5272b7be99",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
