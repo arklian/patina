@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e99f79f_64d22b9b",
+        "filename": "js/src/personal/kazi/components/contact/Contact.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:42:12Z",
+      "side": 1,
+      "message": "nit: I\u0027d probably skip a list here and just use a stack, but should be fine.",
+      "revId": "0fc17804c4fa8c71ddf771124983ce36b29fc374",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
