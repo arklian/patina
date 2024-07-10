@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9e5b677_e6ee7b1c",
+        "filename": "js/src/personal/maliha/Resume.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:50:52Z",
+      "side": 1,
+      "message": "Should this be absolute? \nI guess you\u0027re still working on moving to flex.",
+      "revId": "3362ff7577a182c4964169daf1923335b80d4c3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b9b6046_796fcdd7",
+        "filename": "js/src/personal/maliha/Resume.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:50:52Z",
+      "side": 1,
+      "message": "nit: Not that much of an issue for small pages, but using random z-index numbers all over the place will make it hard in the long term.\n\nThere should be a standard with what zindex corresponds to what if there\u0027s extensive use of zindex.",
+      "revId": "3362ff7577a182c4964169daf1923335b80d4c3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
