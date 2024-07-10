@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41bda5b7_42f35a7a",
+        "filename": "js/src/personal/maliha/Temp.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:55:17Z",
+      "side": 1,
+      "message": "Does this first one need a scrollableRef, if other two don\u0027t?",
+      "revId": "32a4a43dad94d4fff2ed388892c4dfb2e5d2d1a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75cd95ab_3c2d59d6",
+        "filename": "js/src/personal/maliha/Temp.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-10T18:55:17Z",
+      "side": 1,
+      "message": "nit: should this be removed? I assume it\u0027s complaining about how Social isn\u0027t being used now.",
+      "revId": "32a4a43dad94d4fff2ed388892c4dfb2e5d2d1a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
