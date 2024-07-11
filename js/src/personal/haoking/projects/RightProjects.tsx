@@ -14,10 +14,7 @@ export function RightProjects({ setImage }: { setImage: any }) {
       className={styles.animate_fade_in_delay}
     >
       {projectsData.map((project) => (
-        <ProjectText
-          project={project}
-          setImage={setImage}
-        />
+        <ProjectText project={project} setImage={setImage} />
       ))}
     </Box>
   )

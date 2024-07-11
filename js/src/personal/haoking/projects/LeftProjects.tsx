@@ -18,11 +18,7 @@ export function LeftProjects({
   const colorScheme = useComputedColorScheme()
 
   return (
-    <Box
-      ml={90}
-      mt={45}
-      className={styles.animate_fade_in}
-    >
+    <Box ml={90} mt={45} className={styles.animate_fade_in}>
       <Flex direction="column">
         <Title className={styles.title}>
           <Text

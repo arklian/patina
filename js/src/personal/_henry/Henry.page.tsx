@@ -6,16 +6,9 @@ import styles from './Henry.module.css'
 
 export function HenryPage() {
   return (
-    <MantineProvider
-      theme={theme}
-      cssVariablesResolver={cssVariableResolver}
-    >
+    <MantineProvider theme={theme} cssVariablesResolver={cssVariableResolver}>
       <HeaderMenu />
-      <Title
-        className={styles.title}
-        ta="center"
-        mt={100}
-      >
+      <Title className={styles.title} ta="center" mt={100}>
         <Text
           inherit
           variant="gradient"
@@ -25,14 +18,7 @@ export function HenryPage() {
           {"Welcome to Henry's Page"}
         </Text>
       </Title>
-      <Text
-        c="dimmed"
-        ta="center"
-        size="lg"
-        maw={580}
-        mx="auto"
-        mt="xl"
-      >
+      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
         {"Hey! I'm Henry."}
       </Text>
     </MantineProvider>

@@ -12,17 +12,9 @@ export function MiscPage({
 }) {
   return (
     <Box>
-      <Navbar
-        current={current}
-        setCurrent={setCurrent}
-      />
+      <Navbar current={current} setCurrent={setCurrent} />
       <Flex justify={'center'}>
-        <Box
-          mt={150}
-          h={400}
-          w={400}
-          bg={theme.colors.white[0]}
-        >
+        <Box mt={150} h={400} w={400} bg={theme.colors.white[0]}>
           {}
         </Box>
       </Flex>

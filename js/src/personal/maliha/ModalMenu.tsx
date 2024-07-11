@@ -56,10 +56,7 @@ export function Menu({ aboutFunc, resumeFunc }: MenuProps) {
       >
         <Stack>{items}</Stack>
       </Modal>
-      <Sandwich
-        onToggleMenu={handleToggleMenu}
-        opened={opened}
-      />
+      <Sandwich onToggleMenu={handleToggleMenu} opened={opened} />
     </>
   )
 }

@@ -17,11 +17,7 @@ export function PatinaWelcome() {
 
   return (
     <>
-      <Title
-        className={classes.title}
-        ta="center"
-        mt={100}
-      >
+      <Title className={classes.title} ta="center" mt={100}>
         <Text
           inherit
           variant="gradient"
@@ -34,41 +30,23 @@ export function PatinaWelcome() {
           {'Welcome to Patina'}
         </Text>
       </Title>
-      <Text
-        c="dimmed"
-        ta="center"
-        size="lg"
-        maw={580}
-        mx="auto"
-      >
+      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto">
         {'This is a temporary landing page for the Patina project.'}
       </Text>
       <Container mb={40}>
         <ColorSchemeToggle />
       </Container>
       <Center>
-        <Stack
-          align={'flex-start'}
-          gap={0}
-        >
+        <Stack align={'flex-start'} gap={0}>
           <Title order={2}>
-            <Text
-              inherit
-              component="span"
-              c={theme.colors.patina[7]}
-            >
+            <Text inherit component="span" c={theme.colors.patina[7]}>
               {'Personal Portfolio Websites'}
             </Text>
           </Title>
           <NavLink
             href={'personal/'}
             label={'Personal Websites Homepage'}
-            leftSection={
-              <IconHome2
-                size="1rem"
-                stroke={1.5}
-              />
-            }
+            leftSection={<IconHome2 size="1rem" stroke={1.5} />}
           />
         </Stack>
       </Center>

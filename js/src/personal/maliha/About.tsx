@@ -108,10 +108,7 @@ export function About() {
         top={430}
       >
         {'currently watching: '}
-        <List
-          icon=" "
-          className={`${main_class.title} ${styles.about_info}`}
-        >
+        <List icon=" " className={`${main_class.title} ${styles.about_info}`}>
           <List.Item>{'bridgerton'}</List.Item>
           <List.Item>{'the boys'} </List.Item>
           <List.Item>{'queen charlotte'}</List.Item>
@@ -132,10 +129,7 @@ export function About() {
         top={380}
       >
         {'currently playing:'}
-        <List
-          icon=" "
-          className={styles.about_info}
-        >
+        <List icon=" " className={styles.about_info}>
           <List.Item font-weight={550}>{'minecraft'}</List.Item>
           <List.Item>{'genshin impact'} </List.Item>
           <List.Item>{'kindergarten'}</List.Item>

@@ -7,10 +7,7 @@ export function MainPage() {
   const info = data.info as Section[]
   return (
     <>
-      <ScrollArea
-        type="scroll"
-        offsetScrollbars
-      >
+      <ScrollArea type="scroll" offsetScrollbars>
         {info.map((section) => (
           <SectionContent section={section} />
         ))}

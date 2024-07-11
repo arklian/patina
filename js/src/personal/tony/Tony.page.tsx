@@ -48,18 +48,9 @@ export function TonyPage() {
           }}
         />
         <Grid gutter="md">
-          <Grid.Col
-            span={6}
-            className={styles.gridLeft}
-          >
-            <Title
-              className={styles.name}
-              ta="left"
-            >
-              <Text
-                inherit
-                component="span"
-              >
+          <Grid.Col span={6} className={styles.gridLeft}>
+            <Title className={styles.name} ta="left">
+              <Text inherit component="span">
                 {'Tony Wang'}
               </Text>
             </Title>
@@ -108,11 +99,7 @@ export function TonyPage() {
                 <Text className={styles.menu1}>{' Projects'}</Text>
               </div>
             </Container>
-            <Image
-              className={styles.pfp}
-              src={Tony_pfp}
-              alt="Profile"
-            />
+            <Image className={styles.pfp} src={Tony_pfp} alt="Profile" />
           </Grid.Col>
           <Grid.Col span={6}>
             <Text className={styles.about}>
@@ -139,16 +126,10 @@ export function TonyPage() {
                   }
                 </Text>
                 <Group className={styles.skillGroup}>
-                  <Badge
-                    color={'#0dba93'}
-                    autoContrast
-                  >
+                  <Badge color={'#0dba93'} autoContrast>
                     {'C++'}
                   </Badge>
-                  <Badge
-                    color={'#0dba93'}
-                    autoContrast
-                  >
+                  <Badge color={'#0dba93'} autoContrast>
                     {'Python'}
                   </Badge>
                 </Group>
@@ -174,16 +155,10 @@ export function TonyPage() {
                   }
                 </Text>
                 <Group className={styles.skillGroup}>
-                  <Badge
-                    color={'#0dba93'}
-                    autoContrast
-                  >
+                  <Badge color={'#0dba93'} autoContrast>
                     {'Flutter'}
                   </Badge>
-                  <Badge
-                    color={'#0dba93'}
-                    autoContrast
-                  >
+                  <Badge color={'#0dba93'} autoContrast>
                     {'Android Studio'}
                   </Badge>
                 </Group>
@@ -201,34 +176,19 @@ export function TonyPage() {
                 }
               </Text>
               <Group className={styles.skillGroup}>
-                <Badge
-                  color={'#0dba93'}
-                  autoContrast
-                >
+                <Badge color={'#0dba93'} autoContrast>
                   {'HTML'}
                 </Badge>
-                <Badge
-                  color={'#0dba93'}
-                  autoContrast
-                >
+                <Badge color={'#0dba93'} autoContrast>
                   {'CSS'}
                 </Badge>
-                <Badge
-                  color={'#0dba93'}
-                  autoContrast
-                >
+                <Badge color={'#0dba93'} autoContrast>
                   {'Typescript'}
                 </Badge>
-                <Badge
-                  color={'#0dba93'}
-                  autoContrast
-                >
+                <Badge color={'#0dba93'} autoContrast>
                   {'React'}
                 </Badge>
-                <Badge
-                  color={'#0dba93'}
-                  autoContrast
-                >
+                <Badge color={'#0dba93'} autoContrast>
                   {'Mantine'}
                 </Badge>
               </Group>

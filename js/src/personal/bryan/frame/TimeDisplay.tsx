@@ -46,12 +46,7 @@ export function TimeDisplay() {
 
   return (
     <>
-      <Title
-        className={styles.title2}
-        mr="2rem"
-        mt="0.5rem"
-        ta="right"
-      >
+      <Title className={styles.title2} mr="2rem" mt="0.5rem" ta="right">
         {`${Hours}${colon}${Minutes}${AM} EST`}
       </Title>
     </>

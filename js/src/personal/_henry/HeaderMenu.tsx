@@ -31,32 +31,15 @@ export function HeaderMenu() {
     <header className={classes.header}>
       <div className={classes.inner}>
         <Group>
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            size="sm"
-            hiddenFrom="sm"
-          />
-          <IconHome2
-            style={{ width: rem(32), height: rem(32) }}
-            stroke={1.5}
-          />
-          <Text
-            size={'xl'}
-            fw={700}
-            c={'indigo.9'}
-          >
+          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+          <IconHome2 style={{ width: rem(32), height: rem(32) }} stroke={1.5} />
+          <Text size={'xl'} fw={700} c={'indigo.9'}>
             {"Henry's Page"}
           </Text>
         </Group>
 
         <Group>
-          <Group
-            ml={50}
-            gap={5}
-            className={classes.links}
-            visibleFrom="sm"
-          >
+          <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
             {items}
           </Group>
           <Autocomplete

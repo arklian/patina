@@ -17,11 +17,7 @@ export function Status() {
     return 0
   }, [date])
   return (
-    <Title
-      className={styles.title2}
-      ta="center"
-      mt={50}
-    >
+    <Title className={styles.title2} ta="center" mt={50}>
       {'Currently, I’m '}
       <Text
         inherit

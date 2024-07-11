@@ -18,26 +18,14 @@ export function ProjectContent({ project }: { project: Project }) {
           ml="3rem"
         >
           <div>
-            <Title
-              size="2rem"
-              mb="0.5rem"
-            >
+            <Title size="2rem" mb="0.5rem">
               {project.title}
             </Title>
-            <Text
-              size="1.5rem"
-              mb="1rem"
-              lh="xs"
-            >
+            <Text size="1.5rem" mb="1rem" lh="xs">
               {project.description}
             </Text>
             {project.skills.map((skill, index) => (
-              <Pill
-                key={index}
-                size="lg"
-                mr="1rem"
-                className={styles.skill}
-              >
+              <Pill key={index} size="lg" mr="1rem" className={styles.skill}>
                 {skill}
               </Pill>
             ))}

@@ -16,14 +16,8 @@ export function ProjectsPage({
 
   return (
     <Box>
-      <Navbar
-        current={current}
-        setCurrent={setCurrent}
-      />
-      <Flex
-        justify="space-between"
-        direction="row"
-      >
+      <Navbar current={current} setCurrent={setCurrent} />
+      <Flex justify="space-between" direction="row">
         <LeftProjects displayedImageSrc={displayedImageSrc} />
         <RightProjects setImage={setImage} />
       </Flex>

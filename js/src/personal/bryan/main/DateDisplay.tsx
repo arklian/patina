@@ -43,10 +43,7 @@ export function DateDisplay() {
       >
         {'Today is '}
       </Title>
-      <Title
-        className={styles.title}
-        ta="center"
-      >
+      <Title className={styles.title} ta="center">
         {`${weekday[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}`}
       </Title>
     </>

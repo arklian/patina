@@ -81,10 +81,7 @@ function SocialIcon({
   const { hovered, ref } = useHover()
   const iconColor = hovered ? '#c02366' : '#d93939'
   return (
-    <Anchor
-      href={href}
-      target="_blank"
-    >
+    <Anchor href={href} target="_blank">
       <div ref={ref}>
         <Icon
           size={size}

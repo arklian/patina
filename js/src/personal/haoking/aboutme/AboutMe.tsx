@@ -13,14 +13,8 @@ export function AboutMe({
 }) {
   return (
     <Box>
-      <Navbar
-        current={current}
-        setCurrent={setCurrent}
-      />
-      <Flex
-        justify="space-between"
-        direction="row"
-      >
+      <Navbar current={current} setCurrent={setCurrent} />
+      <Flex justify="space-between" direction="row">
         <LeftAboutMe />
         <RightAboutMe />
       </Flex>

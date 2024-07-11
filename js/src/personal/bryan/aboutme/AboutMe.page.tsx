@@ -16,12 +16,7 @@ import tower from '@/personal/bryan/assets/images/tower.png'
 export function AboutMePage() {
   return (
     <>
-      <Title
-        className={classes.title}
-        component="span"
-        ml="5rem"
-        mb="2rem"
-      >
+      <Title className={classes.title} component="span" ml="5rem" mb="2rem">
         {'About Me'}
       </Title>
       <Flex
@@ -32,29 +27,15 @@ export function AboutMePage() {
         direction={{ base: 'column', md: 'row', sm: 'row' }}
       >
         <Stack>
-          <Image
-            h={310}
-            src={skiing}
-          />
+          <Image h={310} src={skiing} />
           <Title component="span">
             {'cs @ princeton'}
             <Space h="s" />
             {'Class of 2026'}
           </Title>
-          <Group
-            justify="center"
-            mr="1.5rem"
-          >
-            <Image
-              h={100}
-              w={100}
-              src={mathey}
-            />
-            <Image
-              h={120}
-              w={120}
-              src={tower}
-            />
+          <Group justify="center" mr="1.5rem">
+            <Image h={100} w={100} src={mathey} />
+            <Image h={120} w={120} src={tower} />
           </Group>
         </Stack>
         <Stack>
@@ -62,10 +43,7 @@ export function AboutMePage() {
           <Space />
           <Text component="span">
             {'I’m a head Copy editor for '}{' '}
-            <Anchor
-              href="https://www.dailyprincetonian.com/"
-              target="_blank"
-            >
+            <Anchor href="https://www.dailyprincetonian.com/" target="_blank">
               {'The Daily Princetonian'}
             </Anchor>
           </Text>
@@ -79,10 +57,7 @@ export function AboutMePage() {
           </Text>
         </Stack>
         <Stack>
-          <Title
-            component="span"
-            className={classes.title2}
-          >
+          <Title component="span" className={classes.title2}>
             {'Interests'}
           </Title>
           <Text component="span">

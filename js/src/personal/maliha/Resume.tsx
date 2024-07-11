@@ -38,10 +38,7 @@ export function Resume() {
         left={3900}
       >
         {'education'}
-        <List
-          listStyleType="none"
-          className={styles.resume_info_list}
-        >
+        <List listStyleType="none" className={styles.resume_info_list}>
           <List.Item pt={20}>
             {"hunter college '26"}
             <List

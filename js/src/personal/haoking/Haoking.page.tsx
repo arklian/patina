@@ -11,28 +11,16 @@ export function HaokingPage() {
   const [current, setCurrent] = useState(Pages.About)
 
   return (
-    <MantineProvider
-      theme={theme}
-      cssVariablesResolver={cssVariableResolver}
-    >
+    <MantineProvider theme={theme} cssVariablesResolver={cssVariableResolver}>
       <div className={styles.hkbody}>
         {current === Pages.About && (
-          <AboutMe
-            current={current}
-            setCurrent={setCurrent}
-          />
+          <AboutMe current={current} setCurrent={setCurrent} />
         )}
         {current === Pages.Project && (
-          <ProjectsPage
-            current={current}
-            setCurrent={setCurrent}
-          />
+          <ProjectsPage current={current} setCurrent={setCurrent} />
         )}
         {current === Pages.Misc && (
-          <MiscPage
-            current={current}
-            setCurrent={setCurrent}
-          />
+          <MiscPage current={current} setCurrent={setCurrent} />
         )}
       </div>
     </MantineProvider>

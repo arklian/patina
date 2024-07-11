@@ -38,10 +38,7 @@ export function RightAboutMe() {
           ))}
         </div>
       ))}
-      <AspectRatio
-        maw={400}
-        m={15}
-      >
+      <AspectRatio maw={400} m={15}>
         <iframe
           title={'spotify_embed'}
           className={styles.spotify}

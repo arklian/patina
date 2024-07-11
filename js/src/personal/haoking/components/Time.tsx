@@ -13,14 +13,8 @@ export function Time() {
   })
 
   return (
-    <Box
-      pos="relative"
-      bottom={12}
-    >
-      <Text
-        fw={700}
-        fz={50}
-      >
+    <Box pos="relative" bottom={12}>
+      <Text fw={700} fz={50}>
         {date.toLocaleTimeString()}
       </Text>
     </Box>

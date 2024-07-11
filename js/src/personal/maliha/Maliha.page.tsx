@@ -22,17 +22,9 @@ export function MalihaPage() {
   >({ axis: 'x' })
   return (
     <MantineProvider theme={theme}>
-      <div
-        className={styles.body}
-        ref={scrollableRef}
-      >
+      <div className={styles.body} ref={scrollableRef}>
         <Fonts />
-        <ScrollArea
-          type="always"
-          w={10000}
-          h={900}
-          scrollbarSize={1}
-        >
+        <ScrollArea type="always" w={10000} h={900} scrollbarSize={1}>
           <Images />
           <div className={styles.left}>
             <UnstyledButton

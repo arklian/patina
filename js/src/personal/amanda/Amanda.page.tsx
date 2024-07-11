@@ -7,22 +7,11 @@ import { Sidebar } from '@/personal/amanda/Sidebar.tsx'
 
 export function AmandaPage() {
   return (
-    <MantineProvider
-      theme={theme}
-      cssVariablesResolver={cssVariableResolver}
-    >
-      <Container
-        className={styles.lightDark}
-        mt="1rem"
-      >
+    <MantineProvider theme={theme} cssVariablesResolver={cssVariableResolver}>
+      <Container className={styles.lightDark} mt="1rem">
         <LightDarkButton />
       </Container>
-      <Container
-        size="responsive"
-        p="5rem"
-        pb="0"
-        className={styles.mainPage}
-      >
+      <Container size="responsive" p="5rem" pb="0" className={styles.mainPage}>
         <Sidebar />
         <Outlet />
       </Container>

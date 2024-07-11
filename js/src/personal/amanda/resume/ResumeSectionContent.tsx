@@ -12,10 +12,7 @@ export function ResumeSectionContent({ section }: { section: ResumeSection }) {
         className={styles.section}
         mb="3rem"
       >
-        <Title
-          size="3rem"
-          mb="0.5rem"
-        >
+        <Title size="3rem" mb="0.5rem">
           {section.title}
         </Title>
         {section.content.map((subsection) => (

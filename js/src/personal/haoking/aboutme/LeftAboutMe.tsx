@@ -16,11 +16,7 @@ import { Time } from '@/personal/haoking/components/Time.tsx'
 export function LeftAboutMe() {
   const colorScheme = useComputedColorScheme()
   return (
-    <Box
-      ml={90}
-      mt={45}
-      className={styles.animate_fade_in}
-    >
+    <Box ml={90} mt={45} className={styles.animate_fade_in}>
       <Title className={styles.title}>
         <Text
           inherit

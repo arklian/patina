@@ -33,10 +33,7 @@ export function ProjectText({
   }
   return (
     <div>
-      <div
-        className={styles.project}
-        ref={ref}
-      >
+      <div className={styles.project} ref={ref}>
         <Group>
           <Title>
             <Text

@@ -11,16 +11,10 @@ export function Sidebar() {
 
   return (
     <div>
-      <Container
-        mb="2rem"
-        p="0"
-      >
+      <Container mb="2rem" p="0">
         <Title size="5rem">{'Amanda Ruan'}</Title>
         <Text size="1.5rem">{'Software Engineer'}</Text>
-        <Text
-          size="1.5rem"
-          mt="1rem"
-        >
+        <Text size="1.5rem" mt="1rem">
           {'CS Student @ RPI'}
         </Text>
       </Container>

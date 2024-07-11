@@ -23,19 +23,13 @@ export function Settings() {
       >
         <HoverCard.Target>
           <Center inline>
-            <Box
-              component="span"
-              mr={5}
-            >
+            <Box component="span" mr={5}>
               <Button color="gray"> {'Settings'} </Button>
             </Box>
           </Center>
         </HoverCard.Target>
         <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
-          <Group
-            justify="center"
-            px="md"
-          >
+          <Group justify="center" px="md">
             <Text>{'Change light/dark mode'}</Text>
             <LightDark />
             <Text>{'Change font size'}</Text>

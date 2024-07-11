@@ -33,10 +33,7 @@ export function Navbar({
         justify="space-between"
         className={styles.animate_fade_in_navbar}
       >
-        <Group
-          pl={100}
-          justify="flex-start"
-        >
+        <Group pl={100} justify="flex-start">
           <NavLink
             setActive={() => {}}
             active={current}
@@ -44,11 +41,7 @@ export function Navbar({
             label={Pages.Patina}
           />
         </Group>
-        <Group
-          pr={220}
-          justify="flex-end"
-          gap={35}
-        >
+        <Group pr={220} justify="flex-end" gap={35}>
           {pages.map((page) => (
             <NavLink
               setActive={() => setCurrent(page.label)}
