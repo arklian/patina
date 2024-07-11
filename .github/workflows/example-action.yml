@@ -11,6 +11,6 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 8
-      - working directory: ./js
+      - working-directory: ./js
         run: |
           pnpm run test
