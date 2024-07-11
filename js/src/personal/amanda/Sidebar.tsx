@@ -1,12 +1,12 @@
 import { Box, Container, NavLink, Space, Text, Title } from '@mantine/core'
 import { useState } from 'react'
-import data from './Data.json'
-import { Section } from './Types.tsx'
-import styles from './Amanda.module.css'
 import { Contact } from './Contact.tsx'
+import { NavbarSection } from './Types.tsx'
+import data from './Data.json'
+import styles from './Amanda.module.css'
 
 export function Sidebar() {
-  const info = data.info as Section[]
+  const navbar = data.navbar as NavbarSection[]
   const [active, setActive] = useState(0)
 
   return (
@@ -27,15 +27,23 @@ export function Sidebar() {
       <Contact />
       <Space h="xl" />
       <Box w="10rem">
-        {info.map((section: Section, index) => (
+        {navbar.map((section: NavbarSection, index) => (
           <NavLink
             key={index}
-            label={section.title}
+            label={section.section}
             href={section.link}
             active={index === active}
             onClick={() => setActive(index)}
             classNames={{ label: styles.navbar }}
-          />
+          >
+            {section.section === 'about' && (
+              <NavLink
+                label={section.subsection.section}
+                href={section.subsection.link}
+                classNames={{ label: styles.navbar }}
+              />
+            )}
+          </NavLink>
         ))}
       </Box>
     </div>

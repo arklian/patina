@@ -1,4 +1,4 @@
-import { AmandaPage } from './amanda/Amanda.page.tsx'
+import { AmandaRoutes } from './amanda/AmandaRoutes.tsx'
 import { BryanRoutes } from './bryan/BryanRoutes.tsx'
 import { HaokingPage } from './haoking/Haoking.page.tsx'
 import { HenryPage } from './_henry/Henry.page.tsx'
@@ -33,11 +33,7 @@ export const PersonalRoutes = [
     description: "Henry's Page",
     element: <HenryPage />,
   },
-  {
-    path: 'amanda',
-    description: "Amanda's Page",
-    element: <AmandaPage />,
-  },
+  AmandaRoutes,
   BryanRoutes,
   {
     path: 'haoking',
