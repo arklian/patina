@@ -12,6 +12,7 @@ import { ResumePage as MannyResume } from '@/personal/manny/pages/Resume.tsx'
 import { About as MannyAboutMePage } from '@/personal/manny/pages/About.tsx'
 import { RiyuanPage } from './riyuan/Riyuan.page.tsx'
 import { TonyPage } from './tony/Tony.page.tsx'
+import { Contact as MannyContactMePage } from '@/personal/manny/pages/Contact.tsx'
 
 /** When adding new routes, please follow the following paradigm:
  * path: 'bryan',
@@ -78,6 +79,11 @@ export const PersonalRoutes = [
     path: 'manny/aboutme',
     description: "Manny's About Me Page",
     element: <MannyAboutMePage />,
+  },
+  {
+    path: '/manny/contact',
+    description: "Manny's Contact Me Page",
+    element: <MannyContactMePage />,
   },
   {
     path: 'riyuan',
