@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fafba1d6_dbda5e63",
+        "filename": "js/src/personal/jionghao/components/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-11T16:18:14Z",
+      "side": 1,
+      "message": "use this rem() function to be consistent",
+      "revId": "2451a914d3d834fcc38943ad0a4da2d38da9d501",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

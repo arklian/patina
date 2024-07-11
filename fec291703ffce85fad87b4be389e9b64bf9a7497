@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2ceb3a1_c389a5c8",
+        "filename": "js/src/personal/jionghao/components/About.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-11T16:18:14Z",
+      "side": 1,
+      "message": "You should stick with having the media query in each class like you do above with .aboutImage.",
+      "revId": "fec291703ffce85fad87b4be389e9b64bf9a7497",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
