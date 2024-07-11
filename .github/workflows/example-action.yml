@@ -1,0 +1,11 @@
+name: example-action
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  workflow_dispatch
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "hi"
