@@ -1,7 +1,15 @@
 .animate_fade_out {
+  opacity: 100%;
   animation-name: fade-out;
   animation-duration: 1.25s;
   animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.image {
+  opacity: 100%;
+  animation-name: fade-out;
+  animation-duration: 1.25s;
   animation-fill-mode: forwards;
 }
 
@@ -49,31 +57,72 @@
 
 .navlink {
   text-decoration: none;
-  color: #d1d1d1;
+  color: var(--mantine-link);
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
 }
 
 .navlink_current {
   text-decoration: none;
-  color: #fff;
+  color: var(--mantine-link-current);
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
 }
 
 .hkbody a.navlink:hover {
-  color: beige;
+  color: var(--mantine-link-hover);
 }
 
+.hkbody a.action:hover {
+  color: var(--mantine-action-hover);
+}
+
+.project {
+  animation-name: project-unhover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.project:hover {
+  animation-name: project-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
 
 @keyframes fade-out {
-  from {opacity: 100%}
-  to {opacity: 0}
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
+  }
 }
 
-@keyframes fade-in{
-  from {opacity: 0}
-  to {opacity: 100%}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
+@keyframes project-hover {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes project-unhover {
+  from {
+    transform: translateX(10px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
