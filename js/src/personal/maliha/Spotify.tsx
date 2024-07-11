@@ -1,6 +1,6 @@
 import styles from './About.module.css'
 
-/* Component for Spotify */
+/** Component for Spotify */
 export function Spotify() {
   return (
     <iframe

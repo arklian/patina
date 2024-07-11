@@ -3,7 +3,7 @@ import { Modal, UnstyledButton, Stack } from '@mantine/core'
 import { Sandwich } from './Sandwich.tsx'
 import styles from './Modal.module.css'
 
-/* Menu Component */
+/** Menu Component */
 const labels = [
   { label: 'About' },
   { label: 'Resume' },

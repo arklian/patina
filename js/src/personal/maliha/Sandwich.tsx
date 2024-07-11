@@ -1,7 +1,7 @@
 import { Burger } from '@mantine/core'
 import styles from './Modal.module.css'
 
-/* Burger Menu Toggle */
+/** Sandwich Menu Toggle */
 
 type SandwichProps = {
   onToggleMenu: () => void

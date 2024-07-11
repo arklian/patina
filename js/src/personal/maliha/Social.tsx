@@ -5,7 +5,7 @@ import { FaInstagram, FaGithubSquare } from 'react-icons/fa'
 import { useHover } from '@mantine/hooks'
 import styles from './Left.module.css'
 
-/* Social Media Icons */
+/** Social Media Icons */
 const iconMap = [
   {
     icon: FaInstagram,

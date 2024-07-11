@@ -15,6 +15,7 @@ import { About } from './About.tsx'
 import { Resume } from './Resume.tsx'
 import styles from './Maliha.module.css'
 
+/** Temporary file for flex box adjustments */
 export function MalihaPage() {
   const { scrollIntoView, targetRef, scrollableRef } = useScrollIntoView<
     HTMLDivElement,

@@ -1,7 +1,7 @@
 import { Image, AspectRatio } from '@mantine/core'
 import styles from './Maliha.module.css'
 
-/* All images */
+/** All images */
 export function Images() {
   return (
     <div className={styles.images}>
@@ -50,7 +50,7 @@ export function Images() {
         <Image src="https://i.pinimg.com/originals/0d/29/46/0d294617920919575a73a9b6237bf794.jpg" />
       </AspectRatio>
       <AspectRatio
-        ratio={1.2 / 2}
+        ratio={3 / 5}
         maw={400}
         w={300}
         h={300}
