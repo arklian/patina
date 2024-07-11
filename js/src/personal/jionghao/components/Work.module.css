@@ -1,4 +1,4 @@
-.work{
+.work {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -7,24 +7,39 @@
   width: 900px;
 }
 
-.cards{
+.cards {
   display: flex;
   flex-direction: row;
   align-content: flex-end;
   justify-content: space-between;
 }
 
-
 .titleLine {
   margin-left: 30px;
   height: 0.5px;
-  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  background-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  );
   width: 300px;
 }
 
-.titleContain{
+.titleContain {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3vh;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: light-dark(#d3d3d3, #2e2e2e);
+  width: 100%;
+}
+
+.projectContent {
+  max-width: 550px;
+  margin: 20px;
 }
