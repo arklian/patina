@@ -1,6 +1,5 @@
 {
   "experimentalTernaries": true,
   "semi": false,
-  "singleQuote": true,
-  "singleAttributePerLine": true
+  "singleQuote": true
 }
