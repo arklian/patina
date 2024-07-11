@@ -1,6 +1,6 @@
 import { Anchor, Container, Image, Pill, Text, Title } from '@mantine/core'
-import { Project } from './Types.tsx'
-import styles from './Amanda.module.css'
+import { Project } from '../Types.tsx'
+import styles from '../Amanda.module.css'
 
 export function ProjectContent({ project }: { project: Project }) {
   return (

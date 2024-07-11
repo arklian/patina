@@ -1,7 +1,7 @@
 import { Container, Text, Title } from '@mantine/core'
 import { ProjectContent } from './ProjectContent.tsx'
-import { Section } from './Types.tsx'
-import styles from './Amanda.module.css'
+import { Section } from '../Types.tsx'
+import styles from '../Amanda.module.css'
 
 export function SectionContent({ section }: { section: Section }) {
   return (
