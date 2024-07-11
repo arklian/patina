@@ -13,4 +13,5 @@ jobs:
           version: 8
       - working-directory: ./js
         run: |
+          pnpm install
           pnpm run test
