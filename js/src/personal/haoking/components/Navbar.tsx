@@ -23,8 +23,8 @@ export function Navbar({
     { link: '#projects', label: Pages.Project },
     { link: '#misc', label: Pages.Misc },
   ]
-  const { setColorScheme } = useMantineColorScheme()
   const colorScheme = useComputedColorScheme()
+  const { toggleColorScheme } = useMantineColorScheme()
 
   return (
     <nav>
@@ -58,11 +58,7 @@ export function Navbar({
             />
           ))}
           <ActionIcon
-            onClick={
-              colorScheme === 'light' ?
-                () => setColorScheme('dark')
-              : () => setColorScheme('light')
-            }
+            onClick={() => toggleColorScheme()}
             variant="transparent"
             color={
               colorScheme === 'light' ?

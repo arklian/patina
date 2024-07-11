@@ -40,7 +40,7 @@ export function LeftProjects({
         </Title>
         {displayedImageSrc === '' ? null : (
           <Image
-            className={styles.animate_fade_in}
+            className={styles.animate_fade_in_projectimg}
             h={200}
             src={displayedImageSrc}
           />

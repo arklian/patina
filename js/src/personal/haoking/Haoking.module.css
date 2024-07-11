@@ -38,6 +38,14 @@
   animation-delay: 1s;
 }
 
+.animate_fade_in_projectimg {
+  opacity: 0%;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
 .title {
   font-size: rem(100px);
   font-weight: 900;

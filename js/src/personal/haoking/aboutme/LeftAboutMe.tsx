@@ -12,7 +12,7 @@ import { theme } from '@/personal/haoking/theme.ts'
 import styles from '@/personal/haoking/Haoking.module.css'
 import { Time } from '@/personal/haoking/components/Time.tsx'
 
-/* Component containing image, time, contact info on left side of about me page */
+/** Component containing image, time, contact info on left side of about me page */
 export function LeftAboutMe() {
   const colorScheme = useComputedColorScheme()
   return (
