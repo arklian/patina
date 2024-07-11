@@ -1,4 +1,4 @@
-.experience{
+.experience {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -7,29 +7,32 @@
   width: 900px;
 }
 
-.verticalTab{
+.verticalTab {
   padding-right: 40px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.tabPanel{
+.tabPanel {
   width: 40vw;
   min-height: 400px;
 }
 
-.tabsList{
-  height:100%;
+.tabsList {
+  height: 100%;
 }
 
 .titleLine {
   margin-left: 30px;
   height: 0.5px;
-  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  background-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  );
   width: 300px;
 }
 
-.titleContain{
+.titleContain {
   display: flex;
   align-items: center;
   margin-bottom: 5vh;
