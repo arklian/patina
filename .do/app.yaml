@@ -1,0 +1,12 @@
+name: Patina Network DigitalOcean Branch
+services:
+  - name: Patina Network
+    environment_slug: node-js
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: arklian/patina
+    build_command: pnpm install && pnpm run build
+    run_command: pnpm run start
+    source_dir: /js
+
