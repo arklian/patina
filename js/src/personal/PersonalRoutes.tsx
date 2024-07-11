@@ -77,7 +77,7 @@ export const PersonalRoutes = [
     element: <MannyAboutMePage />,
   },
   {
-    path: '/manny/contact',
+    path: 'manny/contact',
     description: "Manny's Contact Me Page",
     element: <MannyContactMePage />,
   },
