@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "690d8fb3_3c2e7aea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-11T17:50:37Z",
+      "side": 1,
+      "message": "I would say that most of these are not components. Components are meant to be reused. For most of these they should just be in patina/home\n\nI would say Carousel and the Card should be components.\n\nAlso generally, I don\u0027t check in empty files to main.",
+      "revId": "30a291220860288335618f31e3a0305fac91ab75",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
