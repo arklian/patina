@@ -1,4 +1,4 @@
-import { Box, MantineProvider, Title } from '@mantine/core'
+import { Box, Image, MantineProvider, Title } from '@mantine/core'
 import styles from './Kelly.module.css'
 import { theme } from './theme.ts'
 
@@ -6,18 +6,24 @@ export function KellyPage() {
   return (
     <MantineProvider theme={theme}>
       <div className={styles.body_wrap}>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet"
         />
         <div className={styles.body_load}></div>
-        <image
+        <Image
           src={
             'https://i.pinimg.com/originals/20/cc/09/20cc094d436c7db16c3c59ebed8f3419.gif'
           }
-        ></image>
+        />
         <div className={styles.nav}>
           <a href={'#about'}>
             <p className={styles.nav_item}>{'About'}</p>
@@ -38,7 +44,10 @@ export function KellyPage() {
             <Box className={styles.window}></Box>
           </div>
         </div>
-        <div id={'about'} className={styles.about}>
+        <div
+          id={'about'}
+          className={styles.about}
+        >
           <p className={styles.about_header}>{'✦ ABOUT ME '}</p>
           <p className={styles.about_text}>
             {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ' +
@@ -52,7 +61,10 @@ export function KellyPage() {
               'voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'}
           </p>
         </div>
-        <div id={'projects'} className={styles.projects}>
+        <div
+          id={'projects'}
+          className={styles.projects}
+        >
           <p className={styles.about_header}>{'✦ PROJECTS '}</p>
           <p className={styles.about_text}>
             {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ' +
