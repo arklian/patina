@@ -7,7 +7,7 @@ import {
 } from '@mantine/core'
 import { useScrollIntoView } from '@mantine/hooks'
 import { theme } from './theme.ts'
-import { Menu } from './ModalMenu.tsx'
+// import { Menu } from './ModalMenu.tsx'
 import { Social } from './Social.tsx'
 import { Fonts } from './Fonts.tsx'
 import { Images } from './Images.tsx'
@@ -46,7 +46,7 @@ export function MalihaPage() {
             </UnstyledButton>
             <div ref={targetRef}>
               <Social />
-              <Menu />
+              {/*<Menu />*/}
             </div>
           </div>
           <Images />
