@@ -47,7 +47,7 @@ export function Welcome() {
           {PersonalRoutes.map((routeObj) => (
             <NavLink
               key={routeObj.path}
-              href={routeObj.path ?? '/'}
+              href={`/personal/${routeObj.path ?? ''}`}
               label={routeObj.description ?? '/'}
               leftSection={<IconHome2 size="1rem" stroke={1.5} />}
             />
