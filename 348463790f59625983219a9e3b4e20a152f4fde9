@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bbae389_df693f2f",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:12:11Z",
+      "side": 1,
+      "message": "?usp\u003dsharing can likely be removed.",
+      "range": {
+        "startLine": 8,
+        "startChar": 77,
+        "endLine": 8,
+        "endChar": 89
+      },
+      "revId": "348463790f59625983219a9e3b4e20a152f4fde9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
