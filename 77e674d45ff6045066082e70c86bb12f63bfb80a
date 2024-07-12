@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b473a0f_323527b0",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T19:06:12Z",
+      "side": 1,
+      "message": "this should be in JSDoc format. I should add the ESLint config\n```\n/**\n * Line 1\n * Line 2\n */\n```",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bc19665_5008d7b9",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T19:06:12Z",
+      "side": 1,
+      "message": "These should have actual links",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cdad7bb8_03a2d730",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T19:06:12Z",
+      "side": 1,
+      "message": "This should go above export function.\n\nAlso it should likely have info that you can\u0027t get instantly from reading the code.\n\nLike what this section is supposed to be at a high level, and what it\u0027s purpose is for.",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b37178e8_e3ab8ca6",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T19:06:12Z",
+      "side": 1,
+      "message": "nit: Might be better to have a more obviously placeholder name",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
