@@ -1,0 +1,163 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f05c6d4_c0caec31",
+        "filename": "js/src/patina/home/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "Where did this px comment come from? Figma?\n\nThis should also be in the mantine theme",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43ca208c_c78b3ef8",
+        "filename": "js/src/patina/home/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "If all anchor links should look like this, we should likely put this in a more common place, but this is fine for now.",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2dd8b0e_8a352fe8",
+        "filename": "js/src/patina/home/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "We should move this into the Mantine Theme, I think Manny might be working on that.\n\nfont-family, font-size, font style, font weight should likely be from that as well.",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b25bd1fa_6bf0bdd7",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "could you move this to right above the `export function`",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 38
+      },
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00fa193a_68fa23fe",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "This outer empty tag shouldn\u0027t be necessary.",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "16d5ad97_490ed793",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "Does this card component have the behavior we want? Do we need to make it ourselves?",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72cab851_262ab011",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "I wonder if this flexes properly with the image. Did you test it with different orientations and sizes?",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6dd8c53_70544594",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "You want alt text for images.",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f22affdc_059048b7",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T18:04:02Z",
+      "side": 1,
+      "message": "Jiasen had a comment on this in the other CR",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
