@@ -3,7 +3,7 @@ import { ResumePage } from './resume/Resume.page.tsx'
 import { MainPage } from './main/Main.page.tsx'
 
 export const AmandaRoutes = {
-  path: 'amanda',
+  path: '/personal/amanda',
   description: "Amanda's Page",
   element: <AmandaPage />,
   children: [
