@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd932934_199cc890",
+        "filename": "js/src/patina/home/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038190
+      },
+      "writtenOn": "2024-07-12T17:06:07Z",
+      "side": 1,
+      "message": "For font sizes and weights, there should be values like small, normal, large, etc from Mantine",
+      "revId": "c5970c4fdb8a2e08c501602386d6256e26d53fd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "baad8fa9_67345e9d",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038190
+      },
+      "writtenOn": "2024-07-12T17:06:07Z",
+      "side": 1,
+      "message": "If you want to use an arrow, there should be a unicode for it. \n\n→",
+      "revId": "c5970c4fdb8a2e08c501602386d6256e26d53fd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d16d2feb_b0e3bf96",
+        "filename": "js/src/patina/home/images/mentorship.jpeg",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038190
+      },
+      "writtenOn": "2024-07-12T17:06:07Z",
+      "side": 1,
+      "message": "nit: this is apparently not within the scope of the pr, since images shouldn\u0027t be hosted on the repo itself, but you generally want to have images compressed to a reasonable size. \n\n~10MiB is quite large for an image that I assume will be cropped or shrunk on the website itself. Do you need the full 4096x3072? Perhaps this could be compressed to something manageable under 1MiB.\n\nImagine if you opened a website with dozens of images of this size. That\u0027s a lot of bandwidth.",
+      "revId": "c5970c4fdb8a2e08c501602386d6256e26d53fd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
