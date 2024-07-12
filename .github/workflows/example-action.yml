@@ -16,7 +16,10 @@ jobs:
           pnpm install
           pnpm run test
       - working-directory: .github/workflows
-        if: always()
+        if: success()
         run: |
-          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @file.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
-
+          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @pass.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
+      - working-directory: .github/workflows
+        if: failure()
+        run: |
+          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @fail.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
