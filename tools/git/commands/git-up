@@ -68,6 +68,9 @@ if [ $commitsAheadIndex -lt 0 ]; then
 fi
 
 first_changeId=$(git cat-file commit HEAD~"$commitsAheadIndex" | grep "Change-Id:" | sed -n -e 's/^.*Change-Id: //p')
+
+echo "/////////// $first_changeId //////"
+
 changes=($(git log HEAD~"$commitsAhead"..HEAD | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1'))
 [ $v = 1 ] && echo ""
 [ $v = 1 ] && echo "First Change-Id = $first_changeId"
