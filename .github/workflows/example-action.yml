@@ -15,3 +15,6 @@ jobs:
         run: |
           pnpm install
           pnpm run test
+      - working-directory: ./.github/workflows
+        run: |
+          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @file.json https://gerrithub.io/a/changes/Ia101a1d27b20c1466e0b674ba7fd333b7d16a47f/revisions/current/review
