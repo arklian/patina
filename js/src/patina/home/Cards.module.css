@@ -1,0 +1,58 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  color: white;
+  border: 1px solid #5C5F66;
+  border-radius: 10px;
+}
+
+.text_container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px 10px 16px;
+}
+
+.image{
+  display: flex;
+  height: 222px;
+  align-items: flex-start;
+}
+
+.text{
+  display: flex;
+  height: 222px;
+  min-width: 169px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.title{
+  font-size: x-large;
+  align-self: stretch;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%;
+}
+
+.details{
+  align-self: stretch;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 155%;
+}
+
+.anchor{
+  color: white;
+  align-self: stretch;
+  font-family: Figtree;
+  font-style: normal;
+  line-height: 155%;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
