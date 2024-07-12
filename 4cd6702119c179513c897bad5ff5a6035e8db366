@@ -16,6 +16,23 @@
       "message": "Looking pretty good! We can finish this up with the theme changes coming in soon!",
       "revId": "4cd6702119c179513c897bad5ff5a6035e8db366",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e06538c8_1a44e979",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 13
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038190
+      },
+      "writtenOn": "2024-07-12T23:32:59Z",
+      "side": 1,
+      "message": "how did you get this specific ratio? \n\nI would recommend anything magical like this should get its own const variable to make it easier to read what it does",
+      "revId": "4cd6702119c179513c897bad5ff5a6035e8db366",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
