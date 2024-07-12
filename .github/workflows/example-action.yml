@@ -1,7 +1,11 @@
 name: example-action
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      changeId:
+        description: 'Change-Id for Gerrit commit'
+        required: true
 env:
   RUN_LINK: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   BOT_PWD: ${{ secrets.BOT_PATINA_HTTP_PASSWORD }}
