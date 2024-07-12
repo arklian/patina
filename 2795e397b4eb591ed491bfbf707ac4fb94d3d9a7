@@ -16,6 +16,24 @@
       "message": "nit: this line is too long",
       "revId": "2795e397b4eb591ed491bfbf707ac4fb94d3d9a7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0da25eb5_b4a42efd",
+        "filename": ".do/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038150
+      },
+      "writtenOn": "2024-07-12T21:35:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef02abe6_18b95791",
+      "revId": "2795e397b4eb591ed491bfbf707ac4fb94d3d9a7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
