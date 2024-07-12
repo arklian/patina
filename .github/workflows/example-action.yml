@@ -15,10 +15,8 @@ jobs:
         run: |
           pnpm install
           pnpm run test
-  testing2:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
       - working-directory: .github/workflows
+        if: always()
         run: |
           curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @file.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
+
