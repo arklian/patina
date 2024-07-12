@@ -54,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "61c9108d_a024a9ef",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:33Z",
+      "side": 1,
+      "message": "I guess technically the static site stuff can go in the next CR",
+      "parentUuid": "a8c377fb_f3546c30",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "232e3a52_c1b2fbf8",
         "filename": "/COMMIT_MSG",
         "patchSetId": 2
