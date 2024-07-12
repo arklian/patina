@@ -1,6 +1,6 @@
 {
-    "message": "Test failed.",
+    "message": "Test passed.",
     "labels": {
-      "Verified": -1
+      "Verified": 1
     }
 }
