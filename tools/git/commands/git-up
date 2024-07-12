@@ -103,13 +103,7 @@ if [ $pushToGerrit = 1 ]; then
   # Run GitHub Actions workflow
   [ $v = 1 ] && echo ""
   [ $v = 1 ] && echo "----- Running Github Actions"
-  echo "/////////// first change id: $first_changeId //////"
-  echo " HI IM GOING TO RUN MY WORFKLLOW "
   gh workflow run example-action -f changeId=${changes[1]}
-  echo " FINISHED WORKFLOW "
-  echo " //// MOST RECENT CHANGE ID :: ${changes[1]}"
-  ### FOR SOME REASON empty string at 0th index? most recent change id is at 1st
-  echo " TESTING PRINT FIRST:: [${changes[0]}]"
 
 fi
 ####################################################################################################
