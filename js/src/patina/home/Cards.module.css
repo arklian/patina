@@ -1,0 +1,51 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.image{
+  display: flex;
+  height: 222px;
+  align-items: flex-start;
+}
+
+.text{
+  display: flex;
+  height: 222px;
+  min-width: 169px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.title{
+  align-self: stretch;
+  /* Large - Semi-bold */
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%; /* 27.9px */
+}
+
+.details{
+  align-self: stretch;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 24.8px */
+}
+
+.anchor{
+  align-self: stretch;
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 24.8px */
+  text-decoration-line: underline;
+}
