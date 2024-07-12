@@ -1,0 +1,40 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c954150_cfbf47fa",
+        "filename": ".github/workflows/file.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-12T16:39:38Z",
+      "side": 1,
+      "message": "[nit] trailing whitespace",
+      "tag": "jenkins",
+      "revId": "b0351bd16abc0be88df919809468ff8e904cac39",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33c7afa2_55e3e95b",
+        "filename": ".github/workflows/file.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-12T16:39:38Z",
+      "side": 1,
+      "message": "[nit] s/conrtol/control lksjfklafjlksfjf",
+      "tag": "jenkins",
+      "revId": "b0351bd16abc0be88df919809468ff8e904cac39",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
