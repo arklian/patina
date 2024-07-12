@@ -12,6 +12,8 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
           echo "TestInput: ${{ github.event.inputs.testInput }}"
-
+          git up
+          echo "Finished git up"
