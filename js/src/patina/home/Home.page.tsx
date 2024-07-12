@@ -1,5 +1,6 @@
 import { Skeleton } from '@mantine/core'
 import styles from './Home.module.css'
+import { Important } from '@/patina/home/Important.tsx'
 
 export function HomePage() {
   return (
@@ -33,7 +34,7 @@ export function HomePage() {
       </div>
 
       <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={400} width="60%" mb="xl" />
+        <Important />
       </div>
 
       <div className={styles.skeletonStyle}>
