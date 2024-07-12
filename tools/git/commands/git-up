@@ -87,12 +87,14 @@ fi
 
 first_changeId=$(git cat-file commit HEAD~"$commitsAheadIndex" | grep "Change-Id:" | sed -n -e 's/^.*Change-Id: //p')
 
-echo "/////////// $first_changeId //////"
+echo "/////////// first change id: $first_changeId //////"
 echo " HI IM GOING TO RUN MY WORFKLLOW "
 gh workflow run test-action -f testInput=hi
 echo " FINISHED WORKFLOW "
 
 changes=($(git log HEAD~"$commitsAhead"..HEAD | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1'))
+echo " //// MOST RECENT CHANGE ID :: ${changes[1]}"
+
 [ $v = 1 ] && echo ""
 [ $v = 1 ] && echo "First Change-Id = $first_changeId"
 [ $v = 1 ] && echo "All Change-Ids (Newest changes on top):"
