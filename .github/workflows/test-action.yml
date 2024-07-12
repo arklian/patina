@@ -12,6 +12,8 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
+          echo "hiiiiii"
+          echo "modifications . .. . .. ... "
           echo "TestInput: ${{ github.event.inputs.testInput }}"
-
