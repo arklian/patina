@@ -75,6 +75,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbba3eb9_1502027e",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:21:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b25bd1fa_6bf0bdd7",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 38
+      },
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "00fa193a_68fa23fe",
@@ -88,6 +112,24 @@
       "writtenOn": "2024-07-12T18:04:02Z",
       "side": 1,
       "message": "This outer empty tag shouldn\u0027t be necessary.",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be134748_6653bb05",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:21:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00fa193a_68fa23fe",
       "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -143,6 +185,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "13a5f942_aca78e69",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:21:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e6dd8c53_70544594",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f22affdc_059048b7",
@@ -156,6 +216,24 @@
       "writtenOn": "2024-07-12T18:04:02Z",
       "side": 1,
       "message": "Jiasen had a comment on this in the other CR",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8faa7591_b130209c",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:21:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f22affdc_059048b7",
       "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
