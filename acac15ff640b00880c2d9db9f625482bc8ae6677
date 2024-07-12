@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ae526cab_91713800",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T22:32:24Z",
+      "side": 1,
+      "message": "Patina: Add Patina Colors to Mantine Theme\n\nTo keep consistency of colors through the website and allow for\neasier refactors, defining our colors in the Mantine theme.\n\nL\u003dENG-9999\nTEST\u003dmanual\nTested the page still loads and changed a style to use the new css\nvariable.",
+      "revId": "acac15ff640b00880c2d9db9f625482bc8ae6677",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4d44e2f2_443d0136",
         "filename": "js/src/patina/theme.ts",
         "patchSetId": 1
