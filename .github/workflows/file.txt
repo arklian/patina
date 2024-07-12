@@ -1,0 +1,28 @@
+{
+  "tag": "jenkins",
+  "message": "Some nits need to be fixed.",
+  "labels": {
+    "Code-Review": -1
+  },
+  "comments": {
+    "gerrit-server/src/main/java/com/google/gerrit/server/project/RefControl.java": [
+      {
+        "line": 23,
+        "message": "[nit] trailing whitespace"
+      },
+      {
+        "line": 49,
+        "message": "[nit] s/control/control"
+      },
+      {
+        "range": {
+          "start_line": 50,
+          "start_character": 0,
+          "end_line": 55,
+          "end_character": 20
+        },
+        "message": "Incorrect indentation"
+      }
+    ]
+  }
+}
