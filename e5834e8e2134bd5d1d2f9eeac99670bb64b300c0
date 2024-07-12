@@ -151,6 +151,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2ed5d48_8c52c66d",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T21:07:47Z",
+      "side": 1,
+      "message": "got rid of it",
+      "parentUuid": "16d5ad97_490ed793",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "72cab851_262ab011",
@@ -164,6 +182,24 @@
       "writtenOn": "2024-07-12T18:04:02Z",
       "side": 1,
       "message": "I wonder if this flexes properly with the image. Did you test it with different orientations and sizes?",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "531184e1_7e600557",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T21:07:47Z",
+      "side": 1,
+      "message": "yes i think it works well",
+      "parentUuid": "72cab851_262ab011",
       "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
