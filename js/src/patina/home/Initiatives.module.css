@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  padding: 64px 48px;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-start;
+  gap: 64px;
+  flex: 1 0 0;
+  border: 1px solid var(--Dark-Dark-3, #5C5F66);
+  background: var(--Dark-Dark-6, #25262B);
+}
