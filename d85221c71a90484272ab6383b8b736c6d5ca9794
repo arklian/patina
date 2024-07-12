@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c6417b7_c60f6156",
+        "filename": "js/src/personal/PersonalRoutes.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:30:37Z",
+      "side": 1,
+      "message": "Change this in Welcome.tsx instead.",
+      "revId": "d85221c71a90484272ab6383b8b736c6d5ca9794",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
