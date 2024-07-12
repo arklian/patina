@@ -204,6 +204,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4543d11e_9b05031c",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T21:50:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "531184e1_7e600557",
+      "revId": "e5834e8e2134bd5d1d2f9eeac99670bb64b300c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e6dd8c53_70544594",
