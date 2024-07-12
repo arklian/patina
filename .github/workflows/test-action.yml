@@ -1,0 +1,16 @@
+name: test-action
+run-name: ${{ github.actor }} is testing stuff
+on:
+  workflow_dispatch:
+    inputs:
+      testInput:
+        description: 'a test input'
+        required: true
+        default: 'ooo'
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "TestInput: ${{ github.event.inputs.testInput }}"
