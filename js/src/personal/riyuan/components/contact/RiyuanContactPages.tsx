@@ -1,12 +1,14 @@
 import { Text, Title, Container } from '@mantine/core'
 import styles from '@/personal/riyuan/Riyuan.module.css'
 
-export function Contact() {
+/**
+ * Function to render the Contact Pages ->
+ * Provides visitors with information on how to get in touch with me
+ */
+
+export function RiyuanContactPages() {
   return (
-    <div
-      id={'Contact'}
-      className={styles.container}
-    >
+    <div className={styles.container}>
       <Container>
         <Title
           className={styles.title}
