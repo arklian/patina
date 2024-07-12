@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6c3e735_33734a5c",
+        "filename": ".do/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:13Z",
+      "side": 1,
+      "message": "add the link to the app.yaml specs doc",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e83acde5_08e70eda",
+        "filename": ".do/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:13Z",
+      "side": 1,
+      "message": "Add a section on service vs static-site, and why we can\u0027t use static site.",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8c377fb_f3546c30",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:13Z",
+      "side": 1,
+      "message": "Hosting: Initialize DigitalOcean docs\n\nDocument the steps to host this repo on DigitalOcean.\n\nAdding context on static-site versus service for people who want to\nhost their personal sites on DigitalOcean themselves in the future.\n\nL\u003dENG-999\nTEST\u003dnone",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "232e3a52_c1b2fbf8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:13Z",
+      "side": 1,
+      "message": "Add Linear link",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

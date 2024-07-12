@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef02abe6_18b95791",
+        "filename": ".do/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T20:22:13Z",
+      "side": 1,
+      "message": "nit: this line is too long",
+      "revId": "2795e397b4eb591ed491bfbf707ac4fb94d3d9a7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
