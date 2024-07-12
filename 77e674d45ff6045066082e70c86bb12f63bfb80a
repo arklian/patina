@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "449e1ef3_1315b1a3",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:24:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b473a0f_323527b0",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5bc19665_5008d7b9",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-12T19:06:12Z",
       "side": 1,
       "message": "These should have actual links",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1cdf355_ad40062f",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:24:30Z",
+      "side": 1,
+      "message": "What do you mean by this?",
+      "parentUuid": "5bc19665_5008d7b9",
       "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
