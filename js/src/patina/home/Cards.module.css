@@ -1,0 +1,44 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.image{
+  display: flex;
+  height: 222px;
+  align-items: flex-start;
+}
+
+.text{
+  display: flex;
+  height: 222px;
+  min-width: 169px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.title{
+  align-self: stretch;
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 155%;
+}
+
+.details{
+  align-self: stretch;
+  font-style: normal;
+  line-height: 155%;
+}
+
+.anchor{
+  align-self: stretch;
+  font-family: Figtree;
+  font-style: normal;
+  line-height: 155%;
+  text-decoration-line: underline;
+}
