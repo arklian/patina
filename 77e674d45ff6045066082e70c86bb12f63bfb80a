@@ -88,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "580d43c3_26667b59",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:31:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cdad7bb8_03a2d730",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b37178e8_e3ab8ca6",
@@ -101,6 +119,24 @@
       "writtenOn": "2024-07-12T19:06:12Z",
       "side": 1,
       "message": "nit: Might be better to have a more obviously placeholder name",
+      "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf06b4c7_6ae13ad8",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-12T19:31:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b37178e8_e3ab8ca6",
       "revId": "77e674d45ff6045066082e70c86bb12f63bfb80a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
