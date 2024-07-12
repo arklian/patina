@@ -89,6 +89,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2d1fa71_7c93131e",
+        "filename": ".do/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038150
+      },
+      "writtenOn": "2024-07-12T21:37:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "f6725655_7f778b71",
+      "revId": "85834e6a074e9df2d7d198c6a3a0866d2adf843d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8c377fb_f3546c30",
