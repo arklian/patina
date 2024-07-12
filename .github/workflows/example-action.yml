@@ -2,6 +2,9 @@ name: example-action
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   workflow_dispatch
+env:
+  RUN_LINK: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+  BOT_PWD: ${{ secrets.BOT_PATINA_HTTP_PASSWORD }}
 
 jobs:
   testing:
@@ -18,8 +21,14 @@ jobs:
       - working-directory: .github/workflows
         if: success()
         run: |
-          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @pass.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
+          curl -u bot-patina:$BOT_PWD -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"message": "Test passed: $RUN_LINK", "labels": { "Verified": 1 } }' \
+            https://gerrithub.io/a/changes/I2947181181094f046463b01bed06d97bc14490b5/revisions/current/review
       - working-directory: .github/workflows
         if: failure()
         run: |
-          curl -u aruan20:meaVEjM1P88Aiszpd3SaA2jyHTLDXm4kjQwK6czo7Q -X POST -H "Content-Type: application/json" --data @fail.json https://gerrithub.io/a/changes/I2c08060a80cc76ab8da2cc15e637079728b1723b/revisions/current/review
+          curl -u bot-patina:$BOT_PWD -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"message": "Test failed: $RUN_LINK", "labels": { "Verified": -1 } }' \
+            https://gerrithub.io/a/changes/I2947181181094f046463b01bed06d97bc14490b5/revisions/current/review
