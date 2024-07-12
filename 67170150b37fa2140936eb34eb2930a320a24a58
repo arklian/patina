@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "44a59712_309d7ebd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T22:40:15Z",
+      "side": 1,
+      "message": "Looking pretty good!",
+      "revId": "67170150b37fa2140936eb34eb2930a320a24a58",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae34e9b8_e96fc1bb",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 14
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T22:40:15Z",
+      "side": 1,
+      "message": "What happens when you click this with this link?",
+      "revId": "67170150b37fa2140936eb34eb2930a320a24a58",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
