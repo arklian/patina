@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d44e2f2_443d0136",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-12T22:29:47Z",
+      "side": 1,
+      "message": "Can you add a comment here?\n```\n/**\n * Add custom CSS variables to keep consistency across the codebase. \n * Generally these should be used instead of raw values.\n * Usage: color: var(--mantine-color-patina-green-light)\n */\n```",
+      "revId": "acac15ff640b00880c2d9db9f625482bc8ae6677",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
