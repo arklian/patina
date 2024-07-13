@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8656efa_e764b850",
+        "filename": "js/src/personal/riyuan/RiyuanRoutes.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T23:06:18Z",
+      "side": 1,
+      "message": "nit: no need for all of these pages to be prefixed with Riyuan now that they\u0027re in RiyuanRoutes.\n\nThe file names should likely also be Main.page.tsx, Projects.page.tsx, etc.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18507c00_e99b07c5",
+        "filename": "js/src/personal/riyuan/components/about/About.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T23:06:18Z",
+      "side": 1,
+      "message": "nit: This is a little repetitive.\n\nFunction to render an info section with a title, description, and bullet points with more details.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f54ab5d_dc2c31cf",
+        "filename": "js/src/personal/riyuan/components/about/About.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T23:06:18Z",
+      "side": 1,
+      "message": "nit: no new line here.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53d82726_fcf828c9",
+        "filename": "js/src/personal/riyuan/components/main/RiyuanMain.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T23:06:18Z",
+      "side": 1,
+      "message": "You have two RiyuanMainPage tsx files.\n\nAlso attention to detail with comments here.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
