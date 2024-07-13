@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b01c1aa6_65820aae",
+        "filename": ".github/workflows/test-action.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T22:58:50Z",
+      "side": 1,
+      "message": "Should these still be here?",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2bd43cf_efefc53e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T22:58:50Z",
+      "side": 1,
+      "message": "This should no longer be your name, but what service/topic you\u0027re updating.\nIn this case, it could be like `Git` or `CI/CD`.\n\nAlso it reads a little strange. `Add example-action for CI/CD to git-up`",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "345ed55e_da3efec3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T22:58:50Z",
+      "side": 1,
+      "message": "Missing Linear Id and testing details.\n```\nL\u003dENG-999\nTEST\u003dmanual\n\nTested by running git up and triggering Github Action run:\nwww.github.com/action/link\n\nCR updated with verified:\nwww.gerrithub.com/link\n\n```",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc3faf97_0c784687",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-13T22:58:50Z",
+      "side": 1,
+      "message": "Can you make a story to add a check to make sure the user has gh installed?",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
