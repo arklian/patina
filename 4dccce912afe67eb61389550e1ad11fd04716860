@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1cb67428_f56079bb",
+        "filename": "js/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-14T02:58:06Z",
+      "side": 1,
+      "message": "Would likely be good to include the preconnect hints as well:\nhttps://stackoverflow.com/questions/73838138/why-google-font-preconnects-to-fonts-googleapis-com",
+      "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be826123_aa311c89",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-14T02:58:06Z",
+      "side": 1,
+      "message": "Do we use any other size text or is it all 16?\n\nChecking the defaults from mantine, it\u0027s likely good just to copy all of the ones in there anyways. We can always update it later, but it\u0027s good to see explicitly what it is.\n\nhttps://github.com/mantinedev/mantine/blob/c087030bbc67a895cb39475b0494ed5a6dc5e7ab/packages/%40mantine/core/src/core/MantineProvider/default-theme.ts\n\nThe Text component uses `md` by default. https://mantine.dev/core/text/?t\u003dprops",
+      "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
