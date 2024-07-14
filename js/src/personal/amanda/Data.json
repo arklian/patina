@@ -116,12 +116,12 @@
     {
       "id": 1,
       "section": "about",
-      "link": "/amanda#about",
+      "link": "amanda#about",
       "subsection":
         {
           "id": 1,
           "section": "resume",
-          "link": "/amanda/resume",
+          "link": "amanda/resume",
           "subsection": {}
         }
 
@@ -129,13 +129,13 @@
     {
       "id": 2,
       "section": "projects",
-      "link": "/amanda#projects",
+      "link": "amanda#projects",
       "subsection": []
     },
     {
       "id": 3,
       "section": "misc",
-      "link": "/amanda#misc",
+      "link": "amanda#misc",
       "subsection": []
     }
   ]
