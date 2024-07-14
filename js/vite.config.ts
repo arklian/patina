@@ -12,9 +12,11 @@ export default defineConfig({
     setupFiles: './vitest.setup.ts',
   },
   resolve: {
+    /* Aliases : Keep this in sync with tsconfig.json */
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@test-utils': path.resolve(__dirname, './test-utils'),
+      '@patina': path.resolve(__dirname, './src/patina'),
     },
   },
 })

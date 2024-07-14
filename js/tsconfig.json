@@ -10,9 +10,11 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
 
+    /* Aliases : Keep this in sync with vite.config.ts */
     "paths": {
       "@/*": ["./src/*"],
-      "@test-utils/*": ["./test-utils/*"]
+      "@test-utils/*": ["./test-utils/*"],
+      "@patina/*": ["./src/patina/*"]
     },
 
     /* Bundler mode */
