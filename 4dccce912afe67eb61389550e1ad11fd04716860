@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca1ba81e_cb3ff0a8",
+        "filename": "js/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-14T18:53:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1cb67428_f56079bb",
+      "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "be826123_aa311c89",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "208c23c6_2cc8106a",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-14T18:53:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be826123_aa311c89",
+      "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8eba1926_17fec8c6",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-14T02:59:19Z",
       "side": 1,
       "message": "These would be good to define in rem(), so that the text scales with the zoom setting consistently.",
+      "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf7dc362_7c8e31b7",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-14T18:53:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8eba1926_17fec8c6",
       "revId": "4dccce912afe67eb61389550e1ad11fd04716860",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
