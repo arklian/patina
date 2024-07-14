@@ -18,7 +18,11 @@ interface InfoSectionProps {
   description: string
   listItems: string[]
 }
-// Function to render the info section
+
+/**
+ * Function to render the info section with a title, description,
+ * and bullet points with more details.
+ */
 function InfoSection({ title, description, listItems }: InfoSectionProps) {
   return (
     <div className={aboutStyles.info}>
@@ -53,6 +57,10 @@ function InfoSection({ title, description, listItems }: InfoSectionProps) {
   )
 }
 
+/**
+ * Function to render the About Section ->
+ * Provides background information about myself, including professional details and an image
+ */
 export function About() {
   const largeScreen = useMediaQuery('(min-width: 60em)')
 
