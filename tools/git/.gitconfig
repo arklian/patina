@@ -14,3 +14,5 @@
     template = tools/git/.gitmessage
 [fetch]
     all = true
+[remote "origin"]
+    fetch = ^refs/heads/ci/*
