@@ -5,7 +5,6 @@ import {
   faMagnifyingGlass,
   faHouse,
   faPerson,
-  faTimeline,
   faFolder,
   faIdCard,
   faBars,
@@ -23,14 +22,15 @@ interface CustomHeaderProps {
   isClosed: boolean
 }
 
+/**
+ *  Renders a header on top of the navigation bar
+ *  Provides a visual branding element and toggle functionality for the navigation menu
+ */
 const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
   <header className={styles.header}>
     <div className={styles.ImageText}>
       <span className={styles.image}>
-        <Image
-          src={data.image}
-          alt={'Profile pic'}
-        />
+        <Image src={data.image} alt={'Profile pic'} />
       </span>
       {isClosed && (
         <div className={`${styles.text} ${styles.logoText}`}>
@@ -39,42 +39,44 @@ const CustomHeader = ({ data, toggleShell, isClosed }: CustomHeaderProps) => (
         </div>
       )}
     </div>
-    <Button
-      className={styles.toggle}
-      onClick={toggleShell}
-    >
+    <Button className={styles.toggle} onClick={toggleShell}>
       <FontAwesomeIcon icon={faBars} />
     </Button>
   </header>
 )
 
+/**
+ * Renders an individual navigation item
+ * Allows users to navigate to different sections of the site
+ */
 const NavItem = ({
   title,
   icon,
+  link,
   isOpen,
 }: {
   title: string
   icon: IconDefinition
+  link: string
   isOpen: boolean
 }) => (
   <div className={styles.navLink}>
-    <a
-      href={`#${title}`}
-      className={styles.navItem}
-    >
-      <FontAwesomeIcon
-        icon={icon}
-        className={styles.icon}
-      />
+    <a href={link} className={styles.navItem}>
+      <FontAwesomeIcon icon={icon} className={styles.icon} />
       {isOpen && <span className={`${styles.text}`}>{title}</span>}
     </a>
   </div>
 )
+
+/**
+ * Renders a list of navigation items
+ * Groups navigation items together for the navigation bar
+ */
 const NavList = ({
   items,
   isOpen,
 }: {
-  items: { title: string; icon: IconDefinition }[]
+  items: { title: string; icon: IconDefinition; link: string }[]
   isOpen: boolean
 }) => (
   <Stack className={styles.navList}>
@@ -83,6 +85,7 @@ const NavList = ({
         key={index}
         title={item.title}
         icon={item.icon}
+        link={item.link}
         isOpen={isOpen}
       />
     ))}
@@ -94,30 +97,31 @@ const SearchBox: React.FC = () => (
     <div className={styles.icon}>
       <FontAwesomeIcon icon={faMagnifyingGlass} />
     </div>
-    <Input
-      type={'text'}
-      placeholder={'Search..'}
-    />
+    <Input type={'text'} placeholder={'Search..'} />
   </List>
 )
 
+/** Renders the menu bar inside the navigation bar
+ *   Provides a structured layout for the search box and navigation list */
 const MenuBar = ({
   items,
   isOpen,
 }: {
-  items: { title: string; icon: IconDefinition }[]
+  items: { title: string; icon: IconDefinition; link: string }[]
   isOpen: boolean
 }) => (
   <div className={styles.MenuBar}>
     <div className={styles.Menu}>
       <SearchBox />
-      <NavList
-        items={items}
-        isOpen={isOpen}
-      />
+      <NavList items={items} isOpen={isOpen} />
     </div>
   </div>
 )
+
+/**
+ * This component renders the NavBar ->
+ * Provides a structured layout for the navigation menu
+ */
 
 export function Nav() {
   const headerData = {
@@ -125,11 +129,10 @@ export function Nav() {
     image: pfpImage,
   }
   const navItems = [
-    { title: 'Home', icon: faHouse },
-    { title: 'About', icon: faPerson },
-    { title: 'Experience', icon: faTimeline },
-    { title: 'Project', icon: faFolder },
-    { title: 'Contact', icon: faIdCard },
+    { title: 'Home', icon: faHouse, link: '/personal/riyuan' },
+    { title: 'About', icon: faPerson, link: '/personal/riyuan#About' },
+    { title: 'Project', icon: faFolder, link: '/personal/riyuan/projects' },
+    { title: 'Contact', icon: faIdCard, link: '/personal/riyuan/contact' },
   ]
   const [isClosed, setIsClosed] = useState(true)
   const toggleShell = () => {
@@ -144,10 +147,7 @@ export function Nav() {
           toggleShell={toggleShell}
           isClosed={!isClosed}
         />
-        <MenuBar
-          items={navItems}
-          isOpen={!isClosed}
-        />
+        <MenuBar items={navItems} isOpen={!isClosed} />
       </div>
     </nav>
   )
