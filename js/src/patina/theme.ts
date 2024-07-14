@@ -3,16 +3,42 @@ import {
   CSSVariablesResolver,
   DEFAULT_THEME,
   mergeMantineTheme,
+  rem,
 } from '@mantine/core'
 
 /**
  * Custom mantine theme override
+ *
+ * This theme customization includes setting the "Figtree" font family for both
+ * body text and headings, with specific sizes and weights for various heading levels.
+ *
+ * Font: Figtree
+ * Weights: 400 (Regular), 600 (Semibold), 700 (Bold)
+ *
  *
  * {@link https://mantine.dev/theming/theme-object/ Theme Object Docs}
  * {@link https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/core/src/core/MantineProvider/default-theme.ts Default Theme}
  * {@link https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/core/src/core/MantineProvider/default-colors.ts Default Colors}
  */
 export const themeOverride = createTheme({
+  fontFamily: 'Figtree, sans-serif',
+  fontSizes: {
+    xs: rem(12),
+    sm: rem(14),
+    md: rem(16), // Body text size
+    lg: rem(20),
+    xl: rem(24),
+  },
+  headings: {
+    fontFamily: 'Figtree, sans-serif',
+    sizes: {
+      h1: { fontSize: rem(64), fontWeight: '700' },
+      h2: { fontSize: rem(48), fontWeight: '700' },
+      h3: { fontSize: rem(34), fontWeight: '700' },
+      h4: { fontSize: rem(22), fontWeight: '700' },
+      h5: { fontSize: rem(16), fontWeight: '600' },
+    },
+  },
   other: {
     patinaGreenDark: '#03664D',
     patinaGreenLight: '#4DFFB0',
