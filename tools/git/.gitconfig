@@ -1,15 +1,15 @@
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 [rebase]
-	autoStash = true
+    autoStash = true
 [branch]
-	autoSetupRebase = always
+    autoSetupRebase = always
 [alias]
-	pushf = push --force-with-lease --force-if-includes
-	pullo = pull origin main
-	pullg = pull gerrit main
-	rebaseo = rebase -i origin/main
-	nb = switch --track=inherit -c
+    pushf = push --force-with-lease --force-if-includes
+    pullo = pull origin main
+    pullg = pull gerrit main
+    rebaseo = rebase -i origin/main
+    nb = switch --track=inherit -c
 [commit]
     template = tools/git/.gitmessage
 [fetch]
