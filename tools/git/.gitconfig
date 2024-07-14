@@ -9,3 +9,5 @@
 	pullo = pull gerrit main
 	pullg = pull gerrit main
 	rebaseo = rebase -i origin/main
+[commit]
+    template = tools/git/.gitmessage
