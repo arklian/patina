@@ -16,6 +16,24 @@
       "message": "Should keep the comments here.",
       "revId": "cd78bc8ad783f8a5884e0f3927668c0f7affb137",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92a623e9_a199bbe3",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-14T00:52:40Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "b1e7f474_cefa9cd5",
+      "revId": "cd78bc8ad783f8a5884e0f3927668c0f7affb137",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
