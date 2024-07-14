@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d392aaa_db90e04d",
+        "filename": "js/src/personal/riyuan/RiyuanRoutes.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-14T05:00:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8656efa_e764b850",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "18507c00_e99b07c5",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-13T23:06:18Z",
       "side": 1,
       "message": "nit: This is a little repetitive.\n\nFunction to render an info section with a title, description, and bullet points with more details.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba745df4_59679b08",
+        "filename": "js/src/personal/riyuan/components/about/About.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-14T05:00:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "18507c00_e99b07c5",
       "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d41d02b_8cdd4075",
+        "filename": "js/src/personal/riyuan/components/about/About.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-14T05:00:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f54ab5d_dc2c31cf",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "53d82726_fcf828c9",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-07-13T23:06:18Z",
       "side": 1,
       "message": "You have two RiyuanMainPage tsx files.\n\nAlso attention to detail with comments here.",
+      "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9abcb2ce_a33ca572",
+        "filename": "js/src/personal/riyuan/components/main/RiyuanMain.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-14T05:00:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53d82726_fcf828c9",
       "revId": "be681638ae7c6c6c41ecc36a9fa991f21e83a08f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
