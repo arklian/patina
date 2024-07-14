@@ -16,6 +16,24 @@
       "message": "You should run git pull origin main to pick up the prettier config change.\nThis is the old setting in prettier.\n\nAdd a space, and then save it to reformat it.",
       "revId": "87e1d27a7de5f66a2f3009bc8c4b2f0a51ff45e7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9389b57b_1fb3bf22",
+        "filename": "js/src/personal/riyuan/components/navigation/Navigation.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-14T15:23:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c876246_411ac0df",
+      "revId": "87e1d27a7de5f66a2f3009bc8c4b2f0a51ff45e7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
