@@ -6,7 +6,7 @@
 ####################################################################################################
 v=1 # verbose
 pushToGerrit=1
-updateGithub=1
+updateGithub=0
 commentOnPR=1
 
 print_usage() {
