@@ -9,5 +9,6 @@
 	pullo = pull origin main
 	pullg = pull gerrit main
 	rebaseo = rebase -i origin/main
+	nb = switch --track=inherit -c
 [commit]
     template = tools/git/.gitmessage
