@@ -12,3 +12,5 @@
 	nb = switch --track=inherit -c
 [commit]
     template = tools/git/.gitmessage
+[fetch]
+    all = true
