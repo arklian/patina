@@ -2,7 +2,7 @@ import { AmandaRoutes } from './amanda/Amanda.routes.tsx'
 import { BryanRoutes } from './bryan/Bryan.routes.tsx'
 import { HaokingPage } from './haoking/Haoking.page.tsx'
 import { HenryPage } from './_henry/Henry.page.tsx'
-import { HomePage } from '../pages/Home.page.tsx'
+import { PersonalPage } from './Personal.page.tsx'
 import { JionghaoPage } from './jionghao/Jionghao.page.tsx'
 import { KaziPage } from './kazi/Kazi.page.tsx'
 import { KellyPage } from './kelly/Kelly.page.tsx'
@@ -26,8 +26,8 @@ import { Contact as MannyContactMePage } from '@/personal/manny/pages/Contact.ts
 export const PersonalRoutes = [
   {
     index: true,
-    description: 'Home',
-    element: <HomePage />,
+    description: 'Directory of Personal Websites',
+    element: <PersonalPage />,
   },
   {
     path: 'henry',
