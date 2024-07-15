@@ -17,7 +17,6 @@
 .title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: rem(70px);
-  font-weight: 900;
   letter-spacing: rem(-2px);
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -27,14 +26,21 @@
 
 .description {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(35px);
+  font-size: rem(30px);
   letter-spacing: rem(-2px);
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(18px);
+    font-size: rem(15px);
   }
 }
 
 .volunteerImg {
   width: 40%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10%;
 }

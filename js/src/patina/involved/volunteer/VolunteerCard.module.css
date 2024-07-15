@@ -1,0 +1,20 @@
+.card {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  margin-bottom: 10px;
+}
+
+.cardRoleType {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.cardDescription {
+  color: #aaa;
+}
