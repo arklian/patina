@@ -7,6 +7,10 @@ on:
         description: 'a test input'
         required: true
         default: 'ooo'
+      branch:
+        description: 'test inpu'
+        required: true
+        default: 'main''
 
 jobs:
   testing:
@@ -14,4 +18,5 @@ jobs:
     steps:
       - run: |
           echo "TestInput: ${{ github.event.inputs.testInput }}"
+          echo "branch input: ${{ github.event.inputs.branch }}"
 
