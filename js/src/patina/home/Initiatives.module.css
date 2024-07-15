@@ -2,8 +2,8 @@
   display: flex;
   padding: rem(64px) rem(48px);
   flex-direction: column;
-  border: 1px solid #5C5F66;
-  background: #25262B;
+  border: rem(1px) solid var(--mantine-color-dark-4);
+  background: var(--mantine-color-dark-6);
 }
 
 .title{
