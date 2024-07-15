@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.importantSectionTitle {
+  font-size: rem(48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  padding-bottom: 48px;
+}
