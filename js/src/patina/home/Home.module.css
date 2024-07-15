@@ -22,3 +22,27 @@
   column-gap: rem(34px); /* TODO: add this styling in inner elements */
   padding: rem(0) rem(48px) rem(0) rem(48px);
 }
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  height: rem(700px);
+  background: var(--mantine-color-patina-dark-bg);
+  background-image: url('https://cdn.discordapp.com/attachments/1261068702171009085/1262442743255269487/hero.png?ex=66969ced&is=66954b6d&hm=ac8fedf35fd1f662e9051863056f2cc1879d4962453600d7455d874b5d23516e&');
+  background-size: 60vw auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.hero_title {
+  text-shadow: 1px 1px 6px white;
+  color: white;
+  font-size: 5vw;
+  padding-left: 5vw;
+  width: 70%;
+  padding-bottom: 5vw;
+}
+
+.title_teal {
+  color: var(--mantine-color-patina-green-light);
+}
