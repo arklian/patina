@@ -155,4 +155,3 @@ if [ $updateGithub = 1 ]; then
     [ $commentOnPR = 1 ] && gh pr comment --body "New changes were pushed at $remoteGerritURL/q/$pullRequestChangeId"
   fi
 fi
-
