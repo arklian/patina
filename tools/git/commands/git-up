@@ -102,14 +102,14 @@ if [ $pushToGerrit = 1 ]; then
   # Run GitHub Actions workflow
   [ $v = 1 ] && echo ""
   [ $v = 1 ] && echo "----- Running Github Actions"
-  #gh workflow run example-action -f changeId=${changes[1]} #only runs workflow (pnpm run test)on most recent commit
+  gh workflow run example-action -f changeId=${changes[1]} #only runs workflow (pnpm run test)on most recent commit
 
-  for x in $changes:
-  do
-    echo "x: $x"
-    
-    gh workflow run example-action -f changeId=${x}
-  done
+  #for x in $changes:
+  #do
+  #  echo "x: $x"
+
+  #  gh workflow run example-action -f changeId=${x}
+  #done
 
 fi
 ####################################################################################################
