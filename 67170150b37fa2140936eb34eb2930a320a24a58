@@ -33,6 +33,24 @@
       "message": "What happens when you click this with this link?",
       "revId": "67170150b37fa2140936eb34eb2930a320a24a58",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b372ec_2377a10e",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 14
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-15T18:43:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae34e9b8_e96fc1bb",
+      "revId": "67170150b37fa2140936eb34eb2930a320a24a58",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
