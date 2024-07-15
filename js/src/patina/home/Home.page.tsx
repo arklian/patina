@@ -1,5 +1,6 @@
-import { Skeleton } from '@mantine/core'
+import { Skeleton, Title } from '@mantine/core'
 import styles from './Home.module.css'
+import { ImportantSection } from '@/patina/home/ImportantSection.tsx'
 
 export function HomePage() {
   return (
@@ -29,11 +30,13 @@ export function HomePage() {
       </div>
 
       <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={50} width="40%" mb="xl" />
+        <Title className={styles.importantSectionTitle}>
+          {'Why is This Important?'}
+        </Title>
       </div>
 
       <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={400} width="60%" mb="xl" />
+        <ImportantSection />
       </div>
 
       <div className={styles.skeletonStyle}>
