@@ -1,7 +1,7 @@
 import { Skeleton } from '@mantine/core'
 import styles from './Home.module.css'
 
-export function Home() {
+export function HomePage() {
   return (
     <>
       <div className={styles.skeletonStyle}>

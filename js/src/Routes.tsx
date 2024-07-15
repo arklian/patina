@@ -1,4 +1,5 @@
-import { PersonalRoutes } from './personal/PersonalRoutes.tsx'
+import { PatinaRoutes } from '@/patina/Patina.routes.tsx'
+import { PersonalRoutes } from './personal/Personal.routes.tsx'
 import { PatinaPage } from '@/patina/Patina.page.tsx'
 
 export const Routes = [
@@ -7,6 +8,7 @@ export const Routes = [
     path: '/',
     description: 'Home',
     element: <PatinaPage />,
+    children: PatinaRoutes,
   },
   // Secondary path for hosting our personal websites
   {

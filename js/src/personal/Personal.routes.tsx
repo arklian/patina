@@ -1,5 +1,5 @@
-import { AmandaRoutes } from './amanda/AmandaRoutes.tsx'
-import { BryanRoutes } from './bryan/BryanRoutes.tsx'
+import { AmandaRoutes } from './amanda/Amanda.routes.tsx'
+import { BryanRoutes } from './bryan/Bryan.routes.tsx'
 import { HaokingPage } from './haoking/Haoking.page.tsx'
 import { HenryPage } from './_henry/Henry.page.tsx'
 import { HomePage } from '../pages/Home.page.tsx'
@@ -20,7 +20,7 @@ import { Contact as MannyContactMePage } from '@/personal/manny/pages/Contact.ts
  * element: <homepage element />,
  * -----------------------------------------------------------------
  * If you have multiple sites on your homepage, please put them all as children
- * of a single element (check personal/bryan/BryanRoutes.tsx for reference)
+ * of a single element (check personal/bryan/Bryan.routes.tsx for reference)
  * *simply remove the 'element: <BryanPage />' line if you have no global page framework
  */
 export const PersonalRoutes = [
