@@ -11,3 +11,7 @@
   line-height: 130%;
   padding-bottom: 48px;
 }
+
+.homeContainer {
+  max-width: rem(1200px);
+}
