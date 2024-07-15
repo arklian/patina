@@ -1,6 +1,7 @@
 import { MantineProvider, Title, Text, Image } from '@mantine/core'
 import { theme, resolver } from '../../theme.ts'
 import { imageUrls } from '../../assets/images.ts'
+import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
 
 export function Volunteer() {
@@ -18,6 +19,28 @@ export function Volunteer() {
           </Text>
         </div>
         <Image className={styles.volunteerImg} src={imageUrls.mentorship.src} />
+      </section>
+      <section className={styles.grid}>
+        <VolunteerCard
+          title="Social Media"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          type="Remote/In-person"
+        />
+        <VolunteerCard
+          title="Social Media"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          type="Remote/In-person"
+        />
+        <VolunteerCard
+          title="Social Media"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          type="Remote/In-person"
+        />
+        <VolunteerCard
+          title="Social Media"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          type="Remote/In-person"
+        />
       </section>
     </MantineProvider>
   )
