@@ -1,4 +1,4 @@
-import { Skeleton } from '@mantine/core'
+import { Skeleton, Title } from '@mantine/core'
 import styles from './Home.module.css'
 
 export function HomePage() {
@@ -7,11 +7,14 @@ export function HomePage() {
       <div className={styles.skeletonStyle}>
         <Skeleton animate={false} height={70} width="100%" mb="xl" />
       </div>
-
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={600} width="100%" mb="xl" />
+      <div className={styles.hero}>
+        <div>
+          <Title className={styles.hero_title}>
+            {'Empowering AANHPI leaders to '}
+            <span className={styles.title_teal}>{'make their mark.'}</span>
+          </Title>
+        </div>
       </div>
-
       <div className={styles.skeletonStyle}>
         <Skeleton animate={false} height={50} width="40%" mb="xl" />
       </div>
