@@ -107,7 +107,7 @@ if [ $pushToGerrit = 1 ]; then
   # loop through changes, call workflow (pnpm run test) on each gerrit CR instead of just most recent CR
   for (( idx=${#changes[@]}; idx>0; idx--));
   do
-    commitId=$(git rev-parse HEAD~${idx})
+    commitId=$(git rev-parse HEAD~${idx-1})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
     echo "   -- commitId: $commitId"
 #    git push origin ${commitId}:refs/heads/CICD/${changes[idx]}
