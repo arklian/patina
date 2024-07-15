@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
