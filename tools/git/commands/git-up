@@ -104,10 +104,12 @@ if [ $pushToGerrit = 1 ]; then
   [ $v = 1 ] && echo "----- Running Github Actions"
   #gh workflow run example-action -f changeId=${changes[1]} #only runs workflow (pnpm run test)on most recent commit
 
+  echo "length of changes: ${#changes[@]}"
+  echo "changes[-1] (should be commit 1 change id): ${changes[-1]}"
   # loop through changes, call workflow (pnpm run test) on each gerrit CR instead of just most recent CR
   for (( idx=${#changes[@]}; idx>0; idx--));
   do
-    commitId=$(git rev-parse HEAD~${idx}-1)
+    commitId=$(git rev-parse HEAD~${idx-1})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
     echo "   -- commitId: $commitId"
 #    git push origin ${commitId}:refs/heads/CICD/${changes[idx]}
