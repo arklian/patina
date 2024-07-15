@@ -74,12 +74,6 @@ changes=($(git log HEAD~"$commitsAhead"..HEAD | grep "Change-Id:" | awk '{sub(/C
 [ $v = 1 ] && echo "All Change-Ids (Newest changes on top):"
 [ $v = 1 ] && for x in $changes; do echo "-- $x";done
 
-for (( idx=${changes[@]}-1 ; idx>=0; idx--));
-  do
-    commitId=$(git rev-parse HEAD~${idx})
-    [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
-  done
-
 ####################################################################################################
 # Update Gerrit
 ####################################################################################################
@@ -111,13 +105,13 @@ if [ $pushToGerrit = 1 ]; then
   #gh workflow run example-action -f changeId=${changes[1]} #only runs workflow (pnpm run test)on most recent commit
 
   # loop through changes, call workflow (pnpm run test) on each gerrit CR instead of just most recent CR
-#  for (( idx=${changes[@]}-1 ; idx>=0; idx--));
-#  do
-#    commitId=$(git rev-parse HEAD~${idx})
-#    [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
+  for (( idx=${#changes[@]}; idx>0; idx--));
+  do
+    commitId=$(git rev-parse HEAD~${idx})
+    [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
 #    git push origin ${commitId}:refs/heads/CICD/${changes[idx]}
 #    gh workflow run example-action -f changeId=${changes[idx]}
-#  done
+  done
   # loop through changes, create new branch on github for earliest/oldest commit, only push this commit,
   # make another branch for second earliest commit, push second earliest commit and its predecessors to this branch
   # until no more changes
