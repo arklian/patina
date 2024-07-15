@@ -1,5 +1,6 @@
 import { PersonalRoutes } from './personal/PersonalRoutes.tsx'
 import { PatinaPage } from '@/patina/Patina.page.tsx'
+import { Volunteer } from '@/patina/involved/volunteer/Volunteer.page.tsx'
 
 export const Routes = [
   // Base path for hosting the patina website
@@ -13,5 +14,10 @@ export const Routes = [
     path: '/personal',
     description: 'Personal Websites',
     children: PersonalRoutes,
+  },
+  {
+    path: '/volunteer',
+    description: 'Volunteering Opportunities',
+    element: <Volunteer />,
   },
 ]
