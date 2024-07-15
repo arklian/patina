@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bc5d5c5_d02a2d4e",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-15T20:21:23Z",
+      "side": 1,
+      "message": "remove lines that are commented out unless they are needed for later",
+      "revId": "7717fdaf562453fce081ccf2c1844081194fef03",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
