@@ -1,13 +1,13 @@
 .card{
   display: flex;
   color: white;
-  padding: 64px 48px 0px 48px;
+  padding: rem(64px) rem(48px) rem(0px) rem(48px);
 
 }
 
 .border{
   display: flex;
-  border: 1px solid #5C5F66;
+  border: rem(1px) solid var(--mantine-color-dark-4);
   border-radius: rem(5px);
 }
 
@@ -27,7 +27,6 @@
 .title{
   font-size: large;
   align-self: stretch;
-  font-family: Figtree;
   font-style: normal;
   font-weight: 600;
   line-height: 155%;
@@ -36,7 +35,7 @@
 
 .text{
   display: flex;
-  min-width: 169px;
+  min-width: rem(169px);
   justify-content: space-between;
   flex: 1 0 0;
 }
@@ -51,7 +50,6 @@
 .anchor{
   color: white;
   align-self: stretch;
-  font-family: Figtree;
   font-style: normal;
   line-height: 155%;
   font-weight: 400;
