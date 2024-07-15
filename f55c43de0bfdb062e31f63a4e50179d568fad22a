@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d7c85b0_2afe1194",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "We generally want to avoid using vw/vh.",
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3bd8a97_43a09a39",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "This should be unnecessary now that it\u0027s added to the Theme.",
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5b8c2cd_71ea871a",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "these should be using mantine variables. See theme.ts",
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "293708a5_f0a54322",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "You should add css to the list of files that Prettier autoformats in IntelliJ",
+      "range": {
+        "startLine": 36,
+        "startChar": 8,
+        "endLine": 36,
+        "endChar": 13
+      },
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f50f411_a3d90d2e",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "Remote these links to import the font, as they\u0027re added in index.html and set by the Mantine theme automatically.",
+      "range": {
+        "startLine": 11,
+        "startChar": 12,
+        "endLine": 11,
+        "endChar": 15
+      },
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9d5c7ba_85dca6b1",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "This should likely be using the BackgroundImage component",
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1de54f3_4bc0d96c",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T17:59:50Z",
+      "side": 1,
+      "message": "Background images shouldn\u0027t need alt text",
+      "revId": "f55c43de0bfdb062e31f63a4e50179d568fad22a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
