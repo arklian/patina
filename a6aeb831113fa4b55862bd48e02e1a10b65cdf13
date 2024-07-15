@@ -51,6 +51,23 @@
       "parentUuid": "a42f1599_89c7cb36",
       "revId": "a6aeb831113fa4b55862bd48e02e1a10b65cdf13",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "875701c9_ec4f8e69",
+        "filename": "js/src/patina/home/Cards.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T21:43:11Z",
+      "side": 1,
+      "message": "nit: rem(0px) should just be 0",
+      "revId": "a6aeb831113fa4b55862bd48e02e1a10b65cdf13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
