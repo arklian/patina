@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+// Todo: delete this after the initiatives section is pulled form Mali
+.temp {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 38px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.aboutText {
+  color: var(--mantine-color-gray-1);
+  font-size: rem(34px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 24px;
+}
