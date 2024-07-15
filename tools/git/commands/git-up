@@ -110,8 +110,8 @@ if [ $pushToGerrit = 1 ]; then
   for (( idx=${#changes[@]}; idx>0; idx--));
   do
     echo "idx: $idx"
-    tmp=idx-1
-    echo: "tmp: $tmp"
+    tmp=${idx-1}
+    echo "tmp: $tmp"
     commitId=$(git rev-parse HEAD~${tmp})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
     echo "   -- commitId: $commitId"
