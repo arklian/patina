@@ -105,7 +105,7 @@ if [ $pushToGerrit = 1 ]; then
   #gh workflow run example-action -f changeId=${changes[1]} #only runs workflow (pnpm run test)on most recent commit
 
   # loop through changes, call workflow (pnpm run test) on each gerrit CR instead of just most recent CR
-  for (( idx=${#changes[@]}-1; idx>0; idx--));
+  for (( idx=${#changes[@]}; idx>0; idx--));
   do
     commitId=$(git rev-parse HEAD~${idx})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
