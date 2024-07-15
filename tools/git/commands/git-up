@@ -109,12 +109,12 @@ if [ $pushToGerrit = 1 ]; then
   # loop through changes, call workflow (pnpm run test) on each gerrit CR instead of just most recent CR
   for (( idx=${#changes[@]}; idx>0; idx--));
   do
-    tmp=$(( $idx - 1 ))
-    commitId=$(git rev-parse HEAD~${tmp})
+    commitIdOffset=$(( $idx - 1 ))
+    commitId=$(git rev-parse HEAD~${commitIdOffset})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
     echo "   -- commitId: $commitId"
-#    git push origin ${commitId}:refs/heads/CICD/${changes[idx]}
-#    gh workflow run example-action -f changeId=${changes[idx]}
+    git push origin ${commitId}:refs/heads/ci/${changes[idx]}
+    gh workflow run example-action -f changeId=${changes[idx]}
   done
   # loop through changes, create new branch on github for earliest/oldest commit, only push this commit,
   # make another branch for second earliest commit, push second earliest commit and its predecessors to this branch
