@@ -109,7 +109,7 @@ if [ $pushToGerrit = 1 ]; then
     commitId=$(git rev-parse HEAD~${commitIdOffset})
     [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
     git push origin ${commitId}:refs/heads/ci/${changes[idx]}
-    gh workflow run example-action -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
+    gh workflow run example-action --ref=cicdtest -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
 fi
 ####################################################################################################
