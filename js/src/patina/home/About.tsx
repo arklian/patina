@@ -13,8 +13,11 @@ export function About() {
           'Wherever you are on your career and allyship journey, we’re here to boldly celebrate what makes you unique—your patina.'
         }
       </Text>
-      <Button variant={'white'} c={'black'} h={'43px'} w={'auto'}>
-        {'More about us'}
+      <Button className={styles.moreButton} variant={'white'} c={'black'}>
+        <Text size="lg" fw={600}>
+          {' '}
+          {'More about us'}{' '}
+        </Text>
       </Button>
     </div>
   )
