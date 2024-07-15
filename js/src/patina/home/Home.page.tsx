@@ -1,4 +1,5 @@
 import { Skeleton } from '@mantine/core'
+import { Initiatives } from './Initiatives'
 import styles from './Home.module.css'
 
 export function HomePage() {
@@ -15,9 +16,10 @@ export function HomePage() {
       <div className={styles.skeletonStyle}>
         <Skeleton animate={false} height={50} width="40%" mb="xl" />
       </div>
-
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={900} width="80%" mb="xl" />
+      {/*this double initiative thing will be replace by <About></About>*/}
+      <div className={styles.aboutInit}>
+        <Initiatives></Initiatives>
+        <Initiatives></Initiatives>
       </div>
 
       <div className={styles.skeletonStyle}>

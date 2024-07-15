@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  padding: rem(64px) rem(48px);
+  flex-direction: column;
+  border: 1px solid #5C5F66;
+  background: #25262B;
+}
+
+.title{
+  padding-left: rem(48px);
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
