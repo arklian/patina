@@ -4,10 +4,7 @@ import styles from './Experience.module.css'
 
 export function Experience() {
   return (
-    <div
-      className={styles.experience}
-      id="experience"
-    >
+    <div className={styles.experience} id="experience">
       <div className={styles.titleContain}>
         <Title>{'My Experience'}</Title>
         <div className={styles.titleLine}></div>
@@ -19,33 +16,17 @@ export function Experience() {
         placement="right"
         radius={'xs'}
       >
-        <Tabs.Panel
-          pl={'25px'}
-          value="Patina"
-          className={styles.tabPanel}
-        >
-          <Text
-            fw={700}
-            size={'xl'}
-          >
+        <Tabs.Panel pl={'25px'} value="Patina" className={styles.tabPanel}>
+          <Text fw={700} size={'xl'}>
             {'Software Engineering Intern @ Patina Network'}
           </Text>
-          <Text
-            mt={'3px'}
-            size={'xs'}
-          >
+          <Text mt={'3px'} size={'xs'}>
             {'June 2024 - Present'}
           </Text>
           <List
             mt={'20'}
             spacing={'xs'}
-            icon={
-              <IconPoint
-                size={15}
-                stroke={'1'}
-                color={'cyan'}
-              />
-            }
+            icon={<IconPoint size={15} stroke={'1'} color={'cyan'} />}
           >
             <List.Item>
               <Text>
@@ -78,33 +59,17 @@ export function Experience() {
           </List>
         </Tabs.Panel>
 
-        <Tabs.Panel
-          pl={'25px'}
-          value="Munch"
-          className={styles.tabPanel}
-        >
-          <Text
-            fw={700}
-            size={'xl'}
-          >
+        <Tabs.Panel pl={'25px'} value="Munch" className={styles.tabPanel}>
+          <Text fw={700} size={'xl'}>
             {'Software Engineering Intern @ Munch Insights'}
           </Text>
-          <Text
-            mt={'3px'}
-            size={'xs'}
-          >
+          <Text mt={'3px'} size={'xs'}>
             {'Nov. 2023 – May 2024'}
           </Text>
           <List
             mt={'20'}
             spacing={'xs'}
-            icon={
-              <IconPoint
-                size={15}
-                stroke={'1'}
-                color={'cyan'}
-              />
-            }
+            icon={<IconPoint size={15} stroke={'1'} color={'cyan'} />}
           >
             <List.Item>
               <Text>
@@ -134,33 +99,17 @@ export function Experience() {
           </List>
         </Tabs.Panel>
 
-        <Tabs.Panel
-          pl={'2vw'}
-          value="placeholder"
-          className={styles.tabPanel}
-        >
-          <Text
-            fw={700}
-            size={'xl'}
-          >
+        <Tabs.Panel pl={'2vw'} value="placeholder" className={styles.tabPanel}>
+          <Text fw={700} size={'xl'}>
             {'Placeholder @ Placeholder'}
           </Text>
-          <Text
-            mt={'3px'}
-            size={'xs'}
-          >
+          <Text mt={'3px'} size={'xs'}>
             {'Nov. 2023 – May 2024'}
           </Text>
           <List
             mt={'20'}
             spacing={'xs'}
-            icon={
-              <IconPoint
-                size={15}
-                stroke={'1'}
-                color={'cyan'}
-              />
-            }
+            icon={<IconPoint size={15} stroke={'1'} color={'cyan'} />}
           >
             <List.Item>
               <Text>
@@ -194,22 +143,13 @@ export function Experience() {
         </Tabs.Panel>
 
         <Tabs.List className={styles.tabsList}>
-          <Tabs.Tab
-            value="Patina"
-            className={styles.verticalTab}
-          >
+          <Tabs.Tab value="Patina" className={styles.verticalTab}>
             <Text size={'md'}>{'Patina Network'}</Text>
           </Tabs.Tab>
-          <Tabs.Tab
-            value="Munch"
-            className={styles.verticalTab}
-          >
+          <Tabs.Tab value="Munch" className={styles.verticalTab}>
             <Text size={'md'}>{'Munch Insights'}</Text>
           </Tabs.Tab>
-          <Tabs.Tab
-            value="placeholder"
-            className={styles.verticalTab}
-          >
+          <Tabs.Tab value="placeholder" className={styles.verticalTab}>
             <Text size={'md'}>{'PlaceHolder'}</Text>
           </Tabs.Tab>
         </Tabs.List>
