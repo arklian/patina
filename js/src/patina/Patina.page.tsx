@@ -4,7 +4,11 @@ import { theme, resolver } from './theme.ts'
 
 export function PatinaPage() {
   return (
-    <MantineProvider theme={theme} cssVariablesResolver={resolver}>
+    <MantineProvider
+      theme={theme}
+      cssVariablesResolver={resolver}
+      forceColorScheme="dark"
+    >
       <Outlet />
     </MantineProvider>
   )
