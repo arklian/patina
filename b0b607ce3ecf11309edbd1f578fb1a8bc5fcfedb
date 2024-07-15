@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63c566d5_a03f7e7f",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 15
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:13:25Z",
+      "side": 1,
+      "message": "should have Todo: in front for things that should be fixed.",
+      "revId": "b0b607ce3ecf11309edbd1f578fb1a8bc5fcfedb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "900774b5_c0a1b461",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 15
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:13:25Z",
+      "side": 1,
+      "message": "nit: This empty element is unnecessary.",
+      "revId": "b0b607ce3ecf11309edbd1f578fb1a8bc5fcfedb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

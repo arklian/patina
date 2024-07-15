@@ -16,6 +16,24 @@
       "message": "We should use mantine\u0027s colors\u0027s variables.",
       "revId": "af2ff118a4e10e25d8607a24096ed17aab817251",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a952563_cb213c8d",
+        "filename": "js/src/patina/home/Initiatives.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:13:25Z",
+      "side": 1,
+      "message": "We can do a pass later to fix these up after I talk with Celina",
+      "parentUuid": "6575818f_56e10e57",
+      "revId": "af2ff118a4e10e25d8607a24096ed17aab817251",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
