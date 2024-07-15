@@ -1,29 +1,29 @@
-.card{
+.card {
   display: flex;
   color: white;
   padding: rem(64px) rem(0px) rem(0px) rem(0px);
 }
 
-.border{
+.border {
   display: flex;
   border: rem(1px) solid var(--mantine-color-dark-4);
   border-radius: rem(5px);
 }
 
-.text_container{
+.text_container {
   display: flex;
   flex-direction: column;
   padding: rem(10px) rem(16px) rem(10px) rem(16px);
   height: rem(222px);
 }
 
-.image{
+.image {
   height: rem(222px);
   width: rem(222px);
   align-items: flex-start;
 }
 
-.title{
+.title {
   font-size: large;
   align-self: stretch;
   font-style: normal;
@@ -32,21 +32,21 @@
   padding-bottom: rem(12px);
 }
 
-.text{
+.text {
   display: flex;
   min-width: rem(169px);
   justify-content: space-between;
   flex: 1 0 0;
 }
 
-.details{
+.details {
   align-self: stretch;
   font-weight: 400;
   font-style: normal;
   line-height: 155%;
 }
 
-.anchor{
+.anchor {
   color: white;
   align-self: stretch;
   font-style: normal;
