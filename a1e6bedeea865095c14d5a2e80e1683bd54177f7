@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "292f58bc_b66659be",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:11:26Z",
+      "side": 1,
+      "message": "Add a todo here with what should change later.\n`# Todo: Resolve this when xxx`",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3de46f3_7b47fa3f",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:11:26Z",
+      "side": 1,
+      "message": "We can do a pass to fix all the colors once I talk with Celina about it.",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c51b8c1_6f7d5f64",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:11:26Z",
+      "side": 1,
+      "message": "Does one of the titles work here?",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72aa0693_8ccc5f44",
+        "filename": "js/src/patina/home/About.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-15T18:11:26Z",
+      "side": 1,
+      "message": "You can likely use the flex component here.",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
