@@ -10,7 +10,7 @@ on:
       branch:
         description: 'test inpu'
         required: true
-        default: 'main''
+        default: 'main'
 
 jobs:
   testing:
