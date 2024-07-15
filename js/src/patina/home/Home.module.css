@@ -19,6 +19,6 @@
 .aboutInit {
   display: flex;
   align-content: stretch;
-  column-gap: 4%;
-  padding: 0 48px 0 48px;
+  column-gap: rem(34px); /* TODO: add this styling in inner elements */
+  padding: rem(0) rem(48px) rem(0) rem(48px);
 }
