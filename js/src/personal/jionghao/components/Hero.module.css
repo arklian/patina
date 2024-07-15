@@ -1,23 +1,24 @@
 .hero {
   display: flex;
   justify-content: flex-start;
-  padding-left: 15vw;
-  padding-top: 15vh;
-  margin-bottom: 20vh;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
 }
 
-.title{
+.title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 750;
-  letter-spacing: rem(-2px);
-  line-height: 9vh;
+  letter-spacing: -2px;
+  line-height: 5rem;
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: 50px;
   }
 }
 
-.description{
-  line-height: 3vh;
+.description {
+  line-height: 1.8rem;
 }

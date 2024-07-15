@@ -4,19 +4,32 @@
   width: 70%;
   justify-content: space-around;
   align-content: flex-start;
-  margin-bottom: 20vh;
-  padding-top: 10vh;
+  margin-bottom: 10rem;
+  padding-top: 10rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.aboutDesc{
-  max-width: 50%;
+.aboutDesc {
+  max-width: 60%;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
 }
 
 .titleLine {
   margin-left: 30px;
   width: 300px;
   height: 0.5px;
-  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  background-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  );
 }
 
 .titleContainer {
@@ -25,6 +38,34 @@
   margin-bottom: 3vh;
 }
 
-.title{
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white))
+.title {
+  font-size: 45px;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.aboutImageDiv {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.aboutImage {
+  width: 300px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    width: 80%;
+  }
+}
+
+.aboutText {
+  margin-bottom: 1rem;
 }
