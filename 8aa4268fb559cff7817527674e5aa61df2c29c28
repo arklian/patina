@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f51e2b50_e699dbe7",
+        "filename": ".github/workflows/test-action.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-15T16:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b01c1aa6_65820aae",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f2bd43cf_efefc53e",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-13T22:58:50Z",
       "side": 1,
       "message": "This should no longer be your name, but what service/topic you\u0027re updating.\nIn this case, it could be like `Git` or `CI/CD`.\n\nAlso it reads a little strange. `Add example-action for CI/CD to git-up`",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63fa6ffe_3f1c4bad",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-15T16:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2bd43cf_efefc53e",
       "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "48e4a734_a2f9eb8a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-15T16:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "345ed55e_da3efec3",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc3faf97_0c784687",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-07-13T22:58:50Z",
       "side": 1,
       "message": "Can you make a story to add a check to make sure the user has gh installed?",
+      "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6a80d29_5998ba66",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-15T16:42:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc3faf97_0c784687",
       "revId": "8aa4268fb559cff7817527674e5aa61df2c29c28",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
