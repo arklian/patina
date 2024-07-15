@@ -16,6 +16,24 @@
       "message": "use this rem() function to be consistent",
       "revId": "2451a914d3d834fcc38943ad0a4da2d38da9d501",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61e7974a_c12a7821",
+        "filename": "js/src/personal/jionghao/components/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T20:01:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fafba1d6_dbda5e63",
+      "revId": "2451a914d3d834fcc38943ad0a4da2d38da9d501",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

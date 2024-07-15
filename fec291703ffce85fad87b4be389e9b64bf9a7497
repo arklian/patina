@@ -16,6 +16,24 @@
       "message": "You should stick with having the media query in each class like you do above with .aboutImage.",
       "revId": "fec291703ffce85fad87b4be389e9b64bf9a7497",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3434aae_38d6426f",
+        "filename": "js/src/personal/jionghao/components/About.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T20:01:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d2ceb3a1_c389a5c8",
+      "revId": "fec291703ffce85fad87b4be389e9b64bf9a7497",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
