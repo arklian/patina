@@ -3,6 +3,7 @@ import { Initiatives } from './Initiatives'
 import { About } from './About.tsx'
 import { ImportantSection } from '@/patina/home/ImportantSection.tsx'
 import styles from './Home.module.css'
+import { GetInvolved } from '@/patina/home/GetInvolved.tsx'
 
 export function HomePage() {
   return (
@@ -27,13 +28,7 @@ export function HomePage() {
         <Initiatives></Initiatives>
       </div>
 
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={50} width="40%" mb="xl" />
-      </div>
-
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={500} width="80%" mb="xl" />
-      </div>
+      <GetInvolved />
 
       <div className={styles.skeletonStyle}>
         <Title className={styles.importantSectionTitle}>
