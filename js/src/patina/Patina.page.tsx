@@ -1,5 +1,6 @@
-import { MantineProvider } from '@mantine/core'
+import { MantineProvider, Stack } from '@mantine/core'
 import { Outlet } from 'react-router-dom'
+import { NavigationHeader } from '@/patina/NavigationHeader.tsx'
 import { theme, resolver } from './theme.ts'
 
 export function PatinaPage() {
@@ -9,7 +10,10 @@ export function PatinaPage() {
       cssVariablesResolver={resolver}
       forceColorScheme="dark"
     >
-      <Outlet />
+      <Stack>
+        <NavigationHeader />
+        <Outlet />
+      </Stack>
     </MantineProvider>
   )
 }
