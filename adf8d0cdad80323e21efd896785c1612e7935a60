@@ -16,6 +16,24 @@
       "message": "Does this need to change too?",
       "revId": "adf8d0cdad80323e21efd896785c1612e7935a60",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86cdafdb_e2caa728",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-15T19:20:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7dd41706_41b0f8f5",
+      "revId": "adf8d0cdad80323e21efd896785c1612e7935a60",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
