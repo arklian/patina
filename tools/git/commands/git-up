@@ -107,7 +107,8 @@ if [ $pushToGerrit = 1 ]; then
   for x in $changes:
   do
     echo "x: $x"
-    #gh workflow run example-action -f changeId=${x}
+    
+    gh workflow run example-action -f changeId=${x}
   done
 
 fi
