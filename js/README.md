@@ -28,4 +28,4 @@ See `package.json` for definitions.
 
 ### Other scripts
 
-- `prettier:write` – formats all files with Prettier
+- `prettier:write` – formats all files with Prettier  hello
