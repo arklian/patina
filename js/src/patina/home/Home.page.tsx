@@ -1,5 +1,6 @@
 import { Container, Skeleton, Title } from '@mantine/core'
 import { Initiatives } from './Initiatives'
+import { About } from './About.tsx'
 import styles from './Home.module.css'
 import { ImportantSection } from '@/patina/home/ImportantSection.tsx'
 
@@ -19,7 +20,7 @@ export function HomePage() {
       </div>
       {/*this double initiative thing will be replace by <About></About>*/}
       <div className={styles.aboutInit}>
-        <Initiatives></Initiatives>
+        <About />
         <Initiatives></Initiatives>
       </div>
 
