@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b009497_d40af054",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-15T20:26:48Z",
+      "side": 1,
+      "message": "@hjc77@cornell.edu also should we include screenshots of UI esp for CRs that are mainly just css changes?",
+      "revId": "a6aeb831113fa4b55862bd48e02e1a10b65cdf13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a42f1599_89c7cb36",
+        "filename": "js/src/patina/home/About.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-15T20:26:48Z",
+      "side": 1,
+      "message": "@hjc77@cornell.edu did we ever decide on whether props that are plain css style properties should stay in the css file or nah? \n\nThis could be `\u003cText className\u003d{styles.moreButtonText}\u003e...` or the css could have `.moreButton text {...}`",
+      "revId": "a6aeb831113fa4b55862bd48e02e1a10b65cdf13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
