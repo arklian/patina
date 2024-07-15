@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   padding: rem(64px) rem(48px);
   flex-direction: column;
@@ -6,7 +6,7 @@
   background: var(--mantine-color-dark-6);
 }
 
-.title{
+.title {
   color: white;
   font-weight: bold;
   font-size: x-large;
