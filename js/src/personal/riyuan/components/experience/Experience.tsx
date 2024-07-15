@@ -5,16 +5,9 @@ import experienceStyles from './Experience.module.css'
 
 export function Experience() {
   return (
-    <div
-      id={'Experience'}
-      className={styles.container}
-    >
+    <div id={'Experience'} className={styles.container}>
       <Container className={experienceStyles.inner}>
-        <Title
-          className={styles.title}
-          ta="left"
-          mt={100}
-        >
+        <Title className={styles.title} ta="left" mt={100}>
           {'Experience'}
         </Title>
         <div className={experienceStyles.info}>
@@ -24,10 +17,7 @@ export function Experience() {
             }
           </Text>
           <div>
-            <Title
-              order={2}
-              pt={20}
-            >
+            <Title order={2} pt={20}>
               {'Experience'}
             </Title>
           </div>
