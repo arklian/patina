@@ -3,3 +3,35 @@
   justify-content: center;
   align-items: center;
 }
+
+.hero{
+  display: block;
+  height: 55vw;
+  background-color: #1a1b1e;
+  position: relative;
+}
+
+.hero_title{
+  font-family: "Figtree", sans-serif;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  color: white;
+  font-size: 5vw;
+  padding-left: 5vw;
+  width: 70%;
+  padding-bottom: 5vw;
+  text-shadow: 1px 1px 6px white;
+  z-index: 5;
+}
+
+.title_teal{
+  color: #4DFFB0;
+  z-index: 5;
+}
+
+.hero_image{
+  width: 65%;
+  height: auto;
+  float:right;
+}
