@@ -1,10 +1,10 @@
-import { Skeleton, Title } from '@mantine/core'
+import { Container, Skeleton, Title } from '@mantine/core'
 import styles from './Home.module.css'
 import { ImportantSection } from '@/patina/home/ImportantSection.tsx'
 
 export function HomePage() {
   return (
-    <>
+    <Container className={styles.homeContainer}>
       <div className={styles.skeletonStyle}>
         <Skeleton animate={false} height={70} width="100%" mb="xl" />
       </div>
@@ -42,6 +42,6 @@ export function HomePage() {
       <div className={styles.skeletonStyle}>
         <Skeleton animate={false} height={70} width="100%" mt="xl" />
       </div>
-    </>
+    </Container>
   )
 }
