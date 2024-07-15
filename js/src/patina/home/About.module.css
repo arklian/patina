@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  justify-content: center;
+  margin-right: rem(38px);
 }
 
 .aboutText {
   color: var(--mantine-color-gray-1);
-  font-size: rem(34px);
+  font-size: rem(32px);
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
   margin-bottom: 24px;
+}
+
+.moreButton{
+  margin-top: rem(40px);
+  height: rem(43px);
+  width: rem(169px);
 }
