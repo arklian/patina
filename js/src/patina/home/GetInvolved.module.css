@@ -1,0 +1,24 @@
+.involvedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(128px) 0;
+  gap: rem(48px);
+}
+
+.sectionHeader {
+  align-self: stretch;
+  color: var(--mantine-color-white, #fff);
+  text-align: center;
+  font-size: rem(28px);
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(40px);
+  width: 100%;
+}
