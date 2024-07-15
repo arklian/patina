@@ -1,7 +1,11 @@
 name: example-action
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      changeId:
+        description: 'Change-Id for Gerrit commit'
+        required: true
 env:
   RUN_LINK: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   BOT_PWD: ${{ secrets.BOT_PATINA_HTTP_PASSWORD }}
@@ -24,11 +28,11 @@ jobs:
           curl -u bot-patina:$BOT_PWD -X POST \
             -H "Content-Type: application/json" \
             -d '{"message": "Test passed: '"$RUN_LINK"'", "labels": { "Verified": 1 } }' \
-            https://gerrithub.io/a/changes/I2947181181094f046463b01bed06d97bc14490b5/revisions/current/review
+            https://gerrithub.io/a/changes/${{ github.event.inputs.changeId }}/revisions/current/review
       - working-directory: .github/workflows
         if: failure()
         run: |
           curl -u bot-patina:$BOT_PWD -X POST \
             -H "Content-Type: application/json" \
             -d '{"message": "Test failed: '"$RUN_LINK"'", "labels": { "Verified": -1 } }' \
-            https://gerrithub.io/a/changes/I2947181181094f046463b01bed06d97bc14490b5/revisions/current/review
+            https://gerrithub.io/a/changes/${{ github.event.inputs.changeId }}/revisions/current/review
