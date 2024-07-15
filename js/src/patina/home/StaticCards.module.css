@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  padding: rem(32px) rem(16px);
+  flex-direction: column;
+  align-items: center;
+  max-width: rem(400px);
+  text-align: center;
+  gap: rem(16px);
+  flex: 1 0 0;
+  border-radius: rem(16px);
+  border: 1px solid var(--mantine-color-dark-3, #5c5f66);
+  background: var(--mantine-color-dark-6, #25262b);
+  box-shadow:
+    0px rem(1px) rem(2px) 0px rgba(0, 0, 0, 0.1),
+    0px rem(1px) rem(3px) 0px rgba(0, 0, 0, 0.05);
+}
+
+.Card h3 {
+  margin-bottom: rem(10px);
+  color: white;
+}
+
+.cardImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  margin-bottom: rem(10px);
+  width: rem(100px);
+  height: rem(100px);
+}
+
+.cardText {
+  margin-top: 0;
+  margin-bottom: rem(10px);
+  color: #fff;
+}
+
+.cardButton {
+  display: flex;
+  padding: rem(10px) rem(3px);
+  justify-content: center;
+  align-items: center;
+  gap: rem(10px);
+  align-self: stretch;
+  border: 1px solid var(--mantine-color-white, #fff);
+  background: var(--mantine-color-dark-4, #373a40);
+  color: #fff;
+}
