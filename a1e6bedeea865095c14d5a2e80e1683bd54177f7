@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1759325c_7b303bd7",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T18:24:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "292f58bc_b66659be",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f3de46f3_7b47fa3f",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-15T18:11:26Z",
       "side": 1,
       "message": "We can do a pass to fix all the colors once I talk with Celina about it.",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d477b978_58425f87",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T18:24:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3de46f3_7b47fa3f",
       "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d12ee7d9_55d84f1a",
+        "filename": "js/src/patina/home/About.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T18:24:34Z",
+      "side": 1,
+      "message": "It probably works but Im just waiting on Mali\u0027s changes so I can really change it. For now this is essentially a placeholder style from Figma.",
+      "parentUuid": "8c51b8c1_6f7d5f64",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "72aa0693_8ccc5f44",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-07-15T18:11:26Z",
       "side": 1,
       "message": "You can likely use the flex component here.",
+      "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2d17674_57cde61a",
+        "filename": "js/src/patina/home/About.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T18:24:34Z",
+      "side": 1,
+      "message": "having flex here would mean we use the tailwind inline css style instead of styling inside the css file.",
+      "parentUuid": "72aa0693_8ccc5f44",
       "revId": "a1e6bedeea865095c14d5a2e80e1683bd54177f7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
