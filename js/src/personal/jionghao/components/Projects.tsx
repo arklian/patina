@@ -3,22 +3,10 @@ import styles from './Work.module.css'
 
 export function Projects() {
   return (
-    <a
-      className={styles.clickable}
-      href={'http://google.com'}
-    >
-      <Paper
-        className={styles.project}
-        withBorder
-        radius={'lg'}
-        shadow={'md'}
-      >
+    <a className={styles.clickable} href={'http://google.com'}>
+      <Paper className={styles.project} withBorder radius={'lg'} shadow={'md'}>
         <div className={styles.projectContent}>
-          <Title
-            className={styles.projectTitle}
-            size={'25px'}
-            mb={'sm'}
-          >
+          <Title className={styles.projectTitle} size={'25px'} mb={'sm'}>
             {'Project 1'}
           </Title>
           <Text>

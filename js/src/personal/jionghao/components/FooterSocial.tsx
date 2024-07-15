@@ -16,31 +16,19 @@ export function FooterSocial() {
           justify="space-between"
           wrap="nowrap"
         >
-          <ActionIcon
-            size="lg"
-            color="gray"
-            variant="subtle"
-          >
+          <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandLinkedin
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon
-            size="lg"
-            color="gray"
-            variant="subtle"
-          >
+          <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandGithub
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon
-            size="lg"
-            color="gray"
-            variant="subtle"
-          >
+          <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandInstagram
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
