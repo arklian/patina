@@ -33,6 +33,24 @@
       "message": "how did you get this specific ratio? \n\nI would recommend anything magical like this should get its own const variable to make it easier to read what it does",
       "revId": "4cd6702119c179513c897bad5ff5a6035e8db366",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d17c143c_66d68473",
+        "filename": "js/src/patina/home/Cards.tsx",
+        "patchSetId": 13
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-15T18:10:55Z",
+      "side": 1,
+      "message": "I ended up getting rid of it because I don\u0027t need it. Aspect Ratio itself is necessary for making the image sizes consistent.",
+      "parentUuid": "e06538c8_1a44e979",
+      "revId": "4cd6702119c179513c897bad5ff5a6035e8db366",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
