@@ -20,5 +20,5 @@
   display: flex;
   align-content: stretch;
   column-gap: rem(34px); /* TODO: add this styling in inner elements */
-  padding: rem(0) rem(48px) rem(0) rem(48px);
+  padding: rem(0) rem(48px);
 }
