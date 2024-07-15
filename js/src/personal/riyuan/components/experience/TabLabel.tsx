@@ -7,10 +7,7 @@ type TabLabelProps = {
 }
 
 export const TabLabel = ({ value, label }: TabLabelProps) => (
-  <Tabs.Tab
-    value={value}
-    className={styles.verticalTab}
-  >
+  <Tabs.Tab value={value} className={styles.verticalTab}>
     <Text size={'md'}>{label}</Text>
   </Tabs.Tab>
 )

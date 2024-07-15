@@ -17,13 +17,7 @@ const links = [
 
 export function FooterCentered() {
   const socials = links.map((link) => (
-    <Anchor
-      c="dimmed"
-      key={link.label}
-      href={link.link}
-      lh={1}
-      size="sm"
-    >
+    <Anchor c="dimmed" key={link.label} href={link.link} lh={1} size="sm">
       {link.label}
     </Anchor>
   ))
@@ -33,36 +27,20 @@ export function FooterCentered() {
       <div className={classes.inner}>
         <Group className={classes.links}>{socials}</Group>
 
-        <Group
-          gap="xs"
-          justify="flex-end"
-          wrap="nowrap"
-        >
-          <ActionIcon
-            size="lg"
-            variant="default"
-            radius="xl"
-          >
+        <Group gap="xs" justify="flex-end" wrap="nowrap">
+          <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandTwitter
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon
-            size="lg"
-            variant="default"
-            radius="xl"
-          >
+          <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandYoutube
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon
-            size="lg"
-            variant="default"
-            radius="xl"
-          >
+          <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandInstagram
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}

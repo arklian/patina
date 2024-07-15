@@ -47,11 +47,7 @@ export function TabGroup() {
     >
       <Tabs.List>
         {tabData.map((tab) => (
-          <TabLabel
-            key={tab.value}
-            value={tab.value}
-            label={tab.label}
-          />
+          <TabLabel key={tab.value} value={tab.value} label={tab.label} />
         ))}
       </Tabs.List>
       {tabData.map((tab) => (
