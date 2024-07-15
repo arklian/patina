@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d3884f7_da677dcf",
+        "filename": "js/src/patina/home/Home.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T16:56:08Z",
+      "side": 1,
+      "message": "I agree, this is just the placeholders at the moment.",
+      "parentUuid": "347b29e7_ea163e60",
+      "revId": "56de614d9df86baa7129417ffd2c687360d8006d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8cd4bcf1_c663c22d",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-12T21:00:11Z",
       "side": 1,
       "message": "Add a comment describing what this section is.\n\nImportant.tsx seems really undescriptive for someone browsing through the files.\nImportantSection.tsx perhaps.",
+      "revId": "56de614d9df86baa7129417ffd2c687360d8006d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a919a0b4_944ccaaf",
+        "filename": "js/src/patina/home/Important.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-15T16:56:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8cd4bcf1_c663c22d",
       "revId": "56de614d9df86baa7129417ffd2c687360d8006d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
