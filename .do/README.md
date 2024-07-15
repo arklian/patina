@@ -54,6 +54,37 @@ DigitalOcean with the production-ready files.
   - For the source directory put /js.
   - The autodeploy button can remain checked.
 
+# Set Up DNS to Point patinanetwork.org to the DigitalOcean App
 
+To point your domain `patinanetwork.org` to your DigitalOcean app, you need to configure your DNS 
+settings. Here's an updated guide tailored for setting up the DNS through DigitalOcean:
+
+## Step 1: Log into DigitalOcean
+1. Go to the [DigitalOcean Control Panel](https://cloud.digitalocean.com/login) and log in with your credentials.
+
+## Step 2: Add a Domain to DigitalOcean
+1. Navigate to the **App Platform** section in the left-hand menu.
+2. Click on the App you want to deploy. 
+3. Click on the **Setting** tab.
+4. Under Domain, Click on **Edit**.
+5. Click **+ ADD Domain**
+6. Enter `patinanetwork.org` in the domain field.
+7. Ensure it is under **We manage your domain**.
+8. Save these **NAMESERVER**.
+9. Click **ADD Domain**
+
+## Step 3: Update Nameservers on Square Space
+1. Log into your domain registrar account.
+2. Navigate to the DNS settings for `patinanetwork.org`.
+3. Locate the section to update the nameservers and replace the existing nameservers with the 
+following DigitalOcean nameservers:
+    - `ns1.digitalocean.com`
+    - `ns2.digitalocean.com`
+    - `ns3.digitalocean.com`
+4. Save the changes.
+
+## Step 5: Verify DNS Configuration
+1. After updating the DNS settings, it may take some time for the changes to propagate. This can 
+take anywhere from a few minutes to 48 hours.
 
 
