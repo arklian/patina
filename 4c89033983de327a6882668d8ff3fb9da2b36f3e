@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "777441af_02bb4709",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:12:21Z",
+      "side": 1,
+      "message": "It\u0027s good to add testing details to your commit messages, even if you don\u0027t want to bother with adding a linear link. It gets you in the good habit of explicitly testing your changes.\nTEST\u003dmanual \nRan locally and worked",
+      "revId": "4c89033983de327a6882668d8ff3fb9da2b36f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
