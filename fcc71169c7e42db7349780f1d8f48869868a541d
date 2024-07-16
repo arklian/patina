@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "610f1c88_5ce95c4f",
+        "filename": "js/src/patina/home/GetInvolved.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-16T17:52:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6af67bf8_cee957e7",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5f1fc1b6_769092cd",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-16T14:22:50Z",
       "side": 1,
       "message": "did this line get linted to this format?",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42d1cec7_ce1516bf",
+        "filename": "js/src/patina/home/GetInvolved.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-16T17:52:06Z",
+      "side": 1,
+      "message": "yes",
+      "parentUuid": "5f1fc1b6_769092cd",
       "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -65,6 +101,24 @@
       "writtenOn": "2024-07-16T16:27:10Z",
       "side": 1,
       "message": "In addition, it\u0027s usually good to avoid relative paths that go upward. Sibling relative paths are okay. (I still prefer absolute paths though)",
+      "parentUuid": "7b73e4e0_28d31364",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "beb066a5_2a522ed3",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-16T17:52:06Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "7b73e4e0_28d31364",
       "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
