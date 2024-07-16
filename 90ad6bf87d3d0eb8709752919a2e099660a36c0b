@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b41c60c5_4df800a0",
+        "filename": "js/src/patina/mentorship/apply/Apply.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-16T21:35:10Z",
+      "side": 1,
+      "message": "Planning on doing it as we have more detail on the component",
+      "parentUuid": "1448c572_3cae924d",
+      "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6e3dd8d1_7104fe7f",
         "filename": "js/src/patina/mentorship/gain/Gain.tsx",
         "patchSetId": 5
@@ -48,6 +66,24 @@
       "writtenOn": "2024-07-16T20:34:53Z",
       "side": 1,
       "message": "nit: this seems too generic and hard to know what it means",
+      "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d397fb1d_22ff0492",
+        "filename": "js/src/patina/mentorship/gain/Gain.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-16T21:35:10Z",
+      "side": 1,
+      "message": "Planning on doing it as we have more detail on the component",
+      "parentUuid": "6e3dd8d1_7104fe7f",
       "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
