@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9eb78aed_415b6774",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T20:55:21Z",
+      "side": 1,
+      "message": "I think ```blah``` creates a code block whereas we want an inline code snippet here with just `blah`? Verify in a markdown reader",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80c86d8a_7471e8df",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T20:55:21Z",
+      "side": 1,
+      "message": "these two describe the example-action.yml workflow i think, so let\u0027s indent it as such",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0968101_32731add",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T20:55:21Z",
+      "side": 1,
+      "message": "each branch contains just one commit i thought? Or you mean the feature branch the user is working from",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
