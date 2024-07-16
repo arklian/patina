@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: rem(48px);
+  padding-right: rem(48px);
+  padding-top: rem(64px);
+  width: rem(644px);
+  height: rem(493px);
+  border: rem(1px) solid var(--mantine-color-dark-3);
+  border-radius: rem(5px);
+  background: var(--mantine-color-dark-6);
+}
+
+.title {
+  font-size: large;
+  align-self: stretch;
+  font-style: normal;
+  font-weight: 600;
+  padding-bottom: rem(24px);
+  color: white;
+}
