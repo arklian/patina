@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  width: rem(562px);
+  height: rem(255px);
+}
+
+.textContainer {
+  padding-left: 50px;
+}
