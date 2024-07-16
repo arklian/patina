@@ -1,5 +1,5 @@
-name: example-action
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: pnpm-test
+run-name: ${{ github.actor }} is testing
 on:
   workflow_dispatch:
     inputs:
