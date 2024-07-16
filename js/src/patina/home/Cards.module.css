@@ -1,7 +1,7 @@
 .card {
   display: flex;
   color: white;
-  padding: rem(64px) rem(0px) rem(0px) rem(0px);
+  padding-top: rem(64px);
 }
 
 .border {
