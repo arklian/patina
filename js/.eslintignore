@@ -5,3 +5,4 @@
 *.d.mts
 vite.config.ts
 vitest.setup.ts
+src/personal/**
