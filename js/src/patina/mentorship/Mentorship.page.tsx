@@ -1,5 +1,9 @@
 import { Container, Skeleton, Stack } from '@mantine/core'
-
+import { About } from '@/patina/mentorship/components/about/About.tsx'
+import { Apply } from '@/patina/mentorship/components/apply/Apply.tsx'
+import { Gain } from '@/patina/mentorship/components/gain/Gain.tsx'
+import { Hero } from '@/patina/mentorship/components/hero/Hero.tsx'
+import { Impact } from '@/patina/mentorship/components/impact/Impact.tsx'
 /**
  * MentorshipPage component renders a mentorship page layout with multiple sections.
  * Each section is represented by a Skeleton component, which can be replaced with actual content.
@@ -10,11 +14,15 @@ export function MentorshipPage() {
       <Stack>
         {'Mentorship Page'}
         {/* Section 1 */}
-        <Skeleton animate={false} height={70} width="100%" mb="xl" />
+        <Hero />
         {/* Section 2 */}
-        <Skeleton animate={false} height={70} width="100%" mb="xl" />
+        <About />
         {/* Section 3 */}
-        <Skeleton animate={false} height={70} width="100%" mb="xl" />
+        <Gain />
+        {/* Section 4 */}
+        <Apply />
+        {/* Section 5 */}
+        <Impact />
       </Stack>
     </Container>
   )
