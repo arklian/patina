@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "568e7888_ed85a9ce",
+        "filename": ".github/workflows/example-action.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T14:13:52Z",
+      "side": 1,
+      "message": "do we need the default value if it is required?",
+      "revId": "7c8e5d4eff005cee67a4a9bc6efd69ad76a9f2b1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
