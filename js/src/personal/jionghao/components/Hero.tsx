@@ -7,16 +7,16 @@ export function Hero() {
       <Flex
         direction="column"
         align="flex-start"
-        gap={'xl'}
+        gap={'lg'}
       >
         <Text
-          size="xl"
+          size="24px"
           c={'cyan'}
         >
           {'Hi, my name is'}
         </Text>
         <Title
-          size="4rem"
+          size={'20px'}
           className={styles.title}
         >
           {'Jionghao Wu,'}

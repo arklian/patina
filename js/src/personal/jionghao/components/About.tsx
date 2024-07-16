@@ -13,7 +13,7 @@ export function About() {
           <div className={styles.titleLine}></div>
         </div>
         <div>
-          <Text>
+          <Text className={styles.aboutText}>
             {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
               'Quisque malesuada sem ut tellus fermentum, ut pulvinar turpis pulvinar. ' +
               'Nulla lorem ligula, varius porta ex eu, euismod vulputate elit. ' +
@@ -23,7 +23,7 @@ export function About() {
               'lobortis consequat urna posuere id. Curabitur orci turpis, tincidunt sed leo et, ' +
               'commodo dignissim sapien. Phasellus auctor maximus dolor.'}
           </Text>
-          <Text>
+          <Text className={styles.aboutText}>
             {'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
               'Quisque malesuada sem ut tellus fermentum, ut pulvinar turpis pulvinar. ' +
               'Nulla lorem ligula, varius porta ex eu, euismod vulputate elit. ' +
@@ -35,14 +35,16 @@ export function About() {
           </Text>
         </div>
       </div>
-      <div>
+      <div className={styles.aboutImageDiv}>
         <Image
           radius="md"
+          ml={'10px'}
           src={null}
-          h={300}
-          w={300}
+          h={'auto'}
+          w={'300px'}
           fallbackSrc="https://placehold.co/500x500?text=Placeholder"
           fit={'contain'}
+          className={styles.aboutImage}
         />
       </div>
     </div>
