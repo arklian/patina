@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99e10d35_06e15480",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:31:08Z",
+      "side": 1,
+      "message": "We\u0027re looking to define our images in one place in assets/images.tsx so that we can figure out hosting later.\n\nKeep the image urls in the JS.",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3e3df8d_ba487e3f",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:31:08Z",
+      "side": 1,
+      "message": "The text shouldn\u0027t shrink if the viewport gets smaller, so keeping it as a REM should be fine.",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc41a23f_f05bbdf8",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:31:08Z",
+      "side": 1,
+      "message": "We actually don\u0027t really need this, since we want to set the background for the whole page.\n\nI think Manny is looking into it, so sync with him to make sure things align.",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
