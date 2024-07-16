@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fdf6bb7_345b4cf2",
+        "filename": "js/src/patina/mentorship/components/about/About.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:43:37Z",
+      "side": 1,
+      "message": "Since these sections aren\u0027t really going to be reused like this, they probably shouldn\u0027t go under components.\nJust having them in mentorship/about should be fine.\n\nComponents imply that the code is reusable.",
+      "revId": "2f127a3305798be0f48489778bd0dd267791dca1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
