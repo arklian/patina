@@ -15,12 +15,7 @@ export function Cards({ title, details, img, link, alt }: CardsProps) {
     <div className={styles.card}>
       <div className={styles.border}>
         <AspectRatio>
-          <Image
-            className={styles.image}
-            src={img}
-            alt={alt}
-            radius={5}
-          ></Image>
+          <Image className={styles.image} src={img} alt={alt} radius={5} />
         </AspectRatio>
         <div className={styles.text_container}>
           <Title className={styles.title}>{title}</Title>
