@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80c73bed_4e08d9a9",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T19:32:10Z",
+      "side": 1,
+      "message": "Put this under constants in a section called `Dependency Checks` so that the script doesn\u0027t run at all if this isn\u0027t installed.",
+      "range": {
+        "startLine": 106,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 4
+      },
+      "revId": "c030ab5bb0da89d639ead4d44784bacee939218a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
