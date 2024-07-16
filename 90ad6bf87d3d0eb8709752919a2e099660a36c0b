@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33dc0077_03c9d9db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T20:34:53Z",
+      "side": 1,
+      "message": "Feel free to ship",
+      "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1448c572_3cae924d",
+        "filename": "js/src/patina/mentorship/apply/Apply.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T20:34:53Z",
+      "side": 1,
+      "message": "These comments are kind of redundant, and should describe what the purpose of this is. We can do that as the components are being created though.",
+      "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e3dd8d1_7104fe7f",
+        "filename": "js/src/patina/mentorship/gain/Gain.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T20:34:53Z",
+      "side": 1,
+      "message": "nit: this seems too generic and hard to know what it means",
+      "revId": "90ad6bf87d3d0eb8709752919a2e099660a36c0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
