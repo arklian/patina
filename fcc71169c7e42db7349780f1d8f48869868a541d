@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6af67bf8_cee957e7",
+        "filename": "js/src/patina/home/GetInvolved.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T14:22:50Z",
+      "side": 1,
+      "message": "nit: why the comment specifying the same px dimension?",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f1fc1b6_769092cd",
+        "filename": "js/src/patina/home/GetInvolved.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T14:22:50Z",
+      "side": 1,
+      "message": "did this line get linted to this format?",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b73e4e0_28d31364",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-16T14:22:50Z",
+      "side": 1,
+      "message": "use aliased path if going up a relative directory.\n\nEG `../foo/bar` \u003d\u003e `@/.../foo/bar`",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
