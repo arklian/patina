@@ -33,8 +33,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
-    "serve": "^14.2.3",
-    "typescript": "^5.5.2"
+    "serve": "^14.2.3"
   },
   "devDependencies": {
     "@testing-library/dom": "^9.3.4",
@@ -64,6 +63,7 @@
     "prop-types": "^15.8.1",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
+    "typescript": "^5.5.2",
     "vite": "^5.3.2",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.6.0"
