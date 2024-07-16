@@ -1,5 +1,24 @@
-.about{
+.about {
   display: flex;
-  width: rem(644px);
-  height: rem(500px);
+  width: rem(447px);
+  height: rem(515px);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  row-gap: rem(20px);
+}
+
+.title {
+  font-size: rem(26px);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.body {
+  font-size: rem(18px);
+  font-weight: 400;
+}
 }
