@@ -1,6 +1,6 @@
 import { Text } from '@mantine/core'
 import styles from './Initiatives.module.css'
-import { Cards } from './Cards.tsx'
+import { Cards } from '@/patina/components/Cards.tsx'
 import { imageUrls } from '@/patina/assets/images'
 
 const detailsMap = [

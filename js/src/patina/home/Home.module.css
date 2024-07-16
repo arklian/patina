@@ -19,5 +19,5 @@
 .aboutInit {
   display: flex;
   align-content: stretch;
-  padding: rem(0) rem(48px) rem(0) rem(48px);
+  padding: rem(0) rem(48px);
 }
