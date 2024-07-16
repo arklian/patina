@@ -1,5 +1,5 @@
 import { Text } from '@mantine/core'
-import { Cards } from './Cards.tsx'
+import { Cards } from '../components/Cards.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Initiatives.module.css'
 

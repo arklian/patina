@@ -1,5 +1,5 @@
 import { Text, Button } from '@mantine/core'
-import { Stacks } from './Stacks'
+import { Stacks } from '../components/Stacks'
 import styles from './Application.module.css'
 
 const applyStack = [
