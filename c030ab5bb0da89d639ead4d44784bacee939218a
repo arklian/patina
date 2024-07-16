@@ -22,6 +22,30 @@
       },
       "revId": "c030ab5bb0da89d639ead4d44784bacee939218a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "057760bd_8275d8d7",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-16T20:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80c73bed_4e08d9a9",
+      "range": {
+        "startLine": 106,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 4
+      },
+      "revId": "c030ab5bb0da89d639ead4d44784bacee939218a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
