@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b9e23ef_64a3ea2b",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:27:10Z",
+      "side": 1,
+      "message": "If there\u0027s empty children then it should be `/\u003e` and not `\u003e\u003c/Image\u003e`",
+      "revId": "396050111d9173383d306befa56ff1cd26c7e8e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "520c9f76_b0d033d2",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:27:10Z",
+      "side": 1,
+      "message": "nit: Can pull this out into a component since you\u0027re repeating it 3 times.",
+      "revId": "396050111d9173383d306befa56ff1cd26c7e8e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

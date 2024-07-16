@@ -50,6 +50,24 @@
       "message": "use aliased path if going up a relative directory.\n\nEG `../foo/bar` \u003d\u003e `@/.../foo/bar`",
       "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14e36fe6_dcd272de",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:27:10Z",
+      "side": 1,
+      "message": "In addition, it\u0027s usually good to avoid relative paths that go upward. Sibling relative paths are okay. (I still prefer absolute paths though)",
+      "parentUuid": "7b73e4e0_28d31364",
+      "revId": "fcc71169c7e42db7349780f1d8f48869868a541d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
