@@ -1,0 +1,22 @@
+.skeletonStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer {
+  max-width: rem(1200px);
+}
+
+.about {
+  padding-top: rem(50px);
+  display: flex;
+  gap: rem(126px);
+  margin-bottom: rem(100px);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
