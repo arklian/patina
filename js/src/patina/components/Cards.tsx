@@ -20,7 +20,6 @@ export function Cards({ title, details, img, link, alt }: CardsProps) {
         <div className={styles.text_container}>
           <Title className={styles.title}>{title}</Title>
           <Text className={styles.text}>{details}</Text>
-          {/*TODO: Fix the links when the other pages are up*/}
           <Anchor className={styles.anchor} href={link}>
             <Text>{'Learn more\u2192'}</Text>
           </Anchor>
