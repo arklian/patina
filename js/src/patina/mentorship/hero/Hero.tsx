@@ -1,6 +1,39 @@
-import { Skeleton } from '@mantine/core'
+import { SimpleGrid, Title, Text, Group, Button, Image } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
+import styles from '@/patina/mentorship/hero/Hero.module.css'
 
-// Defining the Hero component
+/**
+ * Hero component for the Patina Network Mentorship program.
+ * Displays a title, description, application button, and an image.
+ */
 export function Hero() {
-  return <Skeleton animate={false} height={70} width="100%" mb="xl" />
+  const largeScreen = useMediaQuery('(min-width: 60em)')
+
+  return (
+    <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl">
+      <div>
+        <Title className={styles.title} ta={'left'}>
+          {'Patina Network Mentorship'}
+        </Title>
+        <Text className={styles.description} ta={'left'} pt={'xs'}>
+          {'The Patina Network mentorship program is open to students currently ' +
+            'enrolled in any US college program or recently graduated who are ' +
+            'interested in guidance with their workplace readiness.'}
+        </Text>
+        <Group justify={'left'} pt={'md'}>
+          <Button variant="default" color="gray">
+            {'Apply'}
+          </Button>
+        </Group>
+      </div>
+      <Group className={styles.Typing} justify={'center'} pt={'lg'}>
+        <Image
+          src={'https://placehold.co/597x398'}
+          alt="Mentorship Image"
+          height={400}
+          radius="md"
+        />
+      </Group>
+    </SimpleGrid>
+  )
 }
