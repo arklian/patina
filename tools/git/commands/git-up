@@ -103,11 +103,18 @@ if [ $pushToGerrit = 1 ]; then
   [ $v = 1 ] && echo ""
   [ $v = 1 ] && echo "----- Running Github Actions"
 
+  # Check if gh installed
+  if ! command -v gh &> /dev/null
+  then
+    echo "gh CLI not installed: Run \"brew install gh\" to fix"
+    exit 1
+  fi
+
   for (( idx=${#changes[@]}; idx>0; idx--));
   do
     commitIdOffset=$(( $idx - 1 ))
     commitId=$(git rev-parse HEAD~${commitIdOffset})
-    [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
+    [ $v = 1 ] && echo "-- Running \"pnpm run test\" on change-id: ${changes[idx]}"
     git push origin ${commitId}:refs/heads/ci/${changes[idx]}
     gh workflow run example-action -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
