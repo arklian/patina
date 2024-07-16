@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cb90536_bad8dd28",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:49:09Z",
+      "side": 1,
+      "message": "nit: L\u003dENG-226\n\nAlso add testing details, even if it\u0027s just local.",
+      "revId": "969809d3e6dc2e8528d1419c992cfdc198555cc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
