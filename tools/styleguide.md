@@ -19,11 +19,39 @@ Make sure that the following formatters and linters are running in your IDE:
   - Use Aliases as necessary. e.g. '@/...'
 - ReactComponent.tsx
   - React Components should be in PascalCase
-  - One component per file
-  - Component name should match file name
-  - Pages are an exception and can be Name.page.tsx
+  - Pages directed to by the ReactRouter are an exception and should have the format: `Name.page.tsx`
     - This is to denote that it is the top level react component for a page
+  - Routes for a project should be in the format: `Project.routes.tsx`.
+  - Exported component name should match file name
+  - One exported component per file
+  - One component with state per file
+  - Exported components should have a JSDoc-ish comment right above it describing the high level of what it does.
+    - ```javascript
+      /** Single Line Comment */
+      /**
+       * Line 1
+       * Line 2
+       */
+      ```
   - consts that hold a React component should start with a capital letter
-  - consts that that don't hold a React component should start with a lower case letter
+  - consts that don't hold a React component should start with a lower case letter
+- util.ts file
+  - For typescript files that do not have JSX/React, use camelCase and the ts file extension.
+  - Generally these are utils/consts/config/pure functions.
 - CSS
-  - Css classes should be in kebab case.
+  - CSS classes should be in camel case
+  - Generally, classes should be the preferred CSS selector
+  - Try to avoid Tailwind-like styles for Mantine Components, preferring CSS classnames
+    - Props that are not styles are okay. May be hard to differentiate initially
+    - Simple ones may be fine. Under 3 styles or under 1 line
+    - If it requires a classname, put the styles in the CSS. Don't mix classnames and props
+  - Use variables from Mantine over raw values for:
+    - Colors
+    - Font Sizes
+  - Some values are generally imported from the Mantine Theme:
+    - Font
+    - Padding (?)
+    - Corner Rounding (?)
+- Images
+  - Currently, we're hosting our images through Google Photos, but will likely move to DO or S3 buckets.
+  - Store images in a ./assets/images.ts file.
