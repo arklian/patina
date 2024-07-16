@@ -41,6 +41,16 @@ done
 remoteGerritURL="https://gerrithub.io"
 
 ####################################################################################################
+# Dependency Checks
+####################################################################################################
+
+if ! command -v gh &> /dev/null
+then
+  echo "gh CLI not installed: Run \"brew install gh\" to fix"
+  exit 1
+fi
+
+####################################################################################################
 # Main Script Start
 ####################################################################################################
 currentBranch=$(git symbolic-ref --short -q HEAD)
@@ -107,8 +117,8 @@ if [ $pushToGerrit = 1 ]; then
   do
     commitIdOffset=$(( $idx - 1 ))
     commitId=$(git rev-parse HEAD~${commitIdOffset})
-    [ $v = 1 ] && echo "-- pnpm run test on change: ${changes[idx]}"
-    git push origin ${commitId}:refs/heads/ci/${changes[idx]}
+    [ $v = 1 ] && echo "-- Running \"pnpm run test\" on change-id: ${changes[idx]}"
+    git push --force-with-lease --force-if-includes origin ${commitId}:refs/heads/ci/${changes[idx]}
     gh workflow run example-action -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
 fi
