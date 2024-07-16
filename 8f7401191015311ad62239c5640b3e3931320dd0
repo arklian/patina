@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3db4f3c6_8e34404e",
+        "filename": "js/src/patina/mentorship/Mentorship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-16T18:51:19Z",
+      "side": 1,
+      "message": "isnt it left?",
+      "range": {
+        "startLine": 17,
+        "startChar": 33,
+        "endLine": 17,
+        "endChar": 38
+      },
+      "revId": "8f7401191015311ad62239c5640b3e3931320dd0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2769c5cf_e8865429",
+        "filename": "js/src/patina/mentorship/Mentorship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-16T18:51:19Z",
+      "side": 1,
+      "message": "you can try to use Title from mantine for these h2",
+      "revId": "8f7401191015311ad62239c5640b3e3931320dd0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
