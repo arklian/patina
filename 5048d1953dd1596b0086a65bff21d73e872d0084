@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aed315a2_bbab8819",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-16T21:33:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9eb78aed_415b6774",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "80c86d8a_7471e8df",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "45feb5e6_2c464efc",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-16T21:33:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80c86d8a_7471e8df",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e0968101_32731add",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-16T20:55:21Z",
       "side": 1,
       "message": "each branch contains just one commit i thought? Or you mean the feature branch the user is working from",
+      "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85e85fff_88e05e0f",
+        "filename": ".github/workflows/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-16T21:33:53Z",
+      "side": 1,
+      "message": "Each branch does contain diff # of commits on GitHub, the git up script pushes through an increasing number of commits starting from the earliest until the latest commit is reached for each of the branches",
+      "parentUuid": "e0968101_32731add",
       "revId": "5048d1953dd1596b0086a65bff21d73e872d0084",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
