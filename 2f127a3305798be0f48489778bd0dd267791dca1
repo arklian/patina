@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b57ef659_0a4753b2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-16T16:45:09Z",
+      "side": 1,
+      "message": "Add testing details here, even if it\u0027s simple.\nIt gets you in the habit of making sure you\u0027re testing things, or acknowledging specifically that no tests were ran with \nTEST\u003dnone\n\n```\nTEST\u003dmanual\nPage loads locally\n```\n\nIs sufficient here.",
+      "revId": "2f127a3305798be0f48489778bd0dd267791dca1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6fdf6bb7_345b4cf2",
         "filename": "js/src/patina/mentorship/components/about/About.tsx",
         "patchSetId": 2
