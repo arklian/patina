@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9d533b1_164055f8",
+        "filename": "js/src/personal/martin/Martin.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-17T23:43:51Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "c6fc3ae0_acea957f",
+      "revId": "d9476b025c7047b8d023b75b01818bb81beba8ad",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "92721ef9_38b93aad",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-17T03:36:52Z",
       "side": 1,
       "message": "This should technically be done by editing the previous commit and removing them there.\n\nEditing a commit can be done with edit commit -\u003e edit commit contents.\nGenerally, it\u0027s good to address comments in a CR by editing the commit that the comments are on.\n\nEvery commit should be in a working state, and should pass the tests.\n\nTests can be run with `pnpm run test`, and will be enforced soon, once Amanda and Haoking finish up the CI pipeline changes.",
+      "revId": "d9476b025c7047b8d023b75b01818bb81beba8ad",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e1b61f6_6aaf115d",
+        "filename": "js/src/personal/martin/about/About.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-17T23:43:51Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "92721ef9_38b93aad",
       "revId": "d9476b025c7047b8d023b75b01818bb81beba8ad",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
