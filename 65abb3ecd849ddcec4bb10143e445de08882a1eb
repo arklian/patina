@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5ae9cef_8f7cfcfd",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-17T15:28:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "99e10d35_06e15480",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d3e3df8d_ba487e3f",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a213f09_96419f2b",
+        "filename": "js/src/patina/home/Home.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-17T15:28:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "d3e3df8d_ba487e3f",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc41a23f_f05bbdf8",
@@ -48,6 +84,42 @@
       "writtenOn": "2024-07-16T16:31:08Z",
       "side": 1,
       "message": "We actually don\u0027t really need this, since we want to set the background for the whole page.\n\nI think Manny is looking into it, so sync with him to make sure things align.",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42ed2e93_b66600dc",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-17T15:28:40Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "dc41a23f_f05bbdf8",
+      "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "491a3ba4_99247154",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-17T15:28:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc41a23f_f05bbdf8",
       "revId": "65abb3ecd849ddcec4bb10143e445de08882a1eb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
