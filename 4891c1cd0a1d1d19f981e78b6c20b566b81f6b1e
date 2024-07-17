@@ -16,6 +16,24 @@
       "message": "Drop this commit by right clicking it in sublime merge -\u003e edit this commit -\u003e drop this commit",
       "revId": "4891c1cd0a1d1d19f981e78b6c20b566b81f6b1e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60434107_7713f0cd",
+        "filename": "js/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T01:45:32Z",
+      "side": 1,
+      "message": "And the Abandon this CR by clicking the button in the top right.",
+      "parentUuid": "6e2ba39d_878d0264",
+      "revId": "4891c1cd0a1d1d19f981e78b6c20b566b81f6b1e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
