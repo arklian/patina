@@ -16,6 +16,24 @@
       "message": "They weren\u0027t necessarily missing from your last commit. It could just be a separate commit.\n\nIf they were missing from your last commit, you should squash this commit with the previous commit. Commits are editable until they get merged into main. (With this way of working. Github doesn\u0027t like it.)",
       "revId": "602b9c8ebca758522d90bea5162f3aed7100986b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "268c9892_aeb72fd3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-17T03:22:52Z",
+      "side": 1,
+      "message": "Noted, I squashed the commits together.",
+      "parentUuid": "80a1228d_749c2d1b",
+      "revId": "602b9c8ebca758522d90bea5162f3aed7100986b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
