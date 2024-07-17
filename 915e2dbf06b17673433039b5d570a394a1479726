@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36cf1c36_0bfc44f8",
+        "filename": "js/src/personal/martin/Martin.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T03:36:03Z",
+      "side": 1,
+      "message": "make sure a container is what you want, since it defines a max-width and padding\nIt\u0027s usually used as a container of the contents of a text page, like the middle text column on the mantine documentation page: https://mantine.dev/getting-started/",
+      "revId": "915e2dbf06b17673433039b5d570a394a1479726",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
