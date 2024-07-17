@@ -16,6 +16,24 @@
       "message": "never have more than one change id in a commit message.\nIf you squash, edit the commit message and remove all but one.\n\nUsually the one to keep is the parent, but generally keep the one with the comments on it.\n\nThe Change-ID is what identifies a Code Review on gerrit.",
       "revId": "9f1b47ba7c285f5435f35cc498e17a5be7d99e71",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0496e0d3_8556592b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T03:31:11Z",
+      "side": 1,
+      "message": "You can edit the commit message using edit commit -\u003e edit commit message in sublime",
+      "parentUuid": "67017333_eb85d8e1",
+      "revId": "9f1b47ba7c285f5435f35cc498e17a5be7d99e71",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
