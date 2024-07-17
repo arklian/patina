@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e2ba39d_878d0264",
+        "filename": "js/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T01:45:13Z",
+      "side": 1,
+      "message": "Drop this commit by right clicking it in sublime merge -\u003e edit this commit -\u003e drop this commit",
+      "revId": "4891c1cd0a1d1d19f981e78b6c20b566b81f6b1e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
