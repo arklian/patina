@@ -1,4 +1,5 @@
 import { PatinaRoutes } from '@/patina/Patina.routes.tsx'
+import { PatinaRoutes } from '@/patina/Patina.routes.tsx'
 import { PersonalRoutes } from './personal/Personal.routes.tsx'
 import { PatinaPage } from '@/patina/Patina.page.tsx'
 import { LilacPage } from '@/lilac/Lilac.page.tsx'
