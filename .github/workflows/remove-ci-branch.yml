@@ -1,0 +1,21 @@
+name: remove-ci-branch
+run-name: ${{ github.actor }} is removing CI branches
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  removing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - working-directory: .github/workflows
+        env:
+          BOT_PWD: ${{ secrets.BOT_PATINA_HTTP_PASSWORD }}
+        shell: bash
+        run: |
+          bash remove-branches.sh
+
+
