@@ -1,11 +1,21 @@
-import { Title, Text, MantineProvider } from '@mantine/core'
+import {
+  Container,
+  Image,
+  Title,
+  Text,
+  MantineProvider
+} from '@mantine/core'
 import { theme } from './theme.ts'
 
 export function MartinPage() {
   return (
     <MantineProvider theme={theme}>
-      <Title order={1}>{"Martin's Page"}</Title>
-      <Text fw={500}>{"Welcome to Martin's Page"}</Text>
+      <Container size="responsive" bg="var(--mantine-color-blue-light)">
+        <Image w={32} h={32} radius="sm" src="https://m-squared47.github.io/content/logo.ico"/>
+        <Title order={1}>{"Header"}</Title>
+        <Text fw={500}>{"Logos and NavBar Here"}</Text>
+      </Container>
+
     </MantineProvider>
   )
 }
