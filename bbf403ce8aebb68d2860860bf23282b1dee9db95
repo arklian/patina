@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c02c0f1_7bac84de",
+        "filename": "js/src/patina/scholarship/Scholarship.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T21:04:11Z",
+      "side": 1,
+      "message": "don\u0027t use important",
+      "revId": "bbf403ce8aebb68d2860860bf23282b1dee9db95",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
