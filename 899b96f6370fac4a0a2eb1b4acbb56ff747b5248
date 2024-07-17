@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca4da546_74b1f9c9",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T04:00:09Z",
+      "side": 1,
+      "message": "perhaps this is better than using grep?\nhttps://stackoverflow.com/questions/55054213/filter-remote-branches-in-git\n\nI feel like this would also hit people whose names start with ci, like Cinthia 😂",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f75ac73b_a9ec7d1f",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T04:00:09Z",
+      "side": 1,
+      "message": "Hopefully we don\u0027t get rate limited if we leave too many WIP/open CRs.\n\nMaybe we want to delete the branch too if the CR hasn\u0027t been updated in x amount of time.",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56b66511_bbd0d21e",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T04:00:09Z",
+      "side": 1,
+      "message": "Does this log in the github action?\nWould be good to see what branches it deleted.\n\nLooking at the logs, it\u0027ll likely be good to add some more logging in this script.",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88affde4_56361d97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-17T04:00:09Z",
+      "side": 1,
+      "message": "Great work!",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
