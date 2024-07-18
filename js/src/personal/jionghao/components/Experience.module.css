@@ -2,8 +2,8 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-  margin-bottom: 20vh;
-  padding-top: 12vh;
+  //margin-bottom: 10rem;
+  padding-top: 10rem;
   width: 900px;
 }
 
@@ -30,6 +30,11 @@
     var(--mantine-color-white)
   );
   width: 300px;
+}
+
+.title{
+  font-size: 45px;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
 .titleContain {

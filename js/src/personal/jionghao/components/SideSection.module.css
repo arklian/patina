@@ -1,0 +1,49 @@
+.verticalText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt{
+  writing-mode: vertical-rl;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: 14px;
+  transition: transform 150ms ease;
+  letter-spacing: 2px;
+}
+
+.txt:hover{
+  color: cyan;
+  transform: scale(1.10);
+}
+
+.line {
+  width: 0.5px;
+  height: 150px;
+  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  margin-top: 40px;
+}
+
+.line2 {
+  width: 0.5px;
+  height: 150px;
+  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  margin-top: 40px;
+}
+
+.iconSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons{
+  margin-top: 20px;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  transition: transform 150ms ease;
+}
+
+.icons:hover{
+  color: cyan;
+  transform: scale(1.20);
+}

@@ -6,7 +6,7 @@ export function About() {
     <div className={styles.about} id="about">
       <div className={styles.aboutDesc}>
         <div className={styles.titleContainer}>
-          <Title className={styles.title}>{'About Me '}</Title>
+          <Title className={styles.title}>{'About Me'}</Title>
           <div className={styles.titleLine}></div>
         </div>
         <div>

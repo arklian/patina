@@ -2,8 +2,8 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-  margin-bottom: 30vh;
-  padding-top: 10vh;
+  margin-bottom: 10rem;
+  padding-top: 10rem;
   width: 900px;
 }
 
