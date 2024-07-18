@@ -1,0 +1,36 @@
+.section2 {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  width: rem(655px);
+  margin-right: 50px;
+}
+
+.aboutTitle,
+.timeCommitmentTitle {
+  color: white;
+  font-weight: 700;
+  line-height: 35px;
+  font-size: 26px;
+}
+
+.aboutText,
+.timeCommitmentText {
+  color: white;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.right {
+  width: 538px;
+  height: 309px;
+}
+
+.quote {
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+}
