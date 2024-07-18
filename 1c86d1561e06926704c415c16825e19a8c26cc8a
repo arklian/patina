@@ -16,6 +16,24 @@
       "message": "Keep the image urls in patina/assets/images.tsx\nManny and Mali are working on updating it to be hosted in Digital Ocean, so the urls may change.",
       "revId": "1c86d1561e06926704c415c16825e19a8c26cc8a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e301e8b9_8f24c724",
+        "filename": "js/src/patina/scholarship/Scholarship.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T20:58:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba8c381d_f951374a",
+      "revId": "1c86d1561e06926704c415c16825e19a8c26cc8a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
