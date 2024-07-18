@@ -40,7 +40,13 @@
 
 .gridLeft {
   height: max-content;
-  overflow: hidden;
+  position: fixed;
+  overflow-y: auto;
+  width: 50%;
+}
+
+.gridRight {
+  margin-left: 50%;
 }
 
 .flex {
