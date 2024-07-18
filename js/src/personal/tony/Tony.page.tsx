@@ -33,7 +33,7 @@ export function TonyPage() {
   const handleMouseLeave = () => setShowFlashlight(false)
 
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} forceColorScheme={'dark'}>
       <div
         className={styles.grid}
         onMouseMove={handleMouseMove}
@@ -101,7 +101,7 @@ export function TonyPage() {
             </Container>
             <Image className={styles.pfp} src={Tony_pfp} alt="Profile" />
           </Grid.Col>
-          <Grid.Col span={6}>
+          <Grid.Col span={6} className={styles.gridRight}>
             <Text className={styles.about}>
               {
                 "Welcome to my site. I'm currently a senior at CUNY Hunter College studying Computer Science. I aspire towards a career where I can create meaningful digital experiences. When I'm not coding it up, I enjoy playing video games like League of Legends, Valorant and Teamfight Tactics. I also enjoy outdoor activities such as hiking and jogging."
@@ -159,7 +159,7 @@ export function TonyPage() {
                     {'Flutter'}
                   </Badge>
                   <Badge color={'#0dba93'} autoContrast>
-                    {'Android Studio'}
+                    {'Android Studios'}
                   </Badge>
                 </Group>
               </a>
@@ -169,7 +169,7 @@ export function TonyPage() {
               <Text className={styles.experienceTitle}>
                 {'Software Developer Intern @ Patina Network ↗'}
               </Text>
-              <Text className={styles.experienceDates}>{'Placeholder'}</Text>
+              <Text className={styles.experienceDates}>{'Jun 2024 - Aug 2024'}</Text>
               <Text className={styles.experienceText}>
                 {
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.'
@@ -209,14 +209,20 @@ export function TonyPage() {
                   />
                   <div className={styles.projectText}>
                     <Text className={styles.experienceTitle}>
-                      {'A-List Manga Updates App'}
+                      {'A-List Manga Updates App ↗'}
                     </Text>
-                    <Text className={styles.projectDates}>{'↗'}</Text>
+                    <Text className={styles.experienceDates}>{'Dec 2022'}</Text>
                     <Text className={styles.experienceText}>
                       {
                         'Created a Flutter app that allows you to create a list of your favorite webtoon/manga series, and track most recently updated chapters. Save 5+ minutes a day from manually checking and refreshing.'
                       }
                     </Text>
+                    <Group className={styles.skillGroup}>
+                      <Badge color={'#0dba93'} autoContrast>
+                        {'Flutter'}
+                      </Badge>
+                      <Badge color={'#0dba93'} autoContrast> {'Android Studios'}</Badge>
+                    </Group>
                   </div>
                 </div>
               </a>
