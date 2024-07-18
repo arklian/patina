@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "59a1bd94_5ba5e23d",
+        "filename": "js/src/patina/scholarship/Criteria.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:31:07Z",
+      "side": 1,
+      "message": "Should use a mantine variable for colors.",
+      "revId": "817868cd3532a61a62551efbb58793f7d1975508",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "665b2e6b_5999d834",
+        "filename": "js/src/patina/scholarship/Criteria.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:31:07Z",
+      "side": 1,
+      "message": "nit: unnecessary",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 6
+      },
+      "revId": "817868cd3532a61a62551efbb58793f7d1975508",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4649f9a_e7312438",
+        "filename": "js/src/patina/scholarship/Criteria.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:31:07Z",
+      "side": 1,
+      "message": "What color is this btw? We should try to use a variable for it.",
+      "revId": "817868cd3532a61a62551efbb58793f7d1975508",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63aa8a15_d04b1510",
+        "filename": "js/src/patina/scholarship/Criteria.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:31:07Z",
+      "side": 1,
+      "message": "We should probably use the Text component here. I\u0027m not sure if the Figtree font will apply here if we don\u0027t.",
+      "revId": "817868cd3532a61a62551efbb58793f7d1975508",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
