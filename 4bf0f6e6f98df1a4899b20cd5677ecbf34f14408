@@ -34,6 +34,24 @@
       "parentUuid": "4b3e4582_2f6fae87",
       "revId": "4bf0f6e6f98df1a4899b20cd5677ecbf34f14408",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b65547f1_b60abe11",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-18T16:30:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8009346_2c7d495c",
+      "revId": "4bf0f6e6f98df1a4899b20cd5677ecbf34f14408",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
