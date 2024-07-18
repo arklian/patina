@@ -1,25 +1,18 @@
-.body_wrap{
-  background-color: #131b30;
-}
-
 .nav {
-  position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-align: center;
-  z-index: 1000;
-  width: 100%;
-  padding-right: 50px;
+  position: sticky;
+  background-color: #18191b;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .nav_item{
-  display: flex;
-  padding: 15px;
-  text-align: center;
   font-family: "Noto Serif Display", serif;
   font-size: 18px;
-  color: #edd79f;
+  color: #f6e6c1;
 }
 
 .nav a{
@@ -27,190 +20,94 @@
 }
 
 .nav_item:hover{
-  color: #72bcf1;
-  text-decoration: underline #72bcf1;
-  transition: 1s;
+  color: #dfac3d;
+  transition: 0.5s;
 }
 
-/*------HERO SECTION--------*/
-
-.parallax{
-  position: relative;
+.body_container{
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-direction: column;
-  margin-bottom: 20vw;
-
-  //animation: parallax linear;
-  //animation-timeline: scroll();
-}
-
-.background{
-  position: relative;
-  height: 55vw;
-  width:100%;
-  opacity: 0.98;
-  background-image:url("https://cdn.discordapp.com/attachments/1254882106945962056/1260942128763375709/Untitled111_20240711085203.PNG?ex=6691275e&is=668fd5de&hm=4f77c7ae7e95b88d1329caf48cace8b2913cf5bb3d9f15b8c017bca54bed09fa&");
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+  background-color: #18191b;
+  background-image: url();
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 100vw auto;
-  z-index: 2;
-  animation: parallax linear;
-  animation-timeline: scroll();
-}
-
-@keyframes parallax{
-  to{
-    transform: translateY(300px);
-  }
-}
-
-.bg_cloud{
-  position: absolute;
-  z-index: 3;
-  height: 20vw;
-  width: 100%;
-  margin-bottom: -25px;
-  background-image: url("https://cdn.discordapp.com/attachments/1254882106945962056/1260942084198633525/Untitled108_20240711085222.PNG?ex=66912754&is=668fd5d4&hm=afeebab2d923a1b62dd08c6ebd67c23e6d5470df3bae11746d21907c3c4e53c7&");
-  background-position: bottom;
-  background-size: 100vw auto;
-  animation: parallax2 linear;
-  animation-timeline: scroll();
-}
-
-@keyframes parallax2 {
-  to{
-    transform: translateY(400px);
-  }
+  margin:0;
+  top:0;
 }
 
 .title {
-  position: absolute;
-  z-index: 1;
+  color: #f6e6c1;
   font-family: "Noto Serif Display", serif;
-  font-size: 15vw;
+  font-size: 10vw;
+  line-height: 100px;
   font-style: normal;
   letter-spacing: 20px;
-  color: #edd79f;
-  padding-bottom: 25vw;
-  left: 5%;
+  text-align: center;
 }
 
-.kelly {
-  animation: 2s slide-right forwards;
-  display: inline-block;
-  animation-delay: 0.5s;
+.designation {
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 20px;
+  color: #f6e6c1;
+
 }
 
-@keyframes slide-right {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.lin {
-  animation: 2s slide-left forwards;
-  display: inline-block;
-  animation-delay: 0.5s;
-}
-
-@keyframes slide-left {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-
-/*-----ABOUT SECTION-----*/
-
-.about_header{
+.body_load {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f6e6c1; /* White with slight opacity */
+  z-index: 9999; /* Ensures it sits on top */
   display: flex;
-  font-family: "Noto Serif Display", serif;
-  font-size: 5vw;
-  padding-left: 5vw;
-  padding-top: 25px;
-  line-height: 65px;
-  color: #edd79f;
-  opacity: 0.5;
-  animation: fadeIn linear;
-  animation-timeline: scroll();
+  justify-content: center;
+  align-items: center;
+  animation: slideDownOut 1.5s forwards;
+  animation-delay: 0.5s;
 }
 
-@keyframes fadeIn {
-  to{
+@keyframes slideDownOut {
+  from {
+    transform: translateY(0);
     opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 
 .about{
-  display: flex;
-  align-items: center;
-  width: 50%;
-  color: #edd79f;
-  font-family: "Libre Caslon Text", serif;
-  font-size: 18px;
-  opacity: 0.5;
-  animation: fadeIn linear;
-  animation-timeline: scroll();
-}
-
-.info_container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.about_pfp{
-  width: 300px;
   height: auto;
-  border-radius: 25px;
-  margin-left: 5vw;
+  margin: 0;
+  top: 0;
+  padding-bottom: 50px;
 }
 
-.about_arrow{
-  width: auto;
-  height: 75px;
-  margin-left: 5vw;
+.about_header{
+  display: inline;
+  font-family: "Noto Serif Display", serif;
+  font-size: 5vw;
+  padding-left: 7vw;
+  color: #f6e6c1;
 }
 
-/*-----PROJECTS SECTION--------*/
-
-
-/*-----CONTACT SECTION-------*/
-
-.contact{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-family: "Libre Caslon Text", serif;
-  font-size: 20px;
-  color: #edd79f;
+.about_text{
+  padding-left: 7vw;
+  padding-right: 10vw;
+  color: #f6e6c1;
 }
 
-.icon_container{
-  display: flex;
-  padding: 8vw;
+.projects{
+  height: auto;
+  padding-bottom: 50px;
 }
 
-.icon{
-  height:35px;
-  width:auto;
-  padding-left: 10px;
+.body_wrap{
+  background-color: #18191b;
 }
-
-.icon:hover{
-  margin-top: -5px;
-}
-
-
-
 
