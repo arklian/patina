@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "09610984_a4d62c2a",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-18T02:40:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca4da546_74b1f9c9",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f75ac73b_a9ec7d1f",
@@ -55,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "071e99a4_6d9dff60",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-18T02:40:47Z",
+      "side": 1,
+      "message": "Created a story",
+      "parentUuid": "56a707aa_6c8a87e5",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "56b66511_bbd0d21e",
         "filename": ".github/workflows/remove-branches.sh",
         "patchSetId": 1
@@ -66,6 +102,24 @@
       "writtenOn": "2024-07-17T04:00:09Z",
       "side": 1,
       "message": "Does this log in the github action?\nWould be good to see what branches it deleted.\n\nLooking at the logs, it\u0027ll likely be good to add some more logging in this script.",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab605a89_7faaf8df",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-18T02:40:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "56b66511_bbd0d21e",
       "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -83,6 +137,24 @@
       "writtenOn": "2024-07-17T04:00:09Z",
       "side": 1,
       "message": "Great work!",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f164fb1c_1b2c2add",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-18T02:40:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "88affde4_56361d97",
       "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
