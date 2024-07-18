@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "338179c1_c1a10f9a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-18T17:15:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b4b44270_f7b646fc",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cc3feab3_f74b8bda",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "78f4f1ab_20a1d39c",
+        "filename": "js/src/patina/ScholarshipGain.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-18T17:15:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cc3feab3_f74b8bda",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5bab6513_f30b90e8",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-18T16:20:50Z",
       "side": 1,
       "message": "This should likely be in the src/patina/scholarship/ folder",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02155a2f_1875b9ef",
+        "filename": "js/src/patina/ScholarshipGain.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-18T17:15:41Z",
+      "side": 1,
+      "message": "I think Mali made a folder in her commits but it hasn\u0027t been merged yet so I\u0027m leaving it here for now",
+      "parentUuid": "5bab6513_f30b90e8",
       "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
