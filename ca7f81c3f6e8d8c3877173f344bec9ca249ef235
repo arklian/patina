@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t we remove this old image then?",
       "revId": "ca7f81c3f6e8d8c3877173f344bec9ca249ef235",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83f4e44a_6e2d5c9b",
+        "filename": "js/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-18T18:38:40Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "741e5adc_20d21813",
+      "revId": "ca7f81c3f6e8d8c3877173f344bec9ca249ef235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
