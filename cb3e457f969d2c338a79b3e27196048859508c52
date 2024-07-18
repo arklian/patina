@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf8cf12b_adfbfe73",
+        "filename": "js/src/patina/scholarship/Gains.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T19:31:12Z",
+      "side": 1,
+      "message": "nit: should probably use Text component to reduce css, but w.e",
+      "revId": "cb3e457f969d2c338a79b3e27196048859508c52",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
