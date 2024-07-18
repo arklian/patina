@@ -16,6 +16,42 @@
       "message": "use mantine vars for color\nAsk someone about it",
       "revId": "2edf26d50df07e82988398559ece720b5f43f660",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "939a20fd_3a68b77c",
+        "filename": "js/src/patina/components/Footer.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-18T21:29:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "41f313a0_ae7d0cd2",
+      "revId": "2edf26d50df07e82988398559ece720b5f43f660",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9e425a8_b2c35183",
+        "filename": "js/src/patina/components/Footer.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-18T21:29:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "41f313a0_ae7d0cd2",
+      "revId": "2edf26d50df07e82988398559ece720b5f43f660",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
