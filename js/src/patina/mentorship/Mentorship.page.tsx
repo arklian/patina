@@ -7,7 +7,7 @@ import { Impact } from '@/patina/mentorship/impact/Impact.tsx'
 /**
  * MentorshipPage component renders a mentorship page layout with multiple sections.
  * Each section is represented by a Skeleton component, which can be replaced with actual content.
- */
+ * */
 export function MentorshipPage() {
   return (
     <Container>
