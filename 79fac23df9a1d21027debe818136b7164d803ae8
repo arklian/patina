@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6cde22a2_13288a93",
+        "filename": "js/src/patina/scholarship/Criteria.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T19:28:27Z",
+      "side": 1,
+      "message": "nit: this should be in the CSS, since there\u0027s a className already.\nI think it\u0027s `gap: 20px`",
+      "revId": "79fac23df9a1d21027debe818136b7164d803ae8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
