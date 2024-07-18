@@ -89,6 +89,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ef66734_5a5059a3",
+        "filename": ".github/workflows/remove-branches.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-18T02:42:48Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "071e99a4_6d9dff60",
+      "revId": "899b96f6370fac4a0a2eb1b4acbb56ff747b5248",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "56b66511_bbd0d21e",
