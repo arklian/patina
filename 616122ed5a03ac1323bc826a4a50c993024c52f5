@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "caf280bf_dc5dbad1",
+        "filename": "js/src/patina/Application.tsx",
+        "patchSetId": 8
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T20:16:28Z",
+      "side": 1,
+      "message": "Use a color variable for this?",
+      "revId": "616122ed5a03ac1323bc826a4a50c993024c52f5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
