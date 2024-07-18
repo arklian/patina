@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: rem(16px) rem(150px);
+  background-color: var(--mantine-color-dark-6);
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: rem(33px);
+}
