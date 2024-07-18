@@ -1,5 +1,5 @@
-import { Title, List } from '@mantine/core'
-import { FaCheck } from 'react-icons/fa'
+import { Criteria } from './Criteria.tsx'
+import { Gains } from './Gains.tsx'
 import styles from './Scholarship.module.css'
 
 export function ScholarshipPage() {
@@ -26,68 +26,8 @@ export function ScholarshipPage() {
           </div>
         </div>
       </div>
-      <div className={styles.criteria}>
-        <div className={styles.selection}>
-          <Title className={styles.selection_title}>
-            {'Selection criteria'}
-          </Title>
-          <List
-            className={styles.checklist}
-            spacing="20"
-            icon={<FaCheck color={'#4DFFB0'} />}
-          >
-            <List.Item>
-              {'Must be currently enrolled in an undergraduate program'}{' '}
-            </List.Item>
-            <List.Item>
-              {'Must be currently enrolled in an undergraduate program'}{' '}
-            </List.Item>
-            <List.Item>
-              {'Must be currently enrolled in an undergraduate program'}{' '}
-            </List.Item>
-            <List.Item>
-              {'Must be currently enrolled in an undergraduate program'}{' '}
-            </List.Item>
-            <List.Item>
-              {'Must be currently enrolled in an undergraduate program '}
-            </List.Item>
-          </List>
-        </div>
-        <div className={styles.quote}>
-          <p className={styles.quote_text}>
-            {
-              'Anyone strongly impacted by the AANHPI community is encouraged to apply- no matter what race'
-            }
-          </p>
-        </div>
-      </div>
-      <Title className={styles.gains_title}>{'What Will I Gain?'}</Title>
-      <div className={styles.gains}>
-        <div className={styles.gains_item}>
-          <p className={styles.gains_header}>{'Financial Need'}</p>
-          <p className={styles.gains_text}>
-            {
-              'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. '
-            }
-          </p>
-        </div>
-        <div className={styles.gains_item}>
-          <p className={styles.gains_header}>{'Scholastic Excellence'}</p>
-          <p className={styles.gains_text}>
-            {
-              'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. '
-            }
-          </p>
-        </div>
-        <div className={styles.gains_item}>
-          <p className={styles.gains_header}>{'Career Aspiration'}</p>
-          <p className={styles.gains_text}>
-            {
-              'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. '
-            }
-          </p>
-        </div>
-      </div>
+      <Criteria />
+      <Gains />
     </>
   )
 }
