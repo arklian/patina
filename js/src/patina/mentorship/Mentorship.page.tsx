@@ -11,7 +11,8 @@ import { Details } from '@/patina/mentorship/details/Details.tsx'
  * */
 export function MentorshipPage() {
   return (
-    <Container size="80rem">
+    <Container size={'75rem'}>
+      {/* 75rem == 1200px */}
       <Stack>
         {'Mentorship Page'}
         {/* Section 1 */}
