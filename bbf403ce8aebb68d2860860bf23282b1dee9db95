@@ -16,6 +16,24 @@
       "message": "don\u0027t use important",
       "revId": "bbf403ce8aebb68d2860860bf23282b1dee9db95",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f407519c_038d1373",
+        "filename": "js/src/patina/scholarship/Scholarship.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T19:41:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c02c0f1_7bac84de",
+      "revId": "bbf403ce8aebb68d2860860bf23282b1dee9db95",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
