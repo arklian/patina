@@ -1,5 +1,5 @@
 import { Button, Card, Image } from '@mantine/core'
-import styles from '@/patina/home/StaticCards.module.css'
+import styles from '@/patina/components/StaticCards.module.css'
 
 type StaticCardsProps = {
   title: string
