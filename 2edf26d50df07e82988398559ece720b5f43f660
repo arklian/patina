@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41f313a0_ae7d0cd2",
+        "filename": "js/src/patina/components/Footer.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T21:01:21Z",
+      "side": 1,
+      "message": "use mantine vars for color\nAsk someone about it",
+      "revId": "2edf26d50df07e82988398559ece720b5f43f660",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
