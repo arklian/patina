@@ -1,3 +1,4 @@
+import { Criteria } from './Criteria.tsx'
 import styles from './Scholarship.module.css'
 import { imageUrls } from '@/patina/assets/images.ts'
 
@@ -23,6 +24,7 @@ export function ScholarshipPage() {
           </div>
         </div>
       </div>
+      <Criteria />
     </>
   )
 }
