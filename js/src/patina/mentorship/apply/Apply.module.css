@@ -1,14 +1,8 @@
 .itemContainer {
   display: flex;
-  flex-direction: row;
-  width: rem(1004px);
-  height: rem(600px);
-  border: 1px solid #be5555;
-}
-
-.itemContainer2 {
-  display: flex;
   flex-direction: column;
+  height: rem(600px);
+  justify-content: center;
 }
 
 .title {
@@ -30,9 +24,10 @@
 
 .appButtonText {
   color: black;
+  font-weight: bold;
 }
 
 .buttonContainer {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
