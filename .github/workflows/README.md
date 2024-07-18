@@ -25,8 +25,8 @@
     - Workflows contain multiple jobs which can be run either sequentially or in parallel
     - Each job runs inside a virtual machine runner or container and contains steps to be executed
     - Workflows can also be run from the command line if the gh CLI is installed
-    - ```gh workflow run <example-action>```
-  - The workflow ```example-action.yml``` takes in two inputs: the Change-Id of the CR and the branch the code is in
+    - ```gh workflow run <build-test>```
+  - The workflow ```build-test.yml``` takes in two inputs: the Change-Id of the CR and the branch the code is in
     - It checks out into the given branch and runs ```pnpm install``` and ```pnpm run test```
     - A curl POST request is sent to GerritHub that will update the given CR with a status of +1 to the "Verified" label if the tests passed and -1 otherwise
 ## Git Up
@@ -35,7 +35,7 @@
   - If two commits were made before running ```git up```, then two separate branches are made on GitHub
   - The first branch corresponds to the first CR on GerritHub and the earliest commit
   - The second branch corresponds to the second CR with both commits
-- ```git up``` will automatically run ```example-action.yml``` workflow for each of these branches and run ```pnpm run test``` on the code in each of these branches
+- ```git up``` will automatically run ```build-test.yml``` workflow for each of these branches and run ```pnpm run test``` on the code in each of these branches
 - A bot patina account will label each CR with a Verified status of +/-1 depending on if the tests passed or failed
 
 
