@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a67acc1_fdc7fbd5",
+        "filename": "js/src/patina/home/GetInvolved.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-18T16:20:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "20b885e7_49d3ace1",
+      "revId": "6cd1324a4c41990599787c9e5c1b32f9f6ba6cb9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7784918a_42b5335a",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-18T16:11:08Z",
       "side": 1,
       "message": "nit: strange that you used `var(--mantine-color-white, #fff)` for the one above, but just using #fff here.",
+      "revId": "6cd1324a4c41990599787c9e5c1b32f9f6ba6cb9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e410ff6c_8b6e2809",
+        "filename": "js/src/patina/home/StaticCards.module.css",
+        "patchSetId": 5
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-18T16:20:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7784918a_42b5335a",
       "revId": "6cd1324a4c41990599787c9e5c1b32f9f6ba6cb9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
