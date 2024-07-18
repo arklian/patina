@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4b44270_f7b646fc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:20:50Z",
+      "side": 1,
+      "message": "This should start with the page name.",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc3feab3_f74b8bda",
+        "filename": "js/src/patina/ScholarshipGain.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:20:50Z",
+      "side": 1,
+      "message": "use mantine variable, look at the figma variable used and convert it to the corresponding mantine variable.",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bab6513_f30b90e8",
+        "filename": "js/src/patina/ScholarshipGain.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:20:50Z",
+      "side": 1,
+      "message": "This should likely be in the src/patina/scholarship/ folder",
+      "revId": "981a0405884d090905fb0e500925bd4490b1ebb1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
