@@ -16,6 +16,24 @@
       "message": "Make a linear story for this\nAdd testing details.\nCapitalize Add\nService name should be just Mantine.\nMantine: Add autoRem to PostCss preset\n\nAdd body with reasoning about why we\u0027re adding it.",
       "revId": "3a0d1f38643fb187c88928aac6a9a199412d60ed",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98dd8c36_64437967",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-18T20:22:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b218f83_eee3c12b",
+      "revId": "3a0d1f38643fb187c88928aac6a9a199412d60ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
