@@ -22,6 +22,30 @@
       },
       "revId": "7a94188a1bab94b538a140b688c52d6cf270141e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f34f0eb_97ef1102",
+        "filename": "js/src/patina/scholarship/Scholarship.module.css",
+        "patchSetId": 7
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-18T21:15:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3f541b0_d89b11df",
+      "range": {
+        "startLine": 8,
+        "startChar": 13,
+        "endLine": 8,
+        "endChar": 16
+      },
+      "revId": "7a94188a1bab94b538a140b688c52d6cf270141e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
