@@ -7,7 +7,7 @@ export function ScholarshipPage() {
       <div className={styles.hero}>
         <div className={styles.hero_container}>
           <div className={styles.hero_title}>
-            {'Patina Network Scholarship Fund'}
+            {'Patina Network Scholarship Fund '}
             <div className={styles.hero_description}>
               {
                 'The Patina Network Scholarship fund is... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
