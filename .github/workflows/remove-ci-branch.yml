@@ -1,8 +1,9 @@
 name: remove-ci-branch
 run-name: ${{ github.actor }} is removing CI branches
 on:
-  schedule:
-    - cron: '0 0 * * *'
+#  schedule:
+#    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   removing:
