@@ -38,4 +38,9 @@ export const imageUrls = {
       'https://drive.google.com/file/d/1htDYhOf4XefDcHicVvctZGGuIPx9gutB/view',
     src: 'https://s3-alpha-sig.figma.com/img/b9a6/81f3/db51fc60ff547aab2368cbb1589d86fe?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IRcjAkKvXjy~nHhNJ4sbJSpGPzWYZnK9FOnCfTcf0gckRm9602xVrN0KgCy88Zvay8bbHLywsmWj6oMFIyfdAaUsHQn~qQhbBQMPj4wYM0kCOYsvV9BroiU0W3apZCSryYvs-CPEGd6DrGL9jqzVYIKEI1zjbV3ZbpgWOiJpMBSjS3SBV7o2QG4tBFNuSasYpnzW4ZV73L~jihvx9vGN78hFeExqRpt1qvKTZhEljnLiYVp8ytF4V8MW-y40NetBbGbGLsU1XM5p87aiqdZFvOTd-csXW3KrKxwiN2up~Q1ExoBHtqtKGwRXjc6a-f73t79ty3TUtBYKhvF102FdPw__',
   },
+  scholarHero: {
+    drive:
+      'https://drive.google.com/file/d/1gVKHEX9NJExD83VqCsNo4IosDDF1h5r-/view?usp=sharing',
+    src: 'https://cdn.discordapp.com/attachments/1261068702171009085/1262480237615124571/Group_297559.png?ex=6696bfd8&is=66956e58&hm=2506faf9caa9b3d56c06b7f228d89b3c1fe6137c605e1732b3f2bf80ae694531&',
+  },
 }
