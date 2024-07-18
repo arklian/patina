@@ -16,6 +16,24 @@
       "message": "if you have classname, you can\u0027t have tailwind styling",
       "revId": "2de4a37d0aba2befc79978529171f65cb18ee6b9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a37ff6d3_4334829f",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-18T21:03:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4aaf792d_da670cbc",
+      "revId": "2de4a37d0aba2befc79978529171f65cb18ee6b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
