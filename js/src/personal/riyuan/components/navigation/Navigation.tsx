@@ -129,10 +129,10 @@ export function Nav() {
     image: pfpImage,
   }
   const navItems = [
-    { title: 'Home', icon: faHouse, link: '/riyuan' },
-    { title: 'About', icon: faPerson, link: '/riyuan#About' },
-    { title: 'Project', icon: faFolder, link: '/riyuan/projects' },
-    { title: 'Contact', icon: faIdCard, link: '/riyuan/contact' },
+    { title: 'Home', icon: faHouse, link: '/personal/riyuan' },
+    { title: 'About', icon: faPerson, link: '/personal/riyuan#About' },
+    { title: 'Project', icon: faFolder, link: '/personal/riyuan/projects' },
+    { title: 'Contact', icon: faIdCard, link: '/personal/riyuan/contact' },
   ]
   const [isClosed, setIsClosed] = useState(true)
   const toggleShell = () => {
