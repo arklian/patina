@@ -1,6 +1,35 @@
-import { Skeleton } from '@mantine/core'
+import { Button, Text } from '@mantine/core'
+import { Stacks } from '../../components/Stacks'
+import styles from './Apply.module.css'
 
-// Defining the Apply component
+const applyStack = [
+  { title: 'Requirement 1', description: 'Explain' },
+  { title: 'Requirement 2', description: 'Explain' },
+  { title: 'Requirement 3', description: 'Explain' },
+]
+
+/** Displays info on applying to the mentorship program */
 export function Apply() {
-  return <Skeleton animate={false} height={70} width="100%" mb="xl" />
+  return (
+    <div className={styles.itemContainer}>
+      <div className={styles.itemContainer2}>
+        <Text className={styles.title}>{'How to Apply'}</Text>
+        <Stacks items={applyStack}></Stacks>
+        <div className={styles.buttonContainer}>
+          {/*TODO: Replace link for the button when it's ready*/}
+          <Button
+            component="a"
+            className={styles.appButton}
+            variant="filled"
+            color="white"
+            href="templink"
+          >
+            <Text className={styles.appButtonText} size="20" fw={600}>
+              {'Apply Here'}
+            </Text>
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
 }
