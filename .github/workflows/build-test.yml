@@ -1,5 +1,5 @@
-name: example-action
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: build-test
+run-name: Running pnpm run test on ${{ github.actor }}'s commits
 on:
   workflow_dispatch:
     inputs:
@@ -15,7 +15,7 @@ env:
   BOT_PWD: ${{ secrets.BOT_PATINA_HTTP_PASSWORD }}
 
 jobs:
-  testing:
+  buildtest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
