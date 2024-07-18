@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e7189c9_f15cd77e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:18:13Z",
+      "side": 1,
+      "message": "You should add testing details to the commit.\n\nTEST\u003dmanual\nTested pages worked locally.",
+      "revId": "dbdd7c0c98caa6e7ad96a9da92c631c193f7456b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
