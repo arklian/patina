@@ -1,4 +1,5 @@
 import { Criteria } from './Criteria.tsx'
+import { Gains } from './Gains.tsx'
 import styles from './Scholarship.module.css'
 
 export function ScholarshipPage() {
@@ -26,6 +27,7 @@ export function ScholarshipPage() {
         </div>
       </div>
       <Criteria />
+      <Gains />
     </>
   )
 }
