@@ -1,7 +1,13 @@
 .title {
-  font-size: 50px;
+  font-size: 64px;
 }
 
 .description {
   font-size: 24px;
+}
+
+.mentorImage {
+  border-radius: 5px;
+  height: rem(398px);
+  width: rem(597px);
 }

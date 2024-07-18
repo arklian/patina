@@ -10,7 +10,7 @@ import { Impact } from '@/patina/mentorship/impact/Impact.tsx'
  * */
 export function MentorshipPage() {
   return (
-    <Container>
+    <Container size={'80rem'}>
       <Stack>
         {'Mentorship Page'}
         {/* Section 1 */}

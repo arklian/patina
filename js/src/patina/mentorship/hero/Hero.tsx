@@ -10,28 +10,27 @@ export function Hero() {
   const largeScreen = useMediaQuery('(min-width: 60em)')
 
   return (
-    <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl">
+    <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl" mb={'7rem'} mt={'4rem'}>
       <div>
         <Title className={styles.title} ta={'left'}>
           {'Patina Network Mentorship'}
         </Title>
-        <Text className={styles.description} ta={'left'} pt={'xs'}>
+        <Text className={styles.description} ta={'left'} pt={'xl'}>
           {'The Patina Network mentorship program is open to students currently ' +
             'enrolled in any US college program or recently graduated who are ' +
             'interested in guidance with their workplace readiness.'}
         </Text>
         <Group justify={'left'} pt={'md'}>
-          <Button variant="default" color="gray">
-            {'Apply'}
+          <Button variant="filled" color="white" size={'md'} autoContrast>
+            {'Apply Now'}
           </Button>
         </Group>
       </div>
       <Group className={styles.Typing} justify={'center'} pt={'lg'}>
         <Image
+          className={styles.mentorImage}
           src={'https://placehold.co/597x398'}
           alt="Mentorship Image"
-          height={400}
-          radius="md"
         />
       </Group>
     </SimpleGrid>
