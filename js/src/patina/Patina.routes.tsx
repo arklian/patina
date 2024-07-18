@@ -1,6 +1,7 @@
 import { HomePage } from '@/patina/home/Home.page.tsx'
 import { MissionPage } from '@/patina/about/mission/Mission.page.tsx'
 import { MentorshipPage } from '@/patina/mentorship/Mentorship.page.tsx'
+import { ScholarshipPage } from '@/patina/scholarship/Scholarship.page.tsx'
 /**
  * Routes for the Patina Website
  */
@@ -24,5 +25,10 @@ export const PatinaRoutes = [
     path: 'mentorship',
     description: 'Mentorship',
     element: <MentorshipPage />,
+  },
+  {
+    path: 'scholarship',
+    description: 'Scholarship',
+    element: <ScholarshipPage />,
   },
 ]
