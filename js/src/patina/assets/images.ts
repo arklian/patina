@@ -3,6 +3,11 @@
  * https://webapps.stackexchange.com/a/98573
  */
 export const imageUrls = {
+  patinaLogo: {
+    drive:
+      'https://drive.google.com/file/d/1DwXQtbDrDBiRiS96KEbJj84FIj_3ARuI/view?usp=drive_link',
+    src: 'https://patina-dev.nyc3.digitaloceanspaces.com/logo%202.png',
+  },
   mentorship: {
     drive:
       'https://drive.google.com/file/d/1jGA8KWh0NVbS1s-zIDzTVRY27A_Y8o86/view',
