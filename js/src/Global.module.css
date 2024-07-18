@@ -1,0 +1,10 @@
+html,
+body {
+  background-color: #000;
+  color: white; /* Ensure text is readable */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the background color covers the full height */
+  width: 100%; /* Ensure the background color covers the full width */
+  font-family: Figtree, sans-serif; /* Apply the custom font globally */
+}
