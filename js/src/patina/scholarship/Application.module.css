@@ -12,7 +12,6 @@
 .title {
   display: flex;
   justify-content: center;
-  font-size: large;
   align-self: stretch;
   padding-bottom: rem(66px);
   color: white;
