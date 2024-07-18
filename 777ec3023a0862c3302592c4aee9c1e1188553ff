@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3aaa62f7_fbaffd89",
+        "filename": "js/pnpm-lock.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:55:18Z",
+      "side": 1,
+      "message": "This shouldn\u0027t be in this commit.",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "920d4c61_0ee7713c",
+        "filename": "js/src/personal/riyuan/components/home/Home.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:55:18Z",
+      "side": 1,
+      "message": "nit: add a space before // 960px",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9cbac388_a63a327f",
+        "filename": "js/src/personal/riyuan/components/home/Home.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:55:18Z",
+      "side": 1,
+      "message": "Fix this\nThis is one reason why I was sort of against automatically running eslint --fix.",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "095d6dce_6b61a8d6",
+        "filename": "js/src/personal/riyuan/components/home/Home.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:55:18Z",
+      "side": 1,
+      "message": "same with this",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c0d9d40_d3ef6b20",
+        "filename": "js/src/personal/riyuan/components/navigation/Navigation.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T16:55:18Z",
+      "side": 1,
+      "message": "you tested that these worked right?",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
