@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "54177624_523ff40a",
+        "filename": "js/pnpm-lock.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-18T17:19:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3aaa62f7_fbaffd89",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "920d4c61_0ee7713c",
@@ -82,6 +100,24 @@
       "writtenOn": "2024-07-18T16:55:18Z",
       "side": 1,
       "message": "you tested that these worked right?",
+      "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4c05925_fc52438e",
+        "filename": "js/src/personal/riyuan/components/navigation/Navigation.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-18T17:19:40Z",
+      "side": 1,
+      "message": "yep",
+      "parentUuid": "1c0d9d40_d3ef6b20",
       "revId": "777ec3023a0862c3302592c4aee9c1e1188553ff",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
