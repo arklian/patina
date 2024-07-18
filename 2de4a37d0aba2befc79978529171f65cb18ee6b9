@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4aaf792d_da670cbc",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T20:32:35Z",
+      "side": 1,
+      "message": "if you have classname, you can\u0027t have tailwind styling",
+      "revId": "2de4a37d0aba2befc79978529171f65cb18ee6b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
