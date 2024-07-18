@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "741e5adc_20d21813",
+        "filename": "js/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:22:09Z",
+      "side": 0,
+      "message": "Shouldn\u0027t we remove this old image then?",
+      "revId": "ca7f81c3f6e8d8c3877173f344bec9ca249ef235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

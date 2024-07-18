@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15dcdabb_d980ef67",
+        "filename": "js/src/patinaicon.svg",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-18T18:22:09Z",
+      "side": 1,
+      "message": "Why is this 27x27 favicon 10kb lol.\nWe should probably try to get one from Celina/Joy that isn\u0027t converted from a 668x256 image.",
+      "revId": "f1bbe7be5a463d7c2a2bfcf6c1523df400ab38f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
