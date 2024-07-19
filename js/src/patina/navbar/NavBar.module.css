@@ -34,3 +34,8 @@
 .linkLabel {
   margin-right: rem(5px);
 }
+
+.dropDownItem {
+  text-decoration: none;
+  color: inherit;
+}

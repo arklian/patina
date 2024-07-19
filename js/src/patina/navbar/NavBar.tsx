@@ -10,44 +10,42 @@ const links = [
     link: '/about',
     label: 'About',
     links: [
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
+      { link: '/mission', label: 'Mission' },
+      { link: '/team', label: 'Team' },
     ],
   },
   {
     link: '/Program',
     label: 'Program',
     links: [
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
+      { link: '/mentorship', label: 'Mentorship' },
+      { link: '/scholarship', label: 'Scholarship' },
+      { link: '/stuff5', label: 'stuff' },
+      { link: '/stuff6', label: 'stuff' },
     ],
   },
   {
     link: '/GetInvolved',
     label: 'Get Involved',
     links: [
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
+      { link: '/stuff7', label: 'stuff' },
+      { link: '/stuff8', label: 'stuff' },
+      { link: '/stuff9', label: 'stuff' },
+      { link: '/stuff10', label: 'stuff' },
     ],
   },
   {
     link: '/StayInformed',
     label: 'Stay Informed',
     links: [
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
-      { link: '/stuff', label: 'stuff' },
+      { link: '/stuff11', label: 'stuff' },
+      { link: '/stuff12', label: 'stuff' },
+      { link: '/stuff13', label: 'stuff' },
+      { link: '/stuff14', label: 'stuff' },
     ],
   },
-  { link: '/pricing', label: 'Blog' },
-  { link: '/pricing', label: 'Donate' },
+  { link: '/Blog', label: 'Blog' },
+  { link: '/Donate', label: 'Donate' },
 ]
 
 //NavBar component renders the navigation bar with links and dropdown menus.
@@ -60,7 +58,11 @@ export function NavBar() {
    */
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Menu.Item key={item.link}>{item.label}</Menu.Item>
+      <Menu.Item key={item.link}>
+        <a href={item.link} className={classes.dropDownItem}>
+          {item.label}
+        </a>
+      </Menu.Item>
     ))
 
     if (menuItems) {
@@ -72,11 +74,7 @@ export function NavBar() {
           withinPortal
         >
           <Menu.Target>
-            <a
-              href={link.link}
-              className={classes.link}
-              onClick={(event) => event.preventDefault()}
-            >
+            <a href={link.link} className={classes.link}>
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size="0.9rem" stroke={1.5} />
@@ -89,12 +87,7 @@ export function NavBar() {
     }
 
     return (
-      <a
-        key={link.label}
-        href={link.link}
-        className={classes.link}
-        onClick={(event) => event.preventDefault()}
-      >
+      <a key={link.label} href={link.link} className={classes.link}>
         {link.label}
       </a>
     )
@@ -103,7 +96,6 @@ export function NavBar() {
   return (
     <header className={classes.header}>
       <Container size="75rem">
-        {' '}
         {/* 75rem == 1200px */}
         <div className={classes.inner}>
           <FontAwesomeIcon icon={faMagnifyingGlass} />
