@@ -6,11 +6,7 @@ export function ClickableImage() {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img
-          src={PersonalImage}
-          alt="Manny"
-          className={styles.personalImage}
-        />
+        <img src={PersonalImage} alt="Manny" className={styles.personalImage} />
       </div>
       <div className={styles.overlay}>
         <div className={styles.menu}>
@@ -18,10 +14,7 @@ export function ClickableImage() {
             className={styles.menuItem}
             style={{ transform: 'rotate(-20deg) translateX(-50%)' }}
           >
-            <Link
-              to={'/manny/aboutme'}
-              className={styles.menuItem}
-            >
+            <Link to={'/manny/aboutme'} className={styles.menuItem}>
               {'About Me'}
             </Link>
           </div>
@@ -29,10 +22,7 @@ export function ClickableImage() {
             className={styles.menuItem}
             style={{ transform: 'rotate(-10deg) translateX(-30%)' }}
           >
-            <Link
-              to={'/manny/resume'}
-              className={styles.menuItem}
-            >
+            <Link to={'/manny/resume'} className={styles.menuItem}>
               {'Resume'}
             </Link>
           </div>
@@ -52,10 +42,7 @@ export function ClickableImage() {
             className={styles.menuItem}
             style={{ transform: 'rotate(20deg) translateX(-65%)' }}
           >
-            <Link
-              to={'/manny/contact'}
-              className={styles.menuItem}
-            >
+            <Link to={'/manny/contact'} className={styles.menuItem}>
               {'Contact'}
             </Link>
           </div>

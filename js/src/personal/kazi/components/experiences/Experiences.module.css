@@ -34,6 +34,7 @@
   list-style: none;
   padding: 25px;
 }
+
 .Item {
   display: flex;
   flex-direction: row;

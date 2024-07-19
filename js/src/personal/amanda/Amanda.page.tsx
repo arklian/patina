@@ -1,6 +1,6 @@
 import { Container, MantineProvider } from '@mantine/core'
-import { cssVariableResolver, theme } from './theme.ts'
 import { Outlet } from 'react-router-dom'
+import { cssVariableResolver, theme } from './theme.ts'
 import styles from '@/personal/amanda/Amanda.module.css'
 import { LightDarkButton } from '@/personal/amanda/LightDarkButton.tsx'
 import { Sidebar } from '@/personal/amanda/Sidebar.tsx'
