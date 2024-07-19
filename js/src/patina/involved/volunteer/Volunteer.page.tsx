@@ -1,12 +1,11 @@
-import { MantineProvider, Title, Text, Image } from '@mantine/core'
-import { theme, resolver } from '../../theme.ts'
+import { Title, Text, Image } from '@mantine/core'
 import { imageUrls } from '../../assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
 
 export function VolunteerPage() {
   return (
-    <MantineProvider theme={theme} cssVariablesResolver={resolver}>
+    <div>
       <section className={styles.wrapper}>
         <div className={styles.text}>
           <Title order={2} className={styles.title}>
@@ -18,7 +17,10 @@ export function VolunteerPage() {
             }
           </Text>
         </div>
-        <Image className={styles.volunteerImg} src={imageUrls.mentorship.src} />
+        <Image
+          className={styles.volunteerImg}
+          src={imageUrls.volunteeropportunities.src}
+        />
       </section>
       <section className={styles.grid}>
         <VolunteerCard
@@ -42,6 +44,6 @@ export function VolunteerPage() {
           type="Remote/In-person"
         />
       </section>
-    </MantineProvider>
+    </div>
   )
 }

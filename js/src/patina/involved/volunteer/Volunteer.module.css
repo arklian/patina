@@ -28,6 +28,7 @@
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: rem(30px);
   letter-spacing: rem(-2px);
+  font-family: 'Figtree';
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(15px);

@@ -43,4 +43,9 @@ export const imageUrls = {
       'https://drive.google.com/file/d/1gVKHEX9NJExD83VqCsNo4IosDDF1h5r-/view?usp=sharing',
     src: 'https://cdn.discordapp.com/attachments/1261068702171009085/1262480237615124571/Group_297559.png?ex=6696bfd8&is=66956e58&hm=2506faf9caa9b3d56c06b7f228d89b3c1fe6137c605e1732b3f2bf80ae694531&',
   },
+  volunteeropportunities: {
+    drive:
+      'https://drive.google.com/file/d/1cG2LeFnXsYjQKgfULdWvb2Ys5ZIECXp2/view',
+    src: 'https://s3-alpha-sig.figma.com/img/a954/9494/ec4d56fbd88898338066e5d7afb83522?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HN4WICai0doWE6JswGTdVwNv-bL8xSOugZQBoV7Vsupufs9oks9CSLT7Amgjgn2YhLKJmLDTpZrLT38rVAkaV8mghA-SKdkb~IxRgjY5q5W6mkGDcRE6ND0NflWhmiZHuK40juFHrL9afxO9bPatyAfjCarQpc04-rPtEnBPd5kMlJebaFzL~OP~vDTw6K~lkCjXOw0wS2YkqnmPe26i13TlVr4BVC8QkIxz-YR-Tvj6csK7aMpMKUaBLadykFwbEWacm7deyLhqeSgZRl9JgFslLZzcHohIJUEcVjKXOnD7nUHSqD8HPNJb69~wUgb9F-CJhLhusgoCckrf8UavuQ__',
+  },
 }
