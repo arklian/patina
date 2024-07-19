@@ -70,6 +70,24 @@
       "parentUuid": "a178330a_c3252f51",
       "revId": "f1bbe7be5a463d7c2a2bfcf6c1523df400ab38f0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61f88924_a9063aa7",
+        "filename": "js/src/patinaicon.svg",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-19T17:26:00Z",
+      "side": 1,
+      "message": "Nice!",
+      "parentUuid": "31c31fdb_0eac37c5",
+      "revId": "f1bbe7be5a463d7c2a2bfcf6c1523df400ab38f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
