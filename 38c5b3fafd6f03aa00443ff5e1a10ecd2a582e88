@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "53a8f80d_22bdc188",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-19T16:50:54Z",
+      "side": 1,
+      "message": "This is the same as scholarSplash",
+      "parentUuid": "d85fc1e6_df52b85c",
+      "revId": "38c5b3fafd6f03aa00443ff5e1a10ecd2a582e88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f27f2909_fce7fe5b",
         "filename": "js/src/patina/theme.ts",
         "patchSetId": 2
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-19T00:18:39Z",
       "side": 1,
       "message": "is this supposed to be in this CR\nSeparate things should be in separate CRs. I don\u0027t mind one line CRs.",
+      "revId": "38c5b3fafd6f03aa00443ff5e1a10ecd2a582e88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8d4e29e_c54fe893",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-19T16:50:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f27f2909_fce7fe5b",
       "revId": "38c5b3fafd6f03aa00443ff5e1a10ecd2a582e88",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
