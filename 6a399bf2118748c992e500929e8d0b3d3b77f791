@@ -16,6 +16,24 @@
       "message": "Can you check the websites that were changed and see that nothing major is broken?",
       "revId": "6a399bf2118748c992e500929e8d0b3d3b77f791",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a442137d_00ee30fe",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-19T18:49:57Z",
+      "side": 1,
+      "message": "Everything looked the same as before changing the files, can you approve the CR before this so I can ship this one as well?",
+      "parentUuid": "fd74d488_4012d6fc",
+      "revId": "6a399bf2118748c992e500929e8d0b3d3b77f791",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
