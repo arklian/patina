@@ -16,6 +16,24 @@
       "message": "nit: usp",
       "revId": "318abfea47f08f37516ac9806cd5b11763f2aaf6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eab9a457_18012b85",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-19T18:55:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a324e10_ecdd0ebd",
+      "revId": "318abfea47f08f37516ac9806cd5b11763f2aaf6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
