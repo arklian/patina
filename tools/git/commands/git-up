@@ -4,7 +4,7 @@
 ####################################################################################################
 # Parsing Flags and Args
 ####################################################################################################
-v=1 # verbose
+v=0 # verbose
 pushToGerrit=1
 updateGithub=0
 commentOnPR=1
@@ -44,9 +44,17 @@ remoteGerritURL="https://gerrithub.io"
 # Dependency Checks
 ####################################################################################################
 
+# Check if gh cli installed
 if ! command -v gh &> /dev/null
 then
   echo "gh CLI not installed: Run \"brew install gh\" to fix"
+  exit 1
+fi
+
+# Check if user is authenticated into gh
+if ! gh auth status >/dev/null 2>&1
+then
+  echo "Not logged into gh: Run \"gh auth login\" to fix"
   exit 1
 fi
 
@@ -118,7 +126,7 @@ if [ $pushToGerrit = 1 ]; then
     commitIdOffset=$(( $idx - 1 ))
     commitId=$(git rev-parse HEAD~${commitIdOffset})
     [ $v = 1 ] && echo "-- Running \"pnpm run test\" on change-id: ${changes[idx]}"
-    git push --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
+    [ $v = 1 ] && git push --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]} || git push --quiet --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
     gh workflow run build-test -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
 fi
