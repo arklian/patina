@@ -1,0 +1,106 @@
+#!/bin/bash
+
+
+####################################################################################################
+# Dependency Checks
+####################################################################################################
+# Function to check and install doctl
+install_doctl() {
+    if ! command -v doctl &> /dev/null; then
+        echo "doctl not found. Installing doctl..."
+
+        # Check OS and install doctl accordingly
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo snap install doctl
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install doctl
+        elif [[ "$OSTYPE" == "msys" ]]; then
+            echo "Please install doctl manually from https://github.com/digitalocean/doctl/releases"
+            exit 1
+        else
+            echo "Unsupported OS. Please install doctl manually."
+            exit 1
+        fi
+
+        echo "doctl installed successfully."
+    fi
+}
+
+# Function to check and install curl
+install_curl() {
+    if ! command -v curl &> /dev/null; then
+        echo "curl not found. Installing curl..."
+
+        # Check OS and install curl accordingly
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo apt-get update
+            sudo apt-get install curl -y
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install curl
+        elif [[ "$OSTYPE" == "msys" ]]; then
+            echo "Please install curl manually from https://curl.se/download.html"
+            exit 1
+        else
+            echo "Unsupported OS. Please install curl manually."
+            exit 1
+        fi
+
+        echo "curl installed successfully."
+    fi
+}
+
+# Install doctl and curl if they are not already installed
+install_doctl
+install_curl
+
+
+####################################################################################################
+# Main Script Start
+####################################################################################################
+# Check if the correct number of arguments are provided
+if [ "$#" -lt 1 ]; then
+    echo "Usage: git image <image_path>"
+    exit 1
+fi
+
+IMAGE_PATH=$1
+SPACE_NAME="patina-dev"
+SPACE_PATH="Web-Img/"
+ACCESS_KEY="DO00CJEC88HLQVLAB72K"
+SECRET_KEY="5RfpTwsJSsxKKRVxW/vwr2qGp11T0HSBbhKJrv7fwY8"
+REGION="nyc3"
+
+# Check if the image file exists
+if [ ! -f "$IMAGE_PATH" ]; then
+    echo "File not found: $IMAGE_PATH"
+    exit 1
+fi
+
+# Default to root of the Space if no path is provided
+if [ -z "$SPACE_PATH" ]; then
+    SPACE_PATH=""
+fi
+
+FILE_NAME=$(basename "$IMAGE_PATH")
+
+# Calculate the date in the correct format
+DATE=$(date -u +"%a, %d %b %Y %T %Z")
+
+# Create the string to sign
+STRING_TO_SIGN="PUT\n\n\n${DATE}\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
+
+# Create the signature
+SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${SECRET_KEY}" -binary | base64)
+
+# Upload the image using curl
+curl -X PUT -T "$IMAGE_PATH" \
+    -H "Date: ${DATE}" \
+    -H "Authorization: AWS ${ACCESS_KEY}:${SIGNATURE}" \
+    "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+
+if [ $? -eq 0 ]; then
+    echo "Image uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+else
+    echo "Failed to upload image."
+    exit 1
+fi
