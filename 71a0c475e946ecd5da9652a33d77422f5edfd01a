@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88cb5d2d_39d8b32b",
+        "filename": "js/src/personal/martin/Martin.page.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-19T03:03:01Z",
+      "side": 0,
+      "message": "Outlet should be in this file.",
+      "revId": "71a0c475e946ecd5da9652a33d77422f5edfd01a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

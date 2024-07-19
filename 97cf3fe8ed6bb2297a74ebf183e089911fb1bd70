@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6277e66f_20ddcf9f",
+        "filename": "js/src/personal/martin/components/HeaderNav.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-19T03:03:01Z",
+      "side": 1,
+      "message": "You put the entire website into a react component called HeaderNav. You should fix that.",
+      "revId": "97cf3fe8ed6bb2297a74ebf183e089911fb1bd70",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
