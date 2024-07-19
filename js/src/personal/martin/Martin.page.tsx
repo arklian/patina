@@ -7,7 +7,6 @@ import {
 } from '@mantine/core'
 import { Outlet } from 'react-router-dom'
 import { theme } from './theme.ts'
-import {Outlet} from "react-router-dom";
 
 export function MartinPage() {
   return (
