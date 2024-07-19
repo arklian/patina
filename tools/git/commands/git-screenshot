@@ -1,0 +1,85 @@
+#!/bin/zsh
+
+TOKEN
+
+print_usage() {
+# `cat << EOF` This means that cat should stop reading when EOF is detected
+cat << EOF
+Usage: git screenshot
+Uploads screenshot to Digital Ocean
+
+-h, -help                  Display help
+
+EOF
+}
+
+while getopts 'h' flag; do
+  case "${flag}" in
+    h) print_usage
+       exit 0 ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+####################################################################################################
+# Dependency Checks
+####################################################################################################
+# Function to check and install doctl
+install_doctl() {
+    if ! command -v doctl &> /dev/null; then
+        echo "doctl not found. Installing doctl..."
+
+        # Check OS and install doctl accordingly
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo snap install doctl
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install doctl
+        elif [[ "$OSTYPE" == "msys" ]]; then
+            echo "Please install doctl manually from https://github.com/digitalocean/doctl/releases"
+            exit 1
+        else
+            echo "Unsupported OS. Please install doctl manually."
+            exit 1
+        fi
+
+        echo "doctl installed successfully."
+    fi
+}
+
+# Function to check and install curl
+install_curl() {
+    if ! command -v curl &> /dev/null; then
+        echo "curl not found. Installing curl..."
+
+        # Check OS and install curl accordingly
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo apt-get update
+            sudo apt-get install curl -y
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install curl
+        elif [[ "$OSTYPE" == "msys" ]]; then
+            echo "Please install curl manually from https://curl.se/download.html"
+            exit 1
+        else
+            echo "Unsupported OS. Please install curl manually."
+            exit 1
+        fi
+
+        echo "curl installed successfully."
+    fi
+}
+
+# Install doctl and curl if they are not already installed
+install_doctl
+install_curl
+
+
+IMAGE_PATH=""
+SPACE_NAME="patina-dev"
+SPACE_PATH="Screenshot/"
+ACCESS_KEY="DO00CJEC88HLQVLAB72K"
+SECRET_KEY="5RfpTwsJSsxKKRVxW/vwr2qGp11T0HSBbhKJrv7fwY8"
+REGION="nyc3"
+
+
