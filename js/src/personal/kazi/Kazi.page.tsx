@@ -15,22 +15,13 @@ export function KaziPage() {
         <section>
           <Navbar />
         </section>
-        <section
-          id="hero"
-          className={styles.section}
-        >
+        <section id="hero" className={styles.section}>
           <Hero />
         </section>
-        <section
-          id="about"
-          className={styles.section}
-        >
+        <section id="about" className={styles.section}>
           <Experiences />
         </section>
-        <section
-          id="projects"
-          className={styles.section}
-        >
+        <section id="projects" className={styles.section}>
           <Projects />
         </section>
         <div id="contact">

@@ -169,7 +169,9 @@ export function TonyPage() {
               <Text className={styles.experienceTitle}>
                 {'Software Developer Intern @ Patina Network ↗'}
               </Text>
-              <Text className={styles.experienceDates}>{'Jun 2024 - Aug 2024'}</Text>
+              <Text className={styles.experienceDates}>
+                {'Jun 2024 - Aug 2024'}
+              </Text>
               <Text className={styles.experienceText}>
                 {
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.'
@@ -221,7 +223,10 @@ export function TonyPage() {
                       <Badge color={'#0dba93'} autoContrast>
                         {'Flutter'}
                       </Badge>
-                      <Badge color={'#0dba93'} autoContrast> {'Android Studios'}</Badge>
+                      <Badge color={'#0dba93'} autoContrast>
+                        {' '}
+                        {'Android Studios'}
+                      </Badge>
                     </Group>
                   </div>
                 </div>

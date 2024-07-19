@@ -23,10 +23,7 @@ export function DarkModeToggle() {
     }
   }
   return (
-    <Button
-      className={styles.sunToMoonButton}
-      onClick={changeIcon}
-    >
+    <Button className={styles.sunToMoonButton} onClick={changeIcon}>
       {sun ?
         <FaSun
           className={

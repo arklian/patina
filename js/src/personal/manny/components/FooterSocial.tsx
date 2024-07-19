@@ -21,11 +21,7 @@ export function FooterSocial() {
             target={'_blank'}
             rel={'noopener noreferrer'}
           >
-            <ActionIcon
-              size="lg"
-              color="gray"
-              variant="subtle"
-            >
+            <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandInstagram
                 style={{ width: rem(35), height: rem(35) }}
                 stroke={1.5}
@@ -37,11 +33,7 @@ export function FooterSocial() {
             target={'_blank'}
             rel={'noopener noreferrer'}
           >
-            <ActionIcon
-              size="lg"
-              color="gray"
-              variant="subtle"
-            >
+            <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandGithub
                 style={{ width: rem(35), height: rem(35) }}
                 stroke={1.5}
@@ -53,11 +45,7 @@ export function FooterSocial() {
             target={'_blank'}
             rel={'noopener noreferrer'}
           >
-            <ActionIcon
-              size="lg"
-              color="gray"
-              variant="subtle"
-            >
+            <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandLinkedin
                 style={{ width: rem(35), height: rem(35) }}
                 stroke={1.5}

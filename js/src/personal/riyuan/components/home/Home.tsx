@@ -36,10 +36,8 @@ export function Home() {
             className={hstyles.description}
             ta="left"
           >
-            {
-              "This website is a space where I share my experiences, interests, and personal projects. " +
-              "If you're interested in learning more about me and my work, keep scrolling to explore my skills and projects."
-            }
+            {'This website is a space where I share my experiences, interests, and personal projects. ' +
+              "If you're interested in learning more about me and my work, keep scrolling to explore my skills and projects."}
           </Text>
           <Group justify={'left'} pt={'md'}>
             <Button

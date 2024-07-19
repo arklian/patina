@@ -28,19 +28,21 @@
 .heroImg {
   width: 50%;
   z-index: 1;
-  animation-name: img_float;
+  animation-name: img-float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes img_float {
+@keyframes img-float {
   0% {
     transform: translate(0, 0px);
   }
+
   50% {
     transform: translate(0, -20px);
   }
+
   100% {
     transform: translate(0, -0px);
   }

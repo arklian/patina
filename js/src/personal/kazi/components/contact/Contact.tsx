@@ -7,16 +7,10 @@ export function Contact() {
     <div>
       <footer className={styles.wrapper}>
         <div className={styles.text}>
-          <Title
-            className={styles.title}
-            order={2}
-          >
+          <Title className={styles.title} order={2}>
             {'Contact'}
           </Title>
-          <Text
-            className={styles.description}
-            size="md"
-          >
+          <Text className={styles.description} size="md">
             {'Please feel free to reach out!'}
           </Text>
         </div>
@@ -28,10 +22,7 @@ export function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaInstagram
-                size={30}
-                color={'black'}
-              />
+              <FaInstagram size={30} color={'black'} />
               <Text size="md">{'@kazi_mansha'}</Text>
             </a>
           </List.Item>
@@ -42,10 +33,7 @@ export function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedinIn
-                size={30}
-                color={'black'}
-              />
+              <FaLinkedinIn size={30} color={'black'} />
               <Text size="md">{'Kazi Mansha'}</Text>
             </a>
           </List.Item>
@@ -56,10 +44,7 @@ export function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub
-                size={30}
-                color={'black'}
-              />
+              <FaGithub size={30} color={'black'} />
               <Text size="md">{'KaziMansha'}</Text>
             </a>
           </List.Item>

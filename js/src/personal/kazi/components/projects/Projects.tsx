@@ -7,29 +7,16 @@ export function Projects() {
   return (
     <div>
       <section className={styles.wrapper}>
-        <Title
-          order={2}
-          className={styles.title}
-        >
+        <Title order={2} className={styles.title}>
           {'Projects'}
         </Title>
         <div className={styles.projects}>
           <div className={styles.container}>
-            <Image
-              className={styles.image}
-              src={cvLogo}
-              alt={''}
-            />
-            <Title
-              className={styles.projectTitle}
-              order={3}
-            >
+            <Image className={styles.image} src={cvLogo} alt={''} />
+            <Title className={styles.projectTitle} order={3}>
               {'Age, Gender, Emotion Model'}
             </Title>
-            <Text
-              className={styles.description}
-              size="md"
-            >
+            <Text className={styles.description} size="md">
               {
                 'Trained a model to predict age, gender and emotion through pictures or live feed.'
               }
@@ -52,21 +39,11 @@ export function Projects() {
           </div>
 
           <div className={styles.container}>
-            <Image
-              className={styles.image}
-              src={oculusLogo}
-              alt={''}
-            />
-            <Title
-              className={styles.projectTitle}
-              order={3}
-            >
+            <Image className={styles.image} src={oculusLogo} alt={''} />
+            <Title className={styles.projectTitle} order={3}>
               {"Beat 'Em Up FPS VR Game"}
             </Title>
-            <Text
-              className={styles.description}
-              size="md"
-            >
+            <Text className={styles.description} size="md">
               {
                 "Created a rudimentary FPS VR game in the Beat 'Em Genre on Unity with multiple scenes and environments for different levels"
               }

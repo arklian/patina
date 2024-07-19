@@ -9,10 +9,7 @@ export function Experiences() {
   return (
     <div>
       <section className={styles.wrapper}>
-        <Title
-          className={styles.title}
-          order={2}
-        >
+        <Title className={styles.title} order={2}>
           {'What am I doing right now?'}
         </Title>
         <div className={styles.content}>
