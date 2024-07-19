@@ -4,6 +4,30 @@
   justify-content: space-between;
   padding: rem(16px) rem(150px);
   background-color: var(--mantine-color-dark-6);
+  align-items: center;
+}
+
+.logoTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.patina {
+  line-height: 1.2;
+  color: white;
 }
 
 .footerLinks {
