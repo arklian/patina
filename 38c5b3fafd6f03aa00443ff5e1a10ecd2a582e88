@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a0f1aead_9fd08008",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-19T17:27:37Z",
+      "side": 1,
+      "message": "Should we delete this then?",
+      "parentUuid": "b2a482da_88db2d3b",
+      "revId": "38c5b3fafd6f03aa00443ff5e1a10ecd2a582e88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f27f2909_fce7fe5b",
         "filename": "js/src/patina/theme.ts",
         "patchSetId": 2
