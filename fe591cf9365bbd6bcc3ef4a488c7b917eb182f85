@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc48003c_fd462249",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-19T16:53:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8bdee735_635f015d",
+      "revId": "fe591cf9365bbd6bcc3ef4a488c7b917eb182f85",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "96ec6f0d_3dbc0de4",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-19T00:17:50Z",
       "side": 1,
       "message": "This makes more sense in the previous CR",
+      "revId": "fe591cf9365bbd6bcc3ef4a488c7b917eb182f85",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47cc3704_61b1cd55",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-07-19T16:53:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96ec6f0d_3dbc0de4",
       "revId": "fe591cf9365bbd6bcc3ef4a488c7b917eb182f85",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
