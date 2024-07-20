@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PatinaController {
 
-    @GetMapping("/")
-    public String fetch() {
+    @GetMapping("/api/test")
+    public String test() {
         return "HelloWorld! \n This is an endpoint!";
     }
 }

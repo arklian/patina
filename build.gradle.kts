@@ -27,3 +27,13 @@ dependencies {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.named("bootRun") {
+    group = "patina"
+    dependsOn(":js:patina")
+
+}
+
+tasks.named<TaskReportTask>("tasks") {
+    displayGroups = listOf("patina")
+}
