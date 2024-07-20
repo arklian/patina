@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "230cb5fe_41bb0926",
+        "filename": "tools/git/commands/git-up",
+        "patchSetId": 4
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:45:50Z",
+      "side": 1,
+      "message": "This line is a bit long.\nCan you just make it an if statement?\nIt\u0027s not great to rely on exit codes of commands.",
+      "range": {
+        "startLine": 129,
+        "startChar": 0,
+        "endLine": 129,
+        "endChar": 182
+      },
+      "revId": "954b6cb9fe110da83bc02091a993c8fac11443a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
