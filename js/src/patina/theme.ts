@@ -69,6 +69,6 @@ export const resolver: CSSVariablesResolver = (computedTheme) => ({
   },
   light: {},
   dark: {
-    '--mantine-body-color': '#000000',
+    '--mantine-color-body': '#000000',
   },
 })
