@@ -3,6 +3,63 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "23501f41_681e2472",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:39:42Z",
+      "side": 1,
+      "message": "tell them to install doctl instead of installing it for them. See git up",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 30
+      },
+      "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39936eb5_1d3c3e59",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:39:42Z",
+      "side": 1,
+      "message": "generally don\u0027t need this one, since macos comes with this by default, and we only support mac.",
+      "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1784c693_95617d57",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:39:42Z",
+      "side": 1,
+      "message": "Folders should be lowercase, even in digital ocean.",
+      "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fcd93e04_d5eee6cd",
         "filename": "tools/git/commands/git-image",
         "patchSetId": 2
