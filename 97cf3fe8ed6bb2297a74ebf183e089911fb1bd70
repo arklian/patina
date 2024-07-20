@@ -16,6 +16,24 @@
       "message": "You put the entire website into a react component called HeaderNav. You should fix that.",
       "revId": "97cf3fe8ed6bb2297a74ebf183e089911fb1bd70",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12526e8a_c79b2d46",
+        "filename": "js/src/personal/martin/components/HeaderNav.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-20T00:13:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6277e66f_20ddcf9f",
+      "revId": "97cf3fe8ed6bb2297a74ebf183e089911fb1bd70",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
