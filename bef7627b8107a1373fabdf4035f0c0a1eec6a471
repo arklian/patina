@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c35778ac_a478e61b",
+        "filename": "js/src/patina/navbar/NavBar.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:48:35Z",
+      "side": 1,
+      "message": "Is this space necessary?",
+      "revId": "bef7627b8107a1373fabdf4035f0c0a1eec6a471",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
