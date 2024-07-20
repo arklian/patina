@@ -16,6 +16,24 @@
       "message": "yeah you definitely shouldn\u0027t have this here\nYou should probably delete this now.",
       "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df4f5358_bd220e55",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:30:15Z",
+      "side": 1,
+      "message": "Regenerated the secret key to invalidate this key.",
+      "parentUuid": "fcd93e04_d5eee6cd",
+      "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
