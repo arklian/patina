@@ -1,10 +1,15 @@
-import { Title, Text } from '@mantine/core'
+import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
+import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 
 export function MartinProject() {
   return (
     <>
-      <Title order={1}>{'Projects'}</Title>
-      <Text fw={500}>{'Project Page'}</Text>
+      <Jumbotron
+        title="Projects"
+        text={'Short Paragraph into to page. '}
+        imgSrc={MartinFront}
+        imgSize="35%"
+      />
     </>
   )
 }
