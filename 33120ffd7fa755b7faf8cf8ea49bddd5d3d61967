@@ -91,6 +91,23 @@
       "parentUuid": "fcd93e04_d5eee6cd",
       "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc9716b9_84b3c174",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-20T03:42:58Z",
+      "side": 1,
+      "message": "Avoid spaces in image names.",
+      "revId": "33120ffd7fa755b7faf8cf8ea49bddd5d3d61967",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
