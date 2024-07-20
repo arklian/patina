@@ -1,7 +1,7 @@
 import {AppShell, Burger, Flex, Group, Image, Title} from '@mantine/core'
 import Logo from "@/personal/martin/assets/MartinLogo.ico";
 
-export type propNav ={
+type propNav ={
   open: boolean;
   toggleNav:() => void;
 }

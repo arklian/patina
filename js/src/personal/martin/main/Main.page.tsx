@@ -1,42 +1,26 @@
-import { Button, Center, Container, Divider, Flex, Grid, Image, Title, Text } from '@mantine/core'
+import { Button, Center, Container, Divider, Grid, Title, Text } from '@mantine/core'
 import { theme } from '@/personal/martin/theme.ts'
 import { Link } from 'react-router-dom'
+import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
 export function MartinMain() {
   return (
     <>
-      <Flex align="center" justify="center">
-        <Grid grow justify="center" align="center">
-          <Grid.Col span={4}>
-            <Container>
-              <Title order={1} mx={"1em"}>Hello! I'm Martin</Title>
-              <Text mx={"3em"}>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-                vitae, justo.
-              </Text>
-            </Container>
-          </Grid.Col>
-          <Grid.Col span={4}>
-            <Image
-              w="35%"
-              h="35%"
-              src={ MartinFront }
-              alt="Martin Front Shot"
-              style={{ padding: "15px" }}
-            />
-          </Grid.Col>
-        </Grid>
-      </Flex>
+      <Jumbotron
+        title="Hello! I'm Martin"
+        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+        vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+        imgSrc={MartinFront}
+        imgSize="35%"
+      />
       <Grid grow bg={ theme.colors.cobalt[7]}>
         <Grid.Col span={12}>
           <Center>
             <Container>
-              <Title order={2}>Learn More</Title>
+              <Title order={1}>Learn More</Title>
             </Container>
           </Center>
         </Grid.Col>
@@ -70,8 +54,6 @@ export function MartinMain() {
       </Grid>
       <Divider my="md"/>
       <Container bg={ theme.colors.cobalt[9]}>
-        <Title order={2}>Feature</Title>
-        <Text>Something fun/interesting</Text>
       </Container>
       <Divider my="md"/>
     </>
