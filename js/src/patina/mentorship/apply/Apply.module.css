@@ -1,6 +1,7 @@
 .itemContainer {
-  display: flex;
-  flex-direction: column;
+  margin: rem(48px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
   height: rem(600px);
   justify-content: center;
 }
