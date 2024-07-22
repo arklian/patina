@@ -1,10 +1,16 @@
-import { Text } from '@mantine/core'
+import { SimpleGrid, Text } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import styles from './About.module.css'
 
 // Defining the About component
 export function About() {
+  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
-    <div className={styles.section2}>
+    <SimpleGrid
+      cols={largeScreen ? 2 : 1}
+      spacing="xl"
+      className={styles.about}
+    >
       <div className={styles.left}>
         <h2 className={styles.aboutTitle}>{'About the Program'}</h2>
         <Text className={styles.aboutText}>
@@ -24,6 +30,6 @@ export function About() {
           {'" Quote from a student about how mentorship has helped them "'}
         </Text>
       </div>
-    </div>
+    </SimpleGrid>
   )
 }
