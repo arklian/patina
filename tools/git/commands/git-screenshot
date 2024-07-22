@@ -1,0 +1,104 @@
+#!/bin/zsh
+
+print_usage() {
+# `cat << EOF` This means that cat should stop reading when EOF is detected
+cat << EOF
+Usage: git screenshot
+Uploads screenshot to Digital Ocean
+
+-h, -help                  Display help
+
+EOF
+}
+
+while getopts 'h' flag; do
+  case "${flag}" in
+    h) print_usage
+       exit 0 ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+####################################################################################################
+# Dependency Checks
+####################################################################################################
+if ! command -v doctl &> /dev/null
+then
+  echo "doctl not installed: Run \"brew install doctl\" to fix"
+  exit 1
+fi
+
+FILE_NAME=$1
+IMAGE_PATH=""
+SPACE_NAME="patina-dev"
+SPACE_PATH="screenshot/"
+REGION="nyc3"
+
+
+if [ "$#" -lt 1 ]; then
+    echo "Please enter a image name for your screenshot: git screenshot <image_name>"
+    exit 1
+fi
+
+if [ -z "$DIGITAL_OCEAN_SPACES_ACCESS" ] || [ -z "$DIGITAL_OCEAN_SPACES_SECRET" ]; then
+    echo "Environment variables DIGITAL_OCEAN_SPACES_KEY and DIGITAL_OCEAN_SPACES_SECRET must be set."
+    exit 1
+fi
+
+
+
+pngpaste "${FILE_NAME}"
+
+IMAGE_PATH="${PWD}/${FILE_NAME}"
+
+echo $IMAGE_PATH
+
+
+# Calculate the date in the correct format
+
+DATE=$(date -u +"%a, %d %b %Y %T %Z")
+
+DO_DATE=$(date -u +"%Y-%m-%d-%H:%M:%S")
+
+echo $DATE
+
+GIT_USERNAME=$(git config user.name)
+
+trimmed_string=$(echo $GIT_USERNAME | tr -d ' ')
+
+echo "$GIT_USERNAME"
+
+
+#digital ocean filename
+
+DO_FILE_NAME="Screenshot-${DO_DATE}-${trimmed_string}-${FILE_NAME}"
+
+echo $DO_FILE_NAME
+
+# Create the string to sign
+STRING_TO_SIGN="PUT\n\n\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${DO_FILE_NAME}"
+
+# Create the signature
+SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
+
+
+# Upload the image using curl
+curl -X PUT -T "$IMAGE_PATH" \
+    -H "Date: ${DATE}" \
+    -H "x-amz-acl: public-read" \
+    -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+    "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${DO_FILE_NAME}"
+
+
+if [ $? -eq 0 ]; then
+    echo "Image uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${DO_FILE_NAME}"
+else
+    echo "Failed to upload image."
+    exit 1
+fi
+
+
+
+
+
