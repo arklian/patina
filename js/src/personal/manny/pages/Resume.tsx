@@ -33,17 +33,9 @@ export function ResumePage() {
         </Button>
       </div>
       <Container size="md">
-        <Card
-          shadow="sm"
-          p="lg"
-          radius="md"
-          withBorder
-        >
+        <Card shadow="sm" p="lg" radius="md" withBorder>
           <div className={styles.headerRow}>
-            <Title
-              order={1}
-              className={styles.title}
-            >
+            <Title order={1} className={styles.title}>
               {'Manuel Reyes Jr.'}
             </Title>
           </div>
@@ -57,10 +49,7 @@ export function ResumePage() {
               href="mailto:mauelreyes1241@outlook.com"
               className={styles.link}
             >
-              <IconMailFilled
-                size="16"
-                className={styles.icon}
-              />
+              <IconMailFilled size="16" className={styles.icon} />
               {'manuelreyes1241@outlook.com'}
             </Anchor>
             {' | '}
@@ -68,21 +57,12 @@ export function ResumePage() {
               href="https://www.linkedin.com/in/manuel-reyes-jr-12410803031241-me"
               className={styles.link}
             >
-              <IconBrandLinkedin
-                size="16"
-                className={styles.icon}
-              />
+              <IconBrandLinkedin size="16" className={styles.icon} />
               {'manuel-reyes-jr-swe'}
             </Anchor>
             {' | '}
-            <Anchor
-              href="https://www.reyesjr.com"
-              className={styles.link}
-            >
-              <IconWorld
-                size="16"
-                className={styles.icon}
-              />
+            <Anchor href="https://www.reyesjr.com" className={styles.link}>
+              <IconWorld size="16" className={styles.icon} />
               {'Personal website'}
             </Anchor>
             {' | '}
@@ -90,18 +70,12 @@ export function ResumePage() {
               href="https://github.com/MReyes1241"
               className={styles.link}
             >
-              <IconBrandGithub
-                size="16"
-                className={styles.icon}
-              />
+              <IconBrandGithub size="16" className={styles.icon} />
               {'MReyes1241'}
             </Anchor>
           </div>
           <Divider size={'lg'} />
-          <Title
-            order={2}
-            className={styles.sectionTitle}
-          >
+          <Title order={2} className={styles.sectionTitle}>
             {'Professional Summary'}
           </Title>
           <Text className={styles.sectionText}>
@@ -118,10 +92,7 @@ export function ResumePage() {
               ' practical application in coding, solidify my foundation in the field.\n'}
           </Text>
           <Divider size={'lg'} />
-          <Title
-            order={2}
-            className={styles.sectionTitle}
-          >
+          <Title order={2} className={styles.sectionTitle}>
             {'Experience'}
           </Title>
           <Text className={styles.jobTitle}>
@@ -176,10 +147,7 @@ export function ResumePage() {
             </ul>
           </Text>
           <Divider my="lg" />
-          <Title
-            order={2}
-            className={styles.sectionTitle}
-          >
+          <Title order={2} className={styles.sectionTitle}>
             {'Education'}
           </Title>
           <div className={styles.educationSection}>
@@ -221,10 +189,7 @@ export function ResumePage() {
             </div>
           </div>
           <Divider my="lg" />
-          <Title
-            order={2}
-            className={styles.sectionTitle}
-          >
+          <Title order={2} className={styles.sectionTitle}>
             {'Skills & Abilities'}
           </Title>
           <Text className={styles.skills}>
@@ -251,10 +216,7 @@ export function ResumePage() {
             </ul>
           </Text>
           <Divider my="lg" />
-          <Title
-            order={2}
-            className={styles.sectionTitle}
-          >
+          <Title order={2} className={styles.sectionTitle}>
             {'Languages'}
           </Title>
           <Text className={styles.languages}>

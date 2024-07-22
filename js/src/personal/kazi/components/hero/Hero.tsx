@@ -7,19 +7,12 @@ export function Hero() {
     <div>
       <section className={styles.wrapper}>
         <div className={styles.content}>
-          <Title
-            className={styles.title}
-            size={72}
-            order={1}
-          >
+          <Title className={styles.title} size={72} order={1}>
             {'Hello World!'}
             <br />
             {'My name is Kazi'}
           </Title>
-          <Text
-            className={styles.description}
-            size="lg"
-          >
+          <Text className={styles.description} size="lg">
             {
               "I am a current Software Engineer Intern at Patina Network Corporation and Lead Teaching Assistant at All Star Code. I am currently attending Hunter College and love to play video games, sing, and play sports. Can't wait to connect!"
             }

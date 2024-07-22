@@ -8,11 +8,7 @@ import { ClickableImage } from '@/personal/manny/components/ClickableImage.tsx'
 export function MannyPage() {
   return (
     <MantineProvider theme={theme}>
-      <Title
-        className={styles.title}
-        ta="center"
-        mt={100}
-      >
+      <Title className={styles.title} ta="center" mt={100}>
         {'Welcome to '}
         <Text
           inherit
