@@ -16,4 +16,9 @@ export const Routes = [
     description: 'Personal Websites',
     children: PersonalRoutes,
   },
+  {
+    path: '*',
+    description: ' 404 Not Found',
+    element: <div>{'404!!!'}</div>,
+  },
 ]
