@@ -1,0 +1,21 @@
+.calendarCell {
+  padding: rem(12px);
+}
+
+.calendarHeader {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  margin-left: rem(25px);
+  margin-right: rem(25px);
+}
+
+.calendarHeaderText {
+  margin-left: rem(50px);
+  margin-right: rem(50px);
+}
+
+.calendarBody {
+  margin: auto;
+}
