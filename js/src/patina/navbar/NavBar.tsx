@@ -1,8 +1,7 @@
-import { Menu, Group, Center, Burger, Container } from '@mantine/core'
+import { Menu, Group, Center, Burger, Container, Image } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { imageUrls } from '@/patina/assets/images.ts'
 import classes from './NavBar.module.css'
 
 const links = [
@@ -98,7 +97,9 @@ export function NavBar() {
       <Container size="75rem">
         {/* 75rem == 1200px */}
         <div className={classes.inner}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <a href={'/'} className={classes.link}>
+            <Image src={imageUrls.patinaLogo.src} />
+          </a>
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>
