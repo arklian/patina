@@ -144,6 +144,10 @@ iTerm2
   - brew install coreutils
   - brew install gh
   - brew install --cask git-credential-manager
+  - gradlew gng https://github.com/gdubw/gng
+    - brew tap gdubw/gng
+    - brew install gng
+
 
 ## VSCode
 - Add `code` to $PATH so you can call it in the terminal.
