@@ -1,11 +1,6 @@
-.section2 {
-  display: flex;
-  width: 100%;
-}
-
-.left {
-  width: rem(655px);
-  margin-right: rem(50px);
+.about {
+  margin-bottom: 7rem;
+  margin-top: 4rem;
 }
 
 .aboutTitle,
@@ -27,10 +22,14 @@
 .right {
   width: rem(538px);
   height: rem(309px);
+  justify-content: center;
+  justify-items: center;
+  display: contents;
 }
 
 .quote {
   color: white;
+  text-align: center;
   font-weight: 700;
   font-size: rem(48px);
 }
