@@ -26,20 +26,22 @@
   display: flex;
   align-items: flex-end;
   height: rem(700px);
-  background: var(--mantine-color-patina-dark-bg);
-  background-image: url('https://cdn.discordapp.com/attachments/1261068702171009085/1262442743255269487/hero.png?ex=66969ced&is=66954b6d&hm=ac8fedf35fd1f662e9051863056f2cc1879d4962453600d7455d874b5d23516e&');
-  background-size: 60vw auto;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .hero_title {
+  float: left;
+  display: inline-block;
   text-shadow: 1px 1px 6px white;
   color: white;
-  font-size: 5vw;
+  font-size: 4vw;
   padding-left: 5vw;
-  width: 70%;
-  padding-bottom: 5vw;
+  padding-bottom: rem(50px);
+}
+
+.hero_image {
+  width: 750px;
+  height: auto;
+  float: right;
 }
 
 .title_teal {
