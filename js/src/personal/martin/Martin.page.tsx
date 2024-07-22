@@ -1,22 +1,43 @@
-import { Container, Flex, Image, Title, MantineProvider } from '@mantine/core'
-import { Outlet } from 'react-router-dom'
+import { AppShell, Button, MantineProvider, Stack } from '@mantine/core'
+import { Link, Outlet } from 'react-router-dom'
+import { useDisclosure } from '@mantine/hooks'
+import { HeaderNav } from './components/HeaderNav.tsx'
 import { theme } from './theme.ts'
 
 export function MartinPage() {
+  const [openedNav, { toggle: toggleNav }] = useDisclosure(false)
   return (
     <MantineProvider theme={theme}>
-      <Container size="responsive" bg="cobalt">
-        <Flex gap="xl" justify="flex-start">
-          <Image
-            w={32}
-            h={32}
-            radius="sm"
-            src="https://m-squared47.github.io/content/logo.ico"
-          />
-          <Title order={1}>{"Martin's Page"}</Title>
-        </Flex>
-      </Container>
-      <Outlet />
+      <AppShell
+        header={{ height: '5em' }}
+        navbar={{
+          width: '10em',
+          breakpoint: 'sm',
+          collapsed: { mobile: !openedNav, desktop: !openedNav },
+        }}
+        padding="md"
+      >
+        <HeaderNav open={openedNav} toggleNav={toggleNav} />
+        <AppShell.Navbar>
+          <Stack justify="center">
+            <Link to="/personal/martin">
+              <Button fullWidth>{'Home'}</Button>
+            </Link>
+            <Link to="/personal/martin/about">
+              <Button fullWidth>{'About'}</Button>
+            </Link>
+            <Link to="/personal/martin/project">
+              <Button fullWidth>{'Projects'}</Button>
+            </Link>
+            <Link to="/personal/martin/contact">
+              <Button fullWidth>{'Contact'}</Button>
+            </Link>
+          </Stack>
+        </AppShell.Navbar>
+        <AppShell.Main>
+          <Outlet />
+        </AppShell.Main>
+      </AppShell>
     </MantineProvider>
   )
 }
