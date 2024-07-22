@@ -20,7 +20,7 @@ export function ScholarshipPage() {
             <img
               className={styles.hero_image}
               alt={'scholarship hero'}
-              src={imageUrls.scholarHero.src}
+              src={imageUrls.scholarship.src}
             />
           </div>
         </div>
