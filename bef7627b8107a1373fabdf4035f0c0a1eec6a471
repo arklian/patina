@@ -16,6 +16,24 @@
       "message": "Is this space necessary?",
       "revId": "bef7627b8107a1373fabdf4035f0c0a1eec6a471",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d537415c_0e331053",
+        "filename": "js/src/patina/navbar/NavBar.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-22T16:16:02Z",
+      "side": 1,
+      "message": "No, i think eslint auto added it when i try to add the line below it",
+      "parentUuid": "c35778ac_a478e61b",
+      "revId": "bef7627b8107a1373fabdf4035f0c0a1eec6a471",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
