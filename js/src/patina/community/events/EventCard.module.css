@@ -1,0 +1,11 @@
+.title {
+  font-weight: bold;
+  font-size: rem(24px);
+}
+
+.eventCard {
+  background-color: var(--mantine-color-gray-9);
+  border-radius: rem(10px);
+  padding: rem(14px);
+  margin-bottom: rem(24px);
+}
