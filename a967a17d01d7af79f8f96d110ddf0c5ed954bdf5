@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7933d19_62a99dd0",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-22T21:06:17Z",
+      "side": 1,
+      "message": "nit: we should add a description of what this script is for up here",
+      "revId": "a967a17d01d7af79f8f96d110ddf0c5ed954bdf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "991ada87_1ba36fb2",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-22T21:06:17Z",
+      "side": 1,
+      "message": "nit: few too many empty spaces",
+      "revId": "a967a17d01d7af79f8f96d110ddf0c5ed954bdf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ceb3cf31_276ef4ca",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-22T21:06:17Z",
+      "side": 1,
+      "message": "comment is wrong",
+      "revId": "a967a17d01d7af79f8f96d110ddf0c5ed954bdf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "402a8974_d8ac9aaa",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-22T21:06:17Z",
+      "side": 1,
+      "message": "web_img or webimg. I is still capital here.",
+      "revId": "a967a17d01d7af79f8f96d110ddf0c5ed954bdf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb4013d0_eb06a69b",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-22T21:06:17Z",
+      "side": 1,
+      "message": "With Tony\u0027s work, we should change this to reading ENV variables.",
+      "revId": "a967a17d01d7af79f8f96d110ddf0c5ed954bdf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
