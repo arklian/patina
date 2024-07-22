@@ -10,9 +10,13 @@
   align-self: stretch;
   color: var(--mantine-color-white, #fff);
   text-align: center;
-  font-size: rem(28px);
+  font-size: rem(48px);
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: rem(996px)) {
+    font-size: rem(22px);
+  }
 }
 
 .cardsContainer {
@@ -21,4 +25,8 @@
   justify-content: center;
   gap: rem(40px);
   width: 100%;
+
+  @media (max-width: rem(996px)) {
+    flex-direction: column;
+  }
 }
