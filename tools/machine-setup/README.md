@@ -28,12 +28,15 @@ Download the following from their websites:
 - Notion - Shared note taking app
 - Obsidian (or other Notes app) - Markdown Note Taking App
 - Messenger
+- PgAdmin - Postgres DB GUI
+- Postman - Rest API Exploration
 
 ## System Settings
 - Trackpad and Mouse
   - Move pointer speed up to fifth notch
   - App Expose three down
   - Turn off launchpad
+  - More Gestures -> Swipe between pages -> off
 - Desktop and Dock
   - Remove unused apps
   - Position on screen left
