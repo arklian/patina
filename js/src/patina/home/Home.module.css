@@ -26,22 +26,17 @@
   display: flex;
   align-items: flex-end;
   height: rem(700px);
+  min-width: rem(700px);
 }
 
 .hero_title {
   float: left;
   display: inline-block;
-  text-shadow: 1px 1px 6px white;
+  text-shadow: rem(1px) rem(2px) rem(6px) #989898;
   color: white;
-  font-size: 4vw;
+  font-size: rem(60px);
   padding-left: 5vw;
-  padding-bottom: rem(50px);
-}
-
-.hero_image {
-  width: 750px;
-  height: auto;
-  float: right;
+  padding-bottom: rem(75px);
 }
 
 .title_teal {
