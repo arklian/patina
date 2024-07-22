@@ -2,6 +2,7 @@ import { MantineProvider } from '@mantine/core'
 import { Outlet } from 'react-router-dom'
 import { theme, resolver } from './theme.ts'
 import { NavBar } from './navbar/NavBar.tsx'
+import { Footer } from '@/patina/components/Footer.tsx'
 
 export function PatinaPage() {
   return (
@@ -12,6 +13,7 @@ export function PatinaPage() {
     >
       <NavBar />
       <Outlet />
+      <Footer />
     </MantineProvider>
   )
 }

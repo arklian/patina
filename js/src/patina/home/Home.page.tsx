@@ -39,10 +39,6 @@ export function HomePage() {
       <div className={styles.skeletonStyle}>
         <ImportantSection />
       </div>
-
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={70} width="100%" mt="xl" />
-      </div>
     </Container>
   )
 }
