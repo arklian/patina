@@ -21,10 +21,16 @@ export function Footer() {
         </div>
       </div>
       <div className={styles.footerLinks}>
-        <ActionIcon component="a" href="mailto:hi@patinanetwork.org" size="lg">
+        <ActionIcon
+          component="a"
+          href="mailto:hi@patinanetwork.org"
+          size="lg"
+          color="var(--mantine-color-dark-6)"
+        >
           <FaEnvelope size={24} />
         </ActionIcon>
         <ActionIcon
+          color="var(--mantine-color-dark-6)"
           component="a"
           href="https://www.linkedin.com/company/patinanetwork/"
           target="_blank"
