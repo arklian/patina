@@ -14,15 +14,30 @@ export function MainSection() {
       location: 'Location',
       details:
         'Lorem ipsoiosafjsaofjsaofijsfojaiofmefoijs jlzkf jlkafj oiejf oj afd ldflk pr',
-      date: '8/Monday',
+      date: new Date('2024-7-8'),
     },
     {
       name: 'Event Name',
-      location: 'ALASKA NEBRASKA',
-      details: 'i live in alaska nebraska',
-      date: '15/Tuesday',
+      location: 'Location',
+      details:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+      date: new Date('2024-7-15'),
     },
   ]
+  const allDates = eventsData.map((event) => event.date)
+  const handleDate = (date: Date) => {
+    const givenDay = date.getDate()
+    let match = false
+    allDates.forEach((dateObject) => {
+      if (dateObject.toLocaleDateString() === date.toLocaleDateString()) {
+        match = true
+      }
+    })
+    if (match) {
+      return <div className={styles.calendarCellHighlight}>{givenDay}</div>
+    }
+    return <div>{givenDay}</div>
+  }
 
   return (
     <Grid grow>
@@ -39,6 +54,7 @@ export function MainSection() {
           hideOutsideDates
           previousIcon={<IconChevronLeft size={24} />}
           nextIcon={<IconChevronRight size={24} />}
+          renderDay={(date) => handleDate(date)}
         />
       </Grid.Col>
       <Grid.Col span={8}>

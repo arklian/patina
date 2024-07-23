@@ -4,8 +4,17 @@
 }
 
 .eventCard {
-  background-color: var(--mantine-color-gray-9);
+  background-color: var(--mantine-color-dark-8);
   border-radius: rem(10px);
   padding: rem(14px);
   margin-bottom: rem(24px);
+}
+
+.dayHighlight {
+  color: var(--mantine-color-patina-green-light);
+  font-size: rem(24px);
+}
+
+.dayDim {
+  color: var(--mantine-color-gray-6);
 }
