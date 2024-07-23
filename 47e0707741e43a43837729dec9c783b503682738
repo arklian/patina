@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "466006fa_ebed7f91",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:16:55Z",
+      "side": 1,
+      "message": "Should this be squashed with the next commit?",
+      "revId": "47e0707741e43a43837729dec9c783b503682738",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
