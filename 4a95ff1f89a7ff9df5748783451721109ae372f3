@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d50c14d_3bdbffb9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:16:17Z",
+      "side": 1,
+      "message": "You should add linear id and testing details here.\nYou could also pull this onto its own branch so that it doesn\u0027t depend on the previous two commits being shipped.",
+      "revId": "4a95ff1f89a7ff9df5748783451721109ae372f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
