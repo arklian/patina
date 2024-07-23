@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6a91ac3a_64cd39a3",
+        "filename": "secrets.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T20:03:24Z",
+      "side": 1,
+      "message": "this might be better as bash, as it\u0027s possible that a secrets script like this might be nice to run on linux.\n\nSince it\u0027s all just exports, both bash and zsh should support it pretty easily.",
+      "range": {
+        "startLine": 1,
+        "startChar": 9,
+        "endLine": 1,
+        "endChar": 10
+      },
+      "revId": "5578b1182b9efb93e611074f5f317ce9bab330ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6ec2c506_d8a55eb5",
         "filename": "secrets.sh",
         "patchSetId": 1
