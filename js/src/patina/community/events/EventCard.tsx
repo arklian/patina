@@ -5,26 +5,32 @@ type EventCardProps = {
   name: string
   location: string
   details: string
-  date: string
+  actualDate: Date
 }
 /**
- * Card component displaying each event's info, including name, location, details, all as strings,
- * and a date in format of "day/DayOfWeek" (ex: "8/Monday")
+ * Card component displaying each event's info, including name, location, details, date.
  */
-export function EventCard({ name, location, details, date }: EventCardProps) {
+export function EventCard({
+  name,
+  location,
+  details,
+  actualDate,
+}: EventCardProps) {
+  const daysOfWeek = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
   return (
     <div className={styles.eventCard}>
       <Stack gap={0}>
         <Group justify={'space-between'}>
-          <div>
-            <Stack gap={0}>
-              <Text className={styles.title}>{name}</Text>
-              <Text>{location}</Text>
-            </Stack>
-          </div>
-          <div>
-            <Text>{date}</Text>
-          </div>
+          <Stack gap={0}>
+            <Text className={styles.title}>{name}</Text>
+            <Text>{location}</Text>
+          </Stack>
+          <Stack gap={0} align={'center'}>
+            <Text className={styles.dayHighlight}>{actualDate.getDate()}</Text>
+            <Text className={styles.dayDim}>
+              {daysOfWeek[actualDate.getDay()]}
+            </Text>
+          </Stack>
         </Group>
         <Text>{details}</Text>
       </Stack>

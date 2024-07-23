@@ -5,6 +5,15 @@ import { EventCard } from './EventCard.tsx'
 import styles from '@/patina/community/events/MainSection.module.css'
 
 /**
+ * Convert inputted date as a string in local EST timezone ISO format to a Date object
+ * representing that inputted day at midnight 00:00:00 in EST.
+ */
+function convertToDateObject(inputtedDate: string) {
+  const timeSuffix = 'T00:00:00.000'
+  return new Date(inputtedDate + timeSuffix)
+}
+
+/**
  * Component rendering a calendar on the left and events on the right.
  */
 export function MainSection() {
@@ -14,15 +23,30 @@ export function MainSection() {
       location: 'Location',
       details:
         'Lorem ipsoiosafjsaofjsaofijsfojaiofmefoijs jlzkf jlkafj oiejf oj afd ldflk pr',
-      date: '8/Monday',
+      inputtedDate: '2024-07-08',
     },
     {
       name: 'Event Name',
-      location: 'ALASKA NEBRASKA',
-      details: 'i live in alaska nebraska',
-      date: '15/Tuesday',
+      location: 'Location',
+      details:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+      inputtedDate: '2024-07-15',
     },
   ]
+  const allEventDates = eventsData.map((event) =>
+    convertToDateObject(event.inputtedDate),
+  )
+  const handleDate = (givenDate: Date) => {
+    const givenDay = givenDate.getDate()
+    if (
+      allEventDates.some(
+        (eventDate) => eventDate.toISOString() === givenDate.toISOString(),
+      )
+    ) {
+      return <div className={styles.calendarCellHighlight}>{givenDay}</div>
+    }
+    return <div>{givenDay}</div>
+  }
 
   return (
     <Grid grow>
@@ -39,6 +63,7 @@ export function MainSection() {
           hideOutsideDates
           previousIcon={<IconChevronLeft size={24} />}
           nextIcon={<IconChevronRight size={24} />}
+          renderDay={(date) => handleDate(date)}
         />
       </Grid.Col>
       <Grid.Col span={8}>
@@ -47,7 +72,7 @@ export function MainSection() {
             name={event.name}
             location={event.location}
             details={event.details}
-            date={event.date}
+            actualDate={convertToDateObject(event.inputtedDate)}
           />
         ))}
       </Grid.Col>
