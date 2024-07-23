@@ -241,6 +241,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "11d4e8eb_de66d716",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:48:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e957a44d_55bba0b6",
+      "range": {
+        "startLine": 13,
+        "startChar": 40,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "893a7295_07fb1957",
@@ -325,6 +349,30 @@
       "side": 1,
       "message": "In term of maintainability, I would say it is better to have it in code, since you are only modify one single variable instead of going to css to change it for each one. And we have mantine component for it, might as well use it",
       "parentUuid": "f31682bf_f4246fcb",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "113bb7d3_38053724",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:48:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1c1b788_af087c97",
       "range": {
         "startLine": 10,
         "startChar": 2,
