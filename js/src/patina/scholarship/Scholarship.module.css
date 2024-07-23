@@ -1,13 +1,12 @@
 .hero {
   height: auto;
-  background-color: #1a1b1e;
-  padding-bottom: rem(50px);
 }
 
 .hero_container {
   display: flex;
   flex-direction: row;
-  padding: rem(100px) 0px 0px rem(125px);
+  margin-left: rem(100px);
+  margin-right: rem(100px);
 }
 
 .hero_title {
@@ -29,6 +28,7 @@
 
 .hero_image {
   width: 40vw;
+  margin-left: rem(50px);
 }
 
 .skeletonStyle {
@@ -42,10 +42,18 @@
 }
 
 .about {
-  padding-top: rem(50px);
+  padding-top: rem(128px);
   display: flex;
   gap: rem(126px);
+  margin-left: rem(150px);
+  margin-right: rem(150px);
   margin-bottom: rem(100px);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
 }
 
 .app {
@@ -54,3 +62,16 @@
   align-items: center;
 }
 
+.colored {
+  color: var(--mantine-color-patina-green-light);
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -4,15 +4,12 @@
   padding-left: rem(48px);
   padding-right: rem(48px);
   padding-top: rem(64px);
-  width: rem(674px);
-  height: rem(600px);
   border-radius: rem(5px);
 }
 
 .title {
-  display: flex;
   justify-content: center;
-  align-self: stretch;
+  display: flex;
   padding-bottom: rem(66px);
   color: white;
   font-size: rem(26px);
