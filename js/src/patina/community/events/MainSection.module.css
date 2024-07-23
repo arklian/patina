@@ -19,3 +19,7 @@
 .calendarBody {
   margin: auto;
 }
+
+.calendarCellHighlight {
+  color: var(--mantine-color-patina-green-light);
+}
