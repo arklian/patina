@@ -1,4 +1,4 @@
-import { BackgroundImage, Container, Skeleton, Title } from '@mantine/core'
+import { BackgroundImage, Container, Title } from '@mantine/core'
 import { Initiatives } from './Initiatives'
 import { About } from './About.tsx'
 import { ImportantSection } from '@/patina/home/ImportantSection.tsx'
@@ -9,9 +9,6 @@ import { imageUrls } from '@/patina/assets/images.ts'
 export function HomePage() {
   return (
     <Container className={styles.homeContainer}>
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={70} width="100%" mb="xl" />
-      </div>
       <BackgroundImage
         bgp={'right'}
         bgsz={'750px'}
@@ -28,9 +25,6 @@ export function HomePage() {
           </div>
         </div>
       </BackgroundImage>
-      <div className={styles.skeletonStyle}>
-        <Skeleton animate={false} height={50} width="40%" mb="xl" />
-      </div>
       {/*this double initiative thing will be replace by <About></About>*/}
       <div className={styles.aboutInit}>
         <About />
@@ -39,13 +33,13 @@ export function HomePage() {
 
       <GetInvolved />
 
-      <div className={styles.skeletonStyle}>
+      <div className={styles.containers}>
         <Title className={styles.importantSectionTitle}>
           {'Why is This Important?'}
         </Title>
       </div>
 
-      <div className={styles.skeletonStyle}>
+      <div className={styles.containers}>
         <ImportantSection />
       </div>
     </Container>
