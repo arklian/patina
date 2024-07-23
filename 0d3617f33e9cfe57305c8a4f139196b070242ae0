@@ -1,0 +1,176 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "faf19276_97fca1c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "Bryan: Reviewed last four files and left comments (though Lucas/Henry should probably review those again)",
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5419e0d1_01eec6a4",
+        "filename": "js/src/patina/mentorship/Mentorship.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "just a note, you can do rem(1200px) to both represent the fact that it is in rem and that it\u0027s for 1200px base size",
+      "range": {
+        "startLine": 15,
+        "startChar": 6,
+        "endLine": 15,
+        "endChar": 29
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3728872a_7b35618b",
+        "filename": "js/src/patina/mentorship/details/Details.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "nit: the base direction is row, so this line is a duplicate. Might suggest doing what I wrote in Details.tsx comment instead",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 22
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98d5e4fb_ba4fb666",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "move to above the import styles from \u0027./Details.module.css\u0027 line to account for eslint error",
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6eb7da9_9f0d7930",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "Not needed (also we have specific specs for mobile size, namely 996px)",
+      "range": {
+        "startLine": 7,
+        "startChar": 2,
+        "endLine": 7,
+        "endChar": 56
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e957a44d_55bba0b6",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "nit: you can just have the space inside the quote (i.e. \u0027 Track Mentor \u0027)\n(Same for line 17)",
+      "range": {
+        "startLine": 13,
+        "startChar": 40,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "893a7295_07fb1957",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "nit(?): This can be moved to the css file by instead adding in the following lines to styles.list\n\ndisplay: flex;\n\n@media (max-width: rem(996px)) {\n  flex-direction: column\n}",
+      "range": {
+        "startLine": 22,
+        "startChar": 7,
+        "endLine": 22,
+        "endChar": 44
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f31682bf_f4246fcb",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-23T00:06:39Z",
+      "side": 1,
+      "message": "Same fix as details.tsx. It would be best if we could have the mobile version of things included in the css instead of the code itself, to help with maintainability (and because mobile vs. desktop view is fundamentally a css thing rather than a code thing)",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
