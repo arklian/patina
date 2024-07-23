@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "701e9835_240b2a8e",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:41:29Z",
+      "side": 1,
+      "message": "Should this be a JS date object, or a dayjs date object?",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
