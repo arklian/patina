@@ -128,6 +128,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a04b2802_509d56d4",
+        "filename": "js/package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T19:13:25Z",
+      "side": 1,
+      "message": "oops should be fixed now",
+      "parentUuid": "837e3196_1ab72f70",
+      "revId": "f1237d9beff4fb00d0d8b37c94288eb52bd5a358",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ccbe3423_e402a2c1",
         "filename": "js/src/patina/community/events/MainSection.tsx",
         "patchSetId": 2
