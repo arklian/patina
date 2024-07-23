@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e8a03f4_9afaa807",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:27:19Z",
+      "side": 1,
+      "message": "What\u0027s with this one?",
+      "revId": "3b6b01608e7f5122bd28fe4dc43b7fa07ed8e631",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
