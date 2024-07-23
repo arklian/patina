@@ -1,4 +1,4 @@
-import { Button, Card, Image } from '@mantine/core'
+import { Button, Card, Image, Center } from '@mantine/core'
 import styles from '@/patina/home/StaticCards.module.css'
 
 type StaticCardsProps = {
@@ -15,15 +15,17 @@ export function StaticCards({
   description,
 }: StaticCardsProps) {
   return (
-    <Card className={styles.card}>
-      <h3>{title}</h3>
-      <div className={styles.cardImageContainer}>
-        <Image src={imageUrl} alt={imageAlt} className={styles.cardImage} />
-      </div>
-      <p className={styles.cardText}>{description}</p>
-      <Button variant={'outline'} className={styles.cardButton}>
-        {'Check it out'}
-      </Button>
-    </Card>
+    <Center className={styles.centering}>
+      <Card className={styles.card}>
+        <h3>{title}</h3>
+        <div className={styles.cardImageContainer}>
+          <Image src={imageUrl} alt={imageAlt} className={styles.cardImage} />
+        </div>
+        <p className={styles.cardText}>{description}</p>
+        <Button variant={'outline'} className={styles.cardButton}>
+          {'Check it out'}
+        </Button>
+      </Card>
+    </Center>
   )
 }

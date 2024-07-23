@@ -8,15 +8,24 @@
 
 .aboutText {
   color: var(--mantine-color-gray-1);
-  font-size: rem(32px);
+  font-size: rem(34px);
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
   margin-bottom: 24px;
+
+  @media (max-width: rem(996px)) {
+    font-size: rem(18px);
+  }
 }
 
-.moreButton{
+.moreButton {
   margin-top: rem(40px);
   height: rem(43px);
   width: rem(169px);
+
+  @media (max-width: rem(996px)) {
+    margin-top: rem(10px);
+    margin-bottom: rem(30px);
+  }
 }

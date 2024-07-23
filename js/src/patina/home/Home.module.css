@@ -10,6 +10,12 @@
   font-weight: 700;
   line-height: 130%;
   padding-bottom: 48px;
+
+  @media (max-width: rem(996px)) {
+    justify-content: center;
+    align-items: center;
+    font-size: rem(22px);
+  }
 }
 
 .homeContainer {
@@ -20,6 +26,10 @@
   display: flex;
   align-content: stretch;
   padding: rem(0) rem(48px);
+
+  @media (max-width: rem(996px)) {
+    flex-direction: column;
+  }
 }
 
 .hero {

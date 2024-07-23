@@ -25,7 +25,7 @@ export function HomePage() {
       {/*this double initiative thing will be replace by <About></About>*/}
       <div className={styles.aboutInit}>
         <About />
-        <Initiatives></Initiatives>
+        <Initiatives />
       </div>
 
       <GetInvolved />

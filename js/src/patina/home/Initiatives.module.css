@@ -3,11 +3,23 @@
   padding: rem(64px) rem(48px);
   flex-direction: column;
   border: rem(1px) solid var(--mantine-color-dark-4);
+  line-height: rem(16px);
   background: var(--mantine-color-dark-6);
+
+  @media (max-width: rem(996px)) {
+    padding: 0px;
+    border: 0px;
+    background: none;
+  }
 }
 
 .title {
   color: white;
   font-weight: bold;
   font-size: x-large;
+  padding: rem(0px) rem(0px) rem(40px);
+
+  @media (max-width: rem(996px)) {
+    padding: rem(0px)
+  }
 }
