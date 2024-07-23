@@ -34,6 +34,24 @@
       "parentUuid": "701e9835_240b2a8e",
       "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03584867_24935bad",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T18:58:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "779fe49d_1954583d",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
