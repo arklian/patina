@@ -47,7 +47,7 @@ public class StaticContentFilter implements Filter {
         boolean isResourceFile = !isApi && fileExtensions.stream().anyMatch(path::contains);
 
         if (isApi) {
-            response.setContentType("application/json");
+            response.setContentType("application/plain");
             chain.doFilter(request, response);
         } else if (isResourceFile) {
             chain.doFilter(request, response);
