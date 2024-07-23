@@ -2,6 +2,7 @@ import { Criteria } from './Criteria.tsx'
 import { Gains } from './Gains.tsx'
 import styles from './Scholarship.module.css'
 import { imageUrls } from '@/patina/assets/images.ts'
+import { Application } from '@/patina/scholarship/Application.tsx'
 
 export function ScholarshipPage() {
   return (
@@ -26,6 +27,7 @@ export function ScholarshipPage() {
         </div>
       </div>
       <Criteria />
+      <Application />
       <Gains />
     </>
   )
