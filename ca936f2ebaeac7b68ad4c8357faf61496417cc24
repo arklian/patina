@@ -52,6 +52,126 @@
       "parentUuid": "779fe49d_1954583d",
       "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40a796a2_9ad38bdf",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "We likely don\u0027t want to create the object in the eventData, as we want it to be as simple as possible to fill in for a non technical user.\n\nAlso dates should be in iso format which prepends a 0 to days/months that are one digit.\n\n2024-07-08",
+      "parentUuid": "779fe49d_1954583d",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c54a4256_e75a1960",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "this can be a lot shorter with using different JS things.",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f210b7b_fb917530",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "You can use js\u0027s some function here.\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8017e8c_487e1dde",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "Note: This doesn\u0027t scale with more events, and we should probably use like a hash table or something to store events at a larger scale, but for this use case this is good.",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ff11aba_3ee6beeb",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "Your variable names should be more clear here. You\u0027re comparing dateObject to date. What do those two represent.",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf40ce75_ec3afc6b",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "You should not be comparing the localeDateString, only the raw value.\nIn this case it would be the iso date string.\n\nAlso this probably does not handle time zones. The JS Date object always localizes the date/time, so it puts it in your computer\u0027s browser\u0027s timezone. Since NYC is at UTC-4, there\u0027s likely time near midnight where the date will be offset by one day.",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "78c85529_f27b9e25",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T19:03:54Z",
+      "side": 1,
+      "message": "We could consider using a library like clsx to do conditional class names.\nhttps://github.com/lukeed/clsx",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
