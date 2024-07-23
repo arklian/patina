@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ec2c506_d8a55eb5",
+        "filename": "secrets.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T20:02:12Z",
+      "side": 1,
+      "message": "We should add more details as comments here.",
+      "revId": "5578b1182b9efb93e611074f5f317ce9bab330ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
