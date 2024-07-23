@@ -6,7 +6,7 @@ import { Hero } from './components/Hero.tsx'
 import { About } from './components/About.tsx'
 import { Experience } from './components/Experience.tsx'
 import { Work } from './components/Work.tsx'
-import { LeftStickySection} from "@/personal/jionghao/components/SideSection.tsx";
+import { LeftStickySection } from '@/personal/jionghao/components/SideSection.tsx'
 
 export function JionghaoPage() {
   return (
