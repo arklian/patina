@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4cf19fef_96be4e4e",
+        "filename": "js/package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T17:54:51Z",
+      "side": 1,
+      "message": "Can I just uninstall it if I didn\u0027t end up needing to use it?",
+      "parentUuid": "c689f5e6_bc4abc78",
+      "revId": "f1237d9beff4fb00d0d8b37c94288eb52bd5a358",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ccbe3423_e402a2c1",
         "filename": "js/src/patina/community/events/MainSection.tsx",
         "patchSetId": 2
@@ -85,6 +103,24 @@
       "side": 1,
       "message": "Fixed in new commit",
       "parentUuid": "ccbe3423_e402a2c1",
+      "revId": "f1237d9beff4fb00d0d8b37c94288eb52bd5a358",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe3fd28d_c7ab0f31",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T17:54:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "95579f74_90b9b0f9",
       "revId": "f1237d9beff4fb00d0d8b37c94288eb52bd5a358",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
