@@ -6,7 +6,7 @@ export function Experience() {
   return (
     <div className={styles.experience} id="experience">
       <div className={styles.titleContain}>
-        <Title>{'My Experience'}</Title>
+        <Title className={styles.title}>{'My Experience'}</Title>
         <div className={styles.titleLine}></div>
       </div>
       <Tabs
