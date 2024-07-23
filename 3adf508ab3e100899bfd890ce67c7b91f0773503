@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2d70f99_a6dc6083",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:26:31Z",
+      "side": 1,
+      "message": "Probably want to squash this with the previous commit.\n\nTask ID and Testing details here would be good.",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f4cd4a4_8676620a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:26:31Z",
+      "side": 1,
+      "message": "Looks good!",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1554917f_20dd760f",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:26:31Z",
+      "side": 1,
+      "message": "Can we use HeroSplash in images? Riyuan is fixing it to work. The folder name got changed from webImg to webimg, so the links were broken.",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
