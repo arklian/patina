@@ -6,7 +6,7 @@ import classes from './NavBar.module.css'
 
 const links = [
   {
-    link: '/about',
+    link: '',
     label: 'About',
     links: [
       { link: '/mission', label: 'Mission' },
@@ -14,37 +14,17 @@ const links = [
     ],
   },
   {
-    link: '/Program',
+    link: '',
     label: 'Program',
     links: [
       { link: '/mentorship', label: 'Mentorship' },
       { link: '/scholarship', label: 'Scholarship' },
-      { link: '/stuff5', label: 'stuff' },
-      { link: '/stuff6', label: 'stuff' },
     ],
   },
-  {
-    link: '/GetInvolved',
-    label: 'Get Involved',
-    links: [
-      { link: '/stuff7', label: 'stuff' },
-      { link: '/stuff8', label: 'stuff' },
-      { link: '/stuff9', label: 'stuff' },
-      { link: '/stuff10', label: 'stuff' },
-    ],
-  },
-  {
-    link: '/StayInformed',
-    label: 'Stay Informed',
-    links: [
-      { link: '/stuff11', label: 'stuff' },
-      { link: '/stuff12', label: 'stuff' },
-      { link: '/stuff13', label: 'stuff' },
-      { link: '/stuff14', label: 'stuff' },
-    ],
-  },
-  { link: '/Blog', label: 'Blog' },
-  { link: '/Donate', label: 'Donate' },
+  { link: '', label: 'Get Involved' },
+  { link: '', label: 'Stay Informed' },
+  { link: '', label: 'Blog' },
+  { link: '', label: 'Donate' },
 ]
 
 //NavBar component renders the navigation bar with links and dropdown menus.
