@@ -90,6 +90,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b4f2e38_4bcd4c09",
+        "filename": "js/package.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T18:57:55Z",
+      "side": 1,
+      "message": "Uninstalled",
+      "parentUuid": "ee27500f_f9d876ab",
+      "revId": "f1237d9beff4fb00d0d8b37c94288eb52bd5a358",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ccbe3423_e402a2c1",
