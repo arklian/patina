@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1973b927_b0f7f418",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T20:55:14Z",
+      "side": 1,
+      "message": "The patina bot verification failed.\nCan you see what the error is and fix it?",
+      "revId": "822b6939e6f6444b9f02c4b675e7eb1501daaea2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
