@@ -12,14 +12,14 @@ public class User {
     private String password;
     private int donation;
 
-    public User() {
-
-    }
-
     public User(String name, String password, int donation) {
         this.name = name;
         this.password = password;
         this.donation = donation;
+    }
+    
+    public User() {
+
     }
 
     public String getName() {
