@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba4fe06e_69cd2daf",
+        "filename": "js/src/lilac/Lilac.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-23T17:13:12Z",
+      "side": 1,
+      "message": "We can remove this so that the page can be in both light and dark mode.",
+      "revId": "b8a267134cb323c565ef03f9344db601dca2eb1c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
