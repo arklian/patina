@@ -43,6 +43,54 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b8188664_3471c5e8",
+        "filename": "js/src/patina/mentorship/Mentorship.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "rem is better in term of",
+      "parentUuid": "5419e0d1_01eec6a4",
+      "range": {
+        "startLine": 15,
+        "startChar": 6,
+        "endLine": 15,
+        "endChar": 29
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c16fc9a0_12725502",
+        "filename": "js/src/patina/mentorship/Mentorship.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5419e0d1_01eec6a4",
+      "range": {
+        "startLine": 15,
+        "startChar": 6,
+        "endLine": 15,
+        "endChar": 29
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3728872a_7b35618b",
         "filename": "js/src/patina/mentorship/details/Details.module.css",
         "patchSetId": 2
@@ -54,6 +102,30 @@
       "writtenOn": "2024-07-23T00:06:39Z",
       "side": 1,
       "message": "nit: the base direction is row, so this line is a duplicate. Might suggest doing what I wrote in Details.tsx comment instead",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 22
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b3c382f_adeedc12",
+        "filename": "js/src/patina/mentorship/details/Details.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3728872a_7b35618b",
       "range": {
         "startLine": 29,
         "startChar": 2,
@@ -81,6 +153,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "05c585b9_127adbfd",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "98d5e4fb_ba4fb666",
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f6eb7da9_9f0d7930",
@@ -94,6 +184,30 @@
       "writtenOn": "2024-07-23T00:06:39Z",
       "side": 1,
       "message": "Not needed (also we have specific specs for mobile size, namely 996px)",
+      "range": {
+        "startLine": 7,
+        "startChar": 2,
+        "endLine": 7,
+        "endChar": 56
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc8cbda8_01d33d8b",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "Needed for correctly show the col base on size",
+      "parentUuid": "f6eb7da9_9f0d7930",
       "range": {
         "startLine": 7,
         "startChar": 2,
@@ -150,6 +264,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6824d1b1_0d087940",
+        "filename": "js/src/patina/mentorship/details/Details.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "But cols is a build in for simpleGrid, also rem 996 is bad for break point, since it will just push the two item together until you have hit 996 pixel",
+      "parentUuid": "893a7295_07fb1957",
+      "range": {
+        "startLine": 22,
+        "startChar": 7,
+        "endLine": 22,
+        "endChar": 44
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f31682bf_f4246fcb",
@@ -163,6 +301,30 @@
       "writtenOn": "2024-07-23T00:06:39Z",
       "side": 1,
       "message": "Same fix as details.tsx. It would be best if we could have the mobile version of things included in the css instead of the code itself, to help with maintainability (and because mobile vs. desktop view is fundamentally a css thing rather than a code thing)",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "0d3617f33e9cfe57305c8a4f139196b070242ae0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1c1b788_af087c97",
+        "filename": "js/src/patina/mentorship/hero/Hero.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-23T17:47:55Z",
+      "side": 1,
+      "message": "In term of maintainability, I would say it is better to have it in code, since you are only modify one single variable instead of going to css to change it for each one. And we have mantine component for it, might as well use it",
+      "parentUuid": "f31682bf_f4246fcb",
       "range": {
         "startLine": 10,
         "startChar": 2,
