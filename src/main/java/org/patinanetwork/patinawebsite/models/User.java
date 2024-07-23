@@ -16,10 +16,10 @@ public class User {
 
     }
 
-    public User(String name, String password) {
+    public User(String name, String password, int donation) {
         this.name = name;
         this.password = password;
-        donation = 0;
+        this.donation = donation;
     }
 
     public String getName() {
