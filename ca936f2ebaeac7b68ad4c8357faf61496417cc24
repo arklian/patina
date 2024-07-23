@@ -74,6 +74,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a5766fce_ecdc08db",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Changed to store raw string in ISO format inside eventsData instead and made a function to convert raw string to Date object",
+      "parentUuid": "40a796a2_9ad38bdf",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c54a4256_e75a1960",
         "filename": "js/src/patina/community/events/MainSection.tsx",
         "patchSetId": 1
@@ -123,6 +141,60 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d1bfc16_3d064572",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "d8017e8c_487e1dde",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "871029cf_db5680a0",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f210b7b_fb917530",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ebf7da66_f431e0bb",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c54a4256_e75a1960",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3ff11aba_3ee6beeb",
@@ -157,6 +229,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d4cd5fe_46f795b7",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ff11aba_3ee6beeb",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff7417d5_5aa8f162",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf40ce75_ec3afc6b",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "78c85529_f27b9e25",
@@ -170,6 +278,24 @@
       "writtenOn": "2024-07-23T19:03:54Z",
       "side": 1,
       "message": "We could consider using a library like clsx to do conditional class names.\nhttps://github.com/lukeed/clsx",
+      "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65c8ecde_080cbe0b",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-23T21:01:59Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "78c85529_f27b9e25",
       "revId": "ca936f2ebaeac7b68ad4c8357faf61496417cc24",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
