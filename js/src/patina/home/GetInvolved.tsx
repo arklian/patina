@@ -12,7 +12,7 @@ export function GetInvolved() {
       <div className={styles.cardsContainer}>
         <StaticCards
           title={'For Students'}
-          imageUrl={imageUrls.learn.src}
+          imageUrl={imageUrls.Learn.src}
           imageAlt={'Learn'}
           description={
             'Need career fair prep, help choosing a major, interview practice, or scholarship info?'
@@ -20,7 +20,7 @@ export function GetInvolved() {
         />
         <StaticCards
           title={'For Volunteers'}
-          imageUrl={imageUrls.hands.src}
+          imageUrl={imageUrls.Hands.src}
           imageAlt={'Hands'}
           description={
             'Want to mentor students, organize events, or learn about other ways to get involved?'
@@ -28,7 +28,7 @@ export function GetInvolved() {
         />
         <StaticCards
           title={'For the Community'}
-          imageUrl={imageUrls.heart.src}
+          imageUrl={imageUrls.Heart.src}
           imageAlt={'Heart'}
           description={
             'Join us for events to form new connections, and maybe learn something new!'
