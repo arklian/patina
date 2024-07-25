@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7cb50102_0a6ec8f3",
+        "filename": "secrets.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T19:22:48Z",
+      "side": 1,
+      "message": "We could probably remove these names, as technically they should be tracked through git on the other repo, and this one too I guess.",
+      "revId": "807ae33dc68758baa6cb929fc4322cae06553c6a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
