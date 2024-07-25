@@ -1,0 +1,37 @@
+.donor_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: rem(50px);
+  margin-bottom: rem(125px);
+}
+
+.donor_images {
+  background-color: red;
+  height: rem(150px);
+  width: 35%;
+}
+
+.donor_title {
+  color: white;
+  font-weight: bold;
+  font-size: rem(25px);
+  padding-left: rem(40px);
+  width: 35%;
+}
+
+.donor_text {
+  font-weight: normal;
+  font-size: rem(20px);
+  padding-top: rem(50px);
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  background-color: blue;
+  height: rem(150px);
+}
