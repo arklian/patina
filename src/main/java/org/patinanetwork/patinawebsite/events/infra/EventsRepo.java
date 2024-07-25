@@ -1,6 +1,6 @@
 package org.patinanetwork.patinawebsite.events.infra;
 
-import org.patinanetwork.patinawebsite.events.Event;
+import org.patinanetwork.patinawebsite.events.;
 
 /**
  * Interface for getting Events from various sources

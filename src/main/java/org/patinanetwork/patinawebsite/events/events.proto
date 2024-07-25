@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.events;
+
+option java_multiple_files = false;
+option java_outer_classname = "EventProtos";
+
+
+message Event {
+  optional string name = 1;
+  optional string location = 2;
+  optional string message = 3;
+  optional string date = 4;
+  optional int32 id = 5;
+}
+
+message Events {
+  repeated Event event = 1;
+}
