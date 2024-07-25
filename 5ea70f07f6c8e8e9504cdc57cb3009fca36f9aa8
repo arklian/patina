@@ -34,6 +34,24 @@
       "parentUuid": "abe3d0c4_43306f5c",
       "revId": "5ea70f07f6c8e8e9504cdc57cb3009fca36f9aa8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2143fa51_45cb6293",
+        "filename": "js/src/patina/scholarship/process/ApplicationProcess.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-25T20:06:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0596950_dbfc8025",
+      "revId": "5ea70f07f6c8e8e9504cdc57cb3009fca36f9aa8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
