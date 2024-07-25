@@ -46,7 +46,6 @@ export const themeOverride = createTheme({
     patinaBlueLight: '#47FFFF',
     patinaRedDark: '#BB352C',
     patinaRedLight: '#FF3D3D',
-    patinaDarkBg: '#1A1B1E',
     patinaDark6: '#25262B',
     patinaDark3: '#5C5F66',
   },
@@ -73,6 +72,6 @@ export const resolver: CSSVariablesResolver = (computedTheme) => ({
   },
   light: {},
   dark: {
-    '--mantine-color-body': '#000000',
+    '--mantine-color-body': '#1A1B1E',
   },
 })
