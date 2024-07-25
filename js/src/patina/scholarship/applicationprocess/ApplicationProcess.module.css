@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: rem(48px);
-  width: rem(644px);
+  min-width: rem(450px);
   border: rem(1px) solid var(--mantine-color-patina-dark-3);
   border-radius: rem(5px);
   background: var(--mantine-color-patina-dark-6);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    min-height: 10rem;
+  }
 }
