@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "530cbe3a_8fb86bb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f5fe419_7060a0d9",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fc9fb740_221bb278",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-25T17:55:22Z",
       "side": 1,
       "message": "could we have a comment on what pngpaste does or documentation?",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "307b0a82_3932b3ff",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc9fb740_221bb278",
       "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2251da7e_69bdb1ed",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "I think pngpaste only pastes the file in the current directory you call it from. The file does get deleted right after upload so I think it is fine",
+      "parentUuid": "091e2911_f6d8d2ce",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8cd8278c_bbde054c",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-07-25T17:55:22Z",
       "side": 1,
       "message": "Could we not have an empty line between every line, use it more sparingly",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5462adf_49182bb6",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8cd8278c_bbde054c",
       "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -92,6 +164,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "edf966d2_2a027214",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c0c5f245_97e0b8c4",
+      "range": {
+        "startLine": 67,
+        "startChar": 28,
+        "endLine": 67,
+        "endChar": 29
+      },
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fa4ad5e3_087701bd",
@@ -105,6 +201,24 @@
       "writtenOn": "2024-07-25T17:55:22Z",
       "side": 1,
       "message": "nit space after # + capitalize first letter",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea1d1d63_0f6a1d77",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-25T18:31:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa4ad5e3_087701bd",
       "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
