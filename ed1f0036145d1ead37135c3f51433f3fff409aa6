@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a76a4c7_c9107f01",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:17:45Z",
+      "side": 1,
+      "message": "Linear ID + testing details would be nice",
+      "revId": "ed1f0036145d1ead37135c3f51433f3fff409aa6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fce19dc1_b59597c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:17:45Z",
+      "side": 1,
+      "message": "Looks good! Should go fix the test failure though",
+      "revId": "ed1f0036145d1ead37135c3f51433f3fff409aa6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
