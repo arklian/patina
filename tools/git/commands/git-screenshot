@@ -1,0 +1,106 @@
+#!/bin/zsh
+
+print_usage() {
+# `cat << EOF` This means that cat should stop reading when EOF is detected
+cat << EOF
+Usage: git screenshot
+Uploads screenshot to Digital Ocean
+
+-h, -help                  Display help
+
+To use this command, take a screenshot of whatever you need, make sure
+the image is copied to the clipboard, and then call git screenshot <name_of_file>.png
+and give the file a name.
+
+EOF
+}
+
+while getopts 'h' flag; do
+  case "${flag}" in
+    h) print_usage
+       exit 0 ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+####################################################################################################
+# Dependency Checks
+####################################################################################################
+if ! command -v doctl &> /dev/null
+then
+  echo "doctl not installed: Run \"brew install doctl\" to fix"
+  exit 1
+fi
+
+FILE_NAME=$1
+IMAGE_PATH=""
+SPACE_NAME="patina-dev"
+SPACE_PATH="screenshot/"
+REGION="nyc3"
+
+
+if [ "$#" -lt 1 ]; then
+    echo "Please enter a image name for your screenshot: git screenshot <image_name>.png"
+    exit 1
+fi
+
+if [ -z "$DIGITAL_OCEAN_SPACES_ACCESS" ] || [ -z "$DIGITAL_OCEAN_SPACES_SECRET" ]; then
+    echo "Environment variables DIGITAL_OCEAN_SPACES_KEY and DIGITAL_OCEAN_SPACES_SECRET must be set."
+    exit 1
+fi
+
+echo "Uploading image to Digital Ocean....."
+echo "-------------------------------------"
+
+# Pastes any image copied on clipboard into a new file
+pngpaste "${FILE_NAME}"
+IMAGE_PATH="${PWD}/${FILE_NAME}"
+
+# Calculate the date in the correct format for digital ocean
+DATE=$(date -u +"%a, %d %b %Y %T %Z")
+# Standard ISO datetime to concatenate on file name
+DO_DATE=$(date -u +"%Y-%m-%dT%H:%M:%S")
+GIT_USERNAME=$(git config user.name)
+trimmed_string=$(echo $GIT_USERNAME | tr -d ' ')
+
+# Digital ocean filename
+DO_FILE_NAME="Screenshot-${DO_DATE}-${trimmed_string}-${FILE_NAME}"
+
+# Create the string to sign
+STRING_TO_SIGN="PUT\n\n\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${DO_FILE_NAME}"
+
+# Create the signature
+SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
+
+
+# Upload the image using curl
+curl -X PUT -T "$IMAGE_PATH" \
+    -H "Date: ${DATE}" \
+    -H "x-amz-acl: public-read" \
+    -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+    "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${DO_FILE_NAME}"
+
+
+if [ $? -eq 0 ]; then
+    IMAGE_URL="https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${DO_FILE_NAME}"
+    echo "Image uploaded successfully to Digital Ocean"
+    echo "Image URL: ${IMAGE_URL}"
+    echo "-------------------------------------"
+
+    # Delete the local file
+    rm "$IMAGE_PATH"
+    if [ $? -eq 0 ]; then
+        echo "Local file deleted successfully."
+    else
+        echo "Failed to delete local file."
+    fi
+else
+    echo "Failed to upload image."
+    exit 1
+fi
+
+
+
+
+
