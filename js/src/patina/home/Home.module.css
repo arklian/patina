@@ -10,6 +10,7 @@
   font-weight: 700;
   line-height: 130%;
   padding-bottom: 48px;
+  color: white;
 
   @media (max-width: rem(996px)) {
     justify-content: center;
@@ -35,8 +36,9 @@
 .hero {
   display: flex;
   align-items: flex-end;
-  height: rem(700px);
+  height: rem(600px);
   min-width: rem(700px);
+  padding-bottom: rem(150px);
 }
 
 .hero_title {
@@ -46,7 +48,6 @@
   color: white;
   font-size: rem(60px);
   padding-left: 5vw;
-  padding-bottom: rem(75px);
 }
 
 .title_teal {

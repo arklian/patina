@@ -1,7 +1,7 @@
 import { HomePage } from '@/patina/home/Home.page.tsx'
 import { MissionPage } from '@/patina/about/mission/Mission.page.tsx'
 import { MentorshipPage } from '@/patina/mentorship/Mentorship.page.tsx'
-import { ScholarshipPage } from '@/patina/scholarship/Scholarship.page.tsx'
+import { ScholarshipPage } from '@/patina/scholarship/scholarship page/Scholarship.page.tsx'
 import { CommunityPage } from '@/patina/community/Community.page.tsx'
 /**
  * Routes for the Patina Website
