@@ -50,7 +50,7 @@
   margin-bottom: rem(100px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: rem(1200px)) {
   .about {
     flex-direction: column;
   }

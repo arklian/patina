@@ -1,6 +1,6 @@
 import { Text } from '@mantine/core'
 import { Criteria } from '@/patina/scholarship/criteria/Criteria.tsx'
-import { ApplicationProcess } from '@/patina/scholarship/process/ApplicationProcess.tsx'
+import { ApplicationProcess } from '@/patina/scholarship/applicationprocess/ApplicationProcess.tsx'
 import { AboutScholarship } from '@/patina/scholarship/about/AboutScholarship.tsx'
 import { Gains } from '@/patina/scholarship/gains/Gains.tsx'
 import { Application } from '@/patina/scholarship/application/Application.tsx'
