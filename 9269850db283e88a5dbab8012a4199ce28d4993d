@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f5fe419_7060a0d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:55:22Z",
+      "side": 1,
+      "message": "Looks good! Some nits",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc9fb740_221bb278",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:55:22Z",
+      "side": 1,
+      "message": "could we have a comment on what pngpaste does or documentation?",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "091e2911_f6d8d2ce",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:55:22Z",
+      "side": 1,
+      "message": "Should we use a more temp directory like $TMPDIR or /var/tmp?",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8cd8278c_bbde054c",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:55:22Z",
+      "side": 1,
+      "message": "Could we not have an empty line between every line, use it more sparingly",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa4ad5e3_087701bd",
+        "filename": "tools/git/commands/git-screenshot",
+        "patchSetId": 7
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T17:55:22Z",
+      "side": 1,
+      "message": "nit space after # + capitalize first letter",
+      "revId": "9269850db283e88a5dbab8012a4199ce28d4993d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
