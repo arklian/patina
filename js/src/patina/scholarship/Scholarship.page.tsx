@@ -1,32 +1,45 @@
+import { Text } from '@mantine/core'
 import { Criteria } from './Criteria.tsx'
+import { ApplicationProcess } from '@/patina/scholarship/ApplicationProcess'
+import { AboutScholarship } from './AboutScholarship.tsx'
 import { Gains } from './Gains.tsx'
-import styles from './Scholarship.module.css'
+import { Application } from '@/patina/scholarship/Application'
 import { imageUrls } from '@/patina/assets/images.ts'
+import styles from './Scholarship.module.css'
 
 export function ScholarshipPage() {
   return (
-    <>
+    <div>
       <div className={styles.hero}>
         <div className={styles.hero_container}>
-          <div className={styles.hero_title}>
+          <Text className={styles.hero_title}>
             {'Patina Network Scholarship Fund '}
-            <div className={styles.hero_description}>
+            <Text className={styles.hero_description}>
+              {'The Patina Network Scholarship Fund intends to manifest our '}
+              <span className={styles.colored}>{'vision'}</span>
               {
-                'The Patina Network Scholarship fund is... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                ' by awarding scholarships annually to students who are of ethnicity, heritage, or ancestry in relations to the AANHPI communities and would benefit the most from the financial stipend.'
               }
-            </div>
-          </div>
+            </Text>
+          </Text>
           <div>
             <img
               className={styles.hero_image}
               alt={'scholarship hero'}
-              src={imageUrls.scholarship.src}
+              src={imageUrls.scholarshipHome.src}
             />
           </div>
         </div>
       </div>
+      <div className={styles.about}>
+        <ApplicationProcess />
+        <AboutScholarship />
+      </div>
       <Criteria />
+      <div className={styles.application}>
+        <Application />
+      </div>
       <Gains />
-    </>
+    </div>
   )
 }

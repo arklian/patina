@@ -1,7 +1,6 @@
 .about {
   display: flex;
-  width: rem(447px);
-  height: rem(515px);
+  max-width: rem(447px);
 }
 
 .text {
