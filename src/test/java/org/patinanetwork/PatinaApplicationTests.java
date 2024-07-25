@@ -1,10 +1,10 @@
-package org.patinanetwork.patinawebsite;
+package org.patinanetwork;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PatinaWebsiteApplicationTests {
+class PatinaApplicationTests {
 
     @Test
     void contextLoads() {}

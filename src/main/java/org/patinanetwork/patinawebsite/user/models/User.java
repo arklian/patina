@@ -1,4 +1,4 @@
-package org.patinanetwork.patinawebsite.models;
+package org.patinanetwork.patinawebsite.user.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +12,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int uid;
+
     private String name;
     private String password;
     private int donation;
@@ -22,9 +23,7 @@ public class User {
         this.donation = donation;
     }
 
-    public User() {
-
-    }
+    public User() {}
 
     public String getName() {
         return name;

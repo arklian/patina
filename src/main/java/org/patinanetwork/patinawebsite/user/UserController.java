@@ -1,8 +1,8 @@
-package org.patinanetwork.patinawebsite.controllers;
+package org.patinanetwork.patinawebsite.user;
 
 import jakarta.servlet.http.HttpServletResponse;
-import org.patinanetwork.patinawebsite.models.User;
-import org.patinanetwork.patinawebsite.models.UserRepository;
+import org.patinanetwork.patinawebsite.user.models.User;
+import org.patinanetwork.patinawebsite.user.models.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -48,7 +48,11 @@ public class UserController {
 
     @GetMapping("/api/addedUser")
     @ResponseBody
-    public String addedUser(@RequestParam(name = "name") String newName, @RequestParam(name = "password") String newPassword, @RequestParam(name = "donation") String newDonation, HttpServletResponse response) {
+    public String addedUser(
+            @RequestParam(name = "name") String newName,
+            @RequestParam(name = "password") String newPassword,
+            @RequestParam(name = "donation") String newDonation,
+            HttpServletResponse response) {
         User rando = new User(newName, newPassword, Integer.parseInt(newDonation));
         userRepo.save(rando);
         response.setStatus(201);
@@ -60,5 +64,4 @@ public class UserController {
         userRepo.deleteAll();
         return "Deleted Everyone";
     }
-
 }

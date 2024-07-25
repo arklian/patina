@@ -1,4 +1,4 @@
-package org.patinanetwork.patinawebsite;
+package org.patinanetwork;
 
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
