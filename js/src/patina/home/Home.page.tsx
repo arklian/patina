@@ -11,9 +11,9 @@ export function HomePage() {
     <Container className={styles.homeContainer}>
       <BackgroundImage
         bgp={'right'}
-        bgsz={'650px'}
+        bgsz={'700px'}
         bgr={'no-repeat'}
-        miw={'600px'}
+        miw={'550px'}
         src={imageUrls.homeSplash.src}
       >
         <div className={styles.hero}>
