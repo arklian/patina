@@ -12,7 +12,7 @@
   width: rem(75%);
   max-width: rem(1200px);
   background-color: #25262b;
-  padding: rem(75px) rem(50px) rem(75px) rem(50px);
+  padding: rem(75px) rem(50px);
   background-image: radial-gradient(#196149 0%, #25262b 75%);
   background-size: rem(50%);
   background-repeat: no-repeat;
