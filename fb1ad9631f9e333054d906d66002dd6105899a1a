@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b548a2c_9bef576f",
+        "filename": "js/src/patina/scholarship/Scholarship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-25T17:17:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac4464a4_a073aec7",
+      "range": {
+        "startLine": 20,
+        "startChar": 17,
+        "endLine": 20,
+        "endChar": 21
+      },
+      "revId": "fb1ad9631f9e333054d906d66002dd6105899a1a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "49c27b8b_9c693264",
@@ -37,6 +61,24 @@
       "writtenOn": "2024-07-24T17:46:00Z",
       "side": 1,
       "message": "We may want to just add these as a color palette above.\nAt some point we should actually figure out how to handle the different dark colors across the site.",
+      "revId": "fb1ad9631f9e333054d906d66002dd6105899a1a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1a89c8b_e90ed41f",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-25T17:17:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "49c27b8b_9c693264",
       "revId": "fb1ad9631f9e333054d906d66002dd6105899a1a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
