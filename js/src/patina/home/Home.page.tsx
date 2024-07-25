@@ -14,7 +14,7 @@ export function HomePage() {
         bgsz={'650px'}
         bgr={'no-repeat'}
         miw={'600px'}
-        src={imageUrls.homeSplash.src}
+        src={imageUrls.HeaderImages.src}
       >
         <div className={styles.hero}>
           <div>
