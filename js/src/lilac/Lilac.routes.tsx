@@ -1,5 +1,5 @@
 import { HomePage } from '@/lilac/home/Home.page.tsx'
-import { Tasks } from '@/lilac/components/Task/tasks.tsx'
+import { Tasks } from '@/lilac/components/task/tasks.tsx'
 
 /**
  * Routes for the Lilac Website
