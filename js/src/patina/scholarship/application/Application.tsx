@@ -1,4 +1,4 @@
-import { Text, Button } from '@mantine/core'
+import { Text, Button, Space } from '@mantine/core'
 import { Stacks } from '@/patina/components/Stacks'
 import styles from './Application.module.css'
 
@@ -8,7 +8,7 @@ const applyStack = [
     description: (
       <Text>
         {'FAFSA Financial Aid'}
-        <br />
+        <Space h="md" />
         {'Academic Transcripts'}
       </Text>
     ),
@@ -18,11 +18,11 @@ const applyStack = [
     description: (
       <Text>
         {'Please answer these two questions (500 words each max).'}
-        <br />
+        <Space h="md" />
         {
           'How did your AANHPI heritage or ancestry affected your personal, educational, and professional journey?'
         }
-        <br />
+        <Space h="md" />
         {'How do you plan to use this scholarship?'}
       </Text>
     ),

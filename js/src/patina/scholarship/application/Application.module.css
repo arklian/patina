@@ -10,7 +10,7 @@
 .title {
   justify-content: center;
   display: flex;
-  padding-bottom: rem(66px);
+  margin-bottom: rem(50px);
   color: white;
   font-size: rem(26px);
   font-style: normal;
