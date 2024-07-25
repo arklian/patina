@@ -1,0 +1,50 @@
+.carouselContainer {
+  display: flex;
+  max-width: 1200px;
+  padding-bottom: 128px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  flex: 1;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  flex: 1;
+  padding: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+.control {
+  margin-right: rem(-70px);
+  margin-left: rem(-70px);
+
+  @media (max-width: rem(996px)) {
+    height: 0;
+  }
+}
