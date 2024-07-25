@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf55211c_288238a1",
+        "filename": "js/src/lilac/components/task/heading/TitleDescEditor.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T21:28:40Z",
+      "side": 1,
+      "message": "You probably don\u0027t want a component that has two rich text editors in it.\nThere should be one for title, one for body.",
+      "revId": "87dfe098a5ceea6011718efd6ac1839d3cc759bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7b74ce8_62352104",
+        "filename": "js/src/lilac/components/task/heading/TitleDescEditor.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T21:28:40Z",
+      "side": 1,
+      "message": "The title is not a rich text editor, just a regular text input",
+      "revId": "87dfe098a5ceea6011718efd6ac1839d3cc759bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
