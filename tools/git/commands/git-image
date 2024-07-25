@@ -1,10 +1,8 @@
 #!/bin/bash
-
-
 ####################################################################################################
 # Dependency Checks
 ####################################################################################################
-# Function to check and install doctl
+# Function to check if doctl is installed
 check_doctl() {
     if ! command -v doctl &> /dev/null; then
         echo "doctl is not installed. Please install it first."
@@ -16,63 +14,177 @@ check_doctl() {
     fi
 }
 
+# Function to check if jq is installed
+check_jq() {
+    if ! command -v jq &> /dev/null; then
+        echo "jq is not installed. Please install it first."
+        echo "To install jq, follow these steps:"
+        echo "1. For macOS: brew install jq"
+        echo "2. For Linux: sudo apt-get install jq -y"
+        echo "3. For Windows: Download and install from https://stedolan.github.io/jq/download/"
+        exit 1
+    fi
+}
 
+# Function to check if xmllint is installed
+check_xmllint() {
+    if ! command -v xmllint &> /dev/null; then
+        echo "xmllint is not installed. Please install it first."
+        echo "To install xmllint, run:"
+        echo "sudo apt-get install libxml2-utils"
+        echo "or"
+        echo "brew install libxml2"
+        exit 1
+    fi
+}
 
-
-# Install doctl and curl if they are not already installed
+# Check if doctl, jq, and xmllint are installed
 check_doctl
-
-
+check_jq
+check_xmllint
 ####################################################################################################
 # Main Script Start
 ####################################################################################################
 # Check if the correct number of arguments are provided
 if [ "$#" -lt 1 ]; then
-    echo "Usage: git image <image_path>"
+    echo "Usage: git image <image_path_or_directory>"
     exit 1
 fi
 
-IMAGE_PATH=$1
+# Check if environment variables are set
+if [ -z "$DIGITAL_OCEAN_SPACES_ACCESS" ] || [ -z "$DIGITAL_OCEAN_SPACES_SECRET" ]; then
+    echo "Environment variables DIGITAL_OCEAN_SPACES_ACCESS and DIGITAL_OCEAN_SPACES_SECRET must be set."
+    exit 1
+fi
+
+PATH_TO_UPLOAD=$1
+IMAGE_TS_PATH="$HOME/patina/js/src/patina/assets/images.ts"
 SPACE_NAME="patina-dev"
-SPACE_PATH="webImg/"
+SPACE_PATH="webimg/"
 REGION="nyc3" # Replace with your region
 
-# Check if the image file exists
-if [ ! -f "$IMAGE_PATH" ]; then
-    echo "File not found: $IMAGE_PATH"
+# Check if the image.ts file exists
+echo "Checking for image.ts at $IMAGE_TS_PATH"
+if [ ! -f "$IMAGE_TS_PATH" ]; then
+    echo "image.ts file not found at $IMAGE_TS_PATH. Please ensure the file exists and the path is correct."
     exit 1
 fi
 
-# Check if the image file name contains spaces
-FILE_NAME=$(basename "$IMAGE_PATH")
-if [[ "$FILE_NAME" == *" "* ]]; then
-    echo "The image file name contains spaces. Please rename the file to avoid spaces and try again."
+# Check if the path exists
+if [ ! -e "$PATH_TO_UPLOAD" ]; then
+    echo "Path not found: $PATH_TO_UPLOAD"
     exit 1
 fi
+####################################################################################################
+# Upload to DO
+####################################################################################################
+upload_file() {
+    local FILE_PATH=$1
+    local FILE_NAME=$(basename "$FILE_PATH")
 
-# Prompt user for Access Key and Secret Key
-read -p "Enter your DigitalOcean Access Key: " ACCESS_KEY
-read -sp "Enter your DigitalOcean Secret Key: " SECRET_KEY
-echo
+    # Check if the file name contains spaces
+    if [[ "$FILE_NAME" == *" "* ]]; then
+        echo "The file name '$FILE_NAME' contains spaces. Skipping this file."
+        return
+    fi
 
-# Calculate the date in the correct format
-DATE=$(date -u +"%a, %d %b %Y %T %Z")
+    # Calculate the date in the correct format
+    DATE=$(date -R -u)
 
-# Create the string to sign
-STRING_TO_SIGN="PUT\n\n\n${DATE}\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
+    # Create the string to sign
+    STRING_TO_SIGN="PUT\n\napplication/octet-stream\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
 
-# Create the signature
-SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${SECRET_KEY}" -binary | base64)
+    # Create the signature
+    SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
 
-# Upload the image using curl
-curl -X PUT -T "$IMAGE_PATH" \
-    -H "Date: ${DATE}" \
-    -H "Authorization: AWS ${ACCESS_KEY}:${SIGNATURE}" \
-    "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+    # Upload the file using curl
+    RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -X PUT -T "$FILE_PATH" \
+        -H "Date: ${DATE}" \
+        -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+        -H "Content-Type: application/octet-stream" \
+        -H "x-amz-acl: public-read" \
+        "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}")
 
-if [ $? -eq 0 ]; then
-    echo "Image uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
-else
-    echo "Failed to upload image."
-    exit 1
-fi
+    if [ "$RESPONSE" -eq 200 ]; then
+        echo "File '$FILE_NAME' uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+    else
+        echo "Failed to upload file '$FILE_NAME'. Response code: $RESPONSE"
+        # Print detailed error message
+        curl -X PUT -T "$FILE_PATH" \
+            -H "Date: ${DATE}" \
+            -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+            -H "Content-Type: application/octet-stream" \
+            -H "x-amz-acl: public-read" \
+            "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}" -v
+    fi
+}
+####################################################################################################
+# Update Image.Ts
+####################################################################################################
+update_image_ts() {
+    echo "Updating image.ts with new image URLs..."
+
+    # Calculate the date in the correct format
+    DATE=$(date -R -u)
+
+    # Create the string to sign for listing files
+    STRING_TO_SIGN="GET\n\n\n${DATE}\n/${SPACE_NAME}/"
+
+    # Create the signature
+    SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
+
+    # Get the list of files in the webimg folder
+    RESPONSE=$(curl -s -X GET \
+        -H "Date: ${DATE}" \
+        -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+        "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com?list-type=2&prefix=${SPACE_PATH}")
+
+    # Read the existing content of image.ts file
+    EXISTING_CONTENT=$(<"$IMAGE_TS_PATH")
+
+    # Create a map for the existing URLs
+    # Create a map for the existing URLs
+    declare -A existing_urls
+    while read -r key url; do
+        existing_urls["$key"]="$url"
+    done < <(echo "$EXISTING_CONTENT" | grep -Po '^\s*\w+:\s*\{\n\s*src:\s*'\''\K[^\']+')
+
+    NEW_URLS=""
+    echo "$RESPONSE" | xmllint --xpath "//*[local-name()='Contents']/*[local-name()='Key']/text()" - | while read -r FILE_NAME; do
+        URL="https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${FILE_NAME}"
+        KEY=$(echo "$FILE_NAME" | sed -e 's/^webimg\///' -e 's/\.[a-zA-Z0-9]*$//' -e 's/[^a-zA-Z0-9]/_/g')
+
+        # If the URL is not already in the map, add it
+        if [[ ! ${existing_urls["$KEY"]} ]]; then
+            NEW_URLS+=$(printf "  %s: {\n    src: '%s',\n  },\n" "$KEY" "$URL")
+        fi
+    done
+
+    # If there are new URLs, append them to the existing content and write to image.ts
+    if [ -n "$NEW_URLS" ]; then
+        # Remove the closing brace from the existing content
+        EXISTING_CONTENT=$(echo "$EXISTING_CONTENT" | sed 's/};$//')
+        # Append the new URLs and close the brace
+        NEW_CONTENT="${EXISTING_CONTENT}\n${NEW_URLS}\n};"
+        echo -e "$NEW_CONTENT" > "$IMAGE_TS_PATH"
+    fi
+
+    echo "image.ts has been updated."
+}
+####################################################################################################
+# Run functions
+####################################################################################################
+## Check if the path is a directory
+#if [ -d "$PATH_TO_UPLOAD" ]; then
+#    for FILE in "$PATH_TO_UPLOAD"/*; do
+#        if [ -f "$FILE" ]; then
+#            upload_file "$FILE"
+#        fi
+#    done
+#else
+#    # If the path is a single file, upload it
+#    upload_file "$PATH_TO_UPLOAD"
+#fi
+
+# Update the image.ts file
+update_image_ts
