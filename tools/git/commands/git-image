@@ -1,0 +1,78 @@
+#!/bin/bash
+
+
+####################################################################################################
+# Dependency Checks
+####################################################################################################
+# Function to check and install doctl
+check_doctl() {
+    if ! command -v doctl &> /dev/null; then
+        echo "doctl is not installed. Please install it first."
+        echo "To install doctl, follow these steps:"
+        echo "1. For macOS: brew install doctl"
+        echo "2. For Linux: sudo snap install doctl"
+        echo "3. For Windows: Download and install from https://github.com/digitalocean/doctl/releases"
+        exit 1
+    fi
+}
+
+
+
+
+# Install doctl and curl if they are not already installed
+check_doctl
+
+
+####################################################################################################
+# Main Script Start
+####################################################################################################
+# Check if the correct number of arguments are provided
+if [ "$#" -lt 1 ]; then
+    echo "Usage: git image <image_path>"
+    exit 1
+fi
+
+IMAGE_PATH=$1
+SPACE_NAME="patina-dev"
+SPACE_PATH="webImg/"
+REGION="nyc3" # Replace with your region
+
+# Check if the image file exists
+if [ ! -f "$IMAGE_PATH" ]; then
+    echo "File not found: $IMAGE_PATH"
+    exit 1
+fi
+
+# Check if the image file name contains spaces
+FILE_NAME=$(basename "$IMAGE_PATH")
+if [[ "$FILE_NAME" == *" "* ]]; then
+    echo "The image file name contains spaces. Please rename the file to avoid spaces and try again."
+    exit 1
+fi
+
+# Prompt user for Access Key and Secret Key
+read -p "Enter your DigitalOcean Access Key: " ACCESS_KEY
+read -sp "Enter your DigitalOcean Secret Key: " SECRET_KEY
+echo
+
+# Calculate the date in the correct format
+DATE=$(date -u +"%a, %d %b %Y %T %Z")
+
+# Create the string to sign
+STRING_TO_SIGN="PUT\n\n\n${DATE}\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
+
+# Create the signature
+SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${SECRET_KEY}" -binary | base64)
+
+# Upload the image using curl
+curl -X PUT -T "$IMAGE_PATH" \
+    -H "Date: ${DATE}" \
+    -H "Authorization: AWS ${ACCESS_KEY}:${SIGNATURE}" \
+    "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+
+if [ $? -eq 0 ]; then
+    echo "Image uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+else
+    echo "Failed to upload image."
+    exit 1
+fi
