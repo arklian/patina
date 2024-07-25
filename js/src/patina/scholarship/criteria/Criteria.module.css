@@ -17,10 +17,22 @@
   background-size: rem(50%);
   background-repeat: no-repeat;
   background-position: rem(100%);
+
+  @media (max-width: rem(750px)) {
+    flex-direction: column;
+    background-image: radial-gradient(#196149 0%, #25262b 70%);
+    background-size: rem(500px) rem(400px);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .selection {
   width: rem(550px);
+
+  @media (max-width: rem(996px)) {
+    width: auto;
+  }
 }
 
 .selection_title {
@@ -41,6 +53,9 @@
   height: auto;
   padding-left: 3%;
   /* colors needed to make gradient, non-standard Patina colors */
+  @media (max-width: rem(996px)) {
+    width: auto;
+  }
 }
 
 .quote_text {
@@ -49,4 +64,18 @@
   font-size: rem(35px);
   color: white;
   padding: rem(45px);
+
+  @media (max-width: rem(996px)) {
+    font-size: rem(30px);
+    text-align: center;
+    margin-top: rem(45px);
+    padding: rem(15px);
+  }
+
+  @media (max-width: rem(600px)) {
+    font-size: rem(26px);
+    text-align: center;
+    margin-top: rem(45px);
+    padding: rem(15px);
+  }
 }
