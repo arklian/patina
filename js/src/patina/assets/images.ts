@@ -23,6 +23,11 @@ export const imageUrls = {
       'https://drive.google.com/file/d/1aDgXnl75WwSaoNFwzPiO5fVvZ78sBHPZ/view',
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/ScholarshipHome.png',
   },
+  mentorHome: {
+    drive:
+      'https://drive.google.com/file/d/1aDgXnl75WwSaoNFwzPiO5fVvZ78sBHPZ/view',
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/mentorshiphero.png',
+  },
   community: {
     drive:
       'https://drive.google.com/file/d/16fqE7xIAEA_4mH32dLcN5lm804aBCozd/view',
