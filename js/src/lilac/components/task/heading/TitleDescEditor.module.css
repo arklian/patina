@@ -1,0 +1,15 @@
+.headingEditorDiv {
+  padding: rem(30px);
+  margin: rem(10px);
+}
+
+.titleEditorField {
+  border: none;
+  padding-left: rem(16px);
+  font-weight: bold;
+  font-size: rem(32px);
+}
+
+.contentEditorField {
+  border: none;
+}
