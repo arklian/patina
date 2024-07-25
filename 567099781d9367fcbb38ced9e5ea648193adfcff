@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05967a5e_eba5541e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/StaticContentFilter.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T18:10:49Z",
+      "side": 1,
+      "message": "Could you change your intellij import settings and uncollapse these",
+      "revId": "567099781d9367fcbb38ced9e5ea648193adfcff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "db608b7f_0711b9e5",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T18:10:49Z",
+      "side": 1,
+      "message": "nit: Space after #, capitalize S",
+      "revId": "567099781d9367fcbb38ced9e5ea648193adfcff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d73c747_2697aac2",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T18:10:49Z",
+      "side": 1,
+      "message": "unnecessary comment",
+      "revId": "567099781d9367fcbb38ced9e5ea648193adfcff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2641f41_97cf8ca0",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T18:10:49Z",
+      "side": 1,
+      "message": "move this up with the other jpa stuff",
+      "revId": "567099781d9367fcbb38ced9e5ea648193adfcff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
