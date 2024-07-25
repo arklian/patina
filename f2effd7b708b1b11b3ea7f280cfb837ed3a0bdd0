@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba95c719_848cda52",
+        "filename": "js/src/patina/mentorship/gain/Cards.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-25T20:26:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7969cccf_7e9004cc",
+      "revId": "f2effd7b708b1b11b3ea7f280cfb837ed3a0bdd0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9a4e15d0_c59eb844",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-25T20:07:19Z",
       "side": 1,
       "message": "nit: comment style and white space",
+      "revId": "f2effd7b708b1b11b3ea7f280cfb837ed3a0bdd0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9084f20_b31c3a3b",
+        "filename": "js/src/patina/mentorship/gain/Gain.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-25T20:26:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a4e15d0_c59eb844",
       "revId": "f2effd7b708b1b11b3ea7f280cfb837ed3a0bdd0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
