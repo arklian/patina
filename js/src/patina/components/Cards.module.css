@@ -2,6 +2,7 @@
   display: flex;
   color: white;
   padding: rem(24px) rem(0px) rem(0px);
+  justify-content: center;
 }
 
 .border {
@@ -12,6 +13,8 @@
   @media (max-width: rem(996px)) {
     flex-direction: column;
     background: var(--mantine-color-dark-6);
+    width: rem(300px);
+    align-items: center;
   }
 }
 
