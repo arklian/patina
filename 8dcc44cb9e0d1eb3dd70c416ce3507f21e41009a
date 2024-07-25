@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63d75157_b192d89e",
+        "filename": "js/src/lilac/components/Task/heading/Heading.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T20:23:39Z",
+      "side": 1,
+      "message": "JSDoc describing what this is",
+      "revId": "8dcc44cb9e0d1eb3dd70c416ce3507f21e41009a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
