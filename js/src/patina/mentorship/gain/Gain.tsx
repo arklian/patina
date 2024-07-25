@@ -1,6 +1,18 @@
-import { Skeleton } from '@mantine/core'
-
+import { SimpleGrid, Title } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
+import { Cards } from '@/patina/mentorship/gain/Cards.tsx'
+import styles from './Gain.module.css'
 // Defining the Gain component
 export function Gain() {
-  return <Skeleton animate={false} height={70} width="100%" mb="xl" />
+  const largeScreen = useMediaQuery('(min-width: 40em)')
+  return (
+    <div>
+      <Title className={styles.title}>{'What Will I Gain?'}</Title>
+      <SimpleGrid cols={largeScreen ? 3 : 1}>
+        <Cards />
+        <Cards />
+        <Cards />
+      </SimpleGrid>
+    </div>
+  )
 }
