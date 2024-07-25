@@ -25,9 +25,8 @@ export function RightAboutMe() {
     <Box
       ml={90}
       // mr={rem('20vw')} // not needed if justify in about-me is 'flex-start' instead of 'space-between'
-      mr={350}
+      mr={20}
       mt={30}
-      maw={400}
       className={styles.animate_fade_in_delay}
     >
       {data.map((text) => (
