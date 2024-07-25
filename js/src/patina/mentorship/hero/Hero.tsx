@@ -8,7 +8,6 @@ import styles from '@/patina/mentorship/hero/Hero.module.css'
  */
 export function Hero() {
   const largeScreen = useMediaQuery('(min-width: 60em)')
-
   return (
     <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl" mb={'7rem'} mt={'4rem'}>
       <div>

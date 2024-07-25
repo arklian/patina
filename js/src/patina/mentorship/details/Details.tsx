@@ -1,23 +1,25 @@
-import { Text } from '@mantine/core'
+import { Text, SimpleGrid } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import styles from './Details.module.css'
 
 /** Displays program details */
 export function Details() {
+  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <div className={styles.container}>
       <Text className={styles.title}>{'Program Details'}</Text>
       <Text className={styles.about}>
         {'There are two types of Mentors. Your'}
-        <div className={styles.colored}>&nbsp;{'Track Mentor'}&nbsp;</div>
+        <div className={styles.colored}>{' Track Mentor '}</div>
         {
           'will be your 1:1 Mentor who works in a field closest to the field you are interested in pursuing.'
         }
-        <div className={styles.colored}>&nbsp;{'Group Mentor'}&nbsp;</div>
+        <div className={styles.colored}>{' Group Mentor '}</div>
         {
           'is a Mentor who oversees all Mentees and provides DEI and Workplace readiness mentorship.'
         }
       </Text>
-      <div className={styles.list}>
+      <SimpleGrid cols={largeScreen ? 2 : 1} className={styles.list}>
         <div className={styles.list1}>
           <Text className={styles.item}>
             {'1. Match with your Track Mentor[Track]'}
@@ -40,7 +42,7 @@ export function Details() {
           </Text>
           <Text className={styles.item}>{'8. Final Evaluation [All]'}</Text>
         </div>
-      </div>
+      </SimpleGrid>
     </div>
   )
 }

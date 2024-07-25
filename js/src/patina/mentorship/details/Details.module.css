@@ -1,7 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: rem(80px) rem(100px);
+  margin: rem(48px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
   background: var(--mantine-color-dark-6);
 }
 
@@ -24,8 +26,6 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
