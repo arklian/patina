@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ba5ae39_302f34e7",
+        "filename": "js/src/patina/community/events/EventCard.tsx",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-25T19:34:26Z",
+      "side": 1,
+      "message": "nit: this can be file level constant rather than recreated in the function",
+      "revId": "1b807d8fd1e41f2265dca61ce149138a5e67d434",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "448a0344_96eb9129",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-25T19:34:26Z",
+      "side": 1,
+      "message": "nit: not in EST, but the local time. The server might not be on the EST timezone. The key issue is that the Calendar component gives time in the local time as well",
+      "revId": "1b807d8fd1e41f2265dca61ce149138a5e67d434",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97ce3272_be85dd88",
+        "filename": "js/src/patina/community/events/MainSection.tsx",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-25T19:34:26Z",
+      "side": 1,
+      "message": "nit: instead of returning \"different\" results, return the same result with a null or empty className if no match is found. This way if the return type becomes more complicated we can still avoid duplicating the logic in both return statements.",
+      "revId": "1b807d8fd1e41f2265dca61ce149138a5e67d434",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
