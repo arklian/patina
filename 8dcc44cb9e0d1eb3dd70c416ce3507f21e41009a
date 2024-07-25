@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0ee4c3b2_94b517e5",
+        "filename": "js/src/lilac/components/Task/heading/Heading.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T20:24:10Z",
+      "side": 1,
+      "message": "folder name has a capital",
+      "revId": "8dcc44cb9e0d1eb3dd70c416ce3507f21e41009a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "63d75157_b192d89e",
         "filename": "js/src/lilac/components/Task/heading/Heading.tsx",
         "patchSetId": 1
@@ -14,6 +31,23 @@
       "writtenOn": "2024-07-25T20:23:39Z",
       "side": 1,
       "message": "JSDoc describing what this is",
+      "revId": "8dcc44cb9e0d1eb3dd70c416ce3507f21e41009a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76a3b0e3_048045aa",
+        "filename": "js/src/lilac/components/Task/heading/Heading.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-25T20:24:10Z",
+      "side": 1,
+      "message": "Why is this called Heading?",
       "revId": "8dcc44cb9e0d1eb3dd70c416ce3507f21e41009a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
