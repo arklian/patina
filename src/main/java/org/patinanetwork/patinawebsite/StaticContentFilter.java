@@ -1,10 +1,6 @@
 package org.patinanetwork.patinawebsite;
 
-import jakarta.servlet.Filter;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
+import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
@@ -47,7 +43,7 @@ public class StaticContentFilter implements Filter {
         boolean isResourceFile = !isApi && fileExtensions.stream().anyMatch(path::contains);
 
         if (isApi) {
-            response.setContentType("application/json");
+            response.setContentType("application/plain");
             chain.doFilter(request, response);
         } else if (isResourceFile) {
             chain.doFilter(request, response);
