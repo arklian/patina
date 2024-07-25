@@ -3,7 +3,7 @@ import styles from './Stacks.module.css'
 
 type StackObject = {
   title: string
-  description: string
+  description: string | React.ReactNode
 }
 
 type StackProps = {
