@@ -7,15 +7,16 @@
   text-align: center;
   gap: rem(16px);
   border-radius: rem(16px);
-  border: 1px solid var(--mantine-color-dark-3, #5c5f66);
-  background: var(--mantine-color-dark-6, #25262b);
-  box-shadow: 0px rem(1px) rem(2px) 0px rgba(0, 0, 0, 0.1),
-  0px rem(1px) rem(3px) 0px rgba(0, 0, 0, 0.05);
+  border: rem(1px) solid var(--mantine-color-patina-dark-3, #5c5f66);
+  background: var(--mantine-color-patina-dark-6, #25262b);
+  box-shadow:
+    0 rem(1px) rem(2px) 0px rgba(0, 0, 0, 0.1),
+    0 rem(1px) rem(3px) 0px rgba(0, 0, 0, 0.05);
 }
 
 .centering {
   flex: 1 0 0;
-  
+
   @media (max-width: rem(996px)) {
     flex: 1;
   }
@@ -52,6 +53,6 @@
   gap: rem(10px);
   align-self: stretch;
   border: 1px solid var(--mantine-color-white, #fff);
-  background: var(--mantine-color-dark-4, #373a40);
+  background: var(--mantine-color-patina-dark-4, #373a40);
   color: var(--mantine-color-white, #fff);
 }

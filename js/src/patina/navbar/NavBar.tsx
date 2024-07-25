@@ -21,7 +21,15 @@ const links = [
       { link: '/scholarship', label: 'Scholarship' },
     ],
   },
-  { link: '', label: 'Get Involved' },
+  {
+    link: '',
+    label: 'Get Involved',
+    links: [
+      { link: '/mentor', label: 'Mentor' },
+      { link: '/community', label: 'Community' },
+      { link: '/volunteer', label: 'Volunteer' },
+    ],
+  },
   { link: '', label: 'Stay Informed' },
   { link: '', label: 'Blog' },
   { link: '', label: 'Donate' },
