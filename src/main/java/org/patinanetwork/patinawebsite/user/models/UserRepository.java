@@ -1,4 +1,4 @@
-package org.patinanetwork.patinawebsite.models;
+package org.patinanetwork.patinawebsite.user.models;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
