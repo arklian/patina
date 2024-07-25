@@ -17,7 +17,7 @@ export const themeOverride = createTheme({
       '#424242',
       '#3b3b3b',
       '#2e2e2e',
-      '#242424', // Default Dark Mode Background
+      '#000000', // Default Dark Mode Background
       '#1f1f1f',
       '#141414',
     ],
