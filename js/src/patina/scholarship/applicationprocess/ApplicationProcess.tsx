@@ -1,4 +1,4 @@
-import { Stacks } from '../components/Stacks'
+import { Stacks } from '../../components/Stacks'
 import styles from './ApplicationProcess.module.css'
 
 const processStack = [

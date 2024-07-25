@@ -1,6 +1,9 @@
 .about {
   display: flex;
   max-width: rem(447px);
+  @media (max-width: rem(1300px)) {
+    max-width: rem(1000px);
+  }
 }
 
 .text {
