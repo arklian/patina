@@ -14,17 +14,11 @@ export function MentorshipPage() {
     <Container size={'75rem'}>
       {/* 75rem == 1200px */}
       <Stack>
-        {'Mentorship Page'}
-        {/* Section 1 */}
         <Hero />
-        {/* Section 2 */}
         <About />
-        {/* Section 3 */}
         <Gain />
-        {/* Section 4 */}
         <Details />
         <Apply />
-        {/* Section 5 */}
         <Impact />
       </Stack>
     </Container>
