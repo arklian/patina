@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "00c5a4ac_03305b50",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-25T16:28:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a2d70f99_a6dc6083",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f4cd4a4_8676620a",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e16a0b6_42493b93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-25T16:28:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f4cd4a4_8676620a",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1554917f_20dd760f",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-23T17:26:31Z",
       "side": 1,
       "message": "Can we use HeroSplash in images? Riyuan is fixing it to work. The folder name got changed from webImg to webimg, so the links were broken.",
+      "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ecd58e8_549ddc78",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-25T16:28:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1554917f_20dd760f",
       "revId": "3adf508ab3e100899bfd890ce67c7b91f0773503",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
