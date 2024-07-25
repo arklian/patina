@@ -1,5 +1,6 @@
 import { SimpleGrid, Title, Text, Group, Button, Image } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
+import { imageUrls } from '@/patina/assets/images.ts'
 import styles from '@/patina/mentorship/hero/Hero.module.css'
 
 /**
@@ -28,7 +29,7 @@ export function Hero() {
       <Group justify={'center'} pt={'lg'}>
         <Image
           className={styles.mentorImage}
-          src={'https://placehold.co/597x398'}
+          src={imageUrls.mentorHome.src}
           alt="Mentorship Image"
         />
       </Group>
