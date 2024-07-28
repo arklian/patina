@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.events.protos;
+
+option java_multiple_files = true;
+
+// Model stored in the DB for events that Patina Network holds.
+message Event {
+  // Serial id for the event in the DB. 0 when the event is not stored in the DB yet.
+  optional int32 id = 1;
+  // Title or Name of the event. VARCHAR(255)
+  string name = 2;
+  // Longer body with details about the event.
+  string message = 3;
+  // Place the event is held. VARCHAR(255)
+  string location = 4;
+  // Date should be in the ISO yyyy-mm-dd format
+  string date = 5;
+}
+
+
+// Todo(Henry): Figure out API design of GET endpoints.
+message GetEventIN {
+  int32 id = 1;
+}
+
+message LetEventOUT {
+  Event event = 1;
+}
+
+// Todo(Henry): Figure out API design of Create endpoints.
+// Todo(Henry): Figure out API design of List endpoints.
+// Todo(Henry): Figure out API design of Update endpoints.
+// Todo(Henry): Figure out API design of Delete endpoints.
+// API Design Docs (Google): https://cloud.google.com/apis/design
