@@ -3,7 +3,7 @@ import { imageUrls } from '../../assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
 
-export function Volunteer() {
+export function VolunteerPage() {
   return (
     <div>
       <section className={styles.wrapper}>
