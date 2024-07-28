@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b617d612_d5b00046",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-28T17:43:51Z",
+      "side": 1,
+      "message": "this should be in Digital ocean but we can fix it after",
+      "revId": "d876adfe657717689514286372cf522f2f321a1a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
