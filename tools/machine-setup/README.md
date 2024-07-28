@@ -79,6 +79,10 @@ Chrome:
   - uBlock Origin
   - React Dev Tools
   - Old Reddit Redirect
+  - JSON Formatter 
+    - https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en
+  - StyleBot
+    - https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US
 
 ## Finder
 - Settings
