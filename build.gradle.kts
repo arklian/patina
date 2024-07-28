@@ -23,7 +23,10 @@ protobuf {
 
     generateProtoTasks {
         all().forEach { task ->
-            task.group = "protos"
+            task.builtins {
+                java { }
+            }
+
         }
     }
 }
@@ -41,6 +44,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.google.protobuf:protobuf-java:4.27.2")
+    implementation("com.google.protobuf:protobuf-java-util:4.27.2")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -53,7 +57,10 @@ tasks.withType<Test> {
 tasks.named("bootRun") {
     group = "patina"
     dependsOn(":js:patina")
+}
 
+tasks.named("generateProto") {
+    group = "patina"
 }
 
 tasks.named<TaskReportTask>("tasks") {

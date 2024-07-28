@@ -19,15 +19,19 @@ message Event {
 }
 
 
-// Todo(Henry): Figure out API design of GET endpoints.
-message GetEventIN {
+message GetEventReq {
   int32 id = 1;
 }
 
-message LetEventOUT {
+message GetEventResp {
   Event event = 1;
 }
 
+message ListEventResp {
+  repeated Event events = 1;
+}
+
+// Todo(Henry): Figure out API design of GET endpoints.
 // Todo(Henry): Figure out API design of Create endpoints.
 // Todo(Henry): Figure out API design of List endpoints.
 // Todo(Henry): Figure out API design of Update endpoints.
