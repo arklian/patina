@@ -16,6 +16,24 @@
       "message": "Build error not mine.",
       "revId": "0b1c8e9f5d1491b0bdf39e84332698a3f21c76fa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "715f476a_e00868ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-28T17:48:50Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "ceb1e6ff_4b75992e",
+      "revId": "0b1c8e9f5d1491b0bdf39e84332698a3f21c76fa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
