@@ -1,17 +1,28 @@
+/* Entire Website */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7px;
+  padding-bottom: 128px;
+  padding-left: 48px;
+  padding-right: 48px;
+  gap: 128px;
+}
+
+/* Initial hero section */
 .wrapper {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
-  margin-left: 5%;
-  gap: 50px;
+  gap: 24px;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 24px;
 }
 
 .title {
@@ -26,8 +37,7 @@
 
 .description {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(30px);
-  letter-spacing: rem(-2px);
+  font-size: rem(22px);
 
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(15px);
@@ -38,9 +48,57 @@
   width: 40%;
 }
 
+/* Volunteer Cards */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 10%;
+  gap: 40px;
+}
+
+/* Email and Button Section */
+.emailSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.backgroundBlur {
+  width: 100%;
+  height: 42.5%;
+  border-radius: 20px;
+  background: rgba(255, 61, 61, 0.20);
+  filter: blur(100px);
+  position: absolute;
+  z-index: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.emailText {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(28px);
+  text-align: center;
+  padding-bottom: 52px;
+  padding-top: 81px;
+  padding-left: 0.38px;
+  padding-right: 7.78px;
+}
+
+.emailEmail {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.emailButton {
+  width: 101px;
+  height: 43px;
+  background: white;
+  color: black;
 }
