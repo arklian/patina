@@ -15,3 +15,14 @@
   align-self: center;
   margin-top: 3em;
 }
+
+.contactWrapper {
+  min-height: 400px;
+  background-color: var(--mantine-color-cobalt-7);
+  border-radius: var(--mantine-radius-md);
+  padding: calc(var(--mantine-spacing-xl) * 2.5);
+
+  @media {
+    padding: calc(var(--mantine-spacing-xl) * 1.5)
+  }
+}
