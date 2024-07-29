@@ -110,7 +110,7 @@ fi
 
 PATH_TO_UPLOAD=$1
 IMAGE_TS_PATH="$HOME/patina/js/src/patina/assets/images.ts"
-SPACE_NAME="patina-dev"
+SPACE_NAME="patina-prod"
 SPACE_PATH="webimg/"
 REGION="nyc3"
 ENDPOINT_URL="https://${REGION}.digitaloceanspaces.com"
