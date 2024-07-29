@@ -25,7 +25,13 @@
 
 .image {
   height: rem(222px);
-  width: rem(264px);
+  width: rem(222px);
+  align-items: flex-start;
+
+  @media (max-width: rem(996px)) {
+    height: rem(350px);
+    width: rem(350px);
+  }
 }
 
 .title {
