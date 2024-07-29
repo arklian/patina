@@ -38,7 +38,7 @@
   align-items: flex-end;
   height: rem(600px);
   min-width: rem(700px);
-  padding-bottom: rem(150px);
+  padding-bottom: rem(75px);
 }
 
 .hero_title {
