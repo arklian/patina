@@ -1,7 +1,26 @@
 #!/bin/bash
 ####################################################################################################
+# Usage Instructions
+####################################################################################################
+
+# This script uploads images to DigitalOcean Spaces and updates the image.ts file with the new URLs.
+#
+# Prerequisites:
+#   - Ensure `doctl`, `jq`, and `awscli` are installed on your system.
+#   - Set the environment variables `DIGITAL_OCEAN_SPACES_ACCESS` and `DIGITAL_OCEAN_SPACES_SECRET`.
+#
+# Usage:
+#   git image <image_path_or_directory>
+# Example:
+#   git image /path/to/your/image.png
+#
+# The script will upload the specified image(s) to the configured DigitalOcean Space and update the
+# image.ts file located at $HOME/patina/js/src/patina/assets/images.ts with the new URLs.
+
+####################################################################################################
 # Dependency Checks
 ####################################################################################################
+
 # Function to check if doctl is installed
 check_doctl() {
     if ! command -v doctl &> /dev/null; then
@@ -72,9 +91,11 @@ check_jq
 check_aws
 check_openssl
 check_curl
+
 ####################################################################################################
 # Main Script Start
 ####################################################################################################
+
 # Check if the correct number of arguments are provided
 if [ "$#" -lt 1 ]; then
     echo "Usage: git image <image_path_or_directory>"
@@ -106,9 +127,11 @@ if [ ! -e "$PATH_TO_UPLOAD" ]; then
     echo "Path not found: $PATH_TO_UPLOAD"
     exit 1
 fi
+
 ####################################################################################################
 # Upload to DO
 ####################################################################################################
+
 upload_file() {
     local FILE_PATH=$1
     local FILE_NAME=$(basename "$FILE_PATH")
@@ -149,9 +172,11 @@ upload_file() {
             "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}" -v
     fi
 }
+
 ####################################################################################################
 # Update Image.Ts
 ####################################################################################################
+
 # Function to update the image.ts file with new image URLs
 update_image_ts() {
     echo "Updating image.ts with new image URLs..."
@@ -208,9 +233,11 @@ update_image_ts() {
         echo "No new URLs to add."
     fi
 }
+
 ####################################################################################################
 # Run functions
 ####################################################################################################
+
 #Check if the path is a directory
 if [ -d "$PATH_TO_UPLOAD" ]; then
     for FILE in "$PATH_TO_UPLOAD"/*; do
