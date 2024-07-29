@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "842fc920_4daa928a",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-29T20:21:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2faaa215_2feb9743",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f66b608_4167e7ab",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-29T19:29:14Z",
       "side": 1,
       "message": "I\u0027ve never seen this style before. `\u003c\u0027a\u0027\u003e` What does this do that component\u003d\"a\" doesnt?",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "032c5f9e_7db7149d",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-29T20:21:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f66b608_4167e7ab",
       "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "23bbf81b_c94bd9fb",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-29T20:21:01Z",
+      "side": 1,
+      "message": "this prevent the link from doing anything since we dont actually have it set up",
+      "parentUuid": "26927a8d_03497685",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4d7ae042_5a80e52c",
@@ -69,6 +123,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6d7c451_11a060f0",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-29T20:21:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d7ae042_5a80e52c",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "96c0cdf6_ed93d4f9",
@@ -82,6 +154,24 @@
       "writtenOn": "2024-07-29T19:29:14Z",
       "side": 1,
       "message": "??? why",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "844f4fef_35f617c1",
+        "filename": "js/src/lilac/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-07-29T20:21:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96c0cdf6_ed93d4f9",
       "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
