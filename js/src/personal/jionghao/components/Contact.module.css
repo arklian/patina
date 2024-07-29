@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  padding-top: 10rem;
+}
+
+.contactLine {
+  height: 0.5px;
+  background-color: light-dark(
+    var(--mantine-color-black),
+    var(--mantine-color-white)
+  );
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 55px;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 500px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
