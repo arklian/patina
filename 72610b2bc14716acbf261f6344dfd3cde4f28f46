@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d18a082_4e2dd026",
+        "filename": "js/src/patina/mentor/hero/Hero.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-29T22:01:07Z",
+      "side": 1,
+      "message": "this boi still here 😞",
+      "range": {
+        "startLine": 10,
+        "startChar": 13,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "72610b2bc14716acbf261f6344dfd3cde4f28f46",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
