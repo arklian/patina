@@ -9,7 +9,7 @@ import styles from './SideSection.module.css'
 export function LeftStickySection() {
   return (
     <>
-      <Affix position={{ bottom: 0, left: 30 }}>
+      <Affix position={{ bottom: 0, left: 40 }} className={styles.container}>
         <div className={styles.iconSection}>
           <ActionIcon
             className={styles.icons}
@@ -39,7 +39,7 @@ export function LeftStickySection() {
         </div>
       </Affix>
 
-      <Affix position={{ bottom: 0, right: 30 }}>
+      <Affix position={{ bottom: 0, right: 40 }} className={styles.container}>
         <div className={styles.verticalText}>
           <Text
             className={styles.txt}
