@@ -1,4 +1,12 @@
-import { Text, Title, Image, Anchor, AspectRatio } from '@mantine/core'
+import {
+  Text,
+  Title,
+  Image,
+  Anchor,
+  AspectRatio,
+  SimpleGrid,
+} from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import styles from './Cards.module.css'
 
 type CardsProps = {
@@ -11,9 +19,10 @@ type CardsProps = {
 
 /** Customizable card */
 export function Cards({ title, details, img, link, alt }: CardsProps) {
+  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <div className={styles.card}>
-      <div className={styles.border}>
+      <SimpleGrid cols={largeScreen ? 2 : 1} className={styles.border}>
         <AspectRatio>
           <Image className={styles.image} src={img} alt={alt} radius={5} />
         </AspectRatio>
@@ -24,7 +33,7 @@ export function Cards({ title, details, img, link, alt }: CardsProps) {
             <Text>{'Learn more\u2192'}</Text>
           </Anchor>
         </div>
-      </div>
+      </SimpleGrid>
     </div>
   )
 }
