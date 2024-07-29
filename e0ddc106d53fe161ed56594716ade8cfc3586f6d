@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "67b431b9_3fd34962",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-29T20:36:02Z",
+      "side": 1,
+      "message": "not sure but my command did not need chmod",
+      "parentUuid": "992de626_905b163d",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e4f2fbb_2730631c",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "46f3be0a_7ee7a2d7",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-29T20:36:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7e4f2fbb_2730631c",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "31ef2d8c_b61be945",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-29T19:32:24Z",
       "side": 1,
       "message": "Can we just default this to .png so the user doesn\u0027t have to type it in?",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7dcba83_6e6fdba6",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-07-29T20:36:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "31ef2d8c_b61be945",
       "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
