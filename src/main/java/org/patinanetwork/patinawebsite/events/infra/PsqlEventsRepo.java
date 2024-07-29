@@ -22,14 +22,14 @@ import java.util.List;
 public class PsqlEventsRepo implements EventsRepo {
 
     DBConnection dbConnection;
+    Connection conn;
 
     public PsqlEventsRepo(DBConnection dbConnection) {
         this.dbConnection = dbConnection;
+        conn = dbConnection.getConn();
     }
 
     public Event getEvent(int eventId) {
-        Connection conn = dbConnection.getConn();
-
         Event event = Event.getDefaultInstance();
         try {
             Statement st = conn.createStatement();
@@ -48,7 +48,6 @@ public class PsqlEventsRepo implements EventsRepo {
 
     // Todo(Henry): Add Pagination
     public List<Event> listEvents() {
-        Connection conn = dbConnection.getConn();
 
         List<Event> events = new ArrayList<>();
         try {
