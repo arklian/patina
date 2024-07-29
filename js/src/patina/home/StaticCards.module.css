@@ -15,7 +15,6 @@
 
   @media (max-width: rem(996px)) {
     width: rem(264px);
-    display: block;
   }
 }
 
