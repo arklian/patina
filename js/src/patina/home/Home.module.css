@@ -15,13 +15,17 @@
   @media (max-width: rem(996px)) {
     justify-content: center;
     align-items: center;
-    font-size: rem(22px);
+    font-size: rem(40px);
   }
 }
 
 .homeContainer {
   max-width: rem(1200px);
   padding: 0;
+
+  @media (max-width: rem(996px)) {
+    min-width: 415px;
+  }
 }
 
 .aboutInit {
