@@ -1,5 +1,5 @@
 .name {
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 700;
   color: #daddd8;
@@ -12,29 +12,22 @@
 
 .textSWE {
   color: #ecebe4;
-  font-size: rem(32px);
+  font-size: rem(28px);
   font-weight: 400;
 }
 
 .about {
   color: #eef0f2;
   line-height: 1.625;
-  font-size: rem(22px);
+  font-size: rem(20px);
   font-weight: 200;
   margin-bottom: rem(80px);
   margin-left: rem(20px);
 }
 
-.pfp {
-  margin-top: rem(30px);
-  border-radius: 10px;
-  height: rem(432px);
-  width: rem(432px);
-}
-
 .grid {
   background-color: #1c1c1c;
-  padding: rem(120px);
+  padding: rem(110px);
   height: max-content;
 }
 
@@ -49,11 +42,6 @@
   margin-left: 50%;
 }
 
-.flex {
-  display: flex;
-  margin-bottom: rem(10px);
-}
-
 .flexMenu {
   display: flex;
   text-align: center;
@@ -61,15 +49,14 @@
 
 .socialIcons {
   display: flex;
-  gap: rem(10px);
-  margin-top: rem(8px);
-  margin-left: rem(10px);
+  gap: rem(30px);
+  margin-top: rem(300px);
 }
 
 .navLine {
-  width: rem(20px);
+  width: rem(40px);
   height: 1px;
-  margin-top: rem(20px);
+  margin-top: rem(45px);
   margin-right: rem(4px);
   background-color: #ecebe4;
 }
@@ -81,17 +68,21 @@
 
 .menu1 {
   color: #ecebe4;
-  font-size: rem(24px);
-  margin-top: rem(15px);
+  font-size: rem(21px);
+  margin-top: rem(40px);
   font-weight: 700;
   line-height: 1rem;
 }
 
 .flashlight {
   position: absolute;
-  width: rem(700px);
-  height: rem(700px);
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+  width: rem(1000px);
+  height: rem(1000px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   pointer-events: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -121,7 +112,7 @@
 }
 
 .experienceTitle {
-  font-size: rem(20px);
+  font-size: rem(18px);
   font-weight: bold;
   color: #daddd8;
 }
@@ -137,7 +128,7 @@
 }
 
 .experienceText {
-  font-size: rem(18px);
+  font-size: rem(16px);
   margin-bottom: rem(20px);
 }
 
@@ -162,7 +153,7 @@
 
 .projectText {
   margin-left: rem(1rem);
-  font-size: rem(18px);
+  font-size: rem(16px);
   max-width: rem(400px);
 }
 
