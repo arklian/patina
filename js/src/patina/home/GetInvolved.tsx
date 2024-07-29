@@ -6,7 +6,7 @@ export function GetInvolved() {
   return (
     <div className={styles.involvedContainer}>
       <div className={styles.sectionHeader}>
-        <h2>{'Want to get involved?'}</h2>
+        <h2 className={styles.header}>{'Want to get involved?'}</h2>
       </div>
 
       <div className={styles.cardsContainer}>
