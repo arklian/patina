@@ -9,20 +9,24 @@ import styles from './Home.module.css'
 export function HomePage() {
   return (
     <Container className={styles.homeContainer}>
-      <BackgroundImage
-        bgp={'right'}
-        bgsz={'650px'}
-        bgr={'no-repeat'}
-        miw={'550px'}
-        src={imageUrls.homeHero.src}
-      >
-        <div className={styles.hero}>
-          <Title className={styles.hero_title} w={'75%'}>
-            {'Empowering AANHPI leaders to '}
-            <span className={styles.title_teal}>{'make their mark.'}</span>
-          </Title>
-        </div>
-      </BackgroundImage>
+      <div>
+        <BackgroundImage
+          bgp={'right'}
+          bgsz={'700px'}
+          bgr={'no-repeat'}
+          miw={'550px'}
+          src={imageUrls.homeHero.src}
+        >
+          <div className={styles.hero}>
+            <div>
+              <Title className={styles.hero_title} w={'75%'}>
+                {'Empowering AANHPI leaders to '}
+                <span className={styles.title_teal}>{'make their mark.'}</span>
+              </Title>
+            </div>
+          </div>
+        </BackgroundImage>
+      </div>
       <div className={styles.aboutInit}>
         <About />
         <Initiatives />
