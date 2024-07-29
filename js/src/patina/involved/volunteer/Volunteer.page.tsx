@@ -19,7 +19,7 @@ export function VolunteerPage() {
         </div>
         <Image
           className={styles.volunteerImg}
-          src={imageUrls.volunteeropportunities.src}
+          src={imageUrls.volunteerOpportunities.src}
         />
       </section>
       <section className={styles.grid}>
