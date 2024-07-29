@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94f367f1_d229ccd2",
+        "filename": "js/src/personal/bryan/projects/Projects.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-29T19:49:49Z",
+      "side": 1,
+      "message": "nit: .addImage and .read are a bit redundant because we can just directly check whether .image and .file are set.",
+      "revId": "f7899a8af9379b9b46edbd9e5899bb290dcc175b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
