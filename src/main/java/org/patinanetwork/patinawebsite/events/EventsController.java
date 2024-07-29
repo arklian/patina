@@ -1,6 +1,7 @@
 package org.patinanetwork.patinawebsite.events;
 
 import org.patinanetwork.patinawebsite.events.infra.EventsRepo;
+import org.patinanetwork.patinawebsite.events.protos.Event;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,6 @@ public class EventsController {
     @GetMapping("/api/event/{eventId}")
     public String test(@PathVariable("eventId") int eventId) {
         Event event = eventsRepo.getEvent(eventId);
-        return event.message;
+        return event.getMessage();
     }
 }

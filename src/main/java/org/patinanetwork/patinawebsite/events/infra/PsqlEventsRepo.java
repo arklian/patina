@@ -1,7 +1,7 @@
 package org.patinanetwork.patinawebsite.events.infra;
 
 import org.patinanetwork.common.db.DBConnection;
-import org.patinanetwork.patinawebsite.events.Event;
+import org.patinanetwork.patinawebsite.events.protos.Event;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
@@ -21,7 +21,7 @@ public class PsqlEventsRepo implements EventsRepo {
 
     public Event getEvent(int eventId) {
         Connection conn = dbConnection.getConn();
-        Event event = new Event();
+        Event event = Event.getDefaultInstance();
 
         try {
             // Todo(Henry): Figure out the best way to build the query that prevents SQL injection and other vulns.
@@ -38,11 +38,17 @@ public class PsqlEventsRepo implements EventsRepo {
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 final String stringDate = dateFormat.format(utilDate);
 
-                event = new Event(id, name, message, location, stringDate);
+                event = Event.newBuilder()
+                        .setId(id)
+                        .setName(name)
+                        .setMessage(message)
+                        .setLocation(location)
+                        .build();
             }
             rs.close();
             st.close();
         } catch (Exception e) {
+            // Todo(Henry): Figure out the best way to handle SQL Exceptions
             throw new RuntimeException(e);
         }
 

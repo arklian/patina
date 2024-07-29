@@ -3,6 +3,8 @@ plugins {
     id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.1.5"
     id("com.palantir.java-format") version "2.47.0"
+    id("java")
+    id("com.google.protobuf") version "0.9.4"
 }
 
 group = "org.patinanetwork"
@@ -14,6 +16,23 @@ java {
     }
 }
 
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:4.27.2"
+    }
+
+    generateProtoTasks {
+        all().forEach { task ->
+            task.group = "protos"
+        }
+    }
+}
+
+sourceSets.main {
+    proto.srcDirs("src/main/java")
+    java.srcDirs("build/generated/source/proto/main/grpc")
+}
+
 repositories {
     mavenCentral()
 }
@@ -21,6 +40,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.google.protobuf:protobuf-java:4.27.2")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
