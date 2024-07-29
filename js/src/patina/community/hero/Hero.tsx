@@ -1,5 +1,6 @@
 import { SimpleGrid, Title, Text, Button, Stack, Image } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
+import { imageUrls } from '@/patina/assets/images'
 import styles from './Hero.module.css'
 
 export function Hero() {
@@ -19,7 +20,7 @@ export function Hero() {
         </div>
       </Stack>
       <div>
-        <Image src={'https://placehold.co/597x398'} alt={'placeholder'} />
+        <Image src={imageUrls.communityHero.src} alt={'placeholder'} />
       </div>
     </SimpleGrid>
   )

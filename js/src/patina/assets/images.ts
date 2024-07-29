@@ -4,41 +4,42 @@
  */
 export const imageUrls = {
   patinaLogo: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Logo2.png',
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/patinaLogo.png',
   },
-  mentorship: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Mentorship.jpeg',
-  },
-  scholarship: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Scholarship.jpeg',
+  mentorshipHome: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/mentorshipHome.jpeg',
   },
   scholarshipHome: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/ScholarshipHome.png',
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/scholarshipHome.jpeg',
   },
-  mentorHome: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Mentorship.jpeg',
+  scholarshipHero: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/scholarshipHero.png',
   },
-  community: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Community.jpeg',
+  mentorApplyHero: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/mentorApplyHero.png',
   },
-  homeSplash: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/HeaderImages.png',
+  communityHome: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/communityHome.jpeg',
   },
-  scholarSplash: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/ScholarshipHome.png',
+  homeHero: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/homeHero.png',
+  },
+  volunteerHero: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/volunteerHero.png',
+  },
+  mentorshipHero: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/mentorshipHero.png',
+  },
+  communityHero: {
+    src: 'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/webimg/communityHero.png ',
   },
   learn: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Learn.png',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/learn.png',
   },
   hands: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Hands.png',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/hands.png',
   },
   heart: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/Heart.png',
-  },
-  volunteerOpportunities: {
-    drive:
-      'https://drive.google.com/file/d/1cG2LeFnXsYjQKgfULdWvb2Ys5ZIECXp2/view',
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/VolunteerOpportunity.png',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/heart.png',
   },
 }

@@ -14,7 +14,7 @@ export function HomePage() {
         bgsz={'700px'}
         bgr={'no-repeat'}
         miw={'550px'}
-        src={imageUrls.homeSplash.src}
+        src={imageUrls.homeHero.src}
       >
         <div className={styles.hero}>
           <div>
@@ -25,7 +25,6 @@ export function HomePage() {
           </div>
         </div>
       </BackgroundImage>
-      {/*this double initiative thing will be replace by <About></About>*/}
       <div className={styles.aboutInit}>
         <About />
         <Initiatives />
