@@ -1,0 +1,20 @@
+.title {
+  font-size: 64px;
+  color: white;
+}
+
+.description {
+  color: white;
+  text-align: left;
+  padding-top: rem(10px);
+  font-size: 24px;
+}
+
+.mentorImage {
+  border-radius: 5px;
+}
+
+.fonts {
+  color: black;
+  font-weight: 600;
+}
