@@ -8,7 +8,8 @@ export function ProjectsPage() {
     title: string
     link: string
     text: string
-    image: string
+    addimage?: boolean
+    image?: string
     read?: boolean
     file?: string
   }) => {
@@ -30,6 +31,10 @@ export function ProjectsPage() {
         </>
       )
     }
+    let Pic = <a />
+    if (props.addimage) {
+      Pic = <Image src={props.image} />
+    }
     return (
       <Grid.Col span={{ base: 12, md: 12, lg: 5.9 }} bd="1px solid gray">
         <Grid component="span">
@@ -39,7 +44,7 @@ export function ProjectsPage() {
                 {props.title}
               </Title>
             </Center>
-            <Image src={props.image} />
+            {Pic}
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 7, lg: 7 }}>
             {Starter}
@@ -57,41 +62,41 @@ export function ProjectsPage() {
       <Grid component="span" justify="center">
         <Grid.Col span={12}>
           <Text mt="0.5rem" mb="0.5rem">
-            {'Currently done projects'}
+            {'(Mostly) Finished Projects'}
           </Text>
         </Grid.Col>
         <Project
-          title="This site"
+          title="Patina Network"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
+          addimage
           image={image}
-          text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
+          text="Helped with making the site mobile friendly; worked on setting up database communication for the site."
         />
         <Grid.Col span={0.2}></Grid.Col>
         <Project
           title="COS 429"
           link="https://github.com/bz5989/429_Final"
+          addimage
           image={image}
           read
           file={document}
-          text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
+          text="Wrote a paper here with Sarika Ahire. Paper is linked :)"
         />
         <Grid.Col span={12}>
           <Text mt="0.5rem" mb="0.5rem">
-            {'Future projects'}
+            {'Projects for the future'}
           </Text>
         </Grid.Col>
         <Project
           title="COS 333"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
-          image={image}
-          text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
+          text="Expecting to create either a site or application for this course in the Fall 2024 semester."
         />
         <Grid.Col span={0.2}></Grid.Col>
         <Project
           title="COS 397"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
-          image={image}
-          text="Hello World. This is placeholder text that I'm writing here for the sake of having a long text thing. This is so I have a good sense of how much I would normally write for a description of one of my pieces. That way, I know how large of an image I can put on the side, as well as how much space it'll take up on my page."
+          text="Expecting to do research/coding/write a paper for this course in the Fall 2024 semester."
         />
       </Grid>
     </Flex>

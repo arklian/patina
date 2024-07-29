@@ -19,15 +19,15 @@ export function FunPage() {
       {'Hello :)'}
     </iframe>
   )
-  const Wordle = (
-    <iframe
-      src="https://www.nytimes.com/games/wordle"
-      title="Wordle"
-      height="450"
-      width="350"
-      style={{ color: 'red', border: '2px solid gray' }}
-    />
-  )
+  // const Wordle = (
+  //   <iframe
+  //     src="https://www.nytimes.com/games/wordle"
+  //     title="Wordle"
+  //     height="450"
+  //     width="350"
+  //     style={{ color: 'red', border: '2px solid gray' }}
+  //   />
+  // )
   return (
     <Flex mr="2rem" direction="column">
       <Title className={classes.title} component="span" ml="5rem">
@@ -92,8 +92,8 @@ export function FunPage() {
           <Title component="span" className={classes.title2} ta="center">
             {'Wordle'}
           </Title>
-          <Space />
-          {Wordle}
+          {/*<Space />*/}
+          {/*{Wordle}*/}
         </Grid.Col>
       </Grid>
     </Flex>
