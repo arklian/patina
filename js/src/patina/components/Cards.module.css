@@ -1,5 +1,6 @@
 .card {
-  display: flex;
+  display: grid;
+  justify-items: center;
   color: white;
   padding: rem(24px) rem(0px) rem(0px);
 }
@@ -8,15 +9,15 @@
   display: flex;
   border: rem(1px) solid var(--mantine-color-dark-4);
   border-radius: rem(5px);
+  background: var(--mantine-color-dark-6);
 
   @media (max-width: rem(996px)) {
-    flex-direction: column;
-    background: var(--mantine-color-dark-6);
+    width: rem(264px);
+    display: block;
   }
 }
 
 .text_container {
-  display: flex;
   flex-direction: column;
   padding: rem(10px) rem(16px);
   height: rem(222px);
@@ -24,8 +25,7 @@
 
 .image {
   height: rem(222px);
-  width: rem(222px);
-  align-items: flex-start;
+  width: rem(264px);
 }
 
 .title {
