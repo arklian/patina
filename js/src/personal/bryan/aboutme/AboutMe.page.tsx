@@ -39,7 +39,7 @@ export function AboutMePage() {
           </Group>
         </Stack>
         <Stack>
-          <Text component="span">{'Hi, I’m Bryan! I’m XYZ. '}</Text>
+          <Text component="span">{'Hi, I’m Bryan!'}</Text>
           <Space />
           <Text component="span">
             {'I’m a head Copy editor for '}{' '}
