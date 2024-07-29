@@ -21,6 +21,7 @@
 
 .homeContainer {
   max-width: rem(1200px);
+  padding: 0;
 }
 
 .aboutInit {
@@ -37,7 +38,7 @@
   display: flex;
   align-items: flex-end;
   height: rem(600px);
-  min-width: rem(700px);
+  width: rem(95%);
   padding-bottom: rem(75px);
 }
 
@@ -48,8 +49,11 @@
   color: white;
   font-size: rem(60px);
   padding-left: 5vw;
+
+  @media (max-width: rem(996px)) {
+    font-size: rem(45px);
+  }
 }
 
 .title_teal {
   color: var(--mantine-color-patina-green-light);
-}
