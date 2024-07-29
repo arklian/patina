@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "011b9a80_a018b493",
+        "filename": "js/src/lilac/components/task/tasks.tsx",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-29T19:42:01Z",
+      "side": 1,
+      "message": "nit: file name should be Tasks.tsx I think?",
+      "revId": "a8ceea9960425eeb0d552158a25b8b5adfbd91f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
