@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22625d4f_d16d2046",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:13:07Z",
+      "side": 1,
+      "message": "clean up commit message",
+      "revId": "e38bddb818d5d67021570ae2a564a4bd21623a81",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f125557_66852fd1",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 8
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:13:07Z",
+      "side": 1,
+      "message": "nit: add space",
+      "revId": "e38bddb818d5d67021570ae2a564a4bd21623a81",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
