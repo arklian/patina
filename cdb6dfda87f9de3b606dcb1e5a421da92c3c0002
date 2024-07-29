@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9292f905_28cc7874",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-29T21:22:21Z",
+      "side": 1,
+      "message": "no display block here",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 16,
+        "endChar": 19
+      },
+      "revId": "cdb6dfda87f9de3b606dcb1e5a421da92c3c0002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
