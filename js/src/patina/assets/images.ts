@@ -34,7 +34,7 @@ export const imageUrls = {
     src: 'https://patina-dev.nyc3.digitaloceanspaces.com/webimg/communityHero.png',
   },
   learn: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/learn.png',
+    src: 'https://patina-dev.nyc3.digitaloceanspaces.com/webimg/learn.png',
   },
   hands: {
     src: 'https://patina-dev.nyc3.digitaloceanspaces.com/webimg/hands.png',
