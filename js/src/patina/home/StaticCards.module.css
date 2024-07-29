@@ -12,6 +12,10 @@
   box-shadow:
     0 rem(1px) rem(2px) 0px rgba(0, 0, 0, 0.1),
     0 rem(1px) rem(3px) 0px rgba(0, 0, 0, 0.05);
+  @media (max-width: rem(996px)) {
+    width: rem(264px);
+    display: block;
+  }
 }
 
 .centering {
