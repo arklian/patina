@@ -1,6 +1,7 @@
 import { Grid } from '@mantine/core'
 import { Calendar } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
+import { useQuery } from '@tanstack/react-query'
 import { EventCard } from './EventCard.tsx'
 import styles from '@/patina/community/events/MainSection.module.css'
 
@@ -17,22 +18,20 @@ function convertToDateObject(inputtedDate: string) {
  * Component rendering a calendar on the left and events on the right.
  */
 export function MainSection() {
-  const eventsData = [
-    {
-      name: 'Event Name',
-      location: 'Location',
-      details:
-        'Lorem ipsoiosafjsaofjsaofijsfojaiofmefoijs jlzkf jlkafj oiejf oj afd ldflk pr',
-      inputtedDate: '2024-07-08',
+  const query = useQuery({
+    queryKey: ['events'],
+    queryFn: async () => {
+      const response = await fetch('/api/events')
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+      return response.json()
     },
-    {
-      name: 'Event Name',
-      location: 'Location',
-      details:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-      inputtedDate: '2024-07-15',
-    },
-  ]
+  })
+
+  //eslint-disable-next-line
+  console.log(query.data)
+
   const allEventDates = eventsData.map((event) =>
     convertToDateObject(event.inputtedDate),
   )
@@ -69,6 +68,7 @@ export function MainSection() {
       <Grid.Col span={8}>
         {eventsData.map((event) => (
           <EventCard
+            key={event.id}
             name={event.name}
             location={event.location}
             details={event.details}
@@ -79,3 +79,22 @@ export function MainSection() {
     </Grid>
   )
 }
+
+const eventsData = [
+  {
+    id: 1,
+    name: 'Event Name',
+    location: 'Location',
+    details:
+      'Lorem ipsoiosafjsaofjsaofijsfojaiofmefoijs jlzkf jlkafj oiejf oj afd ldflk pr',
+    inputtedDate: '2024-07-08',
+  },
+  {
+    id: 2,
+    name: 'Event Name',
+    location: 'Location',
+    details:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+    inputtedDate: '2024-07-15',
+  },
+]
