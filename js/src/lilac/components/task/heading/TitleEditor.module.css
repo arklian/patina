@@ -1,0 +1,6 @@
+.titleEditorField {
+  border: none;
+  padding-left: rem(16px);
+  font-weight: bold;
+  font-size: rem(32px);
+}

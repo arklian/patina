@@ -1,0 +1,8 @@
+.headingEditorDiv {
+  padding-left: rem(30px);
+  margin: rem(10px);
+}
+
+.contentEditorField {
+  border: none;
+}
