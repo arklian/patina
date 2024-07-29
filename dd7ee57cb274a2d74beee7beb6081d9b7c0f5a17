@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2faaa215_2feb9743",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:29:14Z",
+      "side": 1,
+      "message": "Use React.ReactNode",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f66b608_4167e7ab",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:29:14Z",
+      "side": 1,
+      "message": "I\u0027ve never seen this style before. `\u003c\u0027a\u0027\u003e` What does this do that component\u003d\"a\" doesnt?",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26927a8d_03497685",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:29:14Z",
+      "side": 1,
+      "message": "does this do anything?",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d7ae042_5a80e52c",
+        "filename": "js/src/lilac/components/Task/subissues/subgroup/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:29:14Z",
+      "side": 1,
+      "message": "you shouldn\u0027t export two functions in the same file",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96c0cdf6_ed93d4f9",
+        "filename": "js/src/lilac/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:29:14Z",
+      "side": 1,
+      "message": "??? why",
+      "revId": "dd7ee57cb274a2d74beee7beb6081d9b7c0f5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
