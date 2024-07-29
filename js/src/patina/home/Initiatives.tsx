@@ -33,18 +33,20 @@ const detailsMap = [
 export function Initiatives() {
   return (
     <>
-      <div className={styles.container}>
-        <Text className={styles.title}>{'Our initiatives'}</Text>
-        {detailsMap.map(({ title, details, img, link, alt }, index) => (
-          <Cards
-            key={index}
-            title={title}
-            details={details}
-            img={img}
-            link={link}
-            alt={alt}
-          />
-        ))}
+      <div className={styles.initiatives_container}>
+        <div className={styles.container}>
+          <Text className={styles.title}>{'Our initiatives'}</Text>
+          {detailsMap.map(({ title, details, img, link, alt }, index) => (
+            <Cards
+              key={index}
+              title={title}
+              details={details}
+              img={img}
+              link={link}
+              alt={alt}
+            />
+          ))}
+        </div>
       </div>
     </>
   )
