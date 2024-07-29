@@ -6,7 +6,6 @@ export function CommunityPage() {
   return (
     <Container size={'75rem'}>
       <Stack>
-        {'Community Page'}
         <Hero />
         <MainSection />
       </Stack>
