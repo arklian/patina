@@ -11,18 +11,15 @@ export function HomePage() {
     <Container className={styles.homeContainer}>
       <BackgroundImage
         bgp={'right'}
-        bgsz={'700px'}
+        bgsz={'650px'}
         bgr={'no-repeat'}
-        miw={'550px'}
         src={imageUrls.homeSplash.src}
       >
         <div className={styles.hero}>
-          <div>
-            <Title className={styles.hero_title} w={'75%'}>
-              {'Empowering AANHPI leaders to '}
-              <span className={styles.title_teal}>{'make their mark.'}</span>
-            </Title>
-          </div>
+          <Title className={styles.hero_title} w={'75%'}>
+            {'Empowering AANHPI leaders to '}
+            <span className={styles.title_teal}>{'make their mark.'}</span>
+          </Title>
         </div>
       </BackgroundImage>
       {/*this double initiative thing will be replace by <About></About>*/}
