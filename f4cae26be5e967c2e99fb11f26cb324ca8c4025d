@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2118587c_80d38c32",
+        "filename": "js/src/patina/mentor/Mentor.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-29T21:57:21Z",
+      "side": 1,
+      "message": "you know what nit this is",
+      "range": {
+        "startLine": 15,
+        "startChar": 8,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "f4cae26be5e967c2e99fb11f26cb324ca8c4025d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df79e15f_708d0140",
+        "filename": "js/src/patina/mentor/about/About.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-07-29T21:57:21Z",
+      "side": 1,
+      "message": "dunno if you wanna use direct rems here",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 3,
+        "endChar": 19
+      },
+      "revId": "f4cae26be5e967c2e99fb11f26cb324ca8c4025d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
