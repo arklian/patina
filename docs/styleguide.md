@@ -55,3 +55,11 @@ Make sure that the following formatters and linters are running in your IDE:
 - Images
   - Currently, we're hosting our images through Google Photos, but will likely move to DO or S3 buckets.
   - Store images in a ./assets/images.ts file.
+
+# Java
+- Don't use * imports
+- palantir autoformat
+- Install palantir-format plugin in intellij
+- Enable it
+- Search for save actions 
+- turn on reformat code for java
