@@ -15,7 +15,7 @@
   margin-bottom: 24px;
 
   @media (max-width: rem(996px)) {
-    font-size: rem(18px);
+    font-size: rem(24px);
   }
 }
 
