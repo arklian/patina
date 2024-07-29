@@ -1,5 +1,5 @@
 import { Title, Text, Image, Button } from '@mantine/core'
-import { imageUrls } from '../../assets/images.ts'
+import { imageUrls } from '../assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
 
@@ -13,13 +13,13 @@ export function VolunteerPage() {
           </Title>
           <Text size="md" className={styles.description}>
             {
-              'The Patina Network volunteer program is... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the same mission. There are many ways to join us by sharing your talents!'
             }
           </Text>
         </div>
         <Image
           className={styles.volunteerImg}
-          src={imageUrls.volunteerOpportunities.src}
+          src={imageUrls.volunteerHero.src}
         />
       </section>
       <section className={styles.grid}>

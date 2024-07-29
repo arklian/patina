@@ -29,7 +29,7 @@ export function Hero() {
       <Group justify={'center'} pt={'lg'}>
         <Image
           className={styles.mentorImage}
-          src={imageUrls.mentorHome.src}
+          src={imageUrls.mentorshipHero.src}
           alt="Mentorship Image"
         />
       </Group>
