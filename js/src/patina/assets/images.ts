@@ -7,10 +7,10 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/patinaLogo.png',
   },
   mentorshipHome: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipHome.jpeg',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipHome.png',
   },
   scholarshipHome: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/scholarshipHome.jpeg',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/scholarshipHome.png',
   },
   scholarshipHero: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/scholarshipHero.png',
@@ -19,7 +19,7 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorApplyHero.png',
   },
   communityHome: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/communityHome.jpeg',
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/communityHome.png',
   },
   homeHero: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/homeHero.png',
