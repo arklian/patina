@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "992de626_905b163d",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:32:24Z",
+      "side": 1,
+      "message": "If this isn\u0027t necessary, we can remove it.",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e4f2fbb_2730631c",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:32:24Z",
+      "side": 1,
+      "message": "Can we add some notes on what the use case was that lead us to make this?",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31ef2d8c_b61be945",
+        "filename": "tools/git/commands/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-29T19:32:24Z",
+      "side": 1,
+      "message": "Can we just default this to .png so the user doesn\u0027t have to type it in?",
+      "revId": "e0ddc106d53fe161ed56594716ade8cfc3586f6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
