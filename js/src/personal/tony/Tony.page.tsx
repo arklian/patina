@@ -12,7 +12,6 @@ import {
 } from '@mantine/core'
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import A_list from './assets/A_list.png'
-import Tony_pfp from './assets/tony.jpg'
 import styles from './Tony.module.css'
 import { theme } from './theme'
 
@@ -54,37 +53,7 @@ export function TonyPage() {
                 {'Tony Wang'}
               </Text>
             </Title>
-            <div className={styles.flex}>
-              <Text className={styles.textSWE}>{'Software Engineer'}</Text>
-              <div className={styles.socialIcons}>
-                <ActionIcon
-                  color={'#C9CCC8'}
-                  component="a"
-                  href="https://github.com/wangtony4005"
-                  target="_blank"
-                  size="lg"
-                >
-                  <FaGithub size={24} />
-                </ActionIcon>
-                <ActionIcon
-                  color={'#C9CCC8'}
-                  component="a"
-                  href="mailto:wangtony4005@gmail.com"
-                  size="lg"
-                >
-                  <FaEnvelope size={24} />
-                </ActionIcon>
-                <ActionIcon
-                  component="a"
-                  color={'#C9CCC8'}
-                  href="https://linkedin.com/in/wangtony4005"
-                  target="_blank"
-                  size="lg"
-                >
-                  <FaLinkedin size={24} />
-                </ActionIcon>
-              </div>
-            </div>
+            <Text className={styles.textSWE}>{'Software Engineer'}</Text>
             <Container className={styles.menu}>
               <div className={styles.flexMenu}>
                 <div className={styles.navLine}></div>
@@ -99,7 +68,34 @@ export function TonyPage() {
                 <Text className={styles.menu1}>{' Projects'}</Text>
               </div>
             </Container>
-            <Image className={styles.pfp} src={Tony_pfp} alt="Profile" />
+            <div className={styles.socialIcons}>
+              <ActionIcon
+                color={'#C9CCC8'}
+                component="a"
+                href="https://github.com/wangtony4005"
+                target="_blank"
+                size="lg"
+              >
+                <FaGithub size={24} />
+              </ActionIcon>
+              <ActionIcon
+                color={'#C9CCC8'}
+                component="a"
+                href="mailto:wangtony4005@gmail.com"
+                size="lg"
+              >
+                <FaEnvelope size={24} />
+              </ActionIcon>
+              <ActionIcon
+                component="a"
+                color={'#C9CCC8'}
+                href="https://linkedin.com/in/wangtony4005"
+                target="_blank"
+                size="lg"
+              >
+                <FaLinkedin size={24} />
+              </ActionIcon>
+            </div>
           </Grid.Col>
           <Grid.Col span={6} className={styles.gridRight}>
             <Text className={styles.about}>
