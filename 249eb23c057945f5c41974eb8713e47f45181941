@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d911fb9_10bed811",
+        "filename": "js/src/patina/mentor/Mentor.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-29T21:59:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b15a9e7e_9ab68f94",
+      "range": {
+        "startLine": 12,
+        "startChar": 6,
+        "endLine": 12,
+        "endChar": 29
+      },
+      "revId": "249eb23c057945f5c41974eb8713e47f45181941",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "811d1b70_eb619d2e",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-07-29T21:54:28Z",
       "side": 1,
       "message": "wrap in rem()",
+      "range": {
+        "startLine": 2,
+        "startChar": 13,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "249eb23c057945f5c41974eb8713e47f45181941",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "379d5748_6e8565a3",
+        "filename": "js/src/patina/mentor/hero/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-29T21:59:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "811d1b70_eb619d2e",
       "range": {
         "startLine": 2,
         "startChar": 13,
@@ -70,6 +118,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e98efa47_4682ade8",
+        "filename": "js/src/patina/mentor/hero/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-29T21:59:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39a38ab1_f2c0906e",
+      "range": {
+        "startLine": 10,
+        "startChar": 13,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "249eb23c057945f5c41974eb8713e47f45181941",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "58158453_070913c5",
@@ -93,6 +165,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "df4cf891_fd2ac7ac",
+        "filename": "js/src/patina/mentor/hero/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-29T21:59:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "58158453_070913c5",
+      "range": {
+        "startLine": 14,
+        "startChar": 17,
+        "endLine": 14,
+        "endChar": 21
+      },
+      "revId": "249eb23c057945f5c41974eb8713e47f45181941",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7c01f7f_4e1198ad",
@@ -106,6 +202,30 @@
       "writtenOn": "2024-07-29T21:54:28Z",
       "side": 1,
       "message": "why use \"XYZ\" for previous lines and {\u0027\u0027} here?",
+      "range": {
+        "startLine": 27,
+        "startChar": 17,
+        "endLine": 27,
+        "endChar": 23
+      },
+      "revId": "249eb23c057945f5c41974eb8713e47f45181941",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dbb87d6_46709ce2",
+        "filename": "js/src/patina/mentor/hero/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-29T21:59:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d7c01f7f_4e1198ad",
       "range": {
         "startLine": 27,
         "startChar": 17,
