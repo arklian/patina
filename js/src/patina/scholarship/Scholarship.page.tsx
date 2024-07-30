@@ -1,4 +1,5 @@
-import { Text } from '@mantine/core'
+import { Button, Group, Image, SimpleGrid, Text, Title } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import { Criteria } from '@/patina/scholarship/criteria/Criteria.tsx'
 import { ApplicationProcess } from '@/patina/scholarship/applicationprocess/ApplicationProcess.tsx'
 import { AboutScholarship } from '@/patina/scholarship/about/AboutScholarship.tsx'
@@ -8,29 +9,39 @@ import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Scholarship.module.css'
 
 export function ScholarshipPage() {
+  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <div>
-      <div className={styles.hero}>
-        <div className={styles.hero_container}>
-          <Text className={styles.hero_title}>
-            {'Patina Network Scholarship Fund '}
-            <Text className={styles.hero_description}>
-              {'The Patina Network Scholarship Fund intends to manifest our '}
-              <span className={styles.colored}>{'vision'}</span>
-              {
-                ' by awarding scholarships annually to students who are of ethnicity, heritage, or ancestry in relations to the AANHPI communities and would benefit the most from the financial stipend.'
-              }
-            </Text>
+      <SimpleGrid
+        className={styles.hero_container}
+        cols={largeScreen ? 2 : 1}
+        spacing="xl"
+        mb={'7rem'}
+        mt={'4rem'}
+      >
+        <div>
+          <Title className={styles.title} ta={'left'}>
+            {'Patina Network Scholarship Fund'}
+          </Title>
+          <Text className={styles.description}>
+            {
+              'The Patina Network Scholarship Fund intends to manifest our vision by awarding scholarships annually to students who are of ethnicity, heritage, or ancestry in relations to the AANHPI communities and would benefit the most from the financial stipend.'
+            }
           </Text>
-          <div>
-            <img
-              className={styles.hero_image}
-              alt={'scholarship hero'}
-              src={imageUrls.scholarshipHero.src}
-            />
-          </div>
+          <Group justify={'left'} pt={'md'}>
+            <Button variant="filled" color="white" size={'md'} autoContrast>
+              {'Apply Now'}
+            </Button>
+          </Group>
         </div>
-      </div>
+        <Group justify={'center'} pt={'lg'}>
+          <Image
+            className={styles.scholarshipHero}
+            src={imageUrls.scholarshipHero.src}
+            alt="Scholarship Image"
+          />
+        </Group>
+      </SimpleGrid>
       <div className={styles.about}>
         <ApplicationProcess />
         <AboutScholarship />

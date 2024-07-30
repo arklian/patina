@@ -1,44 +1,36 @@
-.hero {
-  height: auto;
+.homeContainer {
+  max-width: rem(1200px);
 }
 
 .hero_container {
-  display: flex;
-  flex-direction: row;
-  margin-left: rem(100px);
-  margin-right: rem(100px);
+  margin: rem(135px);
+  padding: rem(16px);
+
+  @media (max-width: rem(996px)) {
+    margin: rem(16px);
+  }
 }
 
-.hero_title {
-  flex-direction: column;
-  font-size: 65px;
-  font-weight: bold;
+.title {
+  font-size: 64px;
   color: white;
-  line-height: 75px;
-  width: rem(700px);
 }
 
-.hero_description {
-  padding-top: 25px;
+.description {
+  text-align: left;
+  padding-top: rem(10px);
   font-size: 24px;
-  line-height: 30px;
-  font-weight: lighter;
-  width: rem(650px);
+  color: white;
 }
 
-.hero_image {
-  width: 40vw;
-  margin-left: rem(50px);
-}
+.scholarshipHero {
+  height: rem(500px);
+  width: rem(597px);
 
-.skeletonStyle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.homeContainer {
-  max-width: rem(1200px);
+  @media (max-width: rem(996px)) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .about {
@@ -48,11 +40,11 @@
   margin-left: rem(150px);
   margin-right: rem(150px);
   margin-bottom: rem(100px);
-}
 
-@media (max-width: rem(1200px)) {
-  .about {
-    flex-direction: column;
+  @media (max-width: rem(996px)) {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: rem(50px);
   }
 }
 
