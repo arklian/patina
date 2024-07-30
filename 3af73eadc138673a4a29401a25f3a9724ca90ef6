@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4dd4fc22_e8933527",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:59:16Z",
+      "side": 1,
+      "message": "ditto here - would be nice to use the cardprops type",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f23a6f5_ee2d0b1f",
+        "filename": "js/src/patina/mentorship/impact/Impact.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:59:16Z",
+      "side": 1,
+      "message": "nit: absolute import path",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5437869f_44de3ea8",
+        "filename": "js/src/patina/mentorship/impact/Impact.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:59:16Z",
+      "side": 1,
+      "message": "let\u0027s reuse the card props type here",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
