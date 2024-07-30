@@ -1,5 +1,5 @@
 .form {
-  padding: rem(32px) rem(96px);
+  padding: rem(64px) rem(96px);
   margin-top: rem(96px);
   background-color: var(--mantine-color-dark-6);
 }
