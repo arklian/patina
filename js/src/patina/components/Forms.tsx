@@ -1,20 +1,30 @@
 import { useMediaQuery } from '@mantine/hooks'
-import { Flex, Text, Title, Grid } from '@mantine/core'
+import { Flex, Text, Title, Grid, Button, TextInput } from '@mantine/core'
+import React from 'react'
 import styles from './Forms.module.css'
 
 const submission_values = {
   url: 'https://docs.google.com/forms/d/e/1FAIpQLSfpmW9aw6PuFESSN6ZW4SzX8sp9h6yHR08XfR06hzy3FUR29A/formResponse',
-  namelink: 'entry.510878894',
-  emaillink: 'entry.1931913170',
-  subjectlink: 'entry.420573566',
-  messagelink: 'entry.1609371387',
+  nameLink: 'entry.510878894',
+  emailLink: 'entry.1931913170',
+  subjectLink: 'entry.420573566',
+  messageLink: 'entry.1609371387',
 }
 
 export function Forms() {
   const largeScreen = useMediaQuery('(min-width: 60rem)')
 
+  const handleSubmit = (event: React.FormEvent<EventTarget>) => {
+    event.preventDefault()
+    alert('You have just sent a message')
+  }
   return (
-    <form action={submission_values.url} method="post" className={styles.form}>
+    <form
+      action={submission_values.url}
+      method="post"
+      onSubmit={handleSubmit}
+      className={styles.form}
+    >
       <Grid className={styles.gridLayout}>
         <Grid.Col span={largeScreen ? 5 : 12}>
           <Flex direction={'column'} rowGap="xl">
@@ -29,32 +39,24 @@ export function Forms() {
             <Flex direction={'row'} className={styles.nameemail}>
               <Flex direction={'column'} rowGap="xs">
                 <label>{'Name'}</label>
-                <input
-                  type="text"
-                  name={submission_values.namelink}
-                  size={12}
-                />
+                <TextInput type="text" name={submission_values.nameLink} />
               </Flex>
               <Flex direction={'column'} rowGap="xs">
                 <label>{'Email'}</label>
-                <input
-                  type="text"
-                  name={submission_values.emaillink}
-                  size={12}
-                />
+                <TextInput type="text" name={submission_values.emailLink} />
               </Flex>
             </Flex>
             <Flex direction={'column'} rowGap="xs">
               <label>{'Subject'}</label>
-              <input type="text" name={submission_values.subjectlink} />
+              <TextInput type="text" name={submission_values.subjectLink} />
             </Flex>
             <Flex direction={'column'} rowGap="xs">
               <label>{'Message'}</label>
-              <textarea name={submission_values.messagelink} rows={3} />
+              <textarea name={submission_values.messageLink} rows={3} />
             </Flex>
-            <button type="submit" className={styles.button}>
+            <Button type="submit" className={styles.button}>
               {'Send'}
-            </button>
+            </Button>
           </Flex>
         </Grid.Col>
       </Grid>

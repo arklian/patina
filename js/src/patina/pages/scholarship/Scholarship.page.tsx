@@ -1,5 +1,6 @@
 import { Button, Group, Image, SimpleGrid, Text, Title } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
+import { Forms } from '@/patina/components/Forms.tsx'
 import { Criteria } from '@/patina/pages/scholarship/criteria/Criteria.tsx'
 import { ApplicationProcess } from '@/patina/pages/scholarship/applicationprocess/ApplicationProcess.tsx'
 import { AboutScholarship } from '@/patina/pages/scholarship/about/AboutScholarship.tsx'
@@ -55,6 +56,9 @@ export function ScholarshipPage() {
       <Criteria />
       <div className={styles.application}>
         <Application />
+      </div>
+      <div className={styles.emailSection}>
+        <Forms />
       </div>
       <DonorSection />
     </ContentPage>
