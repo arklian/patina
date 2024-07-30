@@ -71,4 +71,8 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/placeholder.png',
     alt: 'placeholder image',
   },
+  mentorBwApply: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorBwApply.png',
+    alt: 'Black and white group picture of all interns.',
+  },
 }

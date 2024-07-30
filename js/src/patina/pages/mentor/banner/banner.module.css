@@ -1,0 +1,49 @@
+.bannerContainer {
+  padding-bottom: rem(120px);
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  height: rem(476px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  padding: rem(86px) rem(241px);
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem; /* Increase font size */
+  font-weight: 700;
+}
+
+.subtitleContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: rem(12px);
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Increase font size */
+  margin-top: rem(16px); /* Add some margin to the top */
+}
+
+.button {
+  padding-top: 80px;
+}
