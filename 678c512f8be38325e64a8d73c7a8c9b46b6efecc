@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee99e08b_324bcb16",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:37:17Z",
+      "side": 1,
+      "message": "Is this naming scheme with the version(?) in front the agreed format?",
+      "revId": "678c512f8be38325e64a8d73c7a8c9b46b6efecc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95142607_db38fc35",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:37:17Z",
+      "side": 1,
+      "message": "nit: should UserId also not be not null?",
+      "revId": "678c512f8be38325e64a8d73c7a8c9b46b6efecc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
