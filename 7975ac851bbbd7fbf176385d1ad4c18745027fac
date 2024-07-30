@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cfab36af_a68b8128",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T20:47:42Z",
+      "side": 1,
+      "message": "casing: `messageLink`",
+      "revId": "7975ac851bbbd7fbf176385d1ad4c18745027fac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2cf41b01_9c406e4b",
         "filename": "js/src/patina/components/Forms.tsx",
         "patchSetId": 1
@@ -31,6 +48,41 @@
       "writtenOn": "2024-07-30T20:40:43Z",
       "side": 1,
       "message": "Is there a text input component?",
+      "revId": "7975ac851bbbd7fbf176385d1ad4c18745027fac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36b1b62d_237c4680",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T20:47:42Z",
+      "side": 1,
+      "message": "TextInput + use-field is even better since we can add email validation",
+      "parentUuid": "2cf41b01_9c406e4b",
+      "revId": "7975ac851bbbd7fbf176385d1ad4c18745027fac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "acbc4e57_fa3ac29d",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T20:47:42Z",
+      "side": 1,
+      "message": "might be worth using use-form to do some validation / restrictions on the message size, email format, etc.",
       "revId": "7975ac851bbbd7fbf176385d1ad4c18745027fac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
