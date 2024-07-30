@@ -1,5 +1,5 @@
-import styles from '@/patina/home/GetInvolved.module.css'
-import { StaticCards } from '@/patina/home/StaticCards.tsx'
+import styles from '@/patina/home/involved/GetInvolved.module.css'
+import { StaticCards } from '@/patina/home/involved/StaticCards.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 
 export function GetInvolved() {
@@ -8,7 +8,6 @@ export function GetInvolved() {
       <div className={styles.sectionHeader}>
         <h2 className={styles.header}>{'Want to get involved?'}</h2>
       </div>
-
       <div className={styles.cardsContainer}>
         <StaticCards
           title={'For Students'}
