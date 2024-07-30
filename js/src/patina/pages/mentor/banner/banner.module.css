@@ -1,0 +1,72 @@
+.bannerContainer {
+  padding-bottom: 128px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+  filter: grayscale(100%);
+}
+
+.backgroundImage {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 467px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.textContainer {
+  color: var(--mantine-color-white);
+  max-width: 800px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+}
+
+.buttonContainer {
+  margin-top: -60px;
+  z-index: 1;
+}
+
+.applyButton {
+  background-color: #47ffff;
+  color: var(--mantine-color-white);
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.applyButton:hover {
+  background-color: #39cccc;
+}
