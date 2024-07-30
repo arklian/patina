@@ -5,6 +5,13 @@ import { useQuery } from '@tanstack/react-query'
 import { EventCard } from './EventCard.tsx'
 import styles from '@/patina/community/events/MainSection.module.css'
 
+type Event = {
+  name: string
+  message: string
+  location: string
+  date: string
+}
+
 /**
  * Convert inputted date as a string in local EST timezone ISO format to a Date object
  * representing that inputted day at midnight 00:00:00 in EST.
@@ -29,17 +36,16 @@ export function MainSection() {
     },
   })
 
-  //eslint-disable-next-line
-  console.log(query.data)
-
-  const allEventDates = eventsData.map((event) =>
-    convertToDateObject(event.inputtedDate),
+  const allEventDates = query.data?.events.map((event: Event) =>
+    convertToDateObject(event.date),
   )
+
   const handleDate = (givenDate: Date) => {
     const givenDay = givenDate.getDate()
     if (
-      allEventDates.some(
-        (eventDate) => eventDate.toISOString() === givenDate.toISOString(),
+      allEventDates?.some(
+        (eventDate: Date) =>
+          eventDate.toISOString() === givenDate.toISOString(),
       )
     ) {
       return <div className={styles.calendarCellHighlight}>{givenDay}</div>
@@ -66,35 +72,16 @@ export function MainSection() {
         />
       </Grid.Col>
       <Grid.Col span={8}>
-        {eventsData.map((event) => (
+        {query.data?.events.map((event: Event, index: number) => (
           <EventCard
-            key={event.id}
+            key={index}
             name={event.name}
             location={event.location}
-            details={event.details}
-            actualDate={convertToDateObject(event.inputtedDate)}
+            details={event.message}
+            actualDate={convertToDateObject(event.date)}
           />
         ))}
       </Grid.Col>
     </Grid>
   )
 }
-
-const eventsData = [
-  {
-    id: 1,
-    name: 'Event Name',
-    location: 'Location',
-    details:
-      'Lorem ipsoiosafjsaofjsaofijsfojaiofmefoijs jlzkf jlkafj oiejf oj afd ldflk pr',
-    inputtedDate: '2024-07-08',
-  },
-  {
-    id: 2,
-    name: 'Event Name',
-    location: 'Location',
-    details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-    inputtedDate: '2024-07-15',
-  },
-]
