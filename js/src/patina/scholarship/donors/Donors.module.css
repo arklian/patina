@@ -3,14 +3,23 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: rem(50px);
-  margin-bottom: rem(125px);
+  padding: rem(125px);
+  margin-bottom: rem(50px);
+
+  @media (max-width: rem(996px)) {
+    flex-direction: column;
+  }
 }
 
 .donor_images {
   background-color: red;
   height: rem(150px);
   width: 35%;
+
+  @media (max-width: rem(996px)) {
+    margin-top: 50px;
+    width: 90%;
+  }
 }
 
 .donor_title {
@@ -19,12 +28,20 @@
   font-size: rem(25px);
   padding-left: rem(40px);
   width: 35%;
+
+  @media (max-width: rem(996px)) {
+    width: 100%;
+  }
 }
 
 .donor_text {
   font-weight: normal;
   font-size: rem(20px);
   padding-top: rem(50px);
+
+  @media (max-width: rem(996px)) {
+    width: 100%;
+  }
 }
 
 .slide {
