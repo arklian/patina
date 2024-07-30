@@ -1,6 +1,7 @@
 import { Title, Text, Image, Button } from '@mantine/core'
 import { imageUrls } from '../assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
+import { Forms } from '@/patina/components/Forms.tsx'
 import styles from './Volunteer.module.css'
 
 export function VolunteerPage() {
@@ -45,7 +46,7 @@ export function VolunteerPage() {
         />
       </section>
       <section className={styles.emailSection}>
-        <div className={styles.backgroundBlur}> </div>
+        <div className={styles.backgroundBlur}></div>
         <div className={styles.content}>
           <Text size="md" className={styles.emailText}>
             {
@@ -62,6 +63,7 @@ export function VolunteerPage() {
           <Button size="sm" className={styles.emailButton}>
             {'Sign Up'}
           </Button>
+          <Forms />
         </div>
       </section>
     </div>
