@@ -16,6 +16,24 @@
       "message": "should be passing form\u0027s props in instead of setting `value` and `onChange` props ourselves.\n\nEG `\u003cPasswordInput ... key\u003d{forms.key(\u0027password\u0027)} {...forms.getInputProps()} /\u003e` see https://mantine.dev/form/use-form/#usage",
       "revId": "2713190dd73e0b53c71f892a9c1bd090e6a1d30e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7eddd12f_87ba2577",
+        "filename": "js/src/patina/login/Login.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-07-30T19:33:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d2376c14_94b96b6a",
+      "revId": "2713190dd73e0b53c71f892a9c1bd090e6a1d30e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
