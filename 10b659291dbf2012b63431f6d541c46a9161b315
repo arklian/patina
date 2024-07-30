@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b4e21d3_2b8d2e67",
+        "filename": "js/src/patina/home/Home.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T19:59:43Z",
+      "side": 1,
+      "message": "nits:\n1) helps to describe the context and maybe provide a screenshot. Changing it by 50px seems really arbitrary at a code level.\n2) would prefer using rem or other relative sizes at some point",
+      "revId": "10b659291dbf2012b63431f6d541c46a9161b315",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
