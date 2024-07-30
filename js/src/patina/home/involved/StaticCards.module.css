@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   padding: rem(32px) rem(16px);
   flex-direction: column;
@@ -55,4 +56,24 @@
   border: 1px solid var(--mantine-color-white, #fff);
   background: var(--mantine-color-patina-dark-4);
   color: var(--mantine-color-white, #fff);
+}
+
+.flashlight {
+  position: absolute;
+  width: rem(300px);
+  height: rem(300px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: none;
+}
+
+.card:hover .flashlight {
+  display: block;
 }
