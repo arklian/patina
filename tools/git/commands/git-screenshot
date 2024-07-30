@@ -68,7 +68,7 @@ trimmed_string=$(echo $GIT_USERNAME | tr -d ' ')
 DO_FILE_NAME="Screenshot-${DO_DATE}-${trimmed_string}-${FILE_NAME}"
 
 # Create the string to sign
-STRING_TO_SIGN="PUT\n\n\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${DO_FILE_NAME}"
+STRING_TO_SIGN="PUT\n\nimage/png\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${DO_FILE_NAME}"
 
 # Create the signature
 SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
@@ -76,6 +76,7 @@ SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_S
 
 # Upload the image using curl
 curl -X PUT -T "$IMAGE_PATH" \
+    -H "Content-Type: image/png" \
     -H "Date: ${DATE}" \
     -H "x-amz-acl: public-read" \
     -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
