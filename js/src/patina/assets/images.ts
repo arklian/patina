@@ -42,4 +42,13 @@ export const imageUrls = {
   heart: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/heart.png',
   },
+  mentorshipField: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipField.png',
+  },
+  mentorshipInterview: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipInterview.png',
+  },
+  mentorshipNetworking: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipNetworking.png',
+  },
 }

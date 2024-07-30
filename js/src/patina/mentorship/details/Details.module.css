@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   margin: rem(48px);
-  padding-left: rem(20px);
-  padding-right: rem(20px);
-  background: var(--mantine-color-dark-6);
+  padding: rem(78px) rem(40px);
+  background: var(--mantine-color-patina-dark-6);
 }
 
 .title {

@@ -1,24 +1,24 @@
 import { Card, Image, Text } from '@mantine/core'
 import styles from './MentorshipCards.module.css'
 
+type CardsProps = {
+  title: string
+  details: string
+  img: string
+  alt: string
+}
+
 // Card component for Mentorship
-export function MentorshipCards() {
+export function MentorshipCards({ title, details, img, alt }: CardsProps) {
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
-      <Text className={styles.title}>{'Norway Fjord Adventures'}</Text>
-      <Card.Section>
-        <Image
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-          height={160}
-          alt="Norway"
-        />
+    <Card radius="md" withBorder className={styles.card}>
+      <Text className={styles.title}>{title}</Text>
+      <Card.Section className={styles.image}>
+        <Image src={img} height={160} alt={alt} />
       </Card.Section>
-      <Text size="sm" ta={'center'}>
-        {
-          'With Fjord Tours you can explore more of the magical fjord landscapes'
-        }
-        {'with tours and activities on and around the fjords of Norway'}
-      </Text>
+      <Card.Section className={styles.description}>
+        <Text ta={'center'}>{details}</Text>
+      </Card.Section>
     </Card>
   )
 }

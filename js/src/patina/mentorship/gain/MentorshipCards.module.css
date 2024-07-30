@@ -1,5 +1,22 @@
 .title {
   font-weight: 900;
   text-align: center;
-  margin-bottom: 1rem;
+  color: white;
+}
+
+.image {
+  margin: rem(17px) rem(20px);
+}
+
+.card {
+  background: var(--mantine-color-patina-dark-6);
+}
+
+.description {
+  font-size: rem(16px);
+  line-height: rem(24.8px);
+  margin-bottom: rem(20px);
+  margin-left: rem(20px);
+  margin-right: rem(20px);
+  color: white;
 }
