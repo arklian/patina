@@ -14,7 +14,7 @@ export function HomePage() {
           bgp={'right'}
           bgsz={'700px'}
           bgr={'no-repeat'}
-          miw={'550px'}
+          miw={'500px'}
           src={imageUrls.homeHero.src}
         >
           <div className={styles.hero}>
