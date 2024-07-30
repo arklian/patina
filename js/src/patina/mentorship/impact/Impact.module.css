@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  column-gap: rem(72px);
+
+  @media (max-width: rem(996px)) {
+    padding: 0px;
+    border: 0px;
+    background: none;
+    width: 350px;
+  }
+}
+
+.impact_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(128px);
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  line-height: rem(83px);
+  font-size: rem(64px);
+  padding-bottom: rem(128px);
+
+  @media (max-width: rem(996px)) {
+    text-align: center;
+    font-size: rem(40px);
+    padding: rem(0px);
+  }
+}
