@@ -37,13 +37,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 3,
-      "title": "misc",
-      "link": "#misc",
-      "description": "Random stuff blah blah",
-      "subsections": []
     }
   ],
   "resume":[
@@ -87,7 +80,7 @@
           "id": 1,
           "title": "VZCode",
           "subtitle": "RCOS",
-          "date": "Sep 2023 - Dec 2023",
+          "date": "Sep - Dec 2023",
           "info": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -110,33 +103,6 @@
           ]
         }
       ]
-    }
-  ],
-  "navbar": [
-    {
-      "id": 1,
-      "section": "about",
-      "link": "amanda#about",
-      "subsection":
-        {
-          "id": 1,
-          "section": "resume",
-          "link": "amanda/resume",
-          "subsection": {}
-        }
-
-    },
-    {
-      "id": 2,
-      "section": "projects",
-      "link": "amanda#projects",
-      "subsection": []
-    },
-    {
-      "id": 3,
-      "section": "misc",
-      "link": "amanda#misc",
-      "subsection": []
     }
   ]
 }

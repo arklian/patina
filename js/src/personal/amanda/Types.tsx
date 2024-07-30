@@ -30,8 +30,6 @@ export type ResumeSection = {
 }
 
 export type NavbarSection = {
-  id: number
   section: string
   link: string
-  subsection: NavbarSection
 }

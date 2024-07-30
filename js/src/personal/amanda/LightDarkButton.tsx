@@ -5,7 +5,7 @@ export function LightDarkButton() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
 
   return (
-    <Group justify="center">
+    <Group justify="center" ml="1rem">
       <ActionIcon
         onClick={() => toggleColorScheme()}
         variant="light"
