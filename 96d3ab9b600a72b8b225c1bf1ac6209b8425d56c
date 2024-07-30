@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fe90941_97760708",
+        "filename": "js/src/personal/riyuan/components/project/ProjectData.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:49:00Z",
+      "side": 1,
+      "message": ".ts file type instead of .tsx since there\u0027s no JSX in this file",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "199218e8_b7f8118c",
+        "filename": "js/src/personal/riyuan/components/project/Projects.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:49:00Z",
+      "side": 1,
+      "message": "nit: remove unnecessary comments",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76c1796f_d68fb601",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:49:00Z",
+      "side": 1,
+      "message": "nit: dont\u0027 know if you want to follow thesame naming scheme of naming this ProjectItem instead?",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c83fa00_75e58386",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:49:00Z",
+      "side": 1,
+      "message": "nit: use consistent format `ta\u003d{\u0027center\u0027}` vs `ta\u003d\u0027center\u0027` like you do for size and other props.",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "772cc0a9_a7b11818",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T17:49:00Z",
+      "side": 1,
+      "message": "nit: `isLargeScreen`",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
