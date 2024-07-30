@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "038f529a_3c37da37",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-30T20:01:30Z",
+      "side": 1,
+      "message": "what do you mean by cardprops type?",
+      "parentUuid": "4dd4fc22_e8933527",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4f23a6f5_ee2d0b1f",
         "filename": "js/src/patina/mentorship/impact/Impact.tsx",
         "patchSetId": 3
