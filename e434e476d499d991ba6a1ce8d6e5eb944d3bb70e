@@ -16,6 +16,24 @@
       "message": "path",
       "revId": "e434e476d499d991ba6a1ce8d6e5eb944d3bb70e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ab25e94_76364d50",
+        "filename": "js/src/patina/home/initiatives/Initiatives.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-30T20:46:19Z",
+      "side": 1,
+      "message": "fixed in Mentorship: finishes impact section i believe",
+      "parentUuid": "71e9b458_009af413",
+      "revId": "e434e476d499d991ba6a1ce8d6e5eb944d3bb70e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
