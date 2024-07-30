@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85091fdb_eed318c4",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T18:49:07Z",
+      "side": 1,
+      "message": "read database.md and protobufs.md",
+      "revId": "30b0d1f7d1fccceefabe36fd919598d3c4eda1da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b291b0e_3233d2c8",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T18:49:07Z",
+      "side": 1,
+      "message": "use SERIAL for this",
+      "range": {
+        "startLine": 3,
+        "startChar": 11,
+        "endLine": 3,
+        "endChar": 29
+      },
+      "revId": "30b0d1f7d1fccceefabe36fd919598d3c4eda1da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ba0fdd6_5ffceeee",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T18:49:07Z",
+      "side": 1,
+      "message": "column names are all lowercase snake_case",
+      "revId": "30b0d1f7d1fccceefabe36fd919598d3c4eda1da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c348bf0_c389b95a",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T18:49:07Z",
+      "side": 1,
+      "message": "user should just be a string",
+      "revId": "30b0d1f7d1fccceefabe36fd919598d3c4eda1da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28f3c1c0_c957fc39",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T18:49:07Z",
+      "side": 1,
+      "message": "use create_time from the google proto standard names",
+      "revId": "30b0d1f7d1fccceefabe36fd919598d3c4eda1da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
