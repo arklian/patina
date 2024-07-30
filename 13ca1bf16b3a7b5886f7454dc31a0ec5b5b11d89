@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "27155106_6a582a09",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-30T20:55:51Z",
+      "side": 1,
+      "message": "this got updated with the correct prod link",
+      "parentUuid": "9186d4d3_c6a45d55",
+      "revId": "13ca1bf16b3a7b5886f7454dc31a0ec5b5b11d89",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "51979ba2_97b194b1",
         "filename": "js/src/patina/scholarship/donors/Donors.module.css",
         "patchSetId": 2
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-30T20:02:00Z",
       "side": 1,
       "message": "nit: think `996px` value is worth having as some global variable if possible",
+      "revId": "13ca1bf16b3a7b5886f7454dc31a0ec5b5b11d89",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ddd8dcf_c915dc24",
+        "filename": "js/src/patina/scholarship/donors/Donors.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-07-30T20:55:51Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "51979ba2_97b194b1",
       "revId": "13ca1bf16b3a7b5886f7454dc31a0ec5b5b11d89",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
