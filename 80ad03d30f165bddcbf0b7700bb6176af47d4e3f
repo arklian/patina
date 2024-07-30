@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "284086b7_393a8b30",
+        "filename": "js/src/personal/amanda/Amanda.routes.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:37:24Z",
+      "side": 1,
+      "message": "just curious what differences does this trialing / make? I see some other personal pages not have it",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "37d13cc5_d2543b01",
         "filename": "js/src/personal/amanda/Sidebar.tsx",
         "patchSetId": 1
