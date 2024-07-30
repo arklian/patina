@@ -51,4 +51,7 @@ export const imageUrls = {
   mentorshipNetworking: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipNetworking.png',
   },
+  placeholder: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/placeholder.png',
+  },
 }
