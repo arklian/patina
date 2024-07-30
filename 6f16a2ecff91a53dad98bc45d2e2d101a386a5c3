@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5d7c909_dbfdfb0c",
+        "filename": "js/src/patina/scholarship/Scholarship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T19:58:09Z",
+      "side": 1,
+      "message": "1) nit: I prefer `is*` so `isLargeScreen`\n2) we use this in a lot of components so its worth having it defined somewhere for reuse across the project. Helps with consistency too so no page uses a different size as \"large screen\". Doesn\u0027t have to be this CR though",
+      "revId": "6f16a2ecff91a53dad98bc45d2e2d101a386a5c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
