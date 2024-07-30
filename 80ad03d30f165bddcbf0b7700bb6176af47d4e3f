@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37d13cc5_d2543b01",
+        "filename": "js/src/personal/amanda/Sidebar.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:36:35Z",
+      "side": 1,
+      "message": "I think we need to reset this when location changes? \n\nEG if i click on \"resume\" on the main nav, it sets `active` to 2, updates the location, and finally we change the navbar to the resume section items, but IIUC `active` is still 2.",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49e71014_228d2e01",
+        "filename": "js/src/personal/amanda/Sidebar.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T18:36:35Z",
+      "side": 1,
+      "message": "nit: this state isn\u0027t really needed since it\u0027s always trivially derivable from the location and would cause a double rerender right now when location changes.",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
