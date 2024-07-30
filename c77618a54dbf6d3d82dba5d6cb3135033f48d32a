@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcaa342e_ced99919",
+        "filename": "js/src/patina/mentor/banner/Banner.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-30T21:07:58Z",
+      "side": 1,
+      "message": "hmm, wonder if background image is better",
+      "revId": "c77618a54dbf6d3d82dba5d6cb3135033f48d32a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
