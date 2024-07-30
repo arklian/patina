@@ -12,7 +12,6 @@ export function MentorPage() {
       <Stack>
         <Hero />
         <About />
-        {/* 75rem == 1200px */}
         <Impact />
       </Stack>
     </Container>
