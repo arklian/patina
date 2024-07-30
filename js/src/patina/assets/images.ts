@@ -13,7 +13,7 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/scholarshipHome.png',
   },
   scholarshipHero: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/scholarshipHero.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/scholarshipHero.png',
   },
   mentorApplyHero: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorApplyHero.png',
