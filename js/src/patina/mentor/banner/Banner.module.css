@@ -1,0 +1,78 @@
+.bannerContainer {
+  padding-bottom: 128px;
+}
+
+.banner {
+  position: relative;
+  width: auto;
+  height: rem(467px);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.grayOverlay {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black for gray effect */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textContainer {
+  color: var(--mantine-color-white);
+  max-width: rem(800px);
+}
+
+.top {
+  font-size: rem(48px);
+  font-weight: 700;
+  margin-bottom: rem(40px);
+}
+
+.bottom {
+  font-size: rem(22px);
+  font-weight: 700;
+  margin-bottom: rem(100px);
+}
+
+.applyButton {
+  background-color: var(--mantine-color-patina-blue-light);
+  cursor: pointer;
+}
+
+.buttonText {
+  color: var(--mantine-color-black);
+  font-size: rem(20px);
+  font-weight: 600;
+}
+
+.applyButton:hover {
+  background-color: var(--mantine-color-patina-green-light);
+}
