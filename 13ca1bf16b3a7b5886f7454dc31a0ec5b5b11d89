@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9186d4d3_c6a45d55",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T20:02:00Z",
+      "side": 1,
+      "message": "is this photo just not ready on prod yet? This means we would need another CR later to update this path right? \n\nCould be a separate CR, but worth considering default or fallback images maybe? Like try to get image from prod url and fallback to dev url",
+      "revId": "13ca1bf16b3a7b5886f7454dc31a0ec5b5b11d89",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51979ba2_97b194b1",
+        "filename": "js/src/patina/scholarship/donors/Donors.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-07-30T20:02:00Z",
+      "side": 1,
+      "message": "nit: think `996px` value is worth having as some global variable if possible",
+      "revId": "13ca1bf16b3a7b5886f7454dc31a0ec5b5b11d89",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
