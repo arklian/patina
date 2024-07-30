@@ -36,6 +36,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "96a688a5_3a8c8153",
+        "filename": "js/src/patina/home/Initiatives.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-30T20:43:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "038f529a_3c37da37",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f23a6f5_ee2d0b1f",
@@ -53,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "45956ee1_b6c95c1b",
+        "filename": "js/src/patina/mentorship/impact/Impact.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-30T20:43:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f23a6f5_ee2d0b1f",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5437869f_44de3ea8",
@@ -66,6 +102,24 @@
       "writtenOn": "2024-07-30T18:59:16Z",
       "side": 1,
       "message": "let\u0027s reuse the card props type here",
+      "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a1a5c2b_76a5266f",
+        "filename": "js/src/patina/mentorship/impact/Impact.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-07-30T20:43:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5437869f_44de3ea8",
       "revId": "3af73eadc138673a4a29401a25f3a9724ca90ef6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
