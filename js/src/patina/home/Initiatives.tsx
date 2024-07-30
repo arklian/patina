@@ -11,6 +11,8 @@ const detailsMap = [
     img: imageUrls.mentorshipHome.src,
     link: '/mentorship',
     alt: 'Group picture of all interns.',
+    bottom: 'Learn more\u2192',
+    underline: true,
   },
   {
     title: 'Scholarship',
@@ -18,6 +20,8 @@ const detailsMap = [
     img: imageUrls.scholarshipHome.src,
     link: '/scholarship',
     alt: 'Woman posing in graduation gown and holding a degree.',
+    bottom: 'Learn more\u2192',
+    underline: true,
   },
   {
     title: 'Community',
@@ -26,6 +30,8 @@ const detailsMap = [
     img: imageUrls.communityHome.src,
     link: '/community',
     alt: 'Group of women sitting on chairs. They are talking to each other.',
+    bottom: 'Learn more\u2192',
+    underline: true,
   },
 ]
 
@@ -36,16 +42,20 @@ export function Initiatives() {
       <div className={styles.initiatives_container}>
         <div className={styles.container}>
           <Text className={styles.title}>{'Our initiatives'}</Text>
-          {detailsMap.map(({ title, details, img, link, alt }, index) => (
-            <Cards
-              key={index}
-              title={title}
-              details={details}
-              img={img}
-              link={link}
-              alt={alt}
-            />
-          ))}
+          {detailsMap.map(
+            ({ title, details, img, link, bottom, alt, underline }, index) => (
+              <Cards
+                key={index}
+                title={title}
+                details={details}
+                img={img}
+                link={link}
+                alt={alt}
+                bottom={bottom}
+                underline={underline}
+              />
+            ),
+          )}
         </div>
       </div>
     </>
