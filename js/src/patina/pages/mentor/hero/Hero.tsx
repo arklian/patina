@@ -1,7 +1,7 @@
 import { SimpleGrid, Title, Text, Group, Button, Image } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import { imageUrls } from '@/patina/assets/images.ts'
-import styles from '@/patina/mentor/hero/Hero.module.css'
+import styles from './Hero.module.css'
 
 /**
  * Hero component for the Patina Network Mentorship program.

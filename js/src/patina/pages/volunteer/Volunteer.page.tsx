@@ -1,5 +1,5 @@
 import { Title, Text, Image, Button } from '@mantine/core'
-import { imageUrls } from '../assets/images.ts'
+import { imageUrls } from '@/patina/assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
 

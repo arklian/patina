@@ -1,6 +1,6 @@
 import { SimpleGrid, Title } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
-import { MentorshipCards } from '@/patina/mentorship/gain/MentorshipCards.tsx'
+import { MentorshipCards } from './MentorshipCards.tsx'
 import styles from './Gain.module.css'
 import { imageUrls } from '@/patina/assets/images'
 

@@ -1,6 +1,6 @@
 import { Button, Card, Image, Center } from '@mantine/core'
 import { useRef } from 'react'
-import styles from '@/patina/home/involved/StaticCards.module.css'
+import styles from './StaticCards.module.css'
 
 type StaticCardsProps = {
   title: string
