@@ -194,6 +194,10 @@ Used to snap windows to half the screen or other places. MacOS 15 has this built
 - Open new project at ~/patina
 - Settings
   - Editor
+    - General
+      - Auto Import
+        - Typescript
+          - Unambiguous imports on the fly
     - Code Style
       - Hard Wrap at 120
       - Visual Guides at 100, 120
