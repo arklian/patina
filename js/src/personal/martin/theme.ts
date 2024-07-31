@@ -21,6 +21,18 @@ export const themeOverride = createTheme({
       '#335798',
       '#264b87',
     ],
+    neutral: [
+      '#f3f3fe',
+      '#e3e7ed',
+      '#c9ccd2',
+      '#abafd8',
+      '#9297a1',
+      '#828894',
+      '#79808f',
+      '#676e7c',
+      '#5a6270',
+      '#4a5466',
+    ],
   },
 
   primaryColor: 'cobalt',

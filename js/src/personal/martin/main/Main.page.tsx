@@ -3,57 +3,24 @@ import {
   Center,
   Container,
   Divider,
-  Flex,
   Grid,
-  Image,
   Title,
   Text,
 } from '@mantine/core'
 import { Link } from 'react-router-dom'
 import { theme } from '@/personal/martin/theme.ts'
+import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
 export function MartinMain() {
   return (
     <>
-      <Flex align="center" justify="center">
-        <Grid grow justify="center" align="center">
-          <Grid.Col span={4}>
-            <Container>
-              <Title order={1} mx={'1em'}>
-                {"Hello! I'm Martin"}
-              </Title>
-              <Text mx={'3em'}>
-                {
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula'
-                }
-                {
-                  'eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient'
-                }
-                {
-                  'montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,'
-                }
-                {
-                  'pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,'
-                }
-                {
-                  'aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis'
-                }
-                {'vitae, justo. '}
-              </Text>
-            </Container>
-          </Grid.Col>
-          <Grid.Col span={4}>
-            <Image
-              w="35%"
-              h="35%"
-              src={MartinFront}
-              alt="Martin Front Shot"
-              style={{ padding: '15px' }}
-            />
-          </Grid.Col>
-        </Grid>
-      </Flex>
+      <Jumbotron
+        title="Hello! I'm Martin"
+        text="Welcome to my page. I am an SWE intern at Patina Network."
+        imgSrc={MartinFront}
+        imgSize="35%"
+      />
       <Grid grow bg={theme.colors.cobalt[7]}>
         <Grid.Col span={12}>
           <Center>
@@ -73,7 +40,7 @@ export function MartinMain() {
                 'with a BA of Science - Computer Science & Software Engineering. I enjoy creating software and working on'
               }
               {
-                'various projects to expand my knowledge and skillset. Over the last few years, I worked on projects'
+                'various projects to expand my knowledge and skill set. Over the last few years, I worked on projects'
               }
               {'involving graphics, game engines, and web applications.'}
             </Text>
@@ -87,12 +54,12 @@ export function MartinMain() {
             <Title order={2}>{'What do I do?'}</Title>
             <Text>
               {
-                'I program in many various languages such as Python, C++, C#, Java, JavaSpript, and more. Some of my'
+                'I program in many various languages such as Python, C++, C#, Java, JavaScript, and more. Some of my'
               }
               {
                 'previous projects include a JavaScript web based game engine, a modified version that includes a physics'
               }
-              {'engine module, a Voxel based game engine, and more.'}
+              {' engine module, a Voxel based game engine, and more.'}
             </Text>
             <Link to="/personal/martin/project">
               <Button>{'Projects'}</Button>
