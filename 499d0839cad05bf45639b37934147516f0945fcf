@@ -70,5 +70,38 @@
       "revId": "499d0839cad05bf45639b37934147516f0945fcf",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
+  ],
+  "submitRequirementResults": [
+    {
+      "submitRequirement": {
+        "name": "Code-Review",
+        "description": {
+          "value": "At least one +2 vote for label \u0027Code-Review\u0027 is required"
+        },
+        "applicabilityExpression": {},
+        "submittabilityExpression": {
+          "expressionString": "label:Code-Review\u003d+2,user\u003dnon_uploader AND -label:Code-Review\u003dMIN"
+        },
+        "overrideExpression": {
+          "value": {
+            "expressionString": "label:Code-Review\u003d+2,user\u003darklian"
+          }
+        },
+        "allowOverrideInChildProjects": true
+      },
+      "applicabilityExpressionResult": {},
+      "submittabilityExpressionResult": {
+        "value": {"expression":{"expressionString":"label:Code-Review=+2,user=non_uploader AND -label:Code-Review=MIN"},"status":"PASS","errorMessage":{"value":null},"passingAtoms":["label:Code-Review=+2,user=non_uploader"],"failingAtoms":["label:Code-Review=MIN"]}
+      },
+      "overrideExpressionResult": {
+        "value": {"expression":{"expressionString":"label:Code-Review=+2,user=arklian"},"status":"PASS","errorMessage":{"value":null},"passingAtoms":["label:Code-Review=+2,user=arklian"],"failingAtoms":[]}
+      },
+      "patchSetCommitId": "499d0839cad05bf45639b37934147516f0945fcf",
+      "legacy": {
+        "value": false
+      },
+      "forced": {},
+      "hidden": {}
+    }
   ]
 }
