@@ -1,11 +1,4 @@
-.homeContainer {
-  max-width: rem(1200px);
-}
-
 .hero_container {
-  margin: rem(135px);
-  padding: rem(16px);
-
   @media (max-width: rem(996px)) {
     margin: rem(16px);
   }
@@ -37,8 +30,6 @@
   padding-top: rem(128px);
   display: flex;
   gap: rem(126px);
-  margin-left: rem(150px);
-  margin-right: rem(150px);
   margin-bottom: rem(100px);
 
   @media (max-width: rem(996px)) {
