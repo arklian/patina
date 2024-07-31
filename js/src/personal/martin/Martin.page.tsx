@@ -1,8 +1,10 @@
 import { AppShell, Button, MantineProvider, Stack } from '@mantine/core'
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 import { Link, Outlet } from 'react-router-dom'
 import { useDisclosure } from '@mantine/hooks'
 import { HeaderNav } from './components/HeaderNav.tsx'
 import { theme } from './theme.ts'
+import classes from '@/personal/martin/Martin.module.css'
 
 export function MartinPage() {
   const [openedNav, { toggle: toggleNav }] = useDisclosure(false)
@@ -33,6 +35,17 @@ export function MartinPage() {
               <Button fullWidth>{'Contact'}</Button>
             </Link>
           </Stack>
+          <div className={classes.navFooter}>
+            <Button component="a" href="https://github.com/m-squared47">
+              <IconBrandGithub />
+            </Button>
+            <Button
+              component="a"
+              href="https://www.linkedin.com/in/martin-matsudaira/"
+            >
+              <IconBrandLinkedin />
+            </Button>
+          </div>
         </AppShell.Navbar>
         <AppShell.Main>
           <Outlet />

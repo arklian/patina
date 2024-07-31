@@ -1,6 +1,7 @@
 import { Accordion, Container, Group, Text } from '@mantine/core'
 import { SoundCloudPlayer } from '@/personal/martin/components/SoundCloudPlayer.tsx'
 import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
+import classes from '@/personal/martin/Martin.module.css'
 import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
 const accordionList = [
@@ -8,7 +9,10 @@ const accordionList = [
     id: 'life',
     label: 'Life Stuff',
     desc: 'My background',
-    content: '[Insert content here]',
+    content:
+      'I am a Filipino/Japanese American born in Fresno, CA. I lived 8 years in Pewaukee, WI, then moved to Seattle,' +
+      ' WA in late 2016. I began my interest in computers and programming in middle school when I joined a LEGO/VEX' +
+      ' robotics team where I became the head programmer in my third year of joining.',
   },
   {
     id: 'edu',
@@ -25,7 +29,11 @@ const accordionList = [
     id: 'exp',
     label: 'Experience',
     desc: 'My work background',
-    content: '[Insert content here]',
+    content:
+      'I have worked as a Team Manager at Grocery Outlet for three years where I learned multiple skills such' +
+      ' as communication, customer service, leadership, and team coordination. I am currently an SWE intern at ' +
+      'Patina Network learning professional project and full-stack development while also expanding my network,' +
+      ' and preparing myself for job searching and technical interviews.',
   },
   {
     id: 'hobby',
@@ -59,10 +67,10 @@ function AccordionLabel({ label, desc }: LabelProps) {
 export function MartinAbout() {
   const items = accordionList.map((item) => (
     <Accordion.Item value={item.id} key={item.label}>
-      <Accordion.Control>
+      <Accordion.Control className={classes.accordionLabel}>
         <AccordionLabel {...item} />
       </Accordion.Control>
-      <Accordion.Panel>
+      <Accordion.Panel className={classes.accordionContent}>
         <Text size="sm">{item.content}</Text>
       </Accordion.Panel>
     </Accordion.Item>
@@ -77,11 +85,15 @@ export function MartinAbout() {
         imgSize={'35%'}
       />
       <Container>
-        <Accordion chevronPosition="right" variant="contained">
+        <Accordion
+          chevronPosition="right"
+          variant="contained"
+          transitionDuration={500}
+        >
           {items}
         </Accordion>
       </Container>
-      <Container>
+      <Container className={classes.scPlayerWrapper}>
         <SoundCloudPlayer
           src={
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1852463463&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'

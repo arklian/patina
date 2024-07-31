@@ -11,7 +11,13 @@ interface ProjectShowcaseData {
 
 export function ProjectShowcase({ data }: ProjectShowcaseData) {
   const projects = data.map((project) => (
-    <Card key={project.title} shadow="md" radius="md" padding="xl">
+    <Card
+      key={project.title}
+      shadow="md"
+      radius="md"
+      padding="xl"
+      className={classes.projCard}
+    >
       <Text fz="lg" fw={500} mt="md">
         {project.title}
       </Text>
