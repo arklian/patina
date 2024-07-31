@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "508a58d5_8e8820ad",
+        "filename": "js/src/personal/amanda/resume/Resume.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-31T17:18:53Z",
+      "side": 1,
+      "message": "It\u0027s better to use section.id instead of index.\nindex should be a last resort id.",
+      "revId": "499d0839cad05bf45639b37934147516f0945fcf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4f73e1a_4c147e53",
+        "filename": "js/src/personal/amanda/resume/Resume.pdf",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-31T17:18:53Z",
+      "side": 1,
+      "message": "nit: It\u0027s probably best to start hosting these in DO so that we avoid having large files in the git repo and vite build.",
+      "revId": "499d0839cad05bf45639b37934147516f0945fcf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
