@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c108331_3faedc6a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-31T23:38:33Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "530654a1_c55e4746",
+      "revId": "b08f2a61c0a661ee90288a237aa9f5c93e5fa109",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd0a2053_ec965bc2",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c47fa2d_f3578384",
+        "filename": "js/src/personal/martin/Martin.module.css",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-31T23:38:33Z",
+      "side": 1,
+      "message": "I can remove the fonts and leave Lucida. The frame uses the default mantine font and only the links at the bottom are affected.",
+      "parentUuid": "cd0a2053_ec965bc2",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 111
+      },
+      "revId": "b08f2a61c0a661ee90288a237aa9f5c93e5fa109",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4a0c5af9_28ba3ec4",
@@ -54,6 +96,24 @@
       "writtenOn": "2024-07-31T16:58:45Z",
       "side": 1,
       "message": "It\u0027d likely be good to host this in Digital Ocean when you can.\nPerhaps in a future CR",
+      "revId": "b08f2a61c0a661ee90288a237aa9f5c93e5fa109",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f17660c_78d51331",
+        "filename": "js/src/personal/martin/project/Projects.page.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-07-31T23:38:33Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "4a0c5af9_28ba3ec4",
       "revId": "b08f2a61c0a661ee90288a237aa9f5c93e5fa109",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
