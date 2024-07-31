@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8a2d001_e4e49208",
+        "filename": "js/src/personal/amanda/Amanda.routes.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-31T17:04:32Z",
+      "side": 1,
+      "message": "It\u0027s to navigate between my main page and resume page. I found it easier to just add the trailing / instead of concatenating the url with / before the rest of the link.",
+      "parentUuid": "284086b7_393a8b30",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37d13cc5_d2543b01",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1679c20_d97220d3",
+        "filename": "js/src/personal/amanda/Sidebar.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-31T17:04:32Z",
+      "side": 1,
+      "message": "That makes sense and should be happening but I tried debugging (printed the value of active in the console and checked the navbar on the website) and for some reason, active gets set to 0 after the location changes instead of staying as 2.",
+      "parentUuid": "37d13cc5_d2543b01",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "49e71014_228d2e01",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-07-30T18:36:35Z",
       "side": 1,
       "message": "nit: this state isn\u0027t really needed since it\u0027s always trivially derivable from the location and would cause a double rerender right now when location changes.",
+      "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5811ce63_c5506fd7",
+        "filename": "js/src/personal/amanda/Sidebar.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-07-31T17:04:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "49e71014_228d2e01",
       "revId": "80ad03d30f165bddcbf0b7700bb6176af47d4e3f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
