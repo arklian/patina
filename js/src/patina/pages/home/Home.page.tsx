@@ -1,8 +1,8 @@
 import { BackgroundImage, Container, Title } from '@mantine/core'
 import { Initiatives } from './initiatives/Initiatives'
 import { About } from './about/About.tsx'
-import { ImportantSection } from '@/patina/home/important/ImportantSection.tsx'
-import { GetInvolved } from '@/patina/home/involved/GetInvolved.tsx'
+import { ImportantSection } from '@/patina/pages/home/important/ImportantSection.tsx'
+import { GetInvolved } from '@/patina/pages/home/involved/GetInvolved.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Home.module.css'
 

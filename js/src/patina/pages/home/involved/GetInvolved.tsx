@@ -1,5 +1,5 @@
-import styles from '@/patina/home/involved/GetInvolved.module.css'
-import { StaticCards } from '@/patina/home/involved/StaticCards.tsx'
+import styles from './GetInvolved.module.css'
+import { StaticCards } from '@/patina/pages/home/involved/StaticCards.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 
 export function GetInvolved() {

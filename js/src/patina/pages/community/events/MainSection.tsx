@@ -3,7 +3,7 @@ import { Calendar } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import { useQuery } from '@tanstack/react-query'
 import { EventCard } from './EventCard.tsx'
-import styles from '@/patina/community/events/MainSection.module.css'
+import styles from '@/patina/pages/community/events/MainSection.module.css'
 
 type Event = {
   name: string
