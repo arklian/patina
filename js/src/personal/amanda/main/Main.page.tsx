@@ -7,9 +7,9 @@ export function MainPage() {
   const info = data.info as Section[]
   return (
     <>
-      <ScrollArea type="scroll" offsetScrollbars>
-        {info.map((section) => (
-          <SectionContent section={section} />
+      <ScrollArea type="scroll" offsetScrollbars w="150rem" pl="5rem">
+        {info.map((section, index) => (
+          <SectionContent key={index} section={section} />
         ))}
       </ScrollArea>
     </>

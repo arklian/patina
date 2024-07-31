@@ -18,8 +18,8 @@ export function SectionContent({ section }: { section: Section }) {
         <Text size="1.5rem" lh="xs">
           {section.description}
         </Text>
-        {section.subsections.map((project) => (
-          <ProjectContent project={project} />
+        {section.subsections.map((project, index) => (
+          <ProjectContent key={index} project={project} />
         ))}
       </Container>
     </>

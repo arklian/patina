@@ -7,9 +7,9 @@ export function ResumePage() {
   const resume = data.resume as ResumeSection[]
   return (
     <>
-      <ScrollArea type="scroll" offsetScrollbars w="100rem">
-        {resume.map((section) => (
-          <ResumeSectionContent section={section} />
+      <ScrollArea type="scroll" offsetScrollbars w="150rem" pl="5rem">
+        {resume.map((section, index) => (
+          <ResumeSectionContent key={index} section={section} />
         ))}
       </ScrollArea>
     </>

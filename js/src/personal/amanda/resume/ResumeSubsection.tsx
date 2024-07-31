@@ -27,8 +27,8 @@ export function ResumeSubsection({
         <Title size="1.5rem" mb="0.5rem" className={styles.resumeSubtitle}>
           {subsection.subtitle}
         </Title>
-        {subsection.info.map((info) => (
-          <List listStyleType="disc" withPadding size="xl">
+        {subsection.info.map((info, index) => (
+          <List key={index} listStyleType="disc" withPadding size="xl">
             <List.Item mb="1rem" lh="xs">
               {info}
             </List.Item>

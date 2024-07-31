@@ -15,8 +15,8 @@ export function ResumeSectionContent({ section }: { section: ResumeSection }) {
         <Title size="3rem" mb="0.5rem">
           {section.title}
         </Title>
-        {section.content.map((subsection) => (
-          <ResumeSubsection subsection={subsection} />
+        {section.content.map((subsection, index) => (
+          <ResumeSubsection key={index} subsection={subsection} />
         ))}
       </Container>
     </>

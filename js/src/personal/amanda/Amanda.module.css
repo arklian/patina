@@ -1,12 +1,14 @@
-.landingPage {
-  height: 100vh;
+.mainPage {
+  height: 80vh;
+  width: 90%;
+  display: flex;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
-.mainPage {
-  height: 100vh;
+.header {
+  float: right;
   display: flex;
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  margin-top: 1rem;
 }
 
 .title {
@@ -34,10 +36,6 @@
 .skill {
   background-color: light-dark(#9db4c0, #5c6b73);
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
-
-.lightDark {
-  float: right;
 }
 
 .navbar {
