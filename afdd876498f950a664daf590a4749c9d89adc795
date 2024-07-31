@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af3874b4_94faa83b",
+        "filename": "js/src/personal/martin/project/ProjectShowcase.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-31T17:01:53Z",
+      "side": 1,
+      "message": "Should this be a list instead of hard coded at 3 images? If you want it to be consistent at 3 images, it\u0027s good as is.",
+      "revId": "afdd876498f950a664daf590a4749c9d89adc795",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "890b3107_d72941e7",
+        "filename": "js/src/personal/martin/project/Projects.page.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-31T17:01:53Z",
+      "side": 1,
+      "message": "nit: I think I usually prefer to put mock data in a separate file and import it, or put the mock data at the bottom of the file.",
+      "revId": "afdd876498f950a664daf590a4749c9d89adc795",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
