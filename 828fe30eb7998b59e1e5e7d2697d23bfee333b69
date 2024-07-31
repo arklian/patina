@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4d1d5b3_5eacd864",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-07-31T17:23:56Z",
+      "side": 0,
+      "message": "Fixes for CR comments should generally be fixed in the CR where the comment is.\nOtherwise, explicitly say it\u0027s fixed in a following CR as a response to the comment.",
+      "revId": "828fe30eb7998b59e1e5e7d2697d23bfee333b69",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
