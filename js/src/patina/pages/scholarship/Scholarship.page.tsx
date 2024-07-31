@@ -7,11 +7,12 @@ import { Application } from '@/patina/pages/scholarship/application/Application.
 import { DonorSection } from '@/patina/pages/scholarship/donors/Donors.page.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Scholarship.module.css'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 export function ScholarshipPage() {
   const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
-    <div>
+    <ContentPage>
       <SimpleGrid
         className={styles.hero_container}
         cols={largeScreen ? 2 : 1}
@@ -51,6 +52,6 @@ export function ScholarshipPage() {
         <Application />
       </div>
       <DonorSection />
-    </div>
+    </ContentPage>
   )
 }

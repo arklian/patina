@@ -2,10 +2,12 @@ import { Title, Text, Image, Button } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import styles from './Volunteer.module.css'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
+// Todo: Add padding between sections
 export function VolunteerPage() {
   return (
-    <div className={styles.container}>
+    <ContentPage>
       <section className={styles.wrapper}>
         <div className={styles.text}>
           <Title order={2} className={styles.title}>
@@ -64,6 +66,6 @@ export function VolunteerPage() {
           </Button>
         </div>
       </section>
-    </div>
+    </ContentPage>
   )
 }
