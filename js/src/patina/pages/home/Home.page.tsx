@@ -1,7 +1,6 @@
 import { BackgroundImage, Title } from '@mantine/core'
 import { Initiatives } from './initiatives/Initiatives'
 import { About } from './about/About.tsx'
-import { ImportantSection } from '@/patina/pages/home/important/ImportantSection.tsx'
 import { GetInvolved } from '@/patina/pages/home/involved/GetInvolved.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Home.module.css'
@@ -33,14 +32,15 @@ export function HomePage() {
         <Initiatives />
       </div>
       <GetInvolved />
-      <div className={styles.containers}>
-        <Title className={styles.importantSectionTitle}>
-          {'Why is This Important?'}
-        </Title>
-      </div>
-      <div className={styles.containers}>
-        <ImportantSection />
-      </div>
+      {/* Removing 'Why is this important' section until content comes in. */}
+      {/*<div className={styles.containers}>*/}
+      {/*  <Title className={styles.importantSectionTitle}>*/}
+      {/*    'Why is This Important?' */}
+      {/*  </Title>*/}
+      {/*</div>*/}
+      {/*<div className={styles.containers}>*/}
+      {/*  <ImportantSection />*/}
+      {/*</div>*/}
     </ContentPage>
   )
 }
