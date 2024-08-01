@@ -95,6 +95,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fe6f52d_076dfdb7",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T17:08:16Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "5f264f71_82a20a1c",
+      "range": {
+        "startLine": 22,
+        "startChar": 13,
+        "endLine": 22,
+        "endChar": 18
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "14513bd0_24e1d4b2",
@@ -179,6 +203,30 @@
       "side": 1,
       "message": "small vw is generally bad, but in this case I\u0027m using it as an exception for mobile, and having 100% of the phone. \n\nI could technically pull this hero outside of the ContentPage so that it can just be 100% width, but doing this just for mobile.",
       "parentUuid": "e3db80da_3b955db7",
+      "range": {
+        "startLine": 3,
+        "startChar": 19,
+        "endLine": 23,
+        "endChar": 18
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54b74569_0bb79468",
+        "filename": "js/src/patina/pages/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T17:08:16Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "e566c504_cd574e7e",
       "range": {
         "startLine": 3,
         "startChar": 19,
