@@ -71,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fcf35eb_cfc9bf7a",
+        "filename": "js/src/patina/components/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-01T20:45:51Z",
+      "side": 1,
+      "message": "i\u0027ll make someone else figure it out",
+      "parentUuid": "9c584d4b_b2b3b939",
+      "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37ac5b11_57847f29",
