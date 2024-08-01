@@ -1,17 +1,17 @@
 .title {
-  font-size: rem(64px);
+  font-size: 64px;
   color: white;
 }
 
 .description {
   color: white;
   text-align: left;
-  padding-top: rem(10px);
-  font-size: rem2(4px);
+  padding-top: 10px;
+  font-size: 24px;
 }
 
 .mentorImage {
-  border-radius: rem(5px);
+  border-radius: 5px;
 }
 
 .fonts {

@@ -1,14 +1,14 @@
 .title {
-  margin-bottom: rem(128px);
-  margin-top: rem(128px);
+  margin-bottom: 128px;
+  margin-top: 128px;
   text-align: center;
   color: white;
 
-  @media (max-width: rem(535px)) {
-    font-size: rem(40px);
+  @media (max-width: 535px) {
+    font-size: 40px;
   }
 }
 
 .cards {
-  margin-bottom: rem(128px);
+  margin-bottom: 128px;
 }

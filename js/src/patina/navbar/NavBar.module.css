@@ -1,17 +1,16 @@
 .header {
-  height: rem(56px);
-  margin-bottom: rem(28px);
+  height: 56px;
+  margin-bottom: 28px;
   background-color: var(--mantine-color-dark-6);
-  border-bottom: rem(1px) solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 
   @media (max-width: $mantine-breakpoint-md) {
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
   }
 }
 
 .inner {
-  height: rem(56px);
+  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +19,7 @@
 .link {
   display: block;
   line-height: 1;
-  padding: rem(8px) rem(12px);
+  padding: 8px 12px;
   border-radius: var(--mantine-radius-sm);
   text-decoration: none;
   color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
@@ -36,7 +35,7 @@
 }
 
 .linkLabel {
-  margin-right: rem(5px);
+  margin-right: 5px;
 }
 
 .dropDownItem {

@@ -1,13 +1,13 @@
 .text {
   text-align: left;
-  padding-top: rem(10px);
-  font-size: rem(24px);
+  padding-top: 10px;
+  font-size: 24px;
 }
 
 .button {
   background-color: var(--mantine-color-patina-green-light);
   color: var(--mantine-color-gray-8);
-  width: rem(100px);
+  width: 100px;
 }
 
 .button:hover {

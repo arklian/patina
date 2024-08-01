@@ -1,5 +1,5 @@
 .calendarCell {
-  padding: rem(12px);
+  padding: 12px;
 }
 
 .calendarHeader {
@@ -7,13 +7,13 @@
   font-weight: bold;
   display: flex;
   justify-content: space-around;
-  margin-left: rem(25px);
-  margin-right: rem(25px);
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .calendarHeaderText {
-  margin-left: rem(50px);
-  margin-right: rem(50px);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .calendarBody {
