@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7304558_c1deaa74",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T20:59:27Z",
+      "side": 1,
+      "message": "Make new strings and move these into the secrets repo",
+      "revId": "cbdf87f312dc7ab713423f18863393097e606b43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
