@@ -1,8 +1,16 @@
 .footer {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--mantine-color-dark-6);
+}
+
+.footerContents {
+  max-width: 1200px;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: rem(16px) rem(150px);
+  width: 100%;
   background-color: var(--mantine-color-dark-6);
   align-items: center;
 }
@@ -10,6 +18,7 @@
 .logoTextContainer {
   display: flex;
   align-items: center;
+  padding: rem(8px) rem(12px);
 }
 
 .logo {
@@ -18,21 +27,11 @@
   margin-right: 8px;
 }
 
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-.patina {
-  line-height: 1.2;
-  color: white;
-}
-
 .footerLinks {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: rem(33px);
+}
+
+.linkIcon {
+  margin: 8px;
 }
