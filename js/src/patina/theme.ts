@@ -21,14 +21,6 @@ import {
  * {@link https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/core/src/core/MantineProvider/default-colors.ts Default Colors}
  */
 export const themeOverride = createTheme({
-  fontFamily: 'Figtree, sans-serif',
-  fontSizes: {
-    xs: rem(12),
-    sm: rem(14),
-    md: rem(16), // Body text size
-    lg: rem(20),
-    xl: rem(24),
-  },
   headings: {
     fontFamily: 'Figtree, sans-serif',
     sizes: {
@@ -38,6 +30,42 @@ export const themeOverride = createTheme({
       h4: { fontSize: rem(22), fontWeight: '700' },
       h5: { fontSize: rem(16), fontWeight: '600' },
     },
+  },
+  fontFamily: 'Figtree, sans-serif',
+  fontSizes: {
+    xs: rem(12),
+    sm: rem(14),
+    md: rem(16), // Body text size
+    lg: rem(20),
+    xl: rem(24),
+  },
+  lineHeights: {
+    xs: '1.4',
+    sm: '1.45',
+    md: '1.55',
+    lg: '1.6',
+    xl: '1.65',
+  },
+  radius: {
+    xs: rem(2),
+    sm: rem(4),
+    md: rem(8),
+    lg: rem(16),
+    xl: rem(32),
+  },
+  spacing: {
+    xs: rem(10),
+    sm: rem(12),
+    md: rem(16),
+    lg: rem(20),
+    xl: rem(32),
+  },
+  breakpoints: {
+    xs: '36em', // 576px - Mobile
+    sm: '48em', // 768px - Half Screen Default Mac?
+    md: '62em', // 992px - Half Screen 1920x1080p
+    lg: '75em', // 1200px
+    xl: '88em', // 1408px - Anything not fullscreen
   },
   other: {
     patinaGreenDark: '#03664D',
@@ -49,6 +77,7 @@ export const themeOverride = createTheme({
     patinaDarkBg: '#1A1B1E',
     patinaDark6: '#25262B',
     patinaDark3: '#5C5F66',
+    contentContainerWidth: 1200,
   },
 })
 
