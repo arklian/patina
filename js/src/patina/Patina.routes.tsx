@@ -5,7 +5,9 @@ import { ScholarshipPage } from '@/patina/scholarship/Scholarship.page.tsx'
 import { CommunityPage } from '@/patina/community/Community.page.tsx'
 import { MentorPage } from '@/patina/mentor/Mentor.page.tsx'
 import { VolunteerPage } from '@/patina/volunteer/Volunteer.page.tsx'
+import { AdminRoutes } from '@/patina/admin/Admin.routes.tsx'
 import { AdminPage } from '@/patina/admin/Admin.page.tsx'
+
 /**
  * Routes for the Patina Website
  */
@@ -54,5 +56,6 @@ export const PatinaRoutes = [
     path: 'admin',
     description: 'admin',
     element: <AdminPage />,
+    children: AdminRoutes,
   },
 ]
