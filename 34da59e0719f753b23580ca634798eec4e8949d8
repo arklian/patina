@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c40e371a_298ed01e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T21:13:53Z",
+      "side": 1,
+      "message": "Nice!",
+      "revId": "34da59e0719f753b23580ca634798eec4e8949d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23c8b61b_b4067077",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T21:13:53Z",
+      "side": 1,
+      "message": "is -15px too much?",
+      "revId": "34da59e0719f753b23580ca634798eec4e8949d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "589b069c_284297f9",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T21:13:53Z",
+      "side": 1,
+      "message": "ssssssssssssssss(nake)",
+      "revId": "34da59e0719f753b23580ca634798eec4e8949d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
