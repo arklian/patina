@@ -9,7 +9,7 @@ import {
   Title,
 } from '@mantine/core'
 import { Project } from '../Types.tsx'
-import styles from '../Amanda.module.css'
+import styles from './Main.module.css'
 
 export function ProjectContent({ project }: { project: Project }) {
   return (
@@ -21,14 +21,14 @@ export function ProjectContent({ project }: { project: Project }) {
         className={styles.projectLink}
       >
         <div key={project.id} className={styles.project}>
-          <Container m="1rem">
-            <Title size="2rem" mb="0.5rem">
+          <Container className={styles.container}>
+            <Title size="2rem" mb="0.5rem" className={styles.subtitle}>
               {project.title}
             </Title>
-            <Text size="1.5rem" mb="1rem" lh="xs">
+            <Text size="1.5rem" mb="1rem" lh="xs" className={styles.text}>
               {project.description}
             </Text>
-            <Group>
+            <Group gap="xs">
               {project.skills.map((skill, index) => (
                 <Pill key={index} size="lg" className={styles.skill}>
                   {skill}
@@ -36,16 +36,16 @@ export function ProjectContent({ project }: { project: Project }) {
               ))}
             </Group>
           </Container>
-          <Stack justify="center">
-            <Image
-              radius="md"
-              h={200}
-              w="auto"
-              fit="contain"
-              src={project.image}
-              ml="2rem"
-            />
-          </Stack>
+          <Group justify="center">
+            <Stack justify="center">
+              <Image
+                radius="md"
+                fit="contain"
+                src={project.image}
+                className={styles.image}
+              />
+            </Stack>
+          </Group>
         </div>
       </Anchor>
     </div>

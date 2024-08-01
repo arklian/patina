@@ -1,4 +1,4 @@
-.mainPage {
+.page {
   height: 80vh;
   width: 90%;
   display: flex;
@@ -6,78 +6,40 @@
 }
 
 .header {
-  float: right;
   display: flex;
+  justify-content: space-between;
+  width: auto;
   margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
 }
 
-.title {
-  font-size: rem(100px);
-  font-weight: 900;
-  letter-spacing: rem(-2px);
+.headerLeft {
+  float: left;
+}
 
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+.headerRight {
+  float: right;
+  display: flex;
+}
+
+.sidebar[data-status='false'] {
+  display: none;
+}
+
+.sidebar[data-status='true'] {
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: rem(400px);
   }
 }
 
-.leftSide {
-  width: 20vw;
-}
-
-.project {
-  display: flex;
-  padding: rem(5px);
-}
-
-.project:hover {
-  border: solid
-    light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  border-radius: rem(10px);
-}
-
-.projectLink {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
-
-.skill {
-  background-color: light-dark(#9db4c0, #5c6b73);
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+.name {
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(30px);
+  }
 }
 
 .navbar {
   font-size: rem(30px);
-}
-
-.resumeHeading {
-  display: block;
-  width: 100%;
-}
-
-.resumeTitle {
-  float: left;
-  width: 70%;
-}
-
-.resumeDate {
-  float: right;
-  width: 30%;
-}
-
-.resumeSubtitle {
-  clear: both;
-}
-
-.resumeSkillsTitle {
-  width: 100%;
-}
-
-.resumeSkills {
-  display: inline;
-  text-align: left;
-}
-
-.embedPost {
-  height: 90rem;
-  width: 100%;
 }

@@ -9,22 +9,27 @@ import {
 import { SectionContent } from './SectionContent.tsx'
 import { Section } from '../Types.tsx'
 import data from '../Data.json'
-import styles from '@/personal/amanda/Amanda.module.css'
+import styles from '@/personal/amanda/main/Main.module.css'
 
 export function MainPage() {
   const info = data.info as Section[]
   return (
     <>
-      <ScrollArea type="scroll" offsetScrollbars w="150rem" pl="5rem">
+      <ScrollArea
+        type="scroll"
+        offsetScrollbars
+        scrollbars="y"
+        className={styles.scrollArea}
+      >
         {info.map((section) => (
           <SectionContent key={section.id} section={section} />
         ))}
 
-        <Container className={styles.section} mb="3rem">
-          <Title size="3rem" mb="0.5rem">
+        <Container mb="3rem">
+          <Title size="3rem" mb="0.5rem" className={styles.title}>
             {'recent activity'}
           </Title>
-          <Text size="1.5rem" lh="xs">
+          <Text size="1.5rem" lh="xs" className={styles.text}>
             {'I visited Google for the first time!'}
           </Text>
           <Spoiler maxHeight={300} showLabel="Show more" hideLabel="Hide">
