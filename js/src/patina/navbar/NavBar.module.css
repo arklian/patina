@@ -1,7 +1,7 @@
 .header {
   height: rem(56px);
-  margin-bottom: rem(70px);
-  background-color: var(--mantine-color-body);
+  margin-bottom: rem(28px);
+  background-color: var(--mantine-color-dark-6);
   border-bottom: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 
@@ -24,7 +24,7 @@
   border-radius: var(--mantine-radius-sm);
   text-decoration: none;
   color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
-  font-size: var(--mantine-font-size-sm);
+  font-size: var(--mantine-font-size-md);
   font-weight: 500;
 
   @mixin hover {

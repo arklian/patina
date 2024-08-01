@@ -1,4 +1,12 @@
-import { Menu, Group, Center, Burger, Container, Image } from '@mantine/core'
+import {
+  Menu,
+  Group,
+  Center,
+  Burger,
+  Container,
+  Image,
+  Text,
+} from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 import { imageUrls } from '@/patina/assets/images.ts'
@@ -15,7 +23,7 @@ const links = [
   },
   {
     link: '',
-    label: 'Program',
+    label: 'Programs',
     links: [
       { link: '/mentorship', label: 'Mentorship' },
       { link: '/scholarship', label: 'Scholarship' },
@@ -30,9 +38,9 @@ const links = [
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },
-  { link: '', label: 'Stay Informed' },
+  // { link: '', label: 'Stay Informed' },
   { link: '', label: 'Blog' },
-  { link: '', label: 'Donate' },
+  // { link: '', label: 'Donate' },
 ]
 
 //NavBar component renders the navigation bar with links and dropdown menus.
@@ -56,6 +64,7 @@ export function NavBar() {
       return (
         <Menu
           key={link.label}
+          position={'bottom-start'}
           trigger="hover"
           transitionProps={{ exitDuration: 0 }}
           withinPortal
@@ -63,7 +72,7 @@ export function NavBar() {
           <Menu.Target>
             <a href={link.link} className={classes.link}>
               <Center>
-                <span className={classes.linkLabel}>{link.label}</span>
+                <Text className={classes.linkLabel}>{link.label}</Text>
                 <IconChevronDown size="0.9rem" stroke={1.5} />
               </Center>
             </a>
