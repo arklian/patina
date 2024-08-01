@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "abb38228_3e571e50",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": ":/",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 10
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4313743_81210f15",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": "nit: rem",
+      "range": {
+        "startLine": 22,
+        "startChar": 13,
+        "endLine": 22,
+        "endChar": 18
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14513bd0_24e1d4b2",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": "as above",
+      "range": {
+        "startLine": 35,
+        "startChar": 16,
+        "endLine": 36,
+        "endChar": 20
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3db80da_3b955db7",
+        "filename": "js/src/patina/pages/home/Home.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": "plz rem (also, didn\u0027t you say not to use vw?)",
+      "range": {
+        "startLine": 3,
+        "startChar": 19,
+        "endLine": 23,
+        "endChar": 18
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54688aa8_868dfc83",
+        "filename": "js/src/patina/pages/home/initiatives/Initiatives.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": "rem",
+      "range": {
+        "startLine": 27,
+        "startChar": 13,
+        "endLine": 27,
+        "endChar": 17
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fd5e87e_2581febb",
+        "filename": "js/src/patina/pages/home/involved/GetInvolved.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T16:49:34Z",
+      "side": 1,
+      "message": "rem :/",
+      "range": {
+        "startLine": 29,
+        "startChar": 11,
+        "endLine": 29,
+        "endChar": 15
+      },
+      "revId": "cb9fa000f6a56d06da2f7b0bfdc78bf49fe6a125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
