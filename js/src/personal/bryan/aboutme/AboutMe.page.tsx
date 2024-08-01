@@ -9,9 +9,13 @@ import {
   Flex,
 } from '@mantine/core'
 import classes from '@/personal/bryan/Bryan.module.css'
-import skiing from '@/personal/bryan/assets/images/bryan_skiing.png'
-import mathey from '@/personal/bryan/assets/images/mathey.png'
-import tower from '@/personal/bryan/assets/images/tower.png'
+
+const skiing =
+  'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/images/bryan_skiing.png'
+const mathey =
+  'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/images/mathey.png'
+const tower =
+  'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/images/tower.png'
 
 export function AboutMePage() {
   return (

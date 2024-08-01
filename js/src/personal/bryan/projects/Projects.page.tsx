@@ -9,8 +9,11 @@ import {
   Space,
 } from '@mantine/core'
 import classes from '@/personal/bryan/Bryan.module.css'
-import image from '@/personal/bryan/assets/images/Personal_Site.png'
-import document from '@/personal/bryan/assets/files/COS_429_Report.pdf'
+
+const image =
+  'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/images/Personal_Site.png'
+const document =
+  'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/files/COS%20429%20Report.pdf'
 
 export function ProjectsPage() {
   const Project = (props: {
