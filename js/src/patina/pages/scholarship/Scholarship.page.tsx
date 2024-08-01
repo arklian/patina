@@ -16,7 +16,7 @@ export function ScholarshipPage() {
       {'The Patina Network Scholarship Fund intends to manifest our '}
       <span className={styles.colored}>{'vision'}</span>
       {
-        ' by awarding scholarships annually to students who are of ethnicity, heritage, or ancestry in relations to the AANHPI communities and would benefit the most from the financial stipend.'
+        ' by awarding scholarships annually to students who have ethnicity, heritage, or ancestry relation to the AANHPI communities and would benefit the most from the financial stipend.'
       }
     </Text>
   )

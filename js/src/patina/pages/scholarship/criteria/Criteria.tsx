@@ -23,17 +23,17 @@ export function Criteria() {
             </List.Item>
             <List.Item>
               {
-                'Be able to describe your ethnicity, heritage, or ancestry in relation to the AANHPI communities'
+                'Be able to describe your ethnicity, heritage, or ancestry in relation to the AANHPI communities.'
               }
             </List.Item>
             <List.Item>
               {
-                'Be a citizen, national, or legal permanent resident of the United States. DACA students are also eligible at this time'
+                'Be a citizen, national, or legal permanent resident of the United States. DACA students are also eligible at this time.'
               }
             </List.Item>
             <List.Item>
               {
-                'Have applied for federal financial aid using the Free Application for Federal Student Aid (FAFSA) for the current academic year. It is not required to have received federal financial aid. '
+                'Have applied for federal financial aid using the Free Application for Federal Student Aid (FAFSA) for the current academic year. It is not required to have received federal financial aid.'
               }
             </List.Item>
           </List>

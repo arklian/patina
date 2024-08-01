@@ -40,13 +40,13 @@ export function Forms() {
     // functions will be used to validate values at corresponding key
     validate: {
       name: (value) =>
-        value.length < 2 ? 'Name must have at least 2 letters' : null,
+        value.length < 2 ? 'Name must use be least two letters long' : null,
       email: (value) =>
         EmailValidator.validate(value) ? null : 'Invalid email',
       subject: (value) =>
-        value.length < 3 ? 'Subject must have at least 3 letters' : null,
+        value.length < 3 ? 'Subject must be at least three letters long' : null,
       message: (value) =>
-        value.length < 10 ? 'Message must have at least 10 letters' : null,
+        value.length < 10 ? 'Message must be at least 10 letters long' : null,
     },
   })
 
