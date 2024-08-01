@@ -9,7 +9,7 @@ export function AboutScholarship() {
         <Text className={styles.title}>{'About the Scholarship'}</Text>
         <Text className={styles.body}>
           {
-            'The APIA Scholarship is our largest scholarship program, open to AANHPI undergraduate students attending any U.S. accredited university or college. Scholarship amounts range from $2,500 one-year awards to $20,000 multi-year awards. APIA Scholars has a special focus on supporting AANHPI students who live at or below the poverty line; are in the first generation of their family to attend college; are representative of the APIA community’s diversity, (geographically and ethnically}, especially those ethnicities that have been underrepresented on college campuses due to limited access and opportunity. Strong applicants would also have an emphasis on community service and leadership.'
+            'At this time, the Patina Network Scholarship is open to AANHPI undergraduate students attending any U.S. accredited university or college. Scholarship amounts to $500 for 1 (one) student for the fiscal year of 2024. Patina Network Scholarship has a special focus on supporting AANHPI students who would benefit the most financially; are in the first generation of their family to attend college; are representative of the AANHPI community’s diversity, (geographically and ethnically}, especially those ethnicities that have been underrepresented on college campuses due to limited access and opportunity. Strong applicants would also have an emphasis on community service, leadership, and academic achievement.'
           }
         </Text>
       </div>
