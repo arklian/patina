@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d2f28b2_79a60a89",
+        "filename": "js/src/patina/pages/scholarship/about/AboutScholarship.module.css",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T19:29:26Z",
+      "side": 1,
+      "message": "this number seems off\nIs this still needed with ContentPage?",
+      "revId": "344e9dda97711c4580708b37df609b2a44aaec5c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
