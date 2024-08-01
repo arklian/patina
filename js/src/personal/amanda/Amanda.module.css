@@ -27,6 +27,13 @@
 
 .project {
   display: flex;
+  padding: rem(5px);
+}
+
+.project:hover {
+  border: solid
+    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border-radius: rem(10px);
 }
 
 .projectLink {
@@ -59,4 +66,18 @@
 
 .resumeSubtitle {
   clear: both;
+}
+
+.resumeSkillsTitle {
+  width: 100%;
+}
+
+.resumeSkills {
+  display: inline;
+  text-align: left;
+}
+
+.embedPost {
+  height: 90rem;
+  width: 100%;
 }

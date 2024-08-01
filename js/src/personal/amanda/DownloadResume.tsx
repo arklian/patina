@@ -1,6 +1,5 @@
 import { Button } from '@mantine/core'
 import { IoMdDownload } from 'react-icons/io'
-import resume from './resume/Resume.pdf'
 
 export function DownloadResume() {
   return (
@@ -8,7 +7,7 @@ export function DownloadResume() {
       rightSection={<IoMdDownload size={20} />}
       size="md"
       component="a"
-      href={resume}
+      href="https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/amanda/AmandaRuanResume.pdf"
       download
     >
       {'Resume'}

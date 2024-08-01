@@ -1,4 +1,4 @@
-import { Container, Title } from '@mantine/core'
+import { Container, Group, Text, Title } from '@mantine/core'
 import { ResumeSection } from '../Types.tsx'
 import { ResumeSubsection } from './ResumeSubsection.tsx'
 import styles from '@/personal/amanda/Amanda.module.css'
@@ -15,9 +15,35 @@ export function ResumeSectionContent({ section }: { section: ResumeSection }) {
         <Title size="3rem" mb="0.5rem">
           {section.title}
         </Title>
-        {section.content.map((subsection, index) => (
-          <ResumeSubsection key={index} subsection={subsection} />
-        ))}
+        {section.title === 'skills' && (
+          <div>
+            {section.content.map((subsection) => (
+              <div>
+                <Title
+                  size="2rem"
+                  mb="0.5rem"
+                  className={styles.resumeSkillsTitle}
+                >
+                  {subsection.title}
+                </Title>
+                <Group>
+                  {subsection.info.map((info) => (
+                    <Text size="xl" className={styles.resumeSkills}>
+                      {info}
+                    </Text>
+                  ))}
+                </Group>
+              </div>
+            ))}
+          </div>
+        )}
+        {section.title !== 'skills' && (
+          <div>
+            {section.content.map((subsection) => (
+              <ResumeSubsection key={subsection.id} subsection={subsection} />
+            ))}
+          </div>
+        )}
       </Container>
     </>
   )

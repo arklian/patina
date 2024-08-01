@@ -17,7 +17,7 @@
           "id": 1,
           "title": "VZCode",
           "link": "https://github.com/vizhub-core/vzcode",
-          "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-9.png",
+          "image": "https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/amanda/vzcode.png",
           "description": "VZCode is a multiplayer code editing tool that supports real-time collaboration. Our goal was to improve the user experience with additional capabilities so that the platform could function as an alternative to VSCode. I focused on boosting remote user presence by implementing unique colors and tracking for user cursors, and selection, as well as displaying usernames.",
           "skills": [
             "NodeJS",
@@ -29,7 +29,7 @@
           "id": 2,
           "title": "YACS – Yet Another Course Scheduler",
           "link": "https://github.com/YACS-RCOS/yacs.n",
-          "image": "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-9.png",
+          "image": "https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/amanda/yacs.png",
           "description": "YACS is an open-source web application that allows students to view course options, track dates of final exams, and calculate their GPA. Working with a group of ten, I implemented the option of displaying times in various formats and debugged user-submitted issues.",
           "skills": [
             "Python",
@@ -50,8 +50,8 @@
           "subtitle": "Bachelor of Science in Computer Science",
           "date": "Aug 2022 - May 2025",
           "info": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "ACCEL program candidate on track to obtain B.S in 3 years",
+            "Relevant Coursework: Rensselaer Center for Open Source (RCOS), Introduction to Algorithms, Data Structures"
           ]
         }
       ]
@@ -62,12 +62,16 @@
       "content": [
         {
           "id": 1,
-          "title": "Software Engineer Intern",
-          "subtitle": "Patina Network",
+          "title": "Patina Network",
+          "subtitle": "Software Engineering Intern",
           "date": "June 2024 - Present",
           "info": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Created a custom CI/CD pipeline with the Github CLI, enabling 12 developers to confidently merge 60 PRs/week by running tests in Github Actions and automatically labeling code reviews via Gerrit’s REST API",
+            "Researched and compiled comprehensive documentation on the pipeline development process to allow other contributors to easily extend code functionality",
+            "Built backend endpoints with Java and Spring to handle event data in our Postgres database via SQL, and integrated frontend access using the Fetch API",
+            "Worked cross functionally with UI/UX designers to implement Figma mocks for Patina Network’s website by leveraging React, Typescript, and Mantine UI",
+            "Broke down projects into tasks tracked in the Linear project management app and worked in an Agile environment with frequent standups, retros, and 1:1s",
+            "Engaged in code reviews and upheld code quality by following a style guide and using formatters and linters"
           ]
         }
       ]
@@ -78,28 +82,77 @@
       "content": [
         {
           "id": 1,
-          "title": "VZCode",
-          "subtitle": "RCOS",
+          "title": "RCOS",
+          "subtitle": "VZCode",
           "date": "Sep - Dec 2023",
           "info": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Contributed to open source by streamlining 5 new features to emphasize remote presence on a multiplayer code editing platform and improve real-time collaboration in Typescript, React, and Node.js",
+            "Improved collaboration by displaying usernames above uniquely colored cursors and alerting users to changes in session participants"
           ]
         }
       ]
     },
     {
       "id": 4,
+      "title": "leadership",
+      "content": [
+        {
+          "id": 1,
+          "title": "HackRPI",
+          "subtitle": "Junior Director of Marketing",
+          "date": "Jul 2023 - Present",
+          "info": [
+            "Increased the number of hackathon participants by 250% – from 200 attendees in 2022 to 500 in 2023",
+            "Oversee the Marketing and UX Design teams and ensure communication with 5 additional teams",
+            "Plan and execute external marketing campaigns by engaging with 40+ universities and high schools"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
       "title": "skills",
       "content": [
         {
           "id": 1,
-          "title": "Programming Languages",
+          "title": "Languages",
           "subtitle": "",
           "date": "",
           "info": [
-            "Java",
-            "Typescript"
+            "Java", "Python", "C++", "C", "Typescript", "Javascript", "SQL", "Bash", "zsh"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Frontend",
+          "subtitle": "",
+          "date": "",
+          "info": [
+            "React",
+            "Vue",
+            "HTML",
+            "CSS",
+            "Node.js"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tools",
+          "subtitle": "",
+          "date": "",
+          "info": [
+            "Git", "Github", "Gerrit", "Visual Studio Code", "IntelliJ", "Sublime Merge", "Linear",
+            "Figma", "Postman", "Microsoft Azure", "DigitalOcean", "Docker", "ESLint", "Prettier",
+            "Gradle", "Spring", "pgAdmin"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Other",
+          "subtitle": "",
+          "date": "",
+          "info": [
+            "REST", "API", "CLI", "CI/CD", "PostgreSQL"
           ]
         }
       ]

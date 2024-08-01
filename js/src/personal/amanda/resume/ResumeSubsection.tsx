@@ -20,7 +20,7 @@ export function ResumeSubsection({
           <Title size="2rem" mb="0.5rem" className={styles.resumeTitle}>
             {subsection.title}
           </Title>
-          <Text size="1.5rem" mb="1rem" lh="xs" className={styles.resumeDate}>
+          <Text size="1.25rem" mb="1rem" lh="xs" className={styles.resumeDate}>
             {subsection.date}
           </Text>
         </Box>
@@ -29,7 +29,7 @@ export function ResumeSubsection({
         </Title>
         {subsection.info.map((info, index) => (
           <List key={index} listStyleType="disc" withPadding size="xl">
-            <List.Item mb="1rem" lh="xs">
+            <List.Item mb="0.5rem" lh="xs">
               {info}
             </List.Item>
           </List>
