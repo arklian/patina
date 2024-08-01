@@ -1,30 +1,30 @@
-import { Title, Text, Image, Button } from '@mantine/core'
+import { Text, Button } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
+import { Hero } from '@/patina/components/Hero'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { VolunteerCard } from './VolunteerCard'
 import { Forms } from '@/patina/components/Forms.tsx'
 import styles from './Volunteer.module.css'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
-// Todo: Add padding between sections
 export function VolunteerPage() {
+  const message = (
+    <Text className={styles.description}>
+      {
+        'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the '
+      }
+      <span className={styles.colored}>{'same mission'}</span>
+      {'. There are many ways to join us by sharing your talents!'}
+    </Text>
+  )
   return (
     <ContentPage>
-      <section className={styles.wrapper}>
-        <div className={styles.text}>
-          <Title order={2} className={styles.title}>
-            {'Patina Network'} <br /> {'Apply to be a Volunteer'}
-          </Title>
-          <Text size="md" className={styles.description}>
-            {
-              'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the same mission. There are many ways to join us by sharing your talents!'
-            }
-          </Text>
-        </div>
-        <Image
-          className={styles.volunteerImg}
-          src={imageUrls.volunteerHero.src}
-        />
-      </section>
+      <Hero
+        title="Apply to be a Volunteer"
+        details={message}
+        alt="meow"
+        img={imageUrls.volunteerHero.src}
+        button="https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform"
+      />
       <section className={styles.grid}>
         <VolunteerCard
           title="Social Media"

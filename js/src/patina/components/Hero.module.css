@@ -1,0 +1,50 @@
+.hero_container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: rem(996px)) {
+    margin: rem(16px);
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-size: 64px;
+  color: white;
+  padding-bottom: rem(40px);
+}
+
+.description {
+  text-align: left;
+  padding-top: rem(10px);
+  font-size: 24px;
+  color: white;
+  padding-bottom: rem(50px);
+}
+
+.scholarshipHero {
+  height: rem(520px);
+  width: rem(597px);
+  padding-left: 100px;
+
+  @media (max-width: rem(996px)) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.colored {
+  color: var(--mantine-color-patina-green-light);
+  text-decoration: underline;
+}
+
+.buttonContainer {
+  display: flex;
+  color: black;
+  justify-content: left;
+}
+
+.appButtonText {
+  color: black;
+}
