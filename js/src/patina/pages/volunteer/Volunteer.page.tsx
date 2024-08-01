@@ -1,4 +1,5 @@
-import { Title, Text, Image, Button } from '@mantine/core'
+import { Title, Text, Image, Button, Group, SimpleGrid } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { VolunteerCard } from './VolunteerCard'
 import { Forms } from '@/patina/components/Forms.tsx'
@@ -7,24 +8,37 @@ import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 // Todo: Add padding between sections
 export function VolunteerPage() {
+  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <ContentPage>
-      <section className={styles.wrapper}>
-        <div className={styles.text}>
-          <Title order={2} className={styles.title}>
-            {'Patina Network'} <br /> {'Apply to be a Volunteer'}
+      <SimpleGrid
+        className={styles.heroContainer}
+        cols={largeScreen ? 2 : 1}
+        spacing="xl"
+        mb={'7rem'}
+        mt={'4rem'}
+      >
+        <div>
+          <Title className={styles.title} ta={'left'}>
+            {'Apply to be a Volunteer'}
           </Title>
-          <Text size="md" className={styles.description}>
+          <Text className={styles.description}>
             {
-              'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the same mission. There are many ways to join us by sharing your talents!'
-            }
+              'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the'
+            }{' '}
+            <span className={styles.colored}>{'same mission'}</span>
+            {'. There are many ways to join us by sharing your talents!'}
           </Text>
+          <Group justify={'left'} pt={'md'}></Group>
         </div>
-        <Image
-          className={styles.volunteerImg}
-          src={imageUrls.volunteerHero.src}
-        />
-      </section>
+        <Group justify={'center'} pt={'lg'}>
+          <Image
+            className={styles.volunteerHero}
+            src={imageUrls.volunteerHero.src}
+            alt="Scholarship Image"
+          />
+        </Group>
+      </SimpleGrid>
       <section className={styles.grid}>
         <VolunteerCard
           title="Social Media"
@@ -32,23 +46,23 @@ export function VolunteerPage() {
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Graphic Design"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Legal Specialist"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Events Planner"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
       </section>
       <section className={styles.emailSection}>
-        <div className={styles.backgroundBlur}></div>
+        {/*<div className={styles.backgroundBlur}> </div>*/}
         <div className={styles.content}>
           <Text size="md" className={styles.emailText}>
             {
@@ -65,9 +79,9 @@ export function VolunteerPage() {
           <Button size="sm" className={styles.emailButton}>
             {'Sign Up'}
           </Button>
-          <Forms />
         </div>
       </section>
+      <Forms />
     </ContentPage>
   )
 }
