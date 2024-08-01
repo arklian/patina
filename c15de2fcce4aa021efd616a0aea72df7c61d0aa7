@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68796987_c3b3432e",
+        "filename": "js/src/patina/pages/volunteer/Volunteer.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T21:12:32Z",
+      "side": 1,
+      "message": "Does this need to be fixed? If the background blur works with just .content, we should delete this and the CSS",
+      "revId": "c15de2fcce4aa021efd616a0aea72df7c61d0aa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
