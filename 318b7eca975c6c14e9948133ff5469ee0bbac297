@@ -20,6 +20,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6837e438_56bcc271",
+        "filename": "js/src/patina/login/Login.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T18:58:40Z",
+      "side": 1,
+      "message": "Does React Query support posts? It handles things like spinning/loading state and stuff.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 68
+      },
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "56201486_ba9d2b20",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
         "patchSetId": 2
@@ -54,6 +77,23 @@
       "writtenOn": "2024-08-01T18:53:04Z",
       "side": 1,
       "message": "make this a bit longer lol",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3df2ede9_ba6cfdf0",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T18:58:40Z",
+      "side": 1,
+      "message": "Does the cookie automatically get added to the browser\u0027s storage when it\u0027s sent in a request? I don\u0027t think I see you saving the cookie explicitly",
       "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
