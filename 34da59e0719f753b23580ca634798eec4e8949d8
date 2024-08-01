@@ -71,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5c44293_b48544f0",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-01T21:42:05Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "86033e5a_0635c965",
+      "revId": "34da59e0719f753b23580ca634798eec4e8949d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "589b069c_284297f9",
