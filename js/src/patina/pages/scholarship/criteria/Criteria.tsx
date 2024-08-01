@@ -7,10 +7,10 @@ export function Criteria() {
   const theme = useMantineTheme()
 
   return (
-    <Box className={styles.criteria_container}>
+    <Box className={styles.criteriaContainer}>
       <div className={styles.criteria}>
         <div className={styles.selection}>
-          <Title className={styles.selection_title}>
+          <Title className={styles.selectionTitle}>
             {'Selection criteria'}
           </Title>
           <List
@@ -39,7 +39,7 @@ export function Criteria() {
           </List>
         </div>
         <div className={styles.quote}>
-          <Text className={styles.quote_text}>
+          <Text className={styles.quoteText}>
             {
               'Anyone affected by issues impacting the AANHPI community is encouraged to apply!'
             }

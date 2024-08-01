@@ -15,7 +15,7 @@ export function ScholarshipPage() {
   return (
     <ContentPage>
       <SimpleGrid
-        className={styles.hero_container}
+        className={styles.heroContainer}
         cols={largeScreen ? 2 : 1}
         spacing="xl"
         mb={'7rem'}

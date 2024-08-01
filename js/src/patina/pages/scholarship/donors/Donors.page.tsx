@@ -3,17 +3,17 @@ import styles from './Donors.module.css'
 
 export function DonorSection() {
   return (
-    <div className={styles.donor_container}>
-      <div className={styles.donor_title}>
+    <div className={styles.donorContainer}>
+      <div className={styles.donorTitle}>
         {'Thanks to our donors'}
-        <div className={styles.donor_text}>
+        <div className={styles.donorText}>
           {
             'The Patina Network Scholarship is funded by individual, private donors. Thanks so much to those who have contributed!'
           }
         </div>
       </div>
       <Carousel
-        className={styles.donor_images}
+        className={styles.donorImages}
         align="center"
         slideSize="25%"
         slideGap="sm"

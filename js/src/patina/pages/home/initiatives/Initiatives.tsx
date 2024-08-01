@@ -39,7 +39,7 @@ const detailsMap: CardsProps[] = [
 export function Initiatives() {
   return (
     <>
-      <div className={styles.initiatives_container}>
+      <div className={styles.initiativesContainer}>
         <div className={styles.container}>
           <Title className={styles.title} order={3}>
             {'Our initiatives'}

@@ -15,9 +15,9 @@ export function HomePage() {
           src={imageUrls.homeHero.src}
         >
           <div className={styles.hero}>
-            <Title className={styles.hero_title}>
+            <Title className={styles.heroTitle}>
               {'Empowering AANHPI leaders to '}
-              <span className={styles.title_teal}>{'make their mark.'}</span>
+              <span className={styles.titleTeal}>{'make their mark.'}</span>
             </Title>
           </div>
         </BackgroundImage>
