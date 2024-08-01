@@ -18,7 +18,7 @@
 .logoTextContainer {
   display: flex;
   align-items: center;
-  padding: rem(8px) rem(12px);
+  padding: 8px 12px;
 }
 
 .logo {

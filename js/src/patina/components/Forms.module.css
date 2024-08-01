@@ -1,17 +1,17 @@
 .form {
-  padding: rem(64px) rem(96px);
-  margin-top: rem(96px);
+  padding: 64px 96px;
+  margin-top: 96px;
   background-color: var(--mantine-color-dark-6);
 }
 
 .gridLayout {
-  column-gap: rem(32px);
+  column-gap: 32px;
   justify-content: space-between;
   align-items: stretch;
 }
 
 .title {
-  font-size: rem(22px);
+  font-size: 22px;
   color: white;
 }
 
@@ -24,7 +24,7 @@
   background-color: white;
   border-color: white;
   color: black;
-  width: rem(84px);
-  border-radius: rem(2px);
+  width: 84px;
+  border-radius: 2px;
   align-self: end;
 }

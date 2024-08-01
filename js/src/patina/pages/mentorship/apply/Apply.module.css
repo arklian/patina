@@ -1,8 +1,8 @@
 .itemContainer {
-  margin: rem(48px);
-  padding-left: rem(20px);
-  padding-right: rem(20px);
-  height: rem(600px);
+  margin: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 600px;
   justify-content: center;
 }
 
@@ -10,17 +10,17 @@
   display: flex;
   justify-content: center;
   align-self: stretch;
-  padding-bottom: rem(66px);
+  padding-bottom: 66px;
   color: white;
-  font-size: rem(26px);
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
 }
 
 .appButton {
-  margin-top: rem(50px);
-  height: rem(43px);
-  width: rem(150px);
+  margin-top: 50px;
+  height: 43px;
+  width: 150px;
 }
 
 .appButtonText {

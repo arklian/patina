@@ -3,7 +3,7 @@
   flex-direction: column;
   height: auto;
   justify-content: flex-start;
-  margin-right: rem(38px);
+  margin-right: 38px;
 
   @media (max-width: $mantine-breakpoint-xs) {
     margin-right: 0;
@@ -12,26 +12,26 @@
 
 .aboutText {
   color: var(--mantine-color-gray-1);
-  font-size: rem(34px);
+  font-size: 34px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
   margin-bottom: 24px;
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(24px);
+    font-size: 24px;
   }
 }
 
 .moreButton {
-  height: rem(43px);
+  height: 43px;
   width: auto;
-  margin-top: rem(36px);
-  margin-bottom: rem(64px);
+  margin-top: 36px;
+  margin-bottom: 64px;
 
   @media (max-width: $mantine-breakpoint-xs) {
     width: auto;
-    margin-top: rem(12px);
-    margin-bottom: rem(48px);
+    margin-top: 12px;
+    margin-bottom: 48px;
   }
 }
