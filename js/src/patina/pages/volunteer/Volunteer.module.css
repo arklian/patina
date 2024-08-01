@@ -1,40 +1,9 @@
-/* Initial hero section */
-.wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: 70px;
-  letter-spacing: -2px;
-
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: 50px;
-  }
-}
-
 .description {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: 22px;
-
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: 15px;
-  }
-}
-
-.volunteerImg {
-  width: 40%;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 24px;
+  color: white;
+  padding-bottom: 50px;
 }
 
 /* Volunteer Cards */
