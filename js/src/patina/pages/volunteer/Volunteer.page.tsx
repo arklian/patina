@@ -32,23 +32,22 @@ export function VolunteerPage() {
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Graphic Design"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Legal Specialist"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
         <VolunteerCard
-          title="Social Media"
+          title="Events Planner"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           type="Remote/In-person"
         />
       </section>
       <section className={styles.emailSection}>
-        <div className={styles.backgroundBlur}></div>
         <div className={styles.content}>
           <Text size="md" className={styles.emailText}>
             {
@@ -65,9 +64,10 @@ export function VolunteerPage() {
           <Button size="sm" className={styles.emailButton}>
             {'Sign Up'}
           </Button>
-          <Forms />
         </div>
       </section>
+      <Forms />
+      <div className={styles.space}></div>
     </ContentPage>
   )
 }
