@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core'
+import { Title } from '@mantine/core'
 import { Cards, CardsProps } from '@/patina/components/Cards'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Initiatives.module.css'
@@ -41,7 +41,9 @@ export function Initiatives() {
     <>
       <div className={styles.initiatives_container}>
         <div className={styles.container}>
-          <Text className={styles.title}>{'Our initiatives'}</Text>
+          <Title className={styles.title} order={3}>
+            {'Our initiatives'}
+          </Title>
           {detailsMap.map(
             ({ title, details, img, link, bottom, alt, underline }, index) => (
               <Cards

@@ -2,13 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: rem(64px);
 }
 
 .container {
   display: flex;
   color: white;
-  padding: rem(64px) rem(48px);
+  padding: rem(48px);
   flex-direction: column;
   border-radius: rem(5px);
   line-height: rem(16px);
@@ -16,18 +15,16 @@
   background: var(--mantine-color-patina-dark-6);
 
   @media (max-width: rem(996px)) {
-    padding: 0px;
-    border: 0px;
+    padding: 0;
+    border: 0;
     background: none;
-    width: 350px;
   }
 }
 
 .title {
   color: white;
   font-weight: bold;
-  font-size: x-large;
-  padding: rem(0px) rem(0px) rem(40px);
+  font-size: 34px;
 
   @media (max-width: rem(996px)) {
     text-align: center;

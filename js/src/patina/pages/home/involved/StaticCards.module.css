@@ -1,9 +1,10 @@
 .card {
-  position: relative;
+  height: 100%;
   display: flex;
   padding: rem(32px) rem(16px);
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   max-width: rem(400px);
   text-align: center;
   gap: rem(16px);

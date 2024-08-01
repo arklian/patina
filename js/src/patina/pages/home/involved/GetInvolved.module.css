@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: rem(100px) 0;
-  gap: rem(48px);
+  padding: rem(64px) 0;
 }
 
 .sectionHeader {
@@ -27,7 +26,7 @@
   justify-content: center;
   gap: rem(40px);
   width: 100%;
-  padding: rem(25px);
+  padding: 24px 0;
 
   @media (max-width: rem(996px)) {
     flex-direction: column;
