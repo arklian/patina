@@ -5,7 +5,7 @@
   height: 700px;
   margin-bottom: 48px;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: $mantine-breakpoint-sm) {
     width: 100vw;
     height: 600px;
     background-position: center;
@@ -19,7 +19,7 @@
   align-items: flex-end;
   height: 700px;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: $mantine-breakpoint-sm) {
     height: 600px;
   }
 }
@@ -30,7 +30,7 @@
   font-size: rem(60px);
   width: 75%;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: $mantine-breakpoint-sm) {
     font-size: rem(45px);
     padding: 30px;
     width: 100%;
