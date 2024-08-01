@@ -29,8 +29,9 @@
   padding-left: 100px;
 
   @media (max-width: 996px) {
+    padding-left: 0;
+    margin-top: 50px;
     width: 100%;
-    margin: 0;
   }
 }
 
