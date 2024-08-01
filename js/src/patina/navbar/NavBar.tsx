@@ -6,9 +6,12 @@ import {
   Container,
   Image,
   Text,
+  Drawer,
+  ScrollArea,
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
+import { LinksGroup } from './NavbarLinksGroup.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import classes from './NavBar.module.css'
 
@@ -22,7 +25,6 @@ const links = [
   //   ],
   // },
   {
-    link: '',
     label: 'Programs',
     links: [
       { link: '/mentorship', label: 'Mentorship' },
@@ -30,7 +32,6 @@ const links = [
     ],
   },
   {
-    link: '',
     label: 'Get Involved',
     links: [
       { link: '/mentor', label: 'Mentor' },
@@ -38,14 +39,14 @@ const links = [
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },
-  // { link: '', label: 'Stay Informed' },
-  { link: '', label: 'Blog' },
-  // { link: '', label: 'Donate' },
+  // { label: 'Stay Informed' },
+  { label: 'Blog' },
+  // { label: 'Donate' },
 ]
 
-//NavBar component renders the navigation bar with links and dropdown menus.
+// NavBar component renders the navigation bar with links and dropdown menus.
 export function NavBar() {
-  const [opened, { toggle }] = useDisclosure(false)
+  const [opened, { toggle, close }] = useDisclosure(false)
 
   /**
    * Generates menu items and links for the navigation bar.
@@ -53,11 +54,9 @@ export function NavBar() {
    */
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Menu.Item key={item.link}>
-        <a href={item.link} className={classes.dropDownItem}>
-          {item.label}
-        </a>
-      </Menu.Item>
+      <a key={item.link} href={item.link} className={classes.dropDownItem}>
+        <Menu.Item>{item.label}</Menu.Item>
+      </a>
     ))
 
     if (menuItems) {
@@ -70,25 +69,29 @@ export function NavBar() {
           withinPortal
         >
           <Menu.Target>
-            <a href={link.link} className={classes.link}>
+            <div className={classes.link}>
               <Center>
                 <Text className={classes.linkLabel}>{link.label}</Text>
                 <IconChevronDown size="0.9rem" stroke={1.5} />
               </Center>
-            </a>
+            </div>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
       )
     }
 
-    return (
-      <a key={link.label} href={link.link} className={classes.link}>
-        {link.label}
-      </a>
-    )
+    return link.link ?
+        <a key={link.label} href={link.link} className={classes.link}>
+          {link.label}
+        </a>
+      : <span key={link.label} className={classes.link}>
+          {link.label}
+        </span>
   })
-
+  const mobilelinks = links.map((item) => (
+    <LinksGroup {...item} key={item.label} />
+  ))
   return (
     <header className={classes.header}>
       <Container size="75rem">
@@ -103,6 +106,18 @@ export function NavBar() {
           <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
         </div>
       </Container>
+      <Drawer
+        opened={opened}
+        onClose={close}
+        size="100%"
+        padding="md"
+        hiddenFrom="sm"
+        position={'right'}
+      >
+        <ScrollArea>
+          <Group className={classes.mobile}>{mobilelinks}</Group>
+        </ScrollArea>
+      </Drawer>
     </header>
   )
 }
