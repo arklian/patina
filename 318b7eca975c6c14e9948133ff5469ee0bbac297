@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b2122f4_49bf7861",
+        "filename": "js/src/patina/login/Login.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-01T20:50:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32113e7f_2b3bee71",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6837e438_56bcc271",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3624eae_92cf2b7e",
+        "filename": "js/src/patina/login/Login.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-01T20:50:09Z",
+      "side": 1,
+      "message": "Will look into it later",
+      "parentUuid": "6837e438_56bcc271",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 68
+      },
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "56201486_ba9d2b20",
@@ -54,6 +96,30 @@
       "writtenOn": "2024-08-01T18:53:04Z",
       "side": 1,
       "message": "the body of the post request should likely be JSON as well.",
+      "range": {
+        "startLine": 18,
+        "startChar": 51,
+        "endLine": 18,
+        "endChar": 61
+      },
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87c3e008_5c33646a",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-01T20:50:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "56201486_ba9d2b20",
       "range": {
         "startLine": 18,
         "startChar": 51,
@@ -94,6 +160,42 @@
       "writtenOn": "2024-08-01T18:58:40Z",
       "side": 1,
       "message": "Does the cookie automatically get added to the browser\u0027s storage when it\u0027s sent in a request? I don\u0027t think I see you saving the cookie explicitly",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49d249ad_257bcbd6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-01T20:50:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e678053_97cbab6c",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1217d90_664e40b4",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-01T20:50:09Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3df2ede9_ba6cfdf0",
       "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
