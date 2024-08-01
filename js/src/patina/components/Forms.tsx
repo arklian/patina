@@ -1,9 +1,18 @@
 import { useMediaQuery } from '@mantine/hooks'
-import { Flex, Text, Title, Grid, Button, TextInput } from '@mantine/core'
+import {
+  Flex,
+  Text,
+  Title,
+  Grid,
+  Button,
+  TextInput,
+  Textarea,
+} from '@mantine/core'
+import { useForm } from '@mantine/form'
 import React from 'react'
 import styles from './Forms.module.css'
 
-const submission_values = {
+const submissionValues = {
   url: 'https://docs.google.com/forms/d/e/1FAIpQLSfpmW9aw6PuFESSN6ZW4SzX8sp9h6yHR08XfR06hzy3FUR29A/formResponse',
   nameLink: 'entry.510878894',
   emailLink: 'entry.1931913170',
@@ -16,11 +25,30 @@ export function Forms() {
 
   const handleSubmit = (event: React.FormEvent<EventTarget>) => {
     event.preventDefault()
+    form.resetTouched()
     alert('You have just sent a message')
   }
+
+  const form = useForm({
+    mode: 'uncontrolled',
+    validateInputOnChange: true,
+    initialValues: { name: '', email: '', subject: '', message: '' },
+
+    // functions will be used to validate values at corresponding key
+    validate: {
+      name: (value) =>
+        value.length < 2 ? 'Name must have at least 2 letters' : null,
+      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      subject: (value) =>
+        value.length < 3 ? 'Subject must have at least 3 letters' : null,
+      message: (value) =>
+        value.length < 10 ? 'Message must have at least 10 letters' : null,
+    },
+  })
+
   return (
     <form
-      action={submission_values.url}
+      action={submissionValues.url}
       method="post"
       onSubmit={handleSubmit}
       className={styles.form}
@@ -39,24 +67,42 @@ export function Forms() {
             <Flex direction={'row'} className={styles.nameemail}>
               <Flex direction={'column'} rowGap="xs">
                 <label>{'Name'}</label>
-                <TextInput type="text" name={submission_values.nameLink} />
+                <TextInput
+                  {...form.getInputProps('name')}
+                  type="text"
+                  name={submissionValues.nameLink}
+                />
               </Flex>
               <Flex direction={'column'} rowGap="xs">
                 <label>{'Email'}</label>
-                <TextInput type="text" name={submission_values.emailLink} />
+                <TextInput
+                  {...form.getInputProps('email')}
+                  type="text"
+                  name={submissionValues.emailLink}
+                />
               </Flex>
             </Flex>
             <Flex direction={'column'} rowGap="xs">
               <label>{'Subject'}</label>
-              <TextInput type="text" name={submission_values.subjectLink} />
+              <TextInput
+                {...form.getInputProps('subject')}
+                type="text"
+                name={submissionValues.subjectLink}
+              />
             </Flex>
             <Flex direction={'column'} rowGap="xs">
               <label>{'Message'}</label>
-              <textarea name={submission_values.messageLink} rows={3} />
+              <Textarea
+                {...form.getInputProps('message')}
+                name={submissionValues.messageLink}
+                rows={4}
+              />
             </Flex>
-            <Button type="submit" className={styles.button}>
-              {'Send'}
-            </Button>
+            {form.isValid() ?
+              <Button type="submit" className={styles.button}>
+                {'Send'}
+              </Button>
+            : <Button disabled> {'Send'} </Button>}
           </Flex>
         </Grid.Col>
       </Grid>
