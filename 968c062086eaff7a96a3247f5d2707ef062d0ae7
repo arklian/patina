@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8dd5b6f6_86197d16",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T17:53:11Z",
+      "side": 1,
+      "message": "fixed in later commit",
+      "parentUuid": "9d685d26_26fa5bdf",
+      "revId": "968c062086eaff7a96a3247f5d2707ef062d0ae7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "83123951_eebbdace",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a368c712_a9a81a48",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T17:53:11Z",
+      "side": 1,
+      "message": "oky",
+      "parentUuid": "83123951_eebbdace",
+      "revId": "968c062086eaff7a96a3247f5d2707ef062d0ae7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f7d6b9a_5b50418d",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-08-01T17:47:22Z",
       "side": 1,
       "message": "Textarea component?",
+      "revId": "968c062086eaff7a96a3247f5d2707ef062d0ae7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f89028ab_d2e9d71e",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-01T17:53:11Z",
+      "side": 1,
+      "message": "fixed in later commit",
+      "parentUuid": "6f7d6b9a_5b50418d",
       "revId": "968c062086eaff7a96a3247f5d2707ef062d0ae7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
