@@ -14,7 +14,7 @@ export function About() {
         }
       </Text>
       <Button className={styles.moreButton} variant={'white'} c={'black'}>
-        <Text size="lg" fw={600}>
+        <Text size="xl" fw={600}>
           {'More about us'}
         </Text>
       </Button>
