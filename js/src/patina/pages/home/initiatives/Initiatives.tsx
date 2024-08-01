@@ -19,14 +19,14 @@ const detailsMap: CardsProps[] = [
     details: 'Annual scholarship fund for under resourced students.',
     img: imageUrls.scholarshipHome.src,
     link: '/scholarship',
-    alt: 'Woman posing in graduation gown and holding a degree.',
+    alt: 'Woman posing in a graduation gown while holding a degree.',
     bottom: 'Learn more\u2192',
     underline: true,
   },
   {
     title: 'Community',
     details:
-      'Spaces to connect with community and learn about diverse cultures.',
+      'Spaces to connect with the community and to learn about diverse cultures.',
     img: imageUrls.communityHome.src,
     link: '/community',
     alt: 'Group of women sitting on chairs. They are talking to each other.',

@@ -10,7 +10,7 @@ const cardMap = [
     details:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     img: imageUrls.mentorshipField.src,
-    alt: 'Woman pointing to something on a whiteboard',
+    alt: 'Woman pointing to diagram on a whiteboard',
   },
   {
     title: 'Networking Skills',
@@ -24,9 +24,10 @@ const cardMap = [
     details:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     img: imageUrls.mentorshipInterview.src,
-    alt: 'A woman writing down notes',
+    alt: 'A woman writing notes',
   },
 ]
+
 /**
  * Gain component for the Patina Network Mentorship program.
  * Displays a title, and 3 Cards Component displaying what you will gain after

@@ -10,7 +10,7 @@ export function About() {
       </Text>
       <Text className={styles.aboutText}>
         {
-          'Wherever you are on your career and allyship journey, we’re here to boldly celebrate what makes you unique—your patina.'
+          'Wherever you are on your career and allyship journey, we’re here to boldly celebrate what makes you unique — your patina.'
         }
       </Text>
       <div className={styles.moreButton}>

@@ -20,7 +20,7 @@ const applyStack = [
         {'Please answer these two questions (500 words each max).'}
         <Space h="md" />
         {
-          'How did your AANHPI heritage or ancestry affected your personal, educational, and professional journey?'
+          'How did your AANHPI heritage or ancestry affect your personal, educational, and professional journey?'
         }
         <Space h="md" />
         {'How do you plan to use this scholarship?'}
@@ -30,12 +30,12 @@ const applyStack = [
   {
     title: 'Letter of Recommendation',
     description:
-      'Please select a recommender who knows you from an educational or professional manner. They cannot be family members or distant relatives.',
+      'Please select a recommender who knows you in an educational or professional manner. They should not be family members nor distant relatives.',
   },
   {
     title: 'Extracurriculars',
     description:
-      'Describe your extracurriculars and any leadership roles you may have held or demonstration of commitment. (words: 100 max)',
+      'Describe your commitment to your extracurriculars and any leadership roles you may have held. (100 words max)',
   },
 ]
 
