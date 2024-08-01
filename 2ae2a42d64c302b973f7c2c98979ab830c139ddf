@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6954f8e6_d3a4db8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T19:57:09Z",
+      "side": 1,
+      "message": "You can rebase this onto main so that it can be shipped itself",
+      "revId": "2ae2a42d64c302b973f7c2c98979ab830c139ddf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
