@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "968b150a_4c024b64",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T19:07:16Z",
+      "side": 1,
+      "message": "post_id should just be id",
+      "range": {
+        "startLine": 3,
+        "startChar": 4,
+        "endLine": 3,
+        "endChar": 11
+      },
+      "revId": "0aaf0737d2af3be8131cd23a897670f011d88514",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76149aae_95167ad5",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 7
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T19:07:16Z",
+      "side": 1,
+      "message": "this is not an id. it should just be author",
+      "revId": "0aaf0737d2af3be8131cd23a897670f011d88514",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
