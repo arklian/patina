@@ -5,7 +5,7 @@ import { Criteria } from '@/patina/pages/scholarship/criteria/Criteria.tsx'
 import { ApplicationProcess } from '@/patina/pages/scholarship/applicationprocess/ApplicationProcess.tsx'
 import { AboutScholarship } from '@/patina/pages/scholarship/about/AboutScholarship.tsx'
 import { Application } from '@/patina/pages/scholarship/application/Application.tsx'
-import { DonorSection } from '@/patina/pages/scholarship/donors/Donors.page.tsx'
+// import { DonorSection } from '@/patina/pages/scholarship/donors/Donors.page.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Scholarship.module.css'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
@@ -60,7 +60,7 @@ export function ScholarshipPage() {
       <div className={styles.emailSection}>
         <Forms />
       </div>
-      <DonorSection />
+      {/*<DonorSection />*/}
     </ContentPage>
   )
 }

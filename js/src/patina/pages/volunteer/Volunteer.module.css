@@ -50,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding-bottom: rem(32px);
 }
 
 .backgroundBlur {
