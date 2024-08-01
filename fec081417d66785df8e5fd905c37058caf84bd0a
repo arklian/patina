@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c460087e_f8c1c476",
+        "filename": "js/src/personal/martin/Martin.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T20:24:51Z",
+      "side": 1,
+      "message": "Doesn\u0027t this need a qualifier with it? What does it do by itself?",
+      "revId": "fec081417d66785df8e5fd905c37058caf84bd0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
