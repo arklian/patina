@@ -21,7 +21,12 @@ export function Hero() {
             'interested in guidance with their workplace readiness.'}
         </Text>
         <Group justify={'left'} pt={'md'}>
-          <Button variant="filled" color="white" size={'md'} autoContrast>
+          <Button
+            variant={'filled'}
+            color={'rgba(255, 255, 255, 1)'}
+            size={'md'}
+            autoContrast
+          >
             {'Apply Now'}
           </Button>
         </Group>
