@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32113e7f_2b3bee71",
+        "filename": "js/src/patina/login/Login.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T18:53:04Z",
+      "side": 1,
+      "message": "You should use json for this.\nCan use JSON.stringify()\n\nhttps://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#setting_a_body",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56201486_ba9d2b20",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T18:53:04Z",
+      "side": 1,
+      "message": "the body of the post request should likely be JSON as well.",
+      "range": {
+        "startLine": 18,
+        "startChar": 51,
+        "endLine": 18,
+        "endChar": 61
+      },
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e678053_97cbab6c",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T18:53:04Z",
+      "side": 1,
+      "message": "make this a bit longer lol",
+      "revId": "318b7eca975c6c14e9948133ff5469ee0bbac297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
