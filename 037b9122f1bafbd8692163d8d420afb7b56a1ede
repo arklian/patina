@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "377c3957_d020d58d",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T17:53:55Z",
+      "side": 1,
+      "message": "Can you add a comment to add TODO: Make a modal/toast for this",
+      "revId": "037b9122f1bafbd8692163d8d420afb7b56a1ede",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a9e96cc_f922d70a",
+        "filename": "js/src/patina/components/Forms.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T17:53:55Z",
+      "side": 1,
+      "message": "You really don\u0027t want to do this yourself. Would be good to use a library for it.",
+      "revId": "037b9122f1bafbd8692163d8d420afb7b56a1ede",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
