@@ -53,6 +53,9 @@ importers:
       '@tiptap/starter-kit':
         specifier: ^2.5.6
         version: 2.5.6(@tiptap/pm@2.5.6)
+      email-validator:
+        specifier: ^2.0.4
+        version: 2.0.4
       embla-carousel-react:
         specifier: ^7.1.0
         version: 7.1.0(react@18.3.1)
@@ -1366,6 +1369,10 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  email-validator@2.0.4:
+    resolution: {integrity: sha512-gYCwo7kh5S3IDyZPLZf6hSS0MnZT8QmJFqYvbqlDZSbwdZlY6QZWxJ4i/6UhITOJ4XzyI647Bm2MXKCLqnJ4nQ==}
+    engines: {node: '>4.0'}
 
   embla-carousel-react@7.1.0:
     resolution: {integrity: sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==}
@@ -4367,6 +4374,8 @@ snapshots:
   dom-accessibility-api@0.6.3: {}
 
   eastasianwidth@0.2.0: {}
+
+  email-validator@2.0.4: {}
 
   embla-carousel-react@7.1.0(react@18.3.1):
     dependencies:
