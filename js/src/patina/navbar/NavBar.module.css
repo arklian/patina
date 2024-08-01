@@ -42,3 +42,8 @@
   text-decoration: none;
   color: inherit;
 }
+
+.mobile {
+  flex-direction: column;
+  align-items: flex-start;
+}
