@@ -1,17 +1,17 @@
 .itemsMain {
   display: flex;
   flex-direction: column;
-  row-gap: rem(25px);
+  row-gap: 25px;
 }
 
 .itemContainer {
-  border: rem(1px) solid var(--mantine-color-dark-4);
-  border-radius: rem(5px);
+  border: 1px solid var(--mantine-color-dark-4);
+  border-radius: 5px;
   background: var(--mantine-color-patina-dark-6);
-  min-height: rem(75px);
+  min-height: 75px;
 
   @media (max-width: $mantine-breakpoint-md) {
-    min-height: 10rem;
+    min-height: 160px;
   }
 }
 
@@ -27,20 +27,20 @@
 
 .title {
   justify-self: center;
-  max-width: rem(260px);
+  max-width: 260px;
   font-size: large;
   font-style: normal;
   font-weight: 600;
-  padding: rem(20px) rem(40px) rem(20px) rem(50px);
+  padding: 20px 40px 20px 50px;
 }
 
 .description {
   justify-self: center;
   align-content: center;
-  max-width: rem(400px);
+  max-width: 400px;
   white-space: normal;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 16px;
   font-style: normal;
-  padding: rem(20px) rem(40px);
+  padding: 20px 40px;
 }

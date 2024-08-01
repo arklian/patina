@@ -1,13 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: rem(48px);
-  min-width: rem(450px);
-  border: rem(1px) solid var(--mantine-color-patina-dark-3);
-  border-radius: rem(5px);
+  padding: 48px;
+  min-width: 450px;
+  border: 1px solid var(--mantine-color-patina-dark-3);
+  border-radius: 5px;
   background: var(--mantine-color-patina-dark-6);
 
   @media (max-width: $mantine-breakpoint-md) {
-    min-height: 10rem;
+    min-height: 160;
   }
 }

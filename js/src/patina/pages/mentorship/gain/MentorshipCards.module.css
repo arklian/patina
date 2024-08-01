@@ -5,7 +5,7 @@
 }
 
 .image {
-  margin: rem(17px) rem(20px);
+  margin: 17px 20px;
 }
 
 .card {
@@ -13,10 +13,10 @@
 }
 
 .description {
-  font-size: rem(16px);
-  line-height: rem(24.8px);
-  margin-bottom: rem(20px);
-  margin-left: rem(20px);
-  margin-right: rem(20px);
+  font-size: 16px;
+  line-height: 24.8px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
 }
