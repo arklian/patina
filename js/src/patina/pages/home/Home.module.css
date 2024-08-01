@@ -24,7 +24,7 @@
   }
 }
 
-.hero_title {
+.heroTitle {
   text-shadow: rem(1px) rem(2px) rem(6px) #989898;
   color: white;
   font-size: rem(60px);
@@ -37,7 +37,7 @@
   }
 }
 
-.title_teal {
+.titleTeal {
   color: var(--mantine-color-patina-green-light);
 }
 

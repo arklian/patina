@@ -1,4 +1,4 @@
-.hero_container {
+.heroContainer {
   @media (max-width: rem(996px)) {
     margin: rem(16px);
   }

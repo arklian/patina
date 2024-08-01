@@ -1,4 +1,4 @@
-.donor_container {
+.donorContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -11,7 +11,7 @@
   }
 }
 
-.donor_images {
+.donorImages {
   background-color: red;
   height: rem(150px);
   width: 35%;
@@ -22,7 +22,7 @@
   }
 }
 
-.donor_title {
+.donorTitle {
   color: white;
   font-weight: bold;
   font-size: rem(25px);
@@ -35,7 +35,7 @@
   }
 }
 
-.donor_text {
+.donorText {
   font-weight: normal;
   font-size: rem(20px);
   padding-top: rem(50px);
