@@ -1,7 +1,15 @@
 .card {
   display: flex;
   color: white;
-  padding: 24px 0 0;
+  margin-top: 24px;
+  transition: 0.5s;
+  border-radius: 8px;
+  height: 224px;
+}
+
+.card:hover {
+  translate: 0 -15px;
+  box-shadow: var(--mantine-color-patina-green-dark) 0 0 10px 3px;
 }
 
 .border {
@@ -21,6 +29,7 @@
   padding: 24px;
   max-width: 400px;
   background: var(--mantine-color-patina-dark-6);
+  border-radius: 8px;
 }
 
 .image {
