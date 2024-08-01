@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e2bf573_858e92bb",
+        "filename": "js/src/patina/pages/volunteer/Volunteer.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-01T21:10:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d6e68ff_372bf4bc",
+      "revId": "4c83ab91cf0260666206d56a52c8afa87bd6d186",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "70217dd3_16fbf0a2",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-01T18:49:05Z",
       "side": 1,
       "message": "Will this conflict with Mali\u0027s changes? Check with her.",
+      "revId": "4c83ab91cf0260666206d56a52c8afa87bd6d186",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b592dd7f_dfb77b94",
+        "filename": "js/src/patina/pages/volunteer/Volunteer.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-01T21:10:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "70217dd3_16fbf0a2",
       "revId": "4c83ab91cf0260666206d56a52c8afa87bd6d186",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
