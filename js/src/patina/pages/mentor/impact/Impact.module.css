@@ -41,10 +41,10 @@
 }
 
 .control {
-  margin-right: rem(-70px);
-  margin-left: rem(-70px);
+  margin-right: -70px;
+  margin-left: -70px;
 
-  @media (max-width: rem(996px)) {
+  @media (max-width: 996px) {
     height: 0;
   }
 }

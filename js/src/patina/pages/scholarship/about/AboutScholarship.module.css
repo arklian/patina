@@ -1,9 +1,9 @@
 .about {
   display: flex;
-  max-width: rem(447px);
+  max-width: 447px;
 
-  @media (max-width: rem(1300px)) {
-    max-width: rem(1000px);
+  @media (max-width: 1300px) {
+    max-width: 1000px;
   }
 }
 
@@ -11,16 +11,16 @@
   display: flex;
   flex-direction: column;
   color: white;
-  row-gap: rem(20px);
+  row-gap: 20px;
 }
 
 .title {
-  font-size: rem(26px);
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
 }
 
 .body {
-  font-size: rem(18px);
+  font-size: 18px;
   font-weight: 400;
 }

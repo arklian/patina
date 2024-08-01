@@ -1,26 +1,26 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-left: rem(48px);
-  padding-right: rem(48px);
-  padding-top: rem(64px);
-  border-radius: rem(5px);
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 64px;
+  border-radius: 5px;
 }
 
 .title {
   justify-content: center;
   display: flex;
-  margin-bottom: rem(50px);
+  margin-bottom: 50px;
   color: white;
-  font-size: rem(26px);
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
 }
 
 .appButton {
-  margin-top: rem(50px);
-  height: rem(43px);
-  width: rem(150px);
+  margin-top: 50px;
+  height: 43px;
+  width: 150px;
 }
 
 .appButtonText {

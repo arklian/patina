@@ -16,20 +16,20 @@
 
 .title {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(70px);
-  letter-spacing: rem(-2px);
+  font-size: 70px;
+  letter-spacing: -2px;
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: 50px;
   }
 }
 
 .description {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(22px);
+  font-size: 22px;
 
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(15px);
+    font-size: 15px;
   }
 }
 
@@ -50,7 +50,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-bottom: rem(32px);
+  padding-bottom: 32px;
 }
 
 .backgroundBlur {
@@ -74,7 +74,7 @@
 
 .emailText {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(28px);
+  font-size: 28px;
   text-align: center;
   padding-bottom: 52px;
   padding-top: 81px;

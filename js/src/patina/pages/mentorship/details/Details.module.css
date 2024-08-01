@@ -1,27 +1,27 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: rem(48px);
-  padding: rem(78px) rem(40px);
+  margin: 48px;
+  padding: 78px 40px;
   background: var(--mantine-color-patina-dark-6);
 }
 
 .title {
   display: flex;
   align-self: stretch;
-  padding-bottom: rem(66px);
+  padding-bottom: 66px;
   color: white;
-  font-size: rem(26px);
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
 }
 
 .about {
   display: flex;
-  font-size: rem(20px);
-  font-weight: rem(400px);
+  font-size: 20px;
+  font-weight: 400;
   color: white;
-  padding-bottom: rem(64px);
+  padding-bottom: 64px;
 }
 
 .list {
@@ -43,7 +43,7 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
-  padding-bottom: rem(25px);
+  padding-bottom: 25px;
 }
 
 .colored {

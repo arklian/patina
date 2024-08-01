@@ -10,37 +10,37 @@
   align-items: center;
   height: auto;
   background-color: #25262b;
-  padding: rem(75px) rem(50px);
+  padding: 75px 50px;
   background-image: radial-gradient(#196149 0%, #25262b 75%);
-  background-size: rem(50%);
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: rem(100%);
+  background-position: 100%;
 
-  @media (max-width: rem(750px)) {
+  @media (max-width: 750px) {
     flex-direction: column;
     background-image: radial-gradient(#196149 0%, #25262b 70%);
-    background-size: rem(500px) rem(400px);
+    background-size: 500px 400px;
     background-repeat: no-repeat;
     background-position: bottom;
   }
 }
 
 .selection {
-  width: rem(550px);
+  width: 550px;
 
-  @media (max-width: rem(996px)) {
+  @media (max-width: 996px) {
     width: auto;
   }
 }
 
 .selection_title {
   color: white;
-  font-size: rem(22px);
+  font-size: 22px;
 }
 
 .checklist {
-  padding-top: rem(45px);
-  font-size: rem(18px);
+  padding-top: 45px;
+  font-size: 18px;
   color: white;
 }
 
@@ -51,7 +51,7 @@
   height: auto;
   padding-left: 3%;
   /* colors needed to make gradient, non-standard Patina colors */
-  @media (max-width: rem(996px)) {
+  @media (max-width: 996px) {
     width: auto;
   }
 }
@@ -59,21 +59,21 @@
 .quote_text {
   align-items: center;
   text-align: left;
-  font-size: rem(35px);
+  font-size: 35px;
   color: white;
-  padding: rem(45px);
+  padding: 45px;
 
-  @media (max-width: rem(996px)) {
-    font-size: rem(30px);
+  @media (max-width: 996px) {
+    font-size: 30px;
     text-align: center;
-    margin-top: rem(45px);
-    padding: rem(15px);
+    margin-top: 45px;
+    padding: 15px;
   }
 
-  @media (max-width: rem(600px)) {
-    font-size: rem(26px);
+  @media (max-width: 600px) {
+    font-size: 26px;
     text-align: center;
-    margin-top: rem(45px);
-    padding: rem(15px);
+    margin-top: 45px;
+    padding: 15px;
   }
 }

@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: rem(64px) 0;
+  padding: 64px 0;
 }
 
 .sectionHeader {
   align-self: stretch;
   color: var(--mantine-color-white, #fff);
   text-align: center;
-  font-size: rem(40px);
+  font-size: 40px;
 
-  @media (max-width: rem(996px)) {
-    font-size: rem(30px);
+  @media (max-width: 996px) {
+    font-size: 30px;
   }
 }
 
@@ -24,11 +24,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: rem(40px);
+  gap: 40px;
   width: 100%;
   padding: 24px 0;
 
-  @media (max-width: rem(996px)) {
+  @media (max-width: 996px) {
     flex-direction: column;
   }
 }
