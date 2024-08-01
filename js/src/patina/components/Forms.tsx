@@ -10,6 +10,7 @@ import {
 } from '@mantine/core'
 import { useForm } from '@mantine/form'
 import React from 'react'
+import * as EmailValidator from 'email-validator'
 import styles from './Forms.module.css'
 
 const submissionValues = {
@@ -21,11 +22,13 @@ const submissionValues = {
 }
 
 export function Forms() {
-  const largeScreen = useMediaQuery('(min-width: 60rem)')
+  const largeScreen = useMediaQuery('(min-width: 60em)')
 
   const handleSubmit = (event: React.FormEvent<EventTarget>) => {
+    // this is to prevent a direct linking to the Google forms (otherwise would direct to the /formResponse url)
     event.preventDefault()
     form.resetTouched()
+    // make a modal/toast for this
     alert('You have just sent a message')
   }
 
@@ -38,7 +41,8 @@ export function Forms() {
     validate: {
       name: (value) =>
         value.length < 2 ? 'Name must have at least 2 letters' : null,
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      email: (value) =>
+        EmailValidator.validate(value) ? null : 'Invalid email',
       subject: (value) =>
         value.length < 3 ? 'Subject must have at least 3 letters' : null,
       message: (value) =>
