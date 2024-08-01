@@ -1,0 +1,13 @@
+.page {
+  max-width: 1200px;
+  padding-inline: 48px;
+  margin-inline: auto;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    padding-inline: 48px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-inline: 36px;
+  }
+}
