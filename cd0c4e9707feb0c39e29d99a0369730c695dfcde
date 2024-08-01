@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf889c45_3045a6ab",
+        "filename": "js/src/patina/components/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-01T20:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad60ab08_1cf6a34a",
+      "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aa65c332_e268492e",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-01T20:23:42Z",
       "side": 1,
       "message": "597 seems so specific, where\u0027d it come from?\nShould it be a flat 600?\n\nAlso should we fix the aspect ratio? How does this interact with the aspect ratio and size of the source image",
+      "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c584d4b_b2b3b939",
+        "filename": "js/src/patina/components/Hero.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-01T20:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aa65c332_e268492e",
       "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -58,6 +94,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0112b695_b7219f87",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-01T20:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37ac5b11_57847f29",
+      "range": {
+        "startLine": 16,
+        "startChar": 41,
+        "endLine": 16,
+        "endChar": 50
+      },
+      "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5f2b9b09_eff0b90a",
@@ -71,6 +131,30 @@
       "writtenOn": "2024-08-01T20:23:42Z",
       "side": 1,
       "message": "Add a TODO in this comment here, so we can find it perhaps",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 51
+      },
+      "revId": "cd0c4e9707feb0c39e29d99a0369730c695dfcde",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc4f71ec_af7b2497",
+        "filename": "js/src/patina/pages/mentorship/Mentorship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-01T20:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f2b9b09_eff0b90a",
       "range": {
         "startLine": 26,
         "startChar": 0,
