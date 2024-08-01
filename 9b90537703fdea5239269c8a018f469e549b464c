@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc97a92d_d70002af",
+        "filename": "js/src/patina/pages/mentor/banner/banner.module.css",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-01T17:59:48Z",
+      "side": 1,
+      "message": "We can change this to using a background image like the current home page splash",
+      "revId": "9b90537703fdea5239269c8a018f469e549b464c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
