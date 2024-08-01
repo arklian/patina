@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class LoginController {
 
-    @PostMapping(value = "/api/login", consumes = "text/plain")
+    @PostMapping(value = "/api/login", consumes = "application/json")
     public String login(@RequestBody String input, HttpServletResponse response) {
-        if (input.equals("asoifj4y04h02h0hwas0fha0shxzASFHsaflhsaflk")) {
-            Cookie cookie = new Cookie("auth", "o3hto2dsgidshg");
+        if (input.equals("\"asoifj4y04h02h0hwas0fha0shxzASFHsaflhsaflk\"")) {
+            Cookie cookie = new Cookie("auth", "o3hto2dsgidshgid30285y038hs0fisasflszf");
             response.addCookie(cookie);
             return "Login success";
         }
