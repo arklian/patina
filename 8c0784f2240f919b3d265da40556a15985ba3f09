@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "682ad631_456ad273",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-02T20:34:50Z",
+      "side": 1,
+      "message": "Nice",
+      "revId": "8c0784f2240f919b3d265da40556a15985ba3f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3190902c_c85d96ed",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-02T20:34:50Z",
+      "side": 1,
+      "message": "Good idea to put them all in here!",
+      "revId": "8c0784f2240f919b3d265da40556a15985ba3f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "42bc0356_7a099590",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-02T20:34:50Z",
+      "side": 1,
+      "message": "https://stackoverflow.com/questions/42292514/adding-aria-hidden-true-for-all-images\n\nPotentially for most of these images, it would actually be better to just not have alt text explicitly, since the images don\u0027t really add to the understanding of the page and are purely decorative.\n\nOne way of doing that is like setting aria-hidden\u003dtrue to the images, and another way could be explicitly setting alt to be the empty string perhaps.\n\nNot the biggest deal regardless, but giving you context.",
+      "revId": "8c0784f2240f919b3d265da40556a15985ba3f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
