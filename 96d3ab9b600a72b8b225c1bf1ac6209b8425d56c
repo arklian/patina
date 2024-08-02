@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac18efe5_d252fa3e",
+        "filename": "js/src/personal/riyuan/components/project/ProjectData.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T16:35:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3fe90941_97760708",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "199218e8_b7f8118c",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-30T17:49:00Z",
       "side": 1,
       "message": "nit: remove unnecessary comments",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e44c2c4_00bafcb3",
+        "filename": "js/src/personal/riyuan/components/project/Projects.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T16:35:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "199218e8_b7f8118c",
       "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8ca6ee6_245190ca",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T16:35:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "76c1796f_d68fb601",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7c83fa00_75e58386",
@@ -69,6 +123,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a74d4a02_d83d5882",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T16:35:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c83fa00_75e58386",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "772cc0a9_a7b11818",
@@ -82,6 +154,24 @@
       "writtenOn": "2024-07-30T17:49:00Z",
       "side": 1,
       "message": "nit: `isLargeScreen`",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42f62c21_fb9cbd62",
+        "filename": "js/src/personal/riyuan/components/project/projectItem.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T16:35:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "772cc0a9_a7b11818",
       "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
