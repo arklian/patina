@@ -9,6 +9,8 @@ import org.patinanetwork.patinawebsite.events.protos.ListEventResp;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,5 +44,13 @@ public class EventsController {
         List<Event> events = eventsRepo.listEvents();
         ListEventResp resp = ListEventResp.newBuilder().addAllEvents(events).build();
         return jsonPrinter.print(resp);
+    }
+
+    @PostMapping(value = "/api/events/add", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public String addEvent(@RequestBody String JsonEvent) {
+        Event.Builder eventBuilder = Event.newBuilder();
+        Event event = jsonParser.parse(JsonEvent, eventBuilder);
+        eventsRepo.addEvent(event);
+        return jsonPrinter.print(event);
     }
 }

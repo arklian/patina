@@ -5,6 +5,7 @@ import org.patinanetwork.patinawebsite.events.protos.Event;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -85,5 +86,19 @@ public class PsqlEventsRepo implements EventsRepo {
                 .setLocation(location)
                 .setDate(stringDate)
                 .build();
+    }
+
+    public void addEvent(Event event) {
+        try {
+            PreparedStatement st = conn.prepareStatement("INSERT INTO public.event (name, message, location, date) VALUES (?, ?, ?, ?)");
+            st.setString(1, event.getName());
+            st.setString(2, event.getMessage());
+            st.setString(3, event.getLocation());
+            st.setDate(4, java.sql.Date.valueOf(event.getDate()));
+            st.executeUpdate();
+            st.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
