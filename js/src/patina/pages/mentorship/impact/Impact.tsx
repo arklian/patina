@@ -9,7 +9,7 @@ const detailsMap: CardsProps[] = [
     details: ' “Quote Lorem ipsum dolor sit amet, consectetur adipiscing” ',
     img: imageUrls.placeholder.src,
     bottom: 'Job Placement Stat',
-    alt: 'Placeholder',
+    alt: imageUrls.placeholder.alt,
     underline: false,
   },
   {
@@ -17,7 +17,7 @@ const detailsMap: CardsProps[] = [
     details: ' “Quote Lorem ipsum dolor sit amet, consectetur adipiscing” ',
     img: imageUrls.placeholder.src,
     bottom: 'Job Placement Stat',
-    alt: 'Placeholder',
+    alt: imageUrls.placeholder.alt,
     underline: false,
   },
 ]

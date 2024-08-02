@@ -24,7 +24,7 @@ export function MentorPage() {
         details={message}
         button="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
         img={imageUrls.mentorApplyHero.src}
-        alt="Mentoring"
+        alt={imageUrls.mentorApplyHero.alt}
       />
       <About />
       <Impact />

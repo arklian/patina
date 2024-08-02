@@ -100,7 +100,10 @@ export function NavBar() {
         {/* 75rem == 1200px */}
         <div className={classes.inner}>
           <a href={'/'} className={classes.link}>
-            <Image src={imageUrls.patinaLogo.src} />
+            <Image
+              src={imageUrls.patinaLogo.src}
+              alt={imageUrls.patinaLogo.alt}
+            />
           </a>
           <Group gap={5} visibleFrom="sm">
             {items}
