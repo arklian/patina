@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "132f5eac_52d00f35",
+        "filename": "js/src/personal/riyuan/components/project/ProjectData.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-02T17:37:28Z",
+      "side": 1,
+      "message": "ts files should be camelCase as well, while tsx files should be PascalCase",
+      "parentUuid": "ac18efe5_d252fa3e",
+      "revId": "96d3ab9b600a72b8b225c1bf1ac6209b8425d56c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "199218e8_b7f8118c",
         "filename": "js/src/personal/riyuan/components/project/Projects.page.tsx",
         "patchSetId": 2
