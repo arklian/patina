@@ -1,5 +1,6 @@
 import { AppShell, Burger, useMantineTheme } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
+import { Outlet } from 'react-router-dom'
 
 export function AdminPage() {
   const theme = useMantineTheme()
@@ -34,7 +35,7 @@ export function AdminPage() {
       </AppShell.Navbar>
 
       <AppShell.Main>
-        <div>{'Welcome to the Admin Page'}</div>
+        <Outlet />
       </AppShell.Main>
     </AppShell>
   )
