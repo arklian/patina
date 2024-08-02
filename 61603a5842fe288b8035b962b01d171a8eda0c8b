@@ -16,6 +16,24 @@
       "message": "you can just use a number for px since they get converted to rems automatically",
       "revId": "61603a5842fe288b8035b962b01d171a8eda0c8b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f74dd28_41c13fce",
+        "filename": "js/src/personal/amanda/resume/ResumeSectionContent.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-02T05:05:46Z",
+      "side": 1,
+      "message": "inside of size at least",
+      "parentUuid": "9a9c10b7_86a34a98",
+      "revId": "61603a5842fe288b8035b962b01d171a8eda0c8b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
