@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.blogs.protos;
+
+option java_multiple_files = true;
+
+message CreateBlogReq {
+
+  string parent = 1;
+  // Name or title of the blog. This should be a short, descriptive string.
+  string author = 2;
+
+  // Title of the blog post. This can be a headline or main topic.
+  string title = 3;
+
+  // Detailed content of the blog post. This can be a longer body of text.
+  string content = 4;
+}
+
+message CreateBlogResp{
+  Blog blog = 1;
+}
+
+message Blog {
+  // Unique identifier for the blog. Typically an auto-incremented integer.
+  int32 id = 1;
+
+  // Name or title of the blog. This should be a short, descriptive string.
+  string author = 2;
+
+  // Title of the blog post. This can be a headline or main topic.
+  string title = 3;
+
+  // Date and time when the blog was created or published, in ISO yyyy-MM-dd'T'HH:mm:ss format.
+  string create_time = 4;
+
+  // Detailed content of the blog post. This can be a longer body of text.
+  string content = 5;
+}
