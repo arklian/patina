@@ -1,0 +1,48 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding-inline: 48px;
+  margin-inline: auto;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    padding-inline: 48px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-inline: 36px;
+  }
+}
+
+.latestPostsSection {
+  margin: rem(24px);
+}
+
+.allPostsSection {
+  margin: rem(24px);
+}
+
+.titleContainer {
+  font-size: rem(36px);
+  font-weight: bold;
+  padding-bottom: rem(16px);
+}
+
+.subtitleContainer {
+  font-size: rem(16px);
+  font-weight: bold;
+}
+
+.latestPostsCards {
+  display: flex;
+  flex-direction: row;
+  margin: rem(12px);
+  gap: rem(24px);
+}
+
+.allPostsCards {
+  display: flex;
+  flex-direction: column;
+  margin: rem(12px);
+  gap: rem(24px);
+}
