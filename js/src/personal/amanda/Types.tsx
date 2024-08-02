@@ -19,6 +19,7 @@ export type ResumeContent = {
   id: number
   title: string
   subtitle: string
+  link: string
   date: string
   info: string[]
 }

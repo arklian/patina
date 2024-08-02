@@ -55,9 +55,8 @@
 }
 
 .project:hover {
-  border: solid
-    light-dark(var(--mantine-color-black), var(--mantine-color-white));
   border-radius: rem(10px);
+  background-color: rgba(34, 139, 230, 0.15);
 }
 
 .container {
@@ -82,6 +81,7 @@
 .image {
   height: auto;
   width: rem(800px);
+  padding-bottom: rem(10px);
 
   @media (max-width: $mantine-breakpoint-sm) {
     width: rem(200px);

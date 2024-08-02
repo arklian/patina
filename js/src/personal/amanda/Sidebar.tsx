@@ -65,9 +65,9 @@ export function Sidebar({
           <Title size="5rem" className={styles.name}>
             {'Amanda Ruan'}
           </Title>
-          <Text size="1.5rem">{'Software Engineering Intern'}</Text>
+          <Text size="1.5rem">{'SWE Intern at Patina Network'}</Text>
           <Text size="1.5rem" mt="1rem">
-            {'CS Student @ RPI'}
+            {'CS Major at RPI'}
           </Text>
         </Container>
         <Contact />

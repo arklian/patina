@@ -25,7 +25,7 @@ export function ProjectContent({ project }: { project: Project }) {
             <Title size="2rem" mb="0.5rem" className={styles.subtitle}>
               {project.title}
             </Title>
-            <Text size="1.5rem" mb="1rem" lh="xs" className={styles.text}>
+            <Text size="1.25rem" mb="1rem" lh="xs" className={styles.text}>
               {project.description}
             </Text>
             <Group gap="xs">

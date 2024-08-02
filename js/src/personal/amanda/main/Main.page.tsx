@@ -29,7 +29,7 @@ export function MainPage() {
           <Title size="3rem" mb="0.5rem" className={styles.title}>
             {'recent activity'}
           </Title>
-          <Text size="1.5rem" lh="xs" className={styles.text}>
+          <Text size="1.25rem" lh="xs" className={styles.text}>
             {'I visited Google for the first time!'}
           </Text>
           <Spoiler maxHeight={300} showLabel="Show more" hideLabel="Hide">

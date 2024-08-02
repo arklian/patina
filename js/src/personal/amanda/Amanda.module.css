@@ -30,7 +30,7 @@
 
 .sidebar[data-status='true'] {
   @media (max-width: $mantine-breakpoint-sm) {
-    width: rem(400px);
+    width: rem(300px);
   }
 }
 

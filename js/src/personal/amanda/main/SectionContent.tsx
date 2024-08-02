@@ -10,7 +10,7 @@ export function SectionContent({ section }: { section: Section }) {
         <Title size="3rem" mb="0.5rem" className={styles.title}>
           {section.title}
         </Title>
-        <Text size="1.5rem" lh="xs" className={styles.text}>
+        <Text size="1.25rem" lh="xs" className={styles.text}>
           {section.description}
         </Text>
         {section.subsections.map((project) => (
