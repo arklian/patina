@@ -29,7 +29,7 @@ export function MentorshipPage() {
         details={message}
         img={imageUrls.mentorshipHero.src}
         button="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
-        alt="A man and a woman sitting at a desk"
+        alt={imageUrls.mentorshipHero.alt}
       />
       <About />
       <Gain />

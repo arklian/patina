@@ -10,21 +10,21 @@ const cardMap = [
     details:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     img: imageUrls.mentorshipField.src,
-    alt: 'Woman pointing to diagram on a whiteboard',
+    alt: imageUrls.mentorshipField.alt,
   },
   {
     title: 'Networking Skills',
     details:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     img: imageUrls.mentorshipNetworking.src,
-    alt: 'Two people shaking hands',
+    alt: imageUrls.mentorshipNetworking.alt,
   },
   {
     title: 'Interview Prep',
     details:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
     img: imageUrls.mentorshipInterview.src,
-    alt: 'A woman writing notes',
+    alt: imageUrls.mentorshipInterview.alt,
   },
 ]
 
