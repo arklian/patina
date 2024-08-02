@@ -2,17 +2,17 @@ import { Container, TextInput, Textarea, Button, Stack } from '@mantine/core'
 import { useState } from 'react'
 
 export function BlogAdminPage() {
-  const [name, setName] = useState('')
+  const [author, setName] = useState('')
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault()
     // Handle form submission logic here
-    console.log('Name:', name)
+    console.log('Name:', author)
     console.log('Title:', title)
     console.log('Content:', content)
-    const formData = { name, title, content }
+    const formData = { author, title, content }
 
     try {
       // Make the fetch request
@@ -27,11 +27,16 @@ export function BlogAdminPage() {
       // Check if the response is successful
       if (response.ok) {
         const data = await response.json()
-        console.log('Success:', data)
-        // Handle the successful response here
+        if (data.status === 'Success') {
+          console.log('Success:', data)
+          // Handle the successful response here
+        } else {
+          console.error('Error:', data.message)
+          // Handle the error response here
+        }
       } else {
-        console.error('Error:', response.statusText)
-        // Handle the error response here
+        console.error('HTTP error:', response.statusText)
+        // Handle the HTTP error response here
       }
     } catch (error) {
       console.error('Fetch error:', error)
@@ -44,8 +49,8 @@ export function BlogAdminPage() {
       <form onSubmit={handleSubmit}>
         <Stack>
           <TextInput
-            label="Name"
-            value={name}
+            label="author"
+            value={author}
             onChange={(event) => setName(event.currentTarget.value)}
             required
           />
