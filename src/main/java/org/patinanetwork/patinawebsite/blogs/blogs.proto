@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.blogs.protos;
+
+option java_multiple_files = true;
+
+message Blog {
+  // Unique identifier for the blog. Typically an auto-incremented integer.
+  optional int32 id = 1;
+
+  // Name or title of the blog. This should be a short, descriptive string.
+  string author = 2;
+
+  // Title of the blog post. This can be a headline or main topic.
+  string title = 3;
+
+  // Date when the blog was created or published. Should be in ISO yyyy-mm-dd format.
+  string create_time = 4;
+
+  // Detailed content of the blog post. This can be a longer body of text.
+  string content = 5;
+}
