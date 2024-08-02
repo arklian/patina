@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1d38515_af187fb6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/login/LoginController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-02T17:24:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "90223df0_8fdfd351",
+      "revId": "97880a28ce8c16e0051ab3e75f7094ab1f5ca9fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d53639d2_86981411",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-01T22:15:08Z",
       "side": 1,
       "message": "Wait is this needed? You\u0027re using PATINA_ADMIN_PASSWORD above",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 21
+      },
+      "revId": "97880a28ce8c16e0051ab3e75f7094ab1f5ca9fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c042da3a_9f83eb7f",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-02T17:24:21Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "d53639d2_86981411",
       "range": {
         "startLine": 10,
         "startChar": 0,
