@@ -16,6 +16,24 @@
       "message": "It\u0027s still post_id and not id",
       "revId": "8eab7ea404f6e87c0a3a5b8e4e6e211e85832679",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1819462_bbd66514",
+        "filename": "db/migrations/patina/V0001_blog_table.sql",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-02T05:57:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce9d858c_7613c0dd",
+      "revId": "8eab7ea404f6e87c0a3a5b8e4e6e211e85832679",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
