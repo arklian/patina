@@ -63,10 +63,6 @@ tasks.named("generateProto") {
     group = "patina"
 }
 
-tasks.named("build") {
-    group = "patina"
-    dependsOn(":js:patina")
-}
 
 tasks.named<TaskReportTask>("tasks") {
     displayGroups = listOf("patina")
