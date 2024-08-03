@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d214d81c_997cd7f7",
+        "filename": "js/src/patina/pages/blog/Blog.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-03T19:12:14Z",
+      "side": 1,
+      "message": "we don\u0027t need rem anymore due to the autoRem in postcss config.",
+      "revId": "11a0cfd4c22627286409e329821fa2d571f1efaf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c30563b_65bd3e2b",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-03T19:12:14Z",
+      "side": 1,
+      "message": "Use ContentPage component",
+      "revId": "11a0cfd4c22627286409e329821fa2d571f1efaf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
