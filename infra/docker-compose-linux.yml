@@ -1,6 +1,6 @@
 services:
   app:
-    image: patina-test
+    image: registry.digitalocean.com/patina/patina-test
     platform: linux/amd64
     ports:
       - "8080:8080"
@@ -10,3 +10,5 @@ services:
       - DATABASE_DB
       - DATABASE_USER
       - DATABASE_PASSWORD
+      - PATINA_ADMIN_PASSWORD
+      - PATINA_ADMIN_COOKIE

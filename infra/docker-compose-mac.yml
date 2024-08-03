@@ -1,6 +1,6 @@
 services:
   app:
-    image: patina-test
+    image: registry.digitalocean.com/patina/patina-test
     ports:
       - "8080:8080"
     environment:
@@ -9,3 +9,5 @@ services:
       - DATABASE_DB
       - DATABASE_USER
       - DATABASE_PASSWORD
+      - PATINA_ADMIN_PASSWORD
+      - PATINA_ADMIN_COOKIE
