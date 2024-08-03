@@ -1,3 +1,4 @@
+import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 plugins {
     java
     id("org.springframework.boot") version "3.3.1"
@@ -49,6 +50,8 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }
@@ -62,6 +65,17 @@ tasks.named("generateProto") {
     group = "patina"
 }
 
+
+tasks.named<BootBuildImage>("bootBuildImage") {
+    imageName.set("registry.digitalocean.com/patina/patina-test")
+    publish.set(true)
+    docker {
+        publishRegistry {
+            username.set(System.getenv("PATINA_IMAGE_UPLOAD"))
+            password.set(System.getenv("PATINA_IMAGE_UPLOAD"))
+        }
+    }
+}
 
 tasks.named<TaskReportTask>("tasks") {
     displayGroups = listOf("patina")
