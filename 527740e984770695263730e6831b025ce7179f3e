@@ -41,6 +41,48 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "477bdd98_d4c113e6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6515e8b1_4f17c357",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 130
+      },
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "feb9d239_10fa6842",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e38aaaa9_b24022fd",
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "158537f1_64ff32ba",
@@ -54,6 +96,24 @@
       "writtenOn": "2024-08-03T19:25:20Z",
       "side": 1,
       "message": "If this is create_time, it should be yyyy-mm-dd\u0027T\u0027HH:mm:ss in UTC\n\nIf it\u0027s just the date, then it shouldn\u0027t be named create_time",
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27f0e558_bc6ea11a",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/blogs.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "158537f1_64ff32ba",
       "revId": "527740e984770695263730e6831b025ce7179f3e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -75,6 +135,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f603919_fce47942",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/blogs.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "739eac3a_fd571d31",
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6a096cc1_3ebdee71",
@@ -92,6 +170,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6424845_5941c5f4",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/PsqlBlogsRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6a096cc1_3ebdee71",
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b6edcbb9_5975cc97",
@@ -105,6 +201,24 @@
       "writtenOn": "2024-08-03T19:25:20Z",
       "side": 1,
       "message": "make sure that the timestamp here is in UTC timezone. All Timestamps stored in the DB should be in UTC.",
+      "revId": "527740e984770695263730e6831b025ce7179f3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad6e659d_b358dbd6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/PsqlBlogsRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-03T22:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6edcbb9_5975cc97",
       "revId": "527740e984770695263730e6831b025ce7179f3e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
