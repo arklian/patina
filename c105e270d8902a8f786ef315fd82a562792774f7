@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9cf3a12_4bcde141",
+        "filename": "js/src/personal/riyuan/components/project/Projects.module.css",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-03T19:16:25Z",
+      "side": 1,
+      "message": "BackgroundImage component is usually better than this.",
+      "revId": "c105e270d8902a8f786ef315fd82a562792774f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
