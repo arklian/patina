@@ -42,7 +42,6 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.google.protobuf:protobuf-java:4.27.2")
     implementation("com.google.protobuf:protobuf-java-util:4.27.2")
     runtimeOnly("org.postgresql:postgresql")
