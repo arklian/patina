@@ -1,3 +1,17 @@
+.themeButton {
+  justify-self: end;
+}
+
+.navFooter {
+  justify-self: end;
+  align-self: center;
+  padding: var(--mantine-spacing-sm);
+}
+
+.scPlayerWrapper {
+  padding-top: var(--mantine-spacing-md);
+}
+
 .scPlayer {
   font-size: 10px;
   color: #ccc;
@@ -6,14 +20,44 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: Interstate,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-family: Interstate, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
+    Garuda, Verdana, Tahoma, sans-serif;
   font-weight: 100;
+}
+
+.accordionLabel {
+  background-color: var(--mantine-color-cobalt-8);
+
+  &:hover {
+    background-color: var(--mantine-color-cobalt-9);
+    transition-duration: 0.5s;
+  }
+}
+
+.accordionContent {
+  background-color: var(--mantine-color-cobalt-6);
+  padding-top: var(--mantine-spacing-md);
+}
+
+.projCard {
+  padding: var(--mantine-spacing-xl);
+  background-color: var(--mantine-color-cobalt-9);
+
+  h2 {
+    color: var(--mantine-color-uranian_blue-9);
+  }
+
+  p {
+    color: var(--mantine-color-wht_smoke-7);
+  }
 }
 
 .projCarousel {
   max-width: 400px;
   align-self: center;
-  margin-top: 3em;
+  justify-items: flex-end;
+  padding-top: var(--mantine-spacing-xl);
+  margin-bottom: var(--mantine-spacing-sm);
 }
 
 .contactWrapper {
@@ -23,6 +67,6 @@
   padding: calc(var(--mantine-spacing-xl) * 2.5);
 
   @media {
-    padding: calc(var(--mantine-spacing-xl) * 1.5)
+    padding: calc(var(--mantine-spacing-xl) * 1.5);
   }
 }
