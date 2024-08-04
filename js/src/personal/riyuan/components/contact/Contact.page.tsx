@@ -1,5 +1,16 @@
-import { Text, Title, Container } from '@mantine/core'
-import styles from '@/personal/riyuan/Riyuan.module.css'
+import {
+  Paper,
+  Text,
+  TextInput,
+  Textarea,
+  Button,
+  Group,
+  SimpleGrid,
+  Container,
+  Title,
+} from '@mantine/core'
+import classes from '@/personal/riyuan/components/contact/Contact.module.css'
+import { ContactIconsList } from './ContactIcons'
 
 /**
  * Function to render the Contact Pages ->
@@ -7,17 +18,59 @@ import styles from '@/personal/riyuan/Riyuan.module.css'
  */
 export function ContactPage() {
   return (
-    <div className={styles.container}>
-      <Container>
-        <Title className={styles.title} ta="left" mt={100}>
-          {'Contact Page'}
-        </Title>
-        <Text c="dimmed" ta="left" size="lg" maw={580} mx="auto" mt="xl">
-          {
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-          }
-        </Text>
-      </Container>
-    </div>
+    <Container className={classes.container}>
+      <Title className={classes.title}>{'Contact'}</Title>
+      <Paper shadow="md" radius="lg">
+        <div className={classes.wrapper}>
+          <div className={classes.contacts}>
+            <Text fz="lg" fw={700} className={classes.title} c="#fff">
+              {'Contact information'}
+            </Text>
+
+            <ContactIconsList />
+          </div>
+
+          <form
+            className={classes.form}
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <Text fz="lg" fw={700} className={classes.title}>
+              {'Get in touch'}
+            </Text>
+
+            <div className={classes.fields}>
+              <SimpleGrid cols={{ base: 1, sm: 2 }}>
+                <TextInput label="Your name" placeholder="Your name" />
+                <TextInput
+                  label="Your email"
+                  placeholder="hello@mantine.dev"
+                  required
+                />
+              </SimpleGrid>
+
+              <TextInput
+                mt="md"
+                label="Subject"
+                placeholder="Subject"
+                required
+              />
+
+              <Textarea
+                mt="md"
+                label="Your message"
+                placeholder="Please include all relevant information"
+                minRows={3}
+              />
+
+              <Group justify="flex-end" mt="md">
+                <Button type="submit" className={classes.control}>
+                  {'Send message'}
+                </Button>
+              </Group>
+            </div>
+          </form>
+        </div>
+      </Paper>
+    </Container>
   )
 }
