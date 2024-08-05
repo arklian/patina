@@ -1,0 +1,53 @@
+.cardHorizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  border: 1px solid var(--mantine-color-gray-7);
+  border-radius: 10px;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  padding: rem(24px);
+  justify-content: center;
+}
+
+.textTitle {
+  font-size: rem(18px);
+  font-weight: bold;
+}
+
+.textDesc {
+  font-size: rem(14px);
+}
+
+.pillsSection {
+  display: flex;
+  flex-direction: row;
+  padding-top: rem(10px);
+  padding-left: rem(6px);
+  gap: rem(5px);
+}
+
+.pill {
+  background-color: var(--mantine-color-dark-6);
+  border-radius: rem(6px);
+}
+
+.imageHorizontal {
+  max-width: rem(400px);
+  border-radius: rem(10px);
+}
+
+.imageVertical {
+  max-height: rem(600px);
+  border-radius: rem(10px);
+}

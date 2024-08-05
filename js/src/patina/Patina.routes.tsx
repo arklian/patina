@@ -8,6 +8,7 @@ import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
 import { AdminRoutes } from '@/patina/admin/Admin.routes.tsx'
 import { AdminPage } from '@/patina/admin/Admin.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
+import { BlogPage } from '@/patina/pages/blog/Blog.page.tsx'
 
 /**
  * Routes for the Patina Website
@@ -63,5 +64,10 @@ export const PatinaRoutes = [
     path: 'login',
     description: 'Login Page',
     element: <LoginPage />,
+  },
+  {
+    path: 'blog',
+    description: 'Blog Page',
+    element: <BlogPage />,
   },
 ]
