@@ -10,4 +10,5 @@ export DATABASE_URL=redacted
 export DATABASE_USER=redacted
 # Host Password for Database - Bryan (Most important one!)
 export DATABASE_PASSWORD=redacted
-
+# Credentials for pushing Docker image to Digital Ocean
+export PATINA_IMAGE_UPLOAD=redacted
