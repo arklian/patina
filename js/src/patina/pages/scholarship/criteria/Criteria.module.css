@@ -28,7 +28,7 @@
 .selection {
   width: 550px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     width: auto;
   }
 }
@@ -51,7 +51,7 @@
   height: auto;
   padding-left: 3%;
   /* colors needed to make gradient, non-standard Patina colors */
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     width: auto;
   }
 }
@@ -63,14 +63,14 @@
   color: white;
   padding: 45px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     font-size: 30px;
     text-align: center;
     margin-top: 45px;
     padding: 15px;
   }
 
-  @media (max-width: 600px) {
+  @mixin smaller-than $mantine-breakpoint-sm {
     font-size: 26px;
     text-align: center;
     margin-top: 45px;
