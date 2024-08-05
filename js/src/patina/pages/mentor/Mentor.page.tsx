@@ -22,9 +22,10 @@ export function MentorPage() {
       <Hero
         title="Be a Patina Network Mentor"
         details={message}
-        button="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
         img={imageUrls.mentorApplyHero.src}
         alt={imageUrls.mentorApplyHero.alt}
+        description="Apply Here"
       />
       <About />
       <Impact />

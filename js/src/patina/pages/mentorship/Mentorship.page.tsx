@@ -27,8 +27,9 @@ export function MentorshipPage() {
         title="Patina Network Mentorship"
         details={message}
         img={imageUrls.mentorshipHero.src}
-        button="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
         alt={imageUrls.mentorshipHero.alt}
+        description="Apply Here"
       />
       <About />
       <Gain />
