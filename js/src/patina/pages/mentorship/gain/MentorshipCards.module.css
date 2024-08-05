@@ -10,6 +10,16 @@
 
 .card {
   background: var(--mantine-color-dark-6);
+  flex: 1 1 0;
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    3px 3px 150px 0 rgba(71, 255, 255, 0.25);
+  border-radius: var(--mantine-radius-md);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    flex: 0;
+    max-width: 400px;
+  }
 }
 
 .description {
