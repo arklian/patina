@@ -5,11 +5,10 @@ import org.patinanetwork.patinawebsite.events.protos.Event;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.PreparedStatement;
-import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -102,5 +101,21 @@ public class PsqlEventsRepo implements EventsRepo {
                 .setLocation(location)
                 .setDate(stringDate)
                 .build();
+    }
+
+    // TODO: sanitize inputs for sql injection
+    public Event createEvent(Event event) {
+        try {
+            PreparedStatement st = conn.prepareStatement("INSERT INTO event (name, message, location, date) VALUES (?, ?, ?, ?)");
+            st.setString(1, event.getName());
+            st.setString(2, event.getMessage());
+            st.setString(3, event.getLocation());
+            st.setDate(4, java.sql.Date.valueOf(event.getDate()));
+            st.executeUpdate();
+            st.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return event;
     }
 }
