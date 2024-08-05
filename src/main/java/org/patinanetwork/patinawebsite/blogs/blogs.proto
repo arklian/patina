@@ -22,16 +22,14 @@ message Blog {
 }
 
 message CreateBlogReq {
-
-  string parent = 1;
   // Name or title of the blog. This should be a short, descriptive string.
-  string author = 2;
+  string author = 1;
 
   // Title of the blog post. This can be a headline or main topic.
-  string title = 3;
+  string title = 2;
 
   // Detailed content of the blog post. This can be a longer body of text.
-  string content = 4;
+  string content = 3;
 }
 
 message CreateBlogResp{
