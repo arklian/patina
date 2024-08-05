@@ -10,11 +10,11 @@ export function Details() {
       <Text className={styles.title}>{'Program Details'}</Text>
       <Text className={styles.about}>
         {'There are two types of Mentors. Your'}
-        <div className={styles.colored}>{' Track Mentor '}</div>
+        <span className={styles.colored}>{' Track Mentor '}</span>
         {
           'will be your 1:1 Mentor who works in a field closest to the field you aim to pursue. Your '
         }
-        <div className={styles.colored}>{' Group Mentor '}</div>
+        <span className={styles.colored}>{' Group Mentor '}</span>
         {
           'is a Mentor who oversees all Mentees and provides DEI and Workplace readiness mentorship.'
         }

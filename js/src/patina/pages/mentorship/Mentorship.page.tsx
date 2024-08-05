@@ -1,10 +1,10 @@
 import { Text } from '@mantine/core'
 import { About } from '@/patina/pages/mentorship/about/About.tsx'
-import { Apply } from '@/patina/pages/mentorship/apply/Apply.tsx'
+// import { Apply } from '@/patina/pages/mentorship/apply/Apply.tsx'
 import { Gain } from '@/patina/pages/mentorship/gain/Gain.tsx'
 import { Hero } from '@/patina/components/Hero'
-import { Details } from '@/patina/pages/mentorship/details/Details.tsx'
-import { Impact } from '@/patina/pages/mentorship/impact/Impact.tsx'
+// import { Details } from '@/patina/pages/mentorship/details/Details.tsx'
+// import { Impact } from '@/patina/pages/mentorship/impact/Impact.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentorship.module.css'
@@ -23,9 +23,8 @@ export function MentorshipPage() {
   )
   return (
     <ContentPage>
-      {/*TODO: replace with proper button link later */}
       <Hero
-        title="Mentorship"
+        title="Patina Network Mentorship"
         details={message}
         img={imageUrls.mentorshipHero.src}
         button="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
@@ -33,9 +32,9 @@ export function MentorshipPage() {
       />
       <About />
       <Gain />
-      <Details />
-      <Apply />
-      <Impact />
+      {/*<Details />*/}
+      {/*<Apply />*/}
+      {/*<Impact />*/}
     </ContentPage>
   )
 }

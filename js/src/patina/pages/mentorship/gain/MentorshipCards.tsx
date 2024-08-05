@@ -17,7 +17,7 @@ export function MentorshipCards({ title, details, img, alt }: CardsProps) {
         <Image src={img} height={160} alt={alt} />
       </Card.Section>
       <Card.Section className={styles.description}>
-        <Text ta={'center'}>{details}</Text>
+        <Text>{details}</Text>
       </Card.Section>
     </Card>
   )

@@ -1,6 +1,5 @@
 .title {
   margin-bottom: 128px;
-  margin-top: 128px;
   text-align: center;
   color: white;
 
@@ -10,5 +9,20 @@
 }
 
 .cards {
+  justify-content: space-between;
+  gap: 40px;
   margin-bottom: 128px;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  flex: 1 1 0;
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    3px 3px 150px 0 rgba(71, 255, 255, 0.25);
+  border-radius: var(--mantine-radius-md);
 }
