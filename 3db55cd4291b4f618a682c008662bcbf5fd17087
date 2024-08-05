@@ -3,6 +3,46 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f3f47656_26422cda",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T17:17:57Z",
+      "side": 1,
+      "message": "Can import {ReactNode} from \u0027react\u0027;",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9de47765_da8a6a58",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T17:17:57Z",
+      "side": 1,
+      "message": "It might be better for this to be a reactnode.",
+      "range": {
+        "startLine": 8,
+        "startChar": 11,
+        "endLine": 8,
+        "endChar": 17
+      },
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ad7d1ad5_98a84c64",
         "filename": "js/src/patina/components/Hero.tsx",
         "patchSetId": 1
@@ -14,6 +54,23 @@
       "writtenOn": "2024-08-05T17:16:52Z",
       "side": 1,
       "message": "You can use button \u0026\u0026 here instead.",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dfbbed53_babf5f9c",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T17:17:57Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this text be a variable?",
       "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
