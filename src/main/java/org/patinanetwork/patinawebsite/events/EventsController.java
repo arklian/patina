@@ -54,7 +54,7 @@ public class EventsController {
     public String deleteEvent(@PathVariable("eventId") int eventId) {
         Event event = eventsRepo.deleteEvent(eventId);
         DeleteEventResp resp = DeleteEventResp.newBuilder().setEvent(event).build();
-        return jsonPrinter.print(event);
+        return jsonPrinter.print(resp);
     }
 
     @PostMapping(value = "/api/events/add", consumes = MediaType.APPLICATION_JSON_VALUE)
