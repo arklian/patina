@@ -16,6 +16,24 @@
       "message": "we should update the public redacted secrets file to include these",
       "revId": "4e78d9960fc45ee379c5cc0dd4887ac628688c76",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "339bbd78_7cfd3ffa",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-05T16:30:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "802d2a4e_b5276ffd",
+      "revId": "4e78d9960fc45ee379c5cc0dd4887ac628688c76",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
