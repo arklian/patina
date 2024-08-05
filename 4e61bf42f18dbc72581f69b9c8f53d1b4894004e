@@ -16,6 +16,24 @@
       "message": "You should use camelCase for css class names instead of snake_case.",
       "revId": "4e61bf42f18dbc72581f69b9c8f53d1b4894004e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f909d210_d03765f9",
+        "filename": "js/src/patina/scholarship/donors/Donors.module.css",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-05T19:04:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3a10403d_9ad4df89",
+      "revId": "4e61bf42f18dbc72581f69b9c8f53d1b4894004e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ],
   "submitRequirementResults": [
