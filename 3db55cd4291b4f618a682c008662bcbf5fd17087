@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad7d1ad5_98a84c64",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T17:16:52Z",
+      "side": 1,
+      "message": "You can use button \u0026\u0026 here instead.",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
