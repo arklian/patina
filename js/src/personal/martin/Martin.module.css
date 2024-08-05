@@ -42,6 +42,7 @@
 .projCard {
   padding: var(--mantine-spacing-xl);
   background-color: var(--mantine-color-cobalt-9);
+  transition-duration: 1s;
 
   h2 {
     color: var(--mantine-color-uranian_blue-9);
@@ -50,10 +51,16 @@
   p {
     color: var(--mantine-color-wht_smoke-7);
   }
+
+  &:hover {
+    background-color: var(--mantine-color-cobalt-7);
+    transition-duration: 1s;
+  }
 }
 
 .projCarousel {
   max-width: 400px;
+  max-height: 300px;
   align-self: center;
   justify-items: flex-end;
   padding-top: var(--mantine-spacing-xl);
