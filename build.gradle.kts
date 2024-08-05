@@ -71,8 +71,8 @@ tasks.named<BootBuildImage>("bootBuildImage") {
     publish.set(true)
     docker {
         publishRegistry {
-            username.set(System.getenv("PATINA_IMAGE_UPLOAD"))
-            password.set(System.getenv("PATINA_IMAGE_UPLOAD"))
+            username.set(System.getenv("DO_DOCKER_IMAGE_UPLOAD_PAT"))
+            password.set(System.getenv("DO_DOCKER_IMAGE_UPLOAD_PAT"))
         }
     }
 }
