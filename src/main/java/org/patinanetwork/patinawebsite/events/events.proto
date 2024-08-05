@@ -39,6 +39,14 @@ message DeleteEventResp {
   Event event = 1;
 }
 
+message CreateEventReq {
+  Event event = 1;
+}
+
+message CreateEventResp {
+  Event event = 1;
+}
+
 // Todo(Henry): Figure out API design of GET endpoints.
 // Todo(Henry): Figure out API design of Create endpoints.
 // Todo(Henry): Figure out API design of List endpoints.
