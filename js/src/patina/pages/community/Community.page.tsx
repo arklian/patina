@@ -16,8 +16,8 @@ export function CommunityPage() {
       <Hero
         title="Community Events"
         details={message}
-        alt={imageUrls.communityHero.alt}
         img={imageUrls.communityHero.src}
+        alt={imageUrls.communityHero.alt}
       />
       <MainSection />
     </ContentPage>
