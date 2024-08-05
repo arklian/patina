@@ -3,7 +3,7 @@ run-name: building image on ${{ github.actor }}'s commits
 on:
   push:
     branches:
-      - main
+      - Jhwu3/Patina
 jobs:
   buildImage:
     runs-on: ubuntu-latest
