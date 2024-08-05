@@ -59,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b9eada1_f03f3f90",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-05T19:26:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "677e3933_1e8d745f",
+      "range": {
+        "startLine": 33,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 55
+      },
+      "revId": "8763044b9e4fc2e93225e8038a39c5a0f6441b7e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "863b2070_ad2e56a0",
@@ -72,6 +96,24 @@
       "writtenOn": "2024-08-05T17:31:26Z",
       "side": 1,
       "message": "Isn\u0027t this wrong now?",
+      "revId": "8763044b9e4fc2e93225e8038a39c5a0f6441b7e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58e51c38_5dc98fa4",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/PsqlBlogsRepo.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-05T19:26:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "863b2070_ad2e56a0",
       "revId": "8763044b9e4fc2e93225e8038a39c5a0f6441b7e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
