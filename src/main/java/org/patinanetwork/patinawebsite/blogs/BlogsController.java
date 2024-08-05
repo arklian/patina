@@ -31,7 +31,7 @@ public class BlogsController {
     }
 
     @PostMapping(value = "/api/blog/submit", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public String CreateBlog(@RequestBody String jsonRequest) throws InvalidProtocolBufferException {
+    public String CreateBlog(@RequestBody String jsonRequest){
         // Parse the incoming JSON into a Protobuf CreateBlogReq object
         CreateBlogReq blogReq = jsonParser.parse(jsonRequest, CreateBlogReq.newBuilder());
 
