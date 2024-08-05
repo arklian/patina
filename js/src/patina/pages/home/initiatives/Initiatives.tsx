@@ -11,8 +11,6 @@ const detailsMap: CardsProps[] = [
     img: imageUrls.mentorshipHome.src,
     link: '/mentorship',
     alt: imageUrls.mentorshipHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
   },
   {
     title: 'Scholarship',
@@ -20,8 +18,6 @@ const detailsMap: CardsProps[] = [
     img: imageUrls.scholarshipHome.src,
     link: '/scholarship',
     alt: imageUrls.scholarshipHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
   },
   {
     title: 'Community',
@@ -30,8 +26,6 @@ const detailsMap: CardsProps[] = [
     img: imageUrls.communityHome.src,
     link: '/community',
     alt: imageUrls.communityHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
   },
 ]
 
@@ -45,7 +39,7 @@ export function Initiatives() {
             {'Our initiatives'}
           </Title>
           {detailsMap.map(
-            ({ title, details, img, link, bottom, alt, underline }, index) => (
+            ({ title, details, img, link, bottom, alt }, index) => (
               <Cards
                 key={index}
                 title={title}
@@ -54,7 +48,6 @@ export function Initiatives() {
                 link={link}
                 alt={alt}
                 bottom={bottom}
-                underline={underline}
               />
             ),
           )}
