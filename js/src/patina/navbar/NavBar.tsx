@@ -43,7 +43,7 @@ const links = [
     ],
   },
   // { label: 'Stay Informed' },
-  { link: '', label: 'Blog' },
+  { link: '/blog', label: 'Blog' },
   // { label: 'Donate' },
 ]
 
