@@ -20,16 +20,14 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Install doctl
-        uses: digitalocean/action-doctl@v2
-        with:
-          token: ${{ secrets.DO_DOCKER_IMAGE_UPLAOD_PAT }}
+      - name: Install Docker CLI
+        run: sudo apt-get update && sudo apt-get install -y docker.io
 
       - name: Log in to DigitalOcean Container Registry
-        run: doctl registry login --expiry-seconds 600
-        
-      - name: Build and push Docker image
-        run: ./gradlew bootBuildImage
         env:
           DOCKER_USERNAME: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
           DOCKER_PASSWORD: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
+        run: echo $DOCKER_PASSWORD | docker login registry.digitalocean.com -u $DOCKER_USERNAME --password-stdin
+
+      - name: Build and push Docker image
+        run: ./gradlew bootBuildImage
