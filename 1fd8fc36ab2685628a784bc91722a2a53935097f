@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f5dfb92_fd928cec",
+        "filename": "secrets.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T16:49:40Z",
+      "side": 1,
+      "message": "We\u0027re missing admin password stuff too",
+      "revId": "1fd8fc36ab2685628a784bc91722a2a53935097f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
