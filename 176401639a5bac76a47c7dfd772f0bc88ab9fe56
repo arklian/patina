@@ -34,6 +34,24 @@
       "parentUuid": "3c6d252a_94614405",
       "revId": "176401639a5bac76a47c7dfd772f0bc88ab9fe56",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbfcc286_b779ed98",
+        "filename": "js/src/patina/components/Cards.module.css",
+        "patchSetId": 5
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-05T18:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f69560c_fd33541f",
+      "revId": "176401639a5bac76a47c7dfd772f0bc88ab9fe56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
