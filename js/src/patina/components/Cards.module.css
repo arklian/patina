@@ -24,7 +24,7 @@
   border: 1px solid var(--mantine-color-dark-4);
   border-radius: 5px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex-direction: column;
     background: var(--mantine-color-dark-6);
   }

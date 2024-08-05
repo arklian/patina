@@ -10,7 +10,7 @@
   background: var(--mantine-color-dark-6);
   min-height: 75px;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     min-height: 160px;
   }
 }
@@ -19,7 +19,7 @@
   display: flex;
   justify-items: center;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     justify-content: center;
   }
 }

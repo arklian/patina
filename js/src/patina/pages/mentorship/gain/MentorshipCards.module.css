@@ -16,7 +16,7 @@
     3px 3px 150px 0 rgba(71, 255, 255, 0.25);
   border-radius: var(--mantine-radius-md);
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex: 0;
     max-width: 400px;
   }

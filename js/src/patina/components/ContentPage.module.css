@@ -4,7 +4,7 @@
   margin-inline: auto;
   box-sizing: content-box;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     padding-inline: 48px;
   }
 
