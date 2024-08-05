@@ -16,6 +16,24 @@
       "message": "We should remove this from the type right?\nAnd all places that use it?",
       "revId": "3b53f098039b26a88df23c584c0bb2224124af6a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e8cc103_fad0f935",
+        "filename": "js/src/patina/components/Cards.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-05T18:35:19Z",
+      "side": 0,
+      "message": "This affect other components that use the same card",
+      "parentUuid": "9223084c_c415bea0",
+      "revId": "3b53f098039b26a88df23c584c0bb2224124af6a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
