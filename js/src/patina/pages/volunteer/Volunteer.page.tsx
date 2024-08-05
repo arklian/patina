@@ -67,7 +67,6 @@ export function VolunteerPage() {
         </div>
       </section>
       <Forms />
-      <div className={styles.space}></div>
     </ContentPage>
   )
 }
