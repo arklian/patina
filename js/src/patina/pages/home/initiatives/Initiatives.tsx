@@ -9,29 +9,23 @@ const detailsMap: CardsProps[] = [
     details:
       'Mentor matching and internships for students and young professionals.',
     img: imageUrls.mentorshipHome.src,
-    link: '/mentorship',
     alt: imageUrls.mentorshipHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
+    link: '/mentorship',
   },
   {
     title: 'Scholarship',
     details: 'Annual scholarship fund for under resourced students.',
     img: imageUrls.scholarshipHome.src,
-    link: '/scholarship',
     alt: imageUrls.scholarshipHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
+    link: '/scholarship',
   },
   {
     title: 'Community',
     details:
       'Spaces to connect with the community and to learn about diverse cultures.',
     img: imageUrls.communityHome.src,
-    link: '/community',
     alt: imageUrls.communityHome.alt,
-    bottom: 'Learn more\u2192',
-    underline: true,
+    link: '/community',
   },
 ]
 
@@ -44,20 +38,16 @@ export function Initiatives() {
           <Title className={styles.title} order={3}>
             {'Our initiatives'}
           </Title>
-          {detailsMap.map(
-            ({ title, details, img, link, bottom, alt, underline }, index) => (
-              <Cards
-                key={index}
-                title={title}
-                details={details}
-                img={img}
-                link={link}
-                alt={alt}
-                bottom={bottom}
-                underline={underline}
-              />
-            ),
-          )}
+          {detailsMap.map(({ title, details, img, alt, link }, index) => (
+            <Cards
+              key={index}
+              title={title}
+              details={details}
+              img={img}
+              alt={alt}
+              link={link}
+            />
+          ))}
         </div>
       </div>
     </>
