@@ -14,7 +14,7 @@
   border: 1px solid var(--mantine-color-dark-4);
   background: var(--mantine-color-dark-6);
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     padding: 0;
     border: 0;
     background: none;
@@ -26,7 +26,7 @@
   font-weight: bold;
   font-size: 34px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     text-align: center;
     font-size: 40px;
     padding: 0;
