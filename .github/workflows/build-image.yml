@@ -1,0 +1,19 @@
+name: build-image
+run-name: building image on ${{ github.actor }}'s commits
+on:
+  push:
+    branches:
+      - main
+jobs:
+  buildImage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - uses: actions/setup-java@v4
+        with:
+            distribution: 'temurin'
+            java-version: 22
+      - uses: gradle/actions/setup-gradle@v4
+        run: ./gradlew bootBuildImage
