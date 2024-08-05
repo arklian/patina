@@ -16,6 +16,24 @@
       "message": "I would avoid using both classname + styling props.\nOnce you have the need for a class, you should likely move all of the styling props into it as well. Might be a bit hard to figure out what\u0027s a styling prop versus other props, but best effort is good.",
       "revId": "f2ada35a3801049dca2d91a6678f6dab604ed850",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70c49859_8cabb15a",
+        "filename": "js/src/personal/martin/project/ProjectShowcase.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-05T21:01:43Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "1bdececb_c38ae2d5",
+      "revId": "f2ada35a3801049dca2d91a6678f6dab604ed850",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

@@ -16,6 +16,24 @@
       "message": "Doesn\u0027t this need a qualifier with it? What does it do by itself?",
       "revId": "fec081417d66785df8e5fd905c37058caf84bd0a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57b4fe0b_bd3c02cb",
+        "filename": "js/src/personal/martin/Martin.module.css",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-05T21:01:43Z",
+      "side": 1,
+      "message": "The buttons wouldn\u0027t center without it the first time. This is removed and the positioning issue is resolved.",
+      "parentUuid": "c460087e_f8c1c476",
+      "revId": "fec081417d66785df8e5fd905c37058caf84bd0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
