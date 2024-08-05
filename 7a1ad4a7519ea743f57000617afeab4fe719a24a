@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "73bde6fb_773d54dd",
+        "filename": "js/src/patina/navbar/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-05T20:45:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68a0d623_a74ca36c",
+      "revId": "7a1ad4a7519ea743f57000617afeab4fe719a24a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "12624d5d_42c07e01",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-05T20:39:53Z",
       "side": 1,
       "message": "Should likely find a different way of doing this.\nThis is likely for tabbing into things, but I\u0027m pretty sure this breaks like screen readers and stuff.",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 38
+      },
+      "revId": "7a1ad4a7519ea743f57000617afeab4fe719a24a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78516671_e908d325",
+        "filename": "js/src/patina/navbar/LinksGroup.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-05T20:45:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "12624d5d_42c07e01",
       "range": {
         "startLine": 46,
         "startChar": 0,
