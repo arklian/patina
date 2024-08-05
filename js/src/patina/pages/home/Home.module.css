@@ -31,8 +31,14 @@
   width: 75%;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: rem(45px);
-    padding: 30px;
+    font-size: 45px;
+    padding-inline: 48px;
+    width: 100%;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 45px;
+    padding-inline: 36px;
     width: 100%;
   }
 }
