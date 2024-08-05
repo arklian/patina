@@ -12,33 +12,21 @@ export type CardsProps = {
 }
 
 /** Customizable card */
-export function Cards({
-  title,
-  details,
-  img,
-  link,
-  bottom,
-  alt,
-  underline,
-}: CardsProps) {
+export function Cards({ title, details, img, link, alt }: CardsProps) {
   return (
     <div className={styles.card}>
-      <div className={styles.border}>
-        <AspectRatio>
-          <Image className={styles.image} src={img} alt={alt} radius={5} />
-        </AspectRatio>
-        <div className={styles.text_container}>
-          <Title className={styles.title}>{title}</Title>
-          <Text className={styles.text}>{details}</Text>
-          <Space h={'md'} />
-          <Anchor
-            className={underline ? styles.anchor : styles.anchorNoUnderline}
-            href={link}
-          >
-            <Text>{bottom}</Text>
-          </Anchor>
+      <Anchor className={styles.anchorNoUnderline} href={link}>
+        <div className={styles.border}>
+          <AspectRatio>
+            <Image className={styles.image} src={img} alt={alt} radius={5} />
+          </AspectRatio>
+          <div className={styles.text_container}>
+            <Title className={styles.title}>{title}</Title>
+            <Text className={styles.text}>{details}</Text>
+            <Space h={'md'} />
+          </div>
         </div>
-      </div>
+      </Anchor>
     </div>
   )
 }
