@@ -1,4 +1,11 @@
-import { Text, Title, Image, Anchor, AspectRatio, Space } from '@mantine/core'
+import {
+  Text,
+  Title,
+  Image,
+  AspectRatio,
+  Space,
+  UnstyledButton,
+} from '@mantine/core'
 import styles from './Cards.module.css'
 
 export type CardsProps = {
@@ -12,33 +19,25 @@ export type CardsProps = {
 }
 
 /** Customizable card */
-export function Cards({
-  title,
-  details,
-  img,
-  link,
-  bottom,
-  alt,
-  underline,
-}: CardsProps) {
+export function Cards({ title, details, img, link, alt }: CardsProps) {
   return (
     <div className={styles.card}>
-      <div className={styles.border}>
-        <AspectRatio>
-          <Image className={styles.image} src={img} alt={alt} radius={5} />
-        </AspectRatio>
-        <div className={styles.text_container}>
-          <Title className={styles.title}>{title}</Title>
-          <Text className={styles.text}>{details}</Text>
-          <Space h={'md'} />
-          <Anchor
-            className={underline ? styles.anchor : styles.anchorNoUnderline}
-            href={link}
-          >
-            <Text>{bottom}</Text>
-          </Anchor>
+      <UnstyledButton
+        className={styles.anchorNoUnderline}
+        component={'a'}
+        href={link}
+      >
+        <div className={styles.border}>
+          <AspectRatio>
+            <Image className={styles.image} src={img} alt={alt} radius={5} />
+          </AspectRatio>
+          <div className={styles.text_container}>
+            <Title className={styles.title}>{title}</Title>
+            <Text className={styles.text}>{details}</Text>
+            <Space h={'md'} />
+          </div>
         </div>
-      </div>
+      </UnstyledButton>
     </div>
   )
 }
