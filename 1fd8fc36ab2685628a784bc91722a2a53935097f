@@ -16,6 +16,24 @@
       "message": "We\u0027re missing admin password stuff too",
       "revId": "1fd8fc36ab2685628a784bc91722a2a53935097f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4338396_c5f0ce7a",
+        "filename": "secrets.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-05T18:12:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f5dfb92_fd928cec",
+      "revId": "1fd8fc36ab2685628a784bc91722a2a53935097f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
