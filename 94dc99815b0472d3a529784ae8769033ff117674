@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "abfb212e_6437abce",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/events/EventsController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038150
+      },
+      "writtenOn": "2024-08-05T18:39:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be1dd8d3_7ad81331",
+      "revId": "94dc99815b0472d3a529784ae8769033ff117674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8fe224a9_92dd8708",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-03T19:14:56Z",
       "side": 1,
       "message": "we can make this return Event here.",
+      "revId": "94dc99815b0472d3a529784ae8769033ff117674",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "225aa5d6_056c9650",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/events/infra/PsqlEventsRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1038150
+      },
+      "writtenOn": "2024-08-05T18:39:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8fe224a9_92dd8708",
       "revId": "94dc99815b0472d3a529784ae8769033ff117674",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
