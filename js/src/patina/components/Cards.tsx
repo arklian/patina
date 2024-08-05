@@ -17,26 +17,24 @@ export function Cards({
   details,
   img,
   link,
-  bottom,
   alt,
   underline,
 }: CardsProps) {
   return (
     <div className={styles.card}>
       <div className={styles.border}>
-        <AspectRatio>
-          <Image className={styles.image} src={img} alt={alt} radius={5} />
-        </AspectRatio>
+        <Anchor
+          className={underline ? styles.anchor : styles.anchorNoUnderline}
+          href={link}
+        >
+          <AspectRatio>
+            <Image className={styles.image} src={img} alt={alt} radius={5} />
+          </AspectRatio>
+        </Anchor>
         <div className={styles.text_container}>
           <Title className={styles.title}>{title}</Title>
           <Text className={styles.text}>{details}</Text>
           <Space h={'md'} />
-          <Anchor
-            className={underline ? styles.anchor : styles.anchorNoUnderline}
-            href={link}
-          >
-            <Text>{bottom}</Text>
-          </Anchor>
         </div>
       </div>
     </div>

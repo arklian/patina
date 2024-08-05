@@ -3,7 +3,7 @@
   text-align: center;
   color: white;
 
-  @mixin smaller-than $mantine-breakpoint-md {
+  @mixin smaller-than $mantine-breakpoint-sm {
     font-size: 40px;
   }
 }
