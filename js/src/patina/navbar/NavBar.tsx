@@ -11,7 +11,7 @@ import {
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
-import { LinksGroup } from './NavbarLinksGroup.tsx'
+import { LinksGroup } from './LinksGroup.tsx'
 import classes from './NavBar.module.css'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
@@ -25,6 +25,7 @@ const links = [
   //     { link: '/team', label: 'Team' },
   //   ],
   // },
+  { link: '/', label: 'Home' },
   {
     link: '',
     label: 'Programs',
@@ -50,7 +51,6 @@ const links = [
 // NavBar component renders the navigation bar with links and dropdown menus.
 export function NavBar() {
   const [opened, { toggle, close }] = useDisclosure(false)
-
   /**
    * Generates menu items and links for the navigation bar.
    * If a link has nested links, a dropdown menu is created.
@@ -135,7 +135,6 @@ export function NavBar() {
             position={'right'}
           >
             <ScrollArea>
-              <LinksGroup label={'Home'} link={'/'} />
               {links.map((item) => (
                 <LinksGroup {...item} key={item.label} />
               ))}
