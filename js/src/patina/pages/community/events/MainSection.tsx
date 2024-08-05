@@ -54,14 +54,16 @@ export function MainSection() {
   }
 
   return (
-    <Grid grow>
+    <Grid grow className={styles.grid}>
       <Grid.Col span={4}>
         <Calendar
           classNames={{
             calendarHeader: styles.calendarHeader,
             calendarHeaderLevel: styles.calendarHeaderText,
             yearsList: styles.calendarBody,
+            yearsListCell: styles.calendarCell,
             monthsList: styles.calendarBody,
+            monthsListCell: styles.calendarCell,
             month: styles.calendarBody, //body of calendar at month view
             monthCell: styles.calendarCell, // each cell within month view
           }}
