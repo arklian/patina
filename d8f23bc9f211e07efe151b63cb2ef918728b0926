@@ -16,6 +16,24 @@
       "message": "buttonText instead to be more explicit.\nAlso buttonLink",
       "revId": "d8f23bc9f211e07efe151b63cb2ef918728b0926",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ec5e6aa_31f14b54",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T18:18:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c59dcb2_adcc1358",
+      "revId": "d8f23bc9f211e07efe151b63cb2ef918728b0926",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
