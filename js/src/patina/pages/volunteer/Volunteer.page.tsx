@@ -23,7 +23,8 @@ export function VolunteerPage() {
         details={message}
         alt={imageUrls.volunteerHero.alt}
         img={imageUrls.volunteerHero.src}
-        button="https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform"
+        description="Apply Here"
       />
       <section className={styles.grid}>
         <VolunteerCard
@@ -67,7 +68,6 @@ export function VolunteerPage() {
         </div>
       </section>
       <Forms />
-      <div className={styles.space}></div>
     </ContentPage>
   )
 }
