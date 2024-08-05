@@ -1,7 +1,7 @@
-import { ActionIcon } from '@mantine/core'
+import { ActionIcon, UnstyledButton } from '@mantine/core'
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import styles from './Footer.module.css'
-import patinaLogo from '../../patinasquare.svg'
+import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 
 /**
  * Footer component to display patina network logo, social media links
@@ -11,12 +11,9 @@ export function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerContents}>
         <div className={styles.logoTextContainer}>
-          {/* Todo: Replace with logo component */}
-          <img
-            src={patinaLogo}
-            alt="Patina Network Logo"
-            className={styles.logo}
-          />
+          <UnstyledButton component={'a'} href={'/'}>
+            <PatinaBadge />
+          </UnstyledButton>
         </div>
         <div className={styles.footerLinks}>
           <ActionIcon

@@ -4,7 +4,6 @@ import {
   Center,
   Burger,
   Container,
-  Image,
   Text,
   Drawer,
   ScrollArea,
@@ -12,8 +11,8 @@ import {
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 import { LinksGroup } from './NavbarLinksGroup.tsx'
-import { imageUrls } from '@/patina/assets/images.ts'
 import classes from './NavBar.module.css'
+import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 
 const links = [
   // {
@@ -100,10 +99,7 @@ export function NavBar() {
         {/* 75rem == 1200px */}
         <div className={classes.inner}>
           <a href={'/'} className={classes.link}>
-            <Image
-              src={imageUrls.patinaLogo.src}
-              alt={imageUrls.patinaLogo.alt}
-            />
+            <PatinaBadge />
           </a>
           <Group gap={5} visibleFrom="sm">
             {items}
