@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8cf52f4a_fe9ce5ba",
+        "filename": "js/src/patina/pages/home/initiatives/Initiatives.tsx",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T19:01:12Z",
+      "side": 1,
+      "message": "Alt should be moved up to be next to img",
+      "revId": "6cfdb8156580d8a0ace0e29bd6172bc5acc1aa39",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8fab9eba_8c97d070",
+        "filename": "js/src/patina/pages/home/initiatives/Initiatives.tsx",
+        "patchSetId": 7
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T19:01:12Z",
+      "side": 1,
+      "message": "buttom is removed?",
+      "revId": "6cfdb8156580d8a0ace0e29bd6172bc5acc1aa39",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb3fd7cb_ee5f18ec",
+        "filename": "js/src/patina/pages/mentorship/impact/Impact.tsx",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T19:01:12Z",
+      "side": 1,
+      "message": "This should be removed right",
+      "revId": "6cfdb8156580d8a0ace0e29bd6172bc5acc1aa39",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
