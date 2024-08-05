@@ -19,7 +19,7 @@
 .centering {
   flex: 1 0 0;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex: 1;
   }
 }

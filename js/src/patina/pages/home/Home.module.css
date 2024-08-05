@@ -5,7 +5,7 @@
   height: 700px;
   margin-bottom: 48px;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @mixin smaller-than $mantine-breakpoint-sm {
     width: 100vw;
     height: 600px;
     background-position: center;
@@ -19,7 +19,7 @@
   align-items: flex-end;
   height: 700px;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @mixin smaller-than $mantine-breakpoint-sm {
     height: 600px;
   }
 }
@@ -30,13 +30,13 @@
   font-size: 60px;
   width: 75%;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @mixin smaller-than $mantine-breakpoint-sm {
     font-size: 45px;
     padding-inline: 48px;
     width: 100%;
   }
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @mixin smaller-than $mantine-breakpoint-xs {
     font-size: 45px;
     padding-inline: 36px;
     width: 100%;
@@ -61,7 +61,7 @@
   padding-bottom: 48px;
   color: white;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -72,7 +72,7 @@
   display: flex;
   align-content: stretch;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex-direction: column;
   }
 }
