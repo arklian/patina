@@ -10,7 +10,6 @@ const detailsMap: CardsProps[] = [
     img: imageUrls.placeholder.src,
     bottom: 'Job Placement Stat',
     alt: imageUrls.placeholder.alt,
-    underline: false,
   },
   {
     title: 'Name',
@@ -18,7 +17,6 @@ const detailsMap: CardsProps[] = [
     img: imageUrls.placeholder.src,
     bottom: 'Job Placement Stat',
     alt: imageUrls.placeholder.alt,
-    underline: false,
   },
 ]
 
@@ -29,19 +27,15 @@ export function Impact() {
       <div className={styles.impact_container}>
         <Text className={styles.title}>{'Impact'}</Text>
         <div className={styles.container}>
-          {detailsMap.map(
-            ({ title, details, img, bottom, alt, underline }, index) => (
-              <Cards
-                key={index}
-                title={title}
-                details={details}
-                img={img}
-                bottom={bottom}
-                alt={alt}
-                underline={underline}
-              />
-            ),
-          )}
+          {detailsMap.map(({ title, details, img, alt }, index) => (
+            <Cards
+              key={index}
+              title={title}
+              details={details}
+              img={img}
+              alt={alt}
+            />
+          ))}
         </div>
       </div>
     </>
