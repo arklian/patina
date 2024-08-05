@@ -8,10 +8,12 @@ import {
   ScrollArea,
   UnstyledButton,
   Affix,
+  Space,
+  NavLink,
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
-import { LinksGroup } from './NavbarLinksGroup.tsx'
+import { MobileNavBar } from './MobileNavBar.tsx'
 import classes from './NavBar.module.css'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
@@ -50,7 +52,6 @@ const links = [
 // NavBar component renders the navigation bar with links and dropdown menus.
 export function NavBar() {
   const [opened, { toggle, close }] = useDisclosure(false)
-
   /**
    * Generates menu items and links for the navigation bar.
    * If a link has nested links, a dropdown menu is created.
@@ -135,9 +136,18 @@ export function NavBar() {
             position={'right'}
           >
             <ScrollArea>
-              <LinksGroup label={'Home'} link={'/'} />
+              <NavLink
+                href={'/'}
+                label={<Text size={'xl'}>{'Home'}</Text>}
+                leftSection={<Space w={10} />}
+                /*rightSection={
+                  <Box pr={24}>
+                    <FaLongArrowAltRight size={24} stroke={'1.5rem'} />
+                  </Box>
+                }*/
+              />
               {links.map((item) => (
-                <LinksGroup {...item} key={item.label} />
+                <MobileNavBar {...item} key={item.label} />
               ))}
             </ScrollArea>
           </Drawer>
