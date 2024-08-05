@@ -11,20 +11,20 @@ export type HeroProps = {
 
 export function Hero({ title, details, img, button, alt }: HeroProps) {
   return (
-    <div className={styles.hero_container}>
+    <div className={styles.heroContainer}>
       <div>
         <Title className={styles.title}>{title}</Title>
         <div>{details}</div>
         <div className={styles.buttonContainer}>
           <Button
             component="a"
-            className={styles.appButton}
             variant="filled"
             color="var(--mantine-color-patina-green-light)"
+            autoContrast
             target="_blank"
             href={button}
           >
-            <Text className={styles.appButtonText} size="20" fw={600}>
+            <Text c={'black'} size="20" fw={600}>
               {'Apply Here'}
             </Text>
           </Button>

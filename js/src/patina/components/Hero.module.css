@@ -1,4 +1,4 @@
-.hero_container {
+.heroContainer {
   padding-top: 50px;
   display: flex;
   flex-direction: row;
@@ -35,17 +35,7 @@
   }
 }
 
-.colored {
-  color: var(--mantine-color-patina-green-light);
-  text-decoration: underline;
-}
-
 .buttonContainer {
   display: flex;
-  color: black;
   justify-content: left;
-}
-
-.appButtonText {
-  color: black;
 }

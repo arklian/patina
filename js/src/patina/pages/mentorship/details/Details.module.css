@@ -3,14 +3,13 @@
   flex-direction: column;
   margin: 48px;
   padding: 78px 40px;
-  background: var(--mantine-color-patina-dark-6);
+  background: var(--mantine-color-dark-6);
 }
 
 .title {
   display: flex;
   align-self: stretch;
   padding-bottom: 66px;
-  color: white;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -20,7 +19,6 @@
   display: flex;
   font-size: 20px;
   font-weight: 400;
-  color: white;
   padding-bottom: 64px;
 }
 
@@ -42,7 +40,6 @@
   display: flex;
   font-size: 20px;
   font-weight: 400;
-  color: white;
   padding-bottom: 25px;
 }
 

@@ -21,6 +21,22 @@ import {
  * {@link https://github.com/mantinedev/mantine/blob/master/packages/%40mantine/core/src/core/MantineProvider/default-colors.ts Default Colors}
  */
 export const themeOverride = createTheme({
+  autoContrast: true,
+  colors: {
+    dark: [
+      '#F3F3F3', // dark-0
+      // '#C1C2C5', // dark-0
+      '#A6A7AB', // dark-1
+      '#909296', // dark-2
+      '#5C5F66', // dark-3
+      '#373A40', // dark-4
+      '#2C2E33', // dark-5
+      '#25262B', // dark-6
+      '#1A1B1E', // dark-7 Default Dark Mode Background
+      '#141517', // dark-8
+      '#101113', // dark-9
+    ],
+  },
   headings: {
     fontFamily: 'Figtree, sans-serif',
     sizes: {
@@ -74,9 +90,6 @@ export const themeOverride = createTheme({
     patinaBlueLight: '#47FFFF',
     patinaRedDark: '#BB352C',
     patinaRedLight: '#FF3D3D',
-    patinaDarkBg: '#1A1B1E',
-    patinaDark6: '#25262B',
-    patinaDark3: '#5C5F66',
     contentContainerWidth: 1200,
   },
 })
@@ -96,12 +109,7 @@ export const resolver: CSSVariablesResolver = (computedTheme) => ({
     '--mantine-color-patina-green-dark': computedTheme.other.patinaGreenDark,
     '--mantine-color-patina-blue-dark': computedTheme.other.patinaBlueDark,
     '--mantine-color-patina-red-dark': computedTheme.other.patinaRedDark,
-    '--mantine-color-patina-dark-bg': computedTheme.other.patinaDarkBg,
-    '--mantine-color-patina-dark-6': computedTheme.other.patinaDark6,
-    '--mantine-color-patina-dark-3': computedTheme.other.patinaDark3,
   },
   light: {},
-  dark: {
-    '--mantine-color-body': computedTheme.other.patinaDarkBg,
-  },
+  dark: {},
 })

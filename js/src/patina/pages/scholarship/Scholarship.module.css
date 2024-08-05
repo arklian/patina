@@ -64,10 +64,6 @@
   justify-content: left;
 }
 
-.appButtonText {
-  color: black;
-}
-
 .emailSection {
   display: flex;
   flex-direction: column;

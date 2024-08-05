@@ -20,7 +20,7 @@ export function Apply() {
           component="a"
           className={styles.appButton}
           variant="filled"
-          color="white"
+          color="dark.0"
           href="templink"
         >
           <Text className={styles.appButtonText}>{'Apply Here'}</Text>

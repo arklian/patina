@@ -9,10 +9,11 @@
   text-align: center;
   gap: 16px;
   border-radius: 16px;
-  border: 1px solid var(--mantine-color-dark-3, #5c5f66);
-  background: var(--mantine-color-patina-dark-6);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
-  0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--mantine-color-dark-3);
+  background: var(--mantine-color-dark-6);
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .centering {
@@ -54,7 +55,7 @@
   gap: 10px;
   align-self: stretch;
   border: 1px solid var(--mantine-color-white, #fff);
-  background: var(--mantine-color-patina-dark-4);
+  background: var(--mantine-color-dark-4);
   color: var(--mantine-color-white, #fff);
 }
 

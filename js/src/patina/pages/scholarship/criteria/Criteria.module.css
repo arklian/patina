@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  background-color: #25262b;
+  background-color: var(--mantine-color-dark-6);
   padding: 75px 50px;
   background-image: radial-gradient(#196149 0%, #25262b 75%);
   background-size: 50%;

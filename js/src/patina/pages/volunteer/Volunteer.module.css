@@ -6,6 +6,11 @@
   padding-bottom: 50px;
 }
 
+.colored {
+  color: var(--mantine-color-patina-blue-light);
+  text-decoration: underline;
+}
+
 /* Volunteer Cards */
 .grid {
   display: grid;

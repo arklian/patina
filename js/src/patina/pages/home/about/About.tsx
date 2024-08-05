@@ -1,7 +1,9 @@
-import { Text, Button } from '@mantine/core'
+import { Text, Button, useMantineTheme } from '@mantine/core'
 import styles from './About.module.css'
 
 export function About() {
+  const theme = useMantineTheme()
+
   return (
     <div className={styles.container}>
       <Text className={styles.aboutText}>
@@ -16,7 +18,7 @@ export function About() {
       <div className={styles.moreButton}>
         <Button
           variant={'filled'}
-          color={'rgba(255, 255, 255, 1)'}
+          color={theme.colors.dark[0]}
           autoContrast
           fullWidth
         >
