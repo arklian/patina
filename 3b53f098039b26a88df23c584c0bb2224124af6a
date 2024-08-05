@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9223084c_c415bea0",
+        "filename": "js/src/patina/components/Cards.tsx",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T18:13:03Z",
+      "side": 0,
+      "message": "We should remove this from the type right?\nAnd all places that use it?",
+      "revId": "3b53f098039b26a88df23c584c0bb2224124af6a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
