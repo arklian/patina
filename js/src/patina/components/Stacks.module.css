@@ -7,7 +7,7 @@
 .itemContainer {
   border: 1px solid var(--mantine-color-dark-4);
   border-radius: 5px;
-  background: var(--mantine-color-patina-dark-6);
+  background: var(--mantine-color-dark-6);
   min-height: 75px;
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -17,7 +17,6 @@
 
 .text {
   display: flex;
-  color: white;
   justify-items: center;
 
   @media (max-width: $mantine-breakpoint-md) {
