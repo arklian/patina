@@ -10,4 +10,9 @@ export DATABASE_URL=redacted
 export DATABASE_USER=redacted
 # Host Password for Database - Bryan (Most important one!)
 export DATABASE_PASSWORD=redacted
-
+# Password for Admin Page - Haoking
+export PATINA_ADMIN_PASSWORD=redacted
+# Cookie for successful admin login - Haoking
+export PATINA_ADMIN_COOKIE=redacted
+# Credentials for pushing Docker image to Digital Ocean
+export PATINA_IMAGE_UPLOAD=redacted
