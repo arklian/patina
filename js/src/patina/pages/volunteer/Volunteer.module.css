@@ -41,10 +41,7 @@
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-size: 28px;
   text-align: center;
-  padding-bottom: 52px;
-  padding-top: 81px;
-  padding-left: 0.38px;
-  padding-right: 7.78px;
+  padding: 81px 7.78px 52px 0.38px;
 }
 
 .emailEmail {
