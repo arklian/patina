@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1df3d3d8_b04de5b5",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T17:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3f47656_26422cda",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9de47765_da8a6a58",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-05T17:17:57Z",
       "side": 1,
       "message": "It might be better for this to be a reactnode.",
+      "range": {
+        "startLine": 8,
+        "startChar": 11,
+        "endLine": 8,
+        "endChar": 17
+      },
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38a0ab19_b8b44164",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T17:34:42Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "9de47765_da8a6a58",
       "range": {
         "startLine": 8,
         "startChar": 11,
@@ -58,6 +100,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a25faa5_da830c9e",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T17:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad7d1ad5_98a84c64",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dfbbed53_babf5f9c",
@@ -71,6 +131,24 @@
       "writtenOn": "2024-08-05T17:17:57Z",
       "side": 1,
       "message": "Shouldn\u0027t this text be a variable?",
+      "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98adb8de_fc564ad6",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T17:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dfbbed53_babf5f9c",
       "revId": "3db55cd4291b4f618a682c008662bcbf5fd17087",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
