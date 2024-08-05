@@ -17,4 +17,7 @@ public interface EventsRepo {
 
     // Delete event
     Event deleteEvent(int eventId);
+
+    // Add event
+    Event createEvent(Event event);
 }
