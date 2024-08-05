@@ -14,4 +14,7 @@ public interface EventsRepo {
 
     // List all events
     List<Event> listEvents();
+
+    // Delete event
+    Event deleteEvent(int eventId);
 }

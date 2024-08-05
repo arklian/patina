@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.PreparedStatement;
+import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -48,7 +50,6 @@ public class PsqlEventsRepo implements EventsRepo {
 
     // Todo(Henry): Add Pagination
     public List<Event> listEvents() {
-
         List<Event> events = new ArrayList<>();
         try {
             Statement st = conn.createStatement();
@@ -64,6 +65,22 @@ public class PsqlEventsRepo implements EventsRepo {
         }
 
         return events;
+    }
+
+    public Event deleteEvent(int eventId) {
+        Event event = Event.getDefaultInstance();
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery("DELETE FROM event WHERE id = " + eventId + " RETURNING *");
+            while (rs.next()) {
+                event = getEvent(rs);
+            }
+            rs.close();
+            st.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return event;
     }
 
     // Create Event proto from SQL ResultSet
