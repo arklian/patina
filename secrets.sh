@@ -15,4 +15,4 @@ export PATINA_ADMIN_PASSWORD=redacted
 # Cookie for successful admin login - Haoking
 export PATINA_ADMIN_COOKIE=redacted
 # Credentials for pushing Docker image to Digital Ocean
-export PATINA_IMAGE_UPLOAD=redacted
+export DO_DOCKER_IMAGE_UPLOAD_PAT=redacted
