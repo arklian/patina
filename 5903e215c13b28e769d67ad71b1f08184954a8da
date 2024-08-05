@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18becec0_de680854",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/events/infra/PsqlEventsRepo.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T18:40:33Z",
+      "side": 1,
+      "message": "Add comment here to sanitize inputs for sql injection",
+      "revId": "5903e215c13b28e769d67ad71b1f08184954a8da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
