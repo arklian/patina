@@ -6,7 +6,7 @@
   padding: 125px;
   margin-bottom: 50px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex-direction: column;
   }
 }
@@ -16,7 +16,7 @@
   height: 150px;
   width: 35%;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     margin-top: 50px;
     width: 90%;
   }
@@ -29,7 +29,7 @@
   padding-left: 40px;
   width: 35%;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     width: 100%;
     padding-left: 0;
   }
@@ -40,7 +40,7 @@
   font-size: 20px;
   padding-top: 50px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     width: 100%;
   }
 }
