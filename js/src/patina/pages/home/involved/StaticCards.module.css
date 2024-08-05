@@ -11,14 +11,15 @@
   border-radius: 16px;
   border: 1px solid var(--mantine-color-dark-3, #5c5f66);
   background: var(--mantine-color-patina-dark-6);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
-  0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .centering {
   flex: 1 0 0;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     flex: 1;
   }
 }

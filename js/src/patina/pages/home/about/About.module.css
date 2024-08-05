@@ -5,7 +5,7 @@
   justify-content: flex-start;
   margin-right: 38px;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     margin-right: 0;
   }
 }
@@ -18,7 +18,7 @@
   line-height: 130%;
   margin-bottom: 24px;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @mixin smaller-than $mantine-breakpoint-md {
     font-size: 24px;
   }
 }
@@ -29,7 +29,7 @@
   margin-top: 36px;
   margin-bottom: 64px;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @mixin smaller-than $mantine-breakpoint-md {
     width: auto;
     margin-top: 12px;
     margin-bottom: 48px;

@@ -3,7 +3,7 @@
   column-gap: 72px;
   justify-content: center;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     padding: 0;
     border: 0;
     background: none;
@@ -19,7 +19,7 @@
   flex-direction: column;
   margin-bottom: 128px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     justify-content: center;
   }
 }
@@ -32,7 +32,7 @@
   font-size: 64px;
   padding-bottom: 128px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     text-align: center;
     font-size: 40px;
     padding: 0;

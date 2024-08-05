@@ -7,7 +7,7 @@
   border-radius: 5px;
   background: var(--mantine-color-patina-dark-6);
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @mixin smaller-than $mantine-breakpoint-md {
     min-height: 160;
   }
 }

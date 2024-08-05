@@ -4,7 +4,7 @@
   text-align: center;
   color: white;
 
-  @media (max-width: 535px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     font-size: 40px;
   }
 }

@@ -44,7 +44,7 @@
   margin-right: -70px;
   margin-left: -70px;
 
-  @media (max-width: 996px) {
+  @mixin smaller-than $mantine-breakpoint-md {
     height: 0;
   }
 }
