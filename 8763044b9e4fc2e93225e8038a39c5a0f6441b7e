@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "87f080aa_79da00cf",
+        "filename": "js/src/patina/admin/blog/AdminBlog.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-05T18:14:37Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "0abb7487_3530ff0c",
+      "revId": "8763044b9e4fc2e93225e8038a39c5a0f6441b7e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "677e3933_1e8d745f",
