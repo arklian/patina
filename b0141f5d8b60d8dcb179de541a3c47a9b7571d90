@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e35815e_ba89514c",
+        "filename": "js/src/patina/components/Hero.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T16:32:03Z",
+      "side": 1,
+      "message": "can\u0027t this just be \"black\"?",
+      "range": {
+        "startLine": 27,
+        "startChar": 20,
+        "endLine": 27,
+        "endChar": 29
+      },
+      "revId": "b0141f5d8b60d8dcb179de541a3c47a9b7571d90",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68f2a7fb_dd165d23",
+        "filename": "js/src/patina/pages/home/about/About.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-05T16:32:03Z",
+      "side": 1,
+      "message": "rewrite as color\u003d\"dark.0\"",
+      "range": {
+        "startLine": 21,
+        "startChar": 10,
+        "endLine": 21,
+        "endChar": 38
+      },
+      "revId": "b0141f5d8b60d8dcb179de541a3c47a9b7571d90",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
