@@ -1,5 +1,6 @@
 import { ActionIcon, UnstyledButton } from '@mantine/core'
-import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { ReactNode } from 'react'
 import styles from './Footer.module.css'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 
@@ -16,27 +17,40 @@ export function Footer() {
           </UnstyledButton>
         </div>
         <div className={styles.footerLinks}>
-          <ActionIcon
-            className={styles.linkIcon}
-            component="a"
-            href="mailto:hi@patinanetwork.org"
-            size="lg"
-            color="var(--mantine-color-dark-6)"
-          >
+          <FooterIconLink href={'mailto:hi@patinanetwork.org'}>
             <FaEnvelope size={24} />
-          </ActionIcon>
-          <ActionIcon
-            className={styles.linkIcon}
-            color="var(--mantine-color-dark-6)"
-            component="a"
-            href="https://www.linkedin.com/company/patinanetwork/"
-            target="_blank"
-            size="lg"
+          </FooterIconLink>
+          <FooterIconLink
+            href={'https://www.linkedin.com/company/patinanetwork'}
           >
             <FaLinkedin size={24} />
-          </ActionIcon>
+          </FooterIconLink>
+          <FooterIconLink href={'https://www.instagram.com/patinanetwork'}>
+            <FaInstagram size={24} />
+          </FooterIconLink>
         </div>
       </div>
     </div>
+  )
+}
+
+function FooterIconLink({
+  href,
+  children,
+}: {
+  href: string
+  children: ReactNode
+}) {
+  return (
+    <ActionIcon
+      component="a"
+      href={href}
+      target="_blank"
+      color={'dark.0'}
+      variant="transparent"
+      size="lg"
+    >
+      {children}
+    </ActionIcon>
   )
 }

@@ -3,16 +3,18 @@ import {
   Group,
   Center,
   Burger,
-  Container,
   Text,
   Drawer,
   ScrollArea,
+  UnstyledButton,
+  Affix,
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
 import { LinksGroup } from './NavbarLinksGroup.tsx'
 import classes from './NavBar.module.css'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 const links = [
   // {
@@ -26,7 +28,7 @@ const links = [
   {
     link: '',
     label: 'Programs',
-    links: [
+    subLinks: [
       { link: '/mentorship', label: 'Mentorship' },
       { link: '/scholarship', label: 'Scholarship' },
     ],
@@ -34,7 +36,7 @@ const links = [
   {
     link: '',
     label: 'Get Involved',
-    links: [
+    subLinks: [
       { link: '/mentor', label: 'Mentor' },
       // { link: '/community', label: 'Community' },
       { link: '/volunteer', label: 'Volunteer' },
@@ -54,30 +56,39 @@ export function NavBar() {
    * If a link has nested links, a dropdown menu is created.
    */
   const items = links.map((link) => {
-    const menuItems = link.links?.map((item) => (
-      <a key={item.link} href={item.link} className={classes.dropDownItem}>
-        <Menu.Item>{item.label}</Menu.Item>
-      </a>
-    ))
-
-    if (menuItems) {
+    // Link group
+    if (link.subLinks) {
       return (
         <Menu
           key={link.label}
           position={'bottom-start'}
-          trigger="hover"
+          trigger="click-hover"
+          loop={false}
+          withinPortal={false}
+          trapFocus={false}
+          menuItemTabIndex={0}
           transitionProps={{ exitDuration: 0 }}
-          withinPortal
         >
           <Menu.Target>
-            <div className={classes.link}>
+            <UnstyledButton className={classes.link}>
               <Center>
                 <Text className={classes.linkLabel}>{link.label}</Text>
-                <IconChevronDown size="0.9rem" stroke={1.5} />
+                <IconChevronDown size="16" stroke={1.5} />
               </Center>
-            </div>
+            </UnstyledButton>
           </Menu.Target>
-          <Menu.Dropdown>{menuItems}</Menu.Dropdown>
+          <Menu.Dropdown>
+            {link.subLinks?.map((subLink) => (
+              <Menu.Item
+                component={'a'}
+                key={subLink.label}
+                href={subLink.link}
+                className={classes.dropDownItem}
+              >
+                {subLink.label}
+              </Menu.Item>
+            ))}
+          </Menu.Dropdown>
         </Menu>
       )
     }
@@ -90,35 +101,49 @@ export function NavBar() {
           {link.label}
         </span>
   })
-  const mobilelinks = links.map((item) => (
-    <LinksGroup {...item} key={item.label} />
-  ))
+
   return (
-    <header className={classes.header}>
-      <Container size="75rem">
-        {/* 75rem == 1200px */}
-        <div className={classes.inner}>
-          <a href={'/'} className={classes.link}>
-            <PatinaBadge />
-          </a>
-          <Group gap={5} visibleFrom="sm">
-            {items}
-          </Group>
-          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
-        </div>
-      </Container>
-      <Drawer
-        opened={opened}
-        onClose={close}
-        size="100%"
-        padding="md"
-        hiddenFrom="sm"
-        position={'right'}
-      >
-        <ScrollArea>
-          <Group className={classes.mobile}>{mobilelinks}</Group>
-        </ScrollArea>
-      </Drawer>
-    </header>
+    <>
+      <Affix position={{ top: 0 }} w={'100%'}>
+        <header className={classes.header}>
+          <ContentPage>
+            <div className={classes.inner}>
+              <UnstyledButton
+                component={'a'}
+                href={'/'}
+                className={classes.link}
+              >
+                <PatinaBadge />
+              </UnstyledButton>
+              <Group gap={5} visibleFrom="xs">
+                {items}
+              </Group>
+              <Burger
+                opened={opened}
+                onClick={toggle}
+                size="md"
+                hiddenFrom="xs"
+              />
+            </div>
+          </ContentPage>
+          <Drawer
+            opened={opened}
+            onClose={close}
+            size="100%"
+            padding="md"
+            hiddenFrom="xs"
+            position={'right'}
+          >
+            <ScrollArea>
+              <LinksGroup label={'Home'} link={'/'} />
+              {links.map((item) => (
+                <LinksGroup {...item} key={item.label} />
+              ))}
+            </ScrollArea>
+          </Drawer>
+        </header>
+      </Affix>
+      <div className={classes.headerPlaceholder} />
+    </>
   )
 }
