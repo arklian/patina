@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff177123_867de617",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-06T20:59:17Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "0efb4d5a_6e2e2550",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b38bbd7a_36c0ebff",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-06T19:42:53Z",
       "side": 1,
       "message": "We should probably have a thing that shows error occurred in the front end and not just throw an error like this, but we can deal with it later.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 65
+      },
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f269284c_83f5066f",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-06T20:59:17Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "b38bbd7a_36c0ebff",
       "range": {
         "startLine": 23,
         "startChar": 0,
@@ -58,6 +100,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "904c73eb_a583d286",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-06T20:59:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6ceeb9c_31fdf314",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2921ce76_2b19a9fb",
@@ -75,6 +135,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "101695f5_06a13f12",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-06T20:59:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2921ce76_2b19a9fb",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "043d79c1_c5390fff",
@@ -88,6 +166,24 @@
       "writtenOn": "2024-08-06T19:42:53Z",
       "side": 1,
       "message": "Change your IntelliJ Settings -\u003e Code Style -\u003e Java -\u003e Imports -\u003e Set the 3 and 5 there for imports to 999.\n\nI prefer just importing single imports.",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "003ad822_8b575c88",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-06T20:59:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "043d79c1_c5390fff",
       "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
