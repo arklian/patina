@@ -1,0 +1,37 @@
+.container {
+  padding: 20px;
+}
+
+.titleSkeleton {
+  height: 40px;
+  width: 60%;
+  margin-bottom: 24px;
+}
+
+.cardSkeleton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.avatarSkeleton {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-right: 16px;
+}
+
+.infoSkeleton {
+  flex-grow: 1;
+}
+
+.nameSkeleton {
+  height: 20px;
+  width: 50%;
+  margin-bottom: 8px;
+}
+
+.roleSkeleton {
+  height: 16px;
+  width: 40%;
+}

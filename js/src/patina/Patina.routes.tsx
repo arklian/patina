@@ -1,5 +1,6 @@
 import { HomePage } from '@/patina/pages/home/Home.page.tsx'
 import { MissionPage } from '@/patina/pages/about/mission/Mission.page.tsx'
+import { TeamPage } from '@/patina/pages/about/team/Team.page.tsx'
 import { MentorshipPage } from '@/patina/pages/mentorship/Mentorship.page.tsx'
 import { ScholarshipPage } from '@/patina/pages/scholarship/Scholarship.page.tsx'
 import { CommunityPage } from '@/patina/pages/community/Community.page.tsx'
@@ -28,7 +29,7 @@ export const PatinaRoutes = [
   {
     path: 'team',
     description: 'Team',
-    element: <MissionPage />,
+    element: <TeamPage />,
   },
   {
     path: 'community',
