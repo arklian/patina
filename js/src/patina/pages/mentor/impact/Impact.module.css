@@ -41,6 +41,13 @@
   font-size: 22px;
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 128px;
+}
+
 .controls {
   display: flex;
   justify-content: space-between;
