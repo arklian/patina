@@ -104,6 +104,37 @@ export function TonyPage() {
               }
             </Text>
             <div className={styles.experienceDiv}>
+              <Text className={styles.experienceTitle}>
+                {'Software Developer Intern @ Patina Network ↗'}
+              </Text>
+              <Text className={styles.experienceDates}>
+                {'Jun 2024 - Aug 2024'}
+              </Text>
+              <Text className={styles.experienceText}>
+                {
+                  'Established a workflow for 12 engineers to upgrade the PostgresDB schema through code-reviewed migrations, supporting parallel work in local Docker instances while keeping the production database consistent. Developed JSON-based REST endpoints using Java and Spring and translated Figma designs into a responsive website with React, TypeScript, and Mantine UI, and deployed it on DigitalOcean App Platform.'
+                }
+              </Text>
+              <Group className={styles.skillGroup}>
+                <Badge color={'#0dba93'} autoContrast>
+                  {'HTML'}
+                </Badge>
+                <Badge color={'#0dba93'} autoContrast>
+                  {'CSS'}
+                </Badge>
+                <Badge color={'#0dba93'} autoContrast>
+                  {'Typescript'}
+                </Badge>
+                <Badge color={'#0dba93'} autoContrast>
+                  {'React'}
+                </Badge>
+                <Badge color={'#0dba93'} autoContrast>
+                  {'Mantine'}
+                </Badge>
+              </Group>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.experienceDiv}>
               <a
                 href="https://maryash.github.io/135/index.html"
                 rel="noopener noreferrer"
@@ -159,37 +190,6 @@ export function TonyPage() {
                   </Badge>
                 </Group>
               </a>
-            </div>
-            <div className={styles.divider}></div>
-            <div className={styles.experienceDiv}>
-              <Text className={styles.experienceTitle}>
-                {'Software Developer Intern @ Patina Network ↗'}
-              </Text>
-              <Text className={styles.experienceDates}>
-                {'Jun 2024 - Aug 2024'}
-              </Text>
-              <Text className={styles.experienceText}>
-                {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.'
-                }
-              </Text>
-              <Group className={styles.skillGroup}>
-                <Badge color={'#0dba93'} autoContrast>
-                  {'HTML'}
-                </Badge>
-                <Badge color={'#0dba93'} autoContrast>
-                  {'CSS'}
-                </Badge>
-                <Badge color={'#0dba93'} autoContrast>
-                  {'Typescript'}
-                </Badge>
-                <Badge color={'#0dba93'} autoContrast>
-                  {'React'}
-                </Badge>
-                <Badge color={'#0dba93'} autoContrast>
-                  {'Mantine'}
-                </Badge>
-              </Group>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.flexProject}>
