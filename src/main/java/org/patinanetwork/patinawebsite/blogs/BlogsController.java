@@ -46,6 +46,7 @@ public class BlogsController {
                 .setTitle(blogReq.getTitle())
                 .setContent(blogReq.getContent())
                 .setCreateTime(currentTimestamp)
+                .setImage(blogReq.getImage())
                 .build();
 
         // Add the blog to the repository
