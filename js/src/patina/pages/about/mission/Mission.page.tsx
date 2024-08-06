@@ -1,19 +1,26 @@
-import { Skeleton } from '@mantine/core'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { Skeleton, Title, Space } from '@mantine/core'
+import styles from './Mission.module.css'
 
-/**
- * Todo: Fill in
- */
 export function MissionPage() {
   return (
-    <ContentPage>
-      {'Mission Page'}
-      {/* Section 1 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-      {/* Section 2 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-      {/* Section 3 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-    </ContentPage>
+    <div className={styles.container}>
+      <Title order={1}>
+        <Skeleton className={styles.titleSkeleton} />
+      </Title>
+      <Space h="md" />
+      <Skeleton className={styles.paragraphSkeleton} />
+      <Skeleton className={styles.paragraphSkeleton} />
+      <Skeleton className={styles.paragraphSkeleton} />
+      <Space h="lg" />
+      <Title order={2}>
+        <Skeleton className={styles.subtitleSkeleton} />
+      </Title>
+      <Space h="md" />
+      <Skeleton className={styles.imageSkeleton} />
+      <Space h="lg" />
+      <Skeleton className={styles.paragraphSkeleton} />
+      <Skeleton className={styles.paragraphSkeleton} />
+      <Skeleton className={styles.paragraphSkeleton} />
+    </div>
   )
 }
