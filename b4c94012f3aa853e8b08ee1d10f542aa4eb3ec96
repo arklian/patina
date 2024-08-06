@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e15ccfc3_b298fa3e",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T21:27:07Z",
+      "side": 1,
+      "message": "We might want to rename this to like BlogListPage to accommodate for the single blog post view.",
+      "revId": "b4c94012f3aa853e8b08ee1d10f542aa4eb3ec96",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
