@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PatinaWebsiteController {
 
+    @GetMapping("/api/secured")
+    public String secured() {
+        return "This is a secured website";
+    }
+
     @GetMapping("/api/test")
     public String test() {
         return "HelloWorld! \n This is an endpoint!";
