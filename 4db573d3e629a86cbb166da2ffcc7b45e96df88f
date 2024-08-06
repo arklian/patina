@@ -152,6 +152,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "18044fec_ec6a0f63",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/config/SecurityConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T20:20:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f34b1b1a_c20d72b7",
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e78476e5_36259b38",
