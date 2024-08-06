@@ -19,14 +19,14 @@ import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 const links = [
-  // {
-  //   link: '',
-  //   label: 'About',
-  //   links: [
-  //     { link: '/mission', label: 'Mission' },
-  //     { link: '/team', label: 'Team' },
-  //   ],
-  // },
+  {
+    link: '',
+    label: 'About',
+    subLinks: [
+      { link: '/mission', label: 'Mission' },
+      { link: '/team', label: 'Team' },
+    ],
+  },
   {
     link: '',
     label: 'Programs',
