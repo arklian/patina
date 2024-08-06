@@ -40,6 +40,13 @@
   color: var(--mantine-color-dark-0);
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 128px;
+}
+
 .control {
   margin-right: -70px;
   margin-left: -70px;
