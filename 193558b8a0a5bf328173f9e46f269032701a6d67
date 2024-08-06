@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a08acad_f4a821ca",
+        "filename": "js/src/patina/pages/mentor/banner/banner.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T17:23:21Z",
+      "side": 1,
+      "message": "no longer need rems",
+      "revId": "193558b8a0a5bf328173f9e46f269032701a6d67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7ebb11e_34b5c59f",
+        "filename": "js/src/patina/pages/mentor/banner/banner.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T17:23:21Z",
+      "side": 1,
+      "message": "TSX file names are PascalCase",
+      "revId": "193558b8a0a5bf328173f9e46f269032701a6d67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "378bb951_8cc8b799",
+        "filename": "js/src/patina/pages/mentor/banner/banner.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T17:23:21Z",
+      "side": 1,
+      "message": "This color should be pulled in from the theme. \nSearch for useMantineTheme",
+      "range": {
+        "startLine": 26,
+        "startChar": 55,
+        "endLine": 26,
+        "endChar": 61
+      },
+      "revId": "193558b8a0a5bf328173f9e46f269032701a6d67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
