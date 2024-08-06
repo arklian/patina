@@ -4,9 +4,11 @@ import org.patinanetwork.common.db.DBConnection;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.springframework.stereotype.Component;
 
-import java.sql.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
@@ -52,8 +54,6 @@ public class PsqlBlogsRepo implements BlogsRepo {
     }
 
 
-
-
     @Override
     public Blog getBlogById(String id) {
         String sql = "SELECT id, author, title, content, create_time FROM blogpost WHERE id = ?";
@@ -76,7 +76,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
     @Override
     public List<Blog> listAllBlogs() {
         List<Blog> blogs = new ArrayList<>();
-        String sql = "SELECT id, author, title, content, create_time FROM blogpost";
+        String sql = "SELECT id, author, title, content, create_time FROM blog ORDER BY create_time DESC";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {

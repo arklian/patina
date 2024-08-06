@@ -35,3 +35,7 @@ message CreateBlogReq {
 message CreateBlogResp{
   Blog blog = 1;
 }
+
+message ListBlogResp {
+  repeated Blog blogs = 1;
+}
