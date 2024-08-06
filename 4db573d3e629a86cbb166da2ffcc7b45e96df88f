@@ -35,6 +35,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c857fefe_d30a2057",
+        "filename": "build.gradle.kts",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T19:38:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e735c6b_2512406b",
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e7d64db7_e09e1570",
@@ -58,6 +76,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "73116dde_e19fe798",
+        "filename": "build.gradle.kts",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T19:38:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e7d64db7_e09e1570",
+      "range": {
+        "startLine": 50,
+        "startChar": 76,
+        "endLine": 50,
+        "endChar": 111
+      },
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2ff622db_61036c32",
@@ -71,6 +113,24 @@
       "writtenOn": "2024-08-06T19:36:07Z",
       "side": 1,
       "message": "unneeded",
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38ec92aa_e135ccc8",
+        "filename": "build.gradle.kts",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T19:38:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2ff622db_61036c32",
       "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -105,6 +165,24 @@
       "writtenOn": "2024-08-06T19:36:07Z",
       "side": 1,
       "message": "nit: TODO all caps",
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dc62a2c_13b8999d",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/config/SecurityConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T19:38:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e78476e5_36259b38",
       "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
