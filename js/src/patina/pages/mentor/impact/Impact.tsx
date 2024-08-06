@@ -17,7 +17,7 @@ const info = [
 ]
 
 export function Impact() {
-  const smallScreen = useMediaQuery('max-width: 996')
+  const smallScreen = useMediaQuery('max-width: $mantine-breakpoint-md')
   const slides = info.map(
     (item: { title: string; text: string; quote: string }) => (
       <Carousel.Slide>
@@ -33,15 +33,20 @@ export function Impact() {
     ),
   )
   return (
-    <Flex className={styles.carouselContainer}>
-      <Carousel
-        withIndicators
-        height="100%"
-        withControls={!smallScreen}
-        classNames={{ controls: styles.controls }}
-      >
-        {slides}
-      </Carousel>
-    </Flex>
+    <div>
+      <div>
+        <Title className={styles.titleContainer}>{'Impact'}</Title>
+      </div>
+      <Flex className={styles.carouselContainer}>
+        <Carousel
+          withIndicators
+          height="100%"
+          withControls={!smallScreen}
+          classNames={{ controls: styles.controls }}
+        >
+          {slides}
+        </Carousel>
+      </Flex>
+    </div>
   )
 }
