@@ -77,6 +77,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f34b1b1a_c20d72b7",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/config/SecurityConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:36:48Z",
+      "side": 1,
+      "message": "I have some concerns with this pattern when endpoints are scaled up, and we want different permissions for different things, but it\u0027s a good place to start.",
+      "revId": "4db573d3e629a86cbb166da2ffcc7b45e96df88f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e78476e5_36259b38",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/config/SecurityConfig.java",
         "patchSetId": 1
