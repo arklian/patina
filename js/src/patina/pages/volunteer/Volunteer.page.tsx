@@ -29,22 +29,22 @@ export function VolunteerPage() {
       <section className={styles.grid}>
         <VolunteerCard
           title="Social Media"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          description="We are seeking a motivated and creative Social Media Intern to join our team. As an intern, you will play a crucial role in enhancing our online presence, engaging with our audience, and promoting our initiatives."
           type="Remote/In-person"
         />
         <VolunteerCard
           title="Graphic Design"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          description="We are seeking a creative and motivated Graphic Design Intern to join our team. As an intern, you will play a vital role in visually communicating our mission through compelling design."
           type="Remote/In-person"
         />
         <VolunteerCard
           title="Legal Specialist"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          description="We are seeking a motivated Legal Specialist who will provide essential legal support to the organization, ensuring compliance with all applicable laws and regulations. This role will involve a wide range of legal tasks, from contract review to litigation support."
           type="Remote/In-person"
         />
         <VolunteerCard
           title="Events Planner"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          description="The Event Planner is responsible for planning, organizing, and executing a variety of events to support the organization’s mission and goals. This role requires strong project management, communication, and interpersonal skills to ensure successful event delivery."
           type="Remote/In-person"
         />
       </section>
