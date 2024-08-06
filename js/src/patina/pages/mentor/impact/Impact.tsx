@@ -33,15 +33,20 @@ export function Impact() {
     ),
   )
   return (
-    <Flex className={styles.carouselContainer}>
-      <Carousel
-        withIndicators
-        height="100%"
-        withControls={!smallScreen}
-        classNames={{ controls: styles.controls }}
-      >
-        {slides}
-      </Carousel>
-    </Flex>
+    <div>
+      <div>
+        <Title className={styles.titleContainer}>{'Impact'}</Title>
+      </div>
+      <Flex className={styles.carouselContainer}>
+        <Carousel
+          withIndicators
+          height="100%"
+          withControls={!smallScreen}
+          classNames={{ controls: styles.controls }}
+        >
+          {slides}
+        </Carousel>
+      </Flex>
+    </div>
   )
 }
