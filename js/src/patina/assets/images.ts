@@ -71,4 +71,8 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/placeholder.png',
     alt: 'placeholder image',
   },
+  internshipHero: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/internshipHero.png',
+    alt: 'Two women looking at a computer while smiling. Image is tinted blue',
+  },
 }
