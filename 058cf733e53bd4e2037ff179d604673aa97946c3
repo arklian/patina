@@ -16,6 +16,24 @@
       "message": "The issue that I am running into with my build test is that my CSS file is empty. Nothing to do with the HTML.",
       "revId": "058cf733e53bd4e2037ff179d604673aa97946c3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a18def3_4b12a5d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:54:07Z",
+      "side": 1,
+      "message": "Why is it empty if you\u0027re importing styles from it in the other file.\nDelete the file if you don\u0027t need it. Add a placeholder style if it\u0027s just in progress.",
+      "parentUuid": "0569ac78_c57b1ddc",
+      "revId": "058cf733e53bd4e2037ff179d604673aa97946c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
