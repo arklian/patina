@@ -2,6 +2,7 @@ import { Grid } from '@mantine/core'
 import { Calendar } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import { useQuery } from '@tanstack/react-query'
+import { useState } from 'react'
 import { EventCard } from './EventCard.tsx'
 import styles from '@/patina/pages/community/events/MainSection.module.css'
 
@@ -25,6 +26,8 @@ function convertToDateObject(inputtedDate: string) {
  * Component rendering a calendar on the left and events on the right.
  */
 export function MainSection() {
+  const [currentMonth, setCurrentMonth] = useState('')
+  const [selectedDate, setSelectedDate] = useState('')
   const query = useQuery({
     queryKey: ['events'],
     queryFn: async () => {
@@ -36,11 +39,18 @@ export function MainSection() {
     },
   })
 
-  const allEventDates = query.data?.events.map((event: Event) =>
+  const filteredEvents = query.data?.events.filter(
+    (event: Event) => event.date.substring(5, 7) === currentMonth,
+  )
+
+  const allEventDates = filteredEvents?.map((event: Event) =>
     convertToDateObject(event.date),
   )
 
   const handleDate = (givenDate: Date) => {
+    if (givenDate.getDate() === 15) {
+      setCurrentMonth(givenDate.toISOString().substring(5, 7))
+    }
     const givenDay = givenDate.getDate()
     if (
       allEventDates?.some(
@@ -68,21 +78,37 @@ export function MainSection() {
             monthCell: styles.calendarCell, // each cell within month view
           }}
           hideOutsideDates
+          maxLevel="month"
           previousIcon={<IconChevronLeft size={24} />}
           nextIcon={<IconChevronRight size={24} />}
-          renderDay={(date) => handleDate(date)}
+          getDayProps={(date) => ({
+            onClick: () => {
+              if (selectedDate === date.toISOString().substring(0, 10)) {
+                setSelectedDate('')
+              } else setSelectedDate(date.toISOString().substring(0, 10))
+            },
+          })}
+          onNextMonth={() => setSelectedDate('')}
+          onPreviousMonth={() => setSelectedDate('')}
+          renderDay={(date: Date) => handleDate(date)}
         />
       </Grid.Col>
       <Grid.Col span={8}>
-        {query.data?.events.map((event: Event, index: number) => (
-          <EventCard
-            key={index}
-            name={event.name}
-            location={event.location}
-            details={event.message}
-            actualDate={convertToDateObject(event.date)}
-          />
-        ))}
+        {filteredEvents
+          ?.filter(
+            (event: Event) =>
+              event.date === selectedDate || selectedDate === '',
+          )
+          .sort((a: Event, b: Event) => a.date.localeCompare(b.date))
+          .map((event: Event, index: number) => (
+            <EventCard
+              key={index}
+              name={event.name}
+              location={event.location}
+              details={event.message}
+              actualDate={convertToDateObject(event.date)}
+            />
+          ))}
       </Grid.Col>
     </Grid>
   )
