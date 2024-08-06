@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0efb4d5a_6e2e2550",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:42:53Z",
+      "side": 1,
+      "message": "We should have a check for pending status and return like a spinner/skeleton",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b38bbd7a_36c0ebff",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:42:53Z",
+      "side": 1,
+      "message": "We should probably have a thing that shows error occurred in the front end and not just throw an error like this, but we can deal with it later.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 65
+      },
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6ceeb9c_31fdf314",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:42:53Z",
+      "side": 1,
+      "message": "It would be good to sort these in the backend instead.\nCould sort these in the frontend too, but we shouldn\u0027t need to do this on data load.",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2921ce76_2b19a9fb",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:42:53Z",
+      "side": 1,
+      "message": "Since createTime should be in ISO format, you should just be able to compare the strings directly to see which one is earler.",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "043d79c1_c5390fff",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T19:42:53Z",
+      "side": 1,
+      "message": "Change your IntelliJ Settings -\u003e Code Style -\u003e Java -\u003e Imports -\u003e Set the 3 and 5 there for imports to 999.\n\nI prefer just importing single imports.",
+      "revId": "e89f318ddcc1617478cc14ed58ed70a7e92a3009",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
