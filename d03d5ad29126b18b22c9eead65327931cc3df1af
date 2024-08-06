@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ae78431_e9d8bd8f",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T20:20:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7e98ab52_614519ad",
+      "revId": "d03d5ad29126b18b22c9eead65327931cc3df1af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "18fa6c69_70248918",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-06T19:56:43Z",
       "side": 1,
       "message": "Deleted this secret",
+      "range": {
+        "startLine": 7,
+        "startChar": 70,
+        "endLine": 7,
+        "endChar": 71
+      },
+      "revId": "d03d5ad29126b18b22c9eead65327931cc3df1af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68e372ef_ad6b63d8",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-06T20:20:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "18fa6c69_70248918",
       "range": {
         "startLine": 7,
         "startChar": 70,
