@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4fb75fb0_98faaf09",
+        "filename": "docs/postgres-on-docker.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T22:01:56Z",
+      "side": 1,
+      "message": "Nice! We should add more info about Seed data here too after.\nAlso should add a comment about if the data inside is stored or not after restarting the docker container, and how you would clear/reset it if you wanted to.",
+      "revId": "e54ee15f19875887715e781cbfd37b90c029e13e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
