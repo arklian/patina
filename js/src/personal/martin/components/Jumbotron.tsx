@@ -1,4 +1,5 @@
 import { Container, Flex, Grid, Image, Text, Title } from '@mantine/core'
+import { theme } from '@/personal/martin/theme.ts'
 
 type jumbotronProps = {
   title: string
@@ -13,7 +14,7 @@ export function Jumbotron(props: jumbotronProps) {
       <Grid grow justify="center" align="center">
         <Grid.Col span={4}>
           <Container>
-            <Title order={1} mx={'1em'}>
+            <Title c={theme.colors.uranianBlue[7]} order={1} mx={'1em'}>
               {props.title}
             </Title>
             <Text mx={'3em'}>{props.text}</Text>
