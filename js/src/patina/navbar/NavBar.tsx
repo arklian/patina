@@ -40,7 +40,7 @@ const links = [
     label: 'Get Involved',
     subLinks: [
       { link: '/mentor', label: 'Mentor' },
-      // { link: '/community', label: 'Community' },
+      { link: '/community', label: 'Community' },
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },

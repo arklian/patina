@@ -1,8 +1,7 @@
 .carouselContainer {
-  display: flex;
   max-width: 1200px;
   padding-bottom: 128px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
   align-self: stretch;
@@ -20,7 +19,6 @@
 .imagePlaceholder {
   flex: 1;
   background-color: var(--mantine-color-dark-4);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -29,9 +27,8 @@
   flex: 1;
   padding: 16px;
   color: white;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .quote {
@@ -40,9 +37,15 @@
   color: var(--mantine-color-dark-0);
 }
 
-.control {
-  margin-right: -70px;
-  margin-left: -70px;
+.title {
+  font-size: 22px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -45px;
+  margin-left: -45px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     height: 0;

@@ -1,34 +1,47 @@
 import { Carousel } from '@mantine/carousel'
+import { Text, Flex, Title } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import styles from './Impact.module.css'
 
+const info = [
+  {
+    title: 'Cinthia and Jasmine',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    quote: '“Quote from student”',
+  },
+  {
+    title: 'Cinthia and Jasmine',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    quote: '“Quote from student”',
+  },
+]
+
 export function Impact() {
   const smallScreen = useMediaQuery('max-width: 996')
+  const slides = info.map(
+    (item: { title: string; text: string; quote: string }) => (
+      <Carousel.Slide>
+        <Flex className={styles.slide}>
+          <Flex className={styles.imagePlaceholder}></Flex>
+          <Flex className={styles.textContainer}>
+            <Title className={styles.title}>{item.title}</Title>
+            <Text>{item.text}</Text>
+            <Text className={styles.quote}>{item.quote}</Text>
+          </Flex>
+        </Flex>
+      </Carousel.Slide>
+    ),
+  )
   return (
-    <div className={styles.carouselContainer}>
+    <Flex className={styles.carouselContainer}>
       <Carousel
-        height={200}
-        slideGap="md"
-        controlsOffset="xs"
+        withIndicators
+        height="100%"
         withControls={!smallScreen}
-        classNames={{ control: styles.control }}
+        classNames={{ controls: styles.controls }}
       >
-        <Carousel.Slide>
-          <div className={styles.slide}>
-            <div className={styles.imagePlaceholder}></div>
-            <div className={styles.textContainer}>
-              <h3>{'Cinthia and Jasmine'}</h3>
-              <p>
-                {
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                }
-              </p>
-              <p className={styles.quote}>{'“Quote from student”'}</p>
-            </div>
-          </div>
-        </Carousel.Slide>
-        {/* Add more slides as needed */}
+        {slides}
       </Carousel>
-    </div>
+    </Flex>
   )
 }
