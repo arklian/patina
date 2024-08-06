@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dfd48ea9_ed7cdeb0",
+        "filename": "js/src/patina/pages/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T22:41:55Z",
+      "side": 1,
+      "message": "using substring feels fragile. Wonder if there\u0027s a better way of handling these.\nI think mantine recommended dayjs https://day.js.org/\nMight be worth looking into that to clean this up a bit.",
+      "range": {
+        "startLine": 86,
+        "startChar": 54,
+        "endLine": 86,
+        "endChar": 70
+      },
+      "revId": "155c491f18b416e84c215260b275566de71dda94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
