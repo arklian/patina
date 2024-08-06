@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27dfcacd_e91af3b7",
+        "filename": "js/src/patina/pages/mentor/banner/banner.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T17:18:27Z",
+      "side": 1,
+      "message": "Search mixin and smaller-than in our codebase to see how media queries should be done.\n\nWe should also invert this so that we have a media query per class instead of one big media query.",
+      "revId": "ff2b8c65196e767541ffb9428eea34117ee7ad20",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce7b6258_25fee1e7",
+        "filename": "js/src/patina/pages/mentor/banner/banner.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-06T17:18:27Z",
+      "side": 1,
+      "message": "we likely should stick with px in our codebase, as we have autoRem on in our PostCSS",
+      "revId": "ff2b8c65196e767541ffb9428eea34117ee7ad20",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
