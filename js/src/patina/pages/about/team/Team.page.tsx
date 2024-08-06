@@ -1,19 +1,46 @@
-import { Skeleton } from '@mantine/core'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { Skeleton, Title, Space } from '@mantine/core'
+import styles from './Team.module.css'
 
-/**
- * Todo: Fill in
- */
 export function TeamPage() {
   return (
-    <ContentPage>
-      {'Team Page'}
-      {/* Section 1 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-      {/* Section 2 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-      {/* Section 3 */}
-      <Skeleton animate={false} height={70} width="100%" mb="xl" />
-    </ContentPage>
+    <div className={styles.container}>
+      <Title order={1}>{'Our Team'}</Title>
+      <Space h="md" />
+      <div className={styles.cardSkeleton}>
+        <Skeleton className={styles.avatarSkeleton} />
+        <div className={styles.infoSkeleton}>
+          <Skeleton className={styles.nameSkeleton} />
+          <Skeleton className={styles.roleSkeleton} />
+        </div>
+      </div>
+      <div className={styles.cardSkeleton}>
+        <Skeleton className={styles.avatarSkeleton} />
+        <div className={styles.infoSkeleton}>
+          <Skeleton className={styles.nameSkeleton} />
+          <Skeleton className={styles.roleSkeleton} />
+        </div>
+      </div>
+      <div className={styles.cardSkeleton}>
+        <Skeleton className={styles.avatarSkeleton} />
+        <div className={styles.infoSkeleton}>
+          <Skeleton className={styles.nameSkeleton} />
+          <Skeleton className={styles.roleSkeleton} />
+        </div>
+      </div>
+      <div className={styles.cardSkeleton}>
+        <Skeleton className={styles.avatarSkeleton} />
+        <div className={styles.infoSkeleton}>
+          <Skeleton className={styles.nameSkeleton} />
+          <Skeleton className={styles.roleSkeleton} />
+        </div>
+      </div>
+      <div className={styles.cardSkeleton}>
+        <Skeleton className={styles.avatarSkeleton} />
+        <div className={styles.infoSkeleton}>
+          <Skeleton className={styles.nameSkeleton} />
+          <Skeleton className={styles.roleSkeleton} />
+        </div>
+      </div>
+    </div>
   )
 }
