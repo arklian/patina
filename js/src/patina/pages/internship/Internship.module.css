@@ -19,3 +19,18 @@
   font-size: 24px;
   font-weight: 700;
 }
+
+.internshipCards {
+  width: 100%;
+  padding-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
