@@ -34,6 +34,7 @@
     "@tiptap/extension-placeholder": "^2.5.9",
     "@tiptap/react": "^2.5.9",
     "@tiptap/starter-kit": "^2.5.9",
+    "dayjs": "^1.11.12",
     "email-validator": "^2.0.4",
     "embla-carousel-react": "^7.1.0",
     "gsap": "^3.12.5",
