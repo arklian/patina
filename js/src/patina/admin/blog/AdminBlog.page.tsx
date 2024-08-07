@@ -1,4 +1,11 @@
-import { Container, TextInput, Textarea, Button, Stack } from '@mantine/core'
+import {
+  Container,
+  TextInput,
+  Textarea,
+  Button,
+  Stack,
+  Title,
+} from '@mantine/core'
 import { useState } from 'react'
 
 export function BlogAdminPage() {
@@ -47,9 +54,11 @@ export function BlogAdminPage() {
   return (
     <Container>
       <form onSubmit={handleSubmit}>
+        <Title>{'Blog'}</Title>
         <Stack>
+          <Title order={3}>{'Add Blog'}</Title>
           <TextInput
-            label="author"
+            label="Author"
             value={author}
             onChange={(event) => setName(event.currentTarget.value)}
             required
