@@ -1,6 +1,7 @@
 import { AppShell, Burger, useMantineTheme } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { Outlet } from 'react-router-dom'
+import { AdminNavbar } from '@/patina/admin/navbar/AdminNavbar.tsx'
 
 export function Admin() {
   const theme = useMantineTheme()
@@ -31,7 +32,7 @@ export function Admin() {
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
-        <div>{'Admin Navigation'}</div>
+        <AdminNavbar />
       </AppShell.Navbar>
 
       <AppShell.Main>
