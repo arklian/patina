@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ecdd4e6_08ebc156",
+        "filename": "js/src/Routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T07:31:27Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this start with a /",
+      "revId": "cc3c3247632b121ddf7c82bcd71db0bfc2684636",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e09c752f_e065b5b2",
+        "filename": "js/src/patina/admin/AdminMain.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T07:31:27Z",
+      "side": 1,
+      "message": "We probably shouldn\u0027t be committing empty files, like the two below.",
+      "revId": "cc3c3247632b121ddf7c82bcd71db0bfc2684636",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
