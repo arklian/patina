@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef04bea6_72e7ab51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:16:42Z",
+      "side": 1,
+      "message": "Nice!",
+      "revId": "4b0b3a36255299f5a308dc25a28b979dc135c35e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "764d2977_bd0e38c0",
+        "filename": "js/src/patina/pages/internship/InternCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:16:42Z",
+      "side": 1,
+      "message": "You can use ActionIcon for these. See Footer.tsx",
+      "revId": "4b0b3a36255299f5a308dc25a28b979dc135c35e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
