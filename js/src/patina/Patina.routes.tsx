@@ -9,6 +9,7 @@ import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
 import { BlogPage } from '@/patina/pages/blog/Blog.page.tsx'
 import { InternshipPage } from '@/patina/pages/internship/Internship.page.tsx'
+import { Login_oauth2Page } from '@/patina/login_oauth2/Login_oauth2.page.tsx'
 
 /**
  * Routes for the Patina Website
@@ -58,6 +59,11 @@ export const PatinaRoutes = [
     path: 'login',
     description: 'Login Page',
     element: <LoginPage />,
+  },
+  {
+    path: 'login_oauth2',
+    description: 'Login Page',
+    element: <Login_oauth2Page />,
   },
   {
     path: 'blog',
