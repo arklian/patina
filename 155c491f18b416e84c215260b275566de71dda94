@@ -22,6 +22,30 @@
       },
       "revId": "155c491f18b416e84c215260b275566de71dda94",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6aadc0f3_913d938a",
+        "filename": "js/src/patina/pages/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-07T04:23:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dfd48ea9_ed7cdeb0",
+      "range": {
+        "startLine": 86,
+        "startChar": 54,
+        "endLine": 86,
+        "endChar": 70
+      },
+      "revId": "155c491f18b416e84c215260b275566de71dda94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
