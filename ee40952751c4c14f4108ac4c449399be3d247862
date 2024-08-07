@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "badd0ec8_010378a3",
+        "filename": "js/src/patina/pages/community/events/MainSection.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-07T23:10:02Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "403a672c_c319b0b7",
+      "range": {
+        "startLine": 88,
+        "startChar": 21,
+        "endLine": 88,
+        "endChar": 42
+      },
+      "revId": "ee40952751c4c14f4108ac4c449399be3d247862",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2aebb06d_56dd7759",
@@ -37,6 +61,24 @@
       "writtenOn": "2024-08-07T06:25:58Z",
       "side": 1,
       "message": "seems a bit annoying that we have to mark all of these types like this.\nI assume it\u0027s since we\u0027re doing optional chaining and it could be undefined?\n\nWonder if there\u0027s a cleaner way of doing this where we don\u0027t need to do it.\n\n\nMaybe (filteredEvents || []).filter",
+      "revId": "ee40952751c4c14f4108ac4c449399be3d247862",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9008a509_b6e66a11",
+        "filename": "js/src/patina/pages/community/events/MainSection.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-07T23:10:02Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "2aebb06d_56dd7759",
       "revId": "ee40952751c4c14f4108ac4c449399be3d247862",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
