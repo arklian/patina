@@ -1,0 +1,21 @@
+.details {
+  font-size: 24px;
+}
+
+.internshipDetails {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 100%;
+  gap: 48px;
+}
+
+.internshipText {
+  font-size: 24px;
+}
+
+.internshipTextHeader {
+  font-size: 24px;
+  font-weight: 700;
+}
