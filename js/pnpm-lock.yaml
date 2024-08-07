@@ -53,6 +53,9 @@ importers:
       '@tiptap/starter-kit':
         specifier: ^2.5.9
         version: 2.5.9(@tiptap/pm@2.5.6)
+      dayjs:
+        specifier: ^1.11.12
+        version: 1.11.12
       email-validator:
         specifier: ^2.0.4
         version: 2.0.4
