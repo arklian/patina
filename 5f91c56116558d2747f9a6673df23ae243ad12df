@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e1c7e9a_2f1dd7d7",
+        "filename": "js/src/patina/admin/navbar/AdminNavbar.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T07:32:09Z",
+      "side": 1,
+      "message": "Is this comment necessary?",
+      "range": {
+        "startLine": 2,
+        "startChar": 37,
+        "endLine": 2,
+        "endChar": 75
+      },
+      "revId": "5f91c56116558d2747f9a6673df23ae243ad12df",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
