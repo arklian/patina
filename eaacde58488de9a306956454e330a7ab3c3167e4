@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98aa78a6_f33d9ba0",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:42:44Z",
+      "side": 1,
+      "message": "huh we have two java\u0027s here. can probably remove one.",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "64a9039e_293e2937",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/TestBlogsRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:42:44Z",
+      "side": 1,
+      "message": "fix comment",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4719328c_6a561963",
+        "filename": "src/test/java/org/patinanetwork/PatinaApplicationTests.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:42:44Z",
+      "side": 1,
+      "message": "Probably want a more descriptive reason of why we\u0027re commenting this out but also keeping it around.\n\nMostly because I want to investigate how the spring tests run and that I wouldn\u0027t want spring to run in our CI/CD pipeline",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
