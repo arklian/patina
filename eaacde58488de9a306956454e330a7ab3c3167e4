@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "93756841_68dab421",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:43:32Z",
+      "side": 1,
+      "message": "nit: blank line before here",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "98aa78a6_f33d9ba0",
         "filename": "build.gradle.kts",
         "patchSetId": 2
@@ -14,6 +31,23 @@
       "writtenOn": "2024-08-07T06:42:44Z",
       "side": 1,
       "message": "huh we have two java\u0027s here. can probably remove one.",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a617312_6260fc45",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-07T06:43:32Z",
+      "side": 1,
+      "message": "nit: remove empty lines here",
       "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
