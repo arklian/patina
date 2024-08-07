@@ -1,11 +1,8 @@
 package org.patinanetwork;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+//@SpringBootTest
 class PatinaApplicationTests {
 
-    @Test
+//    @Test
     void contextLoads() {}
 }

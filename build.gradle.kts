@@ -1,3 +1,5 @@
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 plugins {
     java
@@ -54,6 +56,12 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    testLogging {
+        events(TestLogEvent.FAILED);
+        exceptionFormat = TestExceptionFormat.FULL
+    }
+
+
 }
 
 tasks.named("bootRun") {
