@@ -6,8 +6,6 @@ import { ScholarshipPage } from '@/patina/pages/scholarship/Scholarship.page.tsx
 import { CommunityPage } from '@/patina/pages/community/Community.page.tsx'
 import { MentorPage } from '@/patina/pages/mentor/Mentor.page.tsx'
 import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
-import { AdminRoutes } from '@/patina/admin/Admin.routes.tsx'
-import { AdminPage } from '@/patina/admin/Admin.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
 import { BlogPage } from '@/patina/pages/blog/Blog.page.tsx'
 import { InternshipPage } from '@/patina/pages/internship/Internship.page.tsx'
@@ -55,12 +53,6 @@ export const PatinaRoutes = [
     path: 'volunteer',
     description: 'Volunteering Opportunities',
     element: <VolunteerPage />,
-  },
-  {
-    path: 'admin',
-    description: 'admin',
-    element: <AdminPage />,
-    children: AdminRoutes,
   },
   {
     path: 'login',

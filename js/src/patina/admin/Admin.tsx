@@ -2,7 +2,7 @@ import { AppShell, Burger, useMantineTheme } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { Outlet } from 'react-router-dom'
 
-export function AdminPage() {
+export function Admin() {
   const theme = useMantineTheme()
   const [opened, { toggle }] = useDisclosure(false)
 
