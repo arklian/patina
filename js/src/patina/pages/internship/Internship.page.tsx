@@ -2,6 +2,7 @@ import { Text } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { InternCard } from './InternCard.tsx'
 import styles from './Internship.module.css'
 
 export function InternshipPage() {
@@ -33,6 +34,74 @@ export function InternshipPage() {
           {'Check out their work:'}
         </Text>
       </section>
+      <div className={styles.internshipCards}>
+        <div className={styles.grid}>
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+          <InternCard
+            name="placeholder"
+            school="placeholder"
+            linkedInURL="google.com"
+            githubURL="google.com"
+            imageSRC={imageUrls.placeholder.src}
+            webURL="google.com"
+          />
+        </div>
+      </div>
     </ContentPage>
   )
 }
