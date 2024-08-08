@@ -16,6 +16,24 @@
       "message": "nit: use the same `radius\u003d...` style",
       "revId": "431dcdfe98784a2607fa90316175d95326daaf26",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e71cce72_7db887cb",
+        "filename": "js/src/patina/login/oauth2/Oauth2Page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-08T16:29:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f65f2232_fb13e9e3",
+      "revId": "431dcdfe98784a2607fa90316175d95326daaf26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
