@@ -91,6 +91,7 @@ export function MainSection() {
           onNextMonth={() => setSelectedDate(null)}
           onPreviousMonth={() => setSelectedDate(null)}
           renderDay={(date: Date) => handleDate(date)}
+          mb={'64'}
         />
       </Grid.Col>
       <Grid.Col span={6}>

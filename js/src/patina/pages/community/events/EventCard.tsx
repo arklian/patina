@@ -20,8 +20,8 @@ export function EventCard({
   return (
     <div className={styles.eventCard}>
       <Stack gap={12}>
-        <Group justify={'space-between'}>
-          <Stack gap={0}>
+        <Group justify={'space-between'} align={'flex-start'}>
+          <Stack gap={5} w={'80%'}>
             <Text className={styles.title}>{name}</Text>
             <Text>{location}</Text>
           </Stack>
