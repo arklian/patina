@@ -1,7 +1,8 @@
 .page {
-  height: 80vh;
+  height: 100%;
   width: 90%;
   display: flex;
+  padding-left: 4rem;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
@@ -13,6 +14,9 @@
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
+  position: sticky;
+  top: 1rem;
+  z-index: 999;
 }
 
 .headerLeft {
@@ -24,22 +28,31 @@
   display: flex;
 }
 
+.sidebar {
+  position: sticky;
+  top: 4rem;
+}
+
 .sidebar[data-status='false'] {
   display: none;
 }
 
 .sidebar[data-status='true'] {
   @media (max-width: $mantine-breakpoint-sm) {
-    width: rem(300px);
+    width: 100vw;
   }
 }
 
 .name {
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(30px);
   }
 }
 
 .navbar {
   font-size: rem(30px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(20px);
+  }
 }

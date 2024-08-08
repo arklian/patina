@@ -25,9 +25,9 @@ export function MainPage() {
           <SectionContent key={section.id} section={section} />
         ))}
 
-        <Container mb="3rem">
+        <Container mb="3rem" id="recent">
           <Title size="3rem" mb="0.5rem" className={styles.title}>
-            {'recent activity'}
+            {'Recent Activity'}
           </Title>
           <Text size="1.25rem" lh="xs" className={styles.text}>
             {'I visited Google for the first time!'}
