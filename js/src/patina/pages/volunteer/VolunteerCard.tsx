@@ -40,7 +40,7 @@ export function VolunteerCard({
         </Text>
       </Card>
 
-      <Modal opened={opened} onClose={close} withCloseButton={false}>
+      <Modal opened={opened} onClose={close} withCloseButton size={'auto'}>
         <div className={styles.modalContentContainer}>
           <Title order={4} className={styles.modalTitle}>
             {title}
