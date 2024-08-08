@@ -32,3 +32,14 @@ message CreateBlogtagResp {
   Blogtag blogtag = 1;
 }
 
+message DeleteBlogtagReq {
+  int32 id = 1;
+}
+
+message DeleteBlogtagResp {
+  Blogtag blogtag = 1;
+}
+
+message ListBlogtagResp {
+  repeated Blogtag blogtags = 1;
+}
