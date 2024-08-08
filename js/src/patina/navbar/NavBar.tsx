@@ -29,10 +29,11 @@ const links = [
   },
   {
     link: '',
-    label: 'Programs',
+    label: 'For Students',
     subLinks: [
       { link: '/mentorship', label: 'Mentorship' },
       { link: '/scholarship', label: 'Scholarship' },
+      { link: '/internship', label: 'Internship' },
     ],
   },
   {
@@ -40,11 +41,10 @@ const links = [
     label: 'Get Involved',
     subLinks: [
       { link: '/mentor', label: 'Mentor' },
-      { link: '/community', label: 'Community' },
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },
-  // { label: 'Stay Informed' },
+  { link: '/community', label: 'Events' },
   { link: '/blog', label: 'Blog' },
   // { label: 'Donate' },
 ]
@@ -95,9 +95,14 @@ export function NavBar() {
     }
 
     return link.link ?
-        <a key={link.label} href={link.link} className={classes.link}>
+        <UnstyledButton
+          component={'a'}
+          key={link.label}
+          href={link.link}
+          className={classes.link}
+        >
           {link.label}
-        </a>
+        </UnstyledButton>
       : <span key={link.label} className={classes.link}>
           {link.label}
         </span>
