@@ -24,10 +24,6 @@ jobs:
         env:
           DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
           IMAGE_TAG: ${{ github.sha }}
-        run: ./gradlew bootBuildImage -PimageTags=${{ env.IMAGE_TAG }}
-      - name: Tagging Image with Latest
-        env:
-          DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
-          IMAGE_TAG: ${{ github.sha }}
-        run: ./gradlew bootBuildImage -PimageTags=latest
+        run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
+
 
