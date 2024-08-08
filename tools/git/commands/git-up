@@ -6,7 +6,7 @@
 ####################################################################################################
 v=0 # verbose
 pushToGerrit=1
-updateGithub=0
+updateGithub=1
 commentOnPR=1
 
 print_usage() {
@@ -131,7 +131,7 @@ if [ $pushToGerrit = 1 ]; then
       git push --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
     else
       git push --quiet --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
-    fi 
+    fi
     gh workflow run build-test -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
 fi
@@ -153,7 +153,7 @@ if [ $updateGithub = 1 ]; then
   if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
     [ $v = 1 ] && echo ""
     [ $v = 1 ] && echo "# Upload a new PR to Github if branch does not have one"
-    git push origin "$currentBranch"
+    git pushf origin "$currentBranch"
     gh pr create --fill-first
     [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/$pullRequestChangeId"
   elif [[ "$first_changeId" != "$pullRequestChangeId" ]]; then
