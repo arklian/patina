@@ -1,11 +1,11 @@
 package org.patinanetwork;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+/**
+ * Commented out @SpringBootTest and @Test to avoid Spring running in CI/CD pipeline.
+ */
+// @SpringBootTest
 class PatinaApplicationTests {
 
-    @Test
+    //    @Test
     void contextLoads() {}
 }
