@@ -76,7 +76,16 @@ tasks.named("generateProto") {
 
 tasks.named<BootBuildImage>("bootBuildImage") {
     group = "patina"
-    imageName.set("registry.digitalocean.com/patina/patina-test")
+
+    // Check if a custom tag is provided, otherwise use 'latest'
+    val tag = if (project.hasProperty("imageTags")) {
+        project.property("imageTags").toString()
+    } else {
+        "latest"
+    }
+    println("Building Docker image with tag: $tag")
+    imageName.set("registry.digitalocean.com/patina/patina-test:$tag")
+    dependsOn(":js:patina")
     publish.set(true)
     docker {
         publishRegistry {
