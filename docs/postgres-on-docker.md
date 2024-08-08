@@ -34,6 +34,8 @@ psql -h localhost -p 5432 -U postgres
 
 # Docker container management
 - You can stop and start your container directly on docker or use the command line.
+- When a container is stopped, the data inside is not lost unless the container is deleted.
+- To clear a container you can delete it and recreate a new container.
 ```
 docker stop some-postgres
 docker start some-postgres
