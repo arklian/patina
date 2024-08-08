@@ -2,11 +2,24 @@ import { Card, Image, SimpleGrid, Text, Title } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import classes from '@/personal/martin/Martin.module.css'
 
-type imgEntry = { img1: string; img2: string; img3: string }
+type imgEntry = string[]
 type projectEntry = { title: string; desc: string; img: imgEntry }
 type projectData = projectEntry[]
 interface ProjectShowcaseData {
   data: projectData
+}
+
+/*
+  Creates <Carousel.Slide> elements containing an image from a list of img sources
+  @params: string[]
+  @return: <Carousel.Slide />
+ */
+function imageSlides(images: string[]) {
+  return images.map((url) => (
+    <Carousel.Slide key={url}>
+      <Image h={300} w={400} src={url} fit="contain" />
+    </Carousel.Slide>
+  ))
 }
 
 export function ProjectShowcase({ data }: ProjectShowcaseData) {
@@ -24,16 +37,8 @@ export function ProjectShowcase({ data }: ProjectShowcaseData) {
         {project.desc}
       </Text>
       <div className={classes.projCarousel}>
-        <Carousel height={300} align="start" slideGap="md" loop>
-          <Carousel.Slide>
-            <Image src={project.img.img1} w="400" h="300" />
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <Image src={project.img.img2} w="400" h="300" />
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <Image src={project.img.img3} w="400" h="300" />
-          </Carousel.Slide>
+        <Carousel loop align="center" orientation="horizontal" withIndicators>
+          {imageSlides(project.img)}
         </Carousel>
       </div>
     </Card>
