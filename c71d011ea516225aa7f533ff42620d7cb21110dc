@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c878e0d6_4e202ab2",
+        "filename": "js/src/patina/login_oauth2/GithubButton.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T02:59:41Z",
+      "side": 1,
+      "message": "Don\u0027t put _ in folder paths.\nUse login/oauth2/",
+      "revId": "c71d011ea516225aa7f533ff42620d7cb21110dc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dae3809_818f9590",
+        "filename": "js/src/patina/login_oauth2/GithubButton.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T02:59:41Z",
+      "side": 1,
+      "message": "just pull an icon from font awesome or something,",
+      "revId": "c71d011ea516225aa7f533ff42620d7cb21110dc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d25f22d_d935db26",
+        "filename": "js/src/patina/login_oauth2/Login_oauth2.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T02:59:41Z",
+      "side": 1,
+      "message": "Just do OAuth2Page",
+      "revId": "c71d011ea516225aa7f533ff42620d7cb21110dc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
