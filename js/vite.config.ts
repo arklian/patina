@@ -22,7 +22,4 @@ export default defineConfig({
       '@test-utils': path.resolve(__dirname, './test-utils'),
     },
   },
-  build: {
-    outDir: 'patina/build/resources/main/static',
-  },
 })
