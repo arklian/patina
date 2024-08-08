@@ -140,7 +140,8 @@ export function VolunteerPage() {
         img={imageUrls.volunteerHero.src}
         alt={imageUrls.volunteerHero.alt}
         buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform"
-        buttonText="Apply Here"
+        buttonText="Apply to be a volunteer"
+        buttonColor={'var(--mantine-color-patina-red-light)'}
       />
       <section className={styles.grid}>
         <VolunteerCard
