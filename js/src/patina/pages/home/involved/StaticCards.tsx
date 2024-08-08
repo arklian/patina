@@ -7,6 +7,7 @@ type StaticCardsProps = {
   imageUrl: string
   imageAlt: string
   description: string
+  href?: string
 }
 
 export function StaticCards({
@@ -14,6 +15,7 @@ export function StaticCards({
   imageUrl,
   imageAlt,
   description,
+  href,
 }: StaticCardsProps) {
   const flashlightRef = useRef<HTMLDivElement>(null)
 
@@ -50,7 +52,12 @@ export function StaticCards({
           <Image src={imageUrl} alt={imageAlt} className={styles.cardImage} />
         </div>
         <p className={styles.cardText}>{description}</p>
-        <Button variant={'outline'} className={styles.cardButton}>
+        <Button
+          component={'a'}
+          variant={'outline'}
+          className={styles.cardButton}
+          href={href}
+        >
           {'Check it out'}
         </Button>
       </Card>

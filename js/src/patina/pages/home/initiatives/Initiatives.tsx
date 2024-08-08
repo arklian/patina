@@ -6,10 +6,9 @@ import styles from './Initiatives.module.css'
 const detailsMap: CardsProps[] = [
   {
     title: 'Mentorship',
-    details:
-      'Mentor matching and internships for students and young professionals.',
-    img: imageUrls.mentorshipHome.src,
-    alt: imageUrls.mentorshipHome.alt,
+    details: 'Mentor matching for students and young professionals.',
+    img: imageUrls.communityHome.src,
+    alt: imageUrls.communityHome.alt,
     link: '/mentorship',
   },
   {
@@ -20,12 +19,11 @@ const detailsMap: CardsProps[] = [
     link: '/scholarship',
   },
   {
-    title: 'Community',
-    details:
-      'Spaces to connect with the community and to learn about diverse cultures.',
-    img: imageUrls.communityHome.src,
-    alt: imageUrls.communityHome.alt,
-    link: '/community',
+    title: "Internship '24",
+    details: 'Building the skills of the next generation through the summer.',
+    img: imageUrls.mentorshipHome.src,
+    alt: imageUrls.mentorshipHome.alt,
+    link: '/internship',
   },
 ]
 
