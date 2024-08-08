@@ -7,7 +7,7 @@
 }
 
 .colored {
-  color: var(--mantine-color-patina-blue-light);
+  color: var(--mantine-color-patina-red-light);
   text-decoration: underline;
 }
 
