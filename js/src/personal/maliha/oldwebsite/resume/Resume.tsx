@@ -1,7 +1,7 @@
 import { Text, Anchor, List } from '@mantine/core'
 import pdf from './Maliha_Tasnim_Resume.pdf'
 import styles from './Resume.module.css'
-import main_class from './Maliha.module.css'
+import main_class from '../Maliha.module.css'
 
 /** Resume Component */
 export function Resume() {

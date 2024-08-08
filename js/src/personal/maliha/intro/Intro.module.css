@@ -1,0 +1,140 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.mali {
+  display: inline-block;
+}
+
+.mali:hover {
+  text-decoration: underline;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+}
+
+.tagline {
+  font-family: Didot, serif;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.educationContainer {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  border-radius: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  @media (max-width: 900px) {
+    width: 300px;
+    align-self: center;
+    border-radius: 50px;
+  }
+}
+
+.educationTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid var(--mali-dark);
+  border-radius: 50px;
+}
+
+.educationTextContainer:hover {
+  background-color: var(--mali-khaki);
+}
+
+.educationText {
+  overflow: hidden;
+  color: var(--mali-dark);
+  font-family: monaco, sans-serif;
+  font-size: 23px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(200, end);
+  animation-fill-mode: forwards;
+}
+
+.one {
+  animation-delay: 0s;
+}
+
+.two {
+  animation-delay: 4s;
+}
+
+.three {
+  animation-delay: 8s;
+}
+
+.four {
+  animation-delay: 10s;
+}
+
+@media (max-width: 1200px) {
+  .one,
+  .two,
+  .three,
+  .four {
+    animation: none;
+    width: 100%;
+    overflow: auto;
+    white-space: normal;
+  }
+}
+
+.honorsLink {
+  color: var(--mali-dark);
+  font-family: Monaco, sans-serif;
+  font-size: 23px;
+  display: inline;
+  text-decoration: none;
+}
+
+.honorsLink:hover {
+  background-color: var(--mali-rose);
+  font-size: 24px;
+}

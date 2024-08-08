@@ -1,35 +1,5 @@
-.title {
-  position: absolute;
-  font-size: 450px;
-  font-family: "Yeseva One", Serif;
-  letter-spacing: 6px;
-  top: 200px;
-  left: 350px;
-  font-weight: 999;
+.main {
+  display: flex;
+  flex-direction: column;
+  background: var(--mali-beige);
 }
-
-.introduction {
-  font-size: 150px;
-  left: 250px;
-  top: 190px;
-}
-
-.body {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  left: 144px;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#e2afaf94 0%, #cb4a8b7a 100%);
-}
-
-.border {
-  border-left: 2px solid #99014940;
-  height: 100%;
-  position: fixed;
-  left: 144px;
-  margin-left: 0px;
-  top: 0;
-  z-index: 10;
-}
-

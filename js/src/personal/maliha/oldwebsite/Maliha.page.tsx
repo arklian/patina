@@ -6,30 +6,23 @@ import {
   UnstyledButton,
 } from '@mantine/core'
 import { useScrollIntoView } from '@mantine/hooks'
-import { theme } from './theme.ts'
-import { Menu } from './ModalMenu.tsx'
-// import { Social } from './Social.tsx'
-import { Fonts } from './Fonts.tsx'
-import { Images } from './Images.tsx'
-import { About } from './About.tsx'
-import { Resume } from './Resume.tsx'
+import { theme } from '../theme.ts'
+// import { Menu } from './ModalMenu.tsx'
+import { Social } from './menu/Social.tsx'
+import { Fonts } from './assets/Fonts.tsx'
+import { Images } from './assets/Images.tsx'
+import { About } from './about/About.tsx'
+import { Spotify } from './assets/Spotify'
 import styles from './Maliha.module.css'
 
-/** Temporary file for flex box adjustments */
 export function MalihaPage() {
-  const {
-    scrollIntoView: scrollToHome,
-    targetRef: homeRef,
-    scrollableRef: scroll1,
-  } = useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
-  const { scrollIntoView: scrollToAbout, targetRef: aboutRef } =
-    useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
-  const { scrollIntoView: scrollToResume, targetRef: resumeRef } =
-    useScrollIntoView<HTMLDivElement, HTMLDivElement>({ axis: 'x' })
-
+  const { scrollIntoView, targetRef, scrollableRef } = useScrollIntoView<
+    HTMLDivElement,
+    HTMLDivElement
+  >({ axis: 'x' })
   return (
     <MantineProvider theme={theme}>
-      <div className={styles.body} ref={scroll1}>
+      <div className={styles.body} ref={scrollableRef}>
         <Fonts />
         <ScrollArea type="always" w={10000} h={900} scrollbarSize={1}>
           <Images />
@@ -40,7 +33,7 @@ export function MalihaPage() {
               w={100}
               top={50}
               className={styles.icons}
-              onClick={() => scrollToHome()}
+              onClick={() => scrollIntoView()}
             >
               <Image
                 h={130}
@@ -51,14 +44,12 @@ export function MalihaPage() {
                 src="https://i.pinimg.com/originals/d6/81/b4/d681b4fac2b113532ae1f6e5986afeef.png"
               />
             </UnstyledButton>
-            <div ref={homeRef}>
-              {/*<Social />*/}
-              <Menu
-                aboutFunc={() => scrollToAbout()}
-                resumeFunc={() => scrollToResume()}
-              />
+            <div ref={targetRef}>
+              <Social />
+              {/*<Menu />*/}
             </div>
           </div>
+          <Images />
           <div className={styles.border} />
           <Text
             inherit
@@ -69,7 +60,7 @@ export function MalihaPage() {
             gradient={{
               from: '#c75252',
               to: '#a067ae',
-              deg: 50,
+              deg: 90,
             }}
             pos="absolute"
           >
@@ -89,13 +80,9 @@ export function MalihaPage() {
           >
             {'mali'}
           </Text>
-          <div ref={aboutRef}>
-            <About />
-          </div>
-          <div ref={resumeRef}>
-            <Resume />
-          </div>
-          <Resume />
+          <About />
+          <Spotify />
+          <div className={`${styles.border} ${styles.resume_border}`} />
         </ScrollArea>
       </div>
     </MantineProvider>

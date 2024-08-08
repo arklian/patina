@@ -1,4 +1,9 @@
-import { createTheme, DEFAULT_THEME, mergeMantineTheme } from '@mantine/core'
+import {
+  createTheme,
+  CSSVariablesResolver,
+  DEFAULT_THEME,
+  mergeMantineTheme,
+} from '@mantine/core'
 
 /**
  * Custom mantine theme override
@@ -34,8 +39,30 @@ export const themeOverride = createTheme({
       '#1864ab',
     ],
   },
-
+  other: {
+    maliBeige: '#d5abab',
+    maliKhaki: '#bc8d8d',
+    maliGrey: '#848586',
+    maliRose: '#c35241',
+    maliRed: '#bb4250',
+    maliLightRed: '#752c33',
+    maliDark: '#280003',
+  },
   primaryColor: 'blue',
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)
+
+export const resolver: CSSVariablesResolver = (computedTheme) => ({
+  variables: {
+    '--mali-beige': computedTheme.other.maliBeige,
+    '--mali-khaki': computedTheme.other.maliKhaki,
+    '--mali-grey': computedTheme.other.maliGrey,
+    '--mali-rose': computedTheme.other.maliRose,
+    '--mali-red': computedTheme.other.maliRed,
+    '--mali-dark': computedTheme.other.maliDark,
+    '--mali-light-red': computedTheme.other.maliLightRed,
+  },
+  light: {},
+  dark: {},
+})

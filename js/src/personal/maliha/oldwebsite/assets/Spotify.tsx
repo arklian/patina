@@ -1,4 +1,4 @@
-import styles from './About.module.css'
+import styles from '../about/About.module.css'
 
 /** Component for Spotify */
 export function Spotify() {

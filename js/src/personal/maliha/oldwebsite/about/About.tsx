@@ -1,7 +1,7 @@
 import { Text, Anchor, List } from '@mantine/core'
-import { Spotify } from './Spotify'
+import { Spotify } from '../assets/Spotify'
 import styles from './About.module.css'
-import main_class from './Maliha.module.css'
+import main_class from '../Maliha.module.css'
 
 /** About page component*/
 export function About() {
