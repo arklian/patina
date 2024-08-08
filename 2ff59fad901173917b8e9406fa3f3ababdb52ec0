@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c4ed737_768bfcaf",
+        "filename": "js/src/patina/admin/blog/AdminBlog.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-08T15:25:15Z",
+      "side": 1,
+      "message": "nit: use \u0027imageUrl\u0027 instead of just \u0027image\u0027 everywhere since it\u0027s vague what \u0027image\u0027 in some cases.",
+      "revId": "2ff59fad901173917b8e9406fa3f3ababdb52ec0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
