@@ -1,0 +1,11 @@
+package org.patinanetwork.patinawebsite.blogtags.protos;
+
+option java_multiple_files = true;
+
+message BlogTags {
+  // Unique identifier for the blog tag. Typically an auto-incremented integer.
+  int32 id = 1;
+
+  // Name of the Tag. Should be 1-2 words max.
+  string name = 2;
+}
