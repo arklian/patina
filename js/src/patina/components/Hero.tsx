@@ -9,6 +9,7 @@ export type HeroProps = {
   alt: string
   buttonLink?: string
   buttonText?: string
+  buttonColor?: string
 }
 
 export function Hero({
@@ -18,6 +19,7 @@ export function Hero({
   alt,
   buttonLink,
   buttonText,
+  buttonColor,
 }: HeroProps) {
   return (
     <div className={styles.heroContainer}>
@@ -29,7 +31,7 @@ export function Hero({
             <Button
               component="a"
               variant="filled"
-              color="var(--mantine-color-patina-green-light)"
+              color={buttonColor || 'var(--mantine-color-patina-green-light)'}
               autoContrast
               target="_blank"
               href={buttonLink}

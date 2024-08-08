@@ -29,7 +29,8 @@ export function MentorshipPage() {
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}
         buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
-        buttonText="Apply Here"
+        buttonText="Apply to be a mentee"
+        buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
       <Gain />
