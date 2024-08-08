@@ -30,26 +30,10 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build Docker image
+      - name: Build and push Docker image
         env:
           DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
           IMAGE_TAG: ${{ github.sha }}
         run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
-
-      - name: Tag Docker image with latest
-        run: |
-          docker tag registry.digitalocean.com/patina/patina-test:${{ github.sha }} registry.digitalocean.com/patina/patina-test:latest
-
-      - name: Push Docker image with SHA tag
-        run: docker push registry.digitalocean.com/patina/patina-test:${{ github.sha }}
-
-      - name: Push Docker image with latest tag
-        run: docker push registry.digitalocean.com/patina/patina-test:latest
-
-#      - name: Build and push Docker image
-#        env:
-#          DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
-#          IMAGE_TAG: ${{ github.sha }}
-#        run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
 
 

@@ -98,8 +98,6 @@ tasks.named<BootBuildImage>("bootBuildImage") {
 tasks.register("tagAndPushDockerImage") {
     group = "patina"
     description = "Tag and push the Docker image with the latest tag"
-
-
     doLast {
         val primaryTag = if (project.hasProperty("imageTags")) {
             project.property("imageTags").toString()
