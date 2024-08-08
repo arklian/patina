@@ -16,22 +16,25 @@ export function GetInvolved() {
           description={
             'Need career fair prep, help in choosing a major, interview practice, or scholarship info?'
           }
+          href={'/mentorship'}
         />
         <StaticCards
-          title={'For Volunteers'}
+          title={'For Mentors and Volunteers'}
           imageUrl={imageUrls.hands.src}
           imageAlt={imageUrls.hands.alt}
           description={
             'Want to mentor students, organize events, or learn about the many other ways to get involved?'
           }
+          href={'/mentor'}
         />
         <StaticCards
-          title={'For the Community'}
+          title={'Events'}
           imageUrl={imageUrls.heart.src}
           imageAlt={imageUrls.heart.alt}
           description={
             'Join us for events, where you can form new connections and maybe learn something new!'
           }
+          href={'/community'}
         />
       </div>
     </div>
