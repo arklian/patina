@@ -1,4 +1,4 @@
-import { Modal, Card, Title, Text, Button } from '@mantine/core'
+import { Modal, Card, Title, Text, Button, Space } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import styles from './VolunteerCard.module.css'
 
@@ -16,6 +16,24 @@ export function VolunteerCard({
   modalContent,
 }: CardProps) {
   const [opened, { open, close }] = useDisclosure(false)
+
+  // This function is responsible for makeing yhe subheading bold, by searching for a specific idetifier and placing
+  // styling onto it
+  const renderModalContent = (content: string) =>
+    content.split('\n').map((line, index) => {
+      const parts = line.split('**')
+      return (
+        <Text key={index} size="sm">
+          {parts.map((part, i) =>
+            i % 2 === 1 ?
+              <Text key={i} component="span" fw={900} size="lg">
+                {part}
+              </Text>
+            : <span key={i}>{part}</span>,
+          )}
+        </Text>
+      )
+    })
 
   return (
     <>
@@ -35,6 +53,7 @@ export function VolunteerCard({
             {description}
           </Text>
         </div>
+        <Space h="xs" />
         <Text size="sm" className={styles.moreInfo}>
           {'Click to see more info'}
         </Text>
@@ -43,17 +62,13 @@ export function VolunteerCard({
       <Modal
         opened={opened}
         onClose={close}
-        title={null}
-        centered
-        className={styles.modal}
+        title={<Title className={styles.modalTitle}>{title}</Title>}
+        withCloseButton
+        size={'auto'}
       >
-        <div className={styles.modalContentContainer}>
-          <Title order={4} className={styles.cardTitle}>
-            {title}
-          </Title>
-          <Text size="sm" className={styles.modalContent}>
-            {modalContent}
-          </Text>
+        <div className={styles.modalContent}>
+          <div>{renderModalContent(modalContent)}</div>
+          <Space h="md" />
           <div className={styles.buttonContainer}>
             <Button
               component="a"
