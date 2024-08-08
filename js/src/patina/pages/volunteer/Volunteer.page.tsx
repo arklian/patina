@@ -119,10 +119,16 @@ Join us in making a positive impact! 🌟`
 export function VolunteerPage() {
   const message = (
     <Text className={styles.description}>
-      {
-        'The Patina Network volunteer program is open to anyone who wants to get involved in helping us accomplish the '
-      }
-      <span className={styles.colored}>{'same mission'}</span>
+      {'The Patina Network volunteer program is open to anyone who wants to get involved in helping us' +
+        ' accomplish the same '}
+      <Text
+        component={'a'}
+        className={styles.colored}
+        href={'/mission'}
+        inherit
+      >
+        {'mission'}
+      </Text>
       {'. There are many ways to join us by sharing your talents!'}
     </Text>
   )

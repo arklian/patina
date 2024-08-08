@@ -14,7 +14,14 @@ export function ScholarshipPage() {
   const message = (
     <Text className={styles.description}>
       {'The Patina Network Scholarship Fund intends to manifest our '}
-      <span className={styles.colored}>{'vision'}</span>
+      <Text
+        component={'a'}
+        className={styles.colored}
+        href={'/mission'}
+        inherit
+      >
+        {'vision'}
+      </Text>
       {
         ' by awarding scholarships annually to students who have ethnicity, heritage, or ancestry relation to the AANHPI communities and would benefit the most from the financial stipend.'
       }
