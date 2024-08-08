@@ -31,7 +31,10 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker image
-        run: ./gradlew bootBuildImage -PimageTags=${{ github.sha }}
+        env:
+          DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
 
       - name: Tag Docker image with latest
         run: |
