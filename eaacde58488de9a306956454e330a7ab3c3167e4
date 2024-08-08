@@ -71,6 +71,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8d9fcf62_6fccc780",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/TestBlogsRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-08T15:44:43Z",
+      "side": 1,
+      "message": "nit: `TestBlogsRepo` can be a bit confusing as a BlogsRepo Test. There are common used names that convey more info on how its expected to be used like mocks, fakes, and stubs.\n\nI think a fake is the closest term in this situation, but feel free to pick any after reading up on them that you think fits the usage best.",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4719328c_6a561963",
         "filename": "src/test/java/org/patinanetwork/PatinaApplicationTests.java",
         "patchSetId": 2
@@ -82,6 +99,23 @@
       "writtenOn": "2024-08-07T06:42:44Z",
       "side": 1,
       "message": "Probably want a more descriptive reason of why we\u0027re commenting this out but also keeping it around.\n\nMostly because I want to investigate how the spring tests run and that I wouldn\u0027t want spring to run in our CI/CD pipeline",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4419408_517f23f0",
+        "filename": "src/test/java/org/patinanetwork/patinawebsite/blogs/BlogsListOpTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-08T15:44:43Z",
+      "side": 1,
+      "message": "names should describe the case you are testing and the expected result. The goal for you to run all your tests and be able to know exactly what _behavior_ or code path is broken just from reading the name of the tests alone.\n\nEG something like `ListBlogsOpWithNoBlogsReturnsEmptyResponse` the name does get long though so sometimes you have to compromise with acronyms or removing repeated sections like if all tests in this file are for `listblogsop` then we can remove it to save some characters.\n\ngeneral supplementary reading: https://abseil.io/resources/swe-book/html/ch12.html",
       "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
