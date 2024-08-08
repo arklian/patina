@@ -1,9 +1,9 @@
 .grid {
-  padding: 128px;
+  margin: 128px 0;
 }
 
 .calendarCell {
-  padding: 24px;
+  padding: 15px;
   font-size: 22px;
 }
 
@@ -20,7 +20,7 @@
 .calendarHeaderText {
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .calendarBody {

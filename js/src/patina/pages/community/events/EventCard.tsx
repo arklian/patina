@@ -19,7 +19,7 @@ export function EventCard({
   const daysOfWeek = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
   return (
     <div className={styles.eventCard}>
-      <Stack gap={0}>
+      <Stack gap={12}>
         <Group justify={'space-between'}>
           <Stack gap={0}>
             <Text className={styles.title}>{name}</Text>

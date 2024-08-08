@@ -93,7 +93,7 @@ export function MainSection() {
           renderDay={(date: Date) => handleDate(date)}
         />
       </Grid.Col>
-      <Grid.Col span={8}>
+      <Grid.Col span={6}>
         {filteredEvents
           ?.filter(
             (event: Event) =>
