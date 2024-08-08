@@ -23,4 +23,5 @@ jobs:
       - name: Build and push Docker image
         env:
           DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
-        run: ./gradlew bootBuildImage
+          IMAGE_TAG: ${{ github.sha }}
+        run: ./gradlew bootBuildImage -PimageTags=${{ env.IMAGE_TAG }}
