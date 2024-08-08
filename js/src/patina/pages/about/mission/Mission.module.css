@@ -1,26 +1,3 @@
-.container {
-  padding: 20px;
-}
-
-.titleSkeleton {
-  height: 40px;
-  width: 60%;
-}
-
-.subtitleSkeleton {
-  height: 30px;
-  width: 50%;
-  margin-top: 24px;
-}
-
-.paragraphSkeleton {
-  height: 20px;
-  width: 80%;
-  margin-top: 16px;
-}
-
-.imageSkeleton {
-  height: 200px;
-  width: 100%;
-  margin-top: 24px;
+.title {
+  align-self: flex-start;
 }
