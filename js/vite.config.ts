@@ -22,4 +22,7 @@ export default defineConfig({
       '@test-utils': path.resolve(__dirname, './test-utils'),
     },
   },
+  build: {
+    outDir: 'build/resources/main/static',
+  },
 })
