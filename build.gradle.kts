@@ -99,6 +99,7 @@ tasks.register("tagAndPushDockerImage") {
     group = "patina"
     description = "Tag and push the Docker image with the latest tag"
 
+
     doLast {
         val primaryTag = if (project.hasProperty("imageTags")) {
             project.property("imageTags").toString()
@@ -130,6 +131,7 @@ tasks.register("tagAndPushDockerImage") {
 
 tasks.named("tagAndPushDockerImage") {
     dependsOn("bootBuildImage")
+    dependsOn(":js:patina")
 }
 
 tasks.named<TaskReportTask>("tasks") {
