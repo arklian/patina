@@ -95,6 +95,43 @@ tasks.named<BootBuildImage>("bootBuildImage") {
     }
 }
 
+tasks.register("tagAndPushDockerImage") {
+    group = "patina"
+    description = "Tag and push the Docker image with the latest tag"
+
+    doLast {
+        val primaryTag = if (project.hasProperty("imageTags")) {
+            project.property("imageTags").toString()
+        } else {
+            "latest"
+        }
+
+        val baseImageName = "registry.digitalocean.com/patina/patina-test"
+        val imageNameWithPrimaryTag = "$baseImageName:$primaryTag"
+        val imageNameWithLatestTag = "$baseImageName:latest"
+
+        println("Tagging Docker image with: $imageNameWithLatestTag")
+
+        exec {
+            commandLine("docker", "tag", imageNameWithPrimaryTag, imageNameWithLatestTag)
+        }
+
+        println("Pushing Docker image with tag: $primaryTag")
+        exec {
+            commandLine("docker", "push", imageNameWithPrimaryTag)
+        }
+
+        println("Pushing Docker image with tag: latest")
+        exec {
+            commandLine("docker", "push", imageNameWithLatestTag)
+        }
+    }
+}
+
+tasks.named("tagAndPushDockerImage") {
+    dependsOn("bootBuildImage")
+}
+
 tasks.named<TaskReportTask>("tasks") {
     displayGroups = listOf("patina")
 }
