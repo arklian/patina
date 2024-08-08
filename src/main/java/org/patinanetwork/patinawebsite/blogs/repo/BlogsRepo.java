@@ -9,7 +9,7 @@ public interface BlogsRepo {
     void addBlog(Blog blog);
 
     // Get a blog by its ID
-    Blog getBlogById(String id);
+    Blog getBlogById(int id);
 
     // List all blogs
     List<Blog> listAllBlogs();

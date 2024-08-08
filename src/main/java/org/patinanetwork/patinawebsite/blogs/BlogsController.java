@@ -2,11 +2,12 @@ package org.patinanetwork.patinawebsite.blogs;
 
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
+import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
-import org.patinanetwork.patinawebsite.blogs.protos.ListBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
@@ -26,7 +26,8 @@ public class BlogsController {
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public BlogsController(BlogsRepo blogsRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
+    public BlogsController(
+            @Qualifier("PsqlBlogsRepo") BlogsRepo blogsRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
         this.blogsRepo = blogsRepo;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
@@ -58,8 +59,7 @@ public class BlogsController {
 
     @GetMapping(value = "/api/blogs")
     public String listBlogs() {
-        List<Blog> blogs = blogsRepo.listAllBlogs();
-        ListBlogResp resp = ListBlogResp.newBuilder().addAllBlogs(blogs).build();
-        return jsonPrinter.print(resp);
+        ListOp op = new ListOp(blogsRepo);
+        return jsonPrinter.print(op.run());
     }
 }

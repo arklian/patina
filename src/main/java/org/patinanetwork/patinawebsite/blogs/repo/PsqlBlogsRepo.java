@@ -57,12 +57,12 @@ public class PsqlBlogsRepo implements BlogsRepo {
 
 
     @Override
-    public Blog getBlogById(String id) {
+    public Blog getBlogById(int id) {
         String sql = "SELECT id, author, title, content, create_time FROM blogpost WHERE id = ?";
         Blog blog = null;
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setInt(1, Integer.parseInt(id));
+            stmt.setInt(1, id);
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     blog = getBlog(rs);
