@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36ff1d0d_f45e87d1",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T21:58:38Z",
+      "side": 1,
+      "message": "Java is broken",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 13
+      },
+      "revId": "2473402436c693023522e5ab2aabfb57fb2d24b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c98a46b_c33a3669",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/repo/PsqlBlogtagRepo.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T21:58:38Z",
+      "side": 1,
+      "message": "You should add a comment here with TODO: Fix SQL injection",
+      "revId": "2473402436c693023522e5ab2aabfb57fb2d24b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "355fefa6_3114f522",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/repo/PsqlBlogtagRepo.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T21:58:38Z",
+      "side": 1,
+      "message": "The blogtag won\u0027t have an id on add.",
+      "revId": "2473402436c693023522e5ab2aabfb57fb2d24b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
