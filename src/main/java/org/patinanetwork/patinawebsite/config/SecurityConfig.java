@@ -7,23 +7,23 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-import static org.springframework.security.config.Customizer.withDefaults;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.csrf(csrf -> csrf.disable()) //TODO: Add back csrf protection
+                http.csrf(csrf -> csrf.disable()) //TODO: Add back csrf protection
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/api/secured").authenticated();
                     // TODO: no database, as long they login, they can access the page
                     auth.anyRequest().permitAll();
                 })
-                .oauth2Login(withDefaults())
-                .formLogin(withDefaults())
-                .build();
+                .oauth2Login(oauth2 -> oauth2
+                        .loginPage("/login_oauth2")
+                        .defaultSuccessUrl("/api/secured", true)  // Redirect to secured page on success
+                        .failureUrl("/login")  // Redirect to login page on failure
+                );
+        return http.build();
     }
-
 }
