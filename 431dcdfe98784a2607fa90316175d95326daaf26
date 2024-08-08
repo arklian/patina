@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f65f2232_fb13e9e3",
+        "filename": "js/src/patina/login/oauth2/Oauth2Page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-08T15:51:06Z",
+      "side": 1,
+      "message": "nit: use the same `radius\u003d...` style",
+      "revId": "431dcdfe98784a2607fa90316175d95326daaf26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
