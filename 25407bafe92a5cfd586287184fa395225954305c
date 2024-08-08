@@ -52,6 +52,24 @@
       "parentUuid": "bae1f252_3dab0e6f",
       "revId": "25407bafe92a5cfd586287184fa395225954305c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ff17d00_78308bb5",
+        "filename": "db/migrations/patina/V0002__blog_tags.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-08T15:16:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ad1bcd7_41334734",
+      "revId": "25407bafe92a5cfd586287184fa395225954305c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
