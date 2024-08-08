@@ -1,4 +1,4 @@
-import { Modal, Card, Title, Text } from '@mantine/core'
+import { Modal, Card, Title, Text, Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import styles from './VolunteerCard.module.css'
 
@@ -54,6 +54,22 @@ export function VolunteerCard({
           <Text size="sm" className={styles.modalContent}>
             {modalContent}
           </Text>
+          <div className={styles.buttonContainer}>
+            <Button
+              component="a"
+              variant="filled"
+              color={'var(--mantine-color-patina-red-light)'}
+              autoContrast
+              target="_blank"
+              href={
+                'https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform'
+              }
+            >
+              <Text c={'black'} size="20">
+                {'Apply Now'}
+              </Text>
+            </Button>
+          </div>
         </div>
       </Modal>
     </>
