@@ -12,6 +12,14 @@ message Blogtag {
   string name = 2;
 }
 
+message GetBlogTagReq {
+  int32 id = 1;
+}
+
+message GetBlogTagResp {
+  Blogtag blogtag = 1;
+}
+
 message CreateBlogtagReq {
   // Unique identifier for the blog tag. Typically an auto-incremented integer.
   int32 id = 1;
@@ -23,3 +31,4 @@ message CreateBlogtagReq {
 message CreateBlogtagResp {
   Blogtag blogtag = 1;
 }
+
