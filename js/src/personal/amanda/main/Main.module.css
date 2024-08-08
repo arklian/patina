@@ -8,10 +8,10 @@
 }
 
 .section {
-  margin-bottom: 5rem;
+  padding-top: 5rem;
 
   @media (max-width: $mantine-breakpoint-md) {
-    margin-bottom: 5rem;
+    padding-top: 5rem;
   }
 }
 
