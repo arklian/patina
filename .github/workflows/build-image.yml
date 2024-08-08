@@ -3,7 +3,7 @@ run-name: building image on ${{ github.actor }}'s commits
 on:
   push:
     branches:
-      - main
+      - Jhwu3/Patina
 jobs:
   buildImage:
     runs-on: ubuntu-latest
@@ -20,7 +20,33 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build and push Docker image
-        env:
-          DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
-        run: ./gradlew bootBuildImage
+      - name: Log in to DigitalOcean Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: registry.digitalocean.com
+          username: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
+          password: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: ./gradlew bootBuildImage -PimageTags=${{ github.sha }}
+
+      - name: Tag Docker image with latest
+        run: |
+          docker tag registry.digitalocean.com/patina/patina-test:${{ github.sha }} registry.digitalocean.com/patina/patina-test:latest
+
+      - name: Push Docker image with SHA tag
+        run: docker push registry.digitalocean.com/patina/patina-test:${{ github.sha }}
+
+      - name: Push Docker image with latest tag
+        run: docker push registry.digitalocean.com/patina/patina-test:latest
+
+#      - name: Build and push Docker image
+#        env:
+#          DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
+#          IMAGE_TAG: ${{ github.sha }}
+#        run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
+
+
