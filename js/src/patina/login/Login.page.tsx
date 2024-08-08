@@ -1,6 +1,7 @@
 import { PasswordInput, Button } from '@mantine/core'
 import { useForm } from '@mantine/form'
 import styles from './Login.module.css'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 /**
  * Component for login
@@ -18,7 +19,7 @@ export function LoginPage() {
   }
 
   return (
-    <div className={styles.loginSection}>
+    <ContentPage>
       <form
         onSubmit={form.onSubmit(async (values) => {
           requestOptions.body = JSON.stringify({ password: values.password })
@@ -39,6 +40,6 @@ export function LoginPage() {
           {'Login'}
         </Button>
       </form>
-    </div>
+    </ContentPage>
   )
 }
