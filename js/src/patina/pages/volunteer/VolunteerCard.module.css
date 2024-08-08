@@ -24,20 +24,24 @@
 }
 
 .moreInfo {
-  margin-top: 5px;
   color: var(--mantine-color-patina-blue-light);
   font-style: italic;
   align-self: flex-end;
 }
 
 .modalContentContainer {
-  padding: 30px;
+  padding: 7px 10px;
 }
 
 .modalContent {
   text-align: left;
   white-space: pre-wrap;
-  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.modalTitle {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .buttonContainer {
