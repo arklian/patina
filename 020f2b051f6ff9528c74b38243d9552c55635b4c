@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c851c23_ed5e25f2",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T20:10:23Z",
+      "side": 1,
+      "message": "nit: We should try using \u003cSpace\u003e for spacing so we don\u0027t have to tie the padding to any particular element",
+      "revId": "020f2b051f6ff9528c74b38243d9552c55635b4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7162780e_359922b0",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T20:10:23Z",
+      "side": 1,
+      "message": "the title should be in the modal\u0027s title prop",
+      "revId": "020f2b051f6ff9528c74b38243d9552c55635b4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
