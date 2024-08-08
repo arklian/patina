@@ -23,6 +23,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'build/resources/main/static',
+    outDir: 'patina/build/resources/main/static',
   },
 })
