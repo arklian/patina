@@ -69,6 +69,7 @@ tasks.named("generateProto") {
 
 
 tasks.named<BootBuildImage>("bootBuildImage") {
+    group = "patina"
     imageName.set("registry.digitalocean.com/patina/patina-test")
     publish.set(true)
     docker {
