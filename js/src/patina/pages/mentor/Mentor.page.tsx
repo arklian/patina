@@ -1,6 +1,6 @@
 import { Text } from '@mantine/core'
 import { Hero } from '@/patina/components/Hero'
-import { Impact } from '@/patina/pages/mentor/impact/Impact'
+// import { Impact } from '@/patina/pages/mentor/impact/Impact'
 import { About } from '@/patina/pages/mentor/about/About'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
@@ -28,7 +28,7 @@ export function MentorPage() {
         buttonText="Apply Here"
       />
       <About />
-      <Impact />
+      {/*<Impact />*/}
     </ContentPage>
   )
 }
