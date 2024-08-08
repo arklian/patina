@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e8994d6_4782a45a",
+        "filename": "js/src/patina/pages/community/events/EventCard.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T22:19:23Z",
+      "side": 1,
+      "message": "nit: Could use the mixin way",
+      "revId": "f1300f615c72a107f0904fdc5a39d8b554bf394c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a920f3db_28dcc20d",
+        "filename": "js/src/patina/pages/community/events/MainSection.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T22:19:23Z",
+      "side": 1,
+      "message": "Could use the \u003cSpace\u003e Component below perhaps",
+      "range": {
+        "startLine": 94,
+        "startChar": 15,
+        "endLine": 94,
+        "endChar": 17
+      },
+      "revId": "f1300f615c72a107f0904fdc5a39d8b554bf394c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
