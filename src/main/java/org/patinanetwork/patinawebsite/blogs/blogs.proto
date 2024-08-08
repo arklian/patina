@@ -19,6 +19,9 @@ message Blog {
 
   // Detailed content of the blog post. This can be a longer body of text.
   string content = 5;
+
+  // Url of the header image of the blog post.
+  string image = 6;
 }
 
 message CreateBlogReq {
@@ -30,6 +33,9 @@ message CreateBlogReq {
 
   // Detailed content of the blog post. This can be a longer body of text.
   string content = 3;
+
+  // Url of the header image of the blog post.
+  string image = 4;
 }
 
 message CreateBlogResp{

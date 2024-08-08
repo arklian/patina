@@ -12,6 +12,7 @@ export function BlogAdminPage() {
   const [author, setName] = useState('')
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
+  const [image, setImage] = useState('')
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault()
@@ -19,7 +20,8 @@ export function BlogAdminPage() {
     console.log('Name:', author)
     console.log('Title:', title)
     console.log('Content:', content)
-    const formData = { author, title, content }
+    console.log('Image:', image)
+    const formData = { author, title, content, image }
 
     try {
       // Make the fetch request
@@ -75,6 +77,12 @@ export function BlogAdminPage() {
             onChange={(event) => setContent(event.currentTarget.value)}
             minRows={2}
             autosize
+            required
+          />
+          <Textarea
+            label={'Image Url'}
+            value={image}
+            onChange={(event) => setImage(event.currentTarget.value)}
             required
           />
           <Button type="submit">{'Submit'}</Button>

@@ -32,7 +32,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
 
     @Override
     public void addBlog(Blog blog) {
-        String sql = "INSERT INTO blog (author, title, content, create_time) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO blog (author, title, content, create_time, image) VALUES (?, ?, ?, ?, ?)";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             // Todo: Sanitize the strings to prevent SQL injection
@@ -46,6 +46,8 @@ public class PsqlBlogsRepo implements BlogsRepo {
             // Convert to UTC
             OffsetDateTime utcDateTime = dateTime.withOffsetSameInstant(ZoneOffset.UTC);
             stmt.setTimestamp(4, Timestamp.from(utcDateTime.toInstant()));
+
+            stmt.setString(5, blog.getImage());
 
             stmt.executeUpdate();
         } catch (SQLException e) {
@@ -76,7 +78,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
     @Override
     public List<Blog> listAllBlogs() {
         List<Blog> blogs = new ArrayList<>();
-        String sql = "SELECT id, author, title, content, create_time FROM blog ORDER BY create_time DESC";
+        String sql = "SELECT id, author, title, content, create_time, image FROM blog ORDER BY create_time DESC";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
@@ -99,6 +101,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
         String title = rs.getString("title");
         String content = rs.getString("content");
         java.sql.Timestamp sqlTimestamp = rs.getTimestamp("create_time");
+        String image = rs.getString("image");
 
         return Blog.newBuilder()
                 .setId(id)
@@ -106,6 +109,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
                 .setTitle(title)
                 .setCreateTime(String.valueOf(sqlTimestamp))
                 .setContent(content)
+                .setImage(image)
                 .build();
     }
 }
