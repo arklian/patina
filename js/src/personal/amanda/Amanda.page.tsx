@@ -23,10 +23,10 @@ export function AmandaPage() {
           <LightDarkButton />
         </div>
       </Container>
-      <Container size="responsive" className={styles.page}>
+      <div className={styles.page}>
         <Sidebar opened={opened} toggle={toggle} />
         <Outlet />
-      </Container>
+      </div>
     </MantineProvider>
   )
 }

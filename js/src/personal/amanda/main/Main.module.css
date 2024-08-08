@@ -2,27 +2,27 @@
   text-wrap: wrap;
   width: 100%;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     padding-left: 0;
   }
 }
 
 .section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    margin-bottom: 1rem;
+  @media (max-width: $mantine-breakpoint-md) {
+    margin-bottom: 5rem;
   }
 }
 
 .title {
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(30px);
   }
 }
 
 .subtitle {
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(20px);
   }
 }
@@ -30,7 +30,7 @@
 .text {
   text-wrap: wrap;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(15px);
   }
 }
@@ -45,11 +45,11 @@
 }
 
 .project {
-  padding: rem(5px);
+  padding: rem(10px);
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     display: block;
-    padding: 0;
+    padding: rem(10px);
     margin-top: rem(10px);
   }
 }
@@ -62,7 +62,7 @@
 .container {
   margin: 1rem;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     margin: 0;
     margin-top: rem(10px);
     padding: 0;
@@ -73,18 +73,17 @@
   background-color: light-dark(#9db4c0, #5c6b73);
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(15px);
   }
 }
 
 .image {
   height: auto;
-  width: rem(800px);
+  width: 100%;
   padding-bottom: rem(10px);
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    width: rem(200px);
+  @media (max-width: $mantine-breakpoint-md) {
     margin-top: rem(10px);
   }
 }
