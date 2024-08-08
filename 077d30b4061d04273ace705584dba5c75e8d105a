@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce5b1e44_9ebb450a",
+        "filename": "db/migrations/patina/V0002__blog_tags.sql",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T21:54:16Z",
+      "side": 1,
+      "message": "This file should be deleted.",
+      "revId": "077d30b4061d04273ace705584dba5c75e8d105a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "191e7bf1_e45cab7b",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T21:54:16Z",
+      "side": 1,
+      "message": "When you try to create a tag, you won\u0027t have an ID, since the ID is generated inside the DB through SERIAL.\n\nThe req should only have name.",
+      "revId": "077d30b4061d04273ace705584dba5c75e8d105a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
