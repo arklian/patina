@@ -36,7 +36,8 @@ export function ScholarshipPage() {
           img={imageUrls.scholarshipHero.src}
           alt={imageUrls.scholarshipHero.alt}
           buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfE93_PaX8Eynv_6zdMQnYHiljFq7Ci_E0_9hzRs2z3aSE3-g/viewform?fbzx=-2135089361293927732"
-          buttonText="Apply Here"
+          buttonText="Apply for scholarship"
+          buttonColor={'var(--mantine-color-patina-green-light)'}
         />
       </SimpleGrid>
       <div className={styles.about}>

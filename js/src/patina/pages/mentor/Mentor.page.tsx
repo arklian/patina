@@ -25,7 +25,8 @@ export function MentorPage() {
         img={imageUrls.mentorApplyHero.src}
         alt={imageUrls.mentorApplyHero.alt}
         buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
-        buttonText="Apply Here"
+        buttonText="Apply to be a mentor"
+        buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
       {/*<Impact />*/}
