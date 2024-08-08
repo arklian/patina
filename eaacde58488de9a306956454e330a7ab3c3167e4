@@ -244,6 +244,24 @@
       "parentUuid": "f4419408_517f23f0",
       "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7540039e_cedd0e80",
+        "filename": "src/test/java/org/patinanetwork/patinawebsite/blogs/BlogsListOpTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T17:04:14Z",
+      "side": 1,
+      "message": "Make a java_tests.md in docs to document some of this and add that link there.",
+      "parentUuid": "075fb962_fef9fce8",
+      "revId": "eaacde58488de9a306956454e330a7ab3c3167e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

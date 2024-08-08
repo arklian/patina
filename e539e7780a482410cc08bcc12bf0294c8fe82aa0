@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b601a272_83607aad",
+        "filename": "src/test/java/org/patinanetwork/PatinaApplicationTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-08T17:04:14Z",
+      "side": 1,
+      "message": "nit: add \u0027when running ./gradlew test\u0027 to be more explicit",
+      "revId": "e539e7780a482410cc08bcc12bf0294c8fe82aa0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
