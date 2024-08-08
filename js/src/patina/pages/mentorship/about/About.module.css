@@ -28,8 +28,9 @@
 }
 
 .quote {
+  margin: 64px;
   color: white;
   text-align: center;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 34px;
 }

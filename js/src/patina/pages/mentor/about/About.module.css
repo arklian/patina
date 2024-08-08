@@ -28,8 +28,13 @@
 }
 
 .quote {
+  margin: 64px;
   color: white;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 34px;
+}
+
+.quoteAuthor {
+  text-align: right;
 }

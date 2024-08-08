@@ -1,4 +1,4 @@
-import { SimpleGrid, Text } from '@mantine/core'
+import { Paper, SimpleGrid, Text } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import styles from './About.module.css'
 
@@ -26,9 +26,13 @@ export function About() {
         </Text>
       </div>
       <div className={styles.right}>
-        <Text className={styles.quote}>
-          {'“Quote from a student about how mentorship has helped them.”'}
-        </Text>
+        <Paper withBorder>
+          <Text className={styles.quote}>
+            {
+              '“I feel more motivated and confident not only in what I want for my future but in reaching out to other professionals and building my network” - Jasmine'
+            }
+          </Text>
+        </Paper>
       </div>
     </SimpleGrid>
   )
