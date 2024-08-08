@@ -39,3 +39,9 @@
   white-space: pre-wrap;
   margin-top: 10px; /* Add some top margin for spacing */
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
