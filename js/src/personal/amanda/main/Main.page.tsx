@@ -25,7 +25,7 @@ export function MainPage() {
           <SectionContent key={section.id} section={section} />
         ))}
 
-        <Container mb="3rem" id="recent">
+        <Container mb="3rem" id="recent" className={styles.section}>
           <Title size="3rem" mb="0.5rem" className={styles.title}>
             {'Recent Activity'}
           </Title>

@@ -10,13 +10,15 @@
   display: flex;
   justify-content: space-between;
   width: auto;
-  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
   position: sticky;
-  top: 1rem;
+  top: 0;
   z-index: 999;
+  background-color: light-dark(#f0f4ff, #1c2336);
 }
 
 .headerLeft {
@@ -30,7 +32,7 @@
 
 .sidebar {
   position: sticky;
-  top: 4rem;
+  top: 5rem;
 }
 
 .sidebar[data-status='false'] {

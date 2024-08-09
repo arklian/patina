@@ -5,8 +5,8 @@ import styles from './Main.module.css'
 
 export function SectionContent({ section }: { section: Section }) {
   return (
-    <div className={styles.section}>
-      <Container key={section.id} id={section.link}>
+    <div className={styles.section} id={section.link}>
+      <Container key={section.id}>
         <Title size="3rem" mb="0.5rem" className={styles.title}>
           {section.title}
         </Title>
