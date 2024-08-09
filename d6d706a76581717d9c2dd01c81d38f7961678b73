@@ -22,6 +22,30 @@
       },
       "revId": "d6d706a76581717d9c2dd01c81d38f7961678b73",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46e4d1f7_1d08a10f",
+        "filename": "js/src/patina/pages/volunteer/Volunteer.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-09T18:08:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d50f59f4_c07b3464",
+      "range": {
+        "startLine": 41,
+        "startChar": 37,
+        "endLine": 41,
+        "endChar": 43
+      },
+      "revId": "d6d706a76581717d9c2dd01c81d38f7961678b73",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
