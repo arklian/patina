@@ -31,9 +31,9 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/homeHero.png',
     // no alt possible
   },
-  volunteerHero: {
-    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/volunteerHero.png',
-    alt: 'One woman watching another do work. Image is tinted red',
+  volunteerHeroGreen: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/volunteerHeroGreen.png',
+    alt: 'One woman watching another do work. Image is tinted green',
   },
   mentorshipHero: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/mentorshipHero.png',
