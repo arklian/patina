@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.blogtag.protos;
+
+option java_multiple_files = true;
+
+message Blogtag {
+  // Unique identifier for the blog tag. Typically an auto-incremented integer.
+  int32 id = 1;
+
+  // Name of the Tag. Should be 1-2 words max.
+  string name = 2;
+}
+
+message CreateBlogtagReq {
+  // Name of the Tag. Should be 1-2 words max.
+  string name = 1;
+}
+
+message CreateBlogtagResp {
+  Blogtag blogtag = 1;
+}
