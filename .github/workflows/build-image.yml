@@ -40,5 +40,4 @@ jobs:
           DO_DOCKER_IMAGE_UPLOAD_PAT: ${{ secrets.DO_DOCKER_IMAGE_UPLOAD_PAT }}
           IMAGE_TAG: ${{ github.sha }}
         run: ./gradlew tagAndPushDockerImage -PimageTags=${{ env.IMAGE_TAG }}
-        working-directory: patina
 
