@@ -2,14 +2,16 @@ package org.patinanetwork.patinawebsite.blogs;
 
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
+import org.patinanetwork.patinawebsite.blogs.ops.CreateOp;
 import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
-import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
 import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
+import org.patinanetwork.patinawebsite.generator.ChatGPT;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
@@ -53,22 +54,19 @@ public class BlogsController {
         // Parse the incoming JSON into a Protobuf CreateBlogReq object
         CreateBlogReq blogReq = jsonParser.parse(jsonRequest, CreateBlogReq.newBuilder());
 
-        // Get current timestamp in the required format
-        String currentTimestamp = OffsetDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX"));
+        CreateOp op = new CreateOp(blogReq, blogsRepo);
+        return jsonPrinter.print(op.run());
+    }
 
-        // Create a new Blog instance with the current timestamp
-        Blog blog = Blog.newBuilder()
-                .setAuthor(blogReq.getAuthor())
-                .setTitle(blogReq.getTitle())
-                .setContent(blogReq.getContent())
-                .setCreateTime(currentTimestamp)
-                .setImage(blogReq.getImage())
-                .build();
-
-        // Add the blog to the repository
-        blogsRepo.addBlog(blog);
-        // Return the JSON representation of the Blog object
-        CreateBlogResp resp = CreateBlogResp.newBuilder().setBlog(blog).build();
-        return jsonPrinter.print(resp);
+    @GetMapping(value = "/api/blog/hidden")
+    @Transactional(timeout = 200)
+    public String ChatGPTBlog() {
+        List<String> outputs = ChatGPT.listOutputs(5);
+        // List<String> outputs = ChatGPT.fakeOutputs();
+        for (String output : outputs) {
+            CreateOp op = new CreateOp(output, blogsRepo);
+            op.run();
+        }
+        return "no";
     }
 }
