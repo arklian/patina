@@ -32,7 +32,7 @@ export function EventCard({
             </Text>
           </Stack>
         </Group>
-        <Text>{details}</Text>
+        <Text className={styles.details}>{details}</Text>
       </Stack>
     </div>
   )
