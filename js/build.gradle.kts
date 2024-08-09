@@ -16,7 +16,9 @@ val buildTask = tasks.register<PnpmTask>("patina") {
     group = "Patina"
     description = "Builds the frontend for Patina through Vite."
     dependsOn("pnpmInstall")
-    args.set(listOf("run", "build","--emptyOutDir", "--outDir", "${rootProject.layout.buildDirectory.dir("resources/main/static").get()}"))
-    outputs.dir(rootProject.layout.buildDirectory.dir("resources/main/static"))
+//    args.set(listOf("run", "build","--emptyOutDir", "--outDir", "${rootProject.layout.buildDirectory.dir("resources/main/static").get()}"))
+    args.set(listOf("run", "build", "--emptyOutDir", "--outDir", "build/resources/main/static"))
+//    outputs.dir(rootProject.layout.buildDirectory.dir("resources/main/static"))
+    outputs.dir("build/resources/main/static")
     inputs.files(fileTree("."))
 }
