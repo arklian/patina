@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          path: .
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -19,6 +21,9 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: List directory structure
+        run: ls -R
 
       - name: Log in to DigitalOcean Container Registry
         uses: docker/login-action@v3
