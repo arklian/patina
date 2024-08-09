@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a50a822e_0fa79657",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T18:15:30Z",
+      "side": 1,
+      "message": "I would make this blogtags for the list endpoint",
+      "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fdb2707f_de465ffc",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
+        "patchSetId": 12
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T18:15:30Z",
+      "side": 1,
+      "message": "The sql file shouldn\u0027t be in here if it\u0027s empty",
+      "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3663f327_6ef04bc4",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T18:15:30Z",
+      "side": 1,
+      "message": "The blog_blog_tag_table.sql should be a later commit, not this one.",
+      "revId": "b6c7a91e931bef73d4cc53c47b5cbf354d4f7e75",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
