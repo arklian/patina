@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3df85dce_d9cf2a1b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-09T16:48:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37177390_a794a9fa",
+      "revId": "5a24f8e787b9b4ce610e9f985ee60c1c346c5717",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "db52f4a9_52a0ef33",
@@ -35,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5b2fe2f_7e606106",
+        "filename": "js/src/patina/admin/navbar/AdminNavbar.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-09T16:48:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "db52f4a9_52a0ef33",
+      "revId": "5a24f8e787b9b4ce610e9f985ee60c1c346c5717",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22b9ddb7_171827e3",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-08-09T16:37:02Z",
       "side": 1,
       "message": "nit: I would usually order endpoints by like a standard logical ordering.\n\nGet\nList\nCreate\nUpdate\nDelete\netc.",
+      "revId": "5a24f8e787b9b4ce610e9f985ee60c1c346c5717",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "353fdb94_a91bde59",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1038148
+      },
+      "writtenOn": "2024-08-09T16:48:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "22b9ddb7_171827e3",
       "revId": "5a24f8e787b9b4ce610e9f985ee60c1c346c5717",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
