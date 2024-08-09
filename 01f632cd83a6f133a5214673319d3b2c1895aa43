@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b0d15cc_35522806",
+        "filename": "js/src/patina/pages/mentorship/Mentorship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T16:36:05Z",
+      "side": 1,
+      "message": "doesn\u0027t Text turn into a div after Mantine processes it? (i.e. does this actually do anything, since it\u0027s a in another div (which has no special css properties)",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 18,
+        "endChar": 9
+      },
+      "revId": "01f632cd83a6f133a5214673319d3b2c1895aa43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
