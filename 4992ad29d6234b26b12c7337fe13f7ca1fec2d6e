@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65dbdcc3_b276e797",
+        "filename": "js/src/personal/maliha/Maliha.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T18:15:18Z",
+      "side": 1,
+      "message": "just note that all of these imports are also wrong now",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 45
+      },
+      "revId": "4992ad29d6234b26b12c7337fe13f7ca1fec2d6e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
