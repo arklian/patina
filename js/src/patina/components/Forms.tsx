@@ -66,9 +66,9 @@ export function Forms() {
             </Text>
           </Flex>
         </Grid.Col>
-        <Grid.Col span={largeScreen ? 5 : 12} offset={largeScreen ? 2 : 0}>
+        <Grid.Col span={largeScreen ? 6.5 : 12} offset={largeScreen ? 0.5 : 0}>
           <Flex direction={'column'} rowGap="md">
-            <Flex direction={'row'} className={styles.nameemail}>
+            <Flex className={styles.nameemail}>
               <Flex direction={'column'} rowGap="xs">
                 <label>{'Name'}</label>
                 <TextInput
@@ -103,10 +103,13 @@ export function Forms() {
               />
             </Flex>
             {form.isValid() ?
-              <Button type="submit" className={styles.button}>
+              <Button type="submit" variant={'white'} className={styles.button}>
                 {'Send'}
               </Button>
-            : <Button disabled> {'Send'} </Button>}
+            : <Button disabled className={styles.button}>
+                {'Send'}
+              </Button>
+            }
           </Flex>
         </Grid.Col>
       </Grid>

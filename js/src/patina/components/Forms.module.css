@@ -1,8 +1,14 @@
 .form {
-  padding: 64px 96px 32px;
+  padding-inline: 64px;
+  padding-block: 64px;
   margin-top: 96px;
   margin-bottom: 32px;
   background-color: var(--mantine-color-dark-6);
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin-top: 64px;
+    padding: 36px;
+  }
 }
 
 .gridLayout {
@@ -19,12 +25,15 @@
 .nameemail {
   justify-content: space-between;
   align-items: stretch;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .button {
   background-color: white;
-  border-color: white;
-  color: black;
   width: 84px;
   border-radius: 2px;
   align-self: end;
