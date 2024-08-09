@@ -133,12 +133,12 @@ if [ $pushToGerrit = 1 ]; then
       git push --quiet --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
     fi
     gh workflow run build-test -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
-    
+
     if [ $updateGithub = 1 ]; then
       [ $v = 1 ] && echo ""
       [ $v = 1 ] && echo "----- Updating Github PRs"
 
-      pullRequestViewMsg=$(gh pr view "$currentBranch" 2>&1)
+      pullRequestViewMsg=$(gh pr view "ci/${changes[idx]}" 2>&1)
       [ $v = 1 ] && echo "gh pr view = $pullRequestViewMsg"
 
       if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
