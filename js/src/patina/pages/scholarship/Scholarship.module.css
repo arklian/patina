@@ -12,34 +12,19 @@
 }
 
 .about {
-  padding-top: 128px;
   display: flex;
-  gap: 126px;
-  margin-bottom: 100px;
+  justify-content: space-evenly;
+  width: 100%;
 
   @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px;
   }
-}
-
-.application {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .buttonContainer {
   display: flex;
   color: black;
   justify-content: left;
-}
-
-.emailSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 48px;
-  gap: 128px;
 }

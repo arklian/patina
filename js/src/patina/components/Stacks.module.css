@@ -2,16 +2,26 @@
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
+    align-self: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 .itemContainer {
+  width: 100%;
+  display: flex;
   border: 1px solid var(--mantine-color-dark-4);
   border-radius: 5px;
   background: var(--mantine-color-dark-6);
-  min-height: 75px;
+  padding: 24px;
 
-  @mixin smaller-than $mantine-breakpoint-md {
-    min-height: 160px;
+  @mixin smaller-than $mantine-breakpoint-xs {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
   }
 }
 
@@ -19,27 +29,42 @@
   display: flex;
   justify-items: center;
 
-  @mixin smaller-than $mantine-breakpoint-md {
-    justify-content: center;
+  @mixin smaller-than $mantine-breakpoint-xs {
+    align-self: flex-start;
+    justify-content: flex-start;
   }
 }
 
 .title {
   justify-self: center;
-  max-width: 260px;
-  font-size: large;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  padding: 20px 40px 20px 50px;
+  padding-inline: 20px;
+  padding-top: 12px;
+  width: 180px;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    width: 100%;
+    justify-content: center;
+    padding-inline: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .description {
   justify-self: center;
   align-content: center;
-  max-width: 400px;
   white-space: normal;
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
   padding: 20px 40px;
+  width: 300px;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    justify-content: center;
+    padding: 12px;
+    width: 100%;
+  }
 }
