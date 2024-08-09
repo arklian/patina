@@ -16,6 +16,24 @@
       "message": "You can\u0027t have the DeleteBlogtagResp object in the commit if you added it to the proto in the one afterwards.",
       "revId": "a9403d8a4b8318ea4ab535d94d72d64c1bd8c888",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dae2235_8654b28d",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-09T16:36:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a300bd21_4187a9db",
+      "revId": "a9403d8a4b8318ea4ab535d94d72d64c1bd8c888",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
