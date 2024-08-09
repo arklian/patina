@@ -5,6 +5,8 @@ import { LilacPage } from '@/lilac/Lilac.page.tsx'
 import { LilacRoutes } from '@/lilac/Lilac.routes.tsx'
 import { AdminMainPage } from '@/patina/admin/AdminMain.page.tsx'
 import { AdminRoutes } from '@/patina/admin/Admin.routes.tsx'
+import { BlogRoutes } from '@/patina/pages/blog/Blog.routes.tsx'
+import { Blog } from '@/patina/pages/blog/Blog.tsx'
 
 export const Routes = [
   // Base path for hosting the patina website
@@ -31,6 +33,12 @@ export const Routes = [
     description: 'admin',
     element: <AdminMainPage />,
     children: AdminRoutes,
+  },
+  {
+    path: '/blog',
+    description: 'blog',
+    element: <Blog />,
+    children: BlogRoutes,
   },
   {
     path: '*',
