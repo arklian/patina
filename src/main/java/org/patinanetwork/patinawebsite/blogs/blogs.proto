@@ -45,3 +45,7 @@ message CreateBlogResp{
 message ListBlogResp {
   repeated Blog blogs = 1;
 }
+
+message GetBlogResp {
+  Blog blog = 1;
+}
