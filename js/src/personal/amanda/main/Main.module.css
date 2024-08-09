@@ -1,14 +1,11 @@
 .scrollArea {
   text-wrap: wrap;
   width: 100%;
-
-  @media (max-width: $mantine-breakpoint-md) {
-    padding-left: 0;
-  }
 }
 
 .section {
   padding-top: 5rem;
+  padding-left: 4rem;
 }
 
 .title {
