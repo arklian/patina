@@ -22,7 +22,20 @@ import {
  */
 export const themeOverride = createTheme({
   autoContrast: true,
+  primaryColor: 'patina',
   colors: {
+    patina: [
+      '#e2fff3',
+      '#cffae8',
+      '#a4f4d0',
+      '#75edb8',
+      '#4DFFB0', // Primary
+      '#33e495',
+      '#20e28d',
+      '#0ac87a',
+      '#00b36b',
+      '#009b59',
+    ],
     dark: [
       '#F3F3F3', // dark-0
       // '#C1C2C5', // dark-0
