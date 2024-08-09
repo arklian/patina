@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1838abb8_6f31c2f4",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T17:02:53Z",
+      "side": 1,
+      "message": "t",
+      "range": {
+        "startLine": 20,
+        "startChar": 46,
+        "endLine": 20,
+        "endChar": 47
+      },
+      "revId": "d4594dfbc3d202c8ca1bab6dc99c9f9f3f3e45d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
