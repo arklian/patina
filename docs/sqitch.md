@@ -2,7 +2,9 @@
 
 ### What is Sqitch ?
 - Sqitch is a database migration tool that helps manage changes to
-  the database schema.
+the database schema. Allows for databases to be moved across cloud providers
+easily and allows for database version control. Changes to the database schema
+can also be peer-reviewed to prevent loss of data.
 
 ### How does sqitch work ?
 - Sqitch uses a .plan file that lists the order in which changes
@@ -15,7 +17,11 @@
 
 ### Setup
 - Download Sqitch at https://sqitch.org/ to get access to the sqitch
-  command line instructions.
+  command line instructions or use homebrew.
+```
+brew tap sqitchers/sqitch
+brew install sqitch --with-postgres-support --with-sqlite-support
+```
 - The following steps will likely be done already in our codebase,
   feel free to ignore this:
     - Initialize a Sqitch project:
@@ -30,8 +36,8 @@
     - Add the corresponding scripts to their respective files.
     - New changes can also depend on previous changes.
 ```
-sqitch add change_name -n "Description of the change"
-sqitch add change_name -n "Description of the change" --depend some previous_change --depend some_other_previous_change
+sqitch add V0000_change_name -n "Description of the change"
+sqitch add V0000_change_name -n "Description of the change" --depend V0000_some_previous_change --depend V0000_some_other_previous_change
 ```
 
 - Deploying a change to the schema:
@@ -44,13 +50,13 @@ sqitch deploy
 - Deploying a specific change to the schema:
     - Will deploy all scripts up to and including change_name
 ```
-sqitch deploy --to change_name
+sqitch deploy --to V0000_change_name
 ```
 
 - Reverting a change to the schema:
     - Will revert everything deployed except change_name and deployments before it
 ```
-sqitch revert --to [change_name]
+sqitch revert --to V0000_previous_change_name
 ```
 
 - Revert all changes to the schema:
