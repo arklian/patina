@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "11c0025a_e0a226ba",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-09T05:35:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1c851c23_ed5e25f2",
+      "revId": "020f2b051f6ff9528c74b38243d9552c55635b4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7162780e_359922b0",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-08T20:10:23Z",
       "side": 1,
       "message": "the title should be in the modal\u0027s title prop",
+      "revId": "020f2b051f6ff9528c74b38243d9552c55635b4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d002b804_a0bda9da",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-09T05:35:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7162780e_359922b0",
       "revId": "020f2b051f6ff9528c74b38243d9552c55635b4c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
