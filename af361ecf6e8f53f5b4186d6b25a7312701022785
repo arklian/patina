@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8dc882c_8c8a226a",
+        "filename": "js/src/patina/pages/volunteer/VolunteerCard.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T05:49:15Z",
+      "side": 1,
+      "message": "Seems pretty convoluted 😐 \n\nI get what\u0027s happening here, but at least add a comment explaining this.",
+      "revId": "af361ecf6e8f53f5b4186d6b25a7312701022785",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
