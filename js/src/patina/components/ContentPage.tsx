@@ -13,7 +13,9 @@ type ContentPageProps = {
 export function ContentPage({ children }: ContentPageProps) {
   return (
     <div className={styles.page}>
-      <Stack align={'center'}>{children}</Stack>
+      <Stack align={'center'} gap={0}>
+        {children}
+      </Stack>
     </div>
   )
 }
