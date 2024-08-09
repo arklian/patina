@@ -32,18 +32,20 @@ then
   echo "doctl not installed: Run \"brew install doctl\" to fix"
   exit 1
 fi
-INPUT="$*"
+
+# Prompts to enter filename if it is not given
+if [ "$#" -lt 1 ]; then
+    echo "Please enter a image name for your screenshot:"
+    read -r INPUT
+else
+    INPUT="$*"
+fi
+
 FILE_NAME="${INPUT// /_}.png"
 IMAGE_PATH=""
 SPACE_NAME="patina-dev"
 SPACE_PATH="screenshot/"
 REGION="nyc3"
-
-
-if [ "$#" -lt 1 ]; then
-    echo "Please enter a image name for your screenshot: git screenshot <image_name>.png"
-    exit 1
-fi
 
 if [ -z "$DIGITAL_OCEAN_SPACES_ACCESS" ] || [ -z "$DIGITAL_OCEAN_SPACES_SECRET" ]; then
     echo "Environment variables DIGITAL_OCEAN_SPACES_KEY and DIGITAL_OCEAN_SPACES_SECRET must be set."
