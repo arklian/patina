@@ -21,6 +21,7 @@ public class SecurityConfig {
                 })
                 .oauth2Login(oauth2 -> oauth2
                         .loginPage("/login_oauth2")
+                        .successHandler(customOAuth2AuthenticationSuccessHandler))
                         .defaultSuccessUrl("/api/secured", true)  // Redirect to secured page on success
                         .failureUrl("/login")  // Redirect to login page on failure
                 );
