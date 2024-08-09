@@ -83,7 +83,7 @@ export const internData = [
     name: 'Tony Wang',
     role: 'Software Engineering Intern',
     school: 'Hunter College - CUNY',
-    graduation: 'Dec 2025',
+    graduation: 'Dec 2024',
     linkedInURL: 'https://www.linkedin.com/in/wangtony4005/',
     websiteUrl: 'https://patinanetwork.org/personal/tony/',
     githubUrl: 'https://github.com/wangtony4005',
