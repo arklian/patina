@@ -9,6 +9,7 @@ type Blog = {
   title: string
   createTime: string
   content: string
+  image: string
 }
 
 /**
@@ -40,12 +41,14 @@ export function BlogPage() {
               title={allBlogs[0].title}
               content={allBlogs[0].content}
               tags={['']}
+              image={allBlogs[0].image}
             />
             <ImageCard
               horizontal={false}
               title={allBlogs[1].title}
               content={allBlogs[1].content}
               tags={['']}
+              image={allBlogs[1].image}
             />
           </div>
         : <div>{'Loading blogs...'}</div>}
@@ -62,6 +65,7 @@ export function BlogPage() {
                 title={blog.title}
                 content={blog.content}
                 tags={['Summer 2024', 'Student Spotlight']}
+                image={blog.image}
               />
             ))}
           </div>

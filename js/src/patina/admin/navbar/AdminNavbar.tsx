@@ -6,6 +6,7 @@ export function AdminNavbar() {
     <div>
       {navItems.map((item) => (
         <NavLink
+          key={item.label}
           href={item.src}
           label={<Text size={'xl'}>{item.label}</Text>}
           leftSection={<Space w={10} />}

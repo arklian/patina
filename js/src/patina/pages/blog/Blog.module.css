@@ -22,6 +22,7 @@
 .latestPostsCards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 12px;
   gap: 24px;
 }

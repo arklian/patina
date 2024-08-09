@@ -1,6 +1,7 @@
-import { TextInput, Textarea, Button, Stack, Title } from '@mantine/core'
+import { TextInput, Button, Stack, Title } from '@mantine/core'
 import { useState } from 'react'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { ContentEditor } from './ContentEditor.tsx'
 
 export function BlogAdminPage() {
   const [author, setName] = useState('')
@@ -54,31 +55,24 @@ export function BlogAdminPage() {
         <Stack>
           <Title order={3}>{'Add Blog'}</Title>
           <TextInput
-            label="Author"
+            label={'Author'}
             value={author}
             onChange={(event) => setName(event.currentTarget.value)}
             required
           />
           <TextInput
-            label="Title"
+            label={'Title'}
             value={title}
             onChange={(event) => setTitle(event.currentTarget.value)}
             required
           />
-          <Textarea
-            label={'Content'}
-            value={content}
-            onChange={(event) => setContent(event.currentTarget.value)}
-            minRows={2}
-            autosize
-            required
-          />
-          <Textarea
-            label={'Image Url'}
+          <TextInput
+            label={'Header Image Url'}
             value={image}
             onChange={(event) => setImage(event.currentTarget.value)}
             required
           />
+          <ContentEditor setContent={setContent} />
           <Button type="submit">{'Submit'}</Button>
         </Stack>
       </form>
