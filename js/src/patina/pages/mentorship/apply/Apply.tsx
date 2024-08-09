@@ -13,7 +13,7 @@ export function Apply() {
   return (
     <div className={styles.itemContainer}>
       <Text className={styles.title}>{'How to Apply'}</Text>
-      <Stacks items={applyStack}></Stacks>
+      <Stacks items={applyStack} />
       <div className={styles.buttonContainer}>
         {/*TODO: Replace link for the button when it's ready*/}
         <Button

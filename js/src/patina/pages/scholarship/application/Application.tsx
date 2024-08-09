@@ -8,7 +8,7 @@ const applyStack = [
     description: (
       <Text>
         {'FAFSA Financial Aid'}
-        <Space h="md" />
+        <Space h="xs" />
         {'Academic Transcripts'}
       </Text>
     ),
@@ -18,11 +18,11 @@ const applyStack = [
     description: (
       <Text>
         {'Please answer these two questions (500 words each max).'}
-        <Space h="md" />
+        <Space h="xs" />
         {
           'How did your AANHPI heritage or ancestry affect your personal, educational, and professional journey?'
         }
-        <Space h="md" />
+        <Space h="xs" />
         {'How do you plan to use this scholarship?'}
       </Text>
     ),

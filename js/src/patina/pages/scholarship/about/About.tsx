@@ -1,10 +1,20 @@
 import { Text } from '@mantine/core'
-import styles from './AboutScholarship.module.css'
+import styles from '@/patina/pages/scholarship/about/About.module.css'
+import { Stacks } from '@/patina/components/Stacks.tsx'
 
-/** Displays information about the scholarship */
-export function AboutScholarship() {
+const processStack = [
+  { title: 'SEPT 1', description: 'Applications Open' },
+  { title: 'OCT 1', description: 'Applications Close' },
+  { title: 'NOV 1', description: 'First Round Selections' },
+  { title: 'DEC TBD', description: 'Finalist Announcement' },
+]
+
+export function About() {
   return (
     <div className={styles.about}>
+      <div className={styles.container}>
+        <Stacks items={processStack} />
+      </div>
       <div className={styles.text}>
         <Text className={styles.title}>{'About the Scholarship'}</Text>
         <Text className={styles.body}>

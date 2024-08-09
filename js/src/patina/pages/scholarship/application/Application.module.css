@@ -1,11 +1,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-top: 64px;
-  padding-bottom: 128px;
   border-radius: 5px;
+  width: 600px;
+
+  @mixin smaller-than $mantine-breakpoint-sm {
+    width: 100%;
+  }
 }
 
 .title {
@@ -13,7 +14,7 @@
   display: flex;
   margin-bottom: 50px;
   color: white;
-  font-size: 26px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 700;
 }

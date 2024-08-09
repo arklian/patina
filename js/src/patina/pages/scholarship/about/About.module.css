@@ -1,0 +1,56 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 447px;
+  margin: 24px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin: 0;
+  }
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    max-width: 999px;
+  }
+}
+
+.title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-block: 24px;
+  padding: 48px;
+  border: 1px solid var(--mantine-color-dark-3);
+  border-radius: 5px;
+  background: var(--mantine-color-dark-6);
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    width: 100%;
+    padding: 24px;
+  }
+}
