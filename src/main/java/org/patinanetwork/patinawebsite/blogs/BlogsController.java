@@ -6,10 +6,12 @@ import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
+import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -61,5 +63,12 @@ public class BlogsController {
     public String listBlogs() {
         ListOp op = new ListOp(blogsRepo);
         return jsonPrinter.print(op.run());
+    }
+
+    @GetMapping(value = "/api/blog/{blogId}")
+    public String getBlog(@PathVariable("blogId") int blogId) {
+        Blog blog = blogsRepo.getBlogById(blogId);
+        GetBlogResp resp = GetBlogResp.newBuilder().setBlog(blog).build();
+        return jsonPrinter.print(resp);
     }
 }
