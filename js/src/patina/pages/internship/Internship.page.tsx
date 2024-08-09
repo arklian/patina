@@ -3,6 +3,7 @@ import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { InternCard } from './InternCard.tsx'
+import { internData } from '@/patina/pages/internship/internData.ts'
 import styles from './Internship.module.css'
 
 export function InternshipPage() {
@@ -18,8 +19,8 @@ export function InternshipPage() {
       <Hero
         title="Internship Summer 2024"
         details={message}
-        img={imageUrls.internshipHero.src}
-        alt={imageUrls.internshipHero.alt}
+        img={imageUrls.mentorshipHome.src}
+        alt={imageUrls.mentorshipHome.alt}
       />
       <section className={styles.internshipDetails}>
         <Text className={styles.internshipText}>
@@ -35,72 +36,22 @@ export function InternshipPage() {
         </Text>
       </section>
       <div className={styles.internshipCards}>
-        <div className={styles.grid}>
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-          <InternCard
-            name="placeholder"
-            school="placeholder"
-            linkedInURL="google.com"
-            githubURL="google.com"
-            imageSRC={imageUrls.placeholder.src}
-            webURL="google.com"
-          />
-        </div>
+        <ul className={styles.grid}>
+          {internData.map((intern) => (
+            <li className={styles.listItem} key={intern.name}>
+              <InternCard
+                name={intern.name}
+                role={intern.role}
+                school={intern.school}
+                graduation={intern.graduation}
+                linkedInURL={intern.linkedInURL}
+                webURL={intern.websiteUrl}
+                githubURL={intern.githubUrl}
+                imageSRC={intern.imageSrc}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </ContentPage>
   )

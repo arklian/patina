@@ -20,11 +20,7 @@ export type CardsProps = {
 export function Cards({ title, details, img, alt, link }: CardsProps) {
   return (
     <div className={styles.card}>
-      <UnstyledButton
-        className={styles.anchorNoUnderline}
-        component={'a'}
-        href={link}
-      >
+      <UnstyledButton component={'a'} href={link}>
         <div className={styles.border}>
           <AspectRatio>
             <Image className={styles.image} src={img} alt={alt} radius={5} />
