@@ -15,11 +15,15 @@ import styles from './Mentorship.module.css'
  * */
 export function MentorshipPage() {
   const message = (
-    <Text className={styles.description}>
-      {'The Patina Network mentorship program is open to students currently ' +
-        'enrolled in any US college program or recently graduated who are ' +
-        'interested in guidance with their workplace readiness.'}
-    </Text>
+    <div>
+      <Text className={styles.description}>
+        {'The Patina Network mentorship program is open to students currently ' +
+          'enrolled in any US college program or recently graduated who are ' +
+          'interested in guidance with their workplace readiness.'}
+        <p />
+        {'Sign up to get notified when applications open!'}
+      </Text>
+    </div>
   )
   return (
     <ContentPage>
@@ -29,7 +33,8 @@ export function MentorshipPage() {
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}
         buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
-        buttonText="Apply to be a mentee"
+        buttonText="Get Notified"
+        // buttonText="Apply to be a mentee"
         buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
