@@ -3,6 +3,46 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4da31772_4a5869b0",
+        "filename": "js/src/patina/pages/blog/Blog.routes.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T20:30:58Z",
+      "side": 1,
+      "message": "I would probably rename this to like BlogHomePage or BlogLandingPage or BlogListPage and then have the one Blog page be like BlogPage",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c8a5e6e_186a22fb",
+        "filename": "js/src/patina/pages/blog/Blog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T20:30:58Z",
+      "side": 1,
+      "message": "this should probably be at a higher level and not just for blogs.",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 46
+      },
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "27945043_1c8763e6",
         "filename": "js/src/patina/pages/blog/Blog.tsx",
         "patchSetId": 2
