@@ -60,6 +60,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a0f918de_5f345e52",
+        "filename": "js/src/patina/pages/blog/Blog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T20:32:30Z",
+      "side": 1,
+      "message": "This should also be at a higher level. You\u0027re supposed to have one provider for each of these for the App.\n\nWe\u0027re kind of in a model where we have one app for the normal site and one for the admin one right now, but it\u0027s probably better to just have one long term.",
+      "parentUuid": "27945043_1c8763e6",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c8d6b3ce_f6a2df75",
         "filename": "js/src/patina/pages/blog/Blog.tsx",
         "patchSetId": 2
