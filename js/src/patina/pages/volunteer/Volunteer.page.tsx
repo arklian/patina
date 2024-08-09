@@ -10,7 +10,7 @@ import {
   modalContent2,
   modalContent3,
   modalContent4,
-} from './modalContents'
+} from './modalContents.ts'
 
 export function VolunteerPage() {
   const message = (

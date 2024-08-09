@@ -38,7 +38,10 @@
   z-index: 1;
   position: relative;
   width: 100%;
-  background-image: radial-gradient(#ff3d3d33 0%, #1a1b1e 65%);
+  background-image: radial-gradient(
+    var(--mantine-color-patina-green-dark) 0%,
+    #1a1b1e 65%
+  );
 }
 
 .emailText {
