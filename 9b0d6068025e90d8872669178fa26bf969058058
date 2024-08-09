@@ -16,6 +16,24 @@
       "message": "make the sidebar 100vw in mobile or something.",
       "revId": "9b0d6068025e90d8872669178fa26bf969058058",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e6f22e4_dd2a5b85",
+        "filename": "js/src/personal/amanda/Amanda.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-09T15:48:50Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3cb27c7c_506c22db",
+      "revId": "9b0d6068025e90d8872669178fa26bf969058058",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
