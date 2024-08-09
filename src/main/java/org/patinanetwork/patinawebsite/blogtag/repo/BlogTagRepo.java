@@ -10,6 +10,8 @@ public interface BlogTagRepo {
 
     Blogtag getBlogtag(int blogtagId);
 
+    Blogtag deleteBlogtag(int blogtagId);
+
     // Get a blog by its ID
     Blogtag getBlogtagById(int blogtagId);
 
