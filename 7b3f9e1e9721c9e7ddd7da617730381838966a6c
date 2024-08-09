@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f467f2e1_60bcc020",
+        "filename": "js/src/patina/theme.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T16:33:23Z",
+      "side": 1,
+      "message": "just a nit, but why some capital and some lowercase :/",
+      "range": {
+        "startLine": 32,
+        "startChar": 9,
+        "endLine": 32,
+        "endChar": 10
+      },
+      "revId": "7b3f9e1e9721c9e7ddd7da617730381838966a6c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
