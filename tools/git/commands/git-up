@@ -142,7 +142,7 @@ if [ $pushToGerrit = 1 ]; then
           commitTitle=$(git log --format=%s -n 1 --skip=$(( $idx - 1 )))
           commitMessage=$(git log --format=%b -n 1 --skip=$(( $idx - 1 )))
           gh pr create --title ${commitTitle} --body ${commitMessage} --head "ci/${changes[idx]}"
-          [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/${changes[idx]}" --head "ci/${changes[idx]}"
+          [ $commentOnPR = 1 ] && gh pr comment "ci/${changes[idx]}" --body "Code Review comments can be found at $remoteGerritURL/q/${changes[idx]}"
     fi
   done
 fi
