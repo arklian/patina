@@ -7,11 +7,18 @@ plugins {
     id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.1.5"
     id("com.palantir.java-format") version "2.47.0"
+    id("java")
+    id("application")
     id("com.google.protobuf") version "0.9.4"
 }
 
 group = "org.patinanetwork"
 version = "0.0.1-SNAPSHOT"
+
+application {
+    mainClass = "org.patinanetwork.PatinaApplication"
+    //mainClass = "org.patinanetwork.patinawebsite.generator.ChatGPT"
+}
 
 java {
     toolchain {
@@ -36,7 +43,10 @@ protobuf {
 
 sourceSets.main {
     proto.srcDirs("src/main/java")
-    java.srcDirs("build/generated/source/proto/main/grpc")
+    java {
+        srcDirs("build/generated/source/proto/main/grpc")
+        //exclude("org/patinanetwork/patinawebsite/generator/ChatGPT.*")
+    }
 }
 
 repositories {
@@ -45,10 +55,12 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.google.protobuf:protobuf-java:4.27.2")
     implementation("com.google.protobuf:protobuf-java-util:4.27.2")
     implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
     implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("com.cjcrafter:openai:2.1.0")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -62,6 +74,12 @@ tasks.withType<Test> {
         events(TestLogEvent.FAILED);
         exceptionFormat = TestExceptionFormat.FULL
     }
+}
+
+tasks.register<JavaExec>("runSimple") {
+    dependsOn("classes")
+    mainClass.set("org.patinanetwork.patinawebsite.generator.ChatGPT")
+    classpath = sourceSets["main"].runtimeClasspath
 }
 
 tasks.named("bootRun") {
