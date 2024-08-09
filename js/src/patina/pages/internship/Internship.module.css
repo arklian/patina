@@ -29,8 +29,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  padding: 0;
+  list-style-type: none;
 
   @mixin smaller-than $mantine-breakpoint-md {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.listItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
