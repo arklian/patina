@@ -6,7 +6,7 @@
 ####################################################################################################
 v=0 # verbose
 pushToGerrit=1
-updateGithub=0
+updateGithub=1
 commentOnPR=1
 
 print_usage() {
@@ -131,7 +131,19 @@ if [ $pushToGerrit = 1 ]; then
       git push --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
     else
       git push --quiet --force-with-lease origin ${commitId}:refs/heads/ci/${changes[idx]}
-    fi 
+    fi
+    if [ $updateGithub = 1 ]; then
+      [ $v = 1 ] && echo ""
+      [ $v = 1 ] && echo "----- Updating Github PRs"
+
+      [ $v = 1 ] && echo ""
+      [ $v = 1 ] && echo "# Create a new PR for commit"
+      commitTitle=$(git log --format=%s -n 1 --skip=$(( $idx - 1 )))
+      commitMessage=$(git log --format=%b -n 1 --skip=$(( $idx - 1 )))
+      gh pr create --title "${commitTitle}" --body "${commitMessage}" --head "ci/${changes[idx]}"
+      [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/${changes[idx]}"
+
+    fi
     gh workflow run build-test -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
   done
 fi
@@ -140,31 +152,32 @@ fi
 ####################################################################################################
 
 # Exit if Github should not be updated
-if [ $updateGithub = 1 ]; then
-  [ $v = 1 ] && echo ""
-  [ $v = 1 ] && echo "----- Updating Github PRs"
-
-  pullRequestViewMsg=$(gh pr view "$currentBranch" 2>&1)
-  pullRequestChangeId=$(gh pr view "$currentBranch" 2>&1 | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1')
-  [ $v = 1 ] && echo "gh pr view = $pullRequestViewMsg"
-  [ $v = 1 ] && echo "First Change-Id = $first_changeId"
-  [ $v = 1 ] && echo "PR Change-Id = $pullRequestChangeId"
-
-  if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
-    [ $v = 1 ] && echo ""
-    [ $v = 1 ] && echo "# Upload a new PR to Github if branch does not have one"
-    git push origin "$currentBranch"
-    gh pr create --fill-first
-    [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/$pullRequestChangeId"
-  elif [[ "$first_changeId" != "$pullRequestChangeId" ]]; then
-    [ $v = 1 ] && echo ""
-    [ $v = 1 ] && echo "# Check if the Pull Request still is for the oldest Change-Id."
-    gh pr close "$currentBranch" -c "Change-Id $pullRequestChangeId was closed at $remoteGerritURL/q/$pullRequestChangeId"
-    gh pr create --fill-first
-  else
-    [ $v = 1 ] && echo ""
-    [ $v = 1 ] && echo "# Force push new updates to existing Github PR"
-    git push --force-with-lease --force-if-includes origin "$currentBranch"
-    [ $commentOnPR = 1 ] && gh pr comment --body "New changes were pushed at $remoteGerritURL/q/$pullRequestChangeId"
-  fi
-fi
+#if [ $updateGithub = 1 ]; then
+#  [ $v = 1 ] && echo ""
+#  [ $v = 1 ] && echo "----- Updating Github PRs"
+#
+#  pullRequestViewMsg=$(gh pr view "$currentBranch" 2>&1)
+#  pullRequestChangeId=$(gh pr view "$currentBranch" 2>&1 | grep "Change-Id:" | awk '{sub(/Change-Id: /,"")}1')
+#  [ $v = 1 ] && echo "gh pr view = $pullRequestViewMsg"
+#  [ $v = 1 ] && echo "First Change-Id = $first_changeId"
+#  [ $v = 1 ] && echo "PR Change-Id = $pullRequestChangeId"
+#
+#  if [[ $pullRequestViewMsg =~ "no pull requests found" ]]; then
+#    [ $v = 1 ] && echo ""
+#    [ $v = 1 ] && echo "# Upload a new PR to Github if branch does not have one"
+#    git push --force-with-lease --force-if-includes origin "$currentBranch"
+#    gh pr create --fill-first
+#    [ $commentOnPR = 1 ] && gh pr comment --body "Code Review comments can be found at $remoteGerritURL/q/$pullRequestChangeId"
+#  elif [[ "$first_changeId" != "$pullRequestChangeId" ]]; then
+#    [ $v = 1 ] && echo ""
+#    [ $v = 1 ] && echo "# Check if the Pull Request still is for the oldest Change-Id."
+#    gh pr close "$currentBranch" -c "Change-Id $pullRequestChangeId was closed at $remoteGerritURL/q/$pullRequestChangeId"
+#    git push --force-with-lease --force-if-includes origin "$currentBranch"
+#    gh pr create --fill-first
+#  else
+#    [ $v = 1 ] && echo ""
+#    [ $v = 1 ] && echo "# Force push new updates to existing Github PR"
+#    git push --force-with-lease --force-if-includes origin "$currentBranch"
+#    [ $commentOnPR = 1 ] && gh pr comment --body "New changes were pushed at $remoteGerritURL/q/$pullRequestChangeId"
+#  fi
+#fi
