@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f483cae_93c61d7e",
+        "filename": "js/src/patina/pages/internship/Internship.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T16:43:31Z",
+      "side": 1,
+      "message": "why lower case i :/",
+      "range": {
+        "startLine": 6,
+        "startChar": 9,
+        "endLine": 6,
+        "endChar": 10
+      },
+      "revId": "b91c134af1cb946a406984bb8a8fec5219c32a1c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "159ab7cf_875211bf",
+        "filename": "js/src/patina/pages/internship/internData.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T16:43:31Z",
+      "side": 1,
+      "message": "what was the ordering logic of this ://",
+      "range": {
+        "startLine": 1,
+        "startChar": 13,
+        "endLine": 1,
+        "endChar": 23
+      },
+      "revId": "b91c134af1cb946a406984bb8a8fec5219c32a1c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
