@@ -55,7 +55,6 @@ public class PsqlBlogsRepo implements BlogsRepo {
         }
     }
 
-
     @Override
     public Blog getBlogById(int id) {
         String sql = "SELECT id, author, title, content, create_time FROM blogpost WHERE id = ?";
@@ -78,10 +77,11 @@ public class PsqlBlogsRepo implements BlogsRepo {
     @Override
     public List<Blog> listAllBlogs() {
         List<Blog> blogs = new ArrayList<>();
-        String sql = "SELECT id, author, title, content, create_time, image FROM blog ORDER BY create_time DESC";
+        String sql =
+                "SELECT id, author, title, content, create_time, image FROM blog WHERE author <> 'ChatGPT' ORDER BY create_time DESC";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
+                ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
                 Blog blog = getBlog(rs);
