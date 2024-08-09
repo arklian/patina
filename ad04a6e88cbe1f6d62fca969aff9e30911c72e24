@@ -22,6 +22,30 @@
       },
       "revId": "ad04a6e88cbe1f6d62fca969aff9e30911c72e24",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "346834b6_3fe43d19",
+        "filename": "docs/sqitch.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038150
+      },
+      "writtenOn": "2024-08-09T20:39:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b11a7f6_c19bc7a7",
+      "range": {
+        "startLine": 23,
+        "startChar": 46,
+        "endLine": 23,
+        "endChar": 65
+      },
+      "revId": "ad04a6e88cbe1f6d62fca969aff9e30911c72e24",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
