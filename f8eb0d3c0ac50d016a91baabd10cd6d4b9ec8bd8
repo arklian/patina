@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "10696282_2bf512c4",
+        "filename": "js/src/patina/pages/community/Community.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-09T16:45:42Z",
+      "side": 1,
+      "message": "no closing quote :/",
+      "range": {
+        "startLine": 12,
+        "startChar": 503,
+        "endLine": 12,
+        "endChar": 504
+      },
+      "revId": "f8eb0d3c0ac50d016a91baabd10cd6d4b9ec8bd8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
