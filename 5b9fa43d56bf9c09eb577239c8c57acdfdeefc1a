@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31498ffc_0fdea3c7",
+        "filename": "docs/java_tests.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T16:31:19Z",
+      "side": 1,
+      "message": "Should state that tests should have the same folder/package structure as src/main/java stuff",
+      "revId": "5b9fa43d56bf9c09eb577239c8c57acdfdeefc1a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2076db77_b9972d67",
+        "filename": "docs/java_tests.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T16:31:19Z",
+      "side": 1,
+      "message": "For in line markdown stuff you can just do one ` on each side I think.",
+      "range": {
+        "startLine": 11,
+        "startChar": 42,
+        "endLine": 11,
+        "endChar": 63
+      },
+      "revId": "5b9fa43d56bf9c09eb577239c8c57acdfdeefc1a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
