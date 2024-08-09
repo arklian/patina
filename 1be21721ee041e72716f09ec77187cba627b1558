@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54be8c2a_ec1c151b",
+        "filename": "js/src/personal/martin/Martin.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T02:55:57Z",
+      "side": 1,
+      "message": "wonder what this looks like. Does this work with resizing the page and stuff?",
+      "revId": "1be21721ee041e72716f09ec77187cba627b1558",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74164872_cd9a6ae6",
+        "filename": "js/src/personal/martin/components/Clock.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T02:55:57Z",
+      "side": 1,
+      "message": "The JS date object is objectively horrible. It might be a bit of a struggle getting multiple timezones to work.",
+      "revId": "1be21721ee041e72716f09ec77187cba627b1558",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
