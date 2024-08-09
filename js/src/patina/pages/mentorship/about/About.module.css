@@ -1,7 +1,10 @@
 .about {
   margin-bottom: 112px;
+  gap: 24px;
 
-  @mixin smaller-than $mantine-breakpoint-xs {
+  @mixin smaller-than $mantine-breakpoint-md {
+    gap: 48px;
+    flex-direction: column;
     margin-bottom: 64px;
   }
 }
