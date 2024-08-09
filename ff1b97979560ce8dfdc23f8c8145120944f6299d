@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27945043_1c8763e6",
+        "filename": "js/src/patina/pages/blog/Blog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-09T20:28:44Z",
+      "side": 1,
+      "message": "nit: why are we forcing color schemes just for this pg",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8d6b3ce_f6a2df75",
+        "filename": "js/src/patina/pages/blog/Blog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-09T20:28:44Z",
+      "side": 1,
+      "message": "nit: feels weird that this page has its own navbar/footer instance. Ideally those should be done at the top level. Check w/ other pages if they do this. If the header/footer are already added somewhere else, we don\u0027t need it here too",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5e05569_6ba9c81c",
+        "filename": "js/src/patina/pages/blog/FocusedBlog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-09T20:28:44Z",
+      "side": 1,
+      "message": "nit: ideally, we have this hook defined in a common location so this component doesn\u0027t need to know what the API endpoint is",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f233b6f3_42b3fb40",
+        "filename": "js/src/patina/pages/blog/FocusedBlog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-09T20:28:44Z",
+      "side": 1,
+      "message": "nit: I think if data is null/undefined, then `blog` will be null/undefined and then doing `blog.image` will error out. So putting this here, but only branching off of `status \u003d\u003d\u003d \u0027success\u0027` later means its easy to accidentally use `blog.abc` incorrectly.\n\nSuggest checking status earlier and early return or not storing `blog`",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82e5e34b_42ef3ef9",
+        "filename": "js/src/patina/pages/blog/FocusedBlog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1038171
+      },
+      "writtenOn": "2024-08-09T20:28:44Z",
+      "side": 1,
+      "message": "potentially out of scope for this CR, but do we plan on doing anything in case of error? even just logging / notification.",
+      "revId": "ff1b97979560ce8dfdc23f8c8145120944f6299d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
