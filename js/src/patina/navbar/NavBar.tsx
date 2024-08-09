@@ -121,14 +121,14 @@ export function NavBar() {
               >
                 <PatinaBadge />
               </UnstyledButton>
-              <Group gap={5} visibleFrom="xs">
+              <Group gap={5} visibleFrom="sm">
                 {items}
               </Group>
               <Burger
                 opened={opened}
                 onClick={toggle}
                 size="md"
-                hiddenFrom="xs"
+                hiddenFrom="sm"
               />
             </div>
           </ContentPage>
@@ -137,8 +137,9 @@ export function NavBar() {
             onClose={close}
             size="100%"
             padding="md"
-            hiddenFrom="xs"
+            hiddenFrom="sm"
             position={'right'}
+            closeButtonProps={{ size: 'xl', mr: 24 }}
           >
             <ScrollArea>
               <NavLink
