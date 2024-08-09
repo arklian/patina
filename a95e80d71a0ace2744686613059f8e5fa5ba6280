@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c78f5c1_a005189a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-09T16:32:01Z",
+      "side": 1,
+      "message": "This one probably isn\u0027t relevant anymore with the other changes I did for mobile",
+      "revId": "a95e80d71a0ace2744686613059f8e5fa5ba6280",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
