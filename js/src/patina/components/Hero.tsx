@@ -23,7 +23,7 @@ export function Hero({
 }: HeroProps) {
   return (
     <div className={styles.heroContainer}>
-      <div>
+      <div className={styles.textSection}>
         <Title className={styles.title}>{title}</Title>
         <div>{details}</div>
         {buttonLink && (
@@ -43,9 +43,7 @@ export function Hero({
           </div>
         )}
       </div>
-      <div className={styles.image}>
-        <Image className={styles.scholarshipHero} src={img} alt={alt} />
-      </div>
+      <Image className={styles.hero} src={img} alt={alt} />
     </div>
   )
 }

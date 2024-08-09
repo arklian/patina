@@ -1,17 +1,32 @@
 .heroContainer {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-bottom: 84px;
 
   @mixin smaller-than $mantine-breakpoint-md {
-    margin: 16px;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 36px;
   }
 }
 
+.textSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .title {
+  width: 100%;
   font-size: 64px;
   color: white;
   padding-bottom: 40px;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    font-size: 48px;
+    padding-bottom: 24px;
+  }
 }
 
 .description {
@@ -19,10 +34,14 @@
   padding-top: 10px;
   font-size: 24px;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    padding-bottom: 24px;
+  }
 }
 
-.scholarshipHero {
+.hero {
   height: 520px;
   width: 600px;
   padding-left: 100px;
@@ -30,7 +49,9 @@
   @mixin smaller-than $mantine-breakpoint-md {
     padding-left: 0;
     margin-top: 50px;
+    height: auto;
     width: 100%;
+    max-width: 600px;
   }
 }
 
