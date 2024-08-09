@@ -37,10 +37,20 @@ public class PsqlBlogtagRepo implements BlogTagRepo {
         return null;
     }
 
+    @Override
+    public Blogtag deleteBlogtag(int blogtagId) {
+        return null;
+    }
+
 
     @Override
     public Blogtag getBlogtagById(int id) {
         return null;
+    }
+
+    @Override
+    public List<Blogtag> listAllBlogtag() {
+        return List.of();
     }
 
 }
