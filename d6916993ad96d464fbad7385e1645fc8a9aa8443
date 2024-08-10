@@ -22,6 +22,30 @@
       },
       "revId": "d6916993ad96d464fbad7385e1645fc8a9aa8443",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bf04b37_639eb87e",
+        "filename": "js/src/patina/pages/about/mission/Mission.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-10T18:58:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d785d4c_776d0009",
+      "range": {
+        "startLine": 55,
+        "startChar": 2,
+        "endLine": 67,
+        "endChar": 3
+      },
+      "revId": "d6916993ad96d464fbad7385e1645fc8a9aa8443",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
