@@ -35,11 +35,6 @@ export function TeamPage() {
             <PersonCard {...boardMember} />
           ))}
         </Group>
-        {/*<Group component={'ul'} p={0}>*/}
-        {/*  {boardMembers.map((boardMember) => (*/}
-        {/*    <PersonCard {...boardMember} />*/}
-        {/*  ))}*/}
-        {/*</Group>*/}
         <Space h="md" />
       </Stack>
     </ContentPage>
