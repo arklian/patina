@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2ea35d6d_fae3bf77",
+        "filename": "js/src/patina/pages/about/mission/Mission.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T14:54:01Z",
+      "side": 1,
+      "message": "same ask as for previous commit (plz comment and also probably use @mixin)",
+      "range": {
+        "startLine": 30,
+        "startChar": 2,
+        "endLine": 42,
+        "endChar": 3
+      },
+      "revId": "8ff2681aa7486470f7f6cf2e131fdd1ba4d6f77f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
