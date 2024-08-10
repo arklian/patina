@@ -32,7 +32,7 @@ export function PersonCard({
   return (
     <Card component={'li'} key={name} p={24} radius={12} w={180}>
       <Card.Section>
-        <Image src={imageSrc} />
+        <Image src={imageSrc} radius={'50%'} w={148} h={148} />
       </Card.Section>
       <Card.Section>
         <Stack align={'center'} gap={0}>
@@ -44,7 +44,7 @@ export function PersonCard({
           <Text size={'sm'}>{email}</Text>
           <Space h={'md'} />
           <Group>
-            {githubUrl && (
+            {linkedInUrl && (
               <TeamIconLink href={linkedInUrl}>
                 <FaLinkedinIn size={24} aria-label={`LinkedIn for ${name}`} />
               </TeamIconLink>
