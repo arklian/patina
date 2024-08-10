@@ -45,6 +45,54 @@
       },
       "revId": "3072d11c666f96785cd89f059f3980cd34218c0a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f6f1b0d_c3889b98",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-10T18:57:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "91f87b8b_7355470a",
+      "range": {
+        "startLine": 84,
+        "startChar": 44,
+        "endLine": 84,
+        "endChar": 45
+      },
+      "revId": "3072d11c666f96785cd89f059f3980cd34218c0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d41f9c5f_55aa47da",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-10T18:57:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac337926_2e3a9890",
+      "range": {
+        "startLine": 84,
+        "startChar": 14,
+        "endLine": 84,
+        "endChar": 15
+      },
+      "revId": "3072d11c666f96785cd89f059f3980cd34218c0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
