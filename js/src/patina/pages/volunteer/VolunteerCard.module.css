@@ -24,7 +24,7 @@
 }
 
 .moreInfo {
-  color: var(--mantine-color-patina-blue-light);
+  color: var(--mantine-color-patina-green-light);
   font-style: italic;
   align-self: flex-end;
 }
@@ -34,12 +34,12 @@
 }
 
 .modalContent {
+  padding: 10px 48px;
   text-align: left;
   white-space: pre-wrap;
 }
 
 .modalTitle {
-  margin-bottom: 5px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -48,4 +48,17 @@
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+}
+
+.modalCustom {
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  --modal-size: 50%; /* Default width for larger screens */
+
+  @media (max-width: $mantine-breakpoint-md) {
+    --modal-size: 70%; /* Adjust width for medium screens */
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    --modal-size: 90%; /* Adjust width for smaller screens */
+  }
 }
