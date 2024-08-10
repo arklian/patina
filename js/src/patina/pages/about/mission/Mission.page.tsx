@@ -43,18 +43,30 @@ export function MissionPage() {
         </div>
       </div>
 
-      <Space h="md" />
+      <Space h="xl" />
 
-      <div>
-        <Title className={styles.title}>{'Why “Patina Network”?'}</Title>
+      <div className={styles.nameContainer}>
         <div>
-          <Text size={'xl'}>
-            {'A patina is the result of impressions over time. It represents how one can be shaped and enriched by' +
-              ' their unique circumstances, collectively creating a pattern that is distinctive, rich, and celebrated. '}
-          </Text>
+          <Title order={4} className={styles.title}>
+            {'Why “Patina Network”?'}
+          </Title>
+          <Space h={'xs'} />
+          <div>
+            <Text>
+              {'When co-founder Andrea was growing up, a distinct memory of her grandfather ' +
+                'was that he would fill his favorite coffee cup to the exact spot every morning ' +
+                'in order to create a gradual mark that was uniquely his.'}
+              <br />
+              <br />
+              {'A patina is the result of impressions over time. It represents how one can be shaped and enriched by their' +
+                'unique circumstances, collectively creating a pattern that is distinctive, rich, and cherished.'}
+            </Text>
+          </div>
         </div>
 
-        <div>
+        <Space w="xl" />
+
+        <div className={styles.nameKnifeContainer}>
           <Image
             src={imageUrls.missionKnife.src}
             alt={imageUrls.missionKnife.alt}
