@@ -1,6 +1,10 @@
 import { Title, Space, Group, Stack } from '@mantine/core'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
-import { boardMembers } from '@/patina/pages/about/team/teamData.ts'
+import {
+  boardMembers,
+  advisors,
+  interns,
+} from '@/patina/pages/about/team/teamData.ts'
 import { PersonCard } from '@/patina/pages/about/team/PersonCard.tsx'
 
 export function TeamPage() {
@@ -19,7 +23,7 @@ export function TeamPage() {
 
         <Title order={2}>{'Advisors'}</Title>
         <Group component={'ul'} p={0}>
-          {boardMembers.map((boardMember) => (
+          {advisors.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}
         </Group>
@@ -27,15 +31,15 @@ export function TeamPage() {
 
         <Title order={2}>{'Interns'}</Title>
         <Group component={'ul'} p={0}>
-          {boardMembers.map((boardMember) => (
+          {interns.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}
         </Group>
-        <Group component={'ul'} p={0}>
-          {boardMembers.map((boardMember) => (
-            <PersonCard {...boardMember} />
-          ))}
-        </Group>
+        {/*<Group component={'ul'} p={0}>*/}
+        {/*  {boardMembers.map((boardMember) => (*/}
+        {/*    <PersonCard {...boardMember} />*/}
+        {/*  ))}*/}
+        {/*</Group>*/}
         <Space h="md" />
       </Stack>
     </ContentPage>

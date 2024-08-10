@@ -75,4 +75,56 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/internshipHero.png',
     alt: 'Two women looking at a computer while smiling. Image is tinted blue',
   },
+  amanda: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/amanda.JPG',
+    alt: 'Amanda smiling at the camera.',
+  },
+  bryan: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/bryan.png',
+    alt: 'Bryan smiling at the camera.',
+  },
+  haoking: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/haoking.jpg',
+    alt: 'Haoking smiling at the camera.',
+  },
+  jasmine: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jasmine.jpg',
+    alt: 'Jasmine smiling at the camera.',
+  },
+  jionghao: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jionghao.png',
+    alt: 'Jionghao smiling at the camera.',
+  },
+  kelly: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kelly.jpeg',
+    alt: 'Kelly smiling at the camera.',
+  },
+  riyuan: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.jpg',
+    alt: 'Riyuan smiling at the camera.',
+  },
+  cinthia: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/cinthia.png',
+    alt: 'Cinthia smiling at the camera.',
+  },
+  andrea: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/andrea.png',
+    alt: 'Andrea smiling at the camera.',
+  },
+  celina: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/celina.png',
+    alt: 'Celina smiling at the camera.',
+  },
+  joan: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joan.png',
+    alt: 'Joan smiling at the camera.',
+  },
+  kevin: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kevin.png',
+    alt: 'Kevin smiling at the camera.',
+  },
+  henry: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/henry.png',
+    alt: 'Henry smiling at the camera.',
+  },
 }
