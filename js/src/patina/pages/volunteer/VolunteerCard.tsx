@@ -64,7 +64,7 @@ export function VolunteerCard({
         onClose={close}
         title={<Title className={styles.modalTitle}>{title}</Title>}
         withCloseButton
-        size={'auto'}
+        className={styles.modalCustom}
       >
         <div className={styles.modalContent}>
           <div>{renderModalContent(modalContent)}</div>
