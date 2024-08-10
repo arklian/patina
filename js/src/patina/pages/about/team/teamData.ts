@@ -56,8 +56,7 @@ export const advisors = [
     linkedInUrl: '',
     webUrl: '',
     githubUrl: '',
-    imageSrc:
-      'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/heart.png',
+    imageSrc: imageUrls.sara.src,
   },
   {
     name: 'Henry Chen',
@@ -87,7 +86,7 @@ export const interns = [
     linkedInUrl: 'https://www.linkedin.com/in/joy-om/',
     webUrl: '',
     githubUrl: '',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.joy.src,
   },
   {
     name: 'Maliha Tasnim',
@@ -96,7 +95,7 @@ export const interns = [
     linkedInUrl: 'https://www.linkedin.com/in/maliha-tasnim-81864b178/',
     webUrl: 'https://patinanetwork.org/personal/maliha/',
     githubUrl: 'https://github.com/MalihaT111',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.maliha.src,
   },
   {
     name: 'Jionghao Wu',
@@ -123,7 +122,7 @@ export const interns = [
     linkedInUrl: 'https://www.linkedin.com/in/manuel-reyes-jr-swe/',
     webUrl: 'https://patinanetwork.org/personal/manny/',
     githubUrl: 'https://github.com/Mreyes1241',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.manuel.src,
   },
   {
     name: 'Amanda Ruan',
@@ -150,7 +149,7 @@ export const interns = [
     linkedInUrl: 'https://www.linkedin.com/in/wangtony4005/',
     webUrl: 'https://patinanetwork.org/personal/tony/',
     githubUrl: 'https://github.com/wangtony4005',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.tony.src,
   },
   {
     name: 'Kazi Mansha',
@@ -159,7 +158,7 @@ export const interns = [
     linkedInUrl: 'https://www.linkedin.com/in/kazimansha/',
     webUrl: 'https://patinanetwork.org/personal/kazi/',
     githubUrl: 'https://github.com/KaziMansha',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.kazi.src,
   },
   {
     name: 'Haoking Luo',

@@ -76,32 +76,52 @@ export const imageUrls = {
     alt: 'Two women looking at a computer while smiling. Image is tinted blue',
   },
   amanda: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/amanda.JPG',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/amanda.png',
     alt: 'Amanda smiling at the camera.',
   },
   bryan: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/bryan.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/bryan.jpg',
     alt: 'Bryan smiling at the camera.',
   },
   haoking: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/haoking.jpg',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/haoking.png',
     alt: 'Haoking smiling at the camera.',
   },
   jasmine: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jasmine.jpg',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jasmine.png',
     alt: 'Jasmine smiling at the camera.',
   },
   jionghao: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jionghao.png',
     alt: 'Jionghao smiling at the camera.',
   },
+  joy: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joy.png',
+    alt: 'Joy smiling at the camera.',
+  },
+  kazi: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kazi.png',
+    alt: 'Kazi smiling at the camera.',
+  },
   kelly: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kelly.jpeg',
     alt: 'Kelly smiling at the camera.',
   },
+  maliha: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/maliha.png',
+    alt: 'Maliha smiling at the camera.',
+  },
+  manuel: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/manuel.png',
+    alt: 'Manuel smiling at the camera.',
+  },
   riyuan: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.jpg',
     alt: 'Riyuan smiling at the camera.',
+  },
+  tony: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tony.png',
+    alt: 'Tony smiling at the camera.',
   },
   cinthia: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/cinthia.png',
@@ -122,6 +142,10 @@ export const imageUrls = {
   kevin: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kevin.png',
     alt: 'Kevin smiling at the camera.',
+  },
+  sara: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/sara.jpg',
+    alt: 'Sara smiling at the camera.',
   },
   henry: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/henry.png',
