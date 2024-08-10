@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d1f44a5_fafaa288",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T04:02:11Z",
+      "side": 1,
+      "message": "Why so green :/",
+      "revId": "d4d6ebca9f5b2121869bc68c528971ee7074870f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
