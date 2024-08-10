@@ -1,4 +1,4 @@
-import { Card, Image, SimpleGrid, Text } from '@mantine/core'
+import { Card, Image, SimpleGrid, Text, Title } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import classes from '@/personal/martin/Martin.module.css'
 
@@ -11,11 +11,16 @@ interface ProjectShowcaseData {
 
 export function ProjectShowcase({ data }: ProjectShowcaseData) {
   const projects = data.map((project) => (
-    <Card key={project.title} shadow="md" radius="md" padding="xl">
-      <Text fz="lg" fw={500} mt="md">
+    <Card
+      key={project.title}
+      shadow="md"
+      radius="md"
+      className={classes.projCard}
+    >
+      <Title fz="lg" mt="md" order={2}>
         {project.title}
-      </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
+      </Title>
+      <Text fz="sm" mt="sm">
         {project.desc}
       </Text>
       <div className={classes.projCarousel}>
