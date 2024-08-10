@@ -1,10 +1,19 @@
-import { Title, Space, Text } from '@mantine/core'
+import { Title, Space, Text, Image } from '@mantine/core'
+import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Mission.module.css'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 export function MissionPage() {
   return (
     <ContentPage>
+      <div>
+        <Image
+          src={imageUrls.missionBannerSmile.src}
+          alt={imageUrls.missionBannerSmile.alt}
+        />
+      </div>
+      <Space h={'md'} />
+
       <Title className={styles.title}>{'Our Vision'}</Title>
       <div>
         <Text size={'xl'}>
@@ -30,6 +39,13 @@ export function MissionPage() {
         </Text>
       </div>
 
+      <div>
+        <Image
+          src={imageUrls.missionKnife.src}
+          alt={imageUrls.missionKnife.alt}
+        />
+      </div>
+
       <Space h="md" />
       <Title className={styles.title}>{'How it started'}</Title>
       <div>
@@ -44,6 +60,12 @@ export function MissionPage() {
         </Text>
       </div>
       <Space h="md" />
+      <div>
+        <Image
+          src={imageUrls.missionInterns24.src}
+          alt={imageUrls.missionInterns24.alt}
+        />
+      </div>
     </ContentPage>
   )
 }
