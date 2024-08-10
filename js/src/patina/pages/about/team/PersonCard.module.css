@@ -1,0 +1,30 @@
+.card {
+  padding: 24px;
+  border-radius: 12px;
+  width: 180px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    padding: 24px;
+    width: 140px;
+  }
+}
+
+.image {
+  height: 148px;
+  width: 148px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.email[data-status='true'] {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.email[data-status='false'] {
+  overflow-wrap: break-word;
+}

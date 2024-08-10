@@ -8,7 +8,8 @@ import {
   Space,
 } from '@mantine/core'
 import { FaLinkedinIn, FaGlobe, FaGithub } from 'react-icons/fa'
-import { ReactNode } from 'react'
+import { ReactNode, useState } from 'react'
+import styles from './PersonCard.module.css'
 
 interface PersonCardProps {
   name: string
@@ -29,10 +30,13 @@ export function PersonCard({
   githubUrl,
   imageSrc,
 }: PersonCardProps) {
+  const [truncate, setTruncate] = useState(true)
   return (
-    <Card component={'li'} key={name} p={24} radius={12} w={180}>
-      <Card.Section>
-        <Image src={imageSrc} radius={'50%'} w={148} h={148} />
+    <Card component={'li'} key={name} ta="center" className={styles.card}>
+      <Card.Section mb={5}>
+        <Group justify={'center'}>
+          <Image src={imageSrc} radius={'50%'} className={styles.image} />
+        </Group>
       </Card.Section>
       <Card.Section>
         <Stack align={'center'} gap={0}>
@@ -41,9 +45,17 @@ export function PersonCard({
           </Text>
           <Text size={'md'}>{role}</Text>
           <Space h={'sm'} />
-          <Text size={'sm'}>{email}</Text>
+          <Text
+            size={'sm'}
+            w={'100%'}
+            data-status={truncate}
+            className={styles.email}
+            onClick={() => (truncate ? setTruncate(false) : setTruncate(true))}
+          >
+            {email}
+          </Text>
           <Space h={'md'} />
-          <Group>
+          <Group gap={0}>
             {linkedInUrl && (
               <TeamIconLink href={linkedInUrl}>
                 <FaLinkedinIn size={24} aria-label={`LinkedIn for ${name}`} />

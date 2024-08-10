@@ -116,7 +116,7 @@ export const imageUrls = {
     alt: 'Manuel smiling at the camera.',
   },
   riyuan: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.jpg',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.png',
     alt: 'Riyuan smiling at the camera.',
   },
   tony: {

@@ -6,6 +6,7 @@ import {
   interns,
 } from '@/patina/pages/about/team/teamData.ts'
 import { PersonCard } from '@/patina/pages/about/team/PersonCard.tsx'
+import styles from './Team.module.css'
 
 export function TeamPage() {
   return (
@@ -14,7 +15,7 @@ export function TeamPage() {
         <Title order={1}>{'Our Team'}</Title>
         <Space h="md" />
         <Title order={2}>{'Board of Directors'}</Title>
-        <Group component={'ul'} p={0}>
+        <Group component={'ul'} p={0} className={styles.cardGroup}>
           {boardMembers.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}
@@ -22,7 +23,7 @@ export function TeamPage() {
         <Space h="md" />
 
         <Title order={2}>{'Advisors'}</Title>
-        <Group component={'ul'} p={0}>
+        <Group component={'ul'} p={0} className={styles.cardGroup}>
           {advisors.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}
@@ -30,7 +31,7 @@ export function TeamPage() {
         <Space h="md" />
 
         <Title order={2}>{'Interns'}</Title>
-        <Group component={'ul'} p={0}>
+        <Group component={'ul'} p={0} className={styles.cardGroup}>
           {interns.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}
