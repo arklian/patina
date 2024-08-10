@@ -5,24 +5,30 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
+    private final AuthenticationSuccessHandler customAuthenticationSuccessHandler;
+
+    public SecurityConfig(AuthenticationSuccessHandler customAuthenticationSuccessHandler) {
+        this.customAuthenticationSuccessHandler = customAuthenticationSuccessHandler;
+    }
+
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-                http.csrf(csrf -> csrf.disable()) //TODO: Add back csrf protection
+        http.csrf(csrf -> csrf.disable()) // TODO: Add back CSRF protection
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/api/secured").authenticated();
-                    // TODO: no database, as long they login, they can access the page
+                    auth.requestMatchers("/api/secured").hasRole("ADMIN");
                     auth.anyRequest().permitAll();
                 })
                 .oauth2Login(oauth2 -> oauth2
-                        .loginPage("/login_oauth2")
-                        .defaultSuccessUrl("/api/secured", true)  // Redirect to secured page on success
-                        .failureUrl("/login")  // Redirect to login page on failure
+                        .loginPage("/oauth2")
+                        .successHandler(customAuthenticationSuccessHandler)
+                        .failureUrl("/oauth2")
                 );
         return http.build();
     }
