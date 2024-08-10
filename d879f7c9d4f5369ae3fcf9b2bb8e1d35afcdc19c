@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a94544fc_48aa58df",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-10T16:24:54Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "374d6fd4_8ed27e71",
+      "range": {
+        "startLine": 80,
+        "startChar": 10,
+        "endLine": 80,
+        "endChar": 41
+      },
+      "revId": "d879f7c9d4f5369ae3fcf9b2bb8e1d35afcdc19c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8329c08d_dd65407a",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-08-10T15:01:35Z",
       "side": 1,
       "message": "can just delete (was likely just a placeholder to double the size of the intern section)",
+      "range": {
+        "startLine": 38,
+        "startChar": 8,
+        "endLine": 42,
+        "endChar": 22
+      },
+      "revId": "d879f7c9d4f5369ae3fcf9b2bb8e1d35afcdc19c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30034ea4_6cf6de5e",
+        "filename": "js/src/patina/pages/about/team/Team.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-10T16:24:54Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "8329c08d_dd65407a",
       "range": {
         "startLine": 38,
         "startChar": 8,
