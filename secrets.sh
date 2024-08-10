@@ -16,3 +16,11 @@ export PATINA_ADMIN_PASSWORD=redacted
 export PATINA_ADMIN_COOKIE=redacted
 # Credentials for pushing Docker image to Digital Ocean
 export DO_DOCKER_IMAGE_UPLOAD_PAT=redacted
+# Client ID for Github - Riyuan
+export GITHUB_CLIENT_ID=redacted
+# Client Secret for Github - Riyuan
+export GITHUB_CLIENT_SECRET=redacted
+# Client ID for Google - Riyuan
+export GOOGLE_CLIENT_ID=redacted
+# Client Secret for Google - Riyuan
+export GOOGLE_CLIENT_SECRET=redacted
