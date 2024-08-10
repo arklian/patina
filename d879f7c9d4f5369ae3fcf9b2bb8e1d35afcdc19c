@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "374d6fd4_8ed27e71",
+        "filename": "js/src/patina/assets/images.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T15:01:35Z",
+      "side": 1,
+      "message": "just a slight note, alt text won\u0027t show for any of these images yet since you aren\u0027t passing the alt text to the Image component",
+      "range": {
+        "startLine": 80,
+        "startChar": 10,
+        "endLine": 80,
+        "endChar": 41
+      },
+      "revId": "d879f7c9d4f5369ae3fcf9b2bb8e1d35afcdc19c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8329c08d_dd65407a",
+        "filename": "js/src/patina/pages/about/team/Team.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T15:01:35Z",
+      "side": 1,
+      "message": "can just delete (was likely just a placeholder to double the size of the intern section)",
+      "range": {
+        "startLine": 38,
+        "startChar": 8,
+        "endLine": 42,
+        "endChar": 22
+      },
+      "revId": "d879f7c9d4f5369ae3fcf9b2bb8e1d35afcdc19c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
