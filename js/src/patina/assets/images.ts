@@ -75,4 +75,16 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/internshipHero.png',
     alt: 'Two women looking at a computer while smiling. Image is tinted blue',
   },
+  missionKnife: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/missionKnife.png',
+    alt: 'A knife on top of a wood box with text around it',
+  },
+  missionInterns24: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/missionInterns24.png',
+    alt: 'The patina 2024 summer interns at google',
+  },
+  missionBannerSmile: {
+    src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/missionBannerSmile.png',
+    alt: 'A girl smilling at the camera',
+  },
 }
