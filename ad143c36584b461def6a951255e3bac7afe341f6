@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ffd449c_0ef54d8a",
+        "filename": "js/src/patina/pages/about/mission/Mission.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T14:50:56Z",
+      "side": 1,
+      "message": "pretty sure Henry wants us to us @mixin in lieu of @media",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 10,
+        "endChar": 8
+      },
+      "revId": "ad143c36584b461def6a951255e3bac7afe341f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "279d1221_99a0eda0",
+        "filename": "js/src/patina/pages/about/mission/Mission.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-10T14:50:56Z",
+      "side": 1,
+      "message": "can you add comments to this and the next instance explaining what this does?",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 12
+      },
+      "revId": "ad143c36584b461def6a951255e3bac7afe341f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
