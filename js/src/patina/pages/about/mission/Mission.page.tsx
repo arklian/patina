@@ -74,27 +74,26 @@ export function MissionPage() {
         </div>
       </div>
 
-      <Space h="md" />
-
-      <div>
-        <Title className={styles.title}>{'Our story'}</Title>
-        <div>
-          <Text size={'xl'}>
-            {'After meeting serendipitously at a networking event, our founders bonded over their shared experience' +
-              ' of struggling with lack of mentorship and resources during critical years of their education.'}
-            <br />
-
-            {'They decided to do something about it! We are now unified under the name Patina Network, and we strive' +
-              ' to empower future generations of students, foster a safe safe with peers, and engage elders who' +
-              ' overcame similar challenges. '}
-          </Text>
-        </div>
-        <Space h="md" />
-        <div>
+      <div className={styles.backStoryContainer}>
+        <div className={styles.Ig24PatContainer}>
           <Image
             src={imageUrls.missionInterns24.src}
             alt={imageUrls.missionInterns24.alt}
           />
+        </div>
+        <div className={styles.backStoryText}>
+          <Title order={4} className={styles.title}>
+            {'Our story'}
+          </Title>
+          <div>
+            <Text>
+              {'After meeting serendipitously at a networking event, our founders bonded over ' +
+                'their shared experience of struggling with lack of mentorship and resources ' +
+                'during critical years of their education. They also realized a need for deeper ' +
+                'representation within AANHPI spheres, and a desire to learn about the lesser ' +
+                'represented culture within that umbrella.'}
+            </Text>
+          </div>
         </div>
       </div>
     </ContentPage>
