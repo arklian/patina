@@ -1,3 +1,25 @@
 .title {
   align-self: flex-start;
 }
+
+.statementContainer {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+
+    /* This adds a 20px margin at the bottom of each direct child div within the .statementContainer */
+    & > div {
+      margin-bottom: 20px;
+    }
+
+    /* This makes sure that the last item doesn't have extra margin at the bottom. */
+    & > div:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
