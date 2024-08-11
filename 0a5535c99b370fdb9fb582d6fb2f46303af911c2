@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6543b24d_e498cf11",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T02:04:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "65073b23_4abc82df",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e3c66c3f_6b0c1f28",
@@ -67,6 +85,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "eb10a0b5_81c4d1d2",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T02:04:12Z",
+      "side": 1,
+      "message": "Do I also place the sql query for creating the enum in the same file?\nCREATE TYPE role AS ENUM (\u0027USER\u0027, \u0027ADMIN\u0027);",
+      "parentUuid": "995db107_5292e208",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 45
+      },
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "715ca574_d1fcd80c",
         "filename": "db/migrations/patina/V0004__user_table.sql",
         "patchSetId": 1
@@ -78,6 +120,24 @@
       "writtenOn": "2024-08-11T01:40:55Z",
       "side": 1,
       "message": "this should be create_time\nhttps://cloud.google.com/apis/design/standard_fields",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21614e14_9cdae312",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T02:04:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "715ca574_d1fcd80c",
       "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -95,6 +155,24 @@
       "writtenOn": "2024-08-11T01:38:53Z",
       "side": 1,
       "message": "are these quotes needed?",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d796a2b_28c028e7",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T02:04:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "594bc757_46d6f5cc",
       "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
