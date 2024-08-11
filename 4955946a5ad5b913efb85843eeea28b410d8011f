@@ -26,6 +26,46 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "55e6f880_a046861b",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:32:09Z",
+      "side": 1,
+      "message": "comments probably not needed here",
+      "range": {
+        "startLine": 2,
+        "startChar": 29,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d45fa7e0_201a2f51",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:32:09Z",
+      "side": 1,
+      "message": "Use dark 6",
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "66cee89b_8262691c",
         "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
         "patchSetId": 2
@@ -42,6 +82,29 @@
         "startChar": 2,
         "endLine": 12,
         "endChar": 20
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2be537c2_de5980e3",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:32:09Z",
+      "side": 1,
+      "message": "where do these come from lol",
+      "range": {
+        "startLine": 30,
+        "startChar": 26,
+        "endLine": 30,
+        "endChar": 58
       },
       "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
