@@ -43,6 +43,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "995db107_5292e208",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:42:57Z",
+      "side": 1,
+      "message": "I guess if it\u0027s used in multiple tables, it might be good to store in a table itself. Depends what the future of it is, but can always edit it later.",
+      "parentUuid": "e3c66c3f_6b0c1f28",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 45
+      },
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "715ca574_d1fcd80c",
         "filename": "db/migrations/patina/V0004__user_table.sql",
         "patchSetId": 1
