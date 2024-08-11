@@ -109,6 +109,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6f87d076_7505188a",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T02:15:41Z",
+      "side": 1,
+      "message": "If that works, sure",
+      "parentUuid": "eb10a0b5_81c4d1d2",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 45
+      },
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "715ca574_d1fcd80c",
         "filename": "db/migrations/patina/V0004__user_table.sql",
         "patchSetId": 1
@@ -173,6 +197,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "594bc757_46d6f5cc",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be06fc5c_78f26025",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T02:15:41Z",
+      "side": 1,
+      "message": "?\nAlso we really need to do a pass for sql injection at some point.",
+      "parentUuid": "2d796a2b_28c028e7",
       "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
