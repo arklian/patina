@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65073b23_4abc82df",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:38:53Z",
+      "side": 1,
+      "message": "max len is 254 just do 255. https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "594bc757_46d6f5cc",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-11T01:38:53Z",
+      "side": 1,
+      "message": "are these quotes needed?",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
