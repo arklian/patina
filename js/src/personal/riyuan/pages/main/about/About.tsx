@@ -10,7 +10,8 @@ import {
 } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import styles from '@/personal/riyuan/Riyuan.module.css'
-import aboutStyles from '@/personal/riyuan/components/about/About.module.css'
+import aboutStyles from '@/personal/riyuan/pages/main/about/About.module.css'
+import pfp from '@/personal/riyuan/assets/images/pfp.jpg'
 
 // Define an interface for the props
 interface InfoSectionProps {
@@ -18,6 +19,21 @@ interface InfoSectionProps {
   description: string
   listItems: string[]
 }
+
+// Create a utility function to bold the first word:
+const formatText = (text: string) => {
+  const [firstWord, ...rest] = text.split(' ');
+  return (
+    <span>
+      <Text component="span">
+        {firstWord}
+      </Text>{' '}
+      <Text component="span" c="dimmed">
+        {rest.join(' ')}
+      </Text>
+    </span>
+  );
+};
 
 /**
  * Function to render the info section with a title, description,
@@ -34,13 +50,13 @@ function InfoSection({ title, description, listItems }: InfoSectionProps) {
         {listItems.map((bulletPoint, index) => (
           <ListItem key={index}>
             <Text ta="left" size="md" mx="auto" pl={5}>
-              {bulletPoint}
+              {formatText(bulletPoint)}
             </Text>
           </ListItem>
         ))}
       </List>
     </div>
-  )
+  );
 }
 
 /**
@@ -51,29 +67,29 @@ export function About() {
   const largeScreen = useMediaQuery('(min-width: 60em)')
 
   const listItems = [
-    '1It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-    '2It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-    '3It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-    '4It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+    "Developed and maintained dynamic web applications, ensuring optimal performance and user experience.",
+    "Collaborated with industry professionals to work on real-world projects, enhancing technical proficiency.",
+    "Assisted in teaching and guiding peers through complex technical concepts, strengthening communication and problem-solving skills.",
+    "Focused on secure authentication systems and modern development practices to address real-world challenges."
   ]
 
   const description =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "I am a Computer Science major at Hunter College with a strong passion for technology and development. I’m currently a teaching assistant and a GSWEP Fellow at Google, where I collaborate on various projects and enhance my technical skills. My focus is on creating React components and integrating secure authentication systems. I am committed to continuous learning and applying my skills to real-world challenges."
 
   return (
     <div id={'About'} className={styles.container}>
-      <Container className={aboutStyles.inner}>
+      <Container className={styles.inner} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '100vh' }}>
         <Title className={styles.title} ta="left" mt={100}>
           {'About Me'}
         </Title>
-        <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl">
+        <SimpleGrid cols={largeScreen ? 2 : 1} spacing="xl" style={{ alignItems: 'center', justifyContent: 'center', width: '100%' }}>
           <InfoSection
             title="Software developer"
             description={description}
             listItems={listItems}
           />
           <Flex direction={'row'} justify={'center'} align={'center'}>
-            <Image src={'https://placehold.co/400x600'} w={400} />
+            <Image src={pfp} w={400} />
           </Flex>
         </SimpleGrid>
       </Container>

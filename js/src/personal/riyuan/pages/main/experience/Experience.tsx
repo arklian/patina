@@ -1,5 +1,5 @@
 import { Title, Text, Container } from '@mantine/core'
-import { TabGroup } from '@/personal/riyuan/components/experience/TabGroup.tsx'
+import { TabGroup } from '@/personal/riyuan/pages/main/experience/TabGroup.tsx'
 import styles from '@/personal/riyuan/Riyuan.module.css'
 import experienceStyles from './Experience.module.css'
 

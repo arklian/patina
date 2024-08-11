@@ -1,6 +1,6 @@
 import { Container, Title } from '@mantine/core'
-import { projects } from '@/personal/riyuan/components/project/projectData.ts'
-import { ProjectItem } from '@/personal/riyuan/components/project/ProjectItem.tsx'
+import { projects } from '@/personal/riyuan/pages/project/projectData.ts'
+import { ProjectItem } from '@/personal/riyuan/pages/project/ProjectItem.tsx'
 import styles from '@/personal/riyuan/Riyuan.module.css'
 
 /**

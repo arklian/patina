@@ -1,9 +1,9 @@
 import { SimpleGrid, Group, Title, Text, Image, Button } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
-import { Project } from '@/personal/riyuan/components/project/projectData.ts'
+import { Project } from '@/personal/riyuan/pages/project/projectData.ts'
 import laptop from '@/personal/riyuan/assets/images/laptop.png'
-import projectStyle from '@/personal/riyuan/components/project/Projects.module.css'
-import hstyles from '@/personal/riyuan/components/home/Home.module.css'
+import projectStyle from '@/personal/riyuan/pages/project/Projects.module.css'
+import hstyles from '@/personal/riyuan/pages/main/home/Home.module.css'
 
 /**
  * This function renders the project header

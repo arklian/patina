@@ -1,9 +1,9 @@
-import { AppShell, MantineProvider } from '@mantine/core'
-import { Outlet } from 'react-router-dom'
-import { theme } from './theme.ts'
-import styles from './Riyuan.module.css'
-import { Nav } from '@/personal/riyuan/components/navigation/Navigation.tsx'
-import { FooterCentered } from '@/personal/riyuan/components/footer/Footer.tsx'
+import { AppShell, MantineProvider, Burger } from '@mantine/core';
+import { Outlet } from 'react-router-dom';
+import { theme } from './theme.ts';
+import styles from './Riyuan.module.css';
+import { Nav } from '@/personal/riyuan/component/navigation/NavbarNested.tsx';
+import {useDisclosure, useMediaQuery} from '@mantine/hooks';
 
 /**
  * This component renders the basic layout of the website
@@ -11,13 +11,37 @@ import { FooterCentered } from '@/personal/riyuan/components/footer/Footer.tsx'
  * Establishes the main layout for the site
  */
 export function RiyuanPage() {
+  const [opened, { toggle }] = useDisclosure(false);
+  const isLargeScreen = useMediaQuery('(min-width: 60em)')
   return (
     <MantineProvider theme={theme}>
-      <Nav />
       <AppShell className={styles.appshell}>
-        <Outlet />
-        <FooterCentered />
+        <AppShell
+          padding="md"
+          navbar={{
+            width: { base: 200 },
+            breakpoint: 'sm',
+            collapsed: { mobile: !opened },
+          }}
+          header={{height: isLargeScreen?0:30}}
+        >
+          {!isLargeScreen && <AppShell.Header style={{ borderBottom: 'none' }}>
+            <Burger
+              opened={opened}
+              onClick={toggle}
+              size="sm"
+              color={theme.colors.gray[6]}
+            />
+          </AppShell.Header>}
+          <AppShell.Navbar>
+            <Nav />
+          </AppShell.Navbar>
+
+          <AppShell.Main>
+            <Outlet />
+          </AppShell.Main>
+        </AppShell>
       </AppShell>
     </MantineProvider>
-  )
+  );
 }
