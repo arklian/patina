@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0d42ffe_456b6702",
+        "filename": "js/src/patina/pages/about/mission/Mission.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-11T04:23:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c1541dcd_993c43c5",
+      "range": {
+        "startLine": 5,
+        "startChar": 60,
+        "endLine": 5,
+        "endChar": 61
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "55e6f880_a046861b",
@@ -64,6 +88,48 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa0f982d_f33b9976",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-11T04:23:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55e6f880_a046861b",
+      "range": {
+        "startLine": 2,
+        "startChar": 29,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77aed80c_f462a7d0",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-11T04:23:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d45fa7e0_201a2f51",
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "66cee89b_8262691c",
@@ -87,6 +153,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa70a040_7091a48e",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-11T04:23:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "66cee89b_8262691c",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 20
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2be537c2_de5980e3",
@@ -100,6 +190,30 @@
       "writtenOn": "2024-08-11T01:32:09Z",
       "side": 1,
       "message": "where do these come from lol",
+      "range": {
+        "startLine": 30,
+        "startChar": 26,
+        "endLine": 30,
+        "endChar": 58
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a8ae98e_05bf575c",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-11T04:23:34Z",
+      "side": 1,
+      "message": "thats just me talking to my self in code last night at 3am",
+      "parentUuid": "2be537c2_de5980e3",
       "range": {
         "startLine": 30,
         "startChar": 26,
