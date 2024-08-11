@@ -2,6 +2,7 @@ import { Title, Space, Text, Image } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Mission.module.css'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { PillarSection } from '@/patina/pages/about/mission/PillarSection.tsx'
 
 export function MissionPage() {
   return (
@@ -42,6 +43,9 @@ export function MissionPage() {
           </div>
         </div>
       </div>
+
+      <Space h={'xl'} />
+      <PillarSection />
 
       <Space h="xl" />
 
