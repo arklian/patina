@@ -16,6 +16,24 @@
       "message": "Can we put all of these files (admin/config/user) under patinawebsite/auth?",
       "revId": "beaaac3f64344d7ad76e9a230b4811c4d01cfa8b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e260ae19_d4860d84",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/admin/admin.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T03:44:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "49c5dada_1ff01ee8",
+      "revId": "beaaac3f64344d7ad76e9a230b4811c4d01cfa8b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

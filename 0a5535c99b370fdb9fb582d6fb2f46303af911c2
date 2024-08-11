@@ -131,6 +131,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e57358d5_b4d84cee",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T03:44:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f87d076_7505188a",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 45
+      },
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "715ca574_d1fcd80c",
@@ -215,6 +239,24 @@
       "side": 1,
       "message": "?\nAlso we really need to do a pass for sql injection at some point.",
       "parentUuid": "2d796a2b_28c028e7",
+      "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2b93440_4214fa3e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-11T03:44:47Z",
+      "side": 1,
+      "message": "Oh, the quotes around admin isn\u0027t needed due to database for admin is \u0027admin\u0027\nDone",
+      "parentUuid": "be06fc5c_78f26025",
       "revId": "0a5535c99b370fdb9fb582d6fb2f46303af911c2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
