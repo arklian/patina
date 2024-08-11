@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1541dcd_993c43c5",
+        "filename": "js/src/patina/pages/about/mission/Mission.page.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-11T01:25:54Z",
+      "side": 1,
+      "message": "Should be PillarSection",
+      "range": {
+        "startLine": 5,
+        "startChar": 60,
+        "endLine": 5,
+        "endChar": 61
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66cee89b_8262691c",
+        "filename": "js/src/patina/pages/about/mission/pillarsSection.module.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-11T01:25:54Z",
+      "side": 1,
+      "message": "can just do padding-bottom: 50px (to make this more understandable and maintain consistency with padding format for .headingContainer)",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 20
+      },
+      "revId": "4955946a5ad5b913efb85843eeea28b410d8011f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
