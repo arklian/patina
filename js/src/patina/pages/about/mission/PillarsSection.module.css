@@ -1,0 +1,39 @@
+.pillarsSection {
+  background-color: var(--mantine-color-dark-6);
+  padding: 50px;
+  width: 100vw;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.headingContainer {
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    padding-left: 0;
+  }
+}
+
+.cards {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  max-width: 474px;
+  text-align: center;
+  height: 224px;
+}
+
+.textContainer {
+  padding: 0 30px;
+}
