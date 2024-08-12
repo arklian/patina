@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component(value = "PsqlBlogtagRepo")
-public class PsqlBlogtagRepo implements BlogTagRepo {
+public class PsqlBlogtagRepo implements BlogtagRepo {
 
     DBConnection dbConnection;
     Connection conn;
@@ -26,7 +26,7 @@ public class PsqlBlogtagRepo implements BlogTagRepo {
     //TODO: Fix SQL injection
     public Blogtag addBlogtag(Blogtag blogtag) {
         try {
-            PreparedStatement st = conn.prepareStatement("INSERT INTO blogtag (id, name) VALUES (?)");
+            PreparedStatement st = conn.prepareStatement("INSERT INTO blogtag (name) VALUES (?)");
             st.setString(1, blogtag.getName());
             st.executeUpdate();
             st.close();
