@@ -64,8 +64,13 @@ tasks.withType<Test> {
     }
 }
 
+
 tasks.named("bootRun") {
     group = "patina"
+    dependsOn(":js:patina")
+}
+
+tasks.named("bootJar") {
     dependsOn(":js:patina")
 }
 
@@ -76,7 +81,17 @@ tasks.named("generateProto") {
 
 tasks.named<BootBuildImage>("bootBuildImage") {
     group = "patina"
-    imageName.set("registry.digitalocean.com/patina/patina-test")
+
+    // Check if a custom tag is provided, otherwise use 'latest'
+    val tag = if (project.hasProperty("imageTags")) {
+        project.property("imageTags").toString()
+    } else {
+        "latest"
+    }
+    println("Building Docker image with tag: $tag")
+    println("Build directory: ${rootProject.layout.buildDirectory.get()}")
+    imageName.set("registry.digitalocean.com/patina/patina-site:$tag")
+    dependsOn(":js:patina")
     publish.set(true)
     docker {
         publishRegistry {
@@ -84,6 +99,43 @@ tasks.named<BootBuildImage>("bootBuildImage") {
             password.set(System.getenv("DO_DOCKER_IMAGE_UPLOAD_PAT"))
         }
     }
+}
+
+tasks.register("tagAndPushDockerImage") {
+    group = "patina"
+    description = "Tag and push the Docker image with the latest tag"
+    doLast {
+        val primaryTag = if (project.hasProperty("imageTags")) {
+            project.property("imageTags").toString()
+        } else {
+            "latest"
+        }
+
+        val baseImageName = "registry.digitalocean.com/patina/patina-site"
+        val imageNameWithPrimaryTag = "$baseImageName:$primaryTag"
+        val imageNameWithLatestTag = "$baseImageName:latest"
+
+        println("Tagging Docker image with: $imageNameWithLatestTag")
+
+        exec {
+            commandLine("docker", "tag", imageNameWithPrimaryTag, imageNameWithLatestTag)
+        }
+
+        println("Pushing Docker image with tag: $primaryTag")
+        exec {
+            commandLine("docker", "push", imageNameWithPrimaryTag)
+        }
+
+        println("Pushing Docker image with tag: latest")
+        exec {
+            commandLine("docker", "push", imageNameWithLatestTag)
+        }
+    }
+}
+
+tasks.named("tagAndPushDockerImage") {
+    dependsOn("bootBuildImage")
+    dependsOn(":js:patina")
 }
 
 tasks.named<TaskReportTask>("tasks") {
