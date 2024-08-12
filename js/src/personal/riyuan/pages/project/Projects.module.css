@@ -1,10 +1,13 @@
-.projectContinear {
-  justify-content: center;
-  justify-items: center;
-  display: block;
+.project {
+  padding-left: rem(40px);
+}
+
+.textBox {
+  padding-left: 0;
 }
 
 .projectItem {
+  padding-left: 0;
   min-height: 100vh;
 }
 
