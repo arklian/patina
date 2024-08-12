@@ -27,15 +27,15 @@ export function ProjectsPage() {
   }) => (
     <Grid.Col span={{ base: 12, md: 12, lg: 5.9 }} bd="1px solid gray">
       <Grid component="span">
-        <Grid.Col span={{ base: 12, md: 5, lg: 5 }}>
+        <Grid.Col span={{ base: 12, md: 5.5, lg: 5.5 }}>
           <Center>
-            <Title mt="1rem" component="span" className={classes.title2}>
+            <Title component="flex" className={classes.title2}>
               {props.title}
             </Title>
           </Center>
           {props.addimage && <Image src={props.image} />}
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 7, lg: 7 }}>
+        <Grid.Col span={{ base: 12, md: 6.5, lg: 6.5 }}>
           <Anchor href={props.link} target="_blank">
             {'Github'}
           </Anchor>
@@ -59,7 +59,7 @@ export function ProjectsPage() {
       </Title>
       <Grid component="span" justify="center">
         <Grid.Col span={12}>
-          <Text mt="0.5rem" mb="0.5rem">
+          <Text mt="rem(8px)" mb="rem(8px)">
             {'(Mostly) Finished Projects'}
           </Text>
         </Grid.Col>
@@ -81,7 +81,7 @@ export function ProjectsPage() {
           text="Wrote a paper here with Sarika Ahire. Paper is linked :)"
         />
         <Grid.Col span={12}>
-          <Text mt="0.5rem" mb="0.5rem">
+          <Text mt="rem(8px)" mb="rem(8px)">
             {'Projects for the future'}
           </Text>
         </Grid.Col>
@@ -94,7 +94,7 @@ export function ProjectsPage() {
         <Project
           title="COS 397"
           link="https://github.com/arklian/patina/tree/main/js/src/personal/bryan"
-          text="Expecting to do research/coding/write a paper for this course in the Fall 2024 semester."
+          text="Expecting to do research/write a paper for this course in the Fall 2024 semester."
         />
       </Grid>
     </Flex>
