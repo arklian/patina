@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.user.protos;
+
+option java_multiple_files = true;
+
+// Model stored in the DB for users in the Patina Network.
+message User {
+  // Serial id for the user in the DB. 0 when the user is not stored in the DB yet.
+  optional int32 id = 1;
+  // The user's email address. VARCHAR(100)
+  string email = 2;
+  // The user's username. VARCHAR(50)
+  string username = 3;
+  // Date the user was created in the ISO yyyy-mm-dd format
+  string created_at = 4;
+}
