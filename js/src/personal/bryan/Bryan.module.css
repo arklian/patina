@@ -1,11 +1,11 @@
 .title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-size: rem(64px);
-    letter-spacing: rem(-2px);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(64px);
+  letter-spacing: rem(-2px);
 
-    @media (max-width: $mantine-breakpoint-md) {
-        font-size: rem(50px);
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
 }
 
 .title2 {
@@ -19,20 +19,23 @@
 }
 
 .header {
-    height: rem(6vh);
-    background-color: var(--mantine-color-body);
-    border-bottom: rem(0.2vh) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  align-items: center;
+  border-bottom: rem(0.2vh) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.background, .header, .container {
+  background-color: light-dark(#faf9de, #050621);
 }
 
 .inner {
-    height: rem(6vh);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: rem(6vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  min-height: 90vh;
+  min-height: 94vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

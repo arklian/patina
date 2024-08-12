@@ -9,7 +9,7 @@ import { TimeDisplay } from '@/personal/bryan/frame/TimeDisplay.tsx'
 export function BryanPage() {
   return (
     <MantineProvider theme={theme}>
-      <Flex direction="column">
+      <Flex direction="column" className={classes.background}>
         <NavBar />
         <div className={classes.container}>
           <TimeDisplay />

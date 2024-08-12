@@ -18,13 +18,13 @@ export function Settings() {
         position="bottom"
         radius="md"
         shadow="md"
-        closeDelay={500}
-        withinPortal
+        closeDelay={0}
+        //withinPortal
       >
         <HoverCard.Target>
           <Center inline>
             <Box component="span" mr={5}>
-              <Button color="gray"> {'Settings'} </Button>
+              <Button> {'Settings'} </Button>
             </Box>
           </Center>
         </HoverCard.Target>
