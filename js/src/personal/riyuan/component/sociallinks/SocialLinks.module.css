@@ -18,6 +18,7 @@
 .social:hover {
   background-color: #00000040;
   backdrop-filter: blur(5px);
+
   .tip {
     display: flex;
   }
@@ -39,6 +40,8 @@
 .icon {
   margin: 0 3px;
   transition: transform 0.3s;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  text-decoration: none;
 }
 
 .icon:hover {
@@ -47,9 +50,4 @@
 
 .icon:active {
   transform: scale(1);
-}
-
-.icon {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  text-decoration: none;
 }
