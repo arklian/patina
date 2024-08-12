@@ -16,6 +16,24 @@
       "message": "The blog_blog_tag_table.sql should be a later commit, not this one.",
       "revId": "b6c7a91e931bef73d4cc53c47b5cbf354d4f7e75",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea0ccaf2_2c705a21",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:50:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3663f327_6ef04bc4",
+      "revId": "b6c7a91e931bef73d4cc53c47b5cbf354d4f7e75",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }

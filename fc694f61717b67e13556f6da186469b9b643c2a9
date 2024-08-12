@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d562705_857052f5",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:50:18Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "6fef209b_fd3e45ed",
+      "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a50a822e_0fa79657",
@@ -37,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "db805ddd_2dcfa475",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:50:18Z",
+      "side": 1,
+      "message": "as in \"api/blogtags\"?",
+      "parentUuid": "a50a822e_0fa79657",
+      "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fdb2707f_de465ffc",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
         "patchSetId": 12
@@ -48,6 +84,24 @@
       "writtenOn": "2024-08-09T18:15:30Z",
       "side": 1,
       "message": "The sql file shouldn\u0027t be in here if it\u0027s empty",
+      "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d296d06_33d09439",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/blogtag.proto",
+        "patchSetId": 12
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:50:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fdb2707f_de465ffc",
       "revId": "fc694f61717b67e13556f6da186469b9b643c2a9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
