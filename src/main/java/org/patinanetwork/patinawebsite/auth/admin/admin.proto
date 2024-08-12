@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.admin.protos;
+
+option java_multiple_files = true;
+
+message Admin {
+  // Unique identifier for the admin. Corresponds to the BIGSERIAL id.
+  int32 id = 1;
+
+  // Email of the admin. Corresponds to the VARCHAR(100) NOT NULL UNIQUE.
+  string user_id = 2;
+
+  // Username of the admin. Corresponds to the VARCHAR(50) NOT NULL UNIQUE.
+  string username = 3;
+}
