@@ -104,15 +104,15 @@ export const imageUrls = {
     alt: 'Kazi smiling at the camera.',
   },
   kelly: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kelly.jpeg',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kelly.png',
     alt: 'Kelly smiling at the camera.',
   },
   maliha: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/maliha.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/maliha.jpg',
     alt: 'Maliha smiling at the camera.',
   },
   manuel: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/manuel.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/manuel.jpg',
     alt: 'Manuel smiling at the camera.',
   },
   riyuan: {
