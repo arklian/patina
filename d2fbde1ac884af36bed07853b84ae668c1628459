@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40f76c92_1681e6d1",
+        "filename": "db/migrations/patina/V0004__user_table.sql",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:19:25Z",
+      "side": 1,
+      "message": "Is this needed anymore?",
+      "revId": "d2fbde1ac884af36bed07853b84ae668c1628459",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ecf8a32_a64a5ce5",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/user/repo/PsqlUsersRepo.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:19:25Z",
+      "side": 1,
+      "message": "This is wrong now isn\u0027t it?",
+      "revId": "d2fbde1ac884af36bed07853b84ae668c1628459",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
