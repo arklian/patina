@@ -2,6 +2,11 @@
   background-color: var(--mantine-color-dark-6);
   padding: 50px;
   width: 100vw;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .cardContainer {
@@ -9,7 +14,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 50px;
-  padding-bottom: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     flex-direction: column;
@@ -18,8 +24,8 @@
 }
 
 .headingContainer {
-  padding-left: 30px;
   padding-bottom: 20px;
+  padding-left: 70px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     padding-left: 0;
@@ -29,9 +35,16 @@
 .cards {
   border: 1px solid #fff;
   border-radius: 10px;
-  max-width: 474px;
+  width: 100%;
   text-align: center;
   height: 224px;
+  justify-content: center;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 356px;
+    height: 300px;
+    align-self: center;
+  }
 }
 
 .textContainer {
