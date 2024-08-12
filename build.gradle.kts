@@ -64,8 +64,13 @@ tasks.withType<Test> {
     }
 }
 
+
 tasks.named("bootRun") {
     group = "patina"
+    dependsOn(":js:patina")
+}
+
+tasks.named("bootJar") {
     dependsOn(":js:patina")
 }
 
