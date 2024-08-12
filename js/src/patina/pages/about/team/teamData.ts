@@ -60,7 +60,7 @@ export const advisors = [
   },
   {
     name: 'Henry Chen',
-    role: 'Advisor and SWE Manager',
+    role: 'SWE Manager',
     email: 'hjc77@cornell.edu',
     linkedInUrl: 'https://www.linkedin.com/in/arklian/',
     webUrl: '',

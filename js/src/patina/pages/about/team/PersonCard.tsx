@@ -39,7 +39,7 @@ export function PersonCard({
         </Group>
       </Card.Section>
       <Card.Section>
-        <Stack align={'center'} gap={0}>
+        <Stack align={'center'} justify={'flex-end'} gap={0}>
           <Text size={'sm'} fw={700}>
             {name}
           </Text>
@@ -48,6 +48,7 @@ export function PersonCard({
           <Text
             size={'sm'}
             w={'100%'}
+            h={'32px'}
             data-status={truncate}
             className={styles.email}
             onClick={() => (truncate ? setTruncate(false) : setTruncate(true))}
