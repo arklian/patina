@@ -14,6 +14,7 @@
   width: 100%;
   background-color: var(--mantine-color-dark-6);
   align-items: center;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-xl);
 }
 
 .logoTextContainer {
