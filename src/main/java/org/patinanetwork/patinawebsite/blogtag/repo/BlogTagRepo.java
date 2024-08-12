@@ -8,9 +8,11 @@ public interface BlogTagRepo {
     // Add a new blog
     Blogtag addBlogtag(Blogtag blogtag);
 
-    Blogtag getBlogtag(int blogtagId);
+    Blogtag deleteBlogtag(int blogtagId);
 
     // Get a blog by its ID
     Blogtag getBlogtagById(int blogtagId);
 
+    // List all blogs
+    List<Blogtag> listAllBlogtag();
 }
