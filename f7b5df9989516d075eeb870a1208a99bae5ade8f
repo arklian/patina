@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "905c59e8_b9dec7cf",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-12T21:20:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "08a42661_7273186f",
+      "range": {
+        "startLine": 114,
+        "startChar": 62,
+        "endLine": 114,
+        "endChar": 73
+      },
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "416a575a_f28ef33c",
@@ -41,6 +65,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cc7af19_360600f1",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-12T21:20:35Z",
+      "side": 1,
+      "message": "it only pushes latest when you dont specify a tag",
+      "parentUuid": "416a575a_f28ef33c",
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "898c2e51_795463a1",
@@ -54,6 +96,24 @@
       "writtenOn": "2024-08-12T20:18:21Z",
       "side": 1,
       "message": "This isn\u0027t needed anymore right?",
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "836e92dc_2b706616",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-12T21:20:35Z",
+      "side": 1,
+      "message": "This is needed because it needs to manually add the latest tag",
+      "parentUuid": "898c2e51_795463a1",
       "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
