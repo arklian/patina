@@ -21,13 +21,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-public class BlogTagController {
+public class BlogtagController {
 
     BlogTagRepo blogTagRepo;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public BlogTagController(BlogTagRepo blogTagRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
+    public BlogtagController(BlogTagRepo blogTagRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
         this.blogTagRepo = blogTagRepo;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
