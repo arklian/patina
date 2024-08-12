@@ -4,7 +4,7 @@ import org.patinanetwork.patinawebsite.blogtag.protos.Blogtag;
 
 import java.util.List;
 
-public interface BlogTagRepo {
+public interface BlogtagRepo {
     // Add a new blog
     Blogtag addBlogtag(Blogtag blogtag);
 

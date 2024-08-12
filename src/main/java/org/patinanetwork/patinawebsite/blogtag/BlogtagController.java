@@ -6,9 +6,9 @@ import org.patinanetwork.patinawebsite.blogtag.protos.Blogtag;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagReq;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagResp;
 import org.patinanetwork.patinawebsite.blogtag.protos.DeleteBlogtagResp;
-import org.patinanetwork.patinawebsite.blogtag.protos.GetBlogTagResp;
+import org.patinanetwork.patinawebsite.blogtag.protos.GetBlogtagResp;
 import org.patinanetwork.patinawebsite.blogtag.protos.ListBlogtagResp;
-import org.patinanetwork.patinawebsite.blogtag.repo.BlogTagRepo;
+import org.patinanetwork.patinawebsite.blogtag.repo.BlogtagRepo;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,45 +23,49 @@ import java.util.List;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class BlogtagController {
 
-    BlogTagRepo blogTagRepo;
+    BlogtagRepo blogtagRepo;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public BlogtagController(BlogTagRepo blogTagRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
-        this.blogTagRepo = blogTagRepo;
+    public BlogtagController(BlogtagRepo blogtagRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
+        this.blogtagRepo = blogtagRepo;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
     }
 
     @GetMapping(value = "/api/blogtag/{blogtagId}")
     public String getBlogtag(@PathVariable("blogtagId") int blogtagId) {
-        Blogtag blogtag = blogTagRepo.getBlogtagById(blogtagId);
-        GetBlogTagResp resp = GetBlogTagResp.newBuilder().setBlogtag(blogtag).build();
+        Blogtag blogtag = blogtagRepo.getBlogtagById(blogtagId);
+        GetBlogtagResp resp = GetBlogtagResp.newBuilder().setBlogtag(blogtag).build();
         return jsonPrinter.print(resp);
     }
 
     @PostMapping(value = "/api/blogtag/add", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String createBlogtag(@RequestBody String jsonRequest) {
-        CreateBlogtagReq blogtagReq = jsonParser.parse(jsonRequest, CreateBlogtagReq.newBuilder());
-        Blogtag blogtag = Blogtag.newBuilder()
-                .setName(blogtagReq.getName())
-                .build();
+        System.out.println(jsonRequest);
 
-        blogTagRepo.addBlogtag(blogtag);
+        CreateBlogtagReq blogtagReq = jsonParser.parse(jsonRequest, CreateBlogtagReq.newBuilder());
+
+        System.out.println(blogtagReq + "**");
+
+        Blogtag blogtag = Blogtag.newBuilder()
+                .setName(blogtagReq.getBlogtag().getName())
+                .build();
+        blogtagRepo.addBlogtag(blogtag);
         CreateBlogtagResp resp = CreateBlogtagResp.newBuilder().setBlogtag(blogtag).build();
         return jsonPrinter.print(resp);
     }
 
     @PostMapping(value = "/api/blogtag/delete/ {blogtagId}")
     public String deleteBlogtag(@PathVariable("blogtagId") int blogtagId) {
-        Blogtag blogtag = blogTagRepo.deleteBlogtag(blogtagId);
+        Blogtag blogtag = blogtagRepo.deleteBlogtag(blogtagId);
         DeleteBlogtagResp resp = DeleteBlogtagResp.newBuilder().setBlogtag(blogtag).build();
         return jsonPrinter.print(resp);
     }
 
     @GetMapping(value = "/api/blogtag")
     public String listBlogtags() {
-        List<Blogtag> blogtags = blogTagRepo.listAllBlogtag();
+        List<Blogtag> blogtags = blogtagRepo.listAllBlogtag();
         ListBlogtagResp resp = ListBlogtagResp.newBuilder().addAllBlogtags(blogtags).build();
         return jsonPrinter.print(resp);
     }
