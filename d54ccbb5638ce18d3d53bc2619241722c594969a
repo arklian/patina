@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8133f4f8_f60d7c57",
+        "filename": "db/migrations/patina/V0005__admin_table.sql",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:43Z",
+      "side": 1,
+      "message": "This should be user_id. We\u0027re duplicating email and username in two tables.",
+      "revId": "d54ccbb5638ce18d3d53bc2619241722c594969a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f250723_a6ef1f5e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/user/repo/PsqlUsersRepo.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:43Z",
+      "side": 1,
+      "message": "remove quotes from all tables",
+      "revId": "d54ccbb5638ce18d3d53bc2619241722c594969a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79e06e8d_2cbde7bd",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/user/user.proto",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:43Z",
+      "side": 1,
+      "message": "this isn\u0027t updated.",
+      "revId": "d54ccbb5638ce18d3d53bc2619241722c594969a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
