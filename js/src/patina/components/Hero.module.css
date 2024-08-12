@@ -3,6 +3,7 @@
   flex-direction: row;
   width: 100%;
   margin-bottom: 84px;
+  padding-top: 64px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     align-items: center;
