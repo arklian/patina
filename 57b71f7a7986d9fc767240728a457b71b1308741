@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "014704d5_56730daf",
+        "filename": "js/src/patina/pages/about/team/PersonCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-12T18:02:37Z",
+      "side": 1,
+      "message": "wrap in rem when in tsx file (because auto-rem-wrapper only works in css files)",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 20
+      },
+      "revId": "57b71f7a7986d9fc767240728a457b71b1308741",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
