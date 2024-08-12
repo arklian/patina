@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6305ffd_f7abe55b",
+        "filename": "js/src/patina/pages/blog/Blog.page.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T22:11:16Z",
+      "side": 1,
+      "message": "Gotta make sure these blogs exist or you get a index out of bounds.",
+      "revId": "a264c1c02ecae5aeb0da4c1f726c0f8de216c68d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a987fe95_289b1086",
+        "filename": "js/src/patina/pages/blog/FocusedBlog.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T22:11:16Z",
+      "side": 1,
+      "message": "This id is no longer needed. Guess the ESLint rule to prevent this isn\u0027t added.",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 18
+      },
+      "revId": "a264c1c02ecae5aeb0da4c1f726c0f8de216c68d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "35bf233c_c44c228a",
+        "filename": "js/src/patina/pages/blog/FocusedBlog.tsx",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T22:11:16Z",
+      "side": 1,
+      "message": "index out of bounds for these if 5 and 6 don\u0027t exist.",
+      "revId": "a264c1c02ecae5aeb0da4c1f726c0f8de216c68d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
