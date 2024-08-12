@@ -38,9 +38,21 @@ export const themeOverride = createTheme({
       '#1971c2',
       '#1864ab',
     ],
+    red: [
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+      '#8f4545',
+    ],
   },
 
-  primaryColor: 'blue',
+  primaryColor: 'red',
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)
