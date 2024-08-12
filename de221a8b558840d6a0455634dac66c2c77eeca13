@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "156fb85d_4f0854ab",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogTagController.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:46:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2afdd710_ab73123f",
+      "revId": "de221a8b558840d6a0455634dac66c2c77eeca13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f6d5b92_6ca7fc5d",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-09T18:15:19Z",
       "side": 1,
       "message": "What\u0027s the difference between this and the one below it? Are both used?",
+      "revId": "de221a8b558840d6a0455634dac66c2c77eeca13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f191dd81_fab794e5",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/repo/BlogTagRepo.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T16:46:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f6d5b92_6ca7fc5d",
       "revId": "de221a8b558840d6a0455634dac66c2c77eeca13",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
