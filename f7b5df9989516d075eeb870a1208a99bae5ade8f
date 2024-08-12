@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08a42661_7273186f",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:21Z",
+      "side": 1,
+      "message": "We should probably rename the image we use from patina-test to something else.",
+      "range": {
+        "startLine": 114,
+        "startChar": 62,
+        "endLine": 114,
+        "endChar": 73
+      },
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "416a575a_f28ef33c",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:21Z",
+      "side": 1,
+      "message": "Doesn\u0027t bootBuildImage push latest already?",
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "898c2e51_795463a1",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-12T20:18:21Z",
+      "side": 1,
+      "message": "This isn\u0027t needed anymore right?",
+      "revId": "f7b5df9989516d075eeb870a1208a99bae5ade8f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
