@@ -1,0 +1,5 @@
+CREATE TABLE admin (
+    id BIGSERIAL PRIMARY KEY,
+    user_id VARCHAR(100) NOT NULL UNIQUE,
+    username VARCHAR(50) NOT NULL UNIQUE
+);
