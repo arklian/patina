@@ -10,20 +10,7 @@
   }
 }
 
-
-.appshell{
-  margin-left: 88px;
-  margin-right: 2vh;
+.AppShellMain {
+  width: 100%;
+  overflow-x: hidden;
 }
-
-.container{
-  margin: 0;
-  padding-left: 20px;;
-  position: relative;
-  min-height: 120vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-

@@ -1,9 +1,17 @@
-import { SimpleGrid, Group, Title, Text, Image, Button } from '@mantine/core'
+import {
+  SimpleGrid,
+  Group,
+  Title,
+  Text,
+  Image,
+  Button,
+  AspectRatio,
+} from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
-import { Project } from '@/personal/riyuan/components/project/projectData.ts'
+import { Project } from '@/personal/riyuan/pages/project/projectData.ts'
 import laptop from '@/personal/riyuan/assets/images/laptop.png'
-import projectStyle from '@/personal/riyuan/components/project/Projects.module.css'
-import hstyles from '@/personal/riyuan/components/home/Home.module.css'
+import projectStyle from '@/personal/riyuan/pages/project/Projects.module.css'
+import hstyles from '@/personal/riyuan/pages/about/home/Home.module.css'
 
 /**
  * This function renders the project header
@@ -34,42 +42,30 @@ function ProjectTextSection({
   index: number
 }) {
   return (
-    <Group
-      pt={'sm'}
-      display={'grid'}
-      justify={'flex-start'}
-      align={'flex-start'}
-    >
-      <div className={projectStyle.textSection}>
-        <ProjectHeader index={index} />
-        <Title>{project.name}</Title>
-        <Text
-          size="lg"
-          color="dimmed"
-          className={hstyles.description}
-          ta={'left'}
+    <div>
+      <ProjectHeader index={index} />
+      <Title>{project.name}</Title>
+      <Text size="lg" className={hstyles.description} ta={'left'}>
+        {project.description}
+      </Text>
+      <Group justify={'left'} pt={'md'}>
+        <Button
+          className={hstyles.control}
+          ta={'center'}
+          size={'lg'}
+          variant={'default'}
+          color={'gray'}
+          mr={'md'}
+          component={'a'}
+          target={'_blank'}
+          href=""
         >
-          {project.description}
-        </Text>
-        <Group justify={'left'} pt={'md'}>
-          <Button
-            className={hstyles.control}
-            ta={'center'}
-            size={'lg'}
-            variant={'default'}
-            color={'gray'}
-            mr={'md'}
-            component={'a'}
-            target={'_blank'}
-            href=""
-          >
-            <Text component="span" className={hstyles.highlight} inherit>
-              {'View Project ->'}
-            </Text>
-          </Button>
-        </Group>
-      </div>
-    </Group>
+          <Text component="span" className={hstyles.highlight} inherit>
+            {'View Project ->'}
+          </Text>
+        </Button>
+      </Group>
+    </div>
   )
 }
 
@@ -81,12 +77,14 @@ function ProjectTextSection({
 function ProjectImageSection({ project }: { project: Project }) {
   return (
     <Group className={projectStyle.imageContainer}>
-      <Image src={laptop} alt="Laptop" className={projectStyle.image1} />
-      <Image
-        src={project.imgSrc}
-        alt={project.name}
-        className={projectStyle.image2}
-      />
+      <AspectRatio>
+        <Image src={laptop} alt="Laptop" className={projectStyle.image1} />
+        <Image
+          src={project.imgSrc}
+          alt={project.name}
+          className={projectStyle.image2}
+        />
+      </AspectRatio>
     </Group>
   )
 }

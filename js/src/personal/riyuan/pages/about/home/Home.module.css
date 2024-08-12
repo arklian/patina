@@ -1,8 +1,7 @@
 .wrapper {
   min-height: 100vh;
   position: relative;
-  padding-top: rem(150);
-  padding-bottom: rem(150);
+  display: flex;
 }
 
 .title1{
@@ -21,5 +20,5 @@
 }
 
 .highlight {
-  color: #4dffb0;
+  color: light-dark(#20C20E, #20C20E);
 }

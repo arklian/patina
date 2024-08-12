@@ -9,7 +9,7 @@ import {
   Container,
   Title,
 } from '@mantine/core'
-import classes from '@/personal/riyuan/components/contact/Contact.module.css'
+import classes from '@/personal/riyuan/pages/contact/Contact.module.css'
 import { ContactIconsList } from './ContactIcons'
 
 /**
