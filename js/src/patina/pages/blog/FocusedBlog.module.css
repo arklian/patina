@@ -1,10 +1,10 @@
+.editorRoot {
+  border: none;
+}
+
 .blogSection {
   display: block;
   padding: 25px;
-}
-
-.editorRoot {
-  border: none;
 }
 
 .titleText {
@@ -14,5 +14,29 @@
 
 .pillsSection {
   display: flex;
-  padding-top: 16px;
+  justify-content: flex-start;
+  gap: 6px;
+  padding-bottom: 4px;
+}
+
+.pill {
+  background-color: var(--mantine-color-dark-5);
+  border-radius: 4px;
+}
+
+.morePostsTitle {
+  font-weight: bold;
+}
+
+.morePostsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.morePostsPosts {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px;
+  gap: 12px;
 }
