@@ -3,7 +3,7 @@ export const internData = [
     name: 'Jasmine Eng',
     role: 'Data Analyst Intern',
     school: 'Cornell University',
-    graduation: 'Dec 2025',
+    graduation: 'Dec 2024',
     linkedInURL: 'https://www.linkedin.com/in/jasmineeng5/',
     websiteUrl: '',
     githubUrl: 'https://github.com/jasminee5',
