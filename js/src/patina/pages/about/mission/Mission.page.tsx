@@ -21,7 +21,7 @@ export function MissionPage() {
       <div className={styles.statementContainer}>
         <div>
           <Title order={4} className={styles.title}>
-            {'Our Vision'}
+            {'Our vision'}
           </Title>
           <div>
             <Text>
@@ -33,7 +33,7 @@ export function MissionPage() {
         <Space w="xl" />
         <div>
           <Title order={4} className={styles.title}>
-            {'Our Mission'}
+            {'Our mission'}
           </Title>
           <div>
             <Text>
