@@ -2,7 +2,7 @@
   background-position: right;
   background-size: 700px;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 650px;
   margin-bottom: 48px;
 
   @mixin smaller-than $mantine-breakpoint-sm {
@@ -28,6 +28,7 @@
   text-shadow: 1px 2px 6px #989898;
   color: white;
   font-size: 60px;
+  padding-bottom: 96px;
   width: 75%;
 
   @mixin smaller-than $mantine-breakpoint-sm {
