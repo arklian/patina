@@ -84,6 +84,7 @@ tasks.named<BootBuildImage>("bootBuildImage") {
         "latest"
     }
     println("Building Docker image with tag: $tag")
+    println("Build directory: ${rootProject.layout.buildDirectory.get()}")
     imageName.set("registry.digitalocean.com/patina/patina-test:$tag")
     dependsOn(":js:patina")
     publish.set(true)
