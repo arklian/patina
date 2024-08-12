@@ -11,8 +11,8 @@ public interface BlogtagRepo {
     // Get a blogtag by its ID
     Blogtag getBlogtagById(int blogtagId);
 
-    // Delete a blogtag by its ID
-    Blogtag deleteBlogtag(int blogtagId);
+    // Get a blog by its ID
+    Blogtag getBlogtagById(int blogtagId);
 
     // List all blogs
     List<Blogtag> listAllBlogtag();
