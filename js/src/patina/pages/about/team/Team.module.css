@@ -1,5 +1,0 @@
-.cardGroup {
-  @mixin smaller-than $mantine-breakpoint-md {
-    justify-content: space-around;
-  }
-}
