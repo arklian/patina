@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "576fad73_9fd5ef0d",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogtagController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T18:10:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5adf2081_392c4909",
+      "range": {
+        "startLine": 45,
+        "startChar": 8,
+        "endLine": 45,
+        "endChar": 40
+      },
+      "revId": "699db341af47ef4547da243e962c8bd88e1e86e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "43bcbb6f_15dfda42",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-08-12T17:58:38Z",
       "side": 1,
       "message": "^",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 49,
+        "endChar": 46
+      },
+      "revId": "699db341af47ef4547da243e962c8bd88e1e86e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24b48ef7_ab0466fc",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogtagController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-12T18:10:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43bcbb6f_15dfda42",
       "range": {
         "startLine": 49,
         "startChar": 8,
