@@ -1,16 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 import { ImageCard } from './ImageCard.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { Blog } from './blog.ts'
 import styles from './Blog.module.css'
-
-type Blog = {
-  id: number
-  author: string
-  title: string
-  createTime: string
-  content: string
-  image: string
-}
 
 /**
  * Component for displaying Blogs from DB in list view.
@@ -36,20 +28,8 @@ export function BlogPage() {
         <div className={styles.subtitleContainer}>{'Latest posts'}</div>
         {status === 'success' ?
           <div className={styles.latestPostsCards}>
-            <ImageCard
-              horizontal={false}
-              title={allBlogs[0].title}
-              content={allBlogs[0].content}
-              tags={['']}
-              image={allBlogs[0].image}
-            />
-            <ImageCard
-              horizontal={false}
-              title={allBlogs[1].title}
-              content={allBlogs[1].content}
-              tags={['']}
-              image={allBlogs[1].image}
-            />
+            <ImageCard horizontal={false} blog={allBlogs[0]} tags={['']} />
+            <ImageCard horizontal={false} blog={allBlogs[1]} tags={['']} />
           </div>
         : <div>{'Loading blogs...'}</div>}
       </div>
@@ -62,10 +42,8 @@ export function BlogPage() {
               <ImageCard
                 key={blog.id}
                 horizontal
-                title={blog.title}
-                content={blog.content}
+                blog={blog}
                 tags={['Summer 2024', 'Student Spotlight']}
-                image={blog.image}
               />
             ))}
           </div>

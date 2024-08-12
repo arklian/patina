@@ -7,9 +7,10 @@ import { CommunityPage } from '@/patina/pages/community/Community.page.tsx'
 import { MentorPage } from '@/patina/pages/mentor/Mentor.page.tsx'
 import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
-import { BlogPage } from '@/patina/pages/blog/Blog.page.tsx'
 import { InternshipPage } from '@/patina/pages/internship/Internship.page.tsx'
 import { OAuth2Page } from '@/patina/login/oauth2/OAuth2Page.tsx'
+import { BlogRoutes } from '@/patina/pages/blog/Blog.routes.tsx'
+import { Blog } from '@/patina/pages/blog/Blog.tsx'
 
 /**
  * Routes for the Patina Website
@@ -66,9 +67,10 @@ export const PatinaRoutes = [
     element: <OAuth2Page />,
   },
   {
-    path: 'blog',
-    description: 'Blog Page',
-    element: <BlogPage />,
+    path: '/blog',
+    description: 'blog',
+    element: <Blog />,
+    children: BlogRoutes,
   },
   {
     path: 'internship',
