@@ -17,7 +17,6 @@ export function NavBar() {
       <Container size="md" className={classes.inner}>
         <Category link={url_base.concat('bryan')} text="Home" />
         <Category link={url_base.concat('bryan/projects')} text="Projects" />
-        <Category link={url_base.concat('bryan/fun')} text="Fun" />
         <Category link={url_base.concat('bryan/aboutme')} text="About Me" />
         <Settings />
       </Container>

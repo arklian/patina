@@ -17,6 +17,24 @@ const mathey =
 const tower =
   'https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/bryan/images/tower.png'
 
+const Spotify = (
+  <iframe
+    title="playlist"
+    src="https://open.spotify.com/embed/playlist/3ffIenWiy0XmHvnamjA3qT?utm_source=generator&theme=0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+    style={{
+      border: 'none',
+      top: '20rem',
+      left: '5rem',
+      width: '80%',
+      height: '80%',
+    }}
+  >
+    {'Hello :)'}
+  </iframe>
+)
+
 export function AboutMePage() {
   return (
     <>
@@ -77,6 +95,17 @@ export function AboutMePage() {
           >
             {'Puzzles!'}
           </Anchor>
+          <Title component="span" className={classes.title2}>
+            {'Spotify'}
+          </Title>
+          {Spotify}
+          <Text>
+            <Text component="span">{'Usually, I use this gamertag:'}</Text>
+            <Space />
+            <Title component="span" className={classes.title2}>
+              {'Abstraction7'}
+            </Title>
+          </Text>
         </Stack>
       </Flex>
     </>
