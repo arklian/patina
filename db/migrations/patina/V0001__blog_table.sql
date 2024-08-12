@@ -1,4 +1,4 @@
-CREATE TABLE blogpost
+CREATE TABLE blog
 (
     id SERIAL PRIMARY KEY,
     author VARCHAR(255) NOT NULL,
