@@ -96,11 +96,11 @@ export const imageUrls = {
     alt: 'Jionghao smiling at the camera.',
   },
   joy: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joy.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joy.jpg',
     alt: 'Joy smiling at the camera.',
   },
   kazi: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kazi.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kazi.jpg',
     alt: 'Kazi smiling at the camera.',
   },
   kelly: {
@@ -116,11 +116,11 @@ export const imageUrls = {
     alt: 'Manuel smiling at the camera.',
   },
   riyuan: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.jpg',
     alt: 'Riyuan smiling at the camera.',
   },
   tony: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tony.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tony.jpg',
     alt: 'Tony smiling at the camera.',
   },
   cinthia: {
