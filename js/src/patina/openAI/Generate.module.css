@@ -1,0 +1,23 @@
+.latestPostsSection {
+  width: 100%;
+  margin: 24px;
+}
+
+.titleContainer {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.subtitleContainer {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.latestPostsCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px;
+  gap: 24px;
+}
