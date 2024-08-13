@@ -1,3 +1,8 @@
 %syntax-version=1.0.0
 %project=database_schema_config
 
+
+
+V0000_table_event_create 2024-08-12T18:22:49Z Tony Wang <tonywang@Tonys-Air-3> # Create the event table
+V0001_table_blog_create 2024-08-12T21:17:58Z Tony Wang <tonywang@Tonys-Air-3> # Create the blog table
+V0002_table_blogtag_create 2024-08-12T21:24:57Z Tony Wang <tonywang@Tonys-Air-3> # Create the blogtag table
