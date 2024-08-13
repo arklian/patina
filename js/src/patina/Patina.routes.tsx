@@ -10,6 +10,7 @@ import { LoginPage } from '@/patina/login/Login.page.tsx'
 import { InternshipPage } from '@/patina/pages/internship/Internship.page.tsx'
 import { BlogRoutes } from '@/patina/pages/blog/Blog.routes.tsx'
 import { Blog } from '@/patina/pages/blog/Blog.tsx'
+import { GeneratePage } from '@/patina/openAI/Generate.page.tsx'
 
 /**
  * Routes for the Patina Website
@@ -65,6 +66,11 @@ export const PatinaRoutes = [
     description: 'blog',
     element: <Blog />,
     children: BlogRoutes,
+  },
+  {
+    path: 'generate',
+    description: 'ChatGPT blog generator',
+    element: <GeneratePage />,
   },
   {
     path: 'internship',
