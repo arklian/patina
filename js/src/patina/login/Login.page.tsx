@@ -1,45 +1,27 @@
-import { PasswordInput, Button } from '@mantine/core'
-import { useForm } from '@mantine/form'
+import { Container, Paper, PaperProps, Divider } from '@mantine/core'
+import { OAuth2 } from '@/patina/login/oauth2/OAuth2.tsx'
+import { Form } from '@/patina/login/form/Form.tsx'
 import styles from './Login.module.css'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
-/**
- * Component for login
- */
-export function LoginPage() {
-  const form = useForm({
-    initialValues: {
-      password: '',
-    },
-  })
-  const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ password: '' }),
-  }
-
+export function LoginPage(props: PaperProps) {
   return (
-    <ContentPage>
-      <form
-        onSubmit={form.onSubmit(async (values) => {
-          requestOptions.body = JSON.stringify({ password: values.password })
-          const response = await fetch('/api/login', requestOptions)
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`)
-          }
-          return response.text()
-        })}
+    <Container>
+      <Paper
+        radius="md"
+        p="xl"
+        pb={'xl'}
+        withBorder
+        {...props}
+        className={styles.oauth}
       >
-        <PasswordInput
-          required
-          label={'Password'}
-          key={form.key('password')}
-          {...form.getInputProps('password')}
+        <OAuth2 />
+        <Divider
+          label="Or continue with password"
+          labelPosition="center"
+          my="lg"
         />
-        <Button className={styles.loginButton} type={'submit'}>
-          {'Login'}
-        </Button>
-      </form>
-    </ContentPage>
+        <Form />
+      </Paper>
+    </Container>
   )
 }

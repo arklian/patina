@@ -1,10 +1,10 @@
-import { Text, Paper, PaperProps, Group } from '@mantine/core'
+import { Text, Group } from '@mantine/core'
 import { GoogleButton } from './GoogleButton.tsx'
 import { GithubButton } from './GithubButton.tsx'
 
-export function OAuth2Page(props: PaperProps) {
+export function OAuth2() {
   return (
-    <Paper radius="md" p="xl" withBorder {...props}>
+    <div>
       <Text size="lg" fw={500}>
         {'Login with'}
       </Text>
@@ -12,6 +12,6 @@ export function OAuth2Page(props: PaperProps) {
         <GoogleButton>{'Google'}</GoogleButton>
         <GithubButton>{'Github'}</GithubButton>
       </Group>
-    </Paper>
+    </div>
   )
 }
