@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd49e09e_cd4df565",
+        "filename": "js/src/personal/martin/Martin.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-13T22:49:43Z",
+      "side": 1,
+      "message": "Yes it works on different screen sizes and orientations.\n\nNormal: https://patina-dev.nyc3.digitaloceanspaces.com/screenshot/Screenshot-2024-08-13T22:47:38-MartinM-clocks.png\n\nResized: https://patina-dev.nyc3.digitaloceanspaces.com/screenshot/Screenshot-2024-08-13T22:44:51-MartinM-clocksResized.png\n\niPad Air: https://patina-dev.nyc3.digitaloceanspaces.com/screenshot/Screenshot-2024-08-13T22:43:16-MartinM-clocksIPadAir.png",
+      "parentUuid": "54be8c2a_ec1c151b",
+      "revId": "1be21721ee041e72716f09ec77187cba627b1558",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "74164872_cd9a6ae6",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-09T02:55:57Z",
       "side": 1,
       "message": "The JS date object is objectively horrible. It might be a bit of a struggle getting multiple timezones to work.",
+      "revId": "1be21721ee041e72716f09ec77187cba627b1558",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d70c371_e3e85579",
+        "filename": "js/src/personal/martin/components/Clock.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-13T22:49:43Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "74164872_cd9a6ae6",
       "revId": "1be21721ee041e72716f09ec77187cba627b1558",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
