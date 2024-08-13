@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d6a3b7d_78fef3c1",
+        "filename": "build.gradle.kts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-13T23:07:00Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 69
+      },
+      "revId": "13f39a1e88e0edbd09a9fb47b85b08a16d7f94ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4952208e_72d00ff1",
+        "filename": "js/src/patina/pages/blog/SearchBlogs.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1038152
+      },
+      "writtenOn": "2024-08-13T23:07:00Z",
+      "side": 1,
+      "message": "what does this do when status !\u003d success (i.e. when status \u003d\u003d\u003d \u0027pending\u0027)",
+      "range": {
+        "startLine": 45,
+        "startChar": 6,
+        "endLine": 59,
+        "endChar": 7
+      },
+      "revId": "13f39a1e88e0edbd09a9fb47b85b08a16d7f94ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
