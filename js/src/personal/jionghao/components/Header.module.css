@@ -1,4 +1,4 @@
-.mainContainer{
+.mainContainer {
   padding-top: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -7,22 +7,53 @@
   align-items: center;
   justify-content: space-between;
   align-self: center;
-
 }
 
 .header {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: light-dark(var(--mantine-color-white),var(--mantine-color-dark-7));
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-7)
+  );
 }
 
-.modeButton{
-
+.modeButton {
   border-width: 0.1px;
+  transition:
+    transform 150ms ease,
+    color 150ms ease;
+  color: #74c0fc;
 }
 
-.button{
+.modeButton:hover {
+  color: #4a90e2;
+  transform: scale(1.2);
+}
+
+.button {
   font-weight: normal;
   font-size: medium;
+  transition:
+    transform 150ms ease,
+    color 150ms ease;
+}
+
+.button:hover {
+  color: #4a90e2;
+  transform: scale(1.1);
+}
+
+.icons {
+  margin-top: 20px;
+  transition:
+    transform 150ms ease,
+    color 150ms ease;
+  color: #74c0fc;
+}
+
+.icons:hover {
+  color: #4a90e2;
+  transform: scale(1.2);
 }
