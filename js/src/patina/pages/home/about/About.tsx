@@ -21,8 +21,10 @@ export function About() {
           color={theme.colors.dark[0]}
           autoContrast
           fullWidth
+          component={'a'}
+          href="/mission"
         >
-          <Text size="xl" fw={600}>
+          <Text size="xl" fw={200}>
             {'More about us'}
           </Text>
         </Button>
