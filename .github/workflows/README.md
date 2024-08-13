@@ -29,6 +29,9 @@
   - The workflow ```build-test.yml``` takes in two inputs: the Change-Id of the CR and the branch the code is in
     - It checks out into the given branch and runs ```pnpm install``` and ```pnpm run test```
     - A curl POST request is sent to GerritHub that will update the given CR with a status of +1 to the "Verified" label if the tests passed and -1 otherwise
+  - The workflow ```remove-ci-branch.yml``` runs at the beginning of each day in UTC
+    - It retrieves a list of CI branches and sends a curl GET request to GerritHub to get the status of each code review
+    - If the code review was merged, abandoned, or has not been updated for over a week, then the Github pull request is automatically closed and the CI branch is deleted
 ## Git Up
 - The bash script for git up was modified to first create branches on GitHub under ```ci/<changeId>``` for each CR on GerritHub
 - Each branch will contain a different number of commits
@@ -38,7 +41,7 @@
 - ```git up``` will automatically run ```build-test.yml``` workflow for each of these branches and run ```pnpm run test``` on the code in each of these branches
 - A bot patina account will label each CR with a Verified status of +/-1 depending on if the tests passed or failed
 
-
+testing
 
 # Useful Links
 - Gerrit Endpoints Documentation:
