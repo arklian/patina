@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -25,12 +26,16 @@ public class LoginController {
     private String ADMIN_COOKIE;
 
     @PostMapping(value = "/api/login", consumes = "application/json")
-    public String login(@RequestBody Map<String, Object> input, HttpServletResponse response) {
+    public void login(@RequestBody Map<String, Object> input, HttpServletResponse response) throws IOException {
         if (input.get("password").equals(ADMIN_PASSWORD)) {
             Cookie cookie = new Cookie("auth", ADMIN_COOKIE);
             response.addCookie(cookie);
-            return "Login success";
+            response.setStatus(HttpServletResponse.SC_FOUND); // 302 Found status
+            response.setHeader("Location", "/admin"); // Redirect to /admin
+        } else {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED); // 401 Unauthorized status
+            response.setHeader("Content-Type", "text/plain"); // Set content type for error message
+            response.getWriter().write("Invalid login"); // Write error message to response
         }
-        return "Invalid login";
     }
 }
