@@ -117,8 +117,8 @@ PATH_TO_UPLOAD=$1
 ENVIRONMENT=$2
 
 # Generate a unique timestamp for versioning
-TIMESTAMP=$(date +%Y%m%d%H%M%S)
-VERSION_FILE="$HOME/patina/js/src/patina/assets/version.txt"
+TIMESTAMP=$(date +'%Y-%m-%d[%H:%M:%S]')
+VERSION_FILE="$HOME/patina/js/src/patina/assets/imgVersion.txt"
 
 # Determine the space name and path based on the environment
 case "$ENVIRONMENT" in
@@ -221,48 +221,124 @@ upload_to_google_drive() {
 }
 
 ####################################################################################################
-# Upload to DO
+# Upload to DO(earlier design)
+####################################################################################################
+#
+#upload_file() {
+#    local FILE_PATH=$1
+#    local FILE_NAME=$(basename "$FILE_PATH")
+#
+#    # Check if the file name contains spaces
+#    if [[ "$FILE_NAME" == *" "* ]]; then
+#        echo "The file name '$FILE_NAME' contains spaces. Skipping this file."
+#        return
+#    fi
+#
+#    # Calculate the date in the correct format
+#    DATE=$(date -R -u)
+#
+#    # Create the string to sign
+#    STRING_TO_SIGN="PUT\n\napplication/octet-stream\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
+#
+#    # Create the signature
+#    SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
+#
+#    # Upload the file using curl
+#    RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -X PUT -T "$FILE_PATH" \
+#        -H "Date: ${DATE}" \
+#        -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+#        -H "Content-Type: application/octet-stream" \
+#        -H "x-amz-acl: public-read" \
+#        "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}")
+#
+#    if [ "$RESPONSE" -eq 200 ]; then
+#        echo "File '$FILE_NAME' uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
+#    else
+#        echo "Failed to upload file '$FILE_NAME'. Response code: $RESPONSE"
+#        # Print detailed error message
+#        curl -X PUT -T "$FILE_PATH" \
+#            -H "Date: ${DATE}" \
+#            -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
+#            -H "Content-Type: application/octet-stream" \
+#            -H "x-amz-acl: public-read" \
+#            "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}" -v
+#    fi
+#}
+
+
+####################################################################################################
+# Function to Download from Google Drive and Upload to DigitalOcean
 ####################################################################################################
 
-upload_file() {
-    local FILE_PATH=$1
-    local FILE_NAME=$(basename "$FILE_PATH")
+download_and_upload_to_do() {
+    get_access_token
 
-    # Check if the file name contains spaces
-    if [[ "$FILE_NAME" == *" "* ]]; then
-        echo "The file name '$FILE_NAME' contains spaces. Skipping this file."
-        return
-    fi
+    # Clear only image files in the tmp directory before starting the process
+    rm -f /tmp/*.jpg /tmp/*.png /tmp/*.jpeg 2>/dev/null
 
-    # Calculate the date in the correct format
-    DATE=$(date -R -u)
+    # List files in the Google Drive folder
+    FILES=$(curl -s -X GET \
+        -H "Authorization: Bearer $ACCESS_TOKEN" \
+        "https://www.googleapis.com/drive/v3/files?q='$GOOGLE_DRIVE_FOLDER_ID'+in+parents&fields=files(id,name,mimeType)" | jq -r '.files[] | @base64')
 
-    # Create the string to sign
-    STRING_TO_SIGN="PUT\n\napplication/octet-stream\n${DATE}\nx-amz-acl:public-read\n/${SPACE_NAME}/${SPACE_PATH}${FILE_NAME}"
+    echo "Creating new folder in DigitalOcean Spaces: $NEW_SPACE_PATH"
 
-    # Create the signature
-    SIGNATURE=$(echo -en "${STRING_TO_SIGN}" | openssl sha1 -hmac "${DIGITAL_OCEAN_SPACES_SECRET}" -binary | base64)
+    # Track processed files to avoid duplicates
+    processed_files=()
 
-    # Upload the file using curl
-    RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -X PUT -T "$FILE_PATH" \
-        -H "Date: ${DATE}" \
-        -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
-        -H "Content-Type: application/octet-stream" \
-        -H "x-amz-acl: public-read" \
-        "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}")
+    # Loop through each file in the Google Drive folder
+    for FILE in $FILES; do
+        _jq() {
+            echo ${FILE} | base64 --decode | jq -r ${1}
+        }
 
-    if [ "$RESPONSE" -eq 200 ]; then
-        echo "File '$FILE_NAME' uploaded successfully to https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}"
-    else
-        echo "Failed to upload file '$FILE_NAME'. Response code: $RESPONSE"
-        # Print detailed error message
-        curl -X PUT -T "$FILE_PATH" \
-            -H "Date: ${DATE}" \
-            -H "Authorization: AWS ${DIGITAL_OCEAN_SPACES_ACCESS}:${SIGNATURE}" \
-            -H "Content-Type: application/octet-stream" \
-            -H "x-amz-acl: public-read" \
-            "https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${SPACE_PATH}${FILE_NAME}" -v
-    fi
+        FILE_ID=$(_jq '.id')
+        FILE_NAME=$(_jq '.name')
+
+        # Check if the file has already been processed
+        if [[ " ${processed_files[@]} " =~ " ${FILE_NAME} " ]]; then
+            echo "Skipping duplicate file: $FILE_NAME"
+            continue
+        fi
+
+        # Mark the file as processed
+        processed_files+=("$FILE_NAME")
+
+        # Download the file from Google Drive to /tmp directory
+        echo "Downloading $FILE_NAME from Google Drive"
+        curl -s -X GET \
+            -H "Authorization: Bearer $ACCESS_TOKEN" \
+            -o "/tmp/$FILE_NAME" \
+            "https://www.googleapis.com/drive/v3/files/$FILE_ID?alt=media"
+
+        # Upload the file from /tmp directory to DigitalOcean Spaces
+        echo "Uploading $FILE_NAME to DigitalOcean Spaces in folder $NEW_SPACE_PATH"
+        aws s3 cp "/tmp/$FILE_NAME" "s3://${SPACE_NAME}/${NEW_SPACE_PATH}${FILE_NAME}" --acl public-read --endpoint-url ${ENDPOINT_URL}
+
+        if [ $? -eq 0 ]; then
+            echo "File '$FILE_NAME' uploaded successfully to DigitalOcean Spaces."
+        else
+            echo "Failed to upload file '$FILE_NAME' to DigitalOcean Spaces."
+            exit 1
+        fi
+
+        # Clean up the temporary file to avoid processing it again
+        rm "/tmp/$FILE_NAME"
+    done
+}
+
+
+
+####################################################################################################
+# Function to Create Version File
+####################################################################################################
+
+create_version_file() {
+    echo "Creating version file at $VERSION_FILE"
+    echo "Version: $TIMESTAMP" > "$VERSION_FILE"
+    echo "Environment: $ENVIRONMENT" >> "$VERSION_FILE"
+    echo "Folder: $NEW_SPACE_PATH" >> "$VERSION_FILE"
+    echo "Version file created successfully."
 }
 
 ####################################################################################################
@@ -274,7 +350,7 @@ update_image_ts() {
     echo "Updating image.ts with new image URLs..."
 
     # Get the list of files in the webimg folder using aws CLI
-    FILES=$(aws s3api list-objects --bucket ${SPACE_NAME} --prefix ${SPACE_PATH} --query 'Contents[].Key' --output json --endpoint-url ${ENDPOINT_URL})
+    FILES=$(aws s3api list-objects --bucket ${SPACE_NAME} --prefix ${NEW_SPACE_PATH} --query 'Contents[].Key' --output json --endpoint-url ${ENDPOINT_URL})
 
     # Parse the JSON output to extract keys
     FILE_KEYS=$(echo "$FILES" | jq -r '.[]' 2>/dev/null)
@@ -339,6 +415,12 @@ else
     upload_to_google_drive "$PATH_TO_UPLOAD"
 #    upload_file "$PATH_TO_UPLOAD"
 fi
+
+# Download from Google Drive and upload to DigitalOcean Spaces
+download_and_upload_to_do
+
+# Create the version file
+create_version_file
 
 # Update the image.ts file
 #update_image_ts
