@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { ImageCard } from './ImageCard.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
-import { Blog } from './blog.ts'
+import { SearchBlogs } from './SearchBlogs'
 import styles from './Blog.module.css'
 
 /**
@@ -33,22 +33,7 @@ export function BlogPage() {
           </div>
         : <div>{'Loading blogs...'}</div>}
       </div>
-
-      <div className={styles.allPostsSection}>
-        <div className={styles.subtitleContainer}>{'All posts'}</div>
-        {status === 'success' ?
-          <div className={styles.allPostsCards}>
-            {allBlogs.map((blog: Blog) => (
-              <ImageCard
-                key={blog.id}
-                horizontal
-                blog={blog}
-                tags={['Summer 2024', 'Student Spotlight']}
-              />
-            ))}
-          </div>
-        : <div>{'Loading blogs...'}</div>}
-      </div>
+      <SearchBlogs />
     </ContentPage>
   )
 }

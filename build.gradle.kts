@@ -8,10 +8,23 @@ plugins {
     id("io.spring.dependency-management") version "1.1.5"
     id("com.palantir.java-format") version "2.47.0"
     id("com.google.protobuf") version "0.9.4"
+    id("application")
+    id("java")
 }
 
 group = "org.patinanetwork"
 version = "0.0.1-SNAPSHOT"
+
+application {
+    mainClass = "org.patinanetwork.PatinaApplication"
+    //mainClass = "org.patinanetwork.patinawebsite.generator.ChatGPT"
+}
+
+tasks.register<JavaExec>("runSimple") {
+    dependsOn("classes")
+    mainClass.set("org.patinanetwork.patinawebsite.search.Elasticsearch")
+    classpath = sourceSets["main"].runtimeClasspath
+}
 
 java {
     toolchain {
@@ -44,6 +57,11 @@ repositories {
 }
 
 dependencies {
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.0")
+    implementation("co.elastic.clients:elasticsearch-java:8.15.0")
+    // Apache HTTP Components
+    implementation("org.apache.httpcomponents:httpclient:4.5.13")
+    implementation("org.apache.httpcomponents:httpcore:4.4.14")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.google.protobuf:protobuf-java:4.27.2")
     implementation("com.google.protobuf:protobuf-java-util:4.27.2")
