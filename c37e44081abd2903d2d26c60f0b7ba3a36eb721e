@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "290a05f5_58db9184",
+        "filename": "secrets.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T04:54:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e22d9eed_edd6c7f0",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8693db51_835d2f52",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-14T03:28:22Z",
       "side": 1,
       "message": "this is still wrong.",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1b8c74f_0e9c3b6e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/account.proto",
+        "patchSetId": 11
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T04:54:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8693db51_835d2f52",
       "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -54,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5cadaa5f_b225970e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/admin.proto",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T04:54:26Z",
+      "side": 1,
+      "message": "No, should I remove it?",
+      "parentUuid": "8af13932_f67ae0c9",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e4fa21b4_3fc281dd",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/repo/PsqlAdminRepo.java",
         "patchSetId": 11
@@ -65,6 +119,24 @@
       "writtenOn": "2024-08-14T03:28:22Z",
       "side": 1,
       "message": "we\u0027re checking user_id \u003d email?",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db4ca3ba_4a0373f9",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T04:54:26Z",
+      "side": 1,
+      "message": "Change all user_id to email\nDone",
+      "parentUuid": "e4fa21b4_3fc281dd",
       "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -82,6 +154,24 @@
       "writtenOn": "2024-08-14T03:28:22Z",
       "side": 1,
       "message": "You should never inject Psql repos, only their interfaces.",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4707f27b_7a3cf311",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T04:54:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "227094c8_75515f25",
       "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
