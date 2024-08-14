@@ -79,13 +79,25 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/amanda.png',
     alt: 'Amanda smiling at the camera.',
   },
+  amandaWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/amandaWebsite.png',
+    alt: "Screenshot of Amanda's website.",
+  },
   bryan: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/bryan.jpg',
     alt: 'Bryan smiling at the camera.',
   },
+  bryanWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/bryanWebsite.png',
+    alt: "Screenshot of Bryan's website.",
+  },
   haoking: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/haoking.png',
     alt: 'Haoking smiling at the camera.',
+  },
+  haokingWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/haokingWebsite.png',
+    alt: "Screenshot of Haoking's website.",
   },
   jasmine: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jasmine.png',
@@ -95,33 +107,61 @@ export const imageUrls = {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jionghao.png',
     alt: 'Jionghao smiling at the camera.',
   },
+  jionghaoWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/jionghaoWebsite.png',
+    alt: "Screenshot of Jionghao's website.",
+  },
   joy: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joy.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joy.jpg',
     alt: 'Joy smiling at the camera.',
   },
   kazi: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kazi.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kazi.jpg',
     alt: 'Kazi smiling at the camera.',
+  },
+  kaziWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kaziWebsite.png',
+    alt: "Screenshot of Kazi's website.",
   },
   kelly: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kelly.png',
     alt: 'Kelly smiling at the camera.',
   },
+  kellyWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kellyWebsite.png',
+    alt: "Screenshot of Kelly's website.",
+  },
   maliha: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/maliha.jpg',
     alt: 'Maliha smiling at the camera.',
+  },
+  malihaWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/malihaWebsite.png',
+    alt: "Screenshot of Maliha's website.",
   },
   manuel: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/manuel.jpg',
     alt: 'Manuel smiling at the camera.',
   },
+  manuelWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/manuelWebsite.png',
+    alt: "Screenshot of Manuel's website.",
+  },
   riyuan: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuan.jpg',
     alt: 'Riyuan smiling at the camera.',
   },
+  riyuanWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/riyuanWebsite.png',
+    alt: "Screenshot of Riyuan's website.",
+  },
   tony: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tony.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tony.jpg',
     alt: 'Tony smiling at the camera.',
+  },
+  tonyWebsite: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/tonyWebsite.png',
+    alt: "Screenshot of Tony's website.",
   },
   cinthia: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/cinthia.png',
