@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfc5c941_c2f359b2",
+        "filename": "js/src/patina/login/form/Form.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:48:07Z",
+      "side": 1,
+      "message": "You really shouldn\u0027t be changing the properties in a const obj used in React.\n\nJust move the request objects into here. You can then pull this whole function outside of the return statement and save it as a const.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 75
+      },
+      "revId": "09d6b2e9796b9218c6e01b285f52b13652056234",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
