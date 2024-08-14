@@ -1,3 +1,5 @@
+import { imageUrls } from '@/patina/assets/images'
+
 export const internData = [
   {
     name: 'Jasmine Eng',
@@ -7,7 +9,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/jasmineeng5/',
     websiteUrl: '',
     githubUrl: 'https://github.com/jasminee5',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.jasmine.src,
   },
   {
     name: 'Joy Om',
@@ -17,7 +19,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/joy-om/',
     websiteUrl: '',
     githubUrl: '',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.joy.src,
   },
   {
     name: 'Maliha Tasnim',
@@ -27,7 +29,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/maliha-tasnim-81864b178/',
     websiteUrl: 'https://patinanetwork.org/personal/maliha/',
     githubUrl: 'https://github.com/MalihaT111',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.malihaWebsite.src,
   },
   {
     name: 'Jionghao Wu',
@@ -37,7 +39,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/jionghao-wu/',
     websiteUrl: 'https://patinanetwork.org/personal/jionghao/',
     githubUrl: 'https://github.com/Jhwu3',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.jionghaoWebsite.src,
   },
   {
     name: 'Riyuan Liu',
@@ -47,7 +49,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/riyuan-liu/',
     websiteUrl: 'https://riyuanliu.com',
     githubUrl: 'https://github.com/Riyuanliu',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.riyuanWebsite.src,
   },
   {
     name: 'Manuel Reyes',
@@ -57,7 +59,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/manuel-reyes-jr-swe/',
     websiteUrl: 'https://patinanetwork.org/personal/manny/',
     githubUrl: 'https://github.com/Mreyes1241',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.manuelWebsite.src,
   },
   {
     name: 'Amanda Ruan',
@@ -67,7 +69,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/amandaruan/',
     websiteUrl: 'https://patinanetwork.org/personal/amanda/',
     githubUrl: 'https://github.com/aruan20',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.amandaWebsite.src,
   },
   {
     name: 'Kelly Lin',
@@ -77,7 +79,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/kxllylin/',
     websiteUrl: 'https://patinanetwork.org/personal/kelly/',
     githubUrl: 'https://github.com/Kxlcl',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.kellyWebsite.src,
   },
   {
     name: 'Tony Wang',
@@ -87,7 +89,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/wangtony4005/',
     websiteUrl: 'https://patinanetwork.org/personal/tony/',
     githubUrl: 'https://github.com/wangtony4005',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.tonyWebsite.src,
   },
   {
     name: 'Kazi Mansha',
@@ -97,7 +99,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/kazimansha/',
     websiteUrl: 'https://patinanetwork.org/personal/kazi/',
     githubUrl: 'https://github.com/KaziMansha',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.kaziWebsite.src,
   },
   {
     name: 'Haoking Luo',
@@ -107,7 +109,7 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/luohk1/',
     websiteUrl: 'https://patinanetwork.org/personal/haoking/',
     githubUrl: 'https://github.com/luoh00',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.haokingWebsite.src,
   },
   {
     name: 'Bryan Zhang',
@@ -117,6 +119,6 @@ export const internData = [
     linkedInURL: 'https://www.linkedin.com/in/bryanzhang14916/',
     websiteUrl: 'https://patinanetwork.org/personal/bryan/',
     githubUrl: 'https://github.com/bz5989',
-    imageSrc: 'https://placehold.co/250x250',
+    imageSrc: imageUrls.bryanWebsite.src,
   },
 ]
