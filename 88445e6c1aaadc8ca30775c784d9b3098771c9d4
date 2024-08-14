@@ -60,6 +60,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f9cff3f2_dc622960",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/SecurityConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:51:21Z",
+      "side": 1,
+      "message": "Add a comment here saying: \n// Create a single admin user with a hardcoded password.",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4c7d8dd8_a31cba41",
         "filename": "src/main/resources/application.properties",
         "patchSetId": 1
