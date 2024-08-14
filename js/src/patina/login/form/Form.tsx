@@ -1,62 +1,38 @@
-import { PasswordInput, Button, TextInput, Flex } from '@mantine/core'
-import { useForm } from '@mantine/form'
-import { useNavigate } from 'react-router-dom' // Import useNavigate for redirection
+import {
+  TextInput,
+  PasswordInput,
+  Button,
+  Container,
+  Title,
+} from '@mantine/core'
 import styles from './Form.module.css'
 
-/**
- * Component for login
- */
 export function Form() {
-  const navigate = useNavigate() // Initialize useNavigate for redirection
-
-  const form = useForm({
-    initialValues: {
-      password: '',
-    },
-  })
-  const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ password: '' }),
-  }
-
   return (
-    <form
-      onSubmit={form.onSubmit(async (values) => {
-        requestOptions.body = JSON.stringify({ password: values.password })
-        const response = await fetch('/api/login', requestOptions)
-        if (response.ok) {
-          // Redirect to /admin if login is successful
-          navigate('/admin')
-        } else {
-          // Handle login failure
-          const errorText = await response.text()
-          alert(`Login failed: ${errorText}`)
-        }
-        return response.text()
-      })}
-    >
-      <Flex direction={'column'} gap={'lg'}>
+    <Container className={styles.formContainer} size="xs">
+      <Title order={2} className={styles.formHeading}>
+        {'Please sign in'}
+      </Title>
+      <form action="/login" method="post">
         <TextInput
+          label="Username"
+          placeholder="Username"
           required
-          label="Email"
-          placeholder="hello@mantine.dev"
-          onChange={(event) =>
-            form.setFieldValue('email', event.currentTarget.value)
-          }
-          error={form.errors.email && 'Invalid email'}
-          radius="md"
+          name="username"
+          autoFocus
+          className={styles.formControl}
         />
         <PasswordInput
+          label="Password"
+          placeholder="Password"
           required
-          label={'Password'}
-          key={form.key('password')}
-          {...form.getInputProps('password')}
+          name="password"
+          className={styles.formControl}
         />
-        <Button className={styles.loginButton} type={'submit'}>
-          {'Login'}
+        <Button className={styles.submitButton} type="submit" fullWidth>
+          {'Sign in'}
         </Button>
-      </Flex>
-    </form>
+      </form>
+    </Container>
   )
 }
