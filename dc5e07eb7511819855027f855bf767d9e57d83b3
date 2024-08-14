@@ -1,0 +1,169 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d85a5a05_e971bfda",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "Either this one or the one below is useless I think.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f5277c6b_f8a39f5e",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "Would be nice to not need this sadge.\nWould be removable if we removed the Jackson binder.",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 72
+      },
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a75dd46_5ecb4dd5",
+        "filename": "js/src/patina/pages/blog/SearchBlogs.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "This should be like BlogsList, since it should likely handle filters as well, on like filter tags and also pagination.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5369129d_694b07d2",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "Can you change your intellij\u0027s code style for Java -\u003e Import -\u003e change the 5 and the 3 to like 999",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ddc00595_0ef2033a",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "Should be searchBlogs",
+      "range": {
+        "startLine": 48,
+        "startChar": 18,
+        "endLine": 48,
+        "endChar": 34
+      },
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ea7dbfa_9cddba7c",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "SearchOp",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "815bf00a_b13df471",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/ListOp.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "make a new op instead of using this one.\nEach op should have one run function.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ccd363b_4cefdd3a",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/search/Elasticsearch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "It should be good to make this class more generic later, but this seems fine for now.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "257ec7d9_aa5adb2e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/search/Elasticsearch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:23:52Z",
+      "side": 1,
+      "message": "We need to run Elastic Search on Digital Ocean. That can be like a next CR.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
