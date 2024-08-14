@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "13c217d3_acae8c3c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T05:08:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15ba6066_8e6bd20d",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bde240b2_80feebb2",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-14T03:44:46Z",
       "side": 1,
       "message": "anymore",
+      "range": {
+        "startLine": 11,
+        "startChar": 49,
+        "endLine": 11,
+        "endChar": 56
+      },
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17ce5943_7d2d99d7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T05:08:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bde240b2_80feebb2",
       "range": {
         "startLine": 11,
         "startChar": 49,
@@ -58,6 +100,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b7bb3e4_e53a041d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T05:08:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0736504d_08afcfaf",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9cff3f2_dc622960",
@@ -75,6 +135,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd6ef435_4c32be90",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/SecurityConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T05:08:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9cff3f2_dc622960",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4c7d8dd8_a31cba41",
@@ -88,6 +166,24 @@
       "writtenOn": "2024-08-14T03:44:46Z",
       "side": 1,
       "message": "Should this still be here?",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "018a5c73_b4efa13e",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-14T05:08:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c7d8dd8_a31cba41",
       "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
