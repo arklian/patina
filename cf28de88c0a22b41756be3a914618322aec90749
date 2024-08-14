@@ -16,6 +16,24 @@
       "message": "A screenshot would be nice here.",
       "revId": "cf28de88c0a22b41756be3a914618322aec90749",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f11a5ed_c29d37a1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038151
+      },
+      "writtenOn": "2024-08-14T03:26:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "23354c97_c2fdee1f",
+      "revId": "cf28de88c0a22b41756be3a914618322aec90749",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
