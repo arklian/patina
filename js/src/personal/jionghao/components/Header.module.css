@@ -57,3 +57,30 @@
   color: #4a90e2;
   transform: scale(1.2);
 }
+
+.burger {
+  display: none;
+}
+
+.mobileToggle {
+  display: none;
+}
+
+@mixin smaller-than $mantine-breakpoint-md {
+  .desktopMenu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .drawer {
+    display: block;
+  }
+
+  .button {
+    font-weight: normal;
+    font-size: xx-large;
+  }
+}
