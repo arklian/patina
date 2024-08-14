@@ -11,7 +11,7 @@ export function HoverButton(props: any) {
   return (
     <Button
       ref={ref}
-      color={hovered ? 'white' : 'cyan'}
+      color={hovered ? 'white' : '#74c0fc'}
       className={styles.button}
       variant="transparent"
       component="a"

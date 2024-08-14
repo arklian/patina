@@ -22,7 +22,7 @@ export function DarkModeToggle() {
       <Button
         className={styles.modeButton}
         size={'compact-md'}
-        color={'cyan'}
+        color={'#74c0fc'}
         variant={'outline'}
         onClick={changeMode}
         radius={'xl'}
