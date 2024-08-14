@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99b0b19a_5b7e41b3",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/admin.proto",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:28:22Z",
+      "side": 1,
+      "message": "remove this.",
+      "revId": "9e719f4e930fa32eaa8ec8ffc58929af266eaae5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
