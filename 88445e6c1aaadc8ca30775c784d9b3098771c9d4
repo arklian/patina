@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15ba6066_8e6bd20d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:44:46Z",
+      "side": 1,
+      "message": "nit: line length is too long",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bde240b2_80feebb2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:44:46Z",
+      "side": 1,
+      "message": "anymore",
+      "range": {
+        "startLine": 11,
+        "startChar": 49,
+        "endLine": 11,
+        "endChar": 56
+      },
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0736504d_08afcfaf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:44:46Z",
+      "side": 1,
+      "message": "nit: works",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c7d8dd8_a31cba41",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-14T03:44:46Z",
+      "side": 1,
+      "message": "Should this still be here?",
+      "revId": "88445e6c1aaadc8ca30775c784d9b3098771c9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
