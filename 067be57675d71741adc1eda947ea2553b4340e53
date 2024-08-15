@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2227d114_e6301d78",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-15T16:44:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c90cb73_0781673a",
+      "range": {
+        "startLine": 101,
+        "startChar": 2,
+        "endLine": 101,
+        "endChar": 19
+      },
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6a4d2b13_2859f66c",
@@ -58,6 +82,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c2132a8_4cfacc4e",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-15T16:44:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "734b3c01_7952bc77",
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "11e16232_633476d5",
@@ -71,6 +113,30 @@
       "writtenOn": "2024-08-15T00:22:40Z",
       "side": 1,
       "message": "This should probably be like Main Function",
+      "range": {
+        "startLine": 326,
+        "startChar": 2,
+        "endLine": 326,
+        "endChar": 15
+      },
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ad52778_bec8c7e4",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 326,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-15T16:44:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "11e16232_633476d5",
       "range": {
         "startLine": 326,
         "startChar": 2,
