@@ -1,4 +1,4 @@
-import { AppShell, Burger, useMantineTheme } from '@mantine/core'
+import { AppShell, Burger, useMantineTheme, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { Outlet } from 'react-router-dom'
 import { AdminNavbar } from '@/patina/admin/navbar/AdminNavbar.tsx'
@@ -27,7 +27,9 @@ export function Admin() {
             color={theme.colors.gray[6]}
             mr="xl"
           />
-          <div>{'Admin Dashboard'}</div>
+          <Text pl={'xl'} size={'xl'}>
+            {'Admin Page for Patina Network'}
+          </Text>
         </div>
       </AppShell.Header>
 
