@@ -51,4 +51,18 @@ public class PsqlAccountRepo implements AccountRepo {
         }
         return false;
     }
+
+    @Override
+    public int getAccountCount() {
+        String sql = "SELECT COUNT(*) FROM account";
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                return rs.getInt(1); // Get the count from the first column
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while retrieving blog count", e);
+        }
+        return 0;
+    }
 }

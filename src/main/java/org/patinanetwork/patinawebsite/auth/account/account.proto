@@ -15,3 +15,7 @@ message Account {
   // Date the user was created in the ISO yyyy-mm-dd format
   string created_at = 4;
 }
+
+message AccountCountResp {
+  int32 count = 1;
+}
