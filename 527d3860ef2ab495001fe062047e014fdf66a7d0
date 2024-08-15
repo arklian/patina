@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56497499_d0e25fa1",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/account.proto",
+        "patchSetId": 8
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T18:30:20Z",
+      "side": 1,
+      "message": "You still haven\u0027t changed this.",
+      "revId": "527d3860ef2ab495001fe062047e014fdf66a7d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
