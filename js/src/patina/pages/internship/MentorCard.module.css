@@ -1,0 +1,22 @@
+.card {
+  padding: 32px;
+  border-radius: 12px;
+  width: 200px;
+  height: 224px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    padding: 24px;
+    width: 168px;
+    height: 208px;
+  }
+}
+
+.image {
+  height: 148px;
+  width: 148px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    height: 120px;
+    width: 120px;
+  }
+}
