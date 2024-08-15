@@ -345,7 +345,6 @@ create_version_file() {
 # Update Image.Ts
 ####################################################################################################
 
-# Function to update the image.ts file with new image URLs
 update_image_ts() {
     echo "Updating image.ts with new image URLs..."
 
@@ -355,52 +354,28 @@ update_image_ts() {
     # Parse the JSON output to extract keys
     FILE_KEYS=$(echo "$FILES" | jq -r '.[]' 2>/dev/null)
 
-    # Check if jq parsing was successful
-    if [ -z "$FILE_KEYS" ]; then
-        echo "Error: Unable to parse JSON output from aws s3api."
-        echo "$FILES"
-        exit 1
-    fi
-
-    # Read the existing content of image.ts file
-    EXISTING_CONTENT=$(<"$IMAGE_TS_PATH")
-
-    # Create a set of existing keys using awk
-    existing_keys=$(echo "$EXISTING_CONTENT" | awk -F': ' '/^[[:space:]]*[a-zA-Z0-9_]+:/ {print $1}' | tr '\n' ' ')
-
-    # Initialize new URLs string
-    NEW_URLS=""
+    # Start building the new content
+    NEW_CONTENT="/**\n* Images for patina website, hosted using figma\n* https://drive.google.com/drive/u/0/folders/1Udaumu-JfYuddAy1_kBXfndFggeUhIwz\n*/\nexport const imageUrls = {\n"
 
     # Loop through each file and create the URL
     while IFS= read -r FILE_NAME; do
-        URL="https://${SPACE_NAME}.${REGION}.digitaloceanspaces.com/${FILE_NAME}"
-        KEY=$(echo "$FILE_NAME" | sed -e 's/^webimg\///' -e 's/\.[a-zA-Z0-9]*$//' -e 's/[^a-zA-Z0-9]/_/g')
+        URL="https://${SPACE_NAME}.${REGION}.cdn.digitaloceanspaces.com/${FILE_NAME}"
+        KEY=$(basename "$FILE_NAME" | sed -e 's/\.[a-zA-Z0-9]*$//')
 
-        echo "Checking if $KEY exists in the existing keys..."
-        # If the key is not already in the list, add it
-        if ! grep -qw "$KEY" <<< "$existing_keys"; then
-            echo "Adding $KEY to new URLs"
-            NEW_URLS="${NEW_URLS}  ${KEY}: {\n    src: '${URL}',\n  },\n"
-        else
-            echo "$KEY already exists in image.ts"
-        fi
+        # Add or replace the key in the NEW_CONTENT
+        NEW_CONTENT="${NEW_CONTENT}  ${KEY}: {\n    src: '${URL}',\n  },\n"
     done <<< "$FILE_KEYS"
 
-    # If there are new URLs, append them to the existing content and write to image.ts
-    if [ -n "$NEW_URLS" ]; then
-        echo "New URLs found. Updating image.ts..."
-        # Remove the closing brace from the existing content
-        EXISTING_CONTENT=$(echo "$EXISTING_CONTENT" | sed 's/}$//')
-        # Append the new URLs and close the brace
-        NEW_CONTENT="${EXISTING_CONTENT}\n${NEW_URLS}}"
-        echo -e "$NEW_CONTENT" > "$IMAGE_TS_PATH"
-        echo "Final content of image.ts:"
-        echo "$NEW_CONTENT"
-        echo "image.ts has been updated."
-    else
-        echo "No new URLs to add."
-    fi
+    # Close the JavaScript object
+    NEW_CONTENT="${NEW_CONTENT}}"
+
+    # Write the updated content to image.ts
+    echo -e "$NEW_CONTENT" > "$IMAGE_TS_PATH"
+    echo "image.ts has been updated."
 }
+
+
+
 
 ####################################################################################################
 # main Function
@@ -423,4 +398,4 @@ download_and_upload_to_do
 create_version_file
 
 # Update the image.ts file
-#update_image_ts
+update_image_ts
