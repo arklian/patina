@@ -16,6 +16,24 @@
       "message": "line length",
       "revId": "59383e21534f6312b686b1ffec9dcd443c4d1482",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a24a0d51_53dbad1b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:31:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40bc28a5_61f32762",
+      "revId": "59383e21534f6312b686b1ffec9dcd443c4d1482",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
