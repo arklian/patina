@@ -7,6 +7,7 @@ import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
 import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
+import org.patinanetwork.patinawebsite.blogs.protos.BlogCountResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
@@ -70,5 +71,12 @@ public class BlogsController {
         // Return the JSON representation of the Blog object
         CreateBlogResp resp = CreateBlogResp.newBuilder().setBlog(blog).build();
         return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/admin/blogs/size")
+    public String getBlogCount() {
+        int count = blogsRepo.getBlogCount();
+        BlogCountResp response = BlogCountResp.newBuilder().setCount(count).build();
+        return jsonPrinter.print(response);
     }
 }

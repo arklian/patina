@@ -94,6 +94,20 @@ public class PsqlBlogsRepo implements BlogsRepo {
         return blogs;
     }
 
+    @Override
+    public int getBlogCount() {
+        String sql = "SELECT COUNT(*) FROM blog";
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                return rs.getInt(1); // Get the count from the first column
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while retrieving blog count", e);
+        }
+        return 0;
+    }
+
     // Create Blog proto from SQL ResultSet
     private static Blog getBlog(ResultSet rs) throws SQLException {
         int id = rs.getInt("id");
