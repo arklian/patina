@@ -1,8 +1,15 @@
 import { useState } from 'react'
-import { Button, Space, Stack, Textarea, TextInput, Title } from '@mantine/core'
+import {
+  Button,
+  Space,
+  Stack,
+  Textarea,
+  TextInput,
+  Title,
+  Container,
+} from '@mantine/core'
 import { DatePickerInput } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import styles from '@/patina/admin/event/AdminEvent.module.css'
 
 export function AdminEventPage() {
@@ -56,7 +63,7 @@ export function AdminEventPage() {
   }
 
   return (
-    <ContentPage>
+    <Container>
       <Title>{'Events'}</Title>
       <form onSubmit={handleAdd}>
         <Stack>
@@ -116,6 +123,6 @@ export function AdminEventPage() {
           <Button type="submit">{'Delete'}</Button>
         </Stack>
       </form>
-    </ContentPage>
+    </Container>
   )
 }
