@@ -92,7 +92,7 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
             );
             SecurityContextHolder.getContext().setAuthentication(newAuth);
             // Redirect to different URLs based on user role
-            String redirectUrl = isAdmin ? "/api/secured" : "/";
+            String redirectUrl = isAdmin ? "/admin" : "/";
             response.sendRedirect(redirectUrl);
 
         } catch (Exception e) {
