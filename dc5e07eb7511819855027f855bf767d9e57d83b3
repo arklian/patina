@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "76579c1b_e627e3ed",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T01:43:53Z",
+      "side": 1,
+      "message": "java was the useless one",
+      "parentUuid": "d85a5a05_e971bfda",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f5277c6b_f8a39f5e",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-14T03:23:52Z",
       "side": 1,
       "message": "Would be nice to not need this sadge.\nWould be removable if we removed the Jackson binder.",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 72
+      },
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d71ada07_ca457e32",
+        "filename": "build.gradle.kts",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T01:43:53Z",
+      "side": 1,
+      "message": "sad",
+      "parentUuid": "f5277c6b_f8a39f5e",
       "range": {
         "startLine": 59,
         "startChar": 0,
@@ -58,6 +100,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "59cd5caf_0befe3bf",
+        "filename": "js/src/patina/pages/blog/SearchBlogs.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T01:43:53Z",
+      "side": 1,
+      "message": "changed the name",
+      "parentUuid": "3a75dd46_5ecb4dd5",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5369129d_694b07d2",
@@ -71,6 +131,24 @@
       "writtenOn": "2024-08-14T03:23:52Z",
       "side": 1,
       "message": "Can you change your intellij\u0027s code style for Java -\u003e Import -\u003e change the 5 and the 3 to like 999",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d94f2e9_80e228b7",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T01:43:53Z",
+      "side": 1,
+      "message": "did it i think",
+      "parentUuid": "5369129d_694b07d2",
       "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
