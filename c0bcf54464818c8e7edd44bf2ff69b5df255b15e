@@ -16,6 +16,24 @@
       "message": "is this necessary?",
       "revId": "c0bcf54464818c8e7edd44bf2ff69b5df255b15e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec4523b2_c27c479d",
+        "filename": "js/src/personal/jionghao/components/HoverButton.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1038153
+      },
+      "writtenOn": "2024-08-15T04:08:47Z",
+      "side": 1,
+      "message": "I think so because I need my drawer menu to close and scroll to that section of the page with the same click",
+      "parentUuid": "0c84aaf3_ef2dab93",
+      "revId": "c0bcf54464818c8e7edd44bf2ff69b5df255b15e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
