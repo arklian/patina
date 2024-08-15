@@ -155,6 +155,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a585825c_9b912432",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "I still see the star here.",
+      "parentUuid": "2d94f2e9_80e228b7",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ddc00595_0ef2033a",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
         "patchSetId": 2

@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f2627b3_197d1a9f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "Can we make it right justified in the same line as All Posts, unless we\u0027re in mobile?",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92556a93_b0077c74",
+        "filename": "build.gradle.kts",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "Do we still need this? I guess it\u0027s not bad to keep around as an example.\nIt doesn\u0027t have a main function in it though :thinking:",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7de6a18_cd6c5ee3",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/ListOp.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "unused imports?",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22a6570d_637f89ce",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/SearchOp.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "comments are wrong",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5128b674_5079e46b",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/SearchOp.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "This should just be run.",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a17cd01e_bc265f85",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/SearchOp.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "this should be SearchBlogReq and the return type should be SearchBlogResp",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ccb07d4_ad4e5b62",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/search/Elasticsearch.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:38:31Z",
+      "side": 1,
+      "message": "Can we just throw a runtime exception here for now so that we don\u0027t have to keep passing it up? I need to look into how we want to properly handle exceptions in Java.",
+      "revId": "6ec16b22f0e4e5bee1fff402b942a938f406f87c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
