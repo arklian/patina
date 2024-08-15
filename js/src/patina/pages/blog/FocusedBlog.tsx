@@ -1,13 +1,15 @@
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
-import { Image, Divider, Pill } from '@mantine/core'
+import { Image, Divider, Pill, Space } from '@mantine/core'
 import { RichTextEditor } from '@mantine/tiptap'
 import { useEditor } from '@tiptap/react'
 import { useEffect } from 'react'
 import StarterKit from '@tiptap/starter-kit'
+import TipTapImage from '@tiptap/extension-image'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { ImageCard } from './ImageCard.tsx'
 import styles from './FocusedBlog.module.css'
+import { imageUrls } from '@/patina/assets/images.ts'
 
 /**
  * Component for displaying a specific blog.
@@ -39,20 +41,31 @@ export function FocusedBlog() {
 
   const allBlogs = dataListAll?.blogs
   const editor = useEditor({
-    extensions: [StarterKit],
+    extensions: [StarterKit, TipTapImage],
     content: 'Loading this blog',
     editable: false,
   })
 
   useEffect(() => {
     if (status === 'success') {
-      editor?.commands.setContent(JSON.parse(blog.content))
+      let blogContent = ''
+      try {
+        blogContent = JSON.parse(blog.content)
+      } catch {
+        blogContent = blog.content
+      }
+      editor?.commands.setContent(blogContent)
     }
-  }, [status, id])
+  }, [status])
 
   return status === 'success' ?
       <ContentPage>
-        <Image src={blog.image} />
+        {/* Todo: Replace hardcoded image with blog's image */}
+        <Image
+          src={imageUrls.missionBannerSmile.src}
+          className={styles.blogSplash}
+        />
+        <Space h={'xl'} />
         <div className={styles.blogSection}>
           <div className={styles.pillsSection}>
             <Pill className={styles.pill}>{'Student Spotlight'}</Pill>
@@ -60,6 +73,7 @@ export function FocusedBlog() {
           </div>
           <div className={styles.titleText}>{blog.title}</div>
           <Divider color={'white'} />
+          {/* Todo: Move everything else out one level. When integrating a third party library, it should be its own component. */}
           <RichTextEditor
             classNames={{
               root: styles.editorRoot,
@@ -70,6 +84,7 @@ export function FocusedBlog() {
           </RichTextEditor>
           <Divider color={'white'} />
         </div>
+        <Space h={64} />
         <div className={styles.morePostsSection}>
           <div className={styles.morePostsTitle}>{'More posts'}</div>
           {statusListAll === 'success' ?

@@ -1,6 +1,7 @@
 import { RichTextEditor, Link } from '@mantine/tiptap'
 import { useEditor, BubbleMenu } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+import TipTapImage from '@tiptap/extension-image'
 import Placeholder from '@tiptap/extension-placeholder'
 import {
   IconItalic,
@@ -11,6 +12,7 @@ import {
   IconBold,
 } from '@tabler/icons-react'
 import '@mantine/tiptap/styles.css'
+import { Button } from '@mantine/core'
 import styles from './ContentEditor.module.css'
 
 const BoldIcon = () => <IconBold size="1rem" stroke={3} />
@@ -32,6 +34,7 @@ export function ContentEditor({ setContent }: ContentEditorProps) {
     extensions: [
       StarterKit,
       Link,
+      TipTapImage,
       Placeholder.configure({ placeholder: 'Add content...' }),
     ],
     content: '',
@@ -41,8 +44,22 @@ export function ContentEditor({ setContent }: ContentEditorProps) {
     setContent(JSON.stringify(editor?.getJSON()))
   })
 
+  const addImage = () => {
+    // eslint-disable-next-line no-alert
+    const url = window.prompt('URL')
+
+    if (url) {
+      contentEditor?.chain().focus().setImage({ src: url }).run()
+    }
+  }
+
   return (
     <div>
+      <div className="control-group">
+        <div className="button-group">
+          <Button onClick={addImage}>{'Add image from URL'}</Button>
+        </div>
+      </div>
       <RichTextEditor
         classNames={{ root: styles.mantineEditor }}
         editor={contentEditor}

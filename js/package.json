@@ -30,6 +30,7 @@
     "@mantine/tiptap": "^7.12.0",
     "@tabler/icons-react": "^3.11.0",
     "@tanstack/react-query": "^5.51.21",
+    "@tiptap/extension-image": "^2.5.9",
     "@tiptap/extension-link": "^2.5.9",
     "@tiptap/extension-placeholder": "^2.5.9",
     "@tiptap/react": "^2.5.9",

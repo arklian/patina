@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { Image, Pill, UnstyledButton } from '@mantine/core'
+import React from 'react'
 import { Blog } from './blog.ts'
 import styles from './ImageCard.module.css'
 
@@ -8,31 +9,30 @@ import styles from './ImageCard.module.css'
  */
 type ImageCardProps = {
   horizontal: boolean
-  blog: Blog
+  blog?: Blog // TODO: Make Blog required and make skeleton card?
   tags: string[]
 }
 
 export function ImageCard({ horizontal, blog, tags }: ImageCardProps) {
   const navigate = useNavigate()
-  let contentSubstring = ''
-  let JSONParsable = false
+
   // Content should be a JSON.stringify'd string
   // Convert content back to JSON object for accessing innermost text to display in brief
-  try {
-    const contentJSON = JSON.parse(blog.content)
-    const innermostTextFields = contentJSON.content[0].content[0]
-    contentSubstring = innermostTextFields.text.substring(0, 120)
-    JSONParsable = true
-  } catch (e) {
-    console.log(e)
-  }
-  // Remove this once all existing blogs in SQL blog table have valid JSON parsable content column
-  if (!JSONParsable) contentSubstring = blog.content.substring(0, 120)
+  // TODO: Normalize blog contents to have both JSON and raw text.
+  const contentSubstring = React.useMemo(() => {
+    try {
+      const contentJSON = JSON.parse(blog?.content || '')
+      const innermostTextFields = contentJSON.content[0].content[0]
+      return innermostTextFields.text.substring(0, 120)
+    } catch {
+      return blog?.content.substring(0, 120)
+    }
+  }, [blog])
 
+  if (!blog) return null // TODO: Add skeleton card for loading?
   return (
     <UnstyledButton
       onClick={() => {
-        console.log(`Navigating to blog ${blog.id}`)
         navigate(`/blog/${blog.id}`)
       }}
     >

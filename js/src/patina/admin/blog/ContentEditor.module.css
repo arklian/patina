@@ -1,3 +1,18 @@
 .mantineEditor {
   min-height: 150px;
 }
+
+/* TODO: Move these into a centralized place since this effects the non-admin one as well. */
+:global(.tiptap) {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    max-height: 300px;
+    align-self: center;
+  }
+}

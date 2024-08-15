@@ -1,15 +1,19 @@
+.blogSplash {
+  max-height: 300px;
+}
+
 .editorRoot {
   border: none;
 }
 
 .blogSection {
-  display: block;
-  padding: 25px;
+  flex-direction: column;
+  display: flex;
 }
 
 .titleText {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .pillsSection {
@@ -21,10 +25,12 @@
 
 .pill {
   background-color: var(--mantine-color-dark-5);
+  font-size: 16px;
   border-radius: 4px;
 }
 
 .morePostsTitle {
+  font-size: 34px;
   font-weight: bold;
 }
 
