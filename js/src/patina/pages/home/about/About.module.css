@@ -24,13 +24,17 @@
 
 .moreButton {
   height: 43px;
-  width: auto;
+  width: 200px;
   margin-top: 36px;
   margin-bottom: 64px;
 
   @mixin smaller-than $mantine-breakpoint-xs {
-    width: auto;
+    width: 200px;
     margin-top: 12px;
     margin-bottom: 48px;
   }
+}
+
+.aboutHighlight {
+  color: var(--mantine-color-patina-green-light);
 }
