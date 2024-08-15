@@ -49,3 +49,7 @@ message ListBlogResp {
 message GetBlogResp {
   Blog blog = 1;
 }
+
+message BlogCountResp {
+  int32 count = 1;
+}
