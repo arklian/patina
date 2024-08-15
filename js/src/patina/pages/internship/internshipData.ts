@@ -1,5 +1,23 @@
 import { imageUrls } from '@/patina/assets/images'
 
+export const mentorData = [
+  {
+    name: 'Henry Chen',
+    role: 'SWE Manager',
+    imageSrc: imageUrls.henry.src,
+  },
+  {
+    name: 'Cinthia Hai Young Kim',
+    role: 'Data Analyst Manager',
+    imageSrc: imageUrls.cinthia.src,
+  },
+  {
+    name: 'Celina Hipolito',
+    role: 'UI/UX Manager',
+    imageSrc: imageUrls.celina.src,
+  },
+]
+
 export const internData = [
   {
     name: 'Jasmine Eng',
