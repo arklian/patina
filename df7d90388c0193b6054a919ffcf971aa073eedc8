@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37e97727_061dc3c1",
+        "filename": "js/src/patina/login/Login.module.css",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:58:02Z",
+      "side": 1,
+      "message": "nit: I\u0027m pretty skeptical of 80vh here.",
+      "revId": "df7d90388c0193b6054a919ffcf971aa073eedc8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
