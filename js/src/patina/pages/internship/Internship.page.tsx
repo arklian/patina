@@ -5,6 +5,7 @@ import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { InternCard } from './InternCard.tsx'
 import { internData } from '@/patina/pages/internship/internData.ts'
 import styles from './Internship.module.css'
+import { FractalBadge } from '@/patina/pages/internship/FractalBadge.tsx'
 
 export function InternshipPage() {
   const message = (
@@ -31,10 +32,11 @@ export function InternshipPage() {
             'Join our mailing list to get notified about future opportunities like this!'
           }
         </Text>
-        <Text className={styles.internshipTextHeader}>
-          {'Check out their work:'}
-        </Text>
+        <FractalBadge />
       </section>
+      <Text className={styles.internshipTextHeader}>
+        {'Check out our interns and their sites:'}
+      </Text>
       <div className={styles.internshipCards}>
         <ul className={styles.grid}>
           {internData.map((intern) => (
