@@ -20,4 +20,7 @@ public interface EventsRepo {
 
     // Add event
     Event createEvent(Event event);
+
+    // Get the size of event table
+    int getEventCount();
 }
