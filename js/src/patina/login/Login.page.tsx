@@ -5,7 +5,7 @@ import styles from './Login.module.css'
 
 export function LoginPage(props: PaperProps) {
   return (
-    <Container>
+    <Container size="30rem" className={styles.container}>
       <Paper
         radius="md"
         p="xl"
