@@ -138,7 +138,7 @@ export const interns = [
     role: 'SWE Intern',
     email: 'kelly.lin89@myhunter.cuny.edu',
     linkedInUrl: 'https://www.linkedin.com/in/kxllylin/',
-    webUrl: 'https://patinanetwork.org/personal/kelly/',
+    webUrl: 'https://kxlcl.github.io/kxclly/',
     githubUrl: 'https://github.com/Kxlcl',
     imageSrc: imageUrls.kelly.src,
   },

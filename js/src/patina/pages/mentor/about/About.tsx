@@ -35,7 +35,7 @@ export function About() {
         <h2 className={styles.timeCommitmentTitle}>{'Time Commitment'}</h2>
         <Text className={styles.timeCommitmentText}>
           {
-            'The level of time commitment is really up to you, but we expect our mentors to check in with their mentees at least every other week, and attend the monthly Patina Network networking events together, for a total of at least five hours each month.'
+            'The level of time commitment is flexible, but we expect our mentors to be available online and/or in-person for at least five hours each month. Mentors are expected to check in with their mentees at least every other week and attend the monthly Patina Network networking events.'
           }
         </Text>
       </div>

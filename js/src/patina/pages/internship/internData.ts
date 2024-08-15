@@ -77,7 +77,7 @@ export const internData = [
     school: 'Hunter College - CUNY',
     graduation: 'Dec 2025',
     linkedInURL: 'https://www.linkedin.com/in/kxllylin/',
-    websiteUrl: 'https://patinanetwork.org/personal/kelly/',
+    websiteUrl: 'https://kxlcl.github.io/kxclly/',
     githubUrl: 'https://github.com/Kxlcl',
     imageSrc: imageUrls.kellyWebsite.src,
   },
