@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c520a66_db7732d2",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/account.proto",
+        "patchSetId": 15
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1154bea_74b2b923",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd3627eb_e4b9e71d",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-15T07:56:03Z",
       "side": 1,
       "message": "comment is wrong.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df067b11_4d392b27",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd3627eb_e4b9e71d",
       "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "40dae874_372f8185",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6d505869_5735842f",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e3560e2a_7e3a1149",
@@ -65,6 +119,24 @@
       "writtenOn": "2024-08-15T07:56:03Z",
       "side": 1,
       "message": "value is wrong here.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7677453_3b5189fb",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e3560e2a_7e3a1149",
       "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -86,6 +158,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "af059a87_6b3e52f2",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9818d8cd_20770d3f",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "da8d2333_f53cb6a9",
@@ -99,6 +189,24 @@
       "writtenOn": "2024-08-15T07:56:03Z",
       "side": 1,
       "message": "Put comment here saying that we\u0027re basing accounts off emails for now.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1425aa64_94adb921",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da8d2333_f53cb6a9",
       "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -120,6 +228,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "92cf40ee_8d688f4f",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "36501811_92950b73",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e7219d49_fedbcbb6",
@@ -133,6 +259,24 @@
       "writtenOn": "2024-08-15T07:56:03Z",
       "side": 1,
       "message": "delete if unused.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93bb5197_c787a797",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/admin.proto",
+        "patchSetId": 15
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e7219d49_fedbcbb6",
       "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -154,6 +298,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b366c07_b8788efc",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f48afd4_9fcc9729",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2d51567d_2d5d47e8",
@@ -171,6 +333,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "97ddf4b6_c21f1394",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d51567d_2d5d47e8",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7ba6709a_5db3adc4",
@@ -184,6 +364,24 @@
       "writtenOn": "2024-08-15T07:56:03Z",
       "side": 1,
       "message": "add comment talking about why we error on no email.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "775e128f_f3367b48",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ba6709a_5db3adc4",
       "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
