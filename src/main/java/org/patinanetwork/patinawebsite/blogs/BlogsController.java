@@ -3,6 +3,7 @@ package org.patinanetwork.patinawebsite.blogs;
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
+import org.patinanetwork.patinawebsite.blogs.ops.SearchOp;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
@@ -10,13 +11,9 @@ import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -46,6 +43,12 @@ public class BlogsController {
     public String listBlogs() {
         ListOp op = new ListOp(blogsRepo);
         return jsonPrinter.print(op.run());
+    }
+
+    @GetMapping(value = "/api/blogs/{query}")
+    public String SearchBlogs(@PathVariable("query") String query) throws IOException {
+        SearchOp op = new SearchOp(blogsRepo);
+        return jsonPrinter.print(op.elasticRun(query));
     }
 
     @PostMapping(value = "/api/blog/submit", consumes = MediaType.APPLICATION_JSON_VALUE)

@@ -11,15 +11,15 @@ import java.util.List;
 /**
  * Class to test listAllBlogs() method of BlogsRepo.
  */
-public class ListOp {
+public class SearchOp {
     private final BlogsRepo blogsRepo;
 
-    public ListOp(BlogsRepo blogsRepo) {
+    public SearchOp(BlogsRepo blogsRepo) {
         this.blogsRepo = blogsRepo;
     }
 
-    public ListBlogResp run() {
-        List<Blog> blogs = blogsRepo.listAllBlogs();
+    public ListBlogResp elasticRun(String query) throws IOException {
+        List<Blog> blogs = Elasticsearch.run(query);
         // Sort blogs based on create_time here
         return ListBlogResp.newBuilder().addAllBlogs(blogs).build();
     }
