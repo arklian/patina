@@ -1,5 +1,6 @@
 import { TextInput, Button, Stack, Title, Container } from '@mantine/core'
 import { useState } from 'react'
+import { notifications } from '@mantine/notifications'
 import { ContentEditor } from './ContentEditor.tsx'
 import styles from './AdminBlog.module.css'
 
@@ -11,15 +12,9 @@ export function BlogAdminPage() {
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault()
-    // Handle form submission logic here
-    console.log('Name:', author)
-    console.log('Title:', title)
-    console.log('Content:', content)
-    console.log('Image:', image)
     const formData = { author, title, content, image }
 
     try {
-      // Make the fetch request
       const response = await fetch('/api/admin/blog/submit', {
         method: 'POST',
         headers: {
@@ -28,23 +23,34 @@ export function BlogAdminPage() {
         body: JSON.stringify(formData),
       })
 
-      // Check if the response is successful
       if (response.ok) {
         const data = await response.json()
-        if (data.status === 'Success') {
-          console.log('Success:', data)
-          // Handle the successful response here
-        } else {
-          console.error('Error:', data.message)
-          // Handle the error response here
+        if (data.blog) {
+          notifications.show({
+            title: 'Blog Submitted',
+            message: `Your blog titled: "${data.blog.title}" was successfully submitted!`,
+            color: 'green',
+            position: 'top-right',
+          })
         }
       } else {
-        console.error('HTTP error:', response.statusText)
-        // Handle the HTTP error response here
+        // Handle HTTP errors
+        notifications.show({
+          title: 'Submission Failed',
+          message: 'There was an issue submitting your blog. Please try again.',
+          color: 'red',
+          position: 'top-right',
+        })
       }
     } catch (error) {
-      console.error('Fetch error:', error)
-      // Handle the fetch error here
+      // Handle fetch errors (network issues, etc.)
+      notifications.show({
+        title: 'Submission Failed',
+        message:
+          'An error occurred, Please check your connection and try again.',
+        color: 'red',
+        position: 'top-right',
+      })
     }
   }
 
