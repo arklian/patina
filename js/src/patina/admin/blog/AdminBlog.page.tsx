@@ -1,6 +1,5 @@
-import { TextInput, Button, Stack, Title } from '@mantine/core'
+import { TextInput, Button, Stack, Title, Container } from '@mantine/core'
 import { useState } from 'react'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { ContentEditor } from './ContentEditor.tsx'
 import styles from './AdminBlog.module.css'
 
@@ -50,8 +49,8 @@ export function BlogAdminPage() {
   }
 
   return (
-    <ContentPage>
-      <form className={styles.form} onSubmit={handleSubmit}>
+    <Container>
+      <form onSubmit={handleSubmit}>
         <Title>{'Blog'}</Title>
         <Stack w={'100%'}>
           <Title order={3}>{'Add Blog'}</Title>
@@ -77,6 +76,6 @@ export function BlogAdminPage() {
           <Button type="submit">{'Submit'}</Button>
         </Stack>
       </form>
-    </ContentPage>
+    </Container>
   )
 }
