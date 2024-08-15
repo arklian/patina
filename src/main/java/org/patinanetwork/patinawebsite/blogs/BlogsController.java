@@ -48,7 +48,7 @@ public class BlogsController {
         return jsonPrinter.print(op.run());
     }
 
-    @PostMapping(value = "/api/blog/submit", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/api/admin/blog/submit", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String CreateBlog(@RequestBody String jsonRequest) {
         // Parse the incoming JSON into a Protobuf CreateBlogReq object
         CreateBlogReq blogReq = jsonParser.parse(jsonRequest, CreateBlogReq.newBuilder());
