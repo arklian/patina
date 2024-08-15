@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c90cb73_0781673a",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:40Z",
+      "side": 1,
+      "message": "This should probably be like Prevalidation",
+      "range": {
+        "startLine": 101,
+        "startChar": 2,
+        "endLine": 101,
+        "endChar": 19
+      },
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a4d2b13_2859f66c",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:40Z",
+      "side": 1,
+      "message": "Might be good to add feature to input a custom api key/space/bucket so that they can test locally without effecting dev.\n\nNot in this CR tho",
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "734b3c01_7952bc77",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:40Z",
+      "side": 1,
+      "message": "Hardcoded constants should go pretty near the top, in case they need to change.",
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11e16232_633476d5",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 326,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:40Z",
+      "side": 1,
+      "message": "This should probably be like Main Function",
+      "range": {
+        "startLine": 326,
+        "startChar": 2,
+        "endLine": 326,
+        "endChar": 15
+      },
+      "revId": "067be57675d71741adc1eda947ea2553b4340e53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
