@@ -31,31 +31,6 @@ public class PsqlBlogsRepo implements BlogsRepo {
     }
 
     @Override
-    public void addBlog(Blog blog) {
-        String sql = "INSERT INTO blog (author, title, content, create_time, image) VALUES (?, ?, ?, ?, ?)";
-
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            // Todo: Sanitize the strings to prevent SQL injection
-            stmt.setString(1, blog.getAuthor());
-            stmt.setString(2, blog.getTitle());
-            stmt.setString(3, blog.getContent());
-
-            // Convert create_time from String to Timestamp in UTC
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
-            OffsetDateTime dateTime = OffsetDateTime.parse(blog.getCreateTime(), formatter);
-            // Convert to UTC
-            OffsetDateTime utcDateTime = dateTime.withOffsetSameInstant(ZoneOffset.UTC);
-            stmt.setTimestamp(4, Timestamp.from(utcDateTime.toInstant()));
-
-            stmt.setString(5, blog.getImage());
-
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException("Error while adding blog", e);
-        }
-    }
-
-    @Override
     public Blog getBlogById(int id) {
         String sql = "SELECT id, author, title, content, create_time, image FROM blog WHERE id = ?";
         Blog blog = null;
@@ -92,6 +67,45 @@ public class PsqlBlogsRepo implements BlogsRepo {
         }
 
         return blogs;
+    }
+
+    @Override
+    public int getBlogCount() {
+        String sql = "SELECT COUNT(*) FROM blog";
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                return rs.getInt(1); // Get the count from the first column
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while retrieving blog count", e);
+        }
+        return 0;
+    }
+
+    @Override
+    public void addBlog(Blog blog) {
+        String sql = "INSERT INTO blog (author, title, content, create_time, image) VALUES (?, ?, ?, ?, ?)";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            // Todo: Sanitize the strings to prevent SQL injection
+            stmt.setString(1, blog.getAuthor());
+            stmt.setString(2, blog.getTitle());
+            stmt.setString(3, blog.getContent());
+
+            // Convert create_time from String to Timestamp in UTC
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
+            OffsetDateTime dateTime = OffsetDateTime.parse(blog.getCreateTime(), formatter);
+            // Convert to UTC
+            OffsetDateTime utcDateTime = dateTime.withOffsetSameInstant(ZoneOffset.UTC);
+            stmt.setTimestamp(4, Timestamp.from(utcDateTime.toInstant()));
+
+            stmt.setString(5, blog.getImage());
+
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while adding blog", e);
+        }
     }
 
     // Create Blog proto from SQL ResultSet

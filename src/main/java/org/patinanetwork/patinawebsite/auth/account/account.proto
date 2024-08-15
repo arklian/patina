@@ -8,10 +8,14 @@ option java_multiple_files = true;
 message Account {
   // Serial id for the account in the DB. 0 when the account is not stored in the DB yet.
   optional int32 id = 1;
-  // The account's email address. VARCHAR(100)
+  // The account's email address. VARCHAR(254)
   string email = 2;
   // The account's username. VARCHAR(50)
   string username = 3;
   // Date the account was created in the ISO yyyy-mm-dd format
   string created_at = 4;
+}
+
+message AccountCountResp {
+  int32 count = 1;
 }
