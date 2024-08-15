@@ -16,6 +16,24 @@
       "message": "nit: I\u0027m pretty skeptical of 80vh here.",
       "revId": "df7d90388c0193b6054a919ffcf971aa073eedc8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8d8f870_d1ad4085",
+        "filename": "js/src/patina/login/Login.module.css",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T17:47:48Z",
+      "side": 1,
+      "message": "Done\nit fill out the space between the header and the footer, 80 because 10 from header and 10 from the footer",
+      "parentUuid": "37e97727_061dc3c1",
+      "revId": "df7d90388c0193b6054a919ffcf971aa073eedc8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
