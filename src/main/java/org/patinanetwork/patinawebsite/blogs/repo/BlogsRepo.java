@@ -13,4 +13,7 @@ public interface BlogsRepo {
 
     // List all blogs
     List<Blog> listAllBlogs();
+
+    // Get the size of blog table
+    int getBlogCount();
 }
