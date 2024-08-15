@@ -8,6 +8,7 @@ import {
   Title,
   Container,
 } from '@mantine/core'
+import { notifications } from '@mantine/notifications'
 import { DatePickerInput } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import styles from '@/patina/admin/event/AdminEvent.module.css'
@@ -32,8 +33,12 @@ export function AdminEventPage() {
         body: JSON.stringify({ event: formData }),
       })
       if (response.ok) {
-        const data = await response.json()
-        console.log(data)
+        notifications.show({
+          title: 'Event Submitted',
+          message: 'Your Event titled: was successfully submitted!',
+          color: 'green',
+          position: 'top-right',
+        })
       } else {
         console.error('HTTP error:', response.statusText)
         // Handle the HTTP error response here
@@ -51,8 +56,12 @@ export function AdminEventPage() {
         method: 'DELETE',
       })
       if (response.ok) {
-        const data = await response.json()
-        console.log(data)
+        notifications.show({
+          title: 'Event Deleted',
+          message: 'Your Event titled: was successfully Deleted!',
+          color: 'green',
+          position: 'top-right',
+        })
       } else {
         console.error('HTTP error:', response.statusText)
         // Handle the HTTP error response here
