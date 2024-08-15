@@ -63,7 +63,7 @@ export function MissionPage() {
               <br />
               <br />
               {'A patina is the result of impressions over time. It represents how one can be shaped and enriched by their' +
-                'unique circumstances, collectively creating a pattern that is distinctive, rich, and cherished.'}
+                ' unique circumstances, collectively creating a pattern that is distinctive, rich, and cherished.'}
             </Text>
           </div>
         </div>
@@ -91,11 +91,11 @@ export function MissionPage() {
           </Title>
           <div>
             <Text>
-              {'After meeting serendipitously at a networking event, our founders bonded over ' +
-                'their shared experience of struggling with lack of mentorship and resources ' +
-                'during critical years of their education. They also realized a need for deeper ' +
-                'representation within AANHPI spheres, and a desire to learn about the lesser ' +
-                'represented culture within that umbrella.'}
+              {'Our founders bonded over ' +
+                'their shared struggles of lack of mentorship and resources ' +
+                'during critical years of their education. They realized a need for stronger representation and a deeper understanding of the culture within AANHPI spheres.' +
+                ' In the summer of 2024, we got together and started our own very first internship program. We look forward to expanding our' +
+                ' support for AANPHI students in the near future.'}
             </Text>
           </div>
         </div>
