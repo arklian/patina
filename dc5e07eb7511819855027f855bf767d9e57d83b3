@@ -176,6 +176,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9358011e_61c57f34",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T03:30:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ddc00595_0ef2033a",
+      "range": {
+        "startLine": 48,
+        "startChar": 18,
+        "endLine": 48,
+        "endChar": 34
+      },
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8ea7dbfa_9cddba7c",
@@ -189,6 +213,24 @@
       "writtenOn": "2024-08-14T03:23:52Z",
       "side": 1,
       "message": "SearchOp",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "039113c5_1e866fd3",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T03:30:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ea7dbfa_9cddba7c",
       "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -210,6 +252,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "276a90bf_a1c58180",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/ListOp.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T03:30:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "815bf00a_b13df471",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3ccd363b_4cefdd3a",
@@ -223,6 +283,24 @@
       "writtenOn": "2024-08-14T03:23:52Z",
       "side": 1,
       "message": "It should be good to make this class more generic later, but this seems fine for now.",
+      "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a764718_06f70767",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/search/Elasticsearch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2024-08-15T03:30:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ccd363b_4cefdd3a",
       "revId": "dc5e07eb7511819855027f855bf767d9e57d83b3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
