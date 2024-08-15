@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f90d555_67a16eee",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:50:17Z",
+      "side": 1,
+      "message": "Not supposed to match, roles are typically prefixed with ROLE_ by convention in spring Security when adding Authority.\nSo I think it is like add authorities, than you tell it, I want to give a role of \"ADMIN\"\nBut when checking it, you use hasRole(whatever role you looking for)\nDone",
+      "parentUuid": "21b8e5eb_f2c73f65",
+      "revId": "ff59e95ffd21d3d359f9c92e598a8d22ffc004de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e518c576_62e94fe3",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-08-15T07:59:39Z",
       "side": 1,
       "message": "this should have a comment about what it does since all the spring stuff is kinda magic.",
+      "revId": "ff59e95ffd21d3d359f9c92e598a8d22ffc004de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2427f04_e8a0f569",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/SecurityConfig.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T16:50:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e518c576_62e94fe3",
       "revId": "ff59e95ffd21d3d359f9c92e598a8d22ffc004de",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
