@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <div className={styles.hero}>
       <Flex direction="column" align="flex-start" gap={'lg'}>
-        <Text size="24px" c={'cyan'}>
+        <Text size="24px" c={'#74c0fc'}>
           {'Hi, my name is'}
         </Text>
         <Title size={'20px'} className={styles.title}>
@@ -14,11 +14,9 @@ export function Hero() {
           {'a dynamic software engineer.'}
         </Title>
         <Text size="lg" className={styles.description}>
-          {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  '}
-          <br />
-          {'do eiusmod tempor incididunt ut labore et dolore magna '}
-          <br />
-          {'dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'}
+          {
+            'Hi, I’m Jionghao Wu, a recent graduate with a degree in Computer Science, eager to embark on my journey as a software engineer. I thrive in environments where I can learn and grow, and I’m excited to bring fresh ideas and a strong work ethic to innovative projects.'
+          }
         </Text>
         <Button component="a" href="#work" variant={'outline'} size={'lg'}>
           {'Check out my resume'}
