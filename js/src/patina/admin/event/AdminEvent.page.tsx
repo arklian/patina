@@ -17,7 +17,7 @@ export function AdminEventPage() {
     const reformattedDate = date?.toISOString().substring(0, 10)
     const formData = { name, message, location, date: reformattedDate }
     try {
-      const response = await fetch('/api/events/add', {
+      const response = await fetch('/api/admin/events/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export function AdminEventPage() {
     event.preventDefault()
 
     try {
-      const response = await fetch(`/api/event/delete/${eventId}`, {
+      const response = await fetch(`/api/admin/event/delete/${eventId}`, {
         method: 'DELETE',
       })
       if (response.ok) {
