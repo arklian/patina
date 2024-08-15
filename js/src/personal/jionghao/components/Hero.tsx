@@ -18,7 +18,13 @@ export function Hero() {
             'Hi, I’m Jionghao Wu, a recent graduate with a degree in Computer Science, eager to embark on my journey as a software engineer. I thrive in environments where I can learn and grow, and I’m excited to bring fresh ideas and a strong work ethic to innovative projects.'
           }
         </Text>
-        <Button component="a" href="#work" variant={'outline'} size={'lg'}>
+        <Button
+          component="a"
+          href="#work"
+          variant={'outline'}
+          size={'lg'}
+          className={styles.resumeButton}
+        >
           {'Check out my resume'}
         </Button>
       </Flex>

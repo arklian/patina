@@ -1,9 +1,22 @@
+import { useEffect } from 'react'
 import { Title, Text, Image } from '@mantine/core'
+import { useIntersection } from '@mantine/hooks'
 import styles from './About.module.css'
 
 export function About() {
+  const { ref, entry } = useIntersection({
+    root: null,
+    threshold: 0.3,
+  })
+
+  useEffect(() => {
+    if (entry?.isIntersecting) {
+      entry.target.classList.add(styles.animate_fade_in)
+    }
+  }, [entry])
+
   return (
-    <div className={styles.about} id="about">
+    <div className={styles.about} id="about" ref={ref}>
       <div className={styles.aboutDesc}>
         <div className={styles.titleContainer}>
           <Title className={styles.title}>{'About Me'}</Title>

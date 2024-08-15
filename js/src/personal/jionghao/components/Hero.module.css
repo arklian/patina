@@ -3,27 +3,27 @@
   justify-content: flex-start;
   padding-left: 10rem;
   padding-right: 10rem;
-  margin-top: 12rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 
   @media (max-width: 1024px) {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
   @media (max-width: 768px) {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: center;
   }
 
   @media (max-width: 480px) {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -49,9 +49,9 @@
   }
 
   @media (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 2.5rem;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -73,7 +73,11 @@
 
   @media (max-width: 480px) {
     line-height: 1.4rem;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 350px;
   }
+}
+
+.resumeButton {
+  margin-top: 1rem;
 }
