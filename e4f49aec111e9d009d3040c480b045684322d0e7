@@ -16,6 +16,24 @@
       "message": "this is not 100. It should be 254",
       "revId": "e4f49aec111e9d009d3040c480b045684322d0e7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4a65063_65e57065",
+        "filename": "db/migrations/patina/V0005__admin_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038142
+      },
+      "writtenOn": "2024-08-15T14:15:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fbdee1b3_4ee5356c",
+      "revId": "e4f49aec111e9d009d3040c480b045684322d0e7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
