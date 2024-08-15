@@ -44,13 +44,13 @@ sqitch add V0000_change_name -n "Description of the change" --depend V0000_some_
     - Will deploy all scripts in the deploy file that have not been deployed yet
       in the order specified in the .plan file.
 ```
-sqitch deploy
+sqitch deploy $DB
 ```
 
 - Deploying a specific change to the schema:
     - Will deploy all scripts up to and including change_name
 ```
-sqitch deploy --to V0000_change_name
+sqitch deploy --to V0000_change_name $db
 ```
 
 - Reverting a change to the schema:
@@ -63,26 +63,26 @@ sqitch revert --to V0000_previous_change_name
     - Will run every script in the revert file, essentially deleting the database:
     - ***DONT DO THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!***
 ```
-sqitch revert
+sqitch revert $DB
 ```
 
 - Verify changes to the schema:
     - Runs verify scripts to check if changes were applied correctly
 ```
-sqitch verify
+sqitch verify $DB
 ```
 
 - Show change history:
     - Displays the deployment history of changes
 ```
-sqitch log
+sqitch log $DB
 ```
 
 - Check status:
     -  Shows the status of changes, indicating which changes have been applied,
        which are pending, and which are currently being worked on.
 ```
-sqitch status
+sqitch status $DB
 ```
 
 # Workflow with Sqitch
@@ -95,11 +95,11 @@ sqitch add V0000_change_name -n "Description of the change"
 - add the revert for your change to the revert file with the name of your change.
 - add a verify check to the verify file with your change.
 ```
-sqitch deploy
+sqitch deploy $DB
 ```
 - verify your change was implemented correctly
 ```
-sqitch verify
+sqitch verify $DB
 ```
 - if your change was not implemented correctly, revert
 ```
