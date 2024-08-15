@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1154bea_74b2b923",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/account.proto",
+        "patchSetId": 15
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "this should match what\u0027s in the SQL",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd3627eb_e4b9e71d",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "comment is wrong.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d505869_5735842f",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "Use account for consistency.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3560e2a_7e3a1149",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "value is wrong here.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9818d8cd_20770d3f",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "user",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da8d2333_f53cb6a9",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "Put comment here saying that we\u0027re basing accounts off emails for now.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36501811_92950b73",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/account/repo/PsqlAccountRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "user",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7219d49_fedbcbb6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/admin.proto",
+        "patchSetId": 15
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "delete if unused.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f48afd4_9fcc9729",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/repo/PsqlAdminRepo.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "Add comment",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d51567d_2d5d47e8",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "Add comment for class.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ba6709a_5db3adc4",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/config/CustomAuthenticationSuccessHandler.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:56:03Z",
+      "side": 1,
+      "message": "add comment talking about why we error on no email.",
+      "revId": "051e9ca0283a02edd003b5974fd5ab20c7da4555",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
