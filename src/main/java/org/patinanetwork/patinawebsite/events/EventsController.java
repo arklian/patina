@@ -9,6 +9,7 @@ import org.patinanetwork.patinawebsite.events.protos.DeleteEventResp;
 import org.patinanetwork.patinawebsite.events.protos.Event;
 import org.patinanetwork.patinawebsite.events.protos.GetEventResp;
 import org.patinanetwork.patinawebsite.events.protos.ListEventResp;
+import org.patinanetwork.patinawebsite.events.protos.EventCountResp;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -48,6 +49,13 @@ public class EventsController {
         List<Event> events = eventsRepo.listEvents();
         ListEventResp resp = ListEventResp.newBuilder().addAllEvents(events).build();
         return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/admin/events/count")
+    public String countEvents() {
+        int count = eventsRepo.getEventCount();
+        EventCountResp response = EventCountResp.newBuilder().setCount(count).build();
+        return jsonPrinter.print(response);
     }
 
     @DeleteMapping(value = "/api/admin/event/delete/{eventId}")

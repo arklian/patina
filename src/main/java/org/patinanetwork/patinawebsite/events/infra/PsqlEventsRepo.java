@@ -118,4 +118,18 @@ public class PsqlEventsRepo implements EventsRepo {
         }
         return event;
     }
+
+    @Override
+    public int getEventCount() {
+        String sql = "SELECT COUNT(*) FROM event";
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                return rs.getInt(1); // Get the count from the first column
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while retrieving blog count", e);
+        }
+        return 0;
+    }
 }

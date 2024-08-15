@@ -30,4 +30,7 @@ public class FakeBlogsRepo implements BlogsRepo {
     public List<Blog> listAllBlogs() {
         return List.copyOf(blogs.values());
     }
+
+    @Override
+    public int getBlogCount() { return blogs.size(); }
 }
