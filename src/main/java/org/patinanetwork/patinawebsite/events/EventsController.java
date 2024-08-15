@@ -50,14 +50,14 @@ public class EventsController {
         return jsonPrinter.print(resp);
     }
 
-    @DeleteMapping(value = "/api/event/delete/{eventId}")
+    @DeleteMapping(value = "/api/admin/event/delete/{eventId}")
     public String deleteEvent(@PathVariable("eventId") int eventId) {
         Event event = eventsRepo.deleteEvent(eventId);
         DeleteEventResp resp = DeleteEventResp.newBuilder().setEvent(event).build();
         return jsonPrinter.print(resp);
     }
 
-    @PostMapping(value = "/api/events/add", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/api/admin/events/add", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String createEvent(@RequestBody String jsonEvent) {
         CreateEventReq req = jsonParser.parse(jsonEvent, CreateEventReq.newBuilder());
         Event event = req.getEvent();
