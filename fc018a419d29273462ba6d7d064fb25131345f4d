@@ -1,0 +1,129 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "73d0a8fe_6abe3693",
+        "filename": "js/src/patina/admin/home/Home.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "It would be better to use ReactQuery for this instead, but since these are for internal use, it\u0027s not the biggest deal.",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9804b4fe_2f00fa30",
+        "filename": "js/src/patina/admin/home/Home.page.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "what\u0027s this for?",
+      "range": {
+        "startLine": 57,
+        "startChar": 49,
+        "endLine": 57,
+        "endChar": 54
+      },
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a37dec8_9ea19d33",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "be consistent. Use count if that\u0027s what the endpoint name is.",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "566f66c3_97ad06bf",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/BlogsController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "I would name this countBlogs to make it consistent with the other endpoints.",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be75defb_90b561b2",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/FakeBlogsRepo.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "this should be blogs.size() or whatever the hashmap size function is.",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb6a8cc1_139fc3f6",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/events/EventsController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "countEvents",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e069b4e_6dab9fd8",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/events/infra/PsqlEventsRepo.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T08:11:31Z",
+      "side": 1,
+      "message": "this order should be the same as the endpoint order if it can. No reason for it not to be.",
+      "revId": "fc018a419d29273462ba6d7d064fb25131345f4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
