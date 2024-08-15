@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b369d197_08cc7eec",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:46Z",
+      "side": 1,
+      "message": "little bit weird to me that this is capital I but :shrug: it\u0027s only used once, so I\u0027m not that concerned about consistentcy.",
+      "range": {
+        "startLine": 117,
+        "startChar": 48,
+        "endLine": 117,
+        "endChar": 51
+      },
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60643cab_36b5b354",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:46Z",
+      "side": 1,
+      "message": "This should really be a different command, like `git image add` and then have this be like `git image up` or something. This script is like doing two different things of both adding new images, and uploading them to DO.",
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3493711_8bf17b4f",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T00:22:46Z",
+      "side": 1,
+      "message": "Probably want to get this working somehow too with dev/prod, but not sure exactly how we should do it.",
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
