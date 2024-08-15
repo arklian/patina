@@ -15,6 +15,14 @@ if [ "$1" = "prod" ]; then
   export DATABASE_USER=REDACTED
   # Password for prod Database - Tony
   export DATABASE_PASSWORD=REDACTED
+  # Client ID for Github - Riyuan
+  export GITHUB_OAUTH_CLIENT_ID=redacted
+  # Client Secret for Github - Riyuan
+  export GITHUB_OAUTH_CLIENT_SECRET=redacted
+  # Client ID for Google - Riyuan
+  export GOOGLE_OAUTH_CLIENT_ID=redacted
+  # Client Secret for Google - Riyuan
+  export GOOGLE_OAUTH_CLIENT_SECRET=redacted
 else
   # Host Key for Dev Database - Bryan
   export DATABASE_HOST=REDACTED
@@ -26,6 +34,14 @@ else
   export DATABASE_USER=REDACTED
   # Password for Dev Database - Bryan (Most important one!)
   export DATABASE_PASSWORD=REDACTED
+  # Client ID for Github - Riyuan
+  export GITHUB_OAUTH_CLIENT_ID=redacted
+  # Client Secret for Github - Riyuan
+  export GITHUB_OAUTH_CLIENT_SECRET=redacted
+  # Client ID for Google - Riyuan
+  export GOOGLE_OAUTH_CLIENT_ID=redacted
+  # Client Secret for Google - Riyuan
+  export GOOGLE_OAUTH_CLIENT_SECRET=redacted
 fi
 # Password for Admin Page - Haoking
 export PATINA_ADMIN_PASSWORD=REDACTED
