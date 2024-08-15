@@ -47,6 +47,9 @@ message CreateEventResp {
   Event event = 1;
 }
 
+message EventCountResp {
+  int32 count = 1;
+}
 // Todo(Henry): Figure out API design of GET endpoints.
 // Todo(Henry): Figure out API design of Create endpoints.
 // Todo(Henry): Figure out API design of List endpoints.
