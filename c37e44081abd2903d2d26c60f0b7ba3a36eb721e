@@ -108,6 +108,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1b163c83_023c85f8",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/admin.proto",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:52:20Z",
+      "side": 1,
+      "message": "Yeah remove things that are unused.",
+      "parentUuid": "5cadaa5f_b225970e",
+      "revId": "c37e44081abd2903d2d26c60f0b7ba3a36eb721e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e4fa21b4_3fc281dd",
         "filename": "src/main/java/org/patinanetwork/patinawebsite/auth/admin/repo/PsqlAdminRepo.java",
         "patchSetId": 11
