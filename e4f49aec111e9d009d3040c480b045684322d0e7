@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbdee1b3_4ee5356c",
+        "filename": "db/migrations/patina/V0005__admin_table.sql",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-15T07:51:59Z",
+      "side": 1,
+      "message": "this is not 100. It should be 254",
+      "revId": "e4f49aec111e9d009d3040c480b045684322d0e7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
