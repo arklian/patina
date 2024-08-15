@@ -2,6 +2,7 @@ import { TextInput, Button, Stack, Title } from '@mantine/core'
 import { useState } from 'react'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { ContentEditor } from './ContentEditor.tsx'
+import styles from './AdminBlog.module.css'
 
 export function BlogAdminPage() {
   const [author, setName] = useState('')
@@ -50,9 +51,9 @@ export function BlogAdminPage() {
 
   return (
     <ContentPage>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <Title>{'Blog'}</Title>
-        <Stack>
+        <Stack w={'100%'}>
           <Title order={3}>{'Add Blog'}</Title>
           <TextInput
             label={'Author'}

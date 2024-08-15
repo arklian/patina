@@ -41,6 +41,9 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.51.21
         version: 5.51.21(react@18.3.1)
+      '@tiptap/extension-image':
+        specifier: ^2.5.9
+        version: 2.6.3(@tiptap/core@2.5.9(@tiptap/pm@2.5.6))
       '@tiptap/extension-link':
         specifier: ^2.5.9
         version: 2.5.9(@tiptap/core@2.5.9(@tiptap/pm@2.5.6))(@tiptap/pm@2.5.6)
@@ -783,6 +786,11 @@ packages:
     peerDependencies:
       '@tiptap/core': ^2.5.9
       '@tiptap/pm': ^2.5.9
+
+  '@tiptap/extension-image@2.6.3':
+    resolution: {integrity: sha512-Fb2Y9crmOAA2dWdWM4rTk6UlV5EuRRep6NM85ES3kvCPXJC/GmLGE48bu6KqTxUZYbDHyTciX3Uz9g6jzlD+lw==}
+    peerDependencies:
+      '@tiptap/core': ^2.6.3
 
   '@tiptap/extension-italic@2.5.9':
     resolution: {integrity: sha512-Bw+P139L4cy+B56zpUiRjP8BZSaAUl3JFMnr/FO+FG55QhCxFMXIc6XrC3vslNy5ef3B3zv4gCttS3ee8ByMiw==}
@@ -3681,6 +3689,10 @@ snapshots:
     dependencies:
       '@tiptap/core': 2.5.9(@tiptap/pm@2.5.6)
       '@tiptap/pm': 2.5.6
+
+  '@tiptap/extension-image@2.6.3(@tiptap/core@2.5.9(@tiptap/pm@2.5.6))':
+    dependencies:
+      '@tiptap/core': 2.5.9(@tiptap/pm@2.5.6)
 
   '@tiptap/extension-italic@2.5.9(@tiptap/core@2.5.9(@tiptap/pm@2.5.6))':
     dependencies:
