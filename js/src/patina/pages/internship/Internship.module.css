@@ -16,6 +16,7 @@
 }
 
 .internshipTextHeader {
+  align-self: flex-start;
   font-size: 24px;
   font-weight: 700;
 }

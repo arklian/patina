@@ -1,0 +1,26 @@
+.badge {
+  height: 400px;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    height: 450px;
+  }
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.fractalLink {
+  margin: auto 24px 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  height: auto;
+  font-size: 24px;
+  font-weight: 700;
+  background: #f4ebac;
+  color: #ce3364;
+}
