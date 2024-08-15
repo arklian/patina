@@ -128,7 +128,7 @@ export const imageUrls = {
     alt: 'Kelly smiling at the camera.',
   },
   kellyWebsite: {
-    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kellyWebsite.png',
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kellyWebsite.jpg',
     alt: "Screenshot of Kelly's website.",
   },
   maliha: {
