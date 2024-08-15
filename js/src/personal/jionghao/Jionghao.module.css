@@ -9,10 +9,18 @@
   }
 }
 
-.pageContainer{
+.pageContainer {
   width: 100%;
   max-width: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@mixin smaller-than $mantine-breakpoint-md {
+  .modeButton {
+    margin-top: 3rem;
+    margin-left: 12rem;
+    transform: scale(1.4);
+  }
 }
