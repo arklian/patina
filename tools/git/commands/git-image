@@ -3,19 +3,24 @@
 # Usage Instructions
 ####################################################################################################
 
-# This script uploads images to DigitalOcean Spaces and updates the image.ts file with the new URLs.
+# This script uploads images to a specific Google Drive folder, DigitalOcean Spaces,
+# and updates the image.ts file with the new URLs. It also creates a new folder in DigitalOcean Spaces
+# and uploads the contents of the Google Drive folder to that new folder. A version file is created
+# for version control using the timestamp.
 #
 # Prerequisites:
-#   - Ensure `doctl`, `jq`, and `awscli` are installed on your system.
-#   - Set the environment variables `DIGITAL_OCEAN_SPACES_ACCESS` and `DIGITAL_OCEAN_SPACES_SECRET`.
+#   - Ensure `doctl`, `jq`, `awscli`, and `curl` are installed on your system.
+#   - Set the environment variables `DIGITAL_OCEAN_SPACES_ACCESS`, `DIGITAL_OCEAN_SPACES_SECRET`,
+#     `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, and `GOOGLE_DRIVE_FOLDER_ID`.
 #
 # Usage:
-#   git image <image_path_or_directory>
+#   git image <image_path_or_directory> <environment>
 # Example:
-#   git image /path/to/your/image.png
+#   git image /path/to/your/image.png prod
+#   git image /path/to/your/image.png dev
 #
-# The script will upload the specified image(s) to the configured DigitalOcean Space and update the
-# image.ts file located at $HOME/patina/js/src/patina/assets/images.ts with the new URLs.
+# The script will upload the specified image(s) to the specified Google Drive folder and the configured DigitalOcean Space,
+# and update the image.ts file located at $HOME/patina/js/src/patina/assets/images.ts with the new URLs.
 
 ####################################################################################################
 # Dependency Checks
@@ -93,27 +98,59 @@ check_openssl
 check_curl
 
 ####################################################################################################
-# Main Script Start
+# Script Pre-validation
 ####################################################################################################
 
+REGION="nyc3"
+ENDPOINT_URL="https://${REGION}.digitaloceanspaces.com"
+IMAGE_TS_PATH="$HOME/patina/js/src/patina/assets/images.ts"
+
 # Check if the correct number of arguments are provided
-if [ "$#" -lt 1 ]; then
-    echo "Usage: git image <image_path_or_directory>"
+if [ "$#" -lt 2 ]; then
+    echo "Usage: git image <image_path_or_directory> <environment>"
+    echo "Environment options: prod, dev"
     exit 1
 fi
 
+# Assign arguments to variables
+PATH_TO_UPLOAD=$1
+ENVIRONMENT=$2
+
+# Generate a unique timestamp for versioning
+TIMESTAMP=$(date +%Y%m%d%H%M%S)
+VERSION_FILE="$HOME/patina/js/src/patina/assets/version.txt"
+
+# Determine the space name and path based on the environment
+case "$ENVIRONMENT" in
+    prod)
+        SPACE_NAME="patina-prod"
+        NEW_SPACE_PATH="webimg/${TIMESTAMP}/"  # Creating a unique folder name with timestamp
+        ;;
+    dev)
+        SPACE_NAME="patina-dev"
+        NEW_SPACE_PATH="webimg-dev/${TIMESTAMP}/"  # Creating a unique folder name with timestamp
+        ;;
+    *)
+        echo "Invalid environment: $ENVIRONMENT"
+        echo "Environment options: prod, dev"
+        exit 1
+        ;;
+esac
+
+
+####################################################################################################
+# Verify information
+####################################################################################################
 # Check if environment variables are set
 if [ -z "$DIGITAL_OCEAN_SPACES_ACCESS" ] || [ -z "$DIGITAL_OCEAN_SPACES_SECRET" ]; then
     echo "Environment variables DIGITAL_OCEAN_SPACES_ACCESS and DIGITAL_OCEAN_SPACES_SECRET must be set."
     exit 1
 fi
 
-PATH_TO_UPLOAD=$1
-IMAGE_TS_PATH="$HOME/patina/js/src/patina/assets/images.ts"
-SPACE_NAME="patina-prod"
-SPACE_PATH="webimg/"
-REGION="nyc3"
-ENDPOINT_URL="https://${REGION}.digitaloceanspaces.com"
+if [ -z "$GOOGLE_CLIENT_ID" ] || [ -z "$GOOGLE_CLIENT_SECRET" ] || [ -z "$GOOGLE_REFRESH_TOKEN" ] || [ -z "$GOOGLE_DRIVE_FOLDER_ID" ]; then
+    echo "Environment variables GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN, and GOOGLE_DRIVE_FOLDER_ID must be set."
+    exit 1
+fi
 
 # Check if the image.ts file exists
 echo "Checking for image.ts at $IMAGE_TS_PATH"
@@ -127,6 +164,61 @@ if [ ! -e "$PATH_TO_UPLOAD" ]; then
     echo "Path not found: $PATH_TO_UPLOAD"
     exit 1
 fi
+
+####################################################################################################
+# Function to Obtain Google Drive Access Token
+####################################################################################################
+
+get_access_token() {
+    ACCESS_TOKEN=$(curl -s \
+      --request POST \
+      --data "client_id=$GOOGLE_CLIENT_ID&client_secret=$GOOGLE_CLIENT_SECRET&refresh_token=$GOOGLE_REFRESH_TOKEN&grant_type=refresh_token" \
+      https://oauth2.googleapis.com/token | jq -r '.access_token')
+
+    if [ -z "$ACCESS_TOKEN" ]; then
+        echo "Failed to obtain access token."
+        exit 1
+    fi
+}
+
+####################################################################################################
+# Function to Upload File to Google Drive
+####################################################################################################
+
+upload_to_google_drive() {
+    local FILE_PATH=$1
+    local FILE_NAME=$(basename "$FILE_PATH")
+
+    if [ -d "$FILE_PATH" ]; then
+        # If it's a directory, recursively upload its contents
+        echo "Entering directory: $FILE_PATH"
+        for ITEM in "$FILE_PATH"/*; do
+            upload_to_google_drive "$ITEM"
+        done
+    else
+        # If it's a file, upload it
+        echo "Uploading file: $FILE_NAME"
+        get_access_token
+
+        RESPONSE=$(curl -s -X POST \
+            -L -H "Authorization: Bearer $ACCESS_TOKEN" \
+            -F "metadata={name :\"$FILE_NAME\", parents: [\"$GOOGLE_DRIVE_FOLDER_ID\"]};type=application/json;charset=UTF-8" \
+            -F "file=@$FILE_PATH;type=$(file -b --mime-type $FILE_PATH)" \
+            "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart")
+
+        #Uncomment to debug
+        #echo "Google Drive API Response: $RESPONSE"
+
+        FILE_ID=$(echo "$RESPONSE" | jq -r '.id')
+
+        if [ "$FILE_ID" != "null" ] && [ -n "$FILE_ID" ]; then
+            echo "File '$FILE_NAME' uploaded successfully to Google Drive with ID: $FILE_ID"
+        else
+            echo "Failed to upload file '$FILE_NAME' to Google Drive."
+            exit 1
+        fi
+    fi
+}
 
 ####################################################################################################
 # Upload to DO
@@ -235,20 +327,18 @@ update_image_ts() {
 }
 
 ####################################################################################################
-# Run functions
+# main Function
 ####################################################################################################
 
-#Check if the path is a directory
+# Check if the path is a directory
 if [ -d "$PATH_TO_UPLOAD" ]; then
-    for FILE in "$PATH_TO_UPLOAD"/*; do
-        if [ -f "$FILE" ]; then
-            upload_file "$FILE"
-        fi
-    done
+    # Recursively upload the directory contents
+    upload_to_google_drive "$PATH_TO_UPLOAD"
 else
-    # If the path is a single file, upload it
-    upload_file "$PATH_TO_UPLOAD"
+    # If the path is a single file, upload it to Google Drive and DigitalOcean
+    upload_to_google_drive "$PATH_TO_UPLOAD"
+#    upload_file "$PATH_TO_UPLOAD"
 fi
 
 # Update the image.ts file
-update_image_ts
+#update_image_ts
