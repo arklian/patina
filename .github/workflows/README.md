@@ -39,6 +39,7 @@
 - A bot patina account will label each CR with a Verified status of +/-1 depending on if the tests passed or failed
 
 demo 1
+demo 2
 
 # Useful Links
 - Gerrit Endpoints Documentation:
