@@ -21,7 +21,7 @@ export function BlogAdminPage() {
 
     try {
       // Make the fetch request
-      const response = await fetch('/api/blog/submit', {
+      const response = await fetch('/api/admin/blog/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
