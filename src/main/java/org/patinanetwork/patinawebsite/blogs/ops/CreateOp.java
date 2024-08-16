@@ -26,6 +26,13 @@ public class CreateOp {
         this.repo = repo;
     }
 
+    public CreateOp(String text, BlogsRepo repo) {
+        this.author = "ChatGPT";
+        this.title = "Generated Content";
+        this.content = text;
+        this.image = "";
+        this.repo = repo;
+    }
 
     public CreateBlogResp run() {
         // Get current timestamp in the required format
