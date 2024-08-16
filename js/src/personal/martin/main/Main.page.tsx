@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import { theme } from '@/personal/martin/theme.ts'
 import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 import { Clock, timeZone } from '@/personal/martin/components/Clock.tsx'
+import { mainAboutMe, mainProjects } from '@/personal/martin/data.json'
 import classes from '@/personal/martin/Martin.module.css'
 
 export function MartinMain() {
@@ -33,18 +34,7 @@ export function MartinMain() {
         <Grid.Col span={6}>
           <Container pb={'2em'}>
             <Title order={2}>{'Who am I?'}</Title>
-            <Text>
-              {
-                'Clovis born, Pewaukee raised, and Renton living, I am a University of Washington - Bothell graduate '
-              }
-              {
-                'with a BA of Science - Computer Science & Software Engineering. I enjoy creating software and working on'
-              }
-              {
-                'various projects to expand my knowledge and skill set. Over the last few years, I worked on projects'
-              }
-              {'involving graphics, game engines, and web applications.'}
-            </Text>
+            <Text>{mainAboutMe}</Text>
             <Link to="/personal/martin/about">
               <Button>{'About Me'}</Button>
             </Link>
@@ -53,15 +43,7 @@ export function MartinMain() {
         <Grid.Col span={6}>
           <Container pb={'2em'}>
             <Title order={2}>{'What do I do?'}</Title>
-            <Text>
-              {
-                'I program in many various languages such as Python, C++, C#, Java, JavaScript, and more. Some of my'
-              }
-              {
-                'previous projects include a JavaScript web based game engine, a modified version that includes a physics'
-              }
-              {' engine module, a Voxel based game engine, and more.'}
-            </Text>
+            <Text>{mainProjects}</Text>
             <Link to="/personal/martin/project">
               <Button>{'Projects'}</Button>
             </Link>
