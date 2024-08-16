@@ -10,7 +10,6 @@ import {
 } from '@mantine/core'
 import { IconSun } from '@tabler/icons-react'
 import classes from '@/personal/martin/Martin.module.css'
-import Logo from '@/personal/martin/assets/MartinLogo.ico'
 
 export type propNav = {
   open: boolean
@@ -24,7 +23,13 @@ export function HeaderNav(props: propNav) {
       <Group h="100%" px="md">
         <Flex gap="xl" justify="flex-start">
           <Burger opened={props.open} onClick={props.toggleNav} />
-          <Image w={48} h={48} radius="md" src={Logo} alt="Martin Logo" />
+          <Image
+            w={48}
+            h={48}
+            radius="md"
+            src="https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/martin/assets/MartinLogo.ico"
+            alt="Martin Logo"
+          />
           <Title order={1}>{"Martin's Page"}</Title>
         </Flex>
         <Button
