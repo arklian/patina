@@ -9,6 +9,7 @@ import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
 import org.patinanetwork.patinawebsite.blogs.protos.BlogCountResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
+import org.patinanetwork.patinawebsite.generator.ChatGPT;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
@@ -61,6 +63,17 @@ public class BlogsController {
 
         CreateOp op = new CreateOp(blogReq, blogsRepo);
         return jsonPrinter.print(op.run());
+    }
 
+    @GetMapping(value = "/api/blog/hidden")
+    public String ChatGPTBlog() {
+        int k = 50;
+        List<String> outputs = ChatGPT.listOutputs(k);
+        // List<String> outputs = ChatGPT.fakeOutputs();
+        for (String output : outputs) {
+            CreateOp op = new CreateOp(output, blogsRepo);
+            op.run();
+        }
+        return "Wrote " + k + " blogs to the database";
     }
 }
