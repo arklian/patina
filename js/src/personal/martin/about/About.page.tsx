@@ -3,7 +3,6 @@ import { SoundCloudPlayer } from '@/personal/martin/components/SoundCloudPlayer.
 import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 import { theme } from '@/personal/martin/theme.ts'
 import classes from '@/personal/martin/Martin.module.css'
-import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
 const accordionList = [
   {
@@ -82,7 +81,7 @@ export function MartinAbout() {
       <Jumbotron
         title={'About Me'}
         text={'This page will display my personal background and hobbies.'}
-        imgSrc={MartinFront}
+        imgSrc="https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/martin/assets/MartinFront.jpg"
         imgSize={'35%'}
       />
       <Container>
