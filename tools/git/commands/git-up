@@ -134,6 +134,7 @@ if [ $pushToGerrit = 1 ]; then
     fi
     gh workflow run build-test -f changeId=${changes[idx]} -f branch="ci/${changes[idx]}"
 
+    # Create Github PR for CI branch if not already opened
     if [ $updateGithub = 1 ]; then
       [ $v = 1 ] && echo ""
       [ $v = 1 ] && echo "----- Updating Github PRs"

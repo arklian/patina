@@ -12,30 +12,40 @@
   - Provides endpoints to curl to update reviews and changes on Gerrit's server
   - Gerrit sends back current state of the records as JSON
   - Authentication can be specified by prefixing endpoint URL with /a/
-  - For this workflow, we use Gerrit's provided Set Review endpoint
+  - For the `build-test` workflow, we use Gerrit's provided Set Review endpoint
     - https://review.gerrithub.io/Documentation/rest-api-changes.html#set-review
     - The actual curl command to send this request would look like this:
-    - ```curl -X POST -u USER:PASSWORD -H "Content-Type: application/json" -d@FILE.json https://gerrithub.io/a/changes/CHANGEID/revisions/REVISIONID/review```
+    - `curl -X POST -u USER:PASSWORD -H "Content-Type: application/json" -d@FILE.json https://gerrithub.io/a/changes/CHANGEID/revisions/REVISIONID/review`
     - -u flag specifies username and password for HTTP authenticated requests
     - -h flag specifies header of request
     - FILE.json contains data we want updated, including a message and the status of the "Verified" label for the CR
+  - For the `remove-ci-branch` workflow, we use Gerrit's Get Change endpoint
+    - https://gerrithub.io/Documentation/rest-api-changes.html#get-change
+    - The curl command to send the request looks like:
+    - `curl -u USER:PWD https://gerrithub.io/a/changes/CHANGEID`
+    - -u flag specifies username and password for HTTP authenticated requests
+    - Returns various information about the commit, but only the status and updated fields are needed for this workflow
 ## GitHub Actions
   - Allows for continuous integration and continuous development (CI/CD)
-  - Workflows defined by YAML files inside ```.github/workflows``` are automated processes that will run every time an event occurs, such as a pull request being opened or a push to a branch
+  - Workflows defined by YAML files inside `.github/workflows` are automated processes that will run every time an event occurs, such as a pull request being opened or a push to a branch
     - Workflows contain multiple jobs which can be run either sequentially or in parallel
     - Each job runs inside a virtual machine runner or container and contains steps to be executed
     - Workflows can also be run from the command line if the gh CLI is installed
-    - ```gh workflow run <ACTION-NAME>```
-  - The workflow ```build-test.yml``` takes in two inputs: the Change-Id of the CR and the branch the code is in
-    - It checks out into the given branch and runs ```pnpm install``` and ```pnpm run test```
+    - `gh workflow run <ACTION-NAME>`
+  - The workflow `build-test.yml` takes in two inputs: the Change-Id of the CR and the branch the code is in
+    - It checks out into the given branch and runs `pnpm install` and `pnpm run test`
     - A curl POST request is sent to GerritHub that will update the given CR with a status of +1 to the "Verified" label if the tests passed and -1 otherwise
+  - The workflow `remove-ci-branch.yml` is scheduled to run everyday and runs a shell script `remove-branches.sh`
+    - It filters the CI branches from a list of all the branches in the repository
+    - Using the Change-Id from the branch name, it sends a curl GET request to GerritHub to retrieve information about the commit
+    - If the commit was merged, abandoned, or hasn't been updated for over a week, then the branch is deleted
 ## Git Up
-- The bash script for git up was modified to first create branches on GitHub under ```ci/<changeId>``` for each CR on GerritHub
+- The bash script for git up was modified to first create branches on GitHub under `ci/<changeId>` for each CR on GerritHub
 - Each branch will contain a different number of commits
-  - If two commits were made before running ```git up```, then two separate branches are made on GitHub
+  - If two commits were made before running `git up`, then two separate branches are made on GitHub
   - The first branch corresponds to the first CR on GerritHub and the earliest commit
   - The second branch corresponds to the second CR with both commits
-- ```git up``` will automatically run ```build-test.yml``` workflow for each of these branches and run ```pnpm run test``` on the code in each of these branches
+- `git up` will automatically run `build-test.yml` workflow for each of these branches and run `pnpm run test` on the code in each of these branches
 - A bot patina account will label each CR with a Verified status of +/-1 depending on if the tests passed or failed
 
 
