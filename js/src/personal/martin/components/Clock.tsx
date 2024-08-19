@@ -1,5 +1,6 @@
-import { Container } from '@mantine/core'
+import { Center, Container, Text } from '@mantine/core'
 import * as React from 'react'
+import { theme } from '@/personal/martin/theme.ts'
 import classes from '@/personal/martin/Martin.module.css'
 
 export enum timeZone {
@@ -33,8 +34,10 @@ export enum timeZone {
 
 export function Clock({
   timezone = timeZone.LocalTime,
+  name = 'Clock',
 }: {
   timezone: timeZone
+  name: string
 }) {
   const isLocalTime = timezone === timeZone.LocalTime
   /*
@@ -76,6 +79,11 @@ export function Clock({
   }, [])
   return (
     <>
+      <Center>
+        <Text fw={700} size="lg" c={theme.colors.whiteSmoke[2]}>
+          {name}
+        </Text>
+      </Center>
       <Container className={classes.clockWrapper}>
         <div className={classes.clock}>
           <div

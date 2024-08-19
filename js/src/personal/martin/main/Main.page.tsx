@@ -4,6 +4,7 @@ import {
   Container,
   Divider,
   Grid,
+  rem,
   Title,
   Text,
 } from '@mantine/core'
@@ -32,18 +33,26 @@ export function MartinMain() {
           </Center>
         </Grid.Col>
         <Grid.Col span={6}>
-          <Container pb={'2em'}>
+          <Container>
             <Title order={2}>{'Who am I?'}</Title>
             <Text>{mainAboutMe}</Text>
+          </Container>
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <Container>
+            <Title order={2}>{'What do I do?'}</Title>
+            <Text>{mainProjects}</Text>
+          </Container>
+        </Grid.Col>
+        <Grid.Col span={6} my={rem(2)}>
+          <Container>
             <Link to="/personal/martin/about">
               <Button>{'About Me'}</Button>
             </Link>
           </Container>
         </Grid.Col>
-        <Grid.Col span={6}>
-          <Container pb={'2em'}>
-            <Title order={2}>{'What do I do?'}</Title>
-            <Text>{mainProjects}</Text>
+        <Grid.Col span={6} my={rem(2)}>
+          <Container>
             <Link to="/personal/martin/project">
               <Button>{'Projects'}</Button>
             </Link>
@@ -51,18 +60,21 @@ export function MartinMain() {
         </Grid.Col>
       </Grid>
       <Divider my="md" />
-      <Grid grow justify="center" className={classes.clockDisplay}>
+      <Grid grow className={classes.clockDisplay}>
         <Grid.Col span={3}>
-          <Clock timezone={timeZone.LocalTime} />
-          <Title order={3}>{'Local'}</Title>
+          <Container size="20rem">
+            <Clock timezone={timeZone.LocalTime} name={'Local'} />
+          </Container>
         </Grid.Col>
         <Grid.Col span={3}>
-          <Clock timezone={timeZone.Pacific} />
-          <Title order={3}>{'Seattle'}</Title>
+          <Container size="20rem">
+            <Clock timezone={timeZone.Pacific} name={'Seattle'} />
+          </Container>
         </Grid.Col>
         <Grid.Col span={3}>
-          <Clock timezone={timeZone.EastCoast} />
-          <Title order={3}>{'New York City'}</Title>
+          <Container size="20rem">
+            <Clock timezone={timeZone.EastCoast} name={'New York City'} />
+          </Container>
         </Grid.Col>
       </Grid>
       <Divider my="md" />
