@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d7d78c7_07e43c2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-21T17:10:34Z",
+      "side": 1,
+      "message": "You should probably use a library for Timezones. It\u0027s rarely good to have tour own timezone logic.",
+      "revId": "e21f3ca2c1405386e994b29b5949d0fbc3fda55a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
