@@ -3,6 +3,7 @@ import { Image, Pill, UnstyledButton } from '@mantine/core'
 import React from 'react'
 import { Blog } from './blog.ts'
 import styles from './ImageCard.module.css'
+import { imageUrls } from '@/patina/assets/images'
 
 /**
  * Component for each blog's card. Can be flex horizontal or vertical.
@@ -32,35 +33,29 @@ export function ImageCard({ horizontal, blog, tags }: ImageCardProps) {
   if (!blog) return null // TODO: Add skeleton card for loading?
   return (
     <UnstyledButton
+      className={horizontal ? styles.cardHorizontal : styles.cardVertical}
       onClick={() => {
         navigate(`/blog/${blog.id}`)
       }}
     >
-      <div className={styles.border}>
-        <div
-          className={horizontal ? styles.cardHorizontal : styles.cardVertical}
-        >
-          <Image
-            className={
-              horizontal ? styles.imageHorizontal : styles.imageVertical
-            }
-            src={
-              blog.image.substring(0, 5) !== 'https' ?
-                'https://placehold.co/600x400'
-              : blog.image
-            }
-          />
-          <div className={styles.textSection}>
-            <div className={styles.textTitle}>{blog.title}</div>
-            <div className={styles.textDesc}>{contentSubstring}</div>
-            <div className={styles.pillsSection}>
-              {tags.map((tag, index: number) => (
-                <Pill key={index} className={styles.pill}>
-                  {tag}
-                </Pill>
-              ))}
-            </div>
-          </div>
+      <Image
+        className={horizontal ? styles.imageHorizontal : styles.imageVertical}
+        src={
+          imageUrls.communityHome.src
+          // blog.image.substring(0, 5) !== 'https' ?
+          //   'https://placehold.co/600x400'
+          // : blog.image
+        }
+      />
+      <div className={styles.textSection}>
+        <div className={styles.textTitle}>{blog.title}</div>
+        <div className={styles.textDesc}>{contentSubstring}</div>
+        <div className={styles.pillsSection}>
+          {tags.map((tag, index: number) => (
+            <Pill key={index} className={styles.pill}>
+              {tag}
+            </Pill>
+          ))}
         </div>
       </div>
     </UnstyledButton>

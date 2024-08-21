@@ -1,16 +1,30 @@
 .cardHorizontal {
   display: flex;
   flex-direction: row;
+  border: 1px solid var(--mantine-color-gray-7);
+  border-radius: 10px;
+  width: 700px;
+  height: auto;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .cardVertical {
   display: flex;
   flex-direction: column;
-}
-
-.border {
   border: 1px solid var(--mantine-color-gray-7);
   border-radius: 10px;
+  width: 550px;
+  height: 500px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
 }
 
 .textSection {
@@ -18,6 +32,7 @@
   flex-direction: column;
   padding: 24px;
   justify-content: center;
+  height: 100%;
 }
 
 .textTitle {
@@ -27,10 +42,14 @@
 
 .textDesc {
   font-size: 14px;
+  text-overflow: ellipsis;
 }
 
 .pillsSection {
+  /*
   display: flex;
+  */
+  display: none;
   flex-direction: row;
   padding-top: 10px;
   padding-left: 6px;
@@ -45,6 +64,11 @@
 .imageHorizontal {
   max-width: 400px;
   border-radius: 10px;
+
+  @mixin smaller-than $mantine-breakpoint-sm {
+    max-width: 250px;
+    height: auto;
+  }
 }
 
 .imageVertical {

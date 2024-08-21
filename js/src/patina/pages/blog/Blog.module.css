@@ -9,22 +9,27 @@
 }
 
 .titleContainer {
-  font-size: 36px;
+  font-size: 64px;
   font-weight: bold;
   padding-bottom: 16px;
 }
 
 .subtitleContainer {
-  font-size: 16px;
+  font-size: 34px;
   font-weight: bold;
 }
 
 .latestPostsCards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 12px;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 24px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+    gap: 48px;
+  }
 }
 
 .allPostsCards {
