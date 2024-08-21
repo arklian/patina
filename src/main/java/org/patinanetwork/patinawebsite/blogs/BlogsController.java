@@ -4,10 +4,11 @@ import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
+import org.patinanetwork.patinawebsite.blogs.protos.BlogCountResp;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.CreateBlogResp;
 import org.patinanetwork.patinawebsite.blogs.protos.GetBlogResp;
-import org.patinanetwork.patinawebsite.blogs.protos.BlogCountResp;
+import org.patinanetwork.patinawebsite.blogs.protos.ListBlogReq;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
@@ -43,10 +44,11 @@ public class BlogsController {
         return jsonPrinter.print(resp);
     }
 
-    @GetMapping(value = "/api/blogs")
-    public String listBlogs() {
+    @PostMapping(value = "/api/blogs")
+    public String listBlogs(@RequestBody String jsonRequest) {
+        ListBlogReq listReq = jsonParser.parse(jsonRequest, ListBlogReq.newBuilder());
         ListOp op = new ListOp(blogsRepo);
-        return jsonPrinter.print(op.run());
+        return jsonPrinter.print(op.run(listReq));
     }
 
     @GetMapping(value = "/api/admin/blogs/count")
@@ -57,7 +59,7 @@ public class BlogsController {
     }
 
     @PostMapping(value = "/api/admin/blog/submit", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public String CreateBlog(@RequestBody String jsonRequest) {
+    public String createBlog(@RequestBody String jsonRequest) {
         // Parse the incoming JSON into a Protobuf CreateBlogReq object
         CreateBlogReq blogReq = jsonParser.parse(jsonRequest, CreateBlogReq.newBuilder());
 

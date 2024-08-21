@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.subtitleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .latestPostsCards {
   display: flex;
   flex-direction: row;

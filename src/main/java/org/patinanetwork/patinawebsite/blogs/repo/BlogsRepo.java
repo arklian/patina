@@ -11,8 +11,8 @@ public interface BlogsRepo {
     // Get a blog by its ID
     Blog getBlogById(int id);
 
-    // List all blogs
-    List<Blog> listAllBlogs();
+    // List blogs
+    List<Blog> listBlogs(int limit);
 
     // Get the size of blog table
     int getBlogCount();

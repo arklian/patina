@@ -27,10 +27,18 @@ public class FakeBlogsRepo implements BlogsRepo {
     }
 
     @Override
-    public List<Blog> listAllBlogs() {
-        return List.copyOf(blogs.values());
+    public List<Blog> listBlogs(int limit) {
+        return blogs.values().stream().limit(limit).toList();
     }
 
     @Override
-    public int getBlogCount() { return blogs.size(); }
+    public int getBlogCount() {
+        return blogs.size();
+    }
+
+    public void addTestBlogs(int count) {
+        for (int i = 0; i < count; i++) {
+            addBlog(Blog.newBuilder().setId(i).setTitle(String.valueOf(i)).build());
+        }
+    }
 }
