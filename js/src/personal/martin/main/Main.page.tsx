@@ -10,7 +10,7 @@ import {
 import { Link } from 'react-router-dom'
 import { theme } from '@/personal/martin/theme.ts'
 import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
-import { Clock } from '@/personal/martin/components/Clock.tsx'
+import { Clock, timeZone } from '@/personal/martin/components/Clock.tsx'
 import classes from '@/personal/martin/Martin.module.css'
 import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
@@ -72,15 +72,15 @@ export function MartinMain() {
       <Divider my="md" />
       <Grid grow justify="center" className={classes.clockDisplay}>
         <Grid.Col span={3}>
-          <Clock />
+          <Clock timezone={timeZone.LocalTime} />
           <Title order={3}>{'Local'}</Title>
         </Grid.Col>
         <Grid.Col span={3}>
-          <Clock />
+          <Clock timezone={timeZone.Pacific} />
           <Title order={3}>{'Seattle'}</Title>
         </Grid.Col>
         <Grid.Col span={3}>
-          <Clock />
+          <Clock timezone={timeZone.EastCoast} />
           <Title order={3}>{'New York City'}</Title>
         </Grid.Col>
       </Grid>
