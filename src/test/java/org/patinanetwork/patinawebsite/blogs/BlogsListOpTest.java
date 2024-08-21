@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BlogsListOpTest {
 
     @Test
-    public void EmptyBlogsReturnEmptyResponse() {
+    public void emptyBlogsReturnEmptyResponse() {
         // Arrange
         FakeBlogsRepo repo = new FakeBlogsRepo();
         ListOp op = new ListOp(repo);
@@ -28,7 +28,7 @@ public class BlogsListOpTest {
     }
 
     @Test
-    public void OneBlogReturnOneResponse() {
+    public void oneBlogReturnOneResponse() {
         // Arrange
         FakeBlogsRepo repo = new FakeBlogsRepo();
         Blog blog1 = Blog.newBuilder()
@@ -51,7 +51,7 @@ public class BlogsListOpTest {
     }
 
     @Test
-    public void MultipleBlogsReturnMultipleResponse() {
+    public void multipleBlogsReturnMultipleResponse() {
         // Arrange
         FakeBlogsRepo repo = new FakeBlogsRepo();
         Blog blog1 = Blog.newBuilder()

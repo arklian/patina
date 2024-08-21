@@ -43,6 +43,5 @@
 .morePostsPosts {
   display: flex;
   justify-content: space-between;
-  margin: 24px;
-  gap: 12px;
+  gap: 36px;
 }
