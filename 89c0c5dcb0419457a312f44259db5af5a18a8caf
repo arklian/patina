@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "38768d38_d808bbfc",
+        "filename": "js/src/patina/pages/blog/ImageCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-21T19:31:55Z",
+      "side": 1,
+      "message": "I was hardcoding the image here so that it would be presentable for the demo, but never got this shipped. Could remove this.",
+      "parentUuid": "b5ad5c76_d00c6ad8",
+      "range": {
+        "startLine": 44,
+        "startChar": 10,
+        "endLine": 47,
+        "endChar": 25
+      },
+      "revId": "89c0c5dcb0419457a312f44259db5af5a18a8caf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "23d91d69_9cba25d9",
         "filename": "src/test/java/org/patinanetwork/patinawebsite/blogs/BlogsListOpTest.java",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2024-08-21T19:27:29Z",
       "side": 1,
       "message": "I\u0027m assuming this is supposed to be \u0027oneBlogReturnOneResponse()\u0027?",
+      "range": {
+        "startLine": 31,
+        "startChar": 4,
+        "endLine": 31,
+        "endChar": 44
+      },
+      "revId": "89c0c5dcb0419457a312f44259db5af5a18a8caf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df2c2b06_3f4c24eb",
+        "filename": "src/test/java/org/patinanetwork/patinawebsite/blogs/BlogsListOpTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-21T19:31:55Z",
+      "side": 1,
+      "message": "oops, yeah it should be.",
+      "parentUuid": "23d91d69_9cba25d9",
       "range": {
         "startLine": 31,
         "startChar": 4,
