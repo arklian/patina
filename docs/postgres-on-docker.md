@@ -5,7 +5,7 @@
 - Open and Run Docker to install the CLI
 
 # What is Docker ?
-- Docker is a platform that allows for the managment of applications through containers.
+- Docker is a platform that allows for the management of applications through containers.
 - A container is a lightweight, standalone, executable package that includes everything
 to run a piece of software. 
 - Similar to virtual machines except containers run on your machine's hardware and OS.
@@ -19,7 +19,7 @@ docker pull postgres
 # Run a Docker Container
 - Change any fields to match your specifications/
 ```
-docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+docker run --name patina-db-local -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d patina
 ```
 - Verify docker container
 ```
@@ -27,8 +27,13 @@ docker ps
 ```
 
 # Connect to PostgreSQL database
+- Install postgreSQL from homebrew
 ```
-psql -h localhost -p 5432 -U postgres
+brew install postgresql
+```
+- Run this command
+```
+PGPASSWORD=mysecretpassword psql -h localhost -p 5432 -U postgres
 ```
 - Now you can run SQL commands to interact with your database.
 - To see the tables, you can connect your database using pgadmin4.
