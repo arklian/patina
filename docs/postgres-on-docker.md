@@ -26,8 +26,13 @@ docker ps
 ```
 
 # Connect to PostgreSQL database
+- Install postgreSQL from homebrew
 ```
-psql -h localhost -p 5432 -U postgres
+brew install postgresql
+```
+- Run this command
+```
+PGPASSWORD=mysecretpassword psql -h localhost -p 5432 -U postgres
 ```
 - Now you can run SQL commands to interact with your database.
 - To see the tables, you can connect your database using pgadmin4.
