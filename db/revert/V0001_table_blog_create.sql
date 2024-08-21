@@ -2,6 +2,6 @@
 
 BEGIN;
 
--- DROP TABLE IF EXISTS blogpost;
+DROP TABLE IF EXISTS blog;
 
 COMMIT;
