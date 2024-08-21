@@ -37,7 +37,7 @@ brew install sqitch --with-postgres-support
     - New changes can also depend on previous changes.
 ```
 sqitch add V0000_change_name -n "Description of the change"
-sqitch add V0000_change_name -n "Description of the change" --depend V0000_some_previous_change --depend V0000_some_other_previous_change
+sqitch add V0000_change_name -n "Description of the change" --depend V0000_some_previous_change --depend V0000_some_other_previous_change 
 ```
 
 - Deploying a change to the schema:
@@ -50,13 +50,13 @@ sqitch deploy $DB
 - Deploying a specific change to the schema:
     - Will deploy all scripts up to and including change_name
 ```
-sqitch deploy --to V0000_change_name $db
+sqitch deploy --to V0000_change_name $DB
 ```
 
 - Reverting a change to the schema:
     - Will revert everything deployed except change_name and deployments before it
 ```
-sqitch revert --to V0000_previous_change_name
+sqitch revert --to V0000_previous_change_name $DB
 ```
 
 - Revert all changes to the schema:
@@ -103,7 +103,7 @@ sqitch verify $DB
 ```
 - if your change was not implemented correctly, revert
 ```
-sqitch revert --to V0000-1_previous_deploy
+sqitch revert --to V0000-1_previous_deploy $DB
 ```
 
 ### Sqitch vs Flyway
