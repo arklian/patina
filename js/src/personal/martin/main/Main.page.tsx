@@ -12,7 +12,6 @@ import { theme } from '@/personal/martin/theme.ts'
 import { Jumbotron } from '@/personal/martin/components/Jumbotron.tsx'
 import { Clock, timeZone } from '@/personal/martin/components/Clock.tsx'
 import classes from '@/personal/martin/Martin.module.css'
-import MartinFront from '@/personal/martin/assets/MartinFront.jpg'
 
 export function MartinMain() {
   return (
@@ -20,7 +19,7 @@ export function MartinMain() {
       <Jumbotron
         title="Hello! I'm Martin"
         text="Welcome to my page. I am an SWE intern at Patina Network."
-        imgSrc={MartinFront}
+        imgSrc="https://patina-dev.nyc3.cdn.digitaloceanspaces.com/personal/martin/assets/MartinFront.jpg"
         imgSize="35%"
       />
       <Grid grow bg={theme.colors.cobalt[7]}>
