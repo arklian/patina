@@ -49,7 +49,8 @@ public class BlogsListOpTest {
         ListBlogResp resp = op.run(request);
 
         // Assert
-        ListBlogResp expected = ListBlogResp.newBuilder().addBlogs(blog1).build();
+        ListBlogResp expected =
+                ListBlogResp.newBuilder().addBlogs(blog1).setTotal(1).build();
         assertEquals(expected, resp);
     }
 
@@ -82,8 +83,11 @@ public class BlogsListOpTest {
         ListBlogResp resp = op.run(request);
 
         // Assert
-        ListBlogResp expected =
-                ListBlogResp.newBuilder().addBlogs(blog1).addBlogs(blog2).build();
+        ListBlogResp expected = ListBlogResp.newBuilder()
+                .addBlogs(blog1)
+                .addBlogs(blog2)
+                .setTotal(2)
+                .build();
         assertEquals(expected, resp);
     }
 

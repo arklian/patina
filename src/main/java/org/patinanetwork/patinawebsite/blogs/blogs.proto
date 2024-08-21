@@ -48,6 +48,7 @@ message ListBlogReq {
 
 message ListBlogResp {
   repeated Blog blogs = 1;
+  int32 total = 2;
 }
 
 message GetBlogResp {

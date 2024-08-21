@@ -1,6 +1,6 @@
-import { useQuery } from '@tanstack/react-query'
-import { Select } from '@mantine/core'
+import { Center, Pagination, Select } from '@mantine/core'
 import { useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 import { ImageCard } from './ImageCard.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { Blog } from './blog.ts'
@@ -10,16 +10,17 @@ import styles from './Blog.module.css'
  * Component for displaying Blogs from DB in list view.
  */
 export function BlogPage() {
-  const [value, setValue] = useState<string | null>('10')
+  const [limit, setLimit] = useState<string | null>('10')
+  const [activePage, setActivePage] = useState(1)
   const { data, status } = useQuery({
-    queryKey: ['blogs', value],
+    queryKey: ['blogs', limit],
     queryFn: async () => {
       const response = await fetch('/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ limit: Number(value) }),
+        body: JSON.stringify({ limit: Number(limit) }),
       })
 
       if (!response.ok) {
@@ -30,6 +31,7 @@ export function BlogPage() {
   })
 
   const allBlogs = data?.blogs
+  const total = data?.total
 
   return (
     <ContentPage>
@@ -52,8 +54,8 @@ export function BlogPage() {
             placeholder="Pick value"
             data={['5', '10', '20', '50']}
             defaultValue="10"
-            value={value}
-            onChange={setValue}
+            value={limit}
+            onChange={setLimit}
           />
         </div>
         {status === 'success' ?
@@ -68,6 +70,13 @@ export function BlogPage() {
             ))}
           </div>
         : <div>{'Loading blogs...'}</div>}
+        <Center>
+          <Pagination
+            total={total / Number(limit) + 1}
+            value={activePage}
+            onChange={setActivePage}
+          />
+        </Center>
       </div>
     </ContentPage>
   )
