@@ -48,6 +48,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1dc037a_03c9ccd1",
+        "filename": "js/src/patina/pages/blog/ImageCard.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-21T19:44:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38768d38_d808bbfc",
+      "range": {
+        "startLine": 44,
+        "startChar": 10,
+        "endLine": 47,
+        "endChar": 25
+      },
+      "revId": "89c0c5dcb0419457a312f44259db5af5a18a8caf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "23d91d69_9cba25d9",
@@ -85,6 +109,30 @@
       "side": 1,
       "message": "oops, yeah it should be.",
       "parentUuid": "23d91d69_9cba25d9",
+      "range": {
+        "startLine": 31,
+        "startChar": 4,
+        "endLine": 31,
+        "endChar": 44
+      },
+      "revId": "89c0c5dcb0419457a312f44259db5af5a18a8caf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77ac650b_52d44cb8",
+        "filename": "src/test/java/org/patinanetwork/patinawebsite/blogs/BlogsListOpTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-21T19:44:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df2c2b06_3f4c24eb",
       "range": {
         "startLine": 31,
         "startChar": 4,
