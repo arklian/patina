@@ -50,17 +50,17 @@ public class PsqlBlogsRepo implements BlogsRepo {
     }
 
     @Override
-    public List<Blog> listAllBlogs() {
+    public List<Blog> listBlogs(int limit) {
         List<Blog> blogs = new ArrayList<>();
         String sql =
-                "SELECT id, author, title, content, create_time, image FROM blog WHERE author <> 'ChatGPT' ORDER BY create_time DESC";
+                "SELECT id, author, title, content, create_time, image FROM blog WHERE author <> 'ChatGPT' ORDER BY create_time DESC LIMIT ?";
 
-        try (PreparedStatement stmt = conn.prepareStatement(sql);
-                ResultSet rs = stmt.executeQuery()) {
-
-            while (rs.next()) {
-                Blog blog = getBlog(rs);
-                blogs.add(blog);
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, limit);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    blogs.add(getBlog(rs));
+                }
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error while listing all blogs", e);
@@ -73,7 +73,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
     public int getBlogCount() {
         String sql = "SELECT COUNT(*) FROM blog";
         try (PreparedStatement stmt = conn.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
+                ResultSet rs = stmt.executeQuery()) {
             if (rs.next()) {
                 return rs.getInt(1); // Get the count from the first column
             }

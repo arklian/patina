@@ -3,6 +3,7 @@ package org.patinanetwork.patinawebsite.blogs;
 import org.junit.jupiter.api.Test;
 import org.patinanetwork.patinawebsite.blogs.ops.ListOp;
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
+import org.patinanetwork.patinawebsite.blogs.protos.ListBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.ListBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.FakeBlogsRepo;
 
@@ -18,9 +19,10 @@ public class BlogsListOpTest {
         // Arrange
         FakeBlogsRepo repo = new FakeBlogsRepo();
         ListOp op = new ListOp(repo);
+        ListBlogReq request = ListBlogReq.newBuilder().build();
 
         // Act
-        ListBlogResp resp = op.run();
+        ListBlogResp resp = op.run(request);
 
         // Assert
         ListBlogResp expected = ListBlogResp.newBuilder().build();
@@ -41,9 +43,10 @@ public class BlogsListOpTest {
                 .build();
         repo.addBlog(blog1);
         ListOp op = new ListOp(repo);
+        ListBlogReq request = ListBlogReq.newBuilder().build();
 
         // Act
-        ListBlogResp resp = op.run();
+        ListBlogResp resp = op.run(request);
 
         // Assert
         ListBlogResp expected = ListBlogResp.newBuilder().addBlogs(blog1).build();
@@ -73,13 +76,44 @@ public class BlogsListOpTest {
                 .build();
         repo.addBlog(blog2);
         ListOp op = new ListOp(repo);
+        ListBlogReq request = ListBlogReq.newBuilder().build();
 
         // Act
-        ListBlogResp resp = op.run();
+        ListBlogResp resp = op.run(request);
 
         // Assert
         ListBlogResp expected =
                 ListBlogResp.newBuilder().addBlogs(blog1).addBlogs(blog2).build();
         assertEquals(expected, resp);
+    }
+
+    @Test
+    public void limitReturnsCorrectNumberOfBlogs() {
+        // Arrange
+        FakeBlogsRepo repo = new FakeBlogsRepo();
+        repo.addTestBlogs(3);
+        ListOp op = new ListOp(repo);
+        ListBlogReq request = ListBlogReq.newBuilder().setLimit(2).build();
+
+        // Act
+        ListBlogResp resp = op.run(request);
+
+        // Assert
+        assertEquals(2, resp.getBlogsCount());
+    }
+
+    @Test
+    public void missingLimitReturnsTenBlogs() {
+        // Arrange
+        FakeBlogsRepo repo = new FakeBlogsRepo();
+        repo.addTestBlogs(20);
+        ListOp op = new ListOp(repo);
+        ListBlogReq request = ListBlogReq.newBuilder().build();
+
+        // Act
+        ListBlogResp resp = op.run(request);
+
+        // Assert
+        assertEquals(10, resp.getBlogsCount());
     }
 }

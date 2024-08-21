@@ -1,13 +1,14 @@
 package org.patinanetwork.patinawebsite.blogs.ops;
 
 import org.patinanetwork.patinawebsite.blogs.protos.Blog;
+import org.patinanetwork.patinawebsite.blogs.protos.ListBlogReq;
 import org.patinanetwork.patinawebsite.blogs.protos.ListBlogResp;
 import org.patinanetwork.patinawebsite.blogs.repo.BlogsRepo;
 
 import java.util.List;
 
 /**
- * Class to test listAllBlogs() method of BlogsRepo.
+ * Operations to handle the listBlogs endpoint
  */
 public class ListOp {
     private final BlogsRepo blogsRepo;
@@ -16,8 +17,9 @@ public class ListOp {
         this.blogsRepo = blogsRepo;
     }
 
-    public ListBlogResp run() {
-        List<Blog> blogs = blogsRepo.listAllBlogs();
+    public ListBlogResp run(ListBlogReq request) {
+        int limit = request.getLimit() != 0 ? request.getLimit() : 10;
+        List<Blog> blogs = blogsRepo.listBlogs(limit);
         // Sort blogs based on create_time here
         return ListBlogResp.newBuilder().addAllBlogs(blogs).build();
     }

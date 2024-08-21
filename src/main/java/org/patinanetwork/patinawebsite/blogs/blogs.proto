@@ -42,6 +42,10 @@ message CreateBlogResp{
   Blog blog = 1;
 }
 
+message ListBlogReq {
+  int32 limit = 1;
+}
+
 message ListBlogResp {
   repeated Blog blogs = 1;
 }
