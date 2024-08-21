@@ -2,6 +2,7 @@
 
 # Download Docker
 - https://www.docker.com
+- Open and Run Docker to install the CLI
 
 # What is Docker ?
 - Docker is a platform that allows for the managment of applications through containers.
