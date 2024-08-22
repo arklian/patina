@@ -36,6 +36,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2831a60_7032e9be",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/FakeBlogsRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-22T19:54:39Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "bd18cbf2_8dd14b63",
+      "revId": "779645809626e06734acb8022d4d59d0ffc0374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b4ac66a3_39048a56",
@@ -53,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cba2060_c34ff3c8",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/PsqlBlogsRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-22T19:54:39Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "b4ac66a3_39048a56",
+      "revId": "779645809626e06734acb8022d4d59d0ffc0374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "53dd3768_bf5a3b0d",
@@ -66,6 +102,30 @@
       "writtenOn": "2024-08-22T19:28:54Z",
       "side": 1,
       "message": "Do we want this? Prod won\u0027t have any of these anyways.",
+      "range": {
+        "startLine": 75,
+        "startChar": 48,
+        "endLine": 75,
+        "endChar": 73
+      },
+      "revId": "779645809626e06734acb8022d4d59d0ffc0374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3192a9f1_8e061421",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/repo/PsqlBlogsRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-22T19:54:39Z",
+      "side": 1,
+      "message": "I added this to get the correct total of the blogs as listBlogs(). I can remove it on both queries.",
+      "parentUuid": "53dd3768_bf5a3b0d",
       "range": {
         "startLine": 75,
         "startChar": 48,
