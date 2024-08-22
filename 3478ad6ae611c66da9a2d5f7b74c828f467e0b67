@@ -34,6 +34,24 @@
       "parentUuid": "d427a5f1_6c7e743b",
       "revId": "3478ad6ae611c66da9a2d5f7b74c828f467e0b67",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21fdfda3_ebbe855c",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogtagController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-22T21:24:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d427a5f1_6c7e743b",
+      "revId": "3478ad6ae611c66da9a2d5f7b74c828f467e0b67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
