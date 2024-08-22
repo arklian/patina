@@ -7,4 +7,6 @@ public interface BlogtagRepo {
     // Add a new blogtag
     Blogtag createBlogtag(Blogtag blogtag);
 
+    //Fetches blogtag item from Id
+    Blogtag getBlogtag(int blogtagId);
 }

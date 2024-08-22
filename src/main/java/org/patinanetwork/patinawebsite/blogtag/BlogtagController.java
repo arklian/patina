@@ -5,8 +5,11 @@ import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patinawebsite.blogtag.protos.Blogtag;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagReq;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagResp;
+import org.patinanetwork.patinawebsite.blogtag.protos.GetBlogtagResp;
 import org.patinanetwork.patinawebsite.blogtag.repo.BlogtagRepo;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +29,12 @@ public class BlogtagController {
         this.jsonParser = jsonParser;
     }
 
+    @GetMapping(value = "/api/blogtag/{blogtagId}")
+    public String getBlogtag(@PathVariable("blogtagId") int blogtagId) {
+        Blogtag blogtag = blogtagRepo.getBlogtag(blogtagId);
+        GetBlogtagResp resp = GetBlogtagResp.newBuilder().setBlogtag(blogtag).build();
+        return jsonPrinter.print(resp);
+    }
 
     @PostMapping(value = "/api/blogtag/add", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String createBlogtag(@RequestBody String jsonRequest) {
