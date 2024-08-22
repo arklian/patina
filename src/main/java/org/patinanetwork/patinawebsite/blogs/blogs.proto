@@ -44,6 +44,7 @@ message CreateBlogResp{
 
 message ListBlogReq {
   int32 limit = 1;
+  int32 page = 2;
 }
 
 message ListBlogResp {

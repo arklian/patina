@@ -50,13 +50,14 @@ public class PsqlBlogsRepo implements BlogsRepo {
     }
 
     @Override
-    public List<Blog> listBlogs(int limit) {
+    public List<Blog> listBlogs(int limit, int page) {
         List<Blog> blogs = new ArrayList<>();
         String sql =
-                "SELECT id, author, title, content, create_time, image FROM blog WHERE author <> 'ChatGPT' ORDER BY create_time DESC LIMIT ?";
+                "SELECT id, author, title, content, create_time, image FROM blog WHERE author <> 'ChatGPT' ORDER BY create_time DESC LIMIT ? OFFSET ?";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, limit);
+            stmt.setInt(2, (page - 1) * limit);
             try (ResultSet rs = stmt.executeQuery()) {
                 while (rs.next()) {
                     blogs.add(getBlog(rs));
@@ -71,7 +72,7 @@ public class PsqlBlogsRepo implements BlogsRepo {
 
     @Override
     public int getBlogCount() {
-        String sql = "SELECT COUNT(*) FROM blog";
+        String sql = "SELECT COUNT(*) FROM blog WHERE author <> 'ChatGPT'";
         try (PreparedStatement stmt = conn.prepareStatement(sql);
                 ResultSet rs = stmt.executeQuery()) {
             if (rs.next()) {

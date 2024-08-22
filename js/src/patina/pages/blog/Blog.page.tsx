@@ -1,5 +1,5 @@
 import { Center, Pagination, Select } from '@mantine/core'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { ImageCard } from './ImageCard.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
@@ -13,14 +13,14 @@ export function BlogPage() {
   const [limit, setLimit] = useState<string | null>('10')
   const [activePage, setActivePage] = useState(1)
   const { data, status } = useQuery({
-    queryKey: ['blogs', limit],
+    queryKey: ['blogs', limit, activePage],
     queryFn: async () => {
       const response = await fetch('/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ limit: Number(limit) }),
+        body: JSON.stringify({ limit: Number(limit), page: activePage }),
       })
 
       if (!response.ok) {
@@ -32,6 +32,10 @@ export function BlogPage() {
 
   const allBlogs = data?.blogs
   const total = data?.total
+
+  useEffect(() => {
+    setActivePage(1)
+  }, [limit])
 
   return (
     <ContentPage>
@@ -72,7 +76,7 @@ export function BlogPage() {
         : <div>{'Loading blogs...'}</div>}
         <Center>
           <Pagination
-            total={total / Number(limit) + 1}
+            total={Math.ceil(total / Number(limit))}
             value={activePage}
             onChange={setActivePage}
           />

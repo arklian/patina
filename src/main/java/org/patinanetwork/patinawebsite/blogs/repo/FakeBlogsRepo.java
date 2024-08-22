@@ -27,7 +27,7 @@ public class FakeBlogsRepo implements BlogsRepo {
     }
 
     @Override
-    public List<Blog> listBlogs(int limit) {
+    public List<Blog> listBlogs(int limit, int page) {
         return blogs.values().stream().limit(limit).toList();
     }
 

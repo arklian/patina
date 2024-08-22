@@ -19,8 +19,9 @@ public class ListOp {
 
     public ListBlogResp run(ListBlogReq request) {
         int limit = request.getLimit() != 0 ? request.getLimit() : 10;
+        int page = request.getPage();
         int total = blogsRepo.getBlogCount();
-        List<Blog> blogs = blogsRepo.listBlogs(limit);
+        List<Blog> blogs = blogsRepo.listBlogs(limit, page);
         // Sort blogs based on create_time here
         return ListBlogResp.newBuilder().addAllBlogs(blogs).setTotal(total).build();
     }

@@ -12,7 +12,7 @@ public interface BlogsRepo {
     Blog getBlogById(int id);
 
     // List blogs
-    List<Blog> listBlogs(int limit);
+    List<Blog> listBlogs(int limit, int page);
 
     // Get the size of blog table
     int getBlogCount();
