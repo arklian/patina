@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d427a5f1_6c7e743b",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogtagController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-22T21:15:00Z",
+      "side": 1,
+      "message": "this name should match the CreateBlogtagReq, so it should probably be createBlogtag",
+      "revId": "3478ad6ae611c66da9a2d5f7b74c828f467e0b67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
