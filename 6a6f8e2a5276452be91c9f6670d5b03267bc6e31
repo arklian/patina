@@ -20,6 +20,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "83620c6f_d2758df3",
+        "filename": "js/src/patina/pages/home/about/About.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-22T21:27:05Z",
+      "side": 1,
+      "message": "This should still be auto",
+      "range": {
+        "startLine": 32,
+        "startChar": 11,
+        "endLine": 32,
+        "endChar": 16
+      },
+      "revId": "6a6f8e2a5276452be91c9f6670d5b03267bc6e31",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "68d0becd_0c56437f",
         "filename": "js/src/patina/pages/home/about/About.tsx",
         "patchSetId": 1
