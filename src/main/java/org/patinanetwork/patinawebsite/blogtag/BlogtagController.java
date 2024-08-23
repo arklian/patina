@@ -5,6 +5,7 @@ import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patinawebsite.blogtag.protos.Blogtag;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagReq;
 import org.patinanetwork.patinawebsite.blogtag.protos.CreateBlogtagResp;
+import org.patinanetwork.patinawebsite.blogtag.protos.DeleteBlogtagResp;
 import org.patinanetwork.patinawebsite.blogtag.protos.GetBlogtagResp;
 import org.patinanetwork.patinawebsite.blogtag.repo.BlogtagRepo;
 import org.springframework.http.MediaType;
@@ -44,6 +45,13 @@ public class BlogtagController {
                 .build();
         Blogtag newBlogTag = blogtagRepo.createBlogtag(blogtag);
         CreateBlogtagResp resp = CreateBlogtagResp.newBuilder().setBlogtag(newBlogTag).build();
+        return jsonPrinter.print(resp);
+    }
+
+    @PostMapping(value = "/api/blogtag/delete/{blogtagId}")
+    public String deleteBlogtag(@PathVariable("blogtagId") int blogtagId) {
+        Blogtag blogtag = blogtagRepo.deleteBlogtag(blogtagId);
+        DeleteBlogtagResp resp = DeleteBlogtagResp.newBuilder().setBlogtag(blogtag).build();
         return jsonPrinter.print(resp);
     }
 }
