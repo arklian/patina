@@ -66,4 +66,8 @@ public class PsqlBlogtagRepo implements BlogtagRepo {
         return newBlogtag;
     }
 
+    @Override
+    public Blogtag deleteBlogtag(Blogtag blogtag) {
+        return null;
+    }
 }

@@ -9,4 +9,7 @@ public interface BlogtagRepo {
 
     //Fetches blogtag item from Id
     Blogtag getBlogtag(int blogtagId);
+
+    //Deletes blogtag item
+    Blogtag deleteBlogtag(Blogtag blogtag);
 }
