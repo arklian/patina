@@ -9,7 +9,7 @@ import {
 import { useState } from 'react'
 import { notifications } from '@mantine/notifications'
 import { ContentEditor } from './ContentEditor.tsx'
-import { BlogDataTable } from './BlogDataTable.tsx'
+import { EditBlog } from './EditBlog.tsx'
 
 export function BlogAdminPage() {
   const [author, setName] = useState('')
@@ -91,25 +91,7 @@ export function BlogAdminPage() {
         </Stack>
       </form>
       <Divider my="md" />
-      <Stack>
-        <Title order={3}>{'Edit Blog'}</Title>
-        <BlogDataTable
-          records={[
-            {
-              id: 1,
-              author: 'name',
-              title: 'blog title',
-              createTime: '2024-08-22 13:11:53.0',
-            },
-            {
-              id: 1,
-              author: 'name',
-              title: 'blog title',
-              createTime: '2024-08-22 13:11:53.0',
-            },
-          ]}
-        />
-      </Stack>
+      <EditBlog />
     </Container>
   )
 }
