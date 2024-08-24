@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c1e22f7_3905eb0a",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogs/ops/CreateOp.java",
+        "patchSetId": 19
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-24T18:29:44Z",
+      "side": 1,
+      "message": "We can automatically set this time in the database when it\u0027s created I think.\nFuture work.",
+      "revId": "6a532b367525d24fc88c2f38941918d0e16a57d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
