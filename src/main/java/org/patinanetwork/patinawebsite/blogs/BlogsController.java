@@ -44,6 +44,13 @@ public class BlogsController {
         return jsonPrinter.print(resp);
     }
 
+    @PostMapping(value = "/api/blogs/recent")
+    public String getRecentBlogs() {
+        ListBlogReq listReq = ListBlogReq.newBuilder().setLimit(2).setPage(1).build();
+        ListOp op = new ListOp(blogsRepo);
+        return jsonPrinter.print(op.run(listReq));
+    }
+
     @PostMapping(value = "/api/blogs")
     public String listBlogs(@RequestBody String jsonRequest) {
         ListBlogReq listReq = jsonParser.parse(jsonRequest, ListBlogReq.newBuilder());

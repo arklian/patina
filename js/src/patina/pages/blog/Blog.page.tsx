@@ -12,7 +12,7 @@ import styles from './Blog.module.css'
 export function BlogPage() {
   const [limit, setLimit] = useState<string | null>('10')
   const [activePage, setActivePage] = useState(1)
-  const { data, status } = useQuery({
+  const pageBlogsResp = useQuery({
     queryKey: ['blogs', limit, activePage],
     queryFn: async () => {
       const response = await fetch('/api/blogs', {
@@ -29,9 +29,26 @@ export function BlogPage() {
       return response.json()
     },
   })
+  const recentBlogsResp = useQuery({
+    queryKey: ['recentBlogs'],
+    queryFn: async () => {
+      const response = await fetch('/api/blogs/recent', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
 
-  const allBlogs = data?.blogs
-  const total = data?.total
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+      return response.json()
+    },
+  })
+
+  const recentBlogs = recentBlogsResp.data?.blogs
+  const allBlogs = pageBlogsResp.data?.blogs
+  const total = pageBlogsResp.data?.total
 
   useEffect(() => {
     setActivePage(1)
@@ -42,10 +59,10 @@ export function BlogPage() {
       <div className={styles.latestPostsSection}>
         <div className={styles.titleContainer}>{'Blog'}</div>
         <div className={styles.subtitleContainer}>{'Latest posts'}</div>
-        {status === 'success' ?
+        {recentBlogsResp.status === 'success' ?
           <div className={styles.latestPostsCards}>
-            <ImageCard horizontal={false} blog={allBlogs[0]} tags={['']} />
-            <ImageCard horizontal={false} blog={allBlogs[1]} tags={['']} />
+            <ImageCard horizontal={false} blog={recentBlogs[0]} tags={['']} />
+            <ImageCard horizontal={false} blog={recentBlogs[1]} tags={['']} />
           </div>
         : <div>{'Loading blogs...'}</div>}
       </div>
@@ -62,7 +79,7 @@ export function BlogPage() {
             onChange={setLimit}
           />
         </div>
-        {status === 'success' ?
+        {pageBlogsResp.status === 'success' ?
           <div className={styles.allPostsCards}>
             {allBlogs.map((blog: Blog) => (
               <ImageCard
