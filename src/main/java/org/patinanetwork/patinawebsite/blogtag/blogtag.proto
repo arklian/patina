@@ -12,6 +12,13 @@ message Blogtag {
   string name = 2;
 }
 
+message GetBlogtagReq {
+  int32 id = 1;
+}
+
+message GetBlogtagResp {
+  Blogtag blogtag = 1;
+}
 
 message CreateBlogtagReq {
   // Name of the Tag. Should be 1-2 words max.
