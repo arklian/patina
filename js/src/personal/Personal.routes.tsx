@@ -7,13 +7,10 @@ import { JionghaoPage } from './jionghao/Jionghao.page.tsx'
 import { KaziPage } from './kazi/Kazi.page.tsx'
 import { KellyPage } from './kelly/Kelly.page.tsx'
 import { MalihaPage } from './maliha/Temp.tsx'
-import { MannyPage } from './manny/Manny.page.tsx'
-import { ResumePage as MannyResume } from '@/personal/manny/pages/Resume.tsx'
-import { About as MannyAboutMePage } from '@/personal/manny/pages/About.tsx'
 import { MartinRoutes } from '@/personal/martin/Martin.routes.tsx'
 import { RiyuanRoutes } from './riyuan/RiyuanRoutes.tsx'
 import { TonyPage } from './tony/Tony.page.tsx'
-import { Contact as MannyContactMePage } from '@/personal/manny/pages/Contact.tsx'
+import { MannyRoutes } from '@/personal/manny/Manny.routes.tsx'
 
 /** When adding new routes, please follow the following paradigm:
  * path: 'bryan',
@@ -62,26 +59,7 @@ export const PersonalRoutes = [
     description: "Maliha's Page",
     element: <MalihaPage />,
   },
-  {
-    path: 'manny',
-    description: "Manny's Page",
-    element: <MannyPage />,
-  },
-  {
-    path: 'manny/resume',
-    description: "Manny's Resume Page",
-    element: <MannyResume />,
-  },
-  {
-    path: 'manny/aboutme',
-    description: "Manny's About Me Page",
-    element: <MannyAboutMePage />,
-  },
-  {
-    path: 'manny/contact',
-    description: "Manny's Contact Me Page",
-    element: <MannyContactMePage />,
-  },
+  MannyRoutes,
   MartinRoutes,
   RiyuanRoutes,
   {

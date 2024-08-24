@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom'
 import styles from './Manny.module.css'
 import { theme } from './theme.ts'
 import { FooterSocial } from '@/personal/manny/components/FooterSocial.tsx'
-import { ClickableImage } from '@/personal/manny/components/ClickableImage.tsx'
 
 export function MannyPage() {
   return (
@@ -19,7 +18,6 @@ export function MannyPage() {
           {"Manny's Page"}
         </Text>
       </Title>
-      <ClickableImage />
       <FooterSocial />
       <Outlet />
     </MantineProvider>
