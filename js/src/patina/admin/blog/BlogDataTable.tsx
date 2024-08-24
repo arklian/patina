@@ -1,4 +1,5 @@
 import { DataTable } from 'mantine-datatable'
+import { EditActions } from './EditActions.tsx'
 
 const PAGE_SIZES = [10, 20, 50]
 
@@ -33,6 +34,12 @@ export function BlogDataTable({
         { accessor: 'author' },
         { accessor: 'title' },
         { accessor: 'createTime' },
+        {
+          accessor: 'actions',
+          title: 'Actions',
+          width: '0%',
+          render: (row) => <EditActions blogID={row.id} />,
+        },
       ]}
       records={records}
       totalRecords={total}
