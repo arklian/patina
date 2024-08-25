@@ -9,7 +9,7 @@ import {
 import { useState } from 'react'
 import { notifications } from '@mantine/notifications'
 import { ContentEditor } from './ContentEditor.tsx'
-import { EditBlog } from './EditBlog.tsx'
+import { EditBlogSection } from './EditBlogSection.tsx'
 
 export function BlogAdminPage() {
   const [author, setName] = useState('')
@@ -91,7 +91,7 @@ export function BlogAdminPage() {
         </Stack>
       </form>
       <Divider my="md" />
-      <EditBlog />
+      <EditBlogSection />
     </Container>
   )
 }

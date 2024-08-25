@@ -38,7 +38,7 @@ export function BlogDataTable({
           accessor: 'actions',
           title: 'Actions',
           width: '0%',
-          render: (row) => <EditActions blogID={row.id} />,
+          render: (row) => <EditActions blogId={row.id} />,
         },
       ]}
       records={records}

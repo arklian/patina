@@ -1,7 +1,7 @@
 import { ActionIcon, Group } from '@mantine/core'
 import { IconEdit, IconEye, IconTrash } from '@tabler/icons-react'
 
-export function EditActions({ blogID }: { blogID: number }) {
+export function EditActions({ blogId }: { blogId: number }) {
   return (
     <Group gap={4} justify="left" wrap="nowrap">
       <ActionIcon
@@ -9,7 +9,7 @@ export function EditActions({ blogID }: { blogID: number }) {
         variant="subtle"
         color="green"
         onClick={() => {
-          window.open(`${window.location.origin}/blog/${blogID}`)
+          window.open(`${window.location.origin}/blog/${blogId}`)
         }}
       >
         <IconEye size={16} />

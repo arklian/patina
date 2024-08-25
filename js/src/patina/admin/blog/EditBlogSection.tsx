@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
 import { BlogDataTable } from './BlogDataTable.tsx'
 
-export function EditBlog() {
+export function EditBlogSection() {
   const [activePage, setActivePage] = useState(1)
   const [limit, setLimit] = useState(10)
 
