@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48a12ad6_8bcaf8e1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T03:14:47Z",
+      "side": 1,
+      "message": "It would be nice to include a screenshot.",
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5672ca38_02f039f3",
+        "filename": "js/src/patina/admin/blog/BlogDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T03:14:47Z",
+      "side": 1,
+      "message": "why\u0027s width 0%?",
+      "range": {
+        "startLine": 40,
+        "startChar": 10,
+        "endLine": 40,
+        "endChar": 21
+      },
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a09b7223_8f5a880c",
+        "filename": "js/src/patina/admin/blog/EditActions.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T03:14:47Z",
+      "side": 1,
+      "message": "I think we should try to stick with Id over ID.",
+      "range": {
+        "startLine": 4,
+        "startChar": 30,
+        "endLine": 4,
+        "endChar": 36
+      },
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
