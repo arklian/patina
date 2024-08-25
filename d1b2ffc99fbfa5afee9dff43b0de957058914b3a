@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bee283b_49460722",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:20:54Z",
+      "side": 1,
+      "message": "I think I fixed it. Some of the changes were moved up a commit during a merge conflict. Let me know if there\u0027s anything else I need to do.",
+      "parentUuid": "76c1352c_203ef41a",
+      "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "deef3a61_85c56108",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "eab91050_ba5fa0ec",
+        "filename": "js/src/patina/admin/blog/BlogDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:20:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "deef3a61_85c56108",
+      "range": {
+        "startLine": 3,
+        "startChar": 20,
+        "endLine": 3,
+        "endChar": 30
+      },
+      "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0c66c838_46a13239",
@@ -54,6 +96,30 @@
       "writtenOn": "2024-08-25T03:15:57Z",
       "side": 1,
       "message": "is this needed? Limit looks like it\u0027s already a number in the state above.",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 45
+      },
+      "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9511f093_caae9d39",
+        "filename": "js/src/patina/admin/blog/EditBlog.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:20:54Z",
+      "side": 1,
+      "message": "Noted in a previous commit. ESLint doesn\u0027t like it when it\u0027s just \u0027limit\u0027 by itself.",
+      "parentUuid": "0c66c838_46a13239",
       "range": {
         "startLine": 18,
         "startChar": 38,
