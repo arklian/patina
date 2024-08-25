@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cfae68d0_0503bbb8",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T14:58:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b369d197_08cc7eec",
+      "range": {
+        "startLine": 117,
+        "startChar": 48,
+        "endLine": 117,
+        "endChar": 51
+      },
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "60643cab_36b5b354",
@@ -41,6 +65,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "83222cb0_3739ca3b",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T14:58:43Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "60643cab_36b5b354",
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e3493711_8bf17b4f",
@@ -54,6 +96,24 @@
       "writtenOn": "2024-08-15T00:22:46Z",
       "side": 1,
       "message": "Probably want to get this working somehow too with dev/prod, but not sure exactly how we should do it.",
+      "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "260b47c3_d11f45d1",
+        "filename": "tools/git/commands/git-image",
+        "patchSetId": 2
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T14:58:43Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "e3493711_8bf17b4f",
       "revId": "7d5801f1978fe617b6d337e3fb6d4c69d3f0461c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
