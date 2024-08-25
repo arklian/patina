@@ -1,0 +1,46 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--mantine-color-dark-7);
+  padding: 20px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    padding: 10px;
+  }
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -2px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    font-size: 50px;
+  }
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--mantine-color-gray-2);
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+.ctaButton {
+  margin-top: 40px;
+  background-color: var(--mantine-color-blue-6);
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
