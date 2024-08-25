@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "08c5f0c1_966aa4d1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:23:45Z",
+      "side": 1,
+      "message": "Table Image: https://patina-dev.nyc3.digitaloceanspaces.com/screenshot/Screenshot-2024-08-25T06:43:10-MartinM-EditBlogsTable.png\n\nI\u0027m not sure why it is grayed out",
+      "parentUuid": "48a12ad6_8bcaf8e1",
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5672ca38_02f039f3",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfb0e3aa_b42ecc01",
+        "filename": "js/src/patina/admin/blog/BlogDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:23:45Z",
+      "side": 1,
+      "message": "I made it 0% so that it takes just the right amount of space for the three buttons allowing more important info to be shown. The buttons still display in one row. (Linked an image to my reply on the commit message)",
+      "parentUuid": "5672ca38_02f039f3",
+      "range": {
+        "startLine": 40,
+        "startChar": 10,
+        "endLine": 40,
+        "endChar": 21
+      },
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a09b7223_8f5a880c",
@@ -54,6 +96,30 @@
       "writtenOn": "2024-08-25T03:14:47Z",
       "side": 1,
       "message": "I think we should try to stick with Id over ID.",
+      "range": {
+        "startLine": 4,
+        "startChar": 30,
+        "endLine": 4,
+        "endChar": 36
+      },
+      "revId": "5198b20f3855e66f33e1c3e3f0484d350e633f4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95daa9b9_bbdd4d5a",
+        "filename": "js/src/patina/admin/blog/EditActions.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-25T07:23:45Z",
+      "side": 1,
+      "message": "I thought so too. I changed it back to blogId in my current/next commit.",
+      "parentUuid": "a09b7223_8f5a880c",
       "range": {
         "startLine": 4,
         "startChar": 30,
