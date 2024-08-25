@@ -1,6 +1,6 @@
 import { DataTable } from 'mantine-datatable'
 
-const PAGE_SIZES = [10, 15, 20]
+const PAGE_SIZES = [10, 20, 50]
 
 type BlogRowType = {
   id: number
