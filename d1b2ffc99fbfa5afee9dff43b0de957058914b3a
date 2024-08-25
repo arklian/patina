@@ -128,6 +128,30 @@
       },
       "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "275d5d40_44b35ad6",
+        "filename": "js/src/patina/admin/blog/EditBlog.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-25T14:41:54Z",
+      "side": 1,
+      "message": "What\u0027s the error here?",
+      "parentUuid": "9511f093_caae9d39",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 45
+      },
+      "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
