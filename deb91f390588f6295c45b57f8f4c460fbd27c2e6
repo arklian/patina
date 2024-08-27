@@ -72,6 +72,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7993669_5aa3c50f",
+        "filename": "js/src/patina/admin/blog/EditBlog.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-27T00:21:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc8041ff_eab47d03",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 44
+      },
+      "revId": "deb91f390588f6295c45b57f8f4c460fbd27c2e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cfde7035_b1f73ba1",
