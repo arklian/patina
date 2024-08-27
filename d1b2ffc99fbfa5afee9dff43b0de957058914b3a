@@ -152,6 +152,30 @@
       },
       "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b991482c_de56ef1f",
+        "filename": "js/src/patina/admin/blog/EditBlog.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1038179
+      },
+      "writtenOn": "2024-08-27T00:20:35Z",
+      "side": 1,
+      "message": "Expected property shorthand. I found out that I could just pass in \u0027limit\u0027 instead of \u0027limit: limit\u0027.",
+      "parentUuid": "275d5d40_44b35ad6",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 45
+      },
+      "revId": "d1b2ffc99fbfa5afee9dff43b0de957058914b3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
