@@ -66,4 +66,25 @@ public class PsqlBlogtagRepo implements BlogtagRepo {
         return newBlogtag;
     }
 
+    public Blogtag deleteBlogtag(int blogtagId) {
+        Blogtag newBlogtag = null;
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM blogtag WHERE id = ? RETURNING id, name");
+            stmt.setInt(1, blogtagId);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    int id = rs.getInt("id");
+                    String name = rs.getString("name");
+                    newBlogtag = Blogtag.newBuilder()
+                            .setId(id)
+                            .setName(name)
+                            .build();
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while retrieving blogtag by ID", e);
+        }
+        return newBlogtag;
+    }
 }
