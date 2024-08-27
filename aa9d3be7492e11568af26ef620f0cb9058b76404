@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aec83960_a2d0be69",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/BlogtagController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-27T17:51:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dbdf7fcc_47605a05",
+      "revId": "aa9d3be7492e11568af26ef620f0cb9058b76404",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c6410c61_5fb05b3b",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-08-24T19:01:19Z",
       "side": 1,
       "message": "I\u0027m usually of the opinion that we shouldn\u0027t use *\u0027s in these sql queries. These can lead to some breakages based on deployment order and stuff. Better to just explicitly write it out.",
+      "range": {
+        "startLine": 73,
+        "startChar": 103,
+        "endLine": 73,
+        "endChar": 104
+      },
+      "revId": "aa9d3be7492e11568af26ef620f0cb9058b76404",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d27d143_7958cf0e",
+        "filename": "src/main/java/org/patinanetwork/patinawebsite/blogtag/repo/PsqlBlogtagRepo.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1038147
+      },
+      "writtenOn": "2024-08-27T17:51:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6410c61_5fb05b3b",
       "range": {
         "startLine": 73,
         "startChar": 103,
