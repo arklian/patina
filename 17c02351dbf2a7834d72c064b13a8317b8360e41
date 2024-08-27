@@ -16,6 +16,24 @@
       "message": "Is this meant to be sticky?",
       "revId": "17c02351dbf2a7834d72c064b13a8317b8360e41",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6cf7446e_e430d809",
+        "filename": "js/src/personal/manny/components/HeaderSimple.module.css",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-08-27T01:25:07Z",
+      "side": 1,
+      "message": "ideally yes, but i need to build out teh page more in order to properly test it",
+      "parentUuid": "579b8ff6_ec0f3bd8",
+      "revId": "17c02351dbf2a7834d72c064b13a8317b8360e41",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
