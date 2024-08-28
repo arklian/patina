@@ -7,7 +7,11 @@ export function About() {
   return (
     <div className={styles.container}>
       <Text className={styles.aboutText}>
-        {'We’re on a mission to address the unique struggles of AANHPI women and foster the diverse, ' +
+        {'We’re on a mission to address the unique struggles of AANHPI'}
+        <span className={styles.aboutHighlight}>
+          {' (Asian American, Native Hawaiian, and Pacific Islanders)'}
+        </span>
+        {' women and foster the diverse, ' +
           'inclusionary leaders of tomorrow.'}
       </Text>
       <Text className={styles.aboutText}>
