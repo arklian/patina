@@ -1,4 +1,4 @@
-import { Container, Grid, Text, Title, Image } from '@mantine/core'
+import { Container, Grid, Text, Title, Image, Anchor } from '@mantine/core'
 import styles from './About.module.css'
 import { imageUrls } from '@/patina/assets/images'
 
@@ -110,6 +110,48 @@ export function About() {
           </div>
         </Grid.Col>
       </Grid>
+
+      {/* New Personality Section */}
+      <div className={styles.personalitySection}>
+        <Title order={3} className={styles.sectionSubTitle}>
+          {'More About Me'}
+        </Title>
+        <Text className={styles.personalityDescription}>
+          {
+            "I live in New York, a city full of energy and excitement. When I'm not"
+          }
+          {
+            'coding, you can find me exploring the city or immersed in my favorite'
+          }
+          {' video games.'}
+        </Text>
+        <div className={styles.gamingProfiles}>
+          <Anchor
+            href="https://steamcommunity.com/profiles/76561199052633659/" // Replace with your Steam link
+            target="_blank"
+            className={styles.steamProfile}
+          >
+            <img
+              src={imageUrls.placeholder.src}
+              alt="Steam Profile"
+              className={styles.iconImage}
+            />
+            <Text>{'Steam'}</Text>
+          </Anchor>
+          <Anchor
+            href="https://www.xbox.com/en-US/play/user/l%20T00N%20l"
+            target="_blank"
+            className={styles.xboxProfile}
+          >
+            <img
+              src={imageUrls.placeholder.src}
+              alt="Xbox Profile"
+              className={styles.iconImage}
+            />
+            <Text>{'Xbox'}</Text>
+          </Anchor>
+        </div>
+      </div>
     </Container>
   )
 }
