@@ -1,80 +1,115 @@
-import {
-  Button,
-  Container,
-  Image,
-  MantineProvider,
-  Text,
-  Title,
-} from '@mantine/core'
+import { Container, Grid, Text, Title, Image } from '@mantine/core'
 import styles from './About.module.css'
-import PFP from '../assets/PicOfManny.jpg'
+import { imageUrls } from '@/patina/assets/images'
 
 export function About() {
   return (
-    <MantineProvider>
-      <div className={styles.banner}>
-        <Title className={styles.bannerTitle}>{'ABOUT'}</Title>
-      </div>
-      <Container className={styles.buttonContainer}>
-        <Button
-          component={'a'}
-          href={'mailto:manuelreyes1241@outlook.com'}
-          variant={'outline'}
-          color={'gray'}
-          className={styles.contactButton}
-        >
-          {'Chat With Me'}
-        </Button>
-      </Container>
-      <Container className={styles.container}>
-        <div className={styles.content}>
-          <Image
-            src={PFP}
-            alt={'ProfilePic'}
-            className={styles.image}
-            radius={'md'}
-          />
-          <div className={styles.text}>
+    <Container size="xl" className={styles.aboutSection}>
+      <Title order={2} className={styles.sectionTitle}>
+        {'About'}
+      </Title>
+      <Grid>
+        <Grid.Col span={{ base: 12, md: 6 }}>
+          <div className={styles.textContainer}>
+            <Image
+              src={imageUrls.placeholder.src}
+              alt="Avatar"
+              className={styles.avatar}
+            />
             <Text className={styles.description}>
-              {"Hello and welcome to my page! I'm Manuel, but you can call me Manny." +
-                " I'm a passionate Computer Science student at Hunter College in the vibrant " +
-                'city of New York, with graduation on the horizon in 2025. My goal is to dive ' +
-                'into the exciting world of software engineering once I graduate. Coding is not' +
-                " just a skill for me; it's a thrilling adventure that I love to embark on and" +
-                ' share with fellow enthusiasts. Join me as I explore the endless possibilities' +
-                ' of technology and innovation!'}
-              <br />
-              <br />
-              {'I have experience in a wide array of programming languages, including Python, ' +
-                'JavaScript, React, C++, and Swift, with a particularly strong background in C++.' +
-                " Over the years, I've honed my skills in full-stack development, " +
-                "problem-solving, and project management. When I'm not immersed in coding," +
-                ' you can find me exploring cutting-edge technologies, diving into the latest ' +
-                'video games, or enjoying quality time with family and friends.'}
-              <br />
-              <br />
-              {'I love to experiment with the web as a creative medium. This portfolio ' +
-                'showcases my journey in learning and using web technology in unique ways.' +
-                'I am always eager for opportunities to show my knowledge and expertise, and ' +
-                'for the ability to grow and learn.'}
-              <br />
-              <br />
-              {'Outside of work, I have a passion for reading, traveling, ' +
-                "and immersing myself in all types of media. I'm constantly on the lookout" +
-                ' for thrilling projects and fresh opportunities that allow me to grow and learn.'}
+              {
+                "Hello! I'm Manny, a passionate Computer Science student at Hunter"
+              }
+              {
+                'College in New York, set to graduate in 2025. I aspire to enter'
+              }
+              {
+                'the world of software engineering, where coding is more than just'
+              }
+              {
+                "a skill—it's a thrilling adventure. With strong expertise in C++"
+              }
+              {"and experience in Python, JavaScript, React, and Swift, I've"}
+              {'developed a solid foundation in full-stack development and'}
+              {'problem-solving. Beyond coding, I enjoy exploring new'}
+              {
+                'technologies, playing video games, and spending time with loved'
+              }
+              {"ones. I'm always eager for opportunities to learn, grow, and"}
+              {'showcase my skills.'}
             </Text>
           </div>
-          <Container className={styles.quoteSection}>
-            <blockquote className={styles.blockquote}>
-              {"It's not only moving that creates new starting points. " +
-                'Sometimes all it takes is a subtle shift in perspective, an opening of ' +
-                'the mind, an intentional pause and reset, or a new route to start to see new ' +
-                'options and new possibilities.'}
-            </blockquote>
-            <cite className={styles.cite}>{'— Kristin Armstrong'}</cite>
-          </Container>
-        </div>
-      </Container>
-    </MantineProvider>
+        </Grid.Col>
+
+        <Grid.Col span={{ base: 12, md: 6 }}>
+          <div className={styles.iconGrid}>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="HTML"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'HTML'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="JavaScript"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'JavaScript'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="React"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'React'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="Node.js"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'Node.js'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="Spring"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'Spring'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="Git"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'Git'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="AWS"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'AWS'}</div>
+            </div>
+            <div className={styles.iconWrapper}>
+              <img
+                src={imageUrls.placeholder.src}
+                alt="Figma"
+                className={styles.icon}
+              />
+              <div className={styles.iconLabel}>{'Figma'}</div>
+            </div>
+          </div>
+        </Grid.Col>
+      </Grid>
+    </Container>
   )
 }

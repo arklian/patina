@@ -3,12 +3,14 @@ import { MantineProvider } from '@mantine/core'
 import { theme } from './theme.ts'
 import { Hero } from '@/personal/manny/sections/Hero.tsx'
 import { HeaderSimple } from '@/personal/manny/components/HeaderSimple.tsx'
+import { About } from './sections/About.tsx'
 
 export function MannyPage() {
   return (
     <MantineProvider theme={theme}>
       <Hero />
       <HeaderSimple />
+      <About />
     </MantineProvider>
   )
 }
