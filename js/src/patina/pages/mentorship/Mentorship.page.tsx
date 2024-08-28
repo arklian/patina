@@ -32,9 +32,8 @@ export function MentorshipPage() {
         details={message}
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfpYDIYEIDlvC922E7tUXXlBlOhpEt2-DPkCK0nMzcAPmgX-w/viewform"
-        buttonText="Get Notified"
-        // buttonText="Apply to be a mentee"
+        buttonLink="https://docs.google.com/forms/d/195CMB4BcxKAyh72im-eWWCj10SFRB2bFcQGMmHYdzPs/viewform"
+        buttonText="Apply to be a mentee"
         buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
