@@ -31,7 +31,7 @@ export function Weather() {
 
   const getWeatherData = async () => {
     try {
-      const mainKey = '70124c1a3cb825aa44ba0ad848d7046e'
+      const mainKey = process.env.WEATHER_API_KEY
       const result = await getWeather(40.73061, -74.006, mainKey)
 
       setWeatherData({
