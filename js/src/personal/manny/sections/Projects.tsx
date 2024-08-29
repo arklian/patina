@@ -47,11 +47,18 @@ export function Projects() {
           {index % 2 === 0 ?
             <>
               <Grid.Col span={6}>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.projectImage}
-                />
+                <a
+                  href={project.liveAppLink || project.learnMoreLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.projectImageWrapper}
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className={styles.projectImage}
+                  />
+                </a>
               </Grid.Col>
               <Grid.Col span={6} className={styles.projectContent}>
                 <Title order={2} className={styles.projectTitle}>
@@ -103,11 +110,18 @@ export function Projects() {
                 </div>
               </Grid.Col>
               <Grid.Col span={6}>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.projectImage}
-                />
+                <a
+                  href={project.liveAppLink || project.learnMoreLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.projectImageWrapper}
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className={styles.projectImage}
+                  />
+                </a>
               </Grid.Col>
             </>
           }
