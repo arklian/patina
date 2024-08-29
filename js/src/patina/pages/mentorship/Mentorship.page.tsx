@@ -17,11 +17,13 @@ export function MentorshipPage() {
   const message = (
     <div>
       <Text className={styles.description}>
-        {'The Patina Network mentorship program is open to students currently ' +
-          'enrolled in any US college program or recently graduated who are ' +
-          'interested in guidance with their workplace readiness.'}
+        {
+          'The Patina Network mentorship program will pair you with an experienced mentor in your field and foster a safe environment to explore how culture, career, and life intersect.'
+        }
         <p />
-        {'Sign up to get notified when applications open!'}
+        {
+          'Sophomores or juniors currently enrolled in a US undergraduate program can apply. Applications are now open for Fall 2024!'
+        }
       </Text>
     </div>
   )
