@@ -39,6 +39,9 @@ const projects = [
 export function Projects() {
   return (
     <Container size="xl" className={styles.projectsSection}>
+      <Title order={2} className={styles.sectionTitle}>
+        {'Projects'}
+      </Title>
       {projects.map((project, index) => (
         <Grid key={index} className={styles.projectContainer}>
           {index % 2 === 0 ?
