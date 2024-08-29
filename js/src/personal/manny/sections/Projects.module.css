@@ -1,0 +1,41 @@
+.projectsSection {
+  padding: 50px 0;
+}
+
+.projectContainer {
+  margin-bottom: 50px;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectTitle {
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  margin-bottom: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  background-color: #8298b0;
+  color: #fff;
+  border: none;
+}
