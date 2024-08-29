@@ -10,19 +10,26 @@
   text-align: center;
   font-size: 36px;
   color: var(--mantine-color-gray-0);
-  margin-bottom: 40px; /* Increase this to add more space between title and body */
+  margin-bottom: 40px;
   position: relative;
 }
 
 .sectionTitle::after {
   content: '';
   position: absolute;
-  width: 80px; /* Adjust the width to make it shorter */
+  width: 80px;
   height: 10px;
   background-color: #8298b0;
-  left: 50%; /* Start from the center */
-  transform: translateX(20%); /* Move it slightly to the right */
-  bottom: -5px; /* Adjust the distance below the text */
+  left: 50%;
+  transform: translateX(20%);
+  bottom: -5px;
+}
+
+.projectImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .projectImage {
@@ -32,6 +39,11 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.projectImageWrapper:hover .projectImage {
+  transform: scale(1.05);
 }
 
 .projectContent {
