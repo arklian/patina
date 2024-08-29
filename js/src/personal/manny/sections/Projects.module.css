@@ -6,6 +6,25 @@
   margin-bottom: 50px;
 }
 
+.sectionTitle {
+  text-align: center;
+  font-size: 36px;
+  color: var(--mantine-color-gray-0);
+  margin-bottom: 40px; /* Increase this to add more space between title and body */
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  width: 80px; /* Adjust the width to make it shorter */
+  height: 10px;
+  background-color: #8298b0;
+  left: 50%; /* Start from the center */
+  transform: translateX(20%); /* Move it slightly to the right */
+  bottom: -5px; /* Adjust the distance below the text */
+}
+
 .projectImage {
   width: 100%;
   height: auto;
