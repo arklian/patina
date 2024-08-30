@@ -37,7 +37,7 @@ export const themeOverride = createTheme({
       '#009b59',
     ],
     dark: [
-      '#F3F3F3', // dark-0
+      '#FFFFFF', // dark-0
       // '#C1C2C5', // dark-0
       '#A6A7AB', // dark-1
       '#909296', // dark-2
