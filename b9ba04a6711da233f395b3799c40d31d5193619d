@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2cefc079_6e6c64fd",
+        "filename": "js/src/personal/manny/sections/Projects.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-08-30T21:53:39Z",
+      "side": 1,
+      "message": "I\u0027d probably put this first",
+      "revId": "b9ba04a6711da233f395b3799c40d31d5193619d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
