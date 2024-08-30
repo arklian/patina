@@ -1,6 +1,6 @@
-import { Text } from '@mantine/core'
+import { Space, Text } from '@mantine/core'
 import { About } from '@/patina/pages/mentorship/about/About.tsx'
-// import { Apply } from '@/patina/pages/mentorship/apply/Apply.tsx'
+// import { Apply } from '@/patina/pages/mentorship/apply/TimelineSection.tsx'
 import { Gain } from '@/patina/pages/mentorship/gain/Gain.tsx'
 import { Hero } from '@/patina/components/Hero'
 // import { Details } from '@/patina/pages/mentorship/details/Details.tsx'
@@ -8,6 +8,7 @@ import { Hero } from '@/patina/components/Hero'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentorship.module.css'
+import { ProgramDetails } from '@/patina/pages/mentorship/program/ProgramDetails.tsx'
 
 /**
  * MentorshipPage component renders a mentorship page layout with multiple sections.
@@ -22,8 +23,10 @@ export function MentorshipPage() {
         }
         <p />
         {
-          'Sophomores or juniors currently enrolled in a US undergraduate program can apply. Applications are now open for Fall 2024!'
+          'Sophomores or juniors currently enrolled in a US undergraduate program can apply.'
         }
+        <br />
+        {'Applications are now open for Fall 2024!'}
       </Text>
     </div>
   )
@@ -39,6 +42,9 @@ export function MentorshipPage() {
         buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
+      <Space h={64} />
+      <ProgramDetails />
+      <Space h={64} />
       <Gain />
       {/*<Details />*/}
       {/*<Apply />*/}
