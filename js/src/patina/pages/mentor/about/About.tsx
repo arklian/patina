@@ -1,44 +1,35 @@
-import { Paper, SimpleGrid, Text } from '@mantine/core'
-import { useMediaQuery } from '@mantine/hooks'
+import { Flex, Paper, Space, Stack, Text, Title } from '@mantine/core'
 import styles from './About.module.css'
 
 // Defining the About component
 export function About() {
-  const largeScreen = useMediaQuery('(min-width: 60em)')
   return (
-    <SimpleGrid
-      cols={largeScreen ? 2 : 1}
-      spacing="xl"
-      className={styles.about}
-    >
-      <div className={styles.left}>
-        <Paper withBorder>
-          <Text className={styles.quote}>
+    <Flex className={styles.about}>
+      <Stack className={styles.quote}>
+        <Paper withBorder h={'fit-content'}>
+          <Text className={styles.quoteText}>
             {
-              '"... given me insight on how to properly prepare for my job search and a glimpse of what my future could be”'
+              '"It\'s given me insight on how to properly prepare for my job search and a glimpse of what my future could be”'
             }
             <Text inherit className={styles.quoteAuthor}>
               {' - Amanda'}
             </Text>
           </Text>
         </Paper>
-      </div>
-      <div>
-        <h2 className={styles.aboutTitle}>
-          {'What it means to be a Patina Network Mentor'}
-        </h2>
-        <Text className={styles.aboutText}>
+      </Stack>
+      <div className={styles.aboutText}>
+        <Title order={2}>{'About the Program'}</Title>
+        <Space h={'sm'} />
+        <Text size={'lg'}>
           {
-            'We want our students to find their kuyas, sunbaes, and kakaks in their industries. Mentors are paired with students that match the best with their skills, learning styles, and industry. Our students are eager to learn about the realities of the workplace, networking for success, and transitioning into jobs. '
+            "In today’s competitive job market, having a trusted mentor can make all the difference in a young professional's career. By joining our program, you’ll have the opportunity to shape the next generation of leaders, offering insights that go beyond textbooks and lectures. Your personal experiences, both successes and challenges, will help students understand what it takes to succeed in their chosen fields and empower them to navigate the unique challenges faced by AANHPI individuals in the workplace."
           }
-        </Text>
-        <h2 className={styles.timeCommitmentTitle}>{'Time Commitment'}</h2>
-        <Text className={styles.timeCommitmentText}>
+          <p />
           {
-            'The level of time commitment is flexible, but we expect our mentors to be available online and/or in-person for at least five hours each month. Mentors are expected to check in with their mentees at least every other week and attend the monthly Patina Network networking events.'
+            "In addition to one-on-one mentoring, you'll also engage in group activities that foster cultural awareness and inclusion, ensuring that each student leaves the program not just as a skilled professional but as a strong advocate for diversity and inclusion."
           }
         </Text>
       </div>
-    </SimpleGrid>
+    </Flex>
   )
 }
