@@ -3,11 +3,12 @@
   flex-direction: row;
   width: 100%;
   margin-bottom: 84px;
-  padding-top: 64px;
+  padding-top: 48px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     align-items: center;
     flex-direction: column;
+    padding-top: 36px;
     margin-bottom: 36px;
   }
 }

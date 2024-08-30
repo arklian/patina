@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './ContentPage.module.css'
 
 type ContentPageProps = {
+  gap?: number
   children: React.ReactNode
 }
 
@@ -10,10 +11,10 @@ type ContentPageProps = {
  * Page wrapper for content pages across the Patina Website to keep a consistent
  * style.
  */
-export function ContentPage({ children }: ContentPageProps) {
+export function ContentPage({ gap, children }: ContentPageProps) {
   return (
     <div className={styles.page}>
-      <Stack align={'center'} gap={0}>
+      <Stack align={'center'} gap={gap || 0}>
         {children}
       </Stack>
     </div>
