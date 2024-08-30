@@ -7,21 +7,21 @@ const cardMap = [
   {
     title: 'Field-Specific Mentorship',
     details:
-      'Connect with our Track Mentor who has been in the same shoes as you through education and your future career path. Ask questions specific to your field of interest and how you can better prepare yourself for this specialization.',
+      'Connect with a mentor who has been in the same shoes as you through education and your future career path. Ask questions specific to your field of interest and how you can better prepare yourself for this specialization.',
     img: imageUrls.mentorshipField.src,
     alt: imageUrls.mentorshipField.alt,
   },
   {
     title: 'Networking Skills',
     details:
-      'First networking email, coffee chat, conference, or any type of reach out can be intimidating. Group Mentor will coach a group of Mentees to set a goal for networking readiness, walk you through best examples, and provide feedback to your strategy and drafts before you practice for real.',
+      'The first reach out of any type can be intimidating, whether that be by email, coffee chat or at an event. A mentor from Patina will ease you into it by helping you set a goal for networking readiness, walk you through best examples, and provide feedback for your strategy and drafts before you practice for real. ',
     img: imageUrls.mentorshipNetworking.src,
     alt: imageUrls.mentorshipNetworking.alt,
   },
   {
-    title: 'Interview Prep',
+    title: 'Cultural Awareness and Exploration',
     details:
-      'Practice makes perfect. If you want a non-judgmental coach, Group Mentor, to hold you accountable, practice with us where we will push you to get used to the anxiety of interviews.',
+      'Discover the unique challenges and opportunities that come with being AANHPI in the professional world. Our program goes beyond traditional career guidance by fostering cultural awareness and understanding, enabling us to celebrate and explore the rich diversity of AANHPI cultures.',
     img: imageUrls.mentorshipInterview.src,
     alt: imageUrls.mentorshipInterview.alt,
   },
