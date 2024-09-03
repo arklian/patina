@@ -4,7 +4,7 @@ import {
   Card,
   Container,
   Divider,
-  MantineProvider,
+  Space,
   Text,
   Title,
 } from '@mantine/core'
@@ -16,37 +16,37 @@ import {
   IconBrandGithub,
 } from '@tabler/icons-react'
 import styles from './Resume.module.css'
+import { HeaderSimple } from '@/personal/manny/components/HeaderSimple.tsx'
 
 export function ResumePage() {
   return (
-    <MantineProvider>
-      <div className={styles.downloadButtonContainer}>
-        <Button
-          component="a"
-          href={
-            'https://cuny620-my.sharepoint.com/:b:/g/personal/manuel_reyesjr59_' +
-            'myhunter_cuny_edu/Ecr-rxWeq_FHgRjzb0YgjVcBgtuCm9_fRhL0Ac1D_3IbBA?e=18CJ59'
-          }
-          rightSection={<IconDownload size="14" />}
-        >
-          {'Download PDF'}
-        </Button>
-      </div>
+    <div>
+      <HeaderSimple />
+      <Space h="md" />
       <Container size="md">
+        <div className={styles.downloadButtonContainer}>
+          <Button
+            component="a"
+            href={
+              'https://cuny620-my.sharepoint.com/personal/manuel_reyesjr59_myhunter_cuny_edu/Documents/Manuel_Reyes_jr.pdf'
+            } // update with the correct path
+            rightSection={<IconDownload size="14" />}
+          >
+            {'Download PDF'}
+          </Button>
+        </div>
         <Card shadow="sm" p="lg" radius="md" withBorder>
+          {/* Header Section */}
           <div className={styles.headerRow}>
             <Title order={1} className={styles.title}>
               {'Manuel Reyes Jr.'}
             </Title>
           </div>
 
+          {/* Contact Information */}
           <div className={styles.contactRow}>
-            <Text className={styles.contactInfo}>
-              {'Bronx, New York | (347) 317-3990 '}
-            </Text>
-            {' | '}
             <Anchor
-              href="mailto:mauelreyes1241@outlook.com"
+              href="mailto:manuelreyes1241@outlook.com"
               className={styles.link}
             >
               <IconMailFilled size="16" className={styles.icon} />
@@ -54,16 +54,11 @@ export function ResumePage() {
             </Anchor>
             {' | '}
             <Anchor
-              href="https://www.linkedin.com/in/manuel-reyes-jr-12410803031241-me"
+              href="https://www.linkedin.com/in/manuel-reyes-jr-swe"
               className={styles.link}
             >
               <IconBrandLinkedin size="16" className={styles.icon} />
-              {'manuel-reyes-jr-swe'}
-            </Anchor>
-            {' | '}
-            <Anchor href="https://www.reyesjr.com" className={styles.link}>
-              <IconWorld size="16" className={styles.icon} />
-              {'Personal website'}
+              {'linkedin.com/in/manuel-reyes-jr-swe'}
             </Anchor>
             {' | '}
             <Anchor
@@ -71,173 +66,192 @@ export function ResumePage() {
               className={styles.link}
             >
               <IconBrandGithub size="16" className={styles.icon} />
-              {'MReyes1241'}
+              {'github.com/MReyes1241'}
+            </Anchor>
+            {' | '}
+            <Anchor
+              href="https://patinanetwork.org/personal/manny"
+              className={styles.link}
+            >
+              <IconWorld size="16" className={styles.icon} />
+              {'patinanetwork.org/personal/manny'}
             </Anchor>
           </div>
-          <Divider size={'lg'} />
-          <Title order={2} className={styles.sectionTitle}>
-            {'Professional Summary'}
-          </Title>
-          <Text className={styles.sectionText}>
-            {'As an engaged Computer Science student at Hunter College, I actively pursue ' +
-              'mastery in programming languages, including Python, C++, HTML, CSS, JavaScript' +
-              ', and Swift. My academic endeavors underscore a deep-seated commitment to mastering ' +
-              'the dynamic nuances of computer science. Serving as a Teaching Assistant, I ' +
-              'have sharpened my technical skills and honed my ability to communicate complex ' +
-              'concepts, effectively tutoring peers and resolving hardware complications. ' +
-              'Demonstrating a profound interest in software development, I have completed a ' +
-              'Web Development Course and engaged in numerous projects, showcasing my dedication ' +
-              'to continuously expanding my skill set and knowledge. My involvement in these ' +
-              'projects, along with my unwavering commitment to both theoretical understanding and' +
-              ' practical application in coding, solidify my foundation in the field.\n'}
-          </Text>
-          <Divider size={'lg'} />
-          <Title order={2} className={styles.sectionTitle}>
-            {'Experience'}
-          </Title>
-          <Text className={styles.jobTitle}>
-            {'Teaching Assistant | CUNY-Hunter College'}
-          </Text>
-          <Text className={styles.jobDate}>{'February 2023 – Present'}</Text>
-          <Text className={styles.jobDescription}>
-            <ul>
-              <li>
-                {'Facilitated the learning journey of students in introductory'}
-                {'computer science courses, focusing on Python and C++, by'}
-                {
-                  'simplifying complex programming principles for diverse learning'
-                }
-                {'styles.'}
-              </li>
-              <li>
-                {"Diagnosed and resolved hardware issues, enhancing students'"}
-                {'coding experiences and mirroring the troubleshooting and'}
-                {'debugging tasks in software engineering.'}
-              </li>
-              <li>
-                {'Developed and implemented personalized tutoring strategies,'}
-                {
-                  'improving student comprehension and performance in programming'
-                }
-                {'concepts.'}
-              </li>
-              <li>
-                {'Communicated technical concepts effectively to non-technical'}
-                {'audiences, fostering a supportive and inclusive learning'}
-                {'environment.'}
-              </li>
-              <li>
-                {
-                  'Demonstrated adaptability and patience in mentoring, paralleling'
-                }
-                {
-                  'the iterative development process and problem-solving approach'
-                }
-                {'in software engineering.'}
-              </li>
-              <li>
-                {
-                  'Contributed to a collaborative educational setting, preparing'
-                }
-                {
-                  'for cross-functional teamwork and leadership roles in the tech'
-                }
-                {'industry.'}
-              </li>
-            </ul>
-          </Text>
-          <Divider my="lg" />
+          <Divider size="lg" />
+
+          {/* Education Section */}
           <Title order={2} className={styles.sectionTitle}>
             {'Education'}
           </Title>
           <div className={styles.educationSection}>
             <div className={styles.educationDetails}>
               <Text className={styles.educationTitle}>
-                {'Bachelor of Arts'}
+                {'Bachelor of Arts in Computer Science, Minor in Mathematics'}
               </Text>
               <Text className={styles.educationInstitution}>
-                {'CUNY - Hunter College'}
+                {'Hunter College - City University of New York, New York, NY'}
               </Text>
-              <Text className={styles.educationDegree}>
-                {'New York, New York'}
-              </Text>
-            </div>
-            <div className={styles.educationDates}>
               <Text className={styles.educationDate}>
-                {'August 2021 - Present'}
+                {'August 2021 – May 2025'}
               </Text>
-              <Text className={styles.educationGPA}>{'GPA: 3.3/4.0'}</Text>
+              <Text className={styles.educationGPA}>{'GPA: 3.4/4.0'}</Text>
+              <Text className={styles.relevantCoursework}>
+                {
+                  'Relevant Coursework: Operating Systems, Data Structures, Algorithms, Computer Architecture, Software Engineering, Artificial Intelligence'
+                }
+              </Text>
             </div>
           </div>
-          <div className={styles.educationSection}>
-            <div className={styles.educationDetails}>
-              <Text className={styles.educationTitle}>
-                {'High School Diploma'}
-              </Text>
-              <Text className={styles.educationInstitution}>
-                {'Westchester Square Academy'}
-              </Text>
-              <Text className={styles.educationDegree}>
-                {'Bronx, New York'}
-              </Text>
-            </div>
-            <div className={styles.educationDates}>
-              <Text className={styles.educationDate}>
-                {'September 2017 - June 2021'}
-              </Text>
-              <Text className={styles.educationGPA}>{'GPA: 4.0/4.0'}</Text>
-            </div>
-          </div>
-          <Divider my="lg" />
+          <Divider size="lg" />
+
+          {/* Experience Section */}
           <Title order={2} className={styles.sectionTitle}>
-            {'Skills & Abilities'}
+            {'Experience'}
           </Title>
-          <Text className={styles.skills}>
-            <ul>
+          <div className={styles.job}>
+            <Text className={styles.jobTitle}>
+              {'Software Engineering Intern | Patina Network'}
+            </Text>
+            <Text className={styles.jobDate}>{'June 2024 – August 2024'}</Text>
+            <Text className={styles.jobDescription}>
+              {'Responsibilities included:'}
+            </Text>
+            <ul className={styles.jobDescription}>
               <li>
-                <strong>{'Programming Languages:'}</strong>{' '}
-                {'JavaScript, Python, C++,'}
-                {'HTML, CSS'}
-              </li>
-              <li>
-                <strong>{'Tools and Technologies:'}</strong>{' '}
-                {'Unix, Machine Language,'}
-                {'Swift'}
-              </li>
-              <li>
-                <strong>{'Web Development:'}</strong>{' '}
-                {'HTML, CSS, JavaScript, React, Typescript'}
+                {
+                  'Created a streamlined workflow for handling images used across the website by writing a shell script to upload images stored in a source-of-truth Google Drive folder to Digital Ocean Spaces S3 buckets through their REST APIs and auto-generating a mapping of images to their URLs that are used in the TypeScript.'
+                }
               </li>
               <li>
                 {
-                  'Problem Solving, Quick Learner, Computer Literacy, Time Management'
+                  'Added version control and multiple environment support to the image handling workflow, letting developers change images in development without affecting the live website and allowing production rollbacks.'
+                }
+              </li>
+              <li>
+                {
+                  'Built OCI Docker images of our Spring Boot backend and deployed them to virtual machines in DigitalOcean.'
+                }
+              </li>
+              <li>
+                {
+                  'Collaborated cross-functionally with UI/UX designers to bring their Figma mocks to life using React, TypeScript, and Mantine UI over several iterations while ensuring a mobile-friendly responsive user interface.'
+                }
+              </li>
+              <li>
+                {
+                  'Managed tasks and projects in Linear, a Jira-like work tracking tool, to coordinate work across the team.'
+                }
+              </li>
+              <li>
+                {
+                  'Engaged in code reviews on Gerrit, with merges blocked by approvals from other engineers and CI tests.'
                 }
               </li>
             </ul>
-          </Text>
-          <Divider my="lg" />
-          <Title order={2} className={styles.sectionTitle}>
-            {'Languages'}
-          </Title>
-          <Text className={styles.languages}>
-            <ul>
-              <li>{'Spanish - Fluent'}</li>
+          </div>
+
+          <div className={styles.job}>
+            <Text className={styles.jobTitle}>
+              {'Undergraduate Teaching Assistant | CUNY-Hunter College'}
+            </Text>
+            <Text className={styles.jobDate}>{'February 2023 – Present'}</Text>
+            <Text className={styles.jobDescription}>
+              {'Responsibilities included:'}
+            </Text>
+            <ul className={styles.jobDescription}>
+              <li>
+                {
+                  'Supported students in Python, MIPS, and C++ courses by guiding them through assignments, debugging code, and preparing for exams.'
+                }
+              </li>
+              <li>
+                {
+                  'Assisted the professor with grading, provided detailed feedback, conducted tutoring sessions and code reviews, and offered advice to help students navigate course material and improve their understanding.'
+                }
+              </li>
             </ul>
-          </Text>
+          </div>
+          <Divider size="lg" />
+
+          {/* Projects Section */}
+          <Title order={2} className={styles.sectionTitle}>
+            {'Projects'}
+          </Title>
+          <div className={styles.project}>
+            <Text className={styles.projectTitle}>
+              {'Splitsy App | github.com/Riyuanliu/Splitsy'}
+            </Text>
+            <Text className={styles.projectDate}>{'February 2024'}</Text>
+            <Text className={styles.projectDescription}>
+              {'Project highlights included:'}
+            </Text>
+            <ul className={styles.projectDescription}>
+              <li>
+                {
+                  'Collaborated in a team of three to build “Splitsy,” an iOS app that simplifies bill splitting.'
+                }
+              </li>
+              <li>
+                {
+                  'Built the app’s user interface using Swift and SwiftUI, ensuring a seamless user experience.'
+                }
+              </li>
+              <li>
+                {
+                  'Used OCR to scan receipts to automate the calculation of individual payment shares.'
+                }
+              </li>
+            </ul>
+          </div>
+          <Divider size="lg" />
+
+          {/* Technical Skills Section */}
+          <Title order={2} className={styles.sectionTitle}>
+            {'Technical Skills'}
+          </Title>
+          <ul className={styles.skills}>
+            <li>
+              <strong>{'Languages:'}</strong>
+              {
+                ' Python, Java, C/C++, SQL, JavaScript, TypeScript, Swift, MIPS, Bash/Zsh/Shell'
+              }
+            </li>
+            <li>
+              <strong>{'Frontend:'}</strong>
+              {
+                ' HTML/CSS, React, Vue, Mantine UI, JSON, Node.js, npm/pnpm, Vite, ESLint, Prettier'
+              }
+            </li>
+            <li>
+              <strong>{'Backend/Cloud:'}</strong>
+              {' Spring, PHP, Flask, Kotlin, Gradle, Docker, DigitalOcean, AWS'}
+            </li>
+            <li>
+              <strong>{'Tools:'}</strong>
+              {
+                ' Figma, VS Code, PyCharm, IntelliJ, Sublime Merge, pgAdmin, Postman, Linear, Notion'
+              }
+            </li>
+            <li>
+              <strong>{'Other:'}</strong>
+              {
+                ' Git/Github, MacOS, Linux, Windows Terminal, REST API, CLI, CI/CD, GitHub Actions'
+              }
+            </li>
+          </ul>
         </Card>
+        <div className={styles.downloadButtonContainer}>
+          <Button
+            component="a"
+            href={
+              'https://cuny620-my.sharepoint.com/personal/manuel_reyesjr59_myhunter_cuny_edu/Documents/Manuel_Reyes_jr.pdf'
+            } // update with the correct path
+            rightSection={<IconDownload size="14" />}
+          >
+            {'Download PDF'}
+          </Button>
+        </div>
       </Container>
-      <div className={styles.downloadButtonContainer}>
-        <Button
-          component="a"
-          href={
-            'https://cuny620-my.sharepoint.com/:b:/g/personal/manuel_reyesjr59_' +
-            'myhunter_cuny_edu/Ecr-rxWeq_FHgRjzb0YgjVcBgtuCm9_fRhL0Ac1D_3IbBA?e=18CJ59'
-          }
-          rightSection={<IconDownload size="14" />}
-        >
-          {'Download PDF'}
-        </Button>
-      </div>
-    </MantineProvider>
+    </div>
   )
 }
