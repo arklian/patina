@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccc91abd_847fe3ec",
+        "filename": "js/src/personal/manny/components/HeaderSimple.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-09-03T22:36:02Z",
+      "side": 1,
+      "message": "this was an accident ive fixed it",
+      "parentUuid": "3da819ee_cd307f02",
+      "revId": "b79711787c80589b0c6c0c45d01933fc5ca367a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1bbfaf39_137d0f9b",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-09-03T19:03:20Z",
       "side": 1,
       "message": "Might be nice to talk about specific projects too",
+      "revId": "b79711787c80589b0c6c0c45d01933fc5ca367a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca70a3b6_fb1c242f",
+        "filename": "js/src/personal/manny/sections/Projects.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-09-03T22:36:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1bbfaf39_137d0f9b",
       "revId": "b79711787c80589b0c6c0c45d01933fc5ca367a5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
