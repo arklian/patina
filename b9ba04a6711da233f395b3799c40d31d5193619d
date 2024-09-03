@@ -16,6 +16,24 @@
       "message": "I\u0027d probably put this first",
       "revId": "b9ba04a6711da233f395b3799c40d31d5193619d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2681448_5719bf45",
+        "filename": "js/src/personal/manny/sections/Projects.tsx",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-09-03T13:10:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2cefc079_6e6c64fd",
+      "revId": "b9ba04a6711da233f395b3799c40d31d5193619d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
