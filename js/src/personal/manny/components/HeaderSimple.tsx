@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { Container, Group, Burger } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
+import { Link } from 'react-router-dom' // Import the Link component from react-router-dom
 import classes from './HeaderSimple.module.css'
 
 const links = [
-  { link: '#hero', label: 'Home' },
-  { link: '/manny/aboutme', label: 'About Me' },
-  { link: '/manny/resume', label: 'Resume' },
-  { link: '/manny/contact', label: 'Contact' },
+  { link: '..', label: 'Home' },
+  { link: './aboutme', label: 'About Me' },
+  { link: './projects', label: 'Projects' },
+  { link: './resume', label: 'Resume' },
+  { link: './contact', label: 'Contact' },
 ]
 
 export function HeaderSimple() {
@@ -15,18 +17,15 @@ export function HeaderSimple() {
   const [active, setActive] = useState(links[0].link)
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link} // Use the "to" prop instead of "href"
       className={classes.link}
       data-active={active === link.link || undefined}
-      onClick={(event) => {
-        event.preventDefault()
-        setActive(link.link)
-      }}
+      onClick={() => setActive(link.link)} // Remove event.preventDefault(), allow default behavior
     >
       {link.label}
-    </a>
+    </Link>
   ))
 
   return (

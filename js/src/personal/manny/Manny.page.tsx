@@ -1,16 +1,11 @@
 import { MantineProvider } from '@mantine/core'
-// import styles from './Manny.module.css'
-import { theme } from './theme.ts'
-import { Hero } from '@/personal/manny/sections/Hero.tsx'
-import { HeaderSimple } from '@/personal/manny/components/HeaderSimple.tsx'
-import { About } from './sections/About.tsx'
+import { Outlet } from 'react-router-dom'
+import { theme } from '../theme.ts'
 
 export function MannyPage() {
   return (
     <MantineProvider theme={theme}>
-      <Hero />
-      <HeaderSimple />
-      <About />
+      <Outlet />
     </MantineProvider>
   )
 }
