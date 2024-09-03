@@ -6,6 +6,7 @@ import classes from './HeaderSimple.module.css'
 const links = [
   { link: '#hero', label: 'Home' },
   { link: '/manny/aboutme', label: 'About Me' },
+  { link: 'manny/projects', label: 'Projects' },
   { link: '/manny/resume', label: 'Resume' },
   { link: '/manny/contact', label: 'Contact' },
 ]
