@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b3e0e309_f4c98bf4",
+        "filename": "js/src/personal/manny/sections/MannyMain.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-09-03T22:06:35Z",
+      "side": 1,
+      "message": "nit: I feel like MainPage would be more consistent, but pretty minor.",
+      "revId": "d253738e032af7af29adfa11a29bf05e42b2e230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
