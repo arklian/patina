@@ -16,6 +16,24 @@
       "message": "nit: I feel like MainPage would be more consistent, but pretty minor.",
       "revId": "d253738e032af7af29adfa11a29bf05e42b2e230",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdc38593_16925890",
+        "filename": "js/src/personal/manny/sections/MannyMain.page.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2024-09-04T20:32:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b3e0e309_f4c98bf4",
+      "revId": "d253738e032af7af29adfa11a29bf05e42b2e230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
