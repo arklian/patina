@@ -1,0 +1,66 @@
+.contactSection {
+  background-color: #1c1c1e;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 80px; /* Adjust the width to make it shorter */
+  height: 10px;
+  background-color: #8298b0;
+  left: 50%; /* Start from the center */
+  transform: translateX(35%); /* Move it slightly to the right */
+  bottom: -5px; /* Adjust the distance below the text */
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #e1e1e1;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  border: 1px solid #444;
+}
+
+.submitButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 2px solid #8298b0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.submitButton:hover {
+  color: #8298b0;
+}

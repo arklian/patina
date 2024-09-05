@@ -5,6 +5,7 @@ import { Hero } from '@/personal/manny/sections/Hero.tsx'
 import { HeaderSimple } from '@/personal/manny/components/HeaderSimple.tsx'
 import { About } from './About.tsx'
 import { Projects } from '@/personal/manny/sections/Projects.tsx'
+import { ContactSection } from '@/personal/manny/sections/Contact.tsx'
 
 export function MainPage() {
   return (
@@ -13,6 +14,7 @@ export function MainPage() {
       <HeaderSimple />
       <About />
       <Projects />
+      <ContactSection />
     </MantineProvider>
   )
 }
