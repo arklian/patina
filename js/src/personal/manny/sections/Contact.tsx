@@ -41,6 +41,12 @@ export const ContactSection = () => {
 
       if (response.ok) {
         setStatus('Message sent successfully!')
+        // Reset the form fields after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        })
       } else {
         setStatus('Failed to send message. Please try again.')
       }
@@ -56,9 +62,7 @@ export const ContactSection = () => {
           {'Contact'}
         </Title>
         <Text className={styles.subtitle}>
-          {
-            "Have a question or want to work together? Leave your details and I'll"
-          }
+          {"Want to Reach out? Leave your details and I'll "}
           {'get back to you as soon as possible.'}
         </Text>
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -68,7 +72,7 @@ export const ContactSection = () => {
             className={styles.input}
             required
             onChange={handleChange}
-            value={formData.name}
+            value={formData.name} // Controlled input
           />
           <TextInput
             name="email"
@@ -76,7 +80,7 @@ export const ContactSection = () => {
             className={styles.input}
             required
             onChange={handleChange}
-            value={formData.email}
+            value={formData.email} // Controlled input
           />
           <Textarea
             name="message"
@@ -85,7 +89,7 @@ export const ContactSection = () => {
             required
             minRows={4}
             onChange={handleChange}
-            value={formData.message}
+            value={formData.message} // Controlled input
           />
           <Button type="submit" className={styles.submitButton}>
             {'SUBMIT'}
