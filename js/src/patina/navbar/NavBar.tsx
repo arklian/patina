@@ -1,15 +1,15 @@
 import {
-  Menu,
-  Group,
-  Center,
-  Burger,
-  Text,
-  Drawer,
-  ScrollArea,
-  UnstyledButton,
   Affix,
-  Space,
+  Burger,
+  Center,
+  Drawer,
+  Group,
+  Menu,
   NavLink,
+  ScrollArea,
+  Space,
+  Text,
+  UnstyledButton,
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
@@ -32,7 +32,7 @@ const links = [
     label: 'For Students',
     subLinks: [
       { link: '/mentorship', label: 'Mentorship' },
-      { link: '/scholarship', label: 'Scholarship' },
+      // { link: '/scholarship', label: 'Scholarship' },
       { link: '/internship', label: 'Internship' },
     ],
   },

@@ -11,19 +11,27 @@ const detailsMap: CardsProps[] = [
     alt: imageUrls.communityHome.alt,
     link: '/mentorship',
   },
-  {
-    title: 'Scholarship',
-    details: 'Annual scholarship fund for under resourced students.',
-    img: imageUrls.scholarshipHome.src,
-    alt: imageUrls.scholarshipHome.alt,
-    link: '/scholarship',
-  },
+  // {
+  //   title: 'Scholarship',
+  //   details: 'Annual scholarship fund for under resourced students.',
+  //   img: imageUrls.scholarshipHome.src,
+  //   alt: imageUrls.scholarshipHome.alt,
+  //   link: '/scholarship',
+  // },
   {
     title: "Internship '24",
     details: 'Building the skills of the next generation through the summer.',
     img: imageUrls.mentorshipHome.src,
     alt: imageUrls.mentorshipHome.alt,
     link: '/internship',
+  },
+  {
+    title: 'Events',
+    details:
+      'Join us for events, where you can form new connections and maybe learn something new!',
+    img: imageUrls.scholarshipHome.src,
+    alt: imageUrls.scholarshipHome.alt,
+    link: '/events',
   },
 ]
 
