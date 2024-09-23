@@ -26,7 +26,7 @@ export function MentorshipPage() {
           'Sophomores or juniors currently enrolled in a US undergraduate program can apply.'
         }
         <br />
-        {'Applications are now open for Fall 2024!'}
+        {'Applications are closed for Fall 2024.'}
       </Text>
     </div>
   )
@@ -38,7 +38,7 @@ export function MentorshipPage() {
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}
         buttonLink="https://docs.google.com/forms/d/195CMB4BcxKAyh72im-eWWCj10SFRB2bFcQGMmHYdzPs/viewform"
-        buttonText="Apply to be a mentee"
+        buttonText="Join the waitlist to be a mentee"
         buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />
