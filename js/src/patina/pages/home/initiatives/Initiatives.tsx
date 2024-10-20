@@ -31,7 +31,7 @@ const detailsMap: CardsProps[] = [
       'Join us for events, where you can form new connections and maybe learn something new!',
     img: imageUrls.scholarshipHome.src,
     alt: imageUrls.scholarshipHome.alt,
-    link: '/events',
+    link: '/community',
   },
 ]
 

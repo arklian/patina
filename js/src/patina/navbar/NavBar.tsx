@@ -45,7 +45,7 @@ const links = [
     ],
   },
   { link: '/community', label: 'Events' },
-  { link: '/blog', label: 'Blog' },
+  // { link: '/blog', label: 'Blog' },
   // { label: 'Donate' },
 ]
 
