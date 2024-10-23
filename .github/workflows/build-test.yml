@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: 22
+          java-version: 23
       - uses: gradle/actions/setup-gradle@v4
       - working-directory: ./js
         run: |
