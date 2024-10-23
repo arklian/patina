@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef7fa20d_f2daeb5a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-10-23T09:11:04Z",
+      "side": 1,
+      "message": "Need to bypass the ci checks since github only reads it from main.",
+      "revId": "580ca4a14006c7a191e10f50e9d8a9406e1aaadd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
