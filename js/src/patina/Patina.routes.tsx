@@ -30,8 +30,8 @@ export const PatinaRoutes = [
     element: <TeamPage />,
   },
   {
-    path: 'community',
-    description: 'Community',
+    path: 'events',
+    description: 'Events',
     element: <CommunityPage />,
   },
   {
