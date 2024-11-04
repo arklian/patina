@@ -39,6 +39,23 @@
       "message": "The failing tests definitely have to do with Java versions, but not sure exactly why. Are you sure you\u0027re on top of main?",
       "revId": "0f9aadfc5ed38584e5f81e155fc6e95fb4110288",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "709fa8ca_89f32d15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-04T21:46:14Z",
+      "side": 1,
+      "message": "We might need to bump the gradle version, but haven\u0027t dug more. \nhttps://stackoverflow.com/questions/71033010/intellij-gradle-project-error-unsupported-class-file-major-version-61\nhttps://docs.gradle.org/current/userguide/compatibility.html#java",
+      "revId": "0f9aadfc5ed38584e5f81e155fc6e95fb4110288",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
