@@ -44,7 +44,7 @@ const links = [
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },
-  { link: '/community', label: 'Events' },
+  { link: '/events', label: 'Events' },
   // { link: '/blog', label: 'Blog' },
   // { label: 'Donate' },
 ]
