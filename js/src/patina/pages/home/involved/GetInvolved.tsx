@@ -34,7 +34,7 @@ export function GetInvolved() {
           description={
             'Join us for events, where you can form new connections and maybe learn something new!'
           }
-          href={'/community'}
+          href={'/events'}
         />
       </div>
     </div>
