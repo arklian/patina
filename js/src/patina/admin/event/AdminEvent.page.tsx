@@ -12,6 +12,7 @@ import { notifications } from '@mantine/notifications'
 import { DatePickerInput } from '@mantine/dates'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import styles from '@/patina/admin/event/AdminEvent.module.css'
+import { EditEvent } from './EditEvent.tsx'
 
 export function AdminEventPage() {
   const [name, setName] = useState('')
@@ -132,6 +133,7 @@ export function AdminEventPage() {
           <Button type="submit">{'Delete'}</Button>
         </Stack>
       </form>
+      <EditEvent />
     </Container>
   )
 }
