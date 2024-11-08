@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9aa33837_5104e981",
+        "filename": "gradle/wrapper/gradle-wrapper.properties",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-08T03:30:57Z",
+      "side": 1,
+      "message": "nit: This should likely be its own commit.",
+      "revId": "934716c7d7f91cdf08a7299846dced07ff3cb55e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
