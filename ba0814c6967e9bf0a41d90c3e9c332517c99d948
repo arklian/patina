@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b3cb722_e8a62f73",
+        "filename": "js/src/personal/manny/sections/Contact.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-11T19:35:17Z",
+      "side": 1,
+      "message": "Reach being capital seems wrong. Also the sentence isn\u0027t finished.",
+      "revId": "ba0814c6967e9bf0a41d90c3e9c332517c99d948",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
