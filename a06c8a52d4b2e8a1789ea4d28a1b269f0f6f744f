@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "698fb386_adec6ed7",
+        "filename": "js/src/personal/manny/contact-form-backend/personalWebsiteBE/src/main/java/com/example/demo/controller/ContactFormController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-11T19:34:40Z",
+      "side": 1,
+      "message": "I would likely put this in a different file. Usually I stick to one class per file, unless it\u0027s like a subclass somehow.",
+      "revId": "a06c8a52d4b2e8a1789ea4d28a1b269f0f6f744f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfbc4ab5_054d327a",
+        "filename": "js/src/personal/manny/contact-form-backend/personalWebsiteBE/src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-11T19:34:40Z",
+      "side": 1,
+      "message": "uhhhhhhhhhhhhhh I really hope it\u0027s not this anymore.",
+      "revId": "a06c8a52d4b2e8a1789ea4d28a1b269f0f6f744f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
