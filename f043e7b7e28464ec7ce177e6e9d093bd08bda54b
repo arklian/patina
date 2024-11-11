@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5acd35c0_4a22dc11",
+        "filename": "js/src/patina/admin/event/EventDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-11T21:15:11Z",
+      "side": 1,
+      "message": "nit: usually I go for TODO(Martin):",
+      "revId": "f043e7b7e28464ec7ce177e6e9d093bd08bda54b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
