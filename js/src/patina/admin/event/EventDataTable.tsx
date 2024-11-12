@@ -1,4 +1,5 @@
 import { DataTable } from 'mantine-datatable'
+import { EventEditActions } from './EventEditActions.tsx'
 
 const PAGE_SIZES = [10, 20, 50]
 
@@ -17,6 +18,7 @@ type EventDataTableProps = {
   limit: number
   setLimit: any
 }
+
 export function EventDataTable({
   records,
   total,
@@ -39,8 +41,7 @@ export function EventDataTable({
           accessor: 'actions',
           title: 'Actions',
           width: '0%',
-          // TODO: [Martin] Enable edit/delete actions
-          // render: (row) => <EditActions blogID={row.id} />,
+          render: (row) => <EventEditActions eventID={row.id} />,
         },
       ]}
       records={records}
