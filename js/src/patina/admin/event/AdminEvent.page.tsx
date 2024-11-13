@@ -19,7 +19,6 @@ export function AdminEventPage() {
   const [message, setMessage] = useState('')
   const [location, setLocation] = useState('')
   const [date, setDate] = useState<Date | null>()
-  const [eventId, setEventId] = useState('')
 
   const handleAdd = async (event: { preventDefault: () => void }) => {
     event.preventDefault()
@@ -37,29 +36,6 @@ export function AdminEventPage() {
         notifications.show({
           title: 'Event Submitted',
           message: 'Your Event titled: was successfully submitted!',
-          color: 'green',
-          position: 'top-right',
-        })
-      } else {
-        console.error('HTTP error:', response.statusText)
-        // Handle the HTTP error response here
-      }
-    } catch (error) {
-      console.error('Fetch error:', error)
-    }
-  }
-
-  const handleDelete = async (event: { preventDefault: () => void }) => {
-    event.preventDefault()
-
-    try {
-      const response = await fetch(`/api/admin/event/delete/${eventId}`, {
-        method: 'DELETE',
-      })
-      if (response.ok) {
-        notifications.show({
-          title: 'Event Deleted',
-          message: 'Your Event titled: was successfully Deleted!',
           color: 'green',
           position: 'top-right',
         })
@@ -121,18 +97,6 @@ export function AdminEventPage() {
         </Stack>
       </form>
       <Space h="xl" />
-      <form onSubmit={handleDelete}>
-        <Stack>
-          <Title order={3}>{'Delete Event'}</Title>
-          <TextInput
-            label="Event ID"
-            value={eventId}
-            onChange={(event) => setEventId(event.currentTarget.value)}
-            required
-          />
-          <Button type="submit">{'Delete'}</Button>
-        </Stack>
-      </form>
       <EditEvent />
     </Container>
   )
