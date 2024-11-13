@@ -41,7 +41,9 @@ export function EventDataTable({
           accessor: 'actions',
           title: 'Actions',
           width: '0%',
-          render: (row) => <EventEditActions eventID={row.id} />,
+          render: (row) => (
+            <EventEditActions eventID={row.id} eventName={row.name} />
+          ),
         },
       ]}
       records={records}
