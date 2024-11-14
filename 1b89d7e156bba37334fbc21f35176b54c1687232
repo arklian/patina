@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3e9541b_141eda99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-14T15:50:26Z",
+      "side": 1,
+      "message": "Looking good!",
+      "revId": "1b89d7e156bba37334fbc21f35176b54c1687232",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f34354e_f05562d7",
+        "filename": "js/src/patina/admin/event/EventEditActions.tsx",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-14T15:50:26Z",
+      "side": 1,
+      "message": "What is this for? \nI think `event.preventDefault()` should pretty much always be commented on why it\u0027s there.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 26
+      },
+      "revId": "1b89d7e156bba37334fbc21f35176b54c1687232",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
