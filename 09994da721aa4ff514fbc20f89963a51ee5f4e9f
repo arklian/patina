@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b555a029_4408b855",
+        "filename": "js/src/patina/admin/event/EventEditActions.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2024-11-14T15:51:22Z",
+      "side": 1,
+      "message": "If you have both icons in here, your state can\u0027t just be open and closed.",
+      "revId": "09994da721aa4ff514fbc20f89963a51ee5f4e9f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
