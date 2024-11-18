@@ -1,5 +1,5 @@
-import { ActionIcon, UnstyledButton } from '@mantine/core'
-import { FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { ActionIcon, Text, UnstyledButton } from '@mantine/core'
+import { FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { ReactNode } from 'react'
 import styles from './Footer.module.css'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
@@ -16,6 +16,9 @@ export function Footer() {
             <PatinaBadge />
           </UnstyledButton>
         </div>
+        <Text px={30} fs="italic">
+          {'Patina Network is a 501(c)(3) non-profit organization.'}
+        </Text>
         <div className={styles.footerLinks}>
           <FooterIconLink href={'mailto:hi@patinanetwork.org'}>
             <FaEnvelope size={24} />

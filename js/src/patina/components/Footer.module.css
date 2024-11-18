@@ -1,6 +1,7 @@
 .footer {
   display: flex;
-  height: 56px;
+  min-height: 56px;
+  height: auto;
   width: 100%;
   justify-content: center;
   background-color: var(--mantine-color-dark-6);
