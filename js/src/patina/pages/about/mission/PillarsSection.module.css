@@ -37,7 +37,8 @@
   border-radius: 10px;
   width: 100%;
   text-align: center;
-  height: 224px;
+  min-height: 224px;
+  height: auto;
   justify-content: center;
 
   @mixin smaller-than $mantine-breakpoint-md {
