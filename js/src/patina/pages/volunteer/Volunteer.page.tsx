@@ -1,16 +1,11 @@
-import { Text, Button } from '@mantine/core'
+import { Button, Text } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { VolunteerCard } from './VolunteerCard'
 import { Forms } from '@/patina/components/Forms.tsx'
 import styles from './Volunteer.module.css'
-import {
-  modalContent1,
-  modalContent2,
-  modalContent3,
-  modalContent4,
-} from './modalContents.ts'
+import { modalContent3, modalContent4 } from './modalContents.ts'
 
 export function VolunteerPage() {
   const message = (
@@ -40,18 +35,18 @@ export function VolunteerPage() {
         buttonColor={'var(--mantine-color-patina-green-light)'}
       />
       <section className={styles.grid}>
-        <VolunteerCard
-          title="Social Media"
-          description="We are seeking a motivated and creative Social Media Intern to join our team. As an intern, you will play a crucial role in enhancing our online presence, engaging with our audience, and promoting our initiatives."
-          type="Remote/In-person"
-          modalContent={modalContent1}
-        />
-        <VolunteerCard
-          title="Graphic Design"
-          description="We are seeking a creative and motivated Graphic Design Intern to join our team. As an intern, you will play a vital role in visually communicating our mission through compelling design."
-          type="Remote/In-person"
-          modalContent={modalContent2}
-        />
+        {/*<VolunteerCard*/}
+        {/*  title="Social Media"*/}
+        {/*  description="We are seeking a motivated and creative Social Media Intern to join our team. As an intern, you will play a crucial role in enhancing our online presence, engaging with our audience, and promoting our initiatives."*/}
+        {/*  type="Remote/In-person"*/}
+        {/*  modalContent={modalContent1}*/}
+        {/*/>*/}
+        {/*<VolunteerCard*/}
+        {/*  title="Graphic Design"*/}
+        {/*  description="We are seeking a creative and motivated Graphic Design Intern to join our team. As an intern, you will play a vital role in visually communicating our mission through compelling design."*/}
+        {/*  type="Remote/In-person"*/}
+        {/*  modalContent={modalContent2}*/}
+        {/*/>*/}
         <VolunteerCard
           title="Legal Specialist"
           description="We are seeking a motivated Legal Specialist who will provide essential legal support to the organization, ensuring compliance with all applicable laws and regulations. This role will involve a wide range of legal tasks, from contract review to litigation support."
