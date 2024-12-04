@@ -165,31 +165,39 @@ export const imageUrls = {
   },
   cinthia: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/cinthia.png',
-    alt: 'Cinthia smiling at the camera.',
+    alt: 'Headshot of Cinthia.',
   },
   andrea: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/andrea.png',
-    alt: 'Andrea smiling at the camera.',
+    alt: 'Headshot of Andrea.',
   },
   celina: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/celina.png',
-    alt: 'Celina smiling at the camera.',
+    alt: 'Headshot of Celina.',
   },
   joan: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/joan.png',
-    alt: 'Joan smiling at the camera.',
+    alt: 'Headshot of Joan.',
   },
   kevin: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kevin.png',
-    alt: 'Kevin smiling at the camera.',
+    alt: 'Headshot of Kevin Oh.',
   },
   sara: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/sara.jpg',
-    alt: 'Sara smiling at the camera.',
+    alt: 'Headshot of Sara.',
   },
   henry: {
     src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/henry.png',
-    alt: 'Henry smiling at the camera.',
+    alt: 'Headshot of Henry.',
+  },
+  valerie: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/valerie.png',
+    alt: 'Headshot of Valerie.',
+  },
+  kevinma: {
+    src: 'https://patina-prod.nyc3.cdn.digitaloceanspaces.com/webimg/kevinma.png',
+    alt: 'Headshot of Kevin Ma.',
   },
   missionKnife: {
     src: 'https://patina-prod.nyc3.digitaloceanspaces.com/webimg/missionKnife.png',

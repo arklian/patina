@@ -31,8 +31,8 @@ export const boardMembers = [
   {
     name: 'Joan Lee',
     role: 'Board Member',
-    email: '',
-    linkedInUrl: '',
+    email: 'joan@patinanetwork.org',
+    linkedInUrl: 'https://www.linkedin.com/in/joxnlee/',
     webUrl: '',
     githubUrl: '',
     imageSrc: imageUrls.joan.src,
@@ -46,6 +46,33 @@ export const boardMembers = [
     githubUrl: '',
     imageSrc: imageUrls.kevin.src,
   },
+  {
+    name: 'Kevin Ma',
+    role: 'Board Member',
+    email: 'kevinma@patinanetwork.org',
+    linkedInUrl: 'https://www.linkedin.com/in/kevin-ma-cpa-811892119/',
+    webUrl: '',
+    githubUrl: '',
+    imageSrc: imageUrls.kevinma.src,
+  },
+  {
+    name: 'Henry Chen',
+    role: 'Board Member',
+    email: 'henry@patinanetwork.org',
+    linkedInUrl: 'https://www.linkedin.com/in/arklian/',
+    webUrl: '',
+    githubUrl: 'https://github.com/arklian',
+    imageSrc: imageUrls.henry.src,
+  },
+  {
+    name: 'Valerie Lin',
+    role: 'Board Member',
+    email: 'valerie@patinanetwork.org',
+    linkedInUrl: 'https://linkedin.com/in/xvalerielin',
+    webUrl: '',
+    githubUrl: '',
+    imageSrc: imageUrls.valerie.src,
+  },
 ]
 
 export const advisors = [
@@ -57,15 +84,6 @@ export const advisors = [
     webUrl: '',
     githubUrl: '',
     imageSrc: imageUrls.sara.src,
-  },
-  {
-    name: 'Henry Chen',
-    role: 'SWE Manager',
-    email: 'hjc77@cornell.edu',
-    linkedInUrl: 'https://www.linkedin.com/in/arklian/',
-    webUrl: '',
-    githubUrl: 'https://github.com/arklian',
-    imageSrc: imageUrls.henry.src,
   },
 ]
 
