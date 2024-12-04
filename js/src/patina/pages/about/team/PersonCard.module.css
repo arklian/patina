@@ -1,24 +1,22 @@
 .card {
   padding: 32px;
   border-radius: 12px;
-  width: 180px;
+  min-width: 240px;
+  flex: 1;
+  width: auto;
+  max-width: 300px;
   height: 320px;
 
   @mixin smaller-than $mantine-breakpoint-md {
     padding: 24px;
-    width: 164px;
-    height: 288px;
+    margin: auto;
+    max-width: 300px;
   }
 }
 
 .image {
   height: 148px;
   width: 148px;
-
-  @mixin smaller-than $mantine-breakpoint-md {
-    height: 120px;
-    width: 120px;
-  }
 }
 
 .email {

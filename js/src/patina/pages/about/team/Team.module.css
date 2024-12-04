@@ -1,0 +1,6 @@
+.title {
+  @mixin smaller-than $mantine-breakpoint-xs {
+    text-align: center;
+    width: 100%;
+  }
+}
