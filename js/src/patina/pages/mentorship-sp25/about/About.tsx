@@ -14,11 +14,11 @@ export function About() {
           }
           <p />
           {
-            'We also offer group activities designed to help you connect with other students and mentors while developing essential career skills, such as networking and interview preparation.'
+            'We also offer group activities designed to help you connect with other students and mentors while developing essential career skills. Our weekly topics include networking, resume reviews, interview preparation, giving and receiving feedback, managing difficult professional conversations, and more!.'
           }
           <p />
           {
-            "Together, we will also explore topics rarely discussed in the workplace, like what it means to be AANHPI in today’s professional environment. We'll explore various AANHPI cultures and celebrate our diverse backgrounds."
+            'Together, we will also explore important topics, such as mental health and resiliency, sharing struggles we face, and what it means to be AANHPI in today’s professional environment. We’ll dive into our various cultures, celebrate our diverse backgrounds, and build community.'
           }
           <p />
           {
