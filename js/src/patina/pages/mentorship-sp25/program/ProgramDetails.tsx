@@ -23,11 +23,13 @@ export function ProgramDetails() {
       <Space h={22} />
       <Group className={styles.timelineSection}>
         <Stack align={'center'}>
-          <ProgrammingSummary />
-          <Space h={8} />
           <ProgramTimeline />
         </Stack>
-        <ProgramText />
+        <Stack className={styles.programSection} align={'center'}>
+          <ProgrammingSummary />
+          <Space h={8} />
+          <ProgramText />
+        </Stack>
       </Group>
     </Stack>
   )
@@ -49,44 +51,69 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'September 14'}
+              {'January 27'}
             </Text>
           }
           fw={700}
         >
+          <Text mt={4}>{'Applications close'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'February 2'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'Virtual onboarding meeting'}</Text>
           <Text mt={4}>{'Introduction to your mentor'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'September 22'}
-            </Text>
-          }
-        >
-          <Text mt={4}>{'Virtual onboarding meeting'}</Text>
-        </Timeline.Item>
-
-        <Timeline.Item
-          title={
-            <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of September 23'}
+              {'Week of February 3'}
             </Text>
           }
           lineVariant="dashed"
         >
-          <Text mt={4}>{'Beginning of the program'}</Text>
+          <Text mt={4}>{'First week of the program'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of November 22'}
+              {'Week of February 17'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'In Person Meetup #1'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'Week of March 17'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'In Person Meetup #2'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'Week of April 4'}
             </Text>
           }
           lineVariant="dashed"
         >
           <Text mt={4}>{'Last week of the program'}</Text>
+          <Text mt={4}>{'In Person Meetup #3'}</Text>
         </Timeline.Item>
       </Timeline>
     </>
@@ -155,31 +182,48 @@ function ProgramText() {
       <div className={styles.programDescription}>
         <Text inherit>
           {
-            'For the fall semester, we are looking to pair mentees one-on-one with a mentor, so that each mentee can have an experience tailored to their individual situation, needs and direction.'
+            "For the Spring '25 semester, we're looking to pair mentees one-on-one with a mentor, so that each mentee can have an experience tailored to their individual situation, needs and direction."
           }
         </Text>
         <p />
         <Text inherit>
           {
-            "For the duration of the program, mentor and mentee pairs should meet weekly at any time that works for you two. Come with topics and questions that you'd like to get your mentor's perspective on!"
+            'For the duration of the program, mentor-mentee pairs should meet weekly at a time that works best for both individuals. Come prepared with topics and questions to get valuable insights from your mentor!'
           }
         </Text>
         <p />
         <Text inherit>
-          {'In addition, we will hold two monthly events with all the mentees.'}
+          {'In addition, we will hold '}
+          <Text inherit span c={theme.other.patinaBlueLight}>
+            {'two monthly events'}
+          </Text>
+          {' with all the mentees.'}
         </Text>
         <p />
-        <Text inherit>
-          {
-            'The first will be virtual sessions to address common topics that would be beneficial regardless of what field or industry you join in the future, such as networking, resume writing, and championing diversity. These sessions will be led by volunteers from Patina, and not your individual mentor.'
-          }
-        </Text>
-        <p />
-        <Text inherit>
-          {
-            'The other will be an in-person gathering where all of the mentors and mentees can meet, to allow everyone to get to know each other and build a sense of community. We aim to have a smaller, more intimate cohort for this program, so we can plan this programming around everyone’s availability. We expect everyone to do their best to attend these sessions to get the most out of the program.'
-          }
-        </Text>
+        <List ml={24} type="ordered">
+          <List.Item>
+            <Text span c={theme.other.patinaBlueLight} fw={800}>
+              {'Virtual Sessions: '}
+            </Text>
+
+            <Text inherit span>
+              {
+                'These sessions will focus on essential career topics such as networking, resume writing, championing diversity, managing difficult conversations, and building resiliency. Led by volunteers from Patina (not your individual mentor), these discussions are designed to help you develop transferable skills for any industry.'
+              }
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text span c={theme.other.patinaBlueLight} fw={800}>
+              {'In-Person Gatherings: '}
+            </Text>
+
+            <Text inherit span>
+              {
+                'These events will bring together all mentors and mentees to foster connection and build a sense of community. We will do our best to schedule these sessions around student evening classes, but we cannot guarantee full accommodation for everyone’s availability.'
+              }
+            </Text>
+          </List.Item>
+        </List>
         <p />
 
         <Text inherit fw={800} c={theme.other.patinaBlueLight}>

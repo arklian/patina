@@ -7,14 +7,18 @@
 }
 
 .timelineSection {
-  margin-bottom: 24px;
   justify-content: center;
   align-items: flex-start;
 }
 
-.programDescription {
+.programSection {
+  justify-content: center;
+  align-items: flex-start;
   flex: 1;
   margin-inline: 64px;
+}
+
+.programDescription {
   min-width: 300px;
   font-size: 20px;
 
