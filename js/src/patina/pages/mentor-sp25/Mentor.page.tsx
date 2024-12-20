@@ -6,8 +6,7 @@ import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentor.module.css'
 import { ProgramDetails } from '@/patina/pages/mentor-sp25/program/ProgramDetails.tsx'
 
-const mentorGoogleFormUrl =
-  'https://docs.google.com/forms/d/1yWPT7gYtpiKbBO6IKgcTygTzuHdAZaSomgu0BnDW23s/viewform'
+const mentorGoogleFormUrl = 'https://forms.gle/cCGBxbDVGoWb9nyn7'
 
 /**
  * Mentor page allows people to apply to be mentors.
