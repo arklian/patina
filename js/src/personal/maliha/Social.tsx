@@ -1,7 +1,7 @@
 import { Anchor, Stack } from '@mantine/core'
 import { CgMail } from 'react-icons/cg'
 import { CiLinkedin } from 'react-icons/ci'
-import { FaInstagram, FaGithubSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaInstagram } from 'react-icons/fa'
 import { useHover } from '@mantine/hooks'
 import styles from './Left.module.css'
 
@@ -82,6 +82,7 @@ function SocialIcon({
   const iconColor = hovered ? '#c02366' : '#d93939'
   return (
     <Anchor href={href} target="_blank">
+      {/* @ts-ignore Bug in Mantine, can be removed in 7.15.2 */}
       <div ref={ref}>
         <Icon
           size={size}
