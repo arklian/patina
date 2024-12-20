@@ -1,10 +1,10 @@
 import {
-  Title,
-  Text,
-  NavLink,
-  Stack,
   Center,
   Container,
+  NavLink,
+  Stack,
+  Text,
+  Title,
   useMantineTheme,
 } from '@mantine/core'
 import { IconHome2 } from '@tabler/icons-react'
@@ -44,9 +44,9 @@ export function Welcome() {
               {'Personal Portfolio Websites'}
             </Text>
           </Title>
-          {PersonalRoutes.map((routeObj) => (
+          {PersonalRoutes.map((routeObj, i) => (
             <NavLink
-              key={routeObj.path}
+              key={routeObj.path || i}
               href={`/personal/${routeObj.path ?? ''}`}
               label={routeObj.description ?? '/'}
               leftSection={<IconHome2 size="1rem" stroke={1.5} />}

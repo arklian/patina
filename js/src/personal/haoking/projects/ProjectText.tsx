@@ -33,6 +33,7 @@ export function ProjectText({
   }
   return (
     <div>
+      {/* @ts-ignore Bug in Mantine, can be removed in 7.15.2 */}
       <div className={styles.project} ref={ref}>
         <Group>
           <Title>

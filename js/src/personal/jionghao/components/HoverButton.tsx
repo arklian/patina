@@ -4,6 +4,7 @@ import { Button } from '@mantine/core'
 import styles from './Header.module.css'
 
 export function HoverButton(props: any) {
+  // @ts-ignore Bug in Mantine, can be removed in 7.15.2
   const {
     hovered,
     ref,
