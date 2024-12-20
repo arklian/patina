@@ -1,10 +1,10 @@
 import { Button, Center, Space, Text, useMantineTheme } from '@mantine/core'
 import { Hero } from '@/patina/components/Hero'
-import { About } from '@/patina/pages/mentor/about/About'
+import { About } from '@/patina/pages/mentor-sp25/about/About'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentor.module.css'
-import { ProgramDetails } from '@/patina/pages/mentor/program/ProgramDetails.tsx'
+import { ProgramDetails } from '@/patina/pages/mentor-sp25/program/ProgramDetails.tsx'
 
 const mentorGoogleFormUrl =
   'https://docs.google.com/forms/d/1yWPT7gYtpiKbBO6IKgcTygTzuHdAZaSomgu0BnDW23s/viewform'

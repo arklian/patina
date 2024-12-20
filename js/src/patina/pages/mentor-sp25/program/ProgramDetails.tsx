@@ -49,44 +49,69 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'September 14'}
+              {'January 27'}
             </Text>
           }
           fw={700}
         >
-          <Text mt={4}>{'Introduction to your mentee'}</Text>
+          <Text mt={4}>{'Applications close'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'September 22'}
-            </Text>
-          }
-        >
-          <Text mt={4}>{'Virtual onboarding meeting'}</Text>
-        </Timeline.Item>
-
-        <Timeline.Item
-          title={
-            <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of September 23'}
+              {'February 2'}
             </Text>
           }
           lineVariant="dashed"
         >
-          <Text mt={4}>{'Beginning of the program'}</Text>
+          <Text mt={4}>{'Virtual onboarding meeting'}</Text>
+          <Text mt={4}>{'Introduction to your mentor'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of November 22'}
+              {'Week of February 3'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'First week of the program'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'Week of February 17'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'In Person Meetup #1'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'Week of March 17'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'In Person Meetup #2'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaBlueLight}>
+              {'Week of April 4'}
             </Text>
           }
           lineVariant="dashed"
         >
           <Text mt={4}>{'Last week of the program'}</Text>
+          <Text mt={4}>{'In Person Meetup #3'}</Text>
         </Timeline.Item>
       </Timeline>
     </>
@@ -139,21 +164,31 @@ function ProgramText() {
   return (
     <>
       <div className={styles.programDescription}>
+        <Text inherit fw={800} c={theme.other.patinaBlueLight}>
+          {"Make a Difference: Become a Mentor for the Spring '25 Mentorship"}
+        </Text>
+        <p />
         <Text inherit>
           {
-            'For the fall semester, we are looking to pair mentees one-on-one with a mentor, so that each mentee can have an experience tailored to their individual situation, needs and direction.'
+            'We’re looking for professionals to serve as mentors for our Spring ‘25 cohort. Our program is unique in that we strive to individually pair mentees with mentors who share similar experiences, creating a space for connection and cultural understanding while fostering professional growth.'
           }
         </Text>
         <p />
         <Text inherit>
           {
-            'For the duration of the program, mentor and mentee pairs should meet weekly at any time that works for you two. Accommodate the mentee on the topics and questions that they have, and suggest your own topics that you think would be helpful for them.'
+            'As a mentor, you’ll meet weekly with your mentee at a mutually convenient time. Mentees will come prepared with questions and topics to discuss, but we encourage mentors to share their own perspectives on subjects like navigating career paths, building professional confidence, and managing challenges in the workplace.'
           }
         </Text>
         <p />
         <Text inherit>
           {
-            'In addition, we are looking to hold a monthly in-person gathering where all of the mentors and mentees can meet, to allow everyone to get to know each other and build a sense of community. We aim to have a smaller, more intimate cohort for this program, so we can plan this programming around everyone’s availability. We expect everyone to do their best to attend these sessions to get the most out of the program.'
+            'In addition to your one-on-one meetings, mentors are invited to attend '
+          }
+          <Text inherit span c={theme.other.patinaBlueLight}>
+            {'monthly in-person'}
+          </Text>
+          {
+            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. While we will try our best to schedule around students’ evening classes, we cannot guarantee full accommodation for everyone. The exact dates will be determined by the first week of the mentorship.'
           }
         </Text>
         <p />
