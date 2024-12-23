@@ -51,7 +51,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'January 27'}
+              {'Jan 27'}
             </Text>
           }
           fw={700}
@@ -62,7 +62,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'February 2'}
+              {'Feb 2nd, Sun 5:00-7:00pm'}
             </Text>
           }
           lineVariant="dashed"
@@ -74,7 +74,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of February 3'}
+              {'Week of Feb 3rd'}
             </Text>
           }
           lineVariant="dashed"
@@ -85,7 +85,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of February 17'}
+              {'Feb 19th, Wed 6:30-8:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -96,7 +96,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of March 17'}
+              {'Mar 13th, Thur 6:30-8:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -107,7 +107,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of April 4'}
+              {'Apr 4th, Fri 5:30-7:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -116,6 +116,9 @@ function ProgramTimeline() {
           <Text mt={4}>{'In Person Meetup #3'}</Text>
         </Timeline.Item>
       </Timeline>
+      <Text size={'xs'} mt={4} c={theme.other.patinaBlueLight}>
+        {'* Dates tentative, but will be finalized by the first week.'}
+      </Text>
     </>
   )
 }
@@ -219,7 +222,7 @@ function ProgramText() {
 
             <Text inherit span>
               {
-                'These events will bring together all mentors and mentees to foster connection and build a sense of community. We will do our best to schedule these sessions around student evening classes, but we cannot guarantee full accommodation for everyone’s availability.'
+                'These events will bring together all mentors and mentees to foster connection and build a sense of community. We will try our best to schedule around students’ evening classes, so we may reschedule the current tentative dates if too many conflicts exist, but the dates will be solidified by the first week of the mentorship.'
               }
             </Text>
           </List.Item>

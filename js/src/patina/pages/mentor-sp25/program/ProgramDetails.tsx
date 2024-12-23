@@ -49,7 +49,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'January 27'}
+              {'Jan 27'}
             </Text>
           }
           fw={700}
@@ -60,19 +60,19 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'February 2'}
+              {'Feb 2nd, Sun 5:00-7:00pm'}
             </Text>
           }
           lineVariant="dashed"
         >
           <Text mt={4}>{'Virtual onboarding meeting'}</Text>
-          <Text mt={4}>{'Introduction to your mentor'}</Text>
+          <Text mt={4}>{'Introduction to your mentee'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of February 3'}
+              {'Week of Feb 3rd'}
             </Text>
           }
           lineVariant="dashed"
@@ -83,7 +83,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of February 17'}
+              {'Feb 19th, Wed 6:30-8:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -94,7 +94,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of March 17'}
+              {'Mar 13th, Thur 6:30-8:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -105,7 +105,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of April 4'}
+              {'Apr 4th, Fri 5:30-7:30pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -114,6 +114,9 @@ function ProgramTimeline() {
           <Text mt={4}>{'In Person Meetup #3'}</Text>
         </Timeline.Item>
       </Timeline>
+      <Text size={'xs'} mt={4} c={theme.other.patinaBlueLight}>
+        {'* Dates tentative, but will be finalized by the first week.'}
+      </Text>
     </>
   )
 }
@@ -170,7 +173,7 @@ function ProgramText() {
         <p />
         <Text inherit>
           {
-            'We’re looking for professionals to serve as mentors for our Spring ‘25 cohort. Our program is unique in that we strive to individually pair mentees with mentors who share similar experiences, creating a space for connection and cultural understanding while fostering professional growth.'
+            'We’re looking for professionals to serve as mentors for our Spring ‘25 cohort. We strive to individually pair mentees 1:1 with mentors who share similar experiences, creating a space for connection and cultural understanding while fostering professional growth.'
           }
         </Text>
         <p />
@@ -188,7 +191,7 @@ function ProgramText() {
             {'monthly in-person'}
           </Text>
           {
-            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. While we will try our best to schedule around students’ evening classes, we cannot guarantee full accommodation for everyone. The exact dates will be determined by the first week of the mentorship.'
+            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. We will try our best to schedule around students’ evening classes, so we may reschedule the current tentative dates if too many conflicts exist, but the dates will be solidified by the first week of the mentorship.'
           }
         </Text>
         <p />
