@@ -21,7 +21,7 @@ export function MentorshipPage() {
         }
         <p />
         {'Students enrolled in an undergraduate program based in NYC are eligible. ' +
-          'Preference will be given to sophomores but all are encouraged to apply!'}
+          'Freshmen and sophomores may get the most value from the programming but all are encouraged to apply!'}
         <p />
         {'Applications for Spring 2025 are now open!'}
       </Text>
