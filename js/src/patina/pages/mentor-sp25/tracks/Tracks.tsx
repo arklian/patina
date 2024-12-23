@@ -4,7 +4,7 @@ import styles from './Tracks.module.css'
 // Track Details for different groups of mentees.
 export function Tracks() {
   return (
-    <Paper className={styles.about}>
+    <Paper className={styles.tracks}>
       <Stack>
         <Flex justify={'center'}>
           <Title order={2}>{'Program Tracks'}</Title>
@@ -25,12 +25,7 @@ export function Tracks() {
         </List>
         <Text>
           {
-            'As many of our mentors are in the Tech and Finance industries, we can include industry specific programming for these. However, we still want to offer mentorship to students looking to join any industry, so we are also providing a Leadership track.'
-          }
-        </Text>
-        <Text>
-          {
-            'We will do our best to match mentees in the Leadership Track to mentors in their prospective fields, but finding exact matches will be more difficult and programming will focus more on generally useful skills.'
+            'The Tech and Finance Tracks will incorporate industry specific topics while the Leadership Track will look to develop various professional skills. In the leadership track, we will match pairs based on a number of factors, such as leadership style, personal strengths, and career industry.'
           }
         </Text>
       </Stack>

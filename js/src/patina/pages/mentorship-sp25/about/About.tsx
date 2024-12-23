@@ -14,7 +14,7 @@ export function About() {
           }
           <p />
           {
-            'We also offer group activities designed to help you connect with other students and mentors while developing essential career skills. Our weekly topics include networking, resume reviews, interview preparation, giving and receiving feedback, managing difficult professional conversations, and more!.'
+            'We also offer group activities designed to help you connect with other students and mentors while developing essential career skills. Our weekly topics include networking, resume reviews, interview preparation, giving and receiving feedback, managing difficult professional conversations, and more!'
           }
           <p />
           {

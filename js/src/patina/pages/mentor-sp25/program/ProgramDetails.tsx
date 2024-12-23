@@ -179,7 +179,7 @@ function ProgramText() {
         <p />
         <Text inherit>
           {
-            'As a mentor, you’ll meet weekly with your mentee at a mutually convenient time. Mentees will come prepared with questions and topics to discuss, but we encourage mentors to share their own perspectives on subjects like navigating career paths, building professional confidence, and managing challenges in the workplace.'
+            'As a mentor, you’ll meet weekly with your mentee at a mutually convenient time virtually or in person. Mentees will come prepared with questions and topics to discuss, but we encourage mentors to share their own perspectives on subjects like navigating career paths, building professional confidence, and managing challenges in the workplace.'
           }
         </Text>
         <p />
@@ -191,7 +191,7 @@ function ProgramText() {
             {'monthly in-person'}
           </Text>
           {
-            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. We will try our best to schedule around students’ evening classes, so we may reschedule the current tentative dates if too many conflicts exist, but the dates will be solidified by the first week of the mentorship.'
+            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. Based on availability, we may reschedule the dates if too many conflicts exist, but dates will be finalized by first week.'
           }
         </Text>
         <p />
