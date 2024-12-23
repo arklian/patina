@@ -222,7 +222,7 @@ function ProgramText() {
 
             <Text inherit span>
               {
-                'These events will bring together all mentors and mentees to foster connection and build a sense of community. Based on availability, we may reschedule the dates if too many conflicts exist, but dates will be finalized by first week.'
+                'These events will bring together all mentors and mentees to foster connection and build a sense of community. Dinner will be catered from a local restaurant! Based on availability, we may reschedule the dates if too many conflicts exist, but dates will be finalized by first week.'
               }
             </Text>
           </List.Item>

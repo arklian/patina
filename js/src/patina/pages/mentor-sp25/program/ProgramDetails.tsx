@@ -191,7 +191,7 @@ function ProgramText() {
             {'monthly in-person'}
           </Text>
           {
-            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. Based on availability, we may reschedule the dates if too many conflicts exist, but dates will be finalized by first week.'
+            ' gatherings with all mentors and mentees. These events help build a sense of community within the program. Dinner will be catered from a local restaurant! Based on availability, we may reschedule the dates if too many conflicts exist, but dates will be finalized by first week.'
           }
         </Text>
         <p />
