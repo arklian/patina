@@ -85,7 +85,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Feb 19th, Wed 6:30-8:30pm*'}
+              {'Feb 19th, Wed 6:30-8:00pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -96,7 +96,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Mar 13th, Thur 6:30-8:30pm*'}
+              {'Mar 12th, Wed 6:30-8:00pm*'}
             </Text>
           }
           lineVariant="dashed"
@@ -231,7 +231,7 @@ function ProgramText() {
 
         <Text inherit fw={800} c={theme.other.patinaBlueLight}>
           {
-            'The overall commitment for mentees is expected to be around 6 hrs/month.'
+            'The overall commitment for mentees is expected to be around 7 hrs/month.'
           }
         </Text>
       </div>
