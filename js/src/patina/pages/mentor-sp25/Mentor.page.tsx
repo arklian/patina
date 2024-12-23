@@ -5,6 +5,7 @@ import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentor.module.css'
 import { ProgramDetails } from '@/patina/pages/mentor-sp25/program/ProgramDetails.tsx'
+import { Tracks } from '@/patina/pages/mentor-sp25/tracks/Tracks.tsx'
 
 const mentorGoogleFormUrl = 'https://forms.gle/cCGBxbDVGoWb9nyn7'
 
@@ -35,6 +36,8 @@ export function MentorPage() {
       <About />
       <Space h={64} />
       <ProgramDetails />
+      <Space h={64} />
+      <Tracks />
       <Space h={64} />
       <ApplyButton />
       <Space h={64} />

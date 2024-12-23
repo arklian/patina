@@ -2,11 +2,11 @@ import { Space, Text } from '@mantine/core'
 import { About } from '@/patina/pages/mentorship-sp25/about/About.tsx'
 import { Gain } from '@/patina/pages/mentorship-sp25/gain/Gain.tsx'
 import { Hero } from '@/patina/components/Hero'
-import { Details } from '@/patina/pages/mentorship-sp25/details/Details.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentorship.module.css'
 import { ProgramDetails } from '@/patina/pages/mentorship-sp25/program/ProgramDetails.tsx'
+import { Tracks } from '@/patina/pages/mentorship-sp25/tracks/Tracks.tsx'
 
 /**
  * MentorshipPage component renders a mentorship page layout with multiple sections.
@@ -42,8 +42,8 @@ export function MentorshipPage() {
       <Space h={64} />
       <ProgramDetails />
       <Space h={36} />
-      {/* Todo: Make Track Details */}
-      <Details />
+      <Tracks />
+      <Space h={64} />
       <Gain />
     </ContentPage>
   )

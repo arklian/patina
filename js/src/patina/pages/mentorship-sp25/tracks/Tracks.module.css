@@ -1,0 +1,8 @@
+.about {
+  background: var(--mantine-color-dark-6);
+  padding: 36px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-direction: column;
+  }
+}
