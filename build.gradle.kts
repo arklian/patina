@@ -21,7 +21,7 @@ java {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:4.27.2"
+        artifact = "com.google.protobuf:protoc:4.28.2"
     }
 
     generateProtoTasks {
@@ -45,10 +45,11 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.google.protobuf:protobuf-java:4.27.2")
-    implementation("com.google.protobuf:protobuf-java-util:4.27.2")
+    implementation("com.google.protobuf:protobuf-java:4.28.2")
+    implementation("com.google.protobuf:protobuf-java-util:4.28.2")
     implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
     implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("net.dv8tion:JDA:5.2.2")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -59,7 +60,7 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
     testLogging {
-        events(TestLogEvent.FAILED);
+        events(TestLogEvent.FAILED)
         exceptionFormat = TestExceptionFormat.FULL
     }
 }
