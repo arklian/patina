@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package org.patinanetwork.patinawebsite.blogs.protos;
+
+option java_multiple_files = true;
+
+message PatChatMember {
+  // Unique identifier for the PatChat member. Typically an auto-incremented integer.
+  int32 id = 1;
+
+  // Full name of the person.
+  string name = 2;
+
+  // If the member is actively participating in PatChats
+  bool active = 3;
+}
+
+message GetPatChatMemberReq {
+  int32 id = 1;
+}
+
+message GetPatChatMemberResp {
+  PatChatMember member = 1;
+}
+
