@@ -1,13 +1,14 @@
 package org.patinanetwork.patchats.repo;
 
 import org.patinanetwork.common.db.DBConnection;
-import org.patinanetwork.patinawebsite.blogs.protos.PatChatMember;
+import org.patinanetwork.patchats.protos.PatChatMember;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 @Component(value = "PsqlPatChatRepo")
 public class PsqlPatChatRepo implements PatChatRepo {
@@ -23,7 +24,6 @@ public class PsqlPatChatRepo implements PatChatRepo {
 
     @Override
     public PatChatMember getPatChatMember(int id) {
-
             String sql = "SELECT id, name, active FROM patchat_member WHERE id = ?";
             PatChatMember member = null;
 
@@ -44,4 +44,25 @@ public class PsqlPatChatRepo implements PatChatRepo {
         return member;
         }
 
-}
+    @Override
+        public PatChatMember deletePatChatMember(int id) {
+            PatChatMember member = getPatChatMember(id);
+            if (member == null)
+            {
+                return PatChatMember.getDefaultInstance();
+            }
+
+            String sql = "DELETE FROM patchat_member WHERE id = ?";
+
+            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+                stmt.setInt(1, id);
+                if (stmt.executeUpdate() > 0) {
+                    return member;
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException("Error while deleting PatChatMember with ID " + id, e);
+            }
+
+            return member;
+        }
+    }
