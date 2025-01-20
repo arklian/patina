@@ -37,7 +37,9 @@ Used to store steps required to set up Gerrit.
   ```
 
 
-## Setting up GerritHub repo
+## Setting up GerritHub repo 
+Initial setup for the gerrit repo. Ignore if you're personally setting up gerrit
+
 - Clone Github Repo into GerritHub.
 - General -> Submit type -> `Rebase if necessary`
 - General -> Require Change-Id in commit message -> True
