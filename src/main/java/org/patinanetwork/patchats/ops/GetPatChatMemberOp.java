@@ -1,9 +1,9 @@
 package org.patinanetwork.patchats.ops;
 
 import org.patinanetwork.patchats.repo.PatChatRepo;
-import org.patinanetwork.patinawebsite.blogs.protos.GetPatChatMemberReq;
-import org.patinanetwork.patinawebsite.blogs.protos.GetPatChatMemberResp;
-import org.patinanetwork.patinawebsite.blogs.protos.PatChatMember;
+import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
+import org.patinanetwork.patchats.protos.GetPatChatMemberResp;
+import org.patinanetwork.patchats.protos.PatChatMember;
 
 /**
  * Operation to handle the getPatChatMember endpoint
@@ -21,4 +21,3 @@ public class GetPatChatMemberOp {
         return GetPatChatMemberResp.newBuilder().setMember(member).build();
     }
 }
-
