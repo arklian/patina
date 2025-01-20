@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9f171b8_10ad162b",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatServer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-20T23:41:38Z",
+      "side": 1,
+      "message": "/api/patchats/members",
+      "revId": "7b8957791286c1a2542596be74ebff9769a96f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea92b822_9f7ad363",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-20T23:41:38Z",
+      "side": 1,
+      "message": "unused",
+      "revId": "7b8957791286c1a2542596be74ebff9769a96f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "621cd28d_dd8b4756",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-20T23:41:38Z",
+      "side": 1,
+      "message": "remove printlns before putting it up for review",
+      "revId": "7b8957791286c1a2542596be74ebff9769a96f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
