@@ -7,6 +7,6 @@ import java.util.List;
 public interface PatChatRepo {
 
     public PatChatMember getPatChatMember(int id);
-
     public List<PatChatMember> listPatChatMembers();
+    public PatChatMember deletePatChatMember(int id);
 }
