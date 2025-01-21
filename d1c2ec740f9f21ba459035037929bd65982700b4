@@ -18,6 +18,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2aee17e_5e2acfba",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatServer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-21T01:08:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c90b7a07_bde65306",
+      "revId": "d1c2ec740f9f21ba459035037929bd65982700b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d0a3f21_56d7bcc2",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatServer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-21T01:08:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c90b7a07_bde65306",
+      "revId": "d1c2ec740f9f21ba459035037929bd65982700b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4636e068_742f851f",
@@ -35,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6172458_b0d0ea43",
+        "filename": "src/main/java/org/patinanetwork/patchats/ops/DeletePatChatMemberOp.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-21T01:08:12Z",
+      "side": 1,
+      "message": "@hjc77@cornell.edu",
+      "parentUuid": "4636e068_742f851f",
+      "revId": "d1c2ec740f9f21ba459035037929bd65982700b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c2500dd4_a58b5ae2",
@@ -48,6 +102,24 @@
       "writtenOn": "2025-01-21T00:37:49Z",
       "side": 1,
       "message": "DELETE RETURNING is more efficient than getting and then deleting, since it\u0027s one call.\n\nhttps://learnsql.com/blog/postgresql-delete-returning/",
+      "revId": "d1c2ec740f9f21ba459035037929bd65982700b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dd6a133_1d8f6b88",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-21T01:08:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c2500dd4_a58b5ae2",
       "revId": "d1c2ec740f9f21ba459035037929bd65982700b4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
