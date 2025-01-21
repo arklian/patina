@@ -2,9 +2,12 @@ package org.patinanetwork.patchats;
 
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
+import org.patinanetwork.patchats.ops.AddPatChatMemberOp;
 import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
+import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
+import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
 import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
 import org.patinanetwork.patchats.protos.ListPatChatMembersReq;
@@ -14,6 +17,8 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -51,5 +56,15 @@ public class PatChatServer {
         var req = DeletePatChatMemberReq.newBuilder().setId(memberId).build();
         DeletePatChatMemberOp op = new DeletePatChatMemberOp(patChatRepo);
         return jsonPrinter.print(op.run(req));
+    }
+
+    @PostMapping(value = "/api/patchats/addmember", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public String addPatChatMember(@RequestBody String jsonRequest) {
+        AddPatChatMemberReq req = jsonParser.parse(jsonRequest, AddPatChatMemberReq.newBuilder());
+
+        AddPatChatMemberOp op = new AddPatChatMemberOp(patChatRepo);
+
+        AddPatChatMemberResp resp = op.run(req);
+        return jsonPrinter.print(resp);
     }
 }

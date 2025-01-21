@@ -92,4 +92,30 @@ public class PsqlPatChatRepo implements PatChatRepo {
         }
         return null;
     }
+
+    @Override
+    public PatChatMember addPatChatMember(PatChatMember member) {
+        String sql = "INSERT INTO patchat_member (name, active) VALUES (?, ?) RETURNING id, name, active";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, member.getName());
+            stmt.setBoolean(2, member.getActive());
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    int db_id = rs.getInt("id");
+                    String name = rs.getString("name");
+                    boolean active = rs.getBoolean("active");
+                    member = PatChatMember.newBuilder()
+                            .setId(db_id)
+                            .setName(name)
+                            .setActive(active)
+                            .build();
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while adding patchat member", e);
+        }
+
+        return member;
+    }
 }

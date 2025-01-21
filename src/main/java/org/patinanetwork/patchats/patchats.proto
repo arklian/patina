@@ -38,3 +38,11 @@ message DeletePatChatMemberReq {
 message DeletePatChatMemberResp {
   PatChatMember member = 1;
 }
+
+message AddPatChatMemberReq {
+  string name = 1;
+}
+
+message AddPatChatMemberResp {
+  PatChatMember member = 1;
+}
