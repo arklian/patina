@@ -1,8 +1,12 @@
 package org.patinanetwork.patchats.repo;
 
-import org.patinanetwork.patinawebsite.blogs.protos.PatChatMember;
+import org.patinanetwork.patchats.protos.PatChatMember;
+
+import java.util.List;
 
 public interface PatChatRepo {
 
     public PatChatMember getPatChatMember(int id);
+
+    public List<PatChatMember> listPatChatMembers();
 }
