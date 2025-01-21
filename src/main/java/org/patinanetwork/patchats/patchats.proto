@@ -31,3 +31,10 @@ message ListPatChatMembersResp {
   repeated PatChatMember members = 1;
 }
 
+message DeletePatChatMemberReq {
+  int32 id = 1;
+}
+
+message DeletePatChatMemberResp {
+  PatChatMember member = 1;
+}
