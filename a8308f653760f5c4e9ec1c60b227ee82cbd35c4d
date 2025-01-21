@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca2a43ce_482b8f7c",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatServer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-21T01:32:14Z",
+      "side": 1,
+      "message": "the other ones don\u0027t have extra lines in between, so likely remove these",
+      "revId": "a8308f653760f5c4e9ec1c60b227ee82cbd35c4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87775b86_1154a588",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-21T01:32:14Z",
+      "side": 1,
+      "message": "I feel like you shouldn\u0027t reuse this.",
+      "revId": "a8308f653760f5c4e9ec1c60b227ee82cbd35c4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb37ee96_4c5d98b4",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-21T01:32:14Z",
+      "side": 1,
+      "message": "return this",
+      "revId": "a8308f653760f5c4e9ec1c60b227ee82cbd35c4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1c7764b_1bdf5f24",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-21T01:32:14Z",
+      "side": 1,
+      "message": "return null here",
+      "revId": "a8308f653760f5c4e9ec1c60b227ee82cbd35c4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
