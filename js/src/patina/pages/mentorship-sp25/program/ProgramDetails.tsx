@@ -51,7 +51,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Jan 27'}
+              {'Jan 31'}
             </Text>
           }
           fw={700}

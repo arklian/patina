@@ -17,7 +17,7 @@ export function Tracks() {
             <Text>{'Tech Industry Track'}</Text>
           </List.Item>
           <List.Item>
-            <Text>{'Finance Industry Track'}</Text>
+            <Text>{'Business Industry Track'}</Text>
           </List.Item>
           <List.Item>
             <Text>{'Leadership Track'}</Text>
@@ -25,7 +25,7 @@ export function Tracks() {
         </List>
         <Text>
           {
-            'The Tech and Finance Tracks will incorporate industry specific topics while the Leadership Track will allow you to develop various professional skills. In the leadership track, we will match pairs based on a number of factors, such as leadership style, personal strengths, and career industry.'
+            'The Tech and Business Tracks will incorporate industry specific topics while the Leadership Track will allow you to develop various professional skills. In the leadership track, we will match pairs based on a number of factors, such as leadership style, personal strengths, and career industry.'
           }
         </Text>
       </Stack>
