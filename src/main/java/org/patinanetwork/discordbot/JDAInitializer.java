@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 
 import static net.dv8tion.jda.api.interactions.commands.OptionType.STRING;
 
-
 @Component
 @EnableConfigurationProperties(JDAProperties.class)
 public class JDAInitializer implements CommandLineRunner {
@@ -36,15 +35,16 @@ public class JDAInitializer implements CommandLineRunner {
                 .build();
         jda.awaitReady();
 
-
         // These commands might take a few minutes to be active after creation/update/delete
-        CommandListUpdateAction commands = jda.updateCommands();
-
-        // Simple reply commands
-        commands.addCommands(
-                Commands.slash("say", "Makes the bot say what you tell it to")
-                        .addOption(STRING, "content", "What the bot should say", true) // you can add required options like this too
-        );
+        CommandListUpdateAction commands = jda.updateCommands()
+                .addCommands(
+                        Commands.slash("say", "Makes the bot say what you tell it to")
+                                .addOption(
+                                        STRING,
+                                        "content",
+                                        "What the bot should say",
+                                        true), // you can add required options like this too
+                        Commands.slash("join_patchats", "Enters you into the weekly Patchats meeting"));
 
         commands.queue();
     }
