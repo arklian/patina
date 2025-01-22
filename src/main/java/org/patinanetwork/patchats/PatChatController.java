@@ -24,13 +24,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-public class PatChatServer {
+public class PatChatController {
 
     PatChatRepo patChatRepo;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public PatChatServer(
+    public PatChatController(
             @Qualifier("PsqlPatChatRepo") PatChatRepo patChatRepo, JsonPrinter jsonPrinter, JsonParser jsonParser) {
         this.patChatRepo = patChatRepo;
         this.jsonPrinter = jsonPrinter;
