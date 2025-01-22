@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Component(value = "PsqlPatChatRepo")
@@ -117,5 +118,39 @@ public class PsqlPatChatRepo implements PatChatRepo {
         }
 
         return null;
+    }
+
+    @Override
+    public List<List<PatChatMember>> matchPatChatMember() {
+        List<PatChatMember> all_members = listPatChatMembers();
+
+        if (all_members == null || all_members.isEmpty()) {
+            throw new RuntimeException("No members found in the database");
+        }
+
+        PatChatMember henry = all_members.stream()
+                .filter(member -> member.getId() == 1)
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Member with id 1 not found"));
+
+        List<PatChatMember> members = new ArrayList<>(
+                all_members.stream().filter(member -> member.getId() != 1).toList());
+
+        Collections.shuffle(members);
+
+        // Creates list of tuples of matches
+        List<List<PatChatMember>> matches = new ArrayList<>();
+
+        for (int i = 0; i < members.size(); i += 2) {
+            List<PatChatMember> pair = new ArrayList<>();
+            pair.add(members.get(i));
+            if (i + 1 < members.size()) {
+                pair.add(members.get(i + 1));
+            } else {
+                pair.add(henry);
+            }
+            matches.add(pair);
+        }
+        return matches;
     }
 }
