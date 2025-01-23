@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "935cdc0c_dc8d0eff",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T20:24:04Z",
+      "side": 1,
+      "message": "Yes, my bad",
+      "parentUuid": "2fd799cb_2f58c4b0",
+      "range": {
+        "startLine": 3,
+        "startChar": 26,
+        "endLine": 3,
+        "endChar": 34
+      },
+      "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "de3c5f9e_040f9d3e",
@@ -41,6 +65,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "de202f68_e640e92e",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T20:24:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de3c5f9e_040f9d3e",
+      "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a1bf24b9_338e8c8e",
@@ -54,6 +96,24 @@
       "writtenOn": "2025-01-23T19:11:22Z",
       "side": 1,
       "message": "Put an example of each next to it. The comment doesn\u0027t give a good picture.",
+      "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8e4b7e2_7d343595",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T20:24:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a1bf24b9_338e8c8e",
       "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -81,6 +141,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f88b53f2_4bf5ff74",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T20:24:04Z",
+      "side": 1,
+      "message": "I can\u0027t seem to make client functions without them",
+      "parentUuid": "b31625aa_d4558779",
+      "range": {
+        "startLine": 29,
+        "startChar": 8,
+        "endLine": 29,
+        "endChar": 27
+      },
+      "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ced3d388_c1aa26c9",
@@ -94,6 +178,24 @@
       "writtenOn": "2025-01-23T19:11:22Z",
       "side": 1,
       "message": "get \u003e list \u003e add \u003e delete\n\nWe should keep this order consistent across all of the different files too when reasonable.",
+      "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aad2e4c0_9d29b96c",
+        "filename": "src/main/java/org/patinanetwork/discordbot/repo/DiscordUserRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T20:24:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ced3d388_c1aa26c9",
       "revId": "88c88e588e6babab413caa4b5376118edbb2bdb7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
