@@ -142,6 +142,29 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "999fe6e3_9ed9c8b6",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T19:54:19Z",
+      "side": 1,
+      "message": "Double verify Henry\u0027s user with the discord table. Add comment about this in code for future reference.",
+      "range": {
+        "startLine": 132,
+        "startChar": 34,
+        "endLine": 132,
+        "endChar": 53
+      },
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e42656c7_c6b1993a",
