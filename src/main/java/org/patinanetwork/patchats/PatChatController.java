@@ -7,6 +7,7 @@ import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
 import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
+import org.patinanetwork.patchats.ops.MatchPatChatMemberOp;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
@@ -14,6 +15,7 @@ import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersReq;
+import org.patinanetwork.patchats.protos.MatchPatChatMemberResp;
 import org.patinanetwork.patchats.repo.PatChatRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
@@ -74,6 +76,13 @@ public class PatChatController {
         var req = LeavePatChatMemberReq.newBuilder().setId(memberId).build();
         LeavePatChatMemberOp op = new LeavePatChatMemberOp(patChatRepo);
         LeavePatChatMemberResp resp = op.run(req);
+        return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/patchats/match")
+    public String matchPatChatMember() {
+        MatchPatChatMemberOp op = new MatchPatChatMemberOp(patChatRepo);
+        MatchPatChatMemberResp resp = op.run();
         return jsonPrinter.print(resp);
     }
 }
