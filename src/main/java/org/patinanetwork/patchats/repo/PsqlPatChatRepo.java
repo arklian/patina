@@ -3,6 +3,7 @@ package org.patinanetwork.patchats.repo;
 import org.patinanetwork.common.db.DBConnection;
 import org.patinanetwork.patchats.protos.PatChatMember;
 import org.springframework.stereotype.Component;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -71,6 +72,26 @@ public class PsqlPatChatRepo implements PatChatRepo {
             throw new RuntimeException("Error while retrieving all members", e);
         }
         return members;
+    }
+
+    @Override
+    public PatChatMember leavePatChatMember(int id) {
+        String sql = "UPDATE patchat_member SET active = false WHERE id = ? RETURNING id, name, active";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, id);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    return PatChatMember.newBuilder()
+                            .setId(rs.getInt("id"))
+                            .setName(rs.getString("name"))
+                            .setActive(rs.getBoolean("active"))
+                            .build();
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while updating PatChatMember status for ID " + id, e);
+        }
+        return null;
     }
 
     @Override

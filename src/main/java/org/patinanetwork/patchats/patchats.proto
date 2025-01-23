@@ -46,3 +46,11 @@ message AddPatChatMemberReq {
 message AddPatChatMemberResp {
   PatChatMember member = 1;
 }
+
+message LeavePatChatMemberReq{
+  int32 id = 1;
+}
+
+message LeavePatChatMemberResp{
+  PatChatMember member = 1;
+}

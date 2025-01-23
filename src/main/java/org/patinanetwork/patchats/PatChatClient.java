@@ -3,6 +3,7 @@ package org.patinanetwork.patchats;
 import org.patinanetwork.patchats.ops.AddPatChatMemberOp;
 import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
+import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
@@ -10,6 +11,8 @@ import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberResp;
 import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
 import org.patinanetwork.patchats.protos.GetPatChatMemberResp;
+import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
+import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersResp;
 import org.patinanetwork.patchats.repo.PatChatRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -40,5 +43,9 @@ public class PatChatClient {
 
     public AddPatChatMemberResp addPatChatMember(AddPatChatMemberReq req) {
         return new AddPatChatMemberOp(patChatRepo).run(req);
+    }
+
+    public LeavePatChatMemberResp leavePatChatMember(LeavePatChatMemberReq req) {
+        return new LeavePatChatMemberOp(patChatRepo).run(req);
     }
 }
