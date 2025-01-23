@@ -16,6 +16,23 @@
       "message": "Ignore, bad push. Removed these files in the following push.",
       "revId": "e7d1146bab35832d86cd2c18ecbfb7b31b005a45",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bebd3e7c_264fb506",
+        "filename": "src/main/java/org/patinanetwork/patchats/discord.proto",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-23T05:58:20Z",
+      "side": 1,
+      "message": "these should be in the discordbot folder not patchats. We may use the discord bot for non patchat things later.",
+      "revId": "e7d1146bab35832d86cd2c18ecbfb7b31b005a45",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ],
   "submitRequirementResults": [
