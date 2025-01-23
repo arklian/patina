@@ -3,6 +3,7 @@ package org.patinanetwork.patchats.repo;
 import org.patinanetwork.common.db.DBConnection;
 import org.patinanetwork.patchats.protos.PatChatMember;
 import org.springframework.stereotype.Component;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
