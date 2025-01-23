@@ -10,13 +10,16 @@ import net.dv8tion.jda.api.interactions.modals.Modal;
 import org.patinanetwork.patchats.PatChatClient;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.View;
 
 @Component
 public class JDAEventListener extends ListenerAdapter {
+    private final View error;
     PatChatClient patChatClient;
 
-    public JDAEventListener(PatChatClient patChatClient) {
+    public JDAEventListener(PatChatClient patChatClient, View error) {
         this.patChatClient = patChatClient;
+        this.error = error;
     }
 
     @Override
@@ -54,6 +57,24 @@ public class JDAEventListener extends ListenerAdapter {
                 .build();
 
         event.replyModal(modal).queue();
+
+        event.getUser()
+                .openPrivateChannel()
+                .queue(
+                        channel -> {
+                            channel.sendMessage(
+                                            "Hi " + event.getUser().getName()
+                                                    + ", you initiated the PatChats registration process. Please complete the form to join!")
+                                    .queue(
+                                            success -> System.out.println("DM sent successfully to "
+                                                    + event.getUser().getName()),
+                                            error -> System.out.println("DM could not be sent to "
+                                                    + event.getUser().getName()));
+                        },
+                        error -> {
+                            System.out.println(
+                                    "DM could not be sent to " + event.getUser().getName());
+                        });
     }
 
     @Override
