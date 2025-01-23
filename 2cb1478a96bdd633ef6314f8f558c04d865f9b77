@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2d2c368_c5f65fa9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T00:37:10Z",
+      "side": 1,
+      "message": "Nothing in this commit, removed files after an incorrect push",
+      "revId": "2cb1478a96bdd633ef6314f8f558c04d865f9b77",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5d180c7_a38aa61d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T00:37:10Z",
+      "side": 1,
+      "message": "Nothing in this commit, removed files after an bad push",
+      "revId": "2cb1478a96bdd633ef6314f8f558c04d865f9b77",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
