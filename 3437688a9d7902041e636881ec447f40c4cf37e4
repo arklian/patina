@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a0e9926_2dda2461",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "Moved it to the Ops",
+      "parentUuid": "3d0c410a_6dd4b2aa",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c326e51b_c05ae128",
@@ -31,6 +49,42 @@
       "writtenOn": "2025-01-22T17:53:06Z",
       "side": 1,
       "message": "variable names are generally camelCase",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf5bead5_fe5741fe",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c326e51b_c05ae128",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1b6047e_08b42846",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c326e51b_c05ae128",
       "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +106,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea75de01_74ebb415",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "474ccc1c_20e03867",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23b46782_53fbff5a",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "474ccc1c_20e03867",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e42656c7_c6b1993a",
@@ -65,6 +155,24 @@
       "writtenOn": "2025-01-22T17:53:06Z",
       "side": 1,
       "message": "The new ArrayList\u003c\u003e is redundant, since toList returns a list.",
+      "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79f4cdb7_f42defbd",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-23T19:42:48Z",
+      "side": 1,
+      "message": "toList returns an immutable list, but I need to shuffle the members list.",
+      "parentUuid": "e42656c7_c6b1993a",
       "revId": "3437688a9d7902041e636881ec447f40c4cf37e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
