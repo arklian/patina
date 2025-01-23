@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "295b756f_be599517",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-23T00:38:11Z",
+      "side": 1,
+      "message": "Ignore, bad push. Removed these files in the following push.",
+      "revId": "e7d1146bab35832d86cd2c18ecbfb7b31b005a45",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
