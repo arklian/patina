@@ -5,11 +5,14 @@ import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patchats.ops.AddPatChatMemberOp;
 import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
+import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
 import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
+import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
+import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersReq;
 import org.patinanetwork.patchats.repo.PatChatRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -63,6 +66,14 @@ public class PatChatController {
         AddPatChatMemberReq req = jsonParser.parse(jsonRequest, AddPatChatMemberReq.newBuilder());
         AddPatChatMemberOp op = new AddPatChatMemberOp(patChatRepo);
         AddPatChatMemberResp resp = op.run(req);
+        return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/patchats/leave/{memberId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String leavePatChatMember(@PathVariable("memberId") int memberId) {
+        var req = LeavePatChatMemberReq.newBuilder().setId(memberId).build();
+        LeavePatChatMemberOp op = new LeavePatChatMemberOp(patChatRepo);
+        LeavePatChatMemberResp resp = op.run(req);
         return jsonPrinter.print(resp);
     }
 }
