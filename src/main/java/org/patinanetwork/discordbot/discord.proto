@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package org.patinanetwork.discordbot.proto;
+
+option java_multiple_files = true;
+
+message DiscordUser {
+  // Foreign key that links each PatChat user to each discord account. Ex. 2
+  int32 patchat_member_id = 1;
+
+  // Discord id of the person. Ex. "412150193275936980"
+  string discord_id = 2;
+
+  // Discord username of the person. Ex. "johndoe"
+  string username = 3;
+
+  // Effective Discord name of the person. Ex. "John Doe"
+  string nickname = 4;
+}
+
+message GetDiscordUserReq {
+  int32 id = 1;
+}
+
+message GetDiscordUserResp {
+  DiscordUser member = 1;
+}
+
+message ListDiscordUsersReq {
+  int32 id = 1;
+}
+
+message ListDiscordUsersResp {
+  repeated DiscordUser members = 1;
+}
+
+message DeleteDiscordUserReq {
+  int32 id = 1;
+}
+
+message DeleteDiscordUserResp {
+  DiscordUser member = 1;
+}
+
+message AddDiscordUserReq {
+  string name = 1;
+}
+
+message AddDiscordUserResp {
+  DiscordUser member = 1;
+}
