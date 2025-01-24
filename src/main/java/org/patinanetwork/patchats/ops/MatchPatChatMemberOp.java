@@ -21,7 +21,8 @@ public class MatchPatChatMemberOp {
     public List<List<PatChatMember>> matchPatChatMember() {
         List<PatChatMember> allMembers = patChatRepo.listPatChatMembers();
 
-        if (allMembers == null || allMembers.isEmpty()) {
+        // Can't match if there are less than two people in the database
+        if (allMembers == null || allMembers.size() < 2) {
             throw new RuntimeException("No members found in the database");
         }
 
