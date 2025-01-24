@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd197f82_2f4574a3",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-24T21:34:09Z",
+      "side": 1,
+      "message": "We should reorder all the things to be more consistent. :|",
+      "revId": "944e93dcae9258827e029131bbdd51cdfc42876c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25be47f4_a7c52034",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-24T21:34:09Z",
+      "side": 1,
+      "message": "What if the person doesn\u0027t exist yet?",
+      "revId": "944e93dcae9258827e029131bbdd51cdfc42876c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
