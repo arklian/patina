@@ -45,6 +45,30 @@
       },
       "revId": "771a38410cf9e23b9de40c76b8f86b8fbe147300",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "075d2a40_37059d01",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2025-01-24T00:28:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e7efd4c_47d88065",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 68
+      },
+      "revId": "771a38410cf9e23b9de40c76b8f86b8fbe147300",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
