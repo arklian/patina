@@ -15,4 +15,6 @@ public interface PatChatRepo {
     public PatChatMember addPatChatMember(PatChatMember member);
 
     public PatChatMember leavePatChatMember(int id);
+
+    public PatChatMember joinPatChatMember(int id);
 }

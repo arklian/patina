@@ -55,6 +55,14 @@ message LeavePatChatMemberResp{
   PatChatMember member = 1;
 }
 
+message JoinPatChatMemberReq{
+  int32 id = 1;
+}
+
+message JoinPatChatMemberResp{
+  PatChatMember member = 1;
+}
+
 message MatchGroup {
   repeated PatChatMember members = 1;
 }

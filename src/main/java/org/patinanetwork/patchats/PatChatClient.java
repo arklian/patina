@@ -3,6 +3,7 @@ package org.patinanetwork.patchats;
 import org.patinanetwork.patchats.ops.AddPatChatMemberOp;
 import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
+import org.patinanetwork.patchats.ops.JoinPatChatMemberOp;
 import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
@@ -11,6 +12,8 @@ import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberResp;
 import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
 import org.patinanetwork.patchats.protos.GetPatChatMemberResp;
+import org.patinanetwork.patchats.protos.JoinPatChatMemberReq;
+import org.patinanetwork.patchats.protos.JoinPatChatMemberResp;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersResp;
@@ -47,5 +50,9 @@ public class PatChatClient {
 
     public LeavePatChatMemberResp leavePatChatMember(LeavePatChatMemberReq req) {
         return new LeavePatChatMemberOp(patChatRepo).run(req);
+    }
+
+    public JoinPatChatMemberResp joinPatChatMember(JoinPatChatMemberReq req) {
+        return new JoinPatChatMemberOp(patChatRepo).run(req);
     }
 }

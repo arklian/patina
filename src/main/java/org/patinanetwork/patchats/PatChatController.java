@@ -5,6 +5,7 @@ import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.patchats.ops.AddPatChatMemberOp;
 import org.patinanetwork.patchats.ops.DeletePatChatMemberOp;
 import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
+import org.patinanetwork.patchats.ops.JoinPatChatMemberOp;
 import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
 import org.patinanetwork.patchats.ops.MatchPatChatMemberOp;
@@ -12,6 +13,8 @@ import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
 import org.patinanetwork.patchats.protos.GetPatChatMemberReq;
+import org.patinanetwork.patchats.protos.JoinPatChatMemberReq;
+import org.patinanetwork.patchats.protos.JoinPatChatMemberResp;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersReq;
@@ -76,6 +79,14 @@ public class PatChatController {
         var req = LeavePatChatMemberReq.newBuilder().setId(memberId).build();
         LeavePatChatMemberOp op = new LeavePatChatMemberOp(patChatRepo);
         LeavePatChatMemberResp resp = op.run(req);
+        return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/patchats/join/{memberId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String joinPatChatMember(@PathVariable("memberId") int memberId) {
+        var req = JoinPatChatMemberReq.newBuilder().setId(memberId).build();
+        JoinPatChatMemberOp op = new JoinPatChatMemberOp(patChatRepo);
+        JoinPatChatMemberResp resp = op.run(req);
         return jsonPrinter.print(resp);
     }
 
