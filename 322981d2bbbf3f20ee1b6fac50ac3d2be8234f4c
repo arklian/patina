@@ -94,6 +94,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2259badc_775cb971",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-24T20:41:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3dc8310_6afe088d",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 29
+      },
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a9e10a4_43a5e9e5",
