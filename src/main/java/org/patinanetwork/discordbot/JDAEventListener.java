@@ -12,6 +12,7 @@ import org.patinanetwork.discordbot.protos.AddDiscordUserReq;
 import org.patinanetwork.discordbot.protos.GetDiscordUserReq;
 import org.patinanetwork.patchats.PatChatClient;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
+import org.patinanetwork.patchats.protos.JoinPatChatMemberReq;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -62,8 +63,15 @@ public class JDAEventListener extends ListenerAdapter {
 
         // Check if the user already exists in the system
         if (response.hasMember() && !response.getMember().getDiscordId().isEmpty()) {
-            // User exists, reply to inform them
-            event.reply("User is already in the system.").setEphemeral(true).queue();
+            // User exists, set their active status to true
+
+            int patChatId = response.getMember().getPatchatMemberId();
+            JoinPatChatMemberReq joinRequest =
+                    JoinPatChatMemberReq.newBuilder().setId(patChatId).build();
+
+            patChatClient.joinPatChatMember(joinRequest);
+
+            event.reply("You have successfully joined PatChats!").setEphemeral(true).queue();
             return;
         } else {
             Modal modal = Modal.create("patchats_modal", "Patchats")
