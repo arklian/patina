@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be369758_1275300f",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-24T00:27:25Z",
+      "side": 1,
+      "message": "Instead of add, it should be add if there is no user already in the database.",
+      "range": {
+        "startLine": 66,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 47
+      },
+      "revId": "771a38410cf9e23b9de40c76b8f86b8fbe147300",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e7efd4c_47d88065",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-24T00:27:25Z",
+      "side": 1,
+      "message": "Delete debug comments",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 68
+      },
+      "revId": "771a38410cf9e23b9de40c76b8f86b8fbe147300",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
