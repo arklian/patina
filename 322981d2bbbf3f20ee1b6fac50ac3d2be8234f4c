@@ -73,6 +73,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3c8c84d8_6141c15d",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038154
+      },
+      "writtenOn": "2025-01-24T17:06:00Z",
+      "side": 1,
+      "message": "can remove the error and success stuff",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 29
+      },
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5a9e10a4_43a5e9e5",
         "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
         "patchSetId": 2
