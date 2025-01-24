@@ -19,7 +19,7 @@ message DiscordUser {
 }
 
 message GetDiscordUserReq {
-  int32 id = 1;
+  string discord_id = 2;
 }
 
 message GetDiscordUserResp {
@@ -35,7 +35,13 @@ message ListDiscordUsersResp {
 }
 
 message AddDiscordUserReq {
-  string name = 1;
+  int32 patchat_member_id = 1;
+
+  string discord_id = 2;
+
+  string username = 3;
+
+  string nickname = 4;
 }
 
 message AddDiscordUserResp {
