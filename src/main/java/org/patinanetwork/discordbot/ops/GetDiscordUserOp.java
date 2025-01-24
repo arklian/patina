@@ -14,8 +14,11 @@ public class GetDiscordUserOp {
     }
 
     public GetDiscordUserResp run(GetDiscordUserReq request) {
-        DiscordUser member = discordUserRepo.getDiscordUser(request.getId());
-
-        return GetDiscordUserResp.newBuilder().setMember(member).build();
+        DiscordUser user = discordUserRepo.getDiscordUser(request.getDiscordId());
+        GetDiscordUserResp.Builder responseBuilder = GetDiscordUserResp.newBuilder();
+        if (user != null) {
+            responseBuilder.setMember(user);
+        }
+        return responseBuilder.build();
     }
 }

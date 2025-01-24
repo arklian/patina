@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface DiscordUserRepo {
 
-    public DiscordUser getDiscordUser(int id);
+    public DiscordUser getDiscordUser(String discordId);
 
     public List<DiscordUser> listDiscordUsers();
 

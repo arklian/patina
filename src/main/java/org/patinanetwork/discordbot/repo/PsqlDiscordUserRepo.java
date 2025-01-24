@@ -21,13 +21,12 @@ public class PsqlDiscordUserRepo implements DiscordUserRepo {
         this.conn = dbConnection.getConn();
     }
 
-    public DiscordUser getDiscordUser(int patchat_member_id) {
-        String sql =
-                "SELECT patchat_member_id, discord_id, username, nickname FROM discord_user WHERE patchat_member_id = ?";
+    public DiscordUser getDiscordUser(String discord_id) {
+        String sql = "SELECT patchat_member_id, discord_id, username, nickname FROM discord_user WHERE discord_id = ?";
         DiscordUser user = null;
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setInt(1, patchat_member_id);
+            stmt.setString(1, discord_id);
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     int patchatMemberId = rs.getInt("patchat_member_id");
@@ -44,7 +43,8 @@ public class PsqlDiscordUserRepo implements DiscordUserRepo {
                 }
             }
         } catch (SQLException e) {
-            throw new RuntimeException("Error while retrieving patchat member by ID", e);
+            return null;
+            //            throw new RuntimeException("Error while retrieving discord user by discord id", e);
         }
 
         return user;
@@ -78,7 +78,35 @@ public class PsqlDiscordUserRepo implements DiscordUserRepo {
         return users;
     }
 
-    public DiscordUser addDiscordUser(DiscordUser member) {
+    public DiscordUser addDiscordUser(DiscordUser user) {
+
+        String sql = "INSERT INTO discord_user (patchat_member_id, discord_id, username, nickname) "
+                + "VALUES (?, ?, ?, ?) RETURNING patchat_member_id, discord_id, username, nickname";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, user.getPatchatMemberId());
+            stmt.setString(2, user.getDiscordId());
+            stmt.setString(3, user.getUsername());
+            stmt.setString(4, user.getNickname());
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    int patchatMemberId = rs.getInt("patchat_member_id");
+                    String discordId = rs.getString("discord_id");
+                    String username = rs.getString("username");
+                    String nickname = rs.getString("nickname");
+                    return DiscordUser.newBuilder()
+                            .setPatchatMemberId(patchatMemberId)
+                            .setDiscordId(discordId)
+                            .setUsername(username)
+                            .setNickname(nickname)
+                            .build();
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error while adding patchat member", e);
+        }
+
         return null;
     }
 
