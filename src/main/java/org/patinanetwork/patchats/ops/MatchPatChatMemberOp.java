@@ -21,7 +21,8 @@ public class MatchPatChatMemberOp {
     public List<List<PatChatMember>> matchPatChatMember() {
         List<PatChatMember> allMembers = patChatRepo.listPatChatMembers();
 
-        if (allMembers == null || allMembers.isEmpty()) {
+        // Can't match if there are less than two people in the database
+        if (allMembers == null || allMembers.size() < 2) {
             throw new RuntimeException("No members found in the database");
         }
 
@@ -33,8 +34,9 @@ public class MatchPatChatMemberOp {
                 .orElseThrow(() -> new RuntimeException("Member with id 1 not found"));
 
         // Filters Henry out of the Patchats user table so everyone else can be matched.
-        List<PatChatMember> members = new ArrayList<>(
-                allMembers.stream().filter(member -> member.getId() != 1).toList());
+        List<PatChatMember> members = new ArrayList<>(allMembers.stream()
+                .filter(member -> member.getId() != 1 && member.getActive())
+                .toList());
 
         Collections.shuffle(members);
 
