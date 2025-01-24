@@ -49,6 +49,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f3dc8310_6afe088d",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-24T14:34:00Z",
+      "side": 1,
+      "message": "It\u0027s needed for line 27 I think?",
+      "parentUuid": "c517768c_f048ed46",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 29
+      },
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5a9e10a4_43a5e9e5",
         "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
         "patchSetId": 2
@@ -60,6 +84,30 @@
       "writtenOn": "2025-01-24T07:45:05Z",
       "side": 1,
       "message": "Would probably name name this newPatChatMemberId or something.",
+      "range": {
+        "startLine": 106,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 36
+      },
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42921730_2a2b9b11",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-24T14:34:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a9e10a4_43a5e9e5",
       "range": {
         "startLine": 106,
         "startChar": 20,
@@ -127,6 +175,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c69bc302_62a5f5e8",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-24T14:34:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "10465aeb_cb0e91cb",
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8bae1897_911d97b0",
@@ -157,6 +223,30 @@
       "writtenOn": "2025-01-24T07:45:05Z",
       "side": 1,
       "message": "can break the line up here",
+      "range": {
+        "startLine": 84,
+        "startChar": 113,
+        "endLine": 84,
+        "endChar": 114
+      },
+      "revId": "322981d2bbbf3f20ee1b6fac50ac3d2be8234f4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e621021a_623efbb9",
+        "filename": "src/main/java/org/patinanetwork/discordbot/repo/PsqlDiscordUserRepo.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1038149
+      },
+      "writtenOn": "2025-01-24T14:34:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a14c7c15_57ad12f1",
       "range": {
         "startLine": 84,
         "startChar": 113,
