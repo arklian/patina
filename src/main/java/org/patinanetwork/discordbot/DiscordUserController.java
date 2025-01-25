@@ -1,8 +1,10 @@
 package org.patinanetwork.discordbot;
 
+import net.dv8tion.jda.api.JDA;
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.discordbot.ops.AddDiscordUserOp;
+import org.patinanetwork.discordbot.ops.BroadcastPatChatMatchingOp;
 import org.patinanetwork.discordbot.ops.GetDiscordUserOp;
 import org.patinanetwork.discordbot.ops.ListDiscordUserOp;
 import org.patinanetwork.discordbot.protos.AddDiscordUserReq;
@@ -10,6 +12,7 @@ import org.patinanetwork.discordbot.protos.AddDiscordUserResp;
 import org.patinanetwork.discordbot.protos.GetDiscordUserReq;
 import org.patinanetwork.discordbot.protos.ListDiscordUsersReq;
 import org.patinanetwork.discordbot.repo.DiscordUserRepo;
+import org.patinanetwork.patchats.PatChatClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,14 +26,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class DiscordUserController {
     DiscordUserRepo discordUserRepo;
+    PatChatClient patChatClient;
+    JDA jda;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
     public DiscordUserController(
             @Qualifier("PsqlDiscordUserRepo") DiscordUserRepo discordUserRepo,
+            PatChatClient patChatClient,
+            JDA jda,
             JsonPrinter jsonPrinter,
             JsonParser jsonParser) {
         this.discordUserRepo = discordUserRepo;
+        this.patChatClient = patChatClient;
+        this.jda = jda;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
     }
@@ -55,5 +64,12 @@ public class DiscordUserController {
         AddDiscordUserOp op = new AddDiscordUserOp(discordUserRepo);
         AddDiscordUserResp resp = op.run(req);
         return jsonPrinter.print(resp);
+    }
+
+    @GetMapping(value = "/api/discord/patchats/broadcast/matching")
+    public String broadcastPatChatMatchingOp() {
+        BroadcastPatChatMatchingOp op = new BroadcastPatChatMatchingOp(discordUserRepo, patChatClient, jda);
+        op.run();
+        return null;
     }
 }

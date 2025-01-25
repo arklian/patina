@@ -7,15 +7,15 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import static net.dv8tion.jda.api.interactions.commands.OptionType.STRING;
 
 @Component
 @EnableConfigurationProperties(JDAProperties.class)
-public class JDAInitializer implements CommandLineRunner {
+public class JDAInitializer {
     final JDAProperties jdaProperties;
     private final JDAEventListener jdaEventListener;
 
@@ -25,8 +25,8 @@ public class JDAInitializer implements CommandLineRunner {
         this.jdaEventListener = jdaEventListener;
     }
 
-    @Override
-    public void run(String... args) throws Exception {
+    @Bean
+    public JDA jda() throws Exception {
         JDA jda = JDABuilder.createDefault(jdaProperties.getToken())
                 .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MEMBERS)
                 .setChunkingFilter(ChunkingFilter.ALL)
@@ -47,5 +47,7 @@ public class JDAInitializer implements CommandLineRunner {
                         Commands.slash("join_patchats", "Enters you into the weekly Patchats meeting"));
 
         commands.queue();
+
+        return jda;
     }
 }

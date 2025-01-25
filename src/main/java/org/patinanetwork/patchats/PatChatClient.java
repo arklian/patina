@@ -6,6 +6,7 @@ import org.patinanetwork.patchats.ops.GetPatChatMemberOp;
 import org.patinanetwork.patchats.ops.JoinPatChatMemberOp;
 import org.patinanetwork.patchats.ops.LeavePatChatMemberOp;
 import org.patinanetwork.patchats.ops.ListPatChatMembersOp;
+import org.patinanetwork.patchats.ops.MatchPatChatMemberOp;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.AddPatChatMemberResp;
 import org.patinanetwork.patchats.protos.DeletePatChatMemberReq;
@@ -17,6 +18,7 @@ import org.patinanetwork.patchats.protos.JoinPatChatMemberResp;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.patinanetwork.patchats.protos.LeavePatChatMemberResp;
 import org.patinanetwork.patchats.protos.ListPatChatMembersResp;
+import org.patinanetwork.patchats.protos.MatchPatChatMemberResp;
 import org.patinanetwork.patchats.repo.PatChatRepo;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -54,5 +56,9 @@ public class PatChatClient {
 
     public JoinPatChatMemberResp joinPatChatMember(JoinPatChatMemberReq req) {
         return new JoinPatChatMemberOp(patChatRepo).run(req);
+    }
+
+    public MatchPatChatMemberResp matchPatChatMember() {
+        return new MatchPatChatMemberOp(patChatRepo).run();
     }
 }
