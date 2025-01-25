@@ -16,6 +16,24 @@
       "message": "remove this",
       "revId": "a6683f4004fe462c5b257d7d576e93db826ecaf6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9cd4493_0fad6424",
+        "filename": "js/src/patina/admin/patchats/PatChatsDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-25T22:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3994f001_e0c9f1a6",
+      "revId": "a6683f4004fe462c5b257d7d576e93db826ecaf6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
