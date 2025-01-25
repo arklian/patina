@@ -44,8 +44,7 @@ public class JDAInitializer implements CommandLineRunner {
                                         "content",
                                         "What the bot should say",
                                         true), // you can add required options like this too
-                        Commands.slash("patchat_join", "Enters you into the weekly Patchats meeting."),
-                        Commands.slash("patchat_leave", "Opt out from Patchat meetings until specified."));
+                        Commands.slash("join_patchats", "Enters you into the weekly Patchats meeting"));
 
         commands.queue();
     }

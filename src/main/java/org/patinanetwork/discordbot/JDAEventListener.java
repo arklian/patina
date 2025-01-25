@@ -12,7 +12,6 @@ import org.patinanetwork.discordbot.protos.AddDiscordUserReq;
 import org.patinanetwork.discordbot.protos.GetDiscordUserReq;
 import org.patinanetwork.patchats.PatChatClient;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
-import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.patinanetwork.patchats.protos.JoinPatChatMemberReq;
 import org.springframework.stereotype.Component;
 
@@ -34,11 +33,8 @@ public class JDAEventListener extends ListenerAdapter {
             case "say":
                 say(event, event.getOption("content").getAsString()); // content is required so no null-check here
                 break;
-            case "patchat_join":
+            case "join_patchats":
                 joinPatChats(event);
-                break;
-            case "patchat-leave":
-                leavePatChats(event);
                 break;
             default:
                 event.reply("I can't handle that command right now :(")
@@ -134,19 +130,6 @@ public class JDAEventListener extends ListenerAdapter {
         } catch (Exception e) {
             e.printStackTrace();
             event.reply("Something went wrong while processing your request.")
-                    .setEphemeral(true)
-                    .queue();
-        }
-    }
-
-    private void leavePatChats(SlashCommandInteractionEvent event) {
-        String memberName = event.getUser().getEffectiveName();
-        try {
-            LeavePatChatMemberReq request = LeavePatChatMemberReq.newBuilder().build();
-            patChatClient.leavePatChatMember(request);
-            event.reply("You have successfully left Patchats.").setEphemeral(true).queue();
-        } catch (Exception e) {
-            event.reply("An error occurred, please try again later.")
                     .setEphemeral(true)
                     .queue();
         }
