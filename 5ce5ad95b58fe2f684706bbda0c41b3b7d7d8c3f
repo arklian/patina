@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a480731f_d6805191",
+        "filename": "js/src/patina/admin/patchats/PatChatsDataTable.tsx",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T23:50:31Z",
+      "side": 1,
+      "message": "Why 0%?",
+      "revId": "5ce5ad95b58fe2f684706bbda0c41b3b7d7d8c3f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
