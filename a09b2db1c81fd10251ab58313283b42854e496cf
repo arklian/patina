@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ac7cffa_645d8e29",
+        "filename": "src/main/java/org/patinanetwork/discordbot/DiscordUserController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T19:07:47Z",
+      "side": 1,
+      "message": "why string if it returns null?\n\nPerhaps we make a response object that includes any errors in matching so we can resolve them.\nOr like a status thing. We can figure this out in a later CR though.",
+      "revId": "a09b2db1c81fd10251ab58313283b42854e496cf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
