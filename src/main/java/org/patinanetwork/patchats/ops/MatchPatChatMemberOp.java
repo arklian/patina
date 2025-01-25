@@ -33,8 +33,9 @@ public class MatchPatChatMemberOp {
                 .orElseThrow(() -> new RuntimeException("Member with id 1 not found"));
 
         // Filters Henry out of the Patchats user table so everyone else can be matched.
-        List<PatChatMember> members = new ArrayList<>(
-                allMembers.stream().filter(member -> member.getId() != 1).toList());
+        List<PatChatMember> members = new ArrayList<>(allMembers.stream()
+                .filter(member -> member.getId() != 1 && member.getActive())
+                .toList());
 
         Collections.shuffle(members);
 
@@ -56,7 +57,6 @@ public class MatchPatChatMemberOp {
 
     public MatchPatChatMemberResp run() {
         List<List<PatChatMember>> matchedGroups = matchPatChatMember();
-
         if (matchedGroups == null || matchedGroups.isEmpty()) {
             throw new RuntimeException("No matched groups found");
         }

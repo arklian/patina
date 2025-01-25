@@ -55,3 +55,5 @@ message DeleteDiscordUserReq {
 message DeleteDiscordUserResp {
   DiscordUser member = 1;
 }
+
+
