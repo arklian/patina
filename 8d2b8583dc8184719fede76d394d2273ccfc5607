@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62b17519_d2f7851e",
+        "filename": "src/main/java/org/patinanetwork/patchats/ops/MatchPatChatMemberOp.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T19:22:21Z",
+      "side": 1,
+      "message": "This is in main already from Mali\u0027c CR I think.",
+      "revId": "8d2b8583dc8184719fede76d394d2273ccfc5607",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
