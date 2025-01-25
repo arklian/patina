@@ -16,6 +16,24 @@
       "message": "biweekly",
       "revId": "650dac9b502c74da420ab9232a66d68830af83b3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "baebf11e_72087d99",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAInitializer.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-25T19:58:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c69dd48_3b533379",
+      "revId": "650dac9b502c74da420ab9232a66d68830af83b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
