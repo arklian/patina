@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "526c86d5_290fd63f",
+        "filename": "src/main/java/org/patinanetwork/discordbot/DiscordUserController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T18:48:26Z",
+      "side": 1,
+      "message": "we probably want a better name for this.\n\n/api/discord/patchats/broadcast/matching",
+      "range": {
+        "startLine": 69,
+        "startChar": 38,
+        "endLine": 69,
+        "endChar": 40
+      },
+      "revId": "42baa1a07c1307ed6e4095d5d2666c90564f74e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25ccad6e_92bdd5dd",
+        "filename": "src/main/java/org/patinanetwork/discordbot/discord.proto",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T18:48:26Z",
+      "side": 1,
+      "message": "nit: unneeded",
+      "revId": "42baa1a07c1307ed6e4095d5d2666c90564f74e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b590bd9_2f528ed9",
+        "filename": "src/main/java/org/patinanetwork/discordbot/ops/BroadcastPatChatMatchingOp.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T18:48:26Z",
+      "side": 1,
+      "message": "Add comment describing what this operation does.",
+      "revId": "42baa1a07c1307ed6e4095d5d2666c90564f74e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
