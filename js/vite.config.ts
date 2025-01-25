@@ -20,6 +20,8 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@test-utils': path.resolve(__dirname, './test-utils'),
+      // /esm/icons/index.mjs only exports the icons statically, so no separate chunks are created
+      '@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
     },
   },
 })
