@@ -13,6 +13,7 @@ import org.patinanetwork.discordbot.protos.GetDiscordUserReq;
 import org.patinanetwork.patchats.PatChatClient;
 import org.patinanetwork.patchats.protos.AddPatChatMemberReq;
 import org.patinanetwork.patchats.protos.JoinPatChatMemberReq;
+import org.patinanetwork.patchats.protos.LeavePatChatMemberReq;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -33,8 +34,11 @@ public class JDAEventListener extends ListenerAdapter {
             case "say":
                 say(event, event.getOption("content").getAsString()); // content is required so no null-check here
                 break;
-            case "join_patchats":
+            case "patchat_join":
                 joinPatChats(event);
+                break;
+            case "patchat_leave":
+                leavePatChats(event);
                 break;
             default:
                 event.reply("I can't handle that command right now :(")
@@ -48,7 +52,6 @@ public class JDAEventListener extends ListenerAdapter {
     }
 
     public void joinPatChats(SlashCommandInteractionEvent event) {
-
         TextInput name = TextInput.create("full_name", "Full Name", TextInputStyle.SHORT)
                 .setPlaceholder("Enter your full name")
                 .setMinLength(2)
@@ -71,7 +74,9 @@ public class JDAEventListener extends ListenerAdapter {
 
             patChatClient.joinPatChatMember(joinRequest);
 
-            event.reply("You have successfully joined PatChats!").setEphemeral(true).queue();
+            event.reply("You have successfully joined PatChats!")
+                    .setEphemeral(true)
+                    .queue();
             return;
         } else {
             Modal modal = Modal.create("patchats_modal", "Patchats")
@@ -132,6 +137,32 @@ public class JDAEventListener extends ListenerAdapter {
             event.reply("Something went wrong while processing your request.")
                     .setEphemeral(true)
                     .queue();
+        }
+    }
+
+    public void leavePatChats(SlashCommandInteractionEvent event) {
+        User user = event.getUser();
+        GetDiscordUserReq request =
+                GetDiscordUserReq.newBuilder().setDiscordId(user.getId()).build();
+
+        var response = discordUserClient.getDiscordUser(request);
+
+        // Check if the user already exists in the system
+        if (response.hasMember() && !response.getMember().getDiscordId().isEmpty()) {
+            // User exists, set their active status to false
+
+            int patChatId = response.getMember().getPatchatMemberId();
+            LeavePatChatMemberReq leaveRequest =
+                    LeavePatChatMemberReq.newBuilder().setId(patChatId).build();
+
+            patChatClient.leavePatChatMember(leaveRequest);
+
+            event.reply("You have left PatChats. Hope you join again later! Let us know if you have feedback.")
+                    .setEphemeral(true)
+                    .queue();
+            return;
+        } else {
+            event.reply("Please join the PatChats first!").setEphemeral(true).queue();
         }
     }
 }
