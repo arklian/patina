@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "be63fe5a_dc9d1bff",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-25T19:47:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9f2fb947_468c6677",
+      "revId": "6432a4f7a7105f7dbeb7c6bd2cc0ccb3d908c2fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ede4e9b5_3119ab21",
@@ -31,6 +49,24 @@
       "writtenOn": "2025-01-25T19:11:50Z",
       "side": 1,
       "message": "these need to be fixed too.",
+      "revId": "6432a4f7a7105f7dbeb7c6bd2cc0ccb3d908c2fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6174e856_4e21b05d",
+        "filename": "src/main/java/org/patinanetwork/discordbot/JDAInitializer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1038597
+      },
+      "writtenOn": "2025-01-25T19:47:14Z",
+      "side": 1,
+      "message": "Fixed in a later push",
+      "parentUuid": "ede4e9b5_3119ab21",
       "revId": "6432a4f7a7105f7dbeb7c6bd2cc0ccb3d908c2fb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
