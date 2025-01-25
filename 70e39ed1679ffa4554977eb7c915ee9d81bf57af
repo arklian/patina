@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2ef997f_4f5caef0",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T23:48:00Z",
+      "side": 1,
+      "message": "We might want to name this generatePatChatsMatching",
+      "revId": "70e39ed1679ffa4554977eb7c915ee9d81bf57af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61cc54ed_e38316b6",
+        "filename": "src/main/java/org/patinanetwork/patchats/PatChatController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T23:48:00Z",
+      "side": 1,
+      "message": "You should take a step back and think if we need a REST endpoint for these. If there\u0027s no button on the UI for it, we likely don\u0027t need it.\n\nThis does not need to be a new endpoint, we can tie this functionality into the matchPatChatMemberOp, and call the PatChatGenerationRepo.addPatChatGeneration function inside of it.",
+      "revId": "70e39ed1679ffa4554977eb7c915ee9d81bf57af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb156643_d9d4c7f7",
+        "filename": "src/main/java/org/patinanetwork/patchats/repo/PsqlPatChatGenerationRepo.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1038141
+      },
+      "writtenOn": "2025-01-25T23:48:00Z",
+      "side": 1,
+      "message": "We should let the database generate the timestamp for us. \nhttps://stackoverflow.com/questions/38916063/add-timestamp-column-with-default-now-for-new-rows-only",
+      "revId": "70e39ed1679ffa4554977eb7c915ee9d81bf57af",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
