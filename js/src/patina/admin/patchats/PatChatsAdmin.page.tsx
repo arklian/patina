@@ -6,9 +6,10 @@ import { PatChatsDataTable } from '@/patina/admin/patchats/PatChatsDataTable.tsx
 export function PatChatEventPage() {
   const [activePage, setActivePage] = useState(1)
   const [limit, setLimit] = useState(10)
+  const [actionCounter, setActionCounter] = useState(0)
 
   const patchatsResp = useQuery({
-    queryKey: ['members', limit, activePage],
+    queryKey: ['members', limit, activePage, actionCounter],
     queryFn: async () => {
       const response = await fetch('/api/patchats/members', {
         method: 'GET',
@@ -37,6 +38,8 @@ export function PatChatEventPage() {
             setPage={setActivePage}
             limit={limit}
             setLimit={setLimit}
+            actionCounter={actionCounter}
+            setActionCounter={setActionCounter}
           />
         : <Loader />}
       </Stack>

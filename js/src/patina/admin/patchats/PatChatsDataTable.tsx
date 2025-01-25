@@ -1,4 +1,5 @@
 import { DataTable } from 'mantine-datatable'
+import { Actions } from '@/patina/admin/patchats/Actions.tsx'
 
 const PAGE_SIZES = [10, 20, 50]
 
@@ -14,6 +15,8 @@ type PatChatsDataTableProps = {
   setPage: any
   limit: number
   setLimit: any
+  actionCounter: number
+  setActionCounter: any
 }
 export function PatChatsDataTable({
   records,
@@ -22,6 +25,8 @@ export function PatChatsDataTable({
   setPage,
   limit,
   setLimit,
+  actionCounter,
+  setActionCounter,
 }: PatChatsDataTableProps) {
   return (
     <DataTable
@@ -33,6 +38,18 @@ export function PatChatsDataTable({
         {
           accessor: 'active',
           render: (row) => String(row.active),
+        },
+        {
+          accessor: 'actions',
+          title: 'Actions',
+          width: '0%',
+          render: (row) => (
+            <Actions
+              patchatsID={row.id}
+              actionCounter={actionCounter}
+              setActionCounter={setActionCounter}
+            />
+          ),
         },
       ]}
       records={records}
