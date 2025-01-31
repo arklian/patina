@@ -60,7 +60,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Feb 2nd, Sun 5:00-7:00pm'}
+              {'Feb 2nd, Sun 1:00-2:00pm'}
             </Text>
           }
           lineVariant="dashed"
