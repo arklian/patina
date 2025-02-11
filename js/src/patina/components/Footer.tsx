@@ -1,4 +1,4 @@
-import { ActionIcon, Text, UnstyledButton } from '@mantine/core'
+import { ActionIcon, Flex, Text, UnstyledButton } from '@mantine/core'
 import { FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { ReactNode } from 'react'
 import styles from './Footer.module.css'
@@ -16,7 +16,7 @@ export function Footer() {
             <PatinaBadge />
           </UnstyledButton>
         </div>
-        <Text px={30} fs="italic">
+        <Text visibleFrom="xs" px={30} fs="italic">
           {'Patina Network is a 501(c)(3) non-profit organization.'}
         </Text>
         <div className={styles.footerLinks}>
@@ -33,6 +33,11 @@ export function Footer() {
           </FooterIconLink>
         </div>
       </div>
+      <Flex hiddenFrom="xs">
+        <Text px={30} fs="italic">
+          {'Patina Network is a 501(c)(3) non-profit organization.'}
+        </Text>
+      </Flex>
     </div>
   )
 }
