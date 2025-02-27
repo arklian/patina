@@ -6,10 +6,11 @@ import {
   Title,
   UnstyledButton,
 } from '@mantine/core'
-import { FaLinkedinIn, FaGlobe, FaGithub } from 'react-icons/fa'
 import { ReactNode } from 'react'
-import construction from '@/patina/assets/construction.png'
+import { FaGithub, FaGlobe, FaLinkedinIn } from 'react-icons/fa'
 
+import { Link } from 'react-router-dom'
+import construction from '@/patina/assets/construction.png'
 import styles from './InternCard.module.css'
 
 interface InternCardProps {
@@ -63,7 +64,11 @@ export function InternCard({
         </div>
       </div>
       {webURL ?
-        <UnstyledButton component={'a'} href={webURL}>
+        <UnstyledButton
+          component={Link}
+          to={webURL}
+          reloadDocument={!webURL.startsWith('/')}
+        >
           <div className={styles.imageWrapper}>
             <Image
               className={styles.image}

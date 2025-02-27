@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button, Text } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
@@ -12,12 +13,7 @@ export function VolunteerPage() {
     <Text className={styles.description}>
       {'The Patina Network volunteer program is open to anyone who wants to get involved in helping us' +
         ' accomplish the same '}
-      <Text
-        component={'a'}
-        className={styles.colored}
-        href={'/mission'}
-        inherit
-      >
+      <Text component={Link} className={styles.colored} to={'/mission'} inherit>
         {'mission'}
       </Text>
       {'. There are many ways to join us by sharing your talents!'}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Container,
   Group,
@@ -29,9 +30,9 @@ export function NavBar() {
   const [opened, { toggle, close }] = useDisclosure(false)
   const items = links.map((link: { link: string; text: string }) => (
     <Button
-      component={'a'}
+      component={Link}
       key={link.text}
-      href={link.link}
+      to={link.link}
       className={classes.link}
     >
       {link.text}

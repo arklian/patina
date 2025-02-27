@@ -1,8 +1,9 @@
-import { Group, Flex, ActionIcon, Burger, Drawer, Stack } from '@mantine/core'
+import { ActionIcon, Burger, Drawer, Flex, Group, Stack } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import { IconHexagonLetterJ, IconArrowRight } from '@tabler/icons-react'
-import styles from './Header.module.css'
+import { IconArrowRight, IconHexagonLetterJ } from '@tabler/icons-react'
+import { Link } from 'react-router-dom'
 import { DarkModeToggle } from './DarkModeToggle.tsx'
+import styles from './Header.module.css'
 import { HoverButton } from './HoverButton.tsx'
 
 export function Header() {
@@ -13,8 +14,8 @@ export function Header() {
       <Flex justify="right" align="center">
         <ActionIcon
           className={styles.icons}
-          component={'a'}
-          href={'#'}
+          component={Link}
+          to={'#'}
           variant={'transparent'}
           size={'xl'}
         >

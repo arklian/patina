@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Text } from '@mantine/core'
 import { Forms } from '@/patina/components/Forms.tsx'
 import { Criteria } from '@/patina/pages/scholarship/criteria/Criteria.tsx'
@@ -13,12 +14,7 @@ export function ScholarshipPage() {
   const message = (
     <Text className={styles.description}>
       {'The Patina Network Scholarship Fund intends to manifest our '}
-      <Text
-        component={'a'}
-        className={styles.colored}
-        href={'/mission'}
-        inherit
-      >
+      <Text component={Link} className={styles.colored} to={'/mission'} inherit>
         {'vision'}
       </Text>
       {

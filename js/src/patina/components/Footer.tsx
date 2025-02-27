@@ -1,8 +1,9 @@
 import { ActionIcon, Text, UnstyledButton } from '@mantine/core'
-import { FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { ReactNode } from 'react'
-import styles from './Footer.module.css'
+import { FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
+import styles from './Footer.module.css'
 
 /**
  * Footer component to display patina network logo, social media links
@@ -12,7 +13,7 @@ export function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerContents}>
         <div className={styles.logoTextContainer}>
-          <UnstyledButton component={'a'} href={'/'}>
+          <UnstyledButton component={Link} to={'/'}>
             <PatinaBadge />
           </UnstyledButton>
         </div>

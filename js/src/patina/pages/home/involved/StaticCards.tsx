@@ -1,5 +1,6 @@
-import { Button, Card, Image, Center } from '@mantine/core'
+import { Button, Card, Center, Image } from '@mantine/core'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './StaticCards.module.css'
 
 type StaticCardsProps = {
@@ -53,10 +54,10 @@ export function StaticCards({
         </div>
         <p className={styles.cardText}>{description}</p>
         <Button
-          component={'a'}
+          component={Link}
           variant={'outline'}
           className={styles.cardButton}
-          href={href}
+          to={href ?? ''}
         >
           {'Check it out'}
         </Button>

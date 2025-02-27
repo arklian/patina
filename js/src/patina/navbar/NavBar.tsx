@@ -13,10 +13,11 @@ import {
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { IconChevronDown } from '@tabler/icons-react'
+import { Link } from 'react-router-dom'
+import { ContentPage } from '@/patina/components/ContentPage.tsx'
+import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
 import { MobileNavBar } from './MobileNavBar.tsx'
 import classes from './NavBar.module.css'
-import { PatinaBadge } from '@/patina/components/PatinaBadge.tsx'
-import { ContentPage } from '@/patina/components/ContentPage.tsx'
 
 const links = [
   {
@@ -81,9 +82,9 @@ export function NavBar() {
           <Menu.Dropdown>
             {link.subLinks?.map((subLink) => (
               <Menu.Item
-                component={'a'}
+                component={Link}
                 key={subLink.label}
-                href={subLink.link}
+                to={subLink.link}
                 className={classes.dropDownItem}
               >
                 {subLink.label}
@@ -96,9 +97,9 @@ export function NavBar() {
 
     return link.link ?
         <UnstyledButton
-          component={'a'}
+          component={Link}
           key={link.label}
-          href={link.link}
+          to={link.link}
           className={classes.link}
         >
           {link.label}
@@ -115,8 +116,8 @@ export function NavBar() {
           <ContentPage>
             <div className={classes.inner}>
               <UnstyledButton
-                component={'a'}
-                href={'/'}
+                component={Link}
+                to={'/'}
                 className={classes.link}
               >
                 <PatinaBadge />

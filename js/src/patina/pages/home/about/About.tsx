@@ -1,4 +1,5 @@
-import { Text, Button, useMantineTheme } from '@mantine/core'
+import { Button, Text, useMantineTheme } from '@mantine/core'
+import { Link } from 'react-router-dom'
 import styles from './About.module.css'
 
 export function About() {
@@ -25,8 +26,8 @@ export function About() {
           color={theme.colors.dark[0]}
           autoContrast
           fullWidth
-          component={'a'}
-          href="/mission"
+          component={Link}
+          to="/mission"
         >
           <Text size="xl" fw={200}>
             {'More about us'}

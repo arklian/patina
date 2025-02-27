@@ -1,11 +1,12 @@
 import {
+  AspectRatio,
+  Image,
+  Space,
   Text,
   Title,
-  Image,
-  AspectRatio,
-  Space,
   UnstyledButton,
 } from '@mantine/core'
+import { Link } from 'react-router-dom'
 import styles from './Cards.module.css'
 
 export type CardsProps = {
@@ -20,7 +21,7 @@ export type CardsProps = {
 export function Cards({ title, details, img, alt, link }: CardsProps) {
   return (
     <div className={styles.card}>
-      <UnstyledButton component={'a'} href={link}>
+      <UnstyledButton component={Link} to={link ?? ''}>
         <div className={styles.border}>
           <AspectRatio>
             <Image className={styles.image} src={img} alt={alt} radius={5} />
