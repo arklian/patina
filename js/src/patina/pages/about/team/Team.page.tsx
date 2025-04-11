@@ -19,7 +19,7 @@ export function TeamPage() {
         <Title order={2} className={styles.title}>
           {'Board of Directors'}
         </Title>
-        <Group component={'ul'} p={0} w={'100%'}>
+        <Group justify={'center'} component={'ul'} p={0} w={'100%'}>
           {boardMembers.map((boardMember) => (
             <PersonCard {...boardMember} />
           ))}

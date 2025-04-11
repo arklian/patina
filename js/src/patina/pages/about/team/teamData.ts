@@ -38,15 +38,6 @@ export const boardMembers = [
     imageSrc: imageUrls.joan.src,
   },
   {
-    name: 'Kevin Oh',
-    role: 'Board Member',
-    email: 'kevin@patinanetwork.org',
-    linkedInUrl: 'https://www.linkedin.com/in/kevin-y-oh/',
-    webUrl: '',
-    githubUrl: '',
-    imageSrc: imageUrls.kevin.src,
-  },
-  {
     name: 'Kevin Ma',
     role: 'Board Member',
     email: 'kevinma@patinanetwork.org',
