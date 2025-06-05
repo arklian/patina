@@ -12,29 +12,30 @@ import { About } from '@/patina/pages/scholarship/about/About.tsx'
 export function ScholarshipPage() {
   const message = (
     <Text className={styles.description}>
-      {'The Patina Network Scholarship Fund intends to manifest our '}
-      <Text
-        component={'a'}
-        className={styles.colored}
-        href={'/mission'}
-        inherit
-      >
-        {'vision'}
-      </Text>
       {
-        ' by awarding scholarships annually to students who have ethnicity, heritage, or ancestry relation to the AANHPI communities and would benefit the most from the financial stipend.'
+        'The Patina Network Community Scholarship Program aims to empower and support Asian American, Native Hawaiian, and Pacific Islander (AANHPI) women and allies. We hope to help foster education opportunities by providing this small boost of financial assistance to under-resourced New York State students who demonstrate academic potential, community engagement, and financial need. '
       }
+      <p />
+      <Text fw={700} size={'xl'}>
+        {'Applications are open June 9 - July 14! '}
+      </Text>
+      <Text pl={24} size={'lg'}>
+        {'Total Awards: 2'}
+      </Text>
+      <Text pl={24} size={'lg'}>
+        {'Amount: $1,000 per recipient'}
+      </Text>
     </Text>
   )
   return (
     <ContentPage>
       <Hero
-        title="Scholarship Fund"
+        title="Patina Network Community Scholarship"
         details={message}
         img={imageUrls.scholarshipHero.src}
         alt={imageUrls.scholarshipHero.alt}
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfE93_PaX8Eynv_6zdMQnYHiljFq7Ci_E0_9hzRs2z3aSE3-g/viewform?fbzx=-2135089361293927732"
-        buttonText="Apply for scholarship"
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSebmBkODUg-FePMCvAO-iH7iItH1ruUFN1Whc13TrIkXRlbnQ/viewform"
+        buttonText="Application Link"
         buttonColor={'var(--mantine-color-patina-green-light)'}
       />
       <About />

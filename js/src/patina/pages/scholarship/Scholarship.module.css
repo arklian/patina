@@ -6,11 +6,6 @@
   padding-bottom: 50px;
 }
 
-.colored {
-  color: var(--mantine-color-patina-green-light);
-  text-decoration: underline;
-}
-
 .about {
   display: flex;
   justify-content: space-evenly;
