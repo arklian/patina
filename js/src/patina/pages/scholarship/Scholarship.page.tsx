@@ -1,13 +1,11 @@
-import { Text } from '@mantine/core'
-import { Forms } from '@/patina/components/Forms.tsx'
-import { Criteria } from '@/patina/pages/scholarship/criteria/Criteria.tsx'
+import { Space, Text } from '@mantine/core'
 import { Application } from '@/patina/pages/scholarship/application/Application.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { Hero } from '@/patina/components/Hero'
-// import { DonorSection } from '@/patina/pages/scholarship/donors/Donors.page.tsx'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Scholarship.module.css'
-import { About } from '@/patina/pages/scholarship/about/About.tsx'
+// import { About } from '@/patina/pages/scholarship/about/About.tsx'
+import { ProgramDetails } from '@/patina/pages/scholarship/program/ProgramDetails.tsx'
 
 export function ScholarshipPage() {
   const message = (
@@ -38,11 +36,13 @@ export function ScholarshipPage() {
         buttonText="Application Link"
         buttonColor={'var(--mantine-color-patina-green-light)'}
       />
-      <About />
-      <Criteria />
+      {/*<About />*/}
+      <ProgramDetails />
+      <Space h={64} />
+      {/*<Criteria />*/}
       <Application />
-      <Forms />
-      {/*<DonorSection />*/}
+      <Space h={32} />
+      {/*<ContactUs/>*/}
     </ContentPage>
   )
 }

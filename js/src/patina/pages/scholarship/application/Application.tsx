@@ -1,4 +1,4 @@
-import { Text, Button, Space } from '@mantine/core'
+import { Button, Space, Text } from '@mantine/core'
 import { Stacks } from '@/patina/components/Stacks'
 import styles from './Application.module.css'
 
@@ -52,7 +52,7 @@ export function Application() {
           variant="filled"
           color="var(--mantine-color-patina-green-light)"
           target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfE93_PaX8Eynv_6zdMQnYHiljFq7Ci_E0_9hzRs2z3aSE3-g/viewform?fbzx=-2135089361293927732"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSebmBkODUg-FePMCvAO-iH7iItH1ruUFN1Whc13TrIkXRlbnQ/viewform"
         >
           <Text className={styles.appButtonText} size="20" fw={600}>
             {'Apply Here'}
