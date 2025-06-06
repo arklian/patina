@@ -1,0 +1,15 @@
+.twoColBody {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: nowrap;
+  box-sizing: unset;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    flex-wrap: wrap;
+  }
+}
+
+.equalCols {
+  flex: 1 1 0;
+}

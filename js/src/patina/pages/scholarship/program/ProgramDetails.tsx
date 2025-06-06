@@ -10,7 +10,7 @@ import {
   Title,
   useMantineTheme,
 } from '@mantine/core'
-import { FaCaretRight } from 'react-icons/fa'
+import { FaCheck } from 'react-icons/fa'
 import styles from './ProgramDetails.module.css'
 
 /** Displays details for the mentorship program for mentees */
@@ -124,10 +124,9 @@ function EligibilityBullet({ msg }: { msg: string }) {
           <ThemeIcon
             color={'dark.4'}
             c={theme.other.patinaGreenLight}
-            size={28}
-            radius="xl"
+            size={24}
           >
-            <FaCaretRight size={18} />
+            <FaCheck size={16} />
           </ThemeIcon>
         }
       >
