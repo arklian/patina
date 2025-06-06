@@ -1,6 +1,9 @@
 import {
+  Anchor,
   Box,
+  Button,
   Center,
+  Flex,
   List,
   ListItem,
   Space,
@@ -55,7 +58,10 @@ export function ScholarshipPage() {
       <TwoCol left={<HowToApply />} right={<EvaluationMetrics />}></TwoCol>
       {/*<Application />*/}
       <Space h={32} />
-      {/*<ContactUs/>*/}
+      <ContactUs />
+      <Space h={32} />
+      <ApplyButton />
+      <Space h={32} />
     </ContentPage>
   )
 }
@@ -185,5 +191,39 @@ function EvaluationMetrics() {
         </List>
       </Box>
     </Stack>
+  )
+}
+
+function ContactUs() {
+  return (
+    <Flex>
+      <Text size={'xl'}>
+        {'Questions? Email '}
+        <Anchor href={'mailto:hi@patinanetwork.org'}>
+          {'hi@patinanetwork.org'}
+        </Anchor>
+        {' or join our Discord server and introduce yourself!'}
+      </Text>
+    </Flex>
+  )
+}
+
+function ApplyButton() {
+  return (
+    <Center>
+      <Button
+        component="a"
+        className={styles.appButton}
+        variant="filled"
+        color="var(--mantine-color-patina-green-light)"
+        c={'black'}
+        target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSebmBkODUg-FePMCvAO-iH7iItH1ruUFN1Whc13TrIkXRlbnQ/viewform"
+      >
+        <Text className={styles.appButtonText} size="20">
+          {'Apply Here!'}
+        </Text>
+      </Button>
+    </Center>
   )
 }
