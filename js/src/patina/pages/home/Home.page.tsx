@@ -27,15 +27,6 @@ export function HomePage() {
         <Initiatives />
       </div>
       <GetInvolved />
-      {/* Removing 'Why is this important' section until content comes in. */}
-      {/*<div className={styles.containers}>*/}
-      {/*  <Title className={styles.importantSectionTitle}>*/}
-      {/*    'Why is This Important?' */}
-      {/*  </Title>*/}
-      {/*</div>*/}
-      {/*<div className={styles.containers}>*/}
-      {/*  <ImportantSection />*/}
-      {/*</div>*/}
     </ContentPage>
   )
 }
