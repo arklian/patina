@@ -145,7 +145,6 @@ export function InternshipPage() {
                 school={intern.school}
                 graduation={intern.graduation}
                 linkedInURL={intern.linkedInURL}
-                webURL={intern.websiteUrl}
                 githubURL={intern.githubUrl}
                 imageSRC={intern.imageSrc}
               />

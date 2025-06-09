@@ -1,14 +1,6 @@
-import {
-  ActionIcon,
-  Image,
-  Paper,
-  Text,
-  Title,
-  UnstyledButton,
-} from '@mantine/core'
-import { FaLinkedinIn, FaGlobe, FaGithub } from 'react-icons/fa'
+import { ActionIcon, Image, Paper, Text, Title } from '@mantine/core'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { ReactNode } from 'react'
-import construction from '@/patina/assets/construction.png'
 
 import styles from './InternCard.module.css'
 
@@ -18,7 +10,6 @@ interface InternCardProps {
   school: string
   graduation: string
   linkedInURL: string
-  webURL: string
   githubURL: string
   imageSRC: string
 }
@@ -29,7 +20,6 @@ export function InternCard({
   school,
   graduation,
   linkedInURL,
-  webURL,
   githubURL,
   imageSRC,
 }: InternCardProps) {
@@ -55,31 +45,9 @@ export function InternCard({
               <FaGithub size={24} aria-label={`GitHub for ${name}`} />
             </InternIconLink>
           )}
-          {webURL && (
-            <InternIconLink href={webURL}>
-              <FaGlobe size={24} aria-label={`Website for ${name}`} />
-            </InternIconLink>
-          )}
         </div>
       </div>
-      {webURL ?
-        <UnstyledButton component={'a'} href={webURL}>
-          <div className={styles.imageWrapper}>
-            <Image
-              className={styles.image}
-              src={imageSRC}
-              alt={`Website for ${name}`}
-            />
-            <div className={styles.imageHover}>
-              <Text className={styles.hoverText}>
-                <Image src={construction} w={25} h={25} />
-                {'Under Construction'}
-                <Image src={construction} w={25} h={25} />
-              </Text>
-            </div>
-          </div>
-        </UnstyledButton>
-      : <Image className={styles.image} src={imageSRC} alt={''} />}
+      <Image className={styles.image} src={imageSRC} alt={''} />
     </Paper>
   )
 }
