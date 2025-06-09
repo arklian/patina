@@ -1,7 +1,6 @@
 import { render } from '@test-utils/test-utils.ts'
 import { MantineProvider } from '@mantine/core'
 import { Welcome } from './Welcome'
-import { theme } from '@/personal/theme.ts'
 
 /**
  *  This test serves as an example for writing front end unit tests.
@@ -23,7 +22,7 @@ import { theme } from '@/personal/theme.ts'
 describe('Welcome component', () => {
   it('has correct Vite guide link', () => {
     render(
-      <MantineProvider theme={theme}>
+      <MantineProvider>
         <Welcome />
       </MantineProvider>,
     )

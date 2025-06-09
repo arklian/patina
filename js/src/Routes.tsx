@@ -1,5 +1,4 @@
 import { PatinaRoutes } from '@/patina/Patina.routes.tsx'
-import { PersonalRoutes } from './personal/Personal.routes.tsx'
 import { PatinaPage } from '@/patina/Patina.page.tsx'
 import { LilacPage } from '@/lilac/Lilac.page.tsx'
 import { LilacRoutes } from '@/lilac/Lilac.routes.tsx'
@@ -19,12 +18,6 @@ export const Routes = [
     description: 'lilac',
     element: <LilacPage />,
     children: LilacRoutes,
-  },
-  // Secondary path for hosting our personal websites
-  {
-    path: '/personal',
-    description: 'Personal Websites',
-    children: PersonalRoutes,
   },
   {
     path: '/admin',
