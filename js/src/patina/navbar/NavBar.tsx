@@ -32,7 +32,7 @@ const links = [
     label: 'For Students',
     subLinks: [
       { link: '/mentorship', label: 'Mentorship' },
-      // { link: '/scholarship', label: 'Scholarship' },
+      { link: '/scholarship', label: 'Scholarship' },
       { link: '/internship', label: 'Internship' },
     ],
   },
