@@ -31,9 +31,8 @@ const links = [
     link: '',
     label: 'For Students',
     subLinks: [
-      { link: '/mentorship', label: 'Mentorship' },
       { link: '/scholarship', label: 'Scholarship' },
-      { link: '/internship', label: 'Internship' },
+      { link: '/mentorship', label: 'Mentorship' },
     ],
   },
   {
@@ -44,7 +43,15 @@ const links = [
       { link: '/volunteer', label: 'Volunteer' },
     ],
   },
-  { link: '/events', label: 'Events' },
+  {
+    link: '',
+    label: 'Past Programs',
+    subLinks: [
+      { link: '/mentorship-fa24', label: "Mentorship Fall '24" },
+      { link: '/internship', label: "Internship Summer '24" },
+    ],
+  },
+  // { link: '/events', label: 'Events' },
   // { link: '/blog', label: 'Blog' },
   // { label: 'Donate' },
 ]
