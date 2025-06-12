@@ -1,4 +1,4 @@
-import { Title, Space, Text, Image } from '@mantine/core'
+import { Image, Space, Text, Title } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import styles from './Mission.module.css'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
@@ -25,8 +25,9 @@ export function MissionPage() {
           </Title>
           <div>
             <Text>
-              {'Our vision is to see AANHPI women leading in every field, from politics and business to arts and sciences,' +
-                ' contributing to a more equitable, inclusive, and vibrant world.'}
+              {
+                'To help build a world where anyone can lead with confidence - uplifting their community, advancing their career, and shaping their own path..'
+              }
             </Text>
           </div>
         </div>
