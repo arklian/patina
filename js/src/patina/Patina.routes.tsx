@@ -3,9 +3,11 @@ import { MissionPage } from '@/patina/pages/about/mission/Mission.page.tsx'
 import { TeamPage } from '@/patina/pages/about/team/Team.page.tsx'
 import { MentorshipPage as MentorshipFa24Page } from '@/patina/pages/mentorship-fa24/Mentorship.page.tsx'
 import { MentorshipPage as MentorshipSp25Page } from '@/patina/pages/mentorship-sp25/Mentorship.page.tsx'
+import { MentorshipPage as MentorshipFa25Page } from '@/patina/pages/mentorship-fa25/Mentorship.page.tsx'
 import { CommunityPage } from '@/patina/pages/community/Community.page.tsx'
 import { MentorPage as MentorFa24Page } from '@/patina/pages/mentor-fa24/Mentor.page.tsx'
 import { MentorPage as MentorSp25Page } from '@/patina/pages/mentor-sp25/Mentor.page.tsx'
+import { MentorPage as MentorFa25Page } from '@/patina/pages/mentor-fa25/Mentor.page.tsx'
 import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
 import { ScholarshipPage } from '@/patina/pages/scholarship/Scholarship.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
@@ -43,9 +45,14 @@ export const PatinaRoutes = [
     element: <MentorshipFa24Page />,
   },
   {
-    path: 'mentorship',
+    path: 'mentorship-sp25',
     description: "Mentorship Spring '25",
     element: <MentorshipSp25Page />,
+  },
+  {
+    path: 'mentorship',
+    description: "Mentorship Fall '25",
+    element: <MentorshipFa25Page />,
   },
   {
     path: 'scholarship',
@@ -58,9 +65,14 @@ export const PatinaRoutes = [
     element: <MentorFa24Page />,
   },
   {
-    path: 'mentor',
+    path: 'mentor-sp25',
     description: "Mentor Spring '25",
     element: <MentorSp25Page />,
+  },
+  {
+    path: 'mentor',
+    description: "Mentor Fall '25",
+    element: <MentorFa25Page />,
   },
   {
     path: 'volunteer',

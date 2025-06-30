@@ -1,0 +1,28 @@
+.programDetails {
+  margin-inline: 64px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin-inline: 0;
+  }
+}
+
+.timelineSection {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.programSection {
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  margin-inline: 64px;
+}
+
+.programDescription {
+  min-width: 300px;
+  font-size: 20px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin-inline: 0;
+  }
+}
