@@ -125,7 +125,7 @@ export function InternshipPage() {
       </section>
 
       <Text className={styles.internshipTextHeader}>{'The mentors:'}</Text>
-      <Group component={'ul'} p={0} w={'100%'}>
+      <Group component={'ul'} p={0} w={'100%'} justify={'center'}>
         {mentorData.map((mentor) => (
           <MentorCard key={mentor.name} {...mentor} />
         ))}
@@ -133,8 +133,9 @@ export function InternshipPage() {
       <Space h={48} />
 
       <Text className={styles.internshipTextHeader}>
-        {'Check out our interns and their work:'}
+        {'Check out our interns!'}
       </Text>
+
       <div className={styles.internshipCards}>
         <ul className={styles.grid}>
           {internData.map((intern) => (
@@ -152,6 +153,7 @@ export function InternshipPage() {
           ))}
         </ul>
       </div>
+      <Space h={128} />
     </ContentPage>
   )
 }

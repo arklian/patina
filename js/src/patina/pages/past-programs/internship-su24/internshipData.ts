@@ -44,7 +44,7 @@ export const internData = [
     graduation: 'May 2026',
     linkedInURL: 'https://www.linkedin.com/in/maliha-tasnim-81864b178/',
     githubUrl: 'https://github.com/MalihaT111',
-    imageSrc: imageUrls.malihaWebsite.src,
+    imageSrc: imageUrls.maliha.src,
   },
   {
     name: 'Jionghao Wu',
@@ -53,7 +53,7 @@ export const internData = [
     graduation: 'May 2024',
     linkedInURL: 'https://www.linkedin.com/in/jionghao-wu/',
     githubUrl: 'https://github.com/Jhwu3',
-    imageSrc: imageUrls.jionghaoWebsite.src,
+    imageSrc: imageUrls.jionghao.src,
   },
   {
     name: 'Riyuan Liu',
@@ -62,7 +62,7 @@ export const internData = [
     graduation: 'May 2025',
     linkedInURL: 'https://www.linkedin.com/in/riyuan-liu/',
     githubUrl: 'https://github.com/Riyuanliu',
-    imageSrc: imageUrls.riyuanWebsite.src,
+    imageSrc: imageUrls.riyuan.src,
   },
   {
     name: 'Manuel Reyes',
@@ -71,7 +71,7 @@ export const internData = [
     graduation: 'May 2025',
     linkedInURL: 'https://www.linkedin.com/in/manuel-reyes-jr-swe/',
     githubUrl: 'https://github.com/Mreyes1241',
-    imageSrc: imageUrls.manuelWebsite.src,
+    imageSrc: imageUrls.manuel.src,
   },
   {
     name: 'Amanda Ruan',
@@ -80,7 +80,7 @@ export const internData = [
     graduation: 'May 2025',
     linkedInURL: 'https://www.linkedin.com/in/amandaruan/',
     githubUrl: 'https://github.com/aruan20',
-    imageSrc: imageUrls.amandaWebsite.src,
+    imageSrc: imageUrls.amanda.src,
   },
   {
     name: 'Kelly Lin',
@@ -89,7 +89,7 @@ export const internData = [
     graduation: 'Dec 2025',
     linkedInURL: 'https://www.linkedin.com/in/kxllylin/',
     githubUrl: 'https://github.com/Kxlcl',
-    imageSrc: imageUrls.kellyWebsite.src,
+    imageSrc: imageUrls.kelly.src,
   },
   {
     name: 'Tony Wang',
@@ -98,7 +98,7 @@ export const internData = [
     graduation: 'Dec 2024',
     linkedInURL: 'https://www.linkedin.com/in/wangtony4005/',
     githubUrl: 'https://github.com/wangtony4005',
-    imageSrc: imageUrls.tonyWebsite.src,
+    imageSrc: imageUrls.tony.src,
   },
   {
     name: 'Kazi Mansha',
@@ -107,7 +107,7 @@ export const internData = [
     graduation: 'May 2025',
     linkedInURL: 'https://www.linkedin.com/in/kazimansha/',
     githubUrl: 'https://github.com/KaziMansha',
-    imageSrc: imageUrls.kaziWebsite.src,
+    imageSrc: imageUrls.kazi.src,
   },
   {
     name: 'Haoking Luo',
@@ -116,7 +116,7 @@ export const internData = [
     graduation: 'May 2027',
     linkedInURL: 'https://www.linkedin.com/in/luohk1/',
     githubUrl: 'https://github.com/luoh00',
-    imageSrc: imageUrls.haokingWebsite.src,
+    imageSrc: imageUrls.haoking.src,
   },
   {
     name: 'Bryan Zhang',
@@ -125,6 +125,6 @@ export const internData = [
     graduation: 'May 2026',
     linkedInURL: 'https://www.linkedin.com/in/bryanzhang14916/',
     githubUrl: 'https://github.com/bz5989',
-    imageSrc: imageUrls.bryanWebsite.src,
+    imageSrc: imageUrls.bryan.src,
   },
 ]

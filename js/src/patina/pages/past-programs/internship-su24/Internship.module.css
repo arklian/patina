@@ -13,14 +13,13 @@
 }
 
 .internshipTextHeader {
-  align-self: flex-start;
+  align-self: center;
   font-size: 34px;
   font-weight: 700;
 }
 
 .internshipCards {
   width: 100%;
-  padding-bottom: 48px;
 }
 
 .grid {
