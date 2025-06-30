@@ -1,4 +1,4 @@
-import { Button, Group, List, Space, Stack, Text, Image } from '@mantine/core'
+import { Button, Group, Image, List, Space, Stack, Text } from '@mantine/core'
 import { FaGithub } from 'react-icons/fa'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
@@ -6,11 +6,11 @@ import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { InternCard } from './InternCard.tsx'
 import { MentorCard } from './MentorCard.tsx'
 import {
-  mentorData,
   internData,
-} from '@/patina/pages/internship/internshipData.ts'
+  mentorData,
+} from '@/patina/pages/past-programs/internship/internshipData.ts'
 import styles from './Internship.module.css'
-import { FractalBadge } from '@/patina/pages/internship/FractalBadge.tsx'
+import { FractalBadge } from '@/patina/pages/past-programs/internship/FractalBadge.tsx'
 import gerritIcon from '@/patina/assets/gerrit-favicon.ico'
 
 export function InternshipPage() {

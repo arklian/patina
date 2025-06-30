@@ -11,7 +11,7 @@ import { MentorPage as MentorFa25Page } from '@/patina/pages/mentor-fa25/Mentor.
 import { VolunteerPage } from '@/patina/pages/volunteer/Volunteer.page.tsx'
 import { ScholarshipPage } from '@/patina/pages/scholarship/Scholarship.page.tsx'
 import { LoginPage } from '@/patina/login/Login.page.tsx'
-import { InternshipPage } from '@/patina/pages/internship/Internship.page.tsx'
+import { InternshipPage } from '@/patina/pages/past-programs/internship/Internship.page.tsx'
 import { BlogRoutes } from '@/patina/pages/blog/Blog.routes.tsx'
 import { Blog } from '@/patina/pages/blog/Blog.tsx'
 
