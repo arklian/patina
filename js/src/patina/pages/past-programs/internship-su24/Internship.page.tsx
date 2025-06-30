@@ -8,9 +8,9 @@ import { MentorCard } from './MentorCard.tsx'
 import {
   internData,
   mentorData,
-} from '@/patina/pages/past-programs/internship/internshipData.ts'
+} from '@/patina/pages/past-programs/internship-su24/internshipData.ts'
 import styles from './Internship.module.css'
-import { FractalBadge } from '@/patina/pages/past-programs/internship/FractalBadge.tsx'
+import { FractalBadge } from '@/patina/pages/past-programs/internship-su24/FractalBadge.tsx'
 import gerritIcon from '@/patina/assets/gerrit-favicon.ico'
 
 export function InternshipPage() {
@@ -127,7 +127,7 @@ export function InternshipPage() {
       <Text className={styles.internshipTextHeader}>{'The mentors:'}</Text>
       <Group component={'ul'} p={0} w={'100%'}>
         {mentorData.map((mentor) => (
-          <MentorCard {...mentor} />
+          <MentorCard key={mentor.name} {...mentor} />
         ))}
       </Group>
       <Space h={48} />
