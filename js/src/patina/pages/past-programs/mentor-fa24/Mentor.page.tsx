@@ -1,13 +1,14 @@
 import { Button, Center, Space, Text, useMantineTheme } from '@mantine/core'
 import { Hero } from '@/patina/components/Hero'
-import { About } from '@/patina/pages/mentor-sp25/about/About'
+// import { Impact } from '@/patina/pages/past-programs/mentor/impact/Impact'
+import { About } from '@/patina/pages/past-programs/mentor-fa24/about/About'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentor.module.css'
-import { ProgramDetails } from '@/patina/pages/mentor-sp25/program/ProgramDetails.tsx'
-import { Tracks } from '@/patina/pages/mentor-sp25/tracks/Tracks.tsx'
+import { ProgramDetails } from '@/patina/pages/past-programs/mentor-fa24/program/ProgramDetails.tsx'
 
-const mentorGoogleFormUrl = 'https://forms.gle/cCGBxbDVGoWb9nyn7'
+const mentorGoogleFormUrl =
+  'https://docs.google.com/forms/d/1yWPT7gYtpiKbBO6IKgcTygTzuHdAZaSomgu0BnDW23s/viewform'
 
 /**
  * Mentor page allows people to apply to be mentors.
@@ -16,10 +17,8 @@ export function MentorPage() {
   const message = (
     <Text className={styles.description}>
       {
-        'Share your expertise and make a meaningful impact by mentoring! Join us to help cultivate diverse talent, foster cultural awareness, and shape a more inclusive future in your industry.'
+        'Share your expertise and make a meaningful impact by mentoring the next generation of AANHPI and ally professionals. Join us to help cultivate diverse talent, foster cultural awareness, and shape a more inclusive future in your industry.'
       }
-      <p />
-      {'Applications for Spring 2025 are now open!'}
     </Text>
   )
   return (
@@ -37,10 +36,9 @@ export function MentorPage() {
       <Space h={64} />
       <ProgramDetails />
       <Space h={64} />
-      <Tracks />
-      <Space h={64} />
       <ApplyButton />
       <Space h={64} />
+      {/*<Impact />*/}
     </ContentPage>
   )
 }
