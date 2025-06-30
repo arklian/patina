@@ -14,13 +14,16 @@ const mentorGoogleFormUrl = 'https://forms.gle/cCGBxbDVGoWb9nyn7'
  * */
 export function MentorPage() {
   const message = (
-    <Text className={styles.description}>
-      {
-        'Share your expertise and make a meaningful impact by mentoring! Join us to help cultivate diverse talent, foster cultural awareness, and shape a more inclusive future in your industry.'
-      }
-      <p />
-      {'Applications for Spring 2025 are now open!'}
-    </Text>
+    <div>
+      <Text className={styles.description}>
+        {
+          'Share your expertise and make a meaningful impact by mentoring! Join us to help cultivate diverse talent, foster cultural awareness, and shape a more inclusive future in your industry.'
+        }
+      </Text>
+      <Text className={styles.description}>
+        {'Applications are closed for Spring 2025.'}
+      </Text>
+    </div>
   )
   return (
     <ContentPage>

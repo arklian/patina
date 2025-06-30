@@ -19,11 +19,13 @@ export function MentorshipPage() {
         {
           'The Patina Network mentorship program will pair you with an experienced mentor in your field and foster a safe environment to explore how culture, career, and life intersect.'
         }
-        <p />
+      </Text>
+      <Text className={styles.description}>
         {'Students enrolled in an undergraduate program based in NYC are eligible. ' +
           'Freshmen and sophomores may get the most value from the programming but all are encouraged to apply!'}
-        <p />
-        {'Applications for Spring 2025 are now open!'}
+      </Text>
+      <Text className={styles.description}>
+        {'Applications are closed for Spring 2025.'}
       </Text>
     </div>
   )

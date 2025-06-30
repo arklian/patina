@@ -22,7 +22,8 @@
 }
 
 .quoteText {
-  margin: 64px;
+  margin-inline: 64px;
+  margin-top: 64px;
   color: white;
   text-align: center;
   font-weight: 700;
@@ -37,5 +38,18 @@
 }
 
 .quoteAuthor {
+  margin-top: 24px;
+  margin-inline: 64px;
+  margin-bottom: 48px;
+  color: white;
+  font-weight: 700;
+  font-size: 34px;
+  height: auto;
   text-align: right;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    text-align: left;
+    margin: 24px;
+    font-size: 28px;
+  }
 }
