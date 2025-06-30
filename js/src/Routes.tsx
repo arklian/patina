@@ -1,7 +1,5 @@
 import { PatinaRoutes } from '@/patina/Patina.routes.tsx'
 import { PatinaPage } from '@/patina/Patina.page.tsx'
-import { LilacPage } from '@/lilac/Lilac.page.tsx'
-import { LilacRoutes } from '@/lilac/Lilac.routes.tsx'
 import { AdminMainPage } from '@/patina/admin/AdminMain.page.tsx'
 import { AdminRoutes } from '@/patina/admin/Admin.routes.tsx'
 
@@ -12,12 +10,6 @@ export const Routes = [
     description: 'Home',
     element: <PatinaPage />,
     children: PatinaRoutes,
-  },
-  {
-    path: '/lilac',
-    description: 'lilac',
-    element: <LilacPage />,
-    children: LilacRoutes,
   },
   {
     path: '/admin',
