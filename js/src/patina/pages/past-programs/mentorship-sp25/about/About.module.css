@@ -1,0 +1,44 @@
+.about {
+  gap: 24px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    gap: 48px;
+    flex-direction: column;
+  }
+}
+
+.aboutText {
+  color: white;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.quote {
+  justify-self: center;
+  align-self: center;
+  margin-left: 64px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin: 0;
+  }
+}
+
+.quoteText {
+  margin: 64px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  height: auto;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    text-align: left;
+    margin: 24px;
+    font-size: 28px;
+  }
+}
+
+.quoteAuthor {
+  text-align: right;
+}
