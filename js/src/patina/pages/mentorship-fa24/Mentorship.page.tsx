@@ -1,14 +1,14 @@
 import { Space, Text } from '@mantine/core'
-import { About } from '@/patina/pages/mentorship/about/About.tsx'
+import { About } from '@/patina/pages/mentorship-fa24/about/About.tsx'
 // import { Apply } from '@/patina/pages/mentorship/apply/TimelineSection.tsx'
-import { Gain } from '@/patina/pages/mentorship/gain/Gain.tsx'
+import { Gain } from '@/patina/pages/mentorship-fa24/gain/Gain.tsx'
 import { Hero } from '@/patina/components/Hero'
 // import { Details } from '@/patina/pages/mentorship/details/Details.tsx'
 // import { Impact } from '@/patina/pages/mentorship/impact/Impact.tsx'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { imageUrls } from '@/patina/assets/images'
 import styles from './Mentorship.module.css'
-import { ProgramDetails } from '@/patina/pages/mentorship/program/ProgramDetails.tsx'
+import { ProgramDetails } from '@/patina/pages/mentorship-fa24/program/ProgramDetails.tsx'
 
 /**
  * MentorshipPage component renders a mentorship page layout with multiple sections.
