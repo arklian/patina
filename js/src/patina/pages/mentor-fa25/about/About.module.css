@@ -1,0 +1,41 @@
+.about {
+  gap: 24px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    gap: 48px;
+    flex-direction: column;
+  }
+}
+
+.aboutText {
+  max-width: 600px;
+}
+
+.quote {
+  justify-self: center;
+  align-self: center;
+  margin-right: 64px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    margin: 0;
+  }
+}
+
+.quoteText {
+  margin: 64px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  height: auto;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    text-align: left;
+    margin: 24px;
+    font-size: 28px;
+  }
+}
+
+.quoteAuthor {
+  text-align: right;
+}
