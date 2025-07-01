@@ -1,27 +1,21 @@
-import { Button, Text } from '@mantine/core'
+import { Space, Text } from '@mantine/core'
 import { imageUrls } from '@/patina/assets/images.ts'
 import { Hero } from '@/patina/components/Hero'
 import { ContentPage } from '@/patina/components/ContentPage.tsx'
 import { VolunteerCard } from './VolunteerCard'
-import { Forms } from '@/patina/components/Forms.tsx'
 import styles from './Volunteer.module.css'
 import { modalContent3, modalContent4 } from './modalContents.ts'
 
 export function VolunteerPage() {
   const message = (
-    <Text className={styles.description}>
-      {'The Patina Network volunteer program is open to anyone who wants to get involved in helping us' +
-        ' accomplish the same '}
-      <Text
-        component={'a'}
-        className={styles.colored}
-        href={'/mission'}
-        inherit
-      >
-        {'mission'}
+    <div>
+      <Text className={styles.description}>
+        {
+          "Patina Network is open to anyone who wants to get involved! Here are some of the roles that we'd like some help with!"
+        }
       </Text>
-      {'. There are many ways to join us by sharing your talents!'}
-    </Text>
+      <Space h={24} />
+    </div>
   )
   return (
     <ContentPage>
@@ -30,11 +24,11 @@ export function VolunteerPage() {
         details={message}
         img={imageUrls.volunteerHeroPatinaGreen.src}
         alt={imageUrls.volunteerHeroPatinaGreen.alt}
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeToUXtesptLJSurn4Zt0WEL2giQrrXPPYaTsh71c_Cf9WSZg/viewform"
+        buttonLink="mailto:hi@patinanetwork.org"
         buttonText="Apply to be a volunteer"
         buttonColor={'var(--mantine-color-patina-green-light)'}
       />
-      <section className={styles.grid}>
+      <div className={styles.grid}>
         {/*<VolunteerCard*/}
         {/*  title="Social Media"*/}
         {/*  description="We are seeking a motivated and creative Social Media Intern to join our team. As an intern, you will play a crucial role in enhancing our online presence, engaging with our audience, and promoting our initiatives."*/}
@@ -59,12 +53,12 @@ export function VolunteerPage() {
           type="Remote/In-person"
           modalContent={modalContent4}
         />
-      </section>
-      <section className={styles.emailSection}>
+      </div>
+      <div className={styles.emailSection}>
         <div className={styles.content}>
           <Text size="md" className={styles.emailText}>
             {
-              "Want to get involved but don't necessarily align with these opportunities? Sign up to be on the volunteer list for future events! Please fill out this form, connect with us on Instagram and LinkedIn or email us at "
+              "Want to get involved but don't fit these roles in particular? Hit us up on our Discord or Email us at "
             }
             <a
               href={'mailto:hi@patinanetwork.org'}
@@ -72,14 +66,10 @@ export function VolunteerPage() {
             >
               {'hi@patinanetwork.org'}
             </a>
-            {' to join our volunteer email list'}
+            {" and let us know what you're interested in!"}
           </Text>
-          <Button size="sm" className={styles.emailButton}>
-            {'Sign Up'}
-          </Button>
         </div>
-      </section>
-      <Forms />
+      </div>
     </ContentPage>
   )
 }

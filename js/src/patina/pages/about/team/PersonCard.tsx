@@ -3,11 +3,11 @@ import {
   Card,
   Group,
   Image,
-  Text,
-  Stack,
   Space,
+  Stack,
+  Text,
 } from '@mantine/core'
-import { FaLinkedinIn, FaGlobe, FaGithub } from 'react-icons/fa'
+import { FaGithub, FaGlobe, FaLinkedinIn } from 'react-icons/fa'
 import { ReactNode, useState } from 'react'
 import styles from './PersonCard.module.css'
 
@@ -32,7 +32,15 @@ export function PersonCard({
 }: PersonCardProps) {
   const [truncate, setTruncate] = useState(true)
   return (
-    <Card component={'li'} key={name} ta="center" className={styles.card}>
+    <Card
+      component={'li'}
+      key={name}
+      ta="center"
+      withBorder
+      shadow="sm"
+      padding={'sm'}
+      className={styles.card}
+    >
       <Card.Section mb={5}>
         <Group justify={'center'}>
           <Image src={imageSrc} radius={'50%'} className={styles.image} />
@@ -40,7 +48,7 @@ export function PersonCard({
       </Card.Section>
       <Card.Section>
         <Stack align={'center'} justify={'flex-end'} gap={0}>
-          <Text size={'sm'} fw={700}>
+          <Text size={'lg'} fw={700}>
             {name}
           </Text>
           <Text size={'md'}>{role}</Text>
