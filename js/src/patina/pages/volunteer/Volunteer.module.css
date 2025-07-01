@@ -1,9 +1,7 @@
 .description {
   text-align: left;
-  padding-top: 10px;
   font-size: 24px;
   color: white;
-  padding-bottom: 50px;
 }
 
 .colored {
@@ -38,10 +36,6 @@
   z-index: 1;
   position: relative;
   width: 100%;
-  background-image: radial-gradient(
-    var(--mantine-color-patina-green-dark) 0%,
-    #1a1b1e 65%
-  );
 }
 
 .emailText {
@@ -53,11 +47,4 @@
 
 .emailEmail {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
-
-.emailButton {
-  width: 101px;
-  height: 43px;
-  background: white;
-  color: black;
 }
