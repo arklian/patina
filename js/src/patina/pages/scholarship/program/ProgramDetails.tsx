@@ -65,7 +65,18 @@ function ProgramTimeline() {
           }
           lineVariant="dashed"
         >
-          <Text mt={4}>{'Applications close'}</Text>
+          <Text mt={4}>{'Original Application Deadline'}</Text>
+        </Timeline.Item>
+
+        <Timeline.Item
+          title={
+            <Text fw={700} c={theme.other.patinaGreenLight}>
+              {'August 11'}
+            </Text>
+          }
+          lineVariant="dashed"
+        >
+          <Text mt={4}>{'Extended Application Deadline'}</Text>
         </Timeline.Item>
 
         <Timeline.Item

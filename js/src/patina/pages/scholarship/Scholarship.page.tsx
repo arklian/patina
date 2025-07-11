@@ -30,7 +30,7 @@ export function ScholarshipPage() {
       }
       <p />
       <Text fw={700} size={'xl'}>
-        {'Applications are open June 9 - July 14! '}
+        {'Applications are open June 9 - August 11! '}
       </Text>
       <Text pl={24} size={'lg'}>
         {'Total Awards: 2'}
