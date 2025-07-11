@@ -168,12 +168,12 @@ function ProgramText() {
     <>
       <div className={styles.programDescription}>
         <Text inherit fw={800} c={theme.other.patinaBlueLight}>
-          {"Make a Difference: Become a Mentor for the Spring '25 Mentorship"}
+          {"Make a Difference: Become a Mentor for the Fall '25 Mentorship"}
         </Text>
         <p />
         <Text inherit>
           {
-            'We’re looking for professionals to serve as mentors for our Spring ‘25 cohort. We strive to individually pair mentees 1:1 with mentors who share similar experiences, creating a space for connection and cultural understanding while fostering professional growth.'
+            'We’re looking for professionals to serve as mentors for our Fall ‘25 cohort. We strive to individually pair mentees 1:1 with mentors who share similar experiences, creating a space for connection and cultural understanding while fostering professional growth.'
           }
         </Text>
         <p />

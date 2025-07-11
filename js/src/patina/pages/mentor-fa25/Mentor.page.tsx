@@ -21,7 +21,7 @@ export function MentorPage() {
         }
       </Text>
       <Text className={styles.description}>
-        {'Applications are closed for Spring 2025.'}
+        {'Applications are open for Fall 2025!'}
       </Text>
     </div>
   )

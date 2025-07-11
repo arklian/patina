@@ -25,14 +25,14 @@ export function MentorshipPage() {
           'Freshmen and sophomores may get the most value from the programming but all are encouraged to apply!'}
       </Text>
       <Text className={styles.description}>
-        {'Applications are closed for Spring 2025.'}
+        {'Applications are open for Fall 2025!'}
       </Text>
     </div>
   )
   return (
     <ContentPage>
       <Hero
-        title="Patina Mentorship Spring '25"
+        title="Patina Mentorship Fall '25"
         details={message}
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}

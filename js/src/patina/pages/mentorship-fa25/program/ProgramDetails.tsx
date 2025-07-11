@@ -185,7 +185,7 @@ function ProgramText() {
       <div className={styles.programDescription}>
         <Text inherit>
           {
-            "For the Spring '25 semester, we're looking to pair mentees one-on-one with a mentor, so that each mentee can have an experience tailored to their individual situation, needs and direction."
+            "For the Fall '25 semester, we're looking to pair mentees one-on-one with a mentor, so that each mentee can have an experience tailored to their individual situation, needs and direction."
           }
         </Text>
         <p />
