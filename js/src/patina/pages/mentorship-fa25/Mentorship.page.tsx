@@ -25,7 +25,7 @@ export function MentorshipPage() {
           'Freshmen and sophomores may get the most value from the programming but all are encouraged to apply!'}
       </Text>
       <Text className={styles.description}>
-        {'Applications are open for Fall 2025!'}
+        {'Applications will open soon for Fall 2025!'}
       </Text>
     </div>
   )
@@ -36,8 +36,8 @@ export function MentorshipPage() {
         details={message}
         img={imageUrls.mentorshipHero.src}
         alt={imageUrls.mentorshipHero.alt}
-        buttonLink="https://forms.gle/bFWmWaYBfetfMbfBA"
-        buttonText="Apply to be a mentee!"
+        buttonLink=""
+        buttonText="Opening Soon!"
         buttonColor={'var(--mantine-color-patina-blue-light)'}
       />
       <About />

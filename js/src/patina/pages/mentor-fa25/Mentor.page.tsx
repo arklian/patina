@@ -7,7 +7,7 @@ import styles from './Mentor.module.css'
 import { ProgramDetails } from '@/patina/pages/mentor-fa25/program/ProgramDetails.tsx'
 import { Tracks } from '@/patina/pages/mentor-fa25/tracks/Tracks.tsx'
 
-const mentorGoogleFormUrl = 'https://forms.gle/cCGBxbDVGoWb9nyn7'
+const mentorGoogleFormUrl = 'https://forms.gle/pScS1kKoaPFw9TfMA'
 
 /**
  * Mentor page allows people to apply to be mentors.

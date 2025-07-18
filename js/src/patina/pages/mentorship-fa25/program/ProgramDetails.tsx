@@ -51,7 +51,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Jan 31'}
+              {'Sept 10'}
             </Text>
           }
           fw={700}
@@ -62,19 +62,19 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Feb 2nd, Sun 1:00-2:00pm'}
+              {'Sept 14th'}
             </Text>
           }
           lineVariant="dashed"
         >
-          <Text mt={4}>{'Virtual onboarding meeting'}</Text>
+          <Text mt={4}>{'Virtual onboarding kickoff!'}</Text>
           <Text mt={4}>{'Introduction to your mentor'}</Text>
         </Timeline.Item>
 
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Week of Feb 3rd'}
+              {'Week of Sept 15th'}
             </Text>
           }
           lineVariant="dashed"
@@ -85,7 +85,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Feb 19th, Wed 6:30-8:00pm*'}
+              {'Oct 2nd, Thurs 6:30-8:00pm'}
             </Text>
           }
           lineVariant="dashed"
@@ -96,7 +96,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Mar 12th, Wed 6:30-8:00pm*'}
+              {'Oct 23rd, Thurs 6:30-8:00pm'}
             </Text>
           }
           lineVariant="dashed"
@@ -107,7 +107,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Apr 4th, Fri 5:30-7:30pm*'}
+              {'Nov 17th, Thurs 6:30-8:00pm'}
             </Text>
           }
           lineVariant="dashed"
@@ -116,9 +116,6 @@ function ProgramTimeline() {
           <Text mt={4}>{'In Person Meetup #3'}</Text>
         </Timeline.Item>
       </Timeline>
-      <Text size={'xs'} mt={4} c={theme.other.patinaBlueLight}>
-        {'* Dates tentative, but will be finalized by the first week.'}
-      </Text>
     </>
   )
 }
