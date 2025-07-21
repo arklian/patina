@@ -2,7 +2,10 @@ package org.patinanetwork.givebutter;
 
 import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
+import org.patinanetwork.givebutter.email.GiveButterEmailClient;
+import org.patinanetwork.givebutter.ops.AddContactOp;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -14,10 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class GiveButterController {
 
+    GiveButterEmailClient emailClient;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public GiveButterController(JsonPrinter jsonPrinter, JsonParser jsonParser) {
+    public GiveButterController(GiveButterEmailClient emailClient, JsonPrinter jsonPrinter, JsonParser jsonParser) {
+        this.emailClient = emailClient;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
     }
@@ -35,5 +40,12 @@ public class GiveButterController {
         System.out.println(framerWebhookSubmissionId);
         System.out.println(jsonRequest);
         return;
+    }
+
+    @GetMapping(value = "/api/givebutter/test")
+    public String giveButterTest() {
+        AddContactOp op = new AddContactOp(emailClient);
+        op.run();
+        return "{}";
     }
 }
