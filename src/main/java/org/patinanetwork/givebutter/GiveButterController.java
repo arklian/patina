@@ -4,6 +4,7 @@ import org.patinanetwork.common.protos.JsonParser;
 import org.patinanetwork.common.protos.JsonPrinter;
 import org.patinanetwork.givebutter.email.GiveButterEmailClient;
 import org.patinanetwork.givebutter.ops.AddContactOp;
+import org.patinanetwork.givebutter.util.GiveButterAuth;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,12 +18,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class GiveButterController {
 
+    GiveButterAuth giveButterAuth;
     GiveButterEmailClient emailClient;
     JsonPrinter jsonPrinter;
     JsonParser jsonParser;
 
-    public GiveButterController(GiveButterEmailClient emailClient, JsonPrinter jsonPrinter, JsonParser jsonParser) {
+    public GiveButterController(
+            GiveButterEmailClient emailClient,
+            GiveButterAuth giveButterAuth,
+            JsonPrinter jsonPrinter,
+            JsonParser jsonParser) {
         this.emailClient = emailClient;
+        this.giveButterAuth = giveButterAuth;
         this.jsonPrinter = jsonPrinter;
         this.jsonParser = jsonParser;
     }
@@ -44,8 +51,14 @@ public class GiveButterController {
 
     @GetMapping(value = "/api/givebutter/test")
     public String giveButterTest() {
-        AddContactOp op = new AddContactOp(emailClient);
+        AddContactOp op = new AddContactOp(emailClient, giveButterAuth);
         op.run();
+        return "{}";
+    }
+
+    @GetMapping(value = "/api/givebutter/test2")
+    public String giveButterTest2() {
+        giveButterAuth.useSessionState();
         return "{}";
     }
 }

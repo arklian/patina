@@ -53,6 +53,7 @@ dependencies {
     implementation("jakarta.mail:jakarta.mail-api:2.0.1")
     implementation("com.sun.mail:jakarta.mail:2.0.1")
     implementation("org.jsoup:jsoup:1.21.1")
+    implementation("com.microsoft.playwright:playwright:1.53.0")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
