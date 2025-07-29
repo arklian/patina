@@ -96,7 +96,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Oct 23rd, Thurs 6:30-8:00pm'}
+              {'Oct 27th, Mon 6:30-8:00pm'}
             </Text>
           }
           lineVariant="dashed"
@@ -107,7 +107,7 @@ function ProgramTimeline() {
         <Timeline.Item
           title={
             <Text fw={700} c={theme.other.patinaBlueLight}>
-              {'Nov 17th, Thurs 6:30-8:00pm'}
+              {'Nov 13th, Thurs 6:30-8:00pm'}
             </Text>
           }
           lineVariant="dashed"
