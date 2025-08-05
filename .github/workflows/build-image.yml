@@ -38,8 +38,8 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            patina-site:latest
-            patina-site:${{ env.TIMESTAMP }}
-            patina-site:${{ env.GIT_SHA }}
+            registry.digitalocean.com/patina/patina-site:latest
+            registry.digitalocean.com/patina/patina-site:${{ env.TIMESTAMP }}
+            registry.digitalocean.com/patina/patina-site:${{ env.GIT_SHA }}
 
 
