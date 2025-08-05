@@ -44,8 +44,8 @@ public class GiveButterAuth {
                     .launch(new BrowserType.LaunchOptions().setHeadless(true).setTimeout(10000));
             BrowserContext context = browser.newContext(new NewContextOptions()
                     .setUserAgent("Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0")
-                    .setRecordVideoDir(Paths.get("playwright/"))
-                    .setViewportSize(1920, 1080)
+                    //                    .setRecordVideoDir(Paths.get("playwright/"))
+                    //                    .setViewportSize(1920, 1080)
                     .setStorageStatePath(STORAGE_STATE_PATH));
             LOGGER.info("Loaded browser context");
 
@@ -108,7 +108,6 @@ public class GiveButterAuth {
                     .isVisible()) {
                 LOGGER.info("2FA Required");
 
-                //                page.click("button[name=\"Send Code\"]");
                 page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Send Code"))
                         .click();
 

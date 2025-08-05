@@ -1,0 +1,14 @@
+# Gradle
+.gradle
+build
+
+# Node
+js/node_modules
+js/dist
+
+# IDE
+.idea
+*.iml
+
+# OS-specific
+.DS_Store

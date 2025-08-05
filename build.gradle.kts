@@ -1,6 +1,5 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
-import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 
 plugins {
     java
@@ -77,71 +76,30 @@ tasks.named("bootRun") {
 
 tasks.named("bootJar") {
     dependsOn(":js:patina")
+    dependsOn(tasks.named("installPlaywrightBrowser"))
 }
 
 tasks.named("generateProto") {
     group = "patina"
 }
 
-
-tasks.named<BootBuildImage>("bootBuildImage") {
+tasks.register<JavaExec>("installPlaywrightBrowser") {
     group = "patina"
+    description = "Installs Playwright browser."
 
-    // Check if a custom tag is provided, otherwise use 'latest'
-    val tag = if (project.hasProperty("imageTags")) {
-        project.property("imageTags").toString()
-    } else {
-        "latest"
-    }
-    println("Building Docker image with tag: $tag")
-    println("Build directory: ${rootProject.layout.buildDirectory.get()}")
-    imageName.set("registry.digitalocean.com/patina/patina-site:$tag")
-    dependsOn(":js:patina")
-    publish.set(true)
-    docker {
-        publishRegistry {
-            username.set(System.getenv("DO_DOCKER_IMAGE_UPLOAD_PAT"))
-            password.set(System.getenv("DO_DOCKER_IMAGE_UPLOAD_PAT"))
-        }
-    }
+    // Define the output directory for the downloaded firefox. (/app/build/playwright-browsers)
+    val browsersPath = rootProject.layout.buildDirectory.dir("playwright-browsers")
+    outputs.dir(browsersPath)
+
+    // Set the environment variable for the Playwright CLI to control download location
+    environment("PLAYWRIGHT_BROWSERS_PATH", browsersPath.get().asFile.absolutePath)
+
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.microsoft.playwright.CLI")
+    args = listOf("install", "firefox", "--with-deps")
 }
 
-tasks.register("tagAndPushDockerImage") {
-    group = "patina"
-    description = "Tag and push the Docker image with the latest tag"
-    doLast {
-        val primaryTag = if (project.hasProperty("imageTags")) {
-            project.property("imageTags").toString()
-        } else {
-            "latest"
-        }
 
-        val baseImageName = "registry.digitalocean.com/patina/patina-site"
-        val imageNameWithPrimaryTag = "$baseImageName:$primaryTag"
-        val imageNameWithLatestTag = "$baseImageName:latest"
-
-        println("Tagging Docker image with: $imageNameWithLatestTag")
-
-        exec {
-            commandLine("docker", "tag", imageNameWithPrimaryTag, imageNameWithLatestTag)
-        }
-
-        println("Pushing Docker image with tag: $primaryTag")
-        exec {
-            commandLine("docker", "push", imageNameWithPrimaryTag)
-        }
-
-        println("Pushing Docker image with tag: latest")
-        exec {
-            commandLine("docker", "push", imageNameWithLatestTag)
-        }
-    }
-}
-
-tasks.named("tagAndPushDockerImage") {
-    dependsOn("bootBuildImage")
-    dependsOn(":js:patina")
-}
 
 tasks.named<TaskReportTask>("tasks") {
     displayGroups = listOf("patina")
